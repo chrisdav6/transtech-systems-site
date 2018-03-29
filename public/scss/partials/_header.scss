@@ -1,6 +1,14 @@
+header {
+  height: 100vh;
+  background: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .top-bar {
   background: $logo-yellow;
-  color: #152235;
+  color: $dark-gray;
   font-family: 'Alfa Slab One', sans-serif;
   
   // background: repeating-linear-gradient(
@@ -10,8 +18,15 @@
   //   #f7efbe 10px,
   //   #f7efbe 20px
   // );
-  @include mq {
-    flex-direction: row;
+  
+  .phone-link {
+    color: $dark-gray;
+    
+    &:hover,
+    &:active {
+      color: $gray;
+      text-decoration: none;
+    }
   }
 }
 
@@ -19,13 +34,27 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: $dark-opacity;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
   font-size: 1.15rem;
-  font-weight: bold;
+  background: rgba($dark-gray, .9);
 }
 
 .dropdown-menu {
   border-radius: 0;
+}
+
+.dropdown-item {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+  
+  &:hover {
+    background: lighten($logo-yellow, 40%);
+  }
+  
+  &:active {
+    background: $gray;
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link {

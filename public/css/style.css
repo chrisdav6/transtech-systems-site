@@ -1,28 +1,46 @@
 body {
   line-height: 1.5;
-  background: #26526E; }
+  background: #f7f7f7; }
 
 h1, h2, h3 {
   font-family: 'Alfa Slab One', sans-serif; }
 
+header {
+  height: 100vh;
+  background: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
 .top-bar {
   background: #FFDE00;
-  color: #152235;
+  color: #303030;
   font-family: 'Alfa Slab One', sans-serif; }
-  @media (max-width: 50em) {
-    .top-bar {
-      flex-direction: row; } }
+  .top-bar .phone-link {
+    color: #303030; }
+    .top-bar .phone-link:hover, .top-bar .phone-link:active {
+      color: #727272;
+      text-decoration: none; }
 
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(32, 35, 41, 0.95);
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
   font-size: 1.15rem;
-  font-weight: bold; }
+  background: rgba(48, 48, 48, 0.9); }
 
 .dropdown-menu {
   border-radius: 0; }
+
+.dropdown-item {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600; }
+  .dropdown-item:hover {
+    background: #fff8cc; }
+  .dropdown-item:active {
+    background: #727272; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #dbdbdb; }
@@ -30,7 +48,7 @@ h1, h2, h3 {
     color: #FFDE00; }
 
 #hero {
-  height: 90vh;
+  height: calc(100vh - 100px);
   background: url(../img/hero-bg.jpg);
   background-size: cover;
   background-position: center;
