@@ -1,6 +1,6 @@
 body {
   line-height: 1.5;
-  background: #f7f7f7; }
+  background: #17273B; }
 
 h1, h2, h3 {
   font-family: 'Alfa Slab One', sans-serif; }
@@ -19,7 +19,6 @@ header {
   .top-bar .phone-link {
     color: #303030; }
     .top-bar .phone-link:hover, .top-bar .phone-link:active {
-      color: #727272;
       text-decoration: none; }
 
 .navbar {
@@ -27,9 +26,16 @@ header {
   top: 0;
   z-index: 1000;
   font-family: 'Prompt', sans-serif;
-  font-weight: 600;
-  font-size: 1.15rem;
   background: rgba(48, 48, 48, 0.9); }
+
+.navbar-dark .navbar-brand {
+  font-weight: 600;
+  transition: 250ms; }
+  .navbar-dark .navbar-brand span {
+    font-weight: 200;
+    margin-left: 2px; }
+  .navbar-dark .navbar-brand:hover {
+    color: #FFDE00; }
 
 .dropdown-menu {
   border-radius: 0; }
@@ -59,7 +65,7 @@ header {
     height: 2px;
     background: rgba(247, 247, 247, 0.7); }
   #hero h1 {
-    font-size: 4em;
+    font-size: 3rem;
     color: #f7f7f7;
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.9); }
   @media (max-width: 50em) {
@@ -76,4 +82,4 @@ header {
   margin: .2em 0;
   background: rgba(255, 222, 0, 0.75);
   text-shadow: none;
-  color: #152235; }
+  color: #303030; }
