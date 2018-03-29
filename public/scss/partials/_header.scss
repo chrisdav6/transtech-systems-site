@@ -1,0 +1,38 @@
+.top-bar {
+  background: $logo-yellow;
+  color: #152235;
+  font-family: 'Alfa Slab One', sans-serif;
+  
+  // background: repeating-linear-gradient(
+  //   45deg,
+  //   #ffea68,
+  //   #ffea68 10px,
+  //   #f7efbe 10px,
+  //   #f7efbe 20px
+  // );
+  @include mq {
+    flex-direction: row;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $dark-opacity;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $light-gray;
+  
+  &:hover,
+  &:active {
+    color: $logo-yellow;
+  }
+}
