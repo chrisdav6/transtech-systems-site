@@ -99,7 +99,11 @@ header {
     padding: 2.5em 0 .5em 0;
     color: #303030; }
   #featured hr {
-    padding-bottom: 2em; }
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #dbdbdb;
+    margin-bottom: 2.5em; }
   #featured .category-title {
     padding: .25em;
     background: #FFDE00; }
@@ -122,3 +126,22 @@ header {
       padding-bottom: .75em; }
     #featured .category-title {
       font-size: 1.75rem; } }
+
+#trade-up {
+  background: #303030;
+  padding: 2em 0; }
+  #trade-up hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #dbdbdb;
+    margin: 1.5em 0; }
+  #trade-up p {
+    font-weight: 600; }
+  #trade-up .trade-btn {
+    font-family: 'Prompt', sans-serif;
+    padding: .35em 1.5em;
+    font-size: 1.5rem;
+    font-weight: 700; }
+  #trade-up .trade-icon-div {
+    font-size: 17em; }

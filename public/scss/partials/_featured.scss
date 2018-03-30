@@ -7,7 +7,11 @@
   }
   
   hr {
-    padding-bottom: 2em;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $light-gray;
+    margin-bottom: 2.5em;
   }
   
   .category-title {
