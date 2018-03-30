@@ -94,7 +94,7 @@ header {
   color: #303030; }
 
 #featured {
-  padding-bottom: 4em; }
+  padding-bottom: 2em; }
   #featured .title {
     padding: 2.5em 0 .5em 0;
     color: #303030; }
@@ -102,7 +102,7 @@ header {
     border: none;
     height: 1px;
     width: 100%;
-    background: #dbdbdb;
+    background: #c2c2c2;
     margin-bottom: 2.5em; }
   #featured .category-title {
     padding: .25em;
@@ -123,7 +123,9 @@ header {
       font-size: 2rem;
       padding: 2.75em 0 .15em 0; }
     #featured hr {
-      padding-bottom: .75em; }
+      margin-bottom: 2em; }
+    #featured .card-title {
+      font-size: 1.5rem; }
     #featured .category-title {
       font-size: 1.75rem; } }
 
@@ -144,4 +146,36 @@ header {
     font-size: 1.5rem;
     font-weight: 700; }
   #trade-up .trade-icon-div {
-    font-size: 17em; }
+    font-size: 16em; }
+  @media (max-width: 50em) {
+    #trade-up {
+      padding: 0em 0em 5em 0em; }
+      #trade-up h1 {
+        font-size: 1.5rem; }
+      #trade-up .trade-icon-div {
+        font-size: 12em; } }
+
+#announcements {
+  padding: 2em 0; }
+  #announcements hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin: 1.5em 0; }
+  #announcements p {
+    font-weight: 600; }
+  #announcements .announce-btn {
+    font-family: 'Prompt', sans-serif;
+    padding: .35em 1.5em;
+    font-size: 1.5rem;
+    font-weight: 700; }
+  #announcements .announce-icon-div {
+    font-size: 16em; }
+  @media (max-width: 50em) {
+    #announcements {
+      padding: 0em 0em 5em 0em; }
+      #announcements h1 {
+        font-size: 1.5rem; }
+      #announcements .announce-icon-div {
+        font-size: 12em; } }

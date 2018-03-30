@@ -1,0 +1,38 @@
+#announcements {
+  padding: 2em 0;
+  
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: darken($light-gray, 10%);
+    margin: 1.5em 0;
+  }
+  
+  p {
+    font-weight: 600;
+  }
+  
+  .announce-btn {
+    font-family: 'Prompt', sans-serif;
+    padding: .35em 1.5em;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .announce-icon-div {
+    font-size: 16em;
+  }
+  
+  @include mq {
+    padding: 0em 0em 5em 0em;
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .announce-icon-div {
+      font-size: 12em;
+    }
+  }
+}

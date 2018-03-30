@@ -1,5 +1,5 @@
 #featured {
-  padding-bottom: 4em;
+  padding-bottom: 2em;
   
   .title {
     padding: 2.5em 0 .5em 0;
@@ -10,7 +10,7 @@
     border: none;
     height: 1px;
     width: 100%;
-    background: $light-gray;
+    background: darken($light-gray, 10%);
     margin-bottom: 2.5em;
   }
   
@@ -47,7 +47,11 @@
     }
     
     hr {
-      padding-bottom: .75em;
+      margin-bottom: 2em;
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
     }
     
     .category-title {

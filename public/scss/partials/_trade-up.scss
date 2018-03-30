@@ -22,6 +22,18 @@
   }
   
   .trade-icon-div {
-    font-size: 17em;
+    font-size: 16em;
+  }
+  
+  @include mq {
+    padding: 0em 0em 5em 0em;
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .trade-icon-div {
+      font-size: 12em;
+    }
   }
 }
