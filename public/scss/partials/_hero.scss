@@ -18,15 +18,31 @@
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
   }
   
+  .fa-angle-down {
+    position: relative;
+    top: -5px;
+    margin-top: 1.5em;
+    transition: 250ms;
+    
+    &:hover {
+      top: 0px;
+    }
+  }
+  
   @include mq {
     height: 85vh;
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
     
     .hero-logo {
       width: 75vw;
     }
+    
+    .fa-angle-down {
+      margin-top: .1em;
+    }
+    
   }
 }
 
@@ -34,7 +50,7 @@
   display: inline-block;
   padding: .1em .35em;
   margin: .2em 0;
-  background: rgba($logo-yellow, .75);
+  background: $logo-yellow;
   text-shadow: none;
   color: $dark-gray;
 }

@@ -68,18 +68,30 @@ header {
     font-size: 3rem;
     color: #f7f7f7;
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.9); }
+  #hero .fa-angle-down {
+    position: relative;
+    top: -5px;
+    margin-top: 1.5em;
+    transition: 250ms; }
+    #hero .fa-angle-down:hover {
+      top: 0px; }
   @media (max-width: 50em) {
     #hero {
       height: 85vh; }
       #hero h1 {
-        font-size: 2.5rem; }
+        font-size: 2.2rem; }
       #hero .hero-logo {
-        width: 75vw; } }
+        width: 75vw; }
+      #hero .fa-angle-down {
+        margin-top: .1em; } }
 
 .non-nuclear {
   display: inline-block;
   padding: .1em .35em;
   margin: .2em 0;
-  background: rgba(255, 222, 0, 0.75);
+  background: #FFDE00;
   text-shadow: none;
   color: #303030; }
+
+#featured {
+  height: 100vh; }
