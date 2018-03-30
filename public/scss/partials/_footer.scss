@@ -1,0 +1,73 @@
+#footer {
+  background: $light-gray;
+  padding: 7em 0;
+  border-top: 1px solid $gray;
+  
+  .join {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+  
+  .social li {
+    position: relative;
+    top: 0;
+    transition: .3s;
+  }
+  
+  .social a {
+    text-decoration: none;
+  }
+  
+  .facebook:hover {
+    top: -3px;
+    color: #3b5998;
+  }
+  
+  .twitter:hover {
+    top: -3px;
+    color: #1DA1F2;
+  }
+  
+  .instagram:hover {
+    top: -3px;
+    color: #262626;
+  }
+
+  .google:hover {
+    top: -3px;
+    color: #D84B37;
+  }
+  
+  .youtube:hover {
+    top: -3px;
+    color: #ff0000;
+  }
+  
+  .vimeo:hover {
+    top: -3px;
+    color: #1ab7ea;
+  }
+  
+  .linked:hover {
+    top: -3px;
+    color: #0077b5;
+  }
+  
+  .address {
+    font-size: .95rem;
+    
+    span {
+      font-weight: 600;
+    }
+  }
+  
+  .phone-link {
+    color: $dark-gray;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}

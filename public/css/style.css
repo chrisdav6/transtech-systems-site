@@ -131,7 +131,7 @@ header {
 
 #trade-up {
   background: #303030;
-  padding: 2em 0; }
+  padding: 4em 0; }
   #trade-up hr {
     border: none;
     height: 1px;
@@ -156,7 +156,7 @@ header {
         font-size: 12em; } }
 
 #announcements {
-  padding: 2em 0; }
+  padding: 4em 0; }
   #announcements hr {
     border: none;
     height: 1px;
@@ -179,3 +179,47 @@ header {
         font-size: 1.5rem; }
       #announcements .announce-icon-div {
         font-size: 12em; } }
+
+#footer {
+  background: #dbdbdb;
+  padding: 7em 0;
+  border-top: 1px solid #727272; }
+  #footer .join {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem; }
+  #footer .social li {
+    position: relative;
+    top: 0;
+    transition: .3s; }
+  #footer .social a {
+    text-decoration: none; }
+  #footer .facebook:hover {
+    top: -3px;
+    color: #3b5998; }
+  #footer .twitter:hover {
+    top: -3px;
+    color: #1DA1F2; }
+  #footer .instagram:hover {
+    top: -3px;
+    color: #262626; }
+  #footer .google:hover {
+    top: -3px;
+    color: #D84B37; }
+  #footer .youtube:hover {
+    top: -3px;
+    color: #ff0000; }
+  #footer .vimeo:hover {
+    top: -3px;
+    color: #1ab7ea; }
+  #footer .linked:hover {
+    top: -3px;
+    color: #0077b5; }
+  #footer .address {
+    font-size: .95rem; }
+    #footer .address span {
+      font-weight: 600; }
+  #footer .phone-link {
+    color: #303030; }
+    #footer .phone-link:hover, #footer .phone-link:active {
+      text-decoration: none; }
