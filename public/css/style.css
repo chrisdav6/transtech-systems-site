@@ -94,4 +94,31 @@ header {
   color: #303030; }
 
 #featured {
-  height: 100vh; }
+  padding-bottom: 4em; }
+  #featured .title {
+    padding: 2.5em 0 .5em 0;
+    color: #303030; }
+  #featured hr {
+    padding-bottom: 2em; }
+  #featured .category-title {
+    padding: .25em;
+    background: #FFDE00; }
+  #featured a {
+    text-decoration: none; }
+  #featured .card {
+    border: none;
+    background: #F8F9FA; }
+    #featured .card .card-img-top {
+      max-width: 250px; }
+    #featured .card .swm {
+      max-width: 175px; }
+    #featured .card p {
+      font-weight: 600; }
+  @media (max-width: 50em) {
+    #featured .title {
+      font-size: 2rem;
+      padding: 2.75em 0 .15em 0; }
+    #featured hr {
+      padding-bottom: .75em; }
+    #featured .category-title {
+      font-size: 1.75rem; } }

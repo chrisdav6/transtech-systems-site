@@ -1,3 +1,53 @@
 #featured {
-  height: 100vh;
+  padding-bottom: 4em;
+  
+  .title {
+    padding: 2.5em 0 .5em 0;
+    color: $dark-gray;
+  }
+  
+  hr {
+    padding-bottom: 2em;
+  }
+  
+  .category-title {
+    padding: .25em;
+    background: $logo-yellow;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .card {
+    border: none;
+    background: #F8F9FA;
+    
+    .card-img-top {
+      max-width: 250px;
+    }
+    
+    .swm {
+      max-width: 175px;
+    }
+    
+    p {
+      font-weight: 600;
+    }
+  }
+  
+  @include mq {
+    .title {
+      font-size: 2rem;
+      padding: 2.75em 0 .15em 0;
+    }
+    
+    hr {
+      padding-bottom: .75em;
+    }
+    
+    .category-title {
+      font-size: 1.75rem;
+    }
+  }
 }
