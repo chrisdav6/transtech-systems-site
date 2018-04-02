@@ -7,11 +7,11 @@
   <!-- /map section -->
   
   <!-- address Section -->
-  <section id="address" class="text-center text-md-left">
+  <section id="address">
     <div class="container">
       <div class="row">
         
-        <div class="col-md-6">
+        <div class="col-md-6 text-center text-md-left">
           <h2 class="pb-3">Corporate Office</h2>
             <div class="contact-info">
               <address>
@@ -28,17 +28,20 @@
         </div>
         
         <div class="col-md-6 mt-5 mt-md-0">
-          <h2 class="pb-3">Contact Us</h2>
+          <h2 class="pb-3 text-center text-md-left">Contact Us</h2>
           
-          <form class="d-flex flex-column">
+          <form action="" method="post" class="d-flex flex-column">
             <div class="form-group">
-              <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Name">
+              <label for="name" class="text-left">Name</label>
+              <input type="text" class="form-control form-control-lg" name="name" id="name" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control form-control-lg" name="email" id="email" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control form-control-lg" name="message" id="message" rows="5">Message</textarea>
+              <label for="message">Message</label>
+              <textarea class="form-control form-control-lg" name="message" id="message" rows="5" required></textarea>
             </div>
             <button class="btn btn-outline-success btn-lg submit-btn ml-0 ml-lg-auto">Submit</button>
           </form>
