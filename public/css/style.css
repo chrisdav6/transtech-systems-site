@@ -121,7 +121,7 @@ header {
   #hero .fa-angle-down {
     position: relative;
     top: -5px;
-    margin-top: 1.5em;
+    margin-top: .5em;
     transition: 250ms; }
     #hero .fa-angle-down:hover {
       top: 0px; }
@@ -156,11 +156,12 @@ header {
     margin-bottom: 2.5em; }
   #about .about-text {
     font-family: "Prompt", sans-serif;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    line-height: 1.9; }
   #about .fa-angle-down {
     position: relative;
     top: -5px;
-    margin-top: 1.5em;
+    margin-top: .5em;
     transition: 250ms; }
     #about .fa-angle-down:hover {
       top: 0px; }
@@ -169,7 +170,8 @@ header {
       font-size: 2rem;
       padding: 2.75em 0 .15em 0; }
     #about .about-text {
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      line-height: inherit; }
     #about .fa-angle-down {
       margin-top: .1em; } }
 
