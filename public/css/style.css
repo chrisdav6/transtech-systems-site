@@ -1,9 +1,13 @@
 body {
   line-height: 1.5;
-  background: #17273B; }
+  background: #f7f7f7; }
 
 h1, h2, h3 {
   font-family: 'Alfa Slab One', sans-serif; }
+
+form {
+  font-family: "Prompt";
+  font-size: 1.25rem; }
 
 header {
   height: 100vh;
@@ -42,7 +46,9 @@ header {
 
 .dropdown-item {
   font-family: 'Prompt', sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  padding-top: .75em;
+  padding-bottom: .75em; }
   .dropdown-item:hover {
     background: #fff8cc; }
   .dropdown-item:active {
@@ -52,6 +58,50 @@ header {
   color: #dbdbdb; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
     color: #FFDE00; }
+
+#footer {
+  background: #dbdbdb;
+  padding: 7em 0;
+  border-top: 1px solid #727272; }
+  #footer .join {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem; }
+  #footer .social li {
+    position: relative;
+    top: 0;
+    transition: .3s; }
+  #footer .social a {
+    text-decoration: none; }
+  #footer .facebook:hover {
+    top: -3px;
+    color: #3b5998; }
+  #footer .twitter:hover {
+    top: -3px;
+    color: #1DA1F2; }
+  #footer .instagram:hover {
+    top: -3px;
+    color: #262626; }
+  #footer .google:hover {
+    top: -3px;
+    color: #D84B37; }
+  #footer .youtube:hover {
+    top: -3px;
+    color: #ff0000; }
+  #footer .vimeo:hover {
+    top: -3px;
+    color: #1ab7ea; }
+  #footer .linked:hover {
+    top: -3px;
+    color: #0077b5; }
+  #footer .address {
+    font-size: .95rem; }
+    #footer .address span {
+      font-weight: 600; }
+  #footer .phone-link {
+    color: #303030; }
+    #footer .phone-link:hover, #footer .phone-link:active {
+      text-decoration: none; }
 
 #hero {
   height: calc(100vh - 100px);
@@ -180,46 +230,19 @@ header {
       #announcements .announce-icon-div {
         font-size: 12em; } }
 
-#footer {
-  background: #dbdbdb;
-  padding: 7em 0;
+#map {
+  height: 60vh; }
+
+#address {
+  font-family: "Prompt";
+  font-size: 1.25rem;
+  padding: 3em 0;
   border-top: 1px solid #727272; }
-  #footer .join {
-    font-family: "Prompt", sans-serif;
-    font-weight: 200;
-    font-size: 1.2rem; }
-  #footer .social li {
-    position: relative;
-    top: 0;
-    transition: .3s; }
-  #footer .social a {
-    text-decoration: none; }
-  #footer .facebook:hover {
-    top: -3px;
-    color: #3b5998; }
-  #footer .twitter:hover {
-    top: -3px;
-    color: #1DA1F2; }
-  #footer .instagram:hover {
-    top: -3px;
-    color: #262626; }
-  #footer .google:hover {
-    top: -3px;
-    color: #D84B37; }
-  #footer .youtube:hover {
-    top: -3px;
-    color: #ff0000; }
-  #footer .vimeo:hover {
-    top: -3px;
-    color: #1ab7ea; }
-  #footer .linked:hover {
-    top: -3px;
-    color: #0077b5; }
-  #footer .address {
-    font-size: .95rem; }
-    #footer .address span {
-      font-weight: 600; }
-  #footer .phone-link {
+  #address .phone-link {
     color: #303030; }
-    #footer .phone-link:hover, #footer .phone-link:active {
+    #address .phone-link:hover, #address .phone-link:active {
       text-decoration: none; }
+  #address p {
+    margin-bottom: 0; }
+  #address .form-control {
+    font-size: 1.25rem; }

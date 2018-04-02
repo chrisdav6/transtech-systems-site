@@ -1,9 +1,14 @@
 body {
   // font-family: 'Roboto', sans-serif;
   line-height: 1.5;
-  background: #17273B;
+  background: $white;
 }
 
 h1, h2, h3 {
   font-family: 'Alfa Slab One', sans-serif;
+}
+
+form {
+  font-family: "Prompt";
+  font-size: 1.25rem;
 }

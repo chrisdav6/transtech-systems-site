@@ -1,0 +1,28 @@
+#map {
+  height: 60vh;
+}
+
+#address {
+  font-family: "Prompt";
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid $gray;
+  
+  .phone-link {
+    color: $dark-gray;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  
+  .form-control {
+    font-size: 1.25rem;
+  }
+  
+}

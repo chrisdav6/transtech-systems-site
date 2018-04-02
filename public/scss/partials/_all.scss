@@ -1,7 +1,12 @@
 @import "base";
 @import "header";
-@import "hero";
-@import "featured";
-@import "trade-up";
-@import "announcements";
 @import "footer";
+
+//Homepage
+@import "index/hero";
+@import "index/featured";
+@import "index/trade-up";
+@import "index/announcements";
+
+//Contact Corporate Page
+@import "contactCorporate/contact";

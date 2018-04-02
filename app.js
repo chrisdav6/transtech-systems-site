@@ -8,9 +8,16 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
 
-//Routes
+//------Routes--------//
+
+//Homepage
 app.get("/", function(req, res) {
   res.render("index");
+});
+
+//Contact Corporate
+app.get("/contactCorporate", function(req, res) {
+  res.render("contactCorporate");
 });
 
 //Start Server
