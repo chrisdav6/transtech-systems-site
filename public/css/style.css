@@ -112,7 +112,7 @@ header {
   #hero .divider {
     border: 0;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background: rgba(247, 247, 247, 0.7); }
   #hero h1 {
     font-size: 3rem;
@@ -142,6 +142,36 @@ header {
   background: #FFDE00;
   text-shadow: none;
   color: #303030; }
+
+#about {
+  min-height: 100vh; }
+  #about .title {
+    padding: 2.5em 0 .5em 0;
+    color: #303030; }
+  #about hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin-bottom: 2.5em; }
+  #about .about-text {
+    font-family: "Prompt", sans-serif;
+    font-size: 1.5rem; }
+  #about .fa-angle-down {
+    position: relative;
+    top: -5px;
+    margin-top: 1.5em;
+    transition: 250ms; }
+    #about .fa-angle-down:hover {
+      top: 0px; }
+  @media (max-width: 50em) {
+    #about .title {
+      font-size: 2rem;
+      padding: 2.75em 0 .15em 0; }
+    #about .about-text {
+      font-size: 1.25rem; }
+    #about .fa-angle-down {
+      margin-top: .1em; } }
 
 #featured {
   padding-bottom: 2em; }
