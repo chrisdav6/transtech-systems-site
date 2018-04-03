@@ -20,6 +20,11 @@ app.get("/contactCorporate", function(req, res) {
   res.render("contactCorporate");
 });
 
+//Distributors United States
+app.get("/distributorsUnitedStates", function(req, res) {
+  res.render("distributorsUnitedStates");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");

@@ -1,4 +1,5 @@
 body {
+  font-family: 'Prompt', sans-serif;
   line-height: 1.5;
   background: #f7f7f7; }
 
@@ -6,7 +7,6 @@ h1, h2, h3 {
   font-family: 'Alfa Slab One', sans-serif; }
 
 form {
-  font-family: "Prompt";
   font-size: 1.25rem; }
 
 header {
@@ -29,7 +29,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-family: 'Prompt', sans-serif;
   background: rgba(48, 48, 48, 0.9); }
 
 .navbar-dark .navbar-brand {
@@ -45,7 +44,6 @@ header {
   border-radius: 0; }
 
 .dropdown-item {
-  font-family: 'Prompt', sans-serif;
   font-weight: 600;
   padding-top: .75em;
   padding-bottom: .75em; }
@@ -64,7 +62,6 @@ header {
   padding: 7em 0;
   border-top: 1px solid #727272; }
   #footer .join {
-    font-family: "Prompt", sans-serif;
     font-weight: 200;
     font-size: 1.2rem; }
   #footer .social li {
@@ -155,7 +152,6 @@ header {
     background: #c2c2c2;
     margin-bottom: 2.5em; }
   #about .about-text {
-    font-family: "Prompt", sans-serif;
     font-size: 1.5rem;
     line-height: 1.9; }
   #about .fa-angle-down {
@@ -223,7 +219,6 @@ header {
   #trade-up p {
     font-weight: 600; }
   #trade-up .trade-btn {
-    font-family: 'Prompt', sans-serif;
     padding: .35em 1.5em;
     font-size: 1.5rem;
     font-weight: 700; }
@@ -248,7 +243,6 @@ header {
   #announcements p {
     font-weight: 600; }
   #announcements .announce-btn {
-    font-family: 'Prompt', sans-serif;
     padding: .35em 1.5em;
     font-size: 1.5rem;
     font-weight: 700; }
@@ -266,7 +260,6 @@ header {
   height: 60vh; }
 
 #address {
-  font-family: "Prompt";
   font-size: 1.25rem;
   padding: 3em 0;
   border-top: 1px solid #727272; }
@@ -278,3 +271,33 @@ header {
     margin-bottom: 0; }
   #address .form-control {
     font-size: 1.25rem; }
+
+#usDistributors {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid #727272; }
+  #usDistributors hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin-bottom: 2em; }
+  #usDistributors h3 {
+    font-size: 1.35rem; }
+  #usDistributors .usCompanies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    #usDistributors .usCompanies div {
+      margin-bottom: 1.75em; }
+    #usDistributors .usCompanies .phone-link {
+      color: #303030; }
+      #usDistributors .usCompanies .phone-link:hover, #usDistributors .usCompanies .phone-link:active {
+        text-decoration: none; }
+    #usDistributors .usCompanies .link {
+      color: #303030;
+      font-weight: 600; }
+      #usDistributors .usCompanies .link:hover, #usDistributors .usCompanies .link:active {
+        text-decoration: none; }
+    @media (max-width: 50em) {
+      #usDistributors .usCompanies {
+        grid-template-columns: 1fr; } }
