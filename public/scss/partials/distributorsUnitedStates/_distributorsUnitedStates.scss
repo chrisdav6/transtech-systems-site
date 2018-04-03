@@ -13,6 +13,9 @@
   
   h3 {
     font-size: 1.35rem;
+    background: $logo-yellow;
+    display: inline-block;
+    padding: .35em .5em;
   }
   
   .usCompanies {
@@ -21,6 +24,10 @@
     
     div {
       margin-bottom: 1.75em;
+    }
+    
+    span {
+      font-size: 1rem;
     }
     
     .phone-link {

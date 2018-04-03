@@ -283,12 +283,17 @@ header {
     background: #c2c2c2;
     margin-bottom: 2em; }
   #usDistributors h3 {
-    font-size: 1.35rem; }
+    font-size: 1.35rem;
+    background: #FFDE00;
+    display: inline-block;
+    padding: .35em .5em; }
   #usDistributors .usCompanies {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     #usDistributors .usCompanies div {
       margin-bottom: 1.75em; }
+    #usDistributors .usCompanies span {
+      font-size: 1rem; }
     #usDistributors .usCompanies .phone-link {
       color: #303030; }
       #usDistributors .usCompanies .phone-link:hover, #usDistributors .usCompanies .phone-link:active {
