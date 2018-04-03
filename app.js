@@ -25,6 +25,11 @@ app.get("/distributorsUnitedStates", function(req, res) {
   res.render("distributorsUnitedStates");
 });
 
+//Distributors International
+app.get("/distributorsInternational", function(req, res) {
+  res.render("distributorsInternational");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");

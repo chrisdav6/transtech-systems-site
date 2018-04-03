@@ -272,37 +272,37 @@ header {
   #address .form-control {
     font-size: 1.25rem; }
 
-#usDistributors {
+#distributors {
   font-size: 1.25rem;
   padding: 3em 0;
   border-top: 1px solid #727272; }
-  #usDistributors hr {
+  #distributors hr {
     border: none;
     height: 1px;
     width: 100%;
     background: #c2c2c2;
     margin-bottom: 2em; }
-  #usDistributors h3 {
+  #distributors h3 {
     font-size: 1.35rem;
     background: #FFDE00;
     display: inline-block;
     padding: .35em .5em; }
-  #usDistributors .usCompanies {
+  #distributors .companies {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-    #usDistributors .usCompanies div {
+    #distributors .companies div {
       margin-bottom: 1.75em; }
-    #usDistributors .usCompanies span {
+    #distributors .companies span {
       font-size: 1rem; }
-    #usDistributors .usCompanies .phone-link {
+    #distributors .companies .phone-link {
       color: #303030; }
-      #usDistributors .usCompanies .phone-link:hover, #usDistributors .usCompanies .phone-link:active {
+      #distributors .companies .phone-link:hover, #distributors .companies .phone-link:active {
         text-decoration: none; }
-    #usDistributors .usCompanies .link {
+    #distributors .companies .link {
       color: #303030;
       font-weight: 600; }
-      #usDistributors .usCompanies .link:hover, #usDistributors .usCompanies .link:active {
+      #distributors .companies .link:hover, #distributors .companies .link:active {
         text-decoration: none; }
     @media (max-width: 50em) {
-      #usDistributors .usCompanies {
+      #distributors .companies {
         grid-template-columns: 1fr; } }

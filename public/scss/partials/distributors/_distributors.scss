@@ -1,4 +1,4 @@
-#usDistributors {
+#distributors {
   font-size: 1.25rem;
   padding: 3em 0;
   border-top: 1px solid $gray;
@@ -18,7 +18,7 @@
     padding: .35em .5em;
   }
   
-  .usCompanies {
+  .companies {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
