@@ -52,222 +52,301 @@ function initMap() {
     var infoWindowContent = [
 			// Alabama
 	    [
-	    '<div class="map-text">' +
-	    '<span>Atlantic Supply</span><br>' +
-	    '<hr>' +
-	    '5400 Perimeter Pkwy Court <br>' +
-	    'Montgomery, AL  36116 <br>' +
-	    '866-917-3447 <br>' +
-	    'Attn: Paul Eikenberry <br>' +
-	    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-	    '</div>'],
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '5400 Perimeter Pkwy Court<br>' +
+		    'Montgomery, AL  36116<br>' +
+		    '866-917-3447<br>' +
+		    'Attn: Paul Eikenberry<br>' +
+		    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
-			// Conneticut
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+			// Connecticut
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Jacksonville Florida 
-			['<div class="info_content">' +
-			'<h3><b>Atlantic Supply</b></h3>' +
-			'6919 Distribution Ave. South, Unit #1 <br>' +
-			'Jacksonville, FL  32256 <br>' +
-			'888-260-5584 <br>' +
-	    'Attn: Scot Hall <br>' +
-			'<a href="mailto:scothall@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+	    [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '6919 Distribution Ave. South, Unit #1<br>' +
+		    'Jacksonville, FL 32256<br>' +
+		    '888-260-5584<br>' +
+		    'Attn: Scot Hall<br>' +
+		    '<p><a class="link" href="mailto:scothall@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Largo Florida
-			['<div class="info_content">' +
-	    '<h3><b>Atlantic Supply</b></h3>' +
-			'6462 125th. Ave. North <br>' +
-			'Largo, FL  33773-3601 <br>' +
-			'800-752-9416 <br>' +
-	    'Attn: Stephanie Miller <br>' +
-			'<a href="mailto:stephanie@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+	    [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '6462 125th. Ave. North<br>' +
+		    'Largo, FL 33773-3601<br>' +
+		    '800-752-9416<br>' +
+		    'Attn: Stephanie Miller<br>' +
+		    '<p><a class="link" href="mailto:stephanie@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Orlando Florida
-			['<div class="info_content">' +
-	    '<h3><b>Atlantic Supply</b></h3>' +
-			'3315 Maggie Blvd. Suite #1000 <br>' +
-			'Orlando, FL 32811 <br>' +
-			'800-569-8950 <br>' +
-	    'Attn: Mike Gordon <br>' +
-			'<a href="mailto:mgordon@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+	    [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '3315 Maggie Blvd. Suite #1000<br>' +
+		    'Orlando, FL 32811<br>' +
+		    '800-569-8950<br>' +
+		    'Attn: Sam Goodson<br>' +
+		    '<p><a class="link" href="mailto:sgoodson@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Riviera Beach Florida
-			['<div class="info_content">' +
-	    '<h3><b>Atlantic Supply</b></h3>' +
-			'3740 Prospect Ave.  Unit #4 <br>' +
-			'Riviera Beach, FL  33404 <br>' +
-			'800-535-7384 <br>' +
-	    'Attn: Lou Lemenze <br>' +
-			'<a href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+	    [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '3740 Prospect Ave. Unit #4<br>' +
+		    'Riviera Beach, FL 33404<br>' +
+		    '800-535-7384<br>' +
+		    'Attn: Lou Lemenze<br>' +
+		    '<p><a class="link" href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Idaho
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Illinois
-			['<div class="info_content">' +
-	    '<h3><b>Great Lakes Equipment</b></h3>' +
-			'590 Mayer Street <br>' +
-			'Oglesby, IL 61348 <br>' +
-			'815-220-7709 <br>' +
-	    'Attn: Steve Hoscheid <br>' +
-			'<a href="mailto:hoscheids@greatlakeseq.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Great Lakes Equipment / Patten Tractor</span><br>' +
+		    '<hr>' +
+		    '590 Mayer Street<br>' +
+		    'Oglesby, IL 61348<br>' +
+		    '815-220-7709<br>' +
+		    'Attn: Steve Hoscheid<br>' +
+		    '<p><a class="link" href="mailto:hoscheids@greatlakeseq.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Indiana
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Louisiana
-			['<div class="info_content">' +
-	    '<h3><b>Atlantic Supply</b></h3>' +
-			'5400 Perimeter Pkwy Court <br>' +
-			'Montgomery, AL  36116 <br>' +
-			'866-917-3447 <br>' +
-	    'Attn: Paul Eikenberry <br>' +
-			'<a href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '5400 Perimeter Pkwy Court<br>' +
+		    'Montgomery, AL 36116<br>' +
+		    '866-917-3447<br>' +
+		    'Attn: Paul Eikenberry<br>' +
+		    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Maine
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Massachusetts
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 	
 			// Michigan
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Mississippi
-			['<div class="info_content">' +
-	    '<h3><b>Atlantic Supply</b></h3>' +
-			'5400 Perimeter Pkwy Court <br>' +
-			'Montgomery, AL  36116 <br>' +
-			'866-917-3447 <br>' +
-	    'Attn: Paul Eikenberry <br>' +
-			'<a href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '5400 Perimeter Pkwy Court<br>' +
+		    'Montgomery, AL 36116<br>' +
+		    '866-917-3447<br>' +
+		    'Attn: Paul Eikenberry<br>' +
+		    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Missouri
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Nebraska
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// New Hampshire
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 	
 			// North Carolina
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Ohio
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Pennsylvania
-			['<div class="info_content">' +
-	    '<h3><b>Groff Tractor & Equipment</b></h3>' +
-			'963 South Center Ave. <br>' +
-			'New Stanton, PA 15672 <br>' +
-	    '717-766-7671 <br>' +
-			'Attn: Matt Wilson <br>' +
-			'<a href="mailto:mattwilson@grofftractor.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Groff Tractor & Equipment</span><br>' +
+		    '<hr>' +
+		    '963 South Center Ave.<br>' +
+		    'New Stanton, PA 15672<br>' +
+		    '717-766-7671<br>' +
+		    'Attn: Matt Wilson<br>' +
+		    '<p><a class="link" href="mailto:mattwilson@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Puerto Rico
-			['<div class="info_content">' +
-	    '<h3><b>Atlantic Supply</b></h3>' +
-			'6462 125th. Ave. North <br>' +
-			'Largo, FL 33773-3601 <br>' +
-			'727-530-9581 <br>' +
-	    'Attn: Carlos Licona <br>' +
-			'<a href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Atlantic Supply</span><br>' +
+		    '<hr>' +
+		    '6462 125th. Ave. North<br>' +
+		    'Largo, FL 33773-3601<br>' +
+		    '727-530-9581<br>' +
+		    'Attn: Carlos Licona<br>' +
+		    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Rhode Island
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 	
 			// South Carolina
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
 			
 			// Texas
-			['<div class="info_content">' +
-	    '<h3><b>Marcus McCorison</b></h3>' +
-			'522 Rt. 81 <br>' +
-			'Killingworth, CT  <br>' +
-	    '860-883-6470 <br>' +
-			'Attn: Marcus McCorison <br>' +
-			'<a href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Website">Click to Email</a> ' +        '</div>'],
+		   [
+		    '<div class="map-text">' +
+		    '<span>Marcus McCorison</span><br>' +
+		    '<hr>' +
+		    '522 Rt. 81<br>' +
+		    'Killingworth, CT<br>' +
+		    '860-883-6470<br>' +
+		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+		    '</div>'
+	    ],
     ];
         
     // Display multiple markers on a map
