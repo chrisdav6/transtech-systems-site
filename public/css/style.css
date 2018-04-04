@@ -272,6 +272,21 @@ header {
   #address .form-control {
     font-size: 1.25rem; }
 
+.map-text {
+  font-size: .85rem; }
+  .map-text span {
+    font-weight: 600; }
+  .map-text hr {
+    margin: .5em 0; }
+  .map-text p {
+    margin-top: 1em;
+    margin-bottom: 0; }
+  .map-text .link {
+    color: #303030;
+    font-weight: 600; }
+    .map-text .link:hover, .map-text .link:active {
+      text-decoration: none; }
+
 #distributors {
   font-size: 1.25rem;
   padding: 3em 0;
