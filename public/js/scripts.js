@@ -15,4 +15,9 @@ $(function() {
     easing: 'easeInOutQuart'
   });
   
+  //Enable Bootstrap 4 Popovers
+  $('[data-hover="popover"]').popover({
+    trigger: "hover"
+  });
+  
 });

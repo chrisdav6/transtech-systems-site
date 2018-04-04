@@ -293,7 +293,7 @@ header {
     #distributors .companies div {
       margin-bottom: 1.75em; }
     #distributors .companies span {
-      font-size: 1rem; }
+      font-weight: 600; }
     #distributors .companies .phone-link {
       color: #303030; }
       #distributors .companies .phone-link:hover, #distributors .companies .phone-link:active {
