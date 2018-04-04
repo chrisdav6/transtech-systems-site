@@ -36,7 +36,7 @@ function initMap() {
 	    'Latham, NY 12110<br>' +
 	    '518-370-5558<br>' +
 	    '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-	    '</div>'],
+	    '</div>']
     ];
         
     // Display multiple markers on a map
@@ -61,5 +61,4 @@ function initMap() {
       })(marker, i));
     }
 
-    
 }

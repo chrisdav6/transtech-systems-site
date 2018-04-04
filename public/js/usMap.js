@@ -346,7 +346,7 @@ function initMap() {
 		    '860-883-6470<br>' +
 		    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 		    '</div>'
-	    ],
+	    ]
     ];
         
     // Display multiple markers on a map
@@ -371,5 +371,4 @@ function initMap() {
       })(marker, i));
     }
 
-    
 }
