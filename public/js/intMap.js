@@ -395,9 +395,9 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Equipos de Auscultacion</span><br>' +
 	    '<hr>' +
-	    'Rey Alberto 4370, San Miguel<br>' +
-	    'Santiago-8910299- Chile<br>' +
-	    '+562-297-0720<br>' +
+	    'La Oración 1293, Pudahuel<br>' +
+	    'Santiago, Chile<br>' +
+	    '+562 24069792<br>' +
 	    'Attn: Claudio Fuentes Lopez<br>' +
 	    '<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 	    '</div>'

@@ -1,10 +1,6 @@
 $(function() {
   
-  // $(window).on("scroll", function() {
-  //   $(".navbar").css("background", "rgba(21, 34, 53, .95)");
-  // });
-  
-  //Smooth Scroll on featured and about only
+  //Smooth Scroll on #featured and #about only
   var scrollFeatured = new SmoothScroll('a[href="#featured"]', {
     speed: 800,
     easing: 'easeInOutQuart'
@@ -15,9 +11,30 @@ $(function() {
     easing: 'easeInOutQuart'
   });
   
+  
+  
   //Enable Bootstrap 4 Popovers
   $('[data-hover="popover"]').popover({
     trigger: "hover"
+  });
+  
+  
+  
+  //Scroll to top button animation
+  var offsetTop = $(window).height();
+  
+  $(window).scroll(function() {
+    if($("html").scrollTop() > offsetTop && $(document).width() > 700) {
+      $("#scrollBtn").fadeIn();
+    }else {
+      $("#scrollBtn").fadeOut();
+    }
+  });
+  
+  $("#scrollBtn").on("click", function() {
+    $('html').animate({
+      scrollTop: 0
+    },500);
   });
   
 });
