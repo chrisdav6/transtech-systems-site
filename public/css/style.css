@@ -334,6 +334,13 @@ header {
   padding: 3em 0;
   border-top: 1px solid #727272;
   min-height: 100vh; }
+  #news .news-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.5em; }
+    @media (max-width: 50em) {
+      #news .news-items {
+        grid-template-columns: 1fr; } }
   #news hr {
     border: none;
     height: 1px;
@@ -345,3 +352,18 @@ header {
     background: #FFDE00;
     display: inline-block;
     padding: .35em .5em; }
+  #news .news-link {
+    display: block;
+    color: #303030;
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.25; }
+    #news .news-link:hover, #news .news-link:active {
+      text-decoration: none; }
+  #news p {
+    font-size: 1.1rem;
+    margin-bottom: 3em; }
+    #news p .link {
+      color: #303030; }
+      #news p .link:hover, #news p .link:active {
+        text-decoration: none; }

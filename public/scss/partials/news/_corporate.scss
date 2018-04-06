@@ -3,6 +3,16 @@
   padding: 3em 0;
   border-top: 1px solid $gray;
   min-height: 100vh;
+  
+  .news-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.5em;
+    
+    @include mq() {
+      grid-template-columns: 1fr;
+    }
+  }
 
   hr {
     border: none;
@@ -19,5 +29,31 @@
     padding: .35em .5em;
   }
   
+  .news-link {
+    display: block;
+    color: $dark-gray;
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.25;
+  
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 3em;
+    
+    .link {
+      color: $dark-gray;
+  
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
   
 }
