@@ -26,6 +26,13 @@
   @include mq {
     padding: 0em 0em 5em 0em;
     
+    .announce-btn {
+      display: block;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  
     h1 {
       font-size: 1.5rem;
     }
