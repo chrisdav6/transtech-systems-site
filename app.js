@@ -30,6 +30,11 @@ app.get("/distributorsInternational", function(req, res) {
   res.render("distributorsInternational");
 });
 
+//Corporate News
+app.get("/corporateNews", function(req, res) {
+  res.render("corporateNews");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");
