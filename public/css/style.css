@@ -384,6 +384,45 @@ header {
       #news p .link:hover, #news p .link:active {
         text-decoration: none; }
 
+#newsletter {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid #727272;
+  min-height: 90vh; }
+  #newsletter .newsletter-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.5em; }
+    @media (max-width: 50em) {
+      #newsletter .newsletter-items {
+        grid-template-columns: 1fr; } }
+  #newsletter hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin-bottom: 2em; }
+  #newsletter h3 {
+    font-size: 1.35rem;
+    background: #FFDE00;
+    display: inline-block;
+    padding: .35em .5em; }
+  #newsletter .news-link {
+    display: block;
+    color: #303030;
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.25; }
+    #newsletter .news-link:hover, #newsletter .news-link:active {
+      text-decoration: none; }
+  #newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 3em; }
+    #newsletter p .link {
+      color: #303030; }
+      #newsletter p .link:hover, #newsletter p .link:active {
+        text-decoration: none; }
+
 #tradeshows {
   font-size: 1.25rem;
   padding: 3em 0;
