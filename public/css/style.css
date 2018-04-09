@@ -383,3 +383,35 @@ header {
       color: #303030; }
       #news p .link:hover, #news p .link:active {
         text-decoration: none; }
+
+#tradeshows {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid #727272;
+  min-height: 100vh; }
+  #tradeshows hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin-bottom: 2em; }
+  #tradeshows h3 {
+    font-size: 1.35rem;
+    background: #FFDE00;
+    display: inline-block;
+    padding: .35em .5em; }
+  #tradeshows .news-link {
+    display: block;
+    color: #303030;
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.25; }
+    #tradeshows .news-link:hover, #tradeshows .news-link:active {
+      text-decoration: none; }
+  #tradeshows p {
+    font-size: 1.1rem;
+    margin-bottom: 3em; }
+    #tradeshows p .link {
+      color: #303030; }
+      #tradeshows p .link:hover, #tradeshows p .link:active {
+        text-decoration: none; }

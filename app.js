@@ -35,6 +35,11 @@ app.get("/corporateNews", function(req, res) {
   res.render("corporateNews");
 });
 
+//Tradeshows
+app.get("/tradeshows", function(req, res) {
+  res.render("tradeshows");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");
