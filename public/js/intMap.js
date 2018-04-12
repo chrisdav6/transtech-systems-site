@@ -118,9 +118,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -132,8 +129,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -145,8 +140,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Perta</span><br>' +
 	    '<hr>' +
-	    'Rua Jaime Lopes Dias, n° 3 A/B<br>' +
-	    '1750-124 Lisbon Portugal<br>' +
 	    '+351-21-752-05-60<br>' +
 	    'Attn: Paulo Frias Costa<br>' +
 	    '<p><a class="link" href="mailto:pfcosta@perta.pt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -158,7 +151,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Mertind Ltda.</span><br>' +
 	    '<hr>' +
-	    '#410 Santa Cruz de la Sierra, Bolivia<br>' +
 	    '+591-3-336-7676<br>' +
 	    'Attn: Mauricio Lijeron Eguez<br>' +
 	    '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -170,8 +162,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -183,9 +173,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Motorway Technologies</span><br>' +
 	    '<hr>' +
-	    '10 Beechwood Court<br>' +
-	    'PO Box 75<br>' +
-	    'Mernda Vic. 3754<br>' +
 	    '+61-418-235-048<br>' +
 	    'Attn: Adrian Rogers<br>' +
 	    '<p><a class="link" href="mailto:bear.adrianrogers@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -197,8 +184,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>TransTech Europe</span><br>' +
 	    '<hr>' +
-	    'Osterdiek 11<br>' +
-	    'Oldenburg D-26125, Germany<br>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
 	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -210,8 +195,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -223,9 +206,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -237,8 +217,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -250,9 +228,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Asintra</span><br>' +
 	    '<hr>' +
-	    'Postbus 2059<br>' +
-	    '7301 DB Apeldoorn<br>' +
-	    'Nederland<br>' +
 	    '+31-(0)620248145<br>' +
 	    'Attn: Joop Mennink<br>' +
 	    '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -264,8 +239,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -277,7 +250,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Mertind Ltda.</span><br>' +
 	    '<hr>' +
-	    '#410 Santa Cruz de la Sierra, Bolivia<br>' +
 	    '+591-3-336-7676<br>' +
 	    'Attn: Mauricio Lijeron Eguez<br>' +
 	    '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -289,10 +261,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Solotest</span><br>' +
 	    '<hr>' +
-	    'Mecânica do Solo Ltda,<br>' +
-	    'Rua Conselheiro Carrão, 275<br>' +
-	    'Bela Vista. CEP 01328-000<br>' +
-	    'São Paulo – SP Brazil<br>' +
 	    '+5511-3289-0211<br>' +
 	    'Attn: Rodrigo Barella<br>' +
 	    '<p><a class="link" href="mailto:rodrigobarella@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -304,8 +272,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>TransTech Europe (Gepasz)</span><br>' +
 	    '<hr>' +
-	    'Osterdiek 11<br>' +
-	    'Oldenburg D-26125, Germany<br>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
 	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -317,8 +283,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -330,8 +294,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -343,8 +305,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Hoskin Scientific</span><br>' +
 	    '<hr>' +
-	    '3735 Myrtle Street<br>' +
-	    'Burnaby, BC V5C 4E7<br>' +
 	    '604-872-7894<br>' +
 	    'Attn: Jamie Emery<br>' +
 	    '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -356,8 +316,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Hoskin Scientific</span><br>' +
 	    '<hr>' +
-	    '300 Rue Stinson<br>' +
-	    'Saint-Laurent, QC H4N 2E7<br>' +
 	    '514-735-5267<br>' +
 	    'Attn: Sylvain Paquette<br>' +
 	    '<p><a class="link" href="mailto:spaquette@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -369,8 +327,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Hoskin Scientific</span><br>' +
 	    '<hr>' +
-	    '4210 Morris Drive<br>' +
-	    'Burlington, ON L7L 5L6<br>' +
 	    '905-333-5510<br>' +
 	    'Attn: Melanie Crossman<br>' +
 	    '<p><a class="link" href="mailto:mcrossman@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -382,8 +338,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Hoskin Scientific</span><br>' +
 	    '<hr>' +
-	    'Unit 100, 18138 105th Avenue<br>' +
-	    'Edmonton, AB T5S 2T4<br>' +
 	    '780-434-2645<br>' +
 	    'Attn: Jamie Emery<br>' +
 	    '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -395,8 +349,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Equipos de Auscultacion</span><br>' +
 	    '<hr>' +
-	    'La Oración 1293, Pudahuel<br>' +
-	    'Santiago, Chile<br>' +
 	    '+562 24069792<br>' +
 	    'Attn: Claudio Fuentes Lopez<br>' +
 	    '<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -408,9 +360,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Earth Products China Limited</span><br>' +
 	    '<hr>' +
-	    'Room 1205-06 Seapower Center<br>' +
-	    '73-77 Lei Muk Road<br>' +
-	    'Kwai Chung, Hong Kong<br>' +
 	    '+852-2392-8698<br>' +
 	    'Attn: Janet Lo<br>' +
 	    '<p><a class="link" href="mailto:janet@epc.com.hk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -424,8 +373,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -437,8 +384,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Atlantic Supply</span><br>' +
 	    '<hr>' +
-	    '6462 125th. Ave. North<br>' +
-	    'Largo, FL 33773-3601<br>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
 	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -450,8 +395,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -463,8 +406,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>TransTech Europe</span><br>' +
 	    '<hr>' +
-	    'Osterdiek 11<br>' +
-	    'Oldenburg D-26125, Germany<br>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
 	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -476,8 +417,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>ABAS AS</span><br>' +
 	    '<hr>' +
-	    'Postboks 51<br>' +
-	    'N-3421 Lierskogen, Norway<br>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
 	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -489,8 +428,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Imporequip</span><br>' +
 	    '<hr>' +
-	    'De Los Madronos Y Lizarzaburo<br>' +
-	    'Quito, Ecuador N47-305<br>' +
 	    '+08-715-4550<br>' +
 	    'Attn: Vladimir Rojas<br>' +
 	    '<p><a class="link" href="mailto:ventas@imporequip.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -502,7 +439,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bincis UAB</span><br>' +
 	    '<hr>' +
-	    'Jonava LT-55200 Lietuva/Lithuania<br>' +
 	    '+370-3497-8021<br>' +
 	    'Attn: Edvinas Peleckas<br>' +
 	    '<p><a class="link" href="mailto:bincis@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -514,8 +450,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>ABAS AS</span><br>' +
 	    '<hr>' +
-	    'Postboks 51<br>' +
-	    'N-3421 Lierskogen, Norway<br>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
 	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -527,9 +461,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Grollemund Laboroutes</span><br>' +
 	    '<hr>' +
-	    '16, cours A. Schoen<br>' +
-	    '68 124 Logelbach France<br>' +
-	    'N-3421 Lierskogen, Norway<br>' +
 	    '+333-8927-1644<br>' +
 	    'Attn: Michel Grollemund<br>' +
 	    '<p><a class="link" href="mailto:michel@grollemund.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -541,8 +472,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -554,8 +483,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>TransTech Europe</span><br>' +
 	    '<hr>' +
-	    'Osterdiek 11<br>' +
-	    'Oldenburg D-26125, Germany<br>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
 	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -567,8 +494,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -580,8 +505,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -593,8 +516,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>TransTech Europe (Wirtgen Budapest Kft.)</span><br>' +
 	    '<hr>' +
-	    'Osterdiek 11<br>' +
-	    'Oldenburg D-26125, Germany<br>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
 	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -606,8 +527,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>ABAS AS</span><br>' +
 	    '<hr>' +
-	    'Postboks 51<br>' +
-	    'N-3421 Lierskogen, Norway<br>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
 	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -619,9 +538,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -633,9 +549,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>PT Panairsan Pratama</span><br>' +
 	    '<hr>' +
-	    'Kedoya Elok Plaza Blok DB No. 23<br>' +
-	    'Jl. Panjang, Kebon Jeruk Jakarta,<br>' +
-	    'Barat 11520 Indonesia<br>' +
 	    '+62-21-580-7881<br>' +
 	    'Attn: Irsan Aditama<br>' +
 	    '<p><a class="link" href="mailto:irsan@panairsan.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -647,8 +560,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>CFU Intl Trade & Services</span><br>' +
 	    '<hr>' +
-	    '100 Meters Road<br>' +
-	    'Iraq, Kurdistan Region, Erbil<br>' +
 	    '+964-750-464-9002<br>' +
 	    'Attn: Ahmed Hamad<br>' +
 	    '<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -660,9 +571,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>JR Technical Services UK Ltd</span><br>' +
 	    '<hr>' +
-	    '9 Longniddry Court<br>' +
-	    'Gateshead,<br>' +
-	    'Tyne & Wear, NE9 6JX<br>' +
 	    '+44-191-461-1103<br>' +
 	    'Attn: Callum Brady<br>' +
 	    '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -674,8 +582,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Nishio Rent All Co., Ltd</span><br>' +
 	    '<hr>' +
-	    'No. 1-11-17, Higashi-shinsaibashi<br>' +
-	    'Chuo-ku, Osaka 542-0083 Japan<br>' +
 	    '+816-6241-0240<br>' +
 	    'Attn: Yukihiro Kimura<br>' +
 	    '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -687,8 +593,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -700,9 +604,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Sam Jun Scientific Co., Ltd</span><br>' +
 	    '<hr>' +
-	    'Room No. 237, LG Twin House, #192,<br>' +
-	    'Gumi-Dong, Bundang-Gu<br>' +
-	    'Seongnam-Si, Gyeonggi-Do 463-709 Korea<br>' +
 	    '+82-(0)31-714-2555 ~ 6<br>' +
 	    'Attn: Mr. Won-Yang Park<br>' +
 	    '<p><a class="link" href="mailto:wypark@lycos.co.kr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -714,8 +615,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -727,7 +626,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bincis UAB</span><br>' +
 	    '<hr>' +
-	    'Jonava LT-55200 Lietuva/Lithuania<br>' +
 	    '+370-3497-8021<br>' +
 	    'Attn: Edvinas Peleckas<br>' +
 	    '<p><a class="link" href="mailto:bincis@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -739,7 +637,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bincis UAB</span><br>' +
 	    '<hr>' +
-	    'Jonava LT-55200 Lietuva/Lithuania<br>' +
 	    '+370-3497-8021<br>' +
 	    'Attn: Edvinas Peleckas<br>' +
 	    '<p><a class="link" href="mailto:bincis@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -751,8 +648,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>MS Instruments (SEA) Sdn Bhd</span><br>' +
 	    '<hr>' +
-	    '52 Jalan USJ 9/5P, 47620 UEP Subang Jaya<br>' +
-	    'Selangor, Malaysia<br>' +
 	    '+603-802-41615<br>' +
 	    'Attn: H.S. Yap<br>' +
 	    '<p><a class="link" href="mailto:yhs@msisb.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -764,8 +659,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -777,8 +670,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -790,8 +681,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -803,8 +692,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Atlantic Supply</span><br>' +
 	    '<hr>' +
-	    '6462 125th. Ave. North<br>' +
-	    'Largo, FL 33773-3601<br>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
 	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -816,8 +703,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -829,9 +714,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -843,9 +725,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Asintra</span><br>' +
 	    '<hr>' +
-	    'Postbus 2059<br>' +
-	    '7301 DB Apeldoorn<br>' +
-	    'Nederland<br>' +
 	    '+31-(0)620248145<br>' +
 	    'Attn: Joop Mennink<br>' +
 	    '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -857,9 +736,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Motorway Technologies</span><br>' +
 	    '<hr>' +
-	    '10 Beechwood Court<br>' +
-	    'PO Box 75<br>' +
-	    'Mernda Vic. 3754<br>' +
 	    '+61-418-235-048<br>' +
 	    'Attn: Adrian Rogers<br>' +
 	    '<p><a class="link" href="mailto:bear.adrianrogers@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -871,8 +747,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -884,8 +758,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>ABAS AS</span><br>' +
 	    '<hr>' +
-	    'Postboks 51<br>' +
-	    'N-3421 Lierskogen, Norway<br>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
 	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -897,9 +769,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -911,9 +780,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -925,8 +791,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Atlantic Supply</span><br>' +
 	    '<hr>' +
-	    '6462 125th. Ave. North<br>' +
-	    'Largo, FL 33773-3601<br>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
 	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -938,8 +802,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Siccion Marketing</span><br>' +
 	    '<hr>' +
-	    'CBS Building 1800 A. Mendoza St.<br>' +
-	    'Sampaloc Manila, 1008, Philippines<br>' +
 	    '+632 711-8416/22<br>' +
 	    'Attn: Victor Pulido<br>' +
 	    '<p><a class="link" href="mailto:vpulido@smi-group.com.ph?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -951,8 +813,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Toropol, Ltd</span><br>' +
 	    '<hr>' +
-	    '03-620 Warszawa<br>' +
-	    'str. Czarna Droga 29 Poland<br>' +
 	    '+4822-519-4070<br>' +
 	    'Attn: Krzysztof; Tomasz Roszkowski<br>' +
 	    '<p><a class="link" href="mailto:krzysztof@toropol.pl?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -964,8 +824,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Proeti, S.A.</span><br>' +
 	    '<hr>' +
-	    'Carretera de Algete M-106, km. 4,100<br>' +
-	    '28110 Algete - Madrid<br>' +
 	    '+4822-519-4070<br>' +
 	    'Attn: Carlos Blazquez<br>' +
 	    '<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -977,8 +835,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Intermodal Services Co. W.L.L.</span><br>' +
 	    '<hr>' +
-	    'P.O. Box 31242<br>' +
-	    'Doha - Qatar<br>' +
 	    '+974-4462-1168<br>' +
 	    'Attn: N. S. Hegde / Vikram Shekhawat<br>' +
 	    '<p><a class="link" href="mailto:vikram@intermodalqatar.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -990,8 +846,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1003,8 +857,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1016,8 +868,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1029,8 +879,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Nishio Rent All Co., Ltd</span><br>' +
 	    '<hr>' +
-	    'No. 1-11-17, Higashi-shinsaibashi<br>' +
-	    'Chuo-ku, Osaka 542-0083 Japan<br>' +
 	    '+816-6241-0240<br>' +
 	    'Attn: Yukihiro Kimura<br>' +
 	    '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1042,8 +890,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>TransTech Europe (Celab d.o.o.)</span><br>' +
 	    '<hr>' +
-	    'Osterdiek 11<br>' +
-	    'Oldenburg D-26125, Germany<br>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
 	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1055,8 +901,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Proeti, S.A.</span><br>' +
 	    '<hr>' +
-	    'Carretera de Algete M-106, km. 4,100<br>' +
-	    '28110 Algete - Madrid<br>' +
 	    '+4822-519-4070<br>' +
 	    'Attn: Carlos Blazquez<br>' +
 	    '<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1068,9 +912,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>M/s. Taisei International</span><br>' +
 	    '<hr>' +
-	    'H - 84, PLOT: 1421<br>' +
-	    '13th Main Road<br>' +
-	    'ANNANAGAR, CHENNAI - 40<br>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
 	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1082,8 +923,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>ABAS AS</span><br>' +
 	    '<hr>' +
-	    'Postboks 51<br>' +
-	    'N-3421 Lierskogen, Norway<br>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
 	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1095,8 +934,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1108,8 +945,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1121,8 +956,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1134,9 +967,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Asia Testing Equipment Co., Ltd</span><br>' +
 	    '<hr>' +
-	    '2/37 Soi. Prasoet Manukit 29 Yack 4,<br>' +
-	    'Prasoet Manukit Rd.<br>' +
-	    'Ladprao, Bangkok, 10230 Thailand<br>' +
 	    '+02-553-0809<br>' +
 	    'Attn: Mr. Nantapong Phuetphon<br>' +
 	    '<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1148,9 +978,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>PT Panairsan Pratama</span><br>' +
 	    '<hr>' +
-	    'Kedoya Elok Plaza Blok DB No. 23<br>' +
-	    'Jl. Panjang, Kebon Jeruk Jakarta,<br>' +
-	    'Barat 11520 Indonesia<br>' +
 	    '+62-21-580-7881<br>' +
 	    'Attn: Irsan Aditama<br>' +
 	    '<p><a class="link" href="mailto:irsan@panairsan.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1162,8 +989,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1175,8 +1000,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Beratest AG</span><br>' +
 	    '<hr>' +
-	    'Finkenweg 7<br>' +
-	    'CH-5036 Oberentfelden, Switzerland<br>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
 	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1188,8 +1011,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1201,8 +1022,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>CFU Intl Trade &amp; Services</span><br>' +
 	    '<hr>' +
-	    '100 Meters Road<br>' +
-	    'Iraq, Kurdistan Region, Erbil<br>' +
 	    '+964-750-464-9002<br>' +
 	    'Attn: Ahmed Hamad<br>' +
 	    '<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1214,8 +1033,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1227,9 +1044,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>JR Technical Services UK Ltd</span><br>' +
 	    '<hr>' +
-	    '9 Longniddry Court<br>' +
-	    'Gateshead,<br>' +
-	    'Tyne & Wear, NE9 6JX<br>' +
 	    '+44-191-461-1103<br>' +
 	    'Attn: Callum Brady<br>' +
 	    '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1241,8 +1055,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Bav Corporation, Inc.</span><br>' +
 	    '<hr>' +
-	    '1600 Providence Highway, Suite 142<br>' +
-	    'Walpole, MA 02081 USA<br>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
 	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -1254,8 +1066,6 @@ function initMap() {
 	    '<div class="map-text">' +
 	    '<span>Nishio Rent All Co., Ltd</span><br>' +
 	    '<hr>' +
-	    'No. 1-11-17, Higashi-shinsaibashi<br>' +
-	    'Chuo-ku, Osaka 542-0083 Japan<br>' +
 	    '+816-6241-0240<br>' +
 	    'Attn: Yukihiro Kimura<br>' +
 	    '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
