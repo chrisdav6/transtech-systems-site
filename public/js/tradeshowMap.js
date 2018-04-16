@@ -22,9 +22,12 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+    ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
+    ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
-    ['World of Asphalt, Indianapolis, IN', 39.761228,  -86.163655],
+    ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
+    ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -44,6 +47,18 @@ function initMap() {
 	    '</div>'
     ],
     
+		// NEAUPG
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" src="../img/neaupg-logo.png">' +
+	    '<span>NEAUPG</span><br>' +
+	    '<hr>' +
+	    'Atlantic City, NJ<br>' +
+	    'October 16-17 2018<br>' +
+	    '<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
+    ],
+    
 		// SEAUPG
     [
 	    '<div class="map-text">' +
@@ -53,6 +68,18 @@ function initMap() {
 	    'Raleigh, NC<br>' +
 	    'November 12-15 2018<br>' +
 	    '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
+    ],
+    
+		// APAI
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" src="../img/apai-logo.png">' +
+	    '<span>APAI</span><br>' +
+	    '<hr>' +
+	    'Indianapolis, IN<br>' +
+	    'December 19-21 2018<br>' +
+	    '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -75,8 +102,21 @@ function initMap() {
 	    '<span>World of Asphalt</span><br>' +
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
+	    'Booth# 26127<br>' +
 	    'February 12-14 2019<br>' +
 	    '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
+    ],
+    
+		// RMACES
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" src="../img/rmaces-logo.png">' +
+	    '<span>RMACES</span><br>' +
+	    '<hr>' +
+	    'Denver, CO<br>' +
+	    'February 27-March 1 2019<br>' +
+	    '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
