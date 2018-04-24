@@ -1,0 +1,64 @@
+#community {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid $gray;
+  min-height: 100vh;
+
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: darken($light-gray, 10%);
+    margin-bottom: 2em;
+  }
+  
+  h3 {
+    font-size: 1.35rem;
+    background: $logo-yellow;
+    display: inline-block;
+    padding: .35em .5em;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .date {
+    position: absolute;
+    display: inline-block;
+    padding: .35em;
+    background: $dark;
+    color: white;
+    font-size: .75rem;
+  }
+}
+
+.communityModal h4 {
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.communityModal p {
+  font-size: 1.1rem;
+  
+  .link {
+    color: $dark-gray;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.communityModal img {
+  width: 95%;
+}

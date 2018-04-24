@@ -454,3 +454,47 @@ header {
       color: #303030; }
       #tradeshows p .link:hover, #tradeshows p .link:active {
         text-decoration: none; }
+
+#community {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid #727272;
+  min-height: 100vh; }
+  #community hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin-bottom: 2em; }
+  #community h3 {
+    font-size: 1.35rem;
+    background: #FFDE00;
+    display: inline-block;
+    padding: .35em .5em; }
+  #community .card {
+    position: relative; }
+  #community .card img {
+    height: 250px;
+    object-fit: cover; }
+  #community .card-text {
+    font-size: 1rem; }
+  #community .date {
+    position: absolute;
+    display: inline-block;
+    padding: .35em;
+    background: #202329;
+    color: white;
+    font-size: .75rem; }
+
+.communityModal h4 {
+  font-family: 'Alfa Slab One', sans-serif; }
+
+.communityModal p {
+  font-size: 1.1rem; }
+  .communityModal p .link {
+    color: #303030; }
+    .communityModal p .link:hover, .communityModal p .link:active {
+      text-decoration: underline; }
+
+.communityModal img {
+  width: 95%; }

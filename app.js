@@ -40,6 +40,11 @@ app.get("/tradeshows", function(req, res) {
   res.render("tradeshows");
 });
 
+//Community
+app.get("/community", function(req, res) {
+  res.render("community");
+});
+
 //Newsletter
 app.get("/newsletter", function(req, res) {
   res.render("newsletter");
