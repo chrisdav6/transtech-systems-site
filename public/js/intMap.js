@@ -13,7 +13,8 @@ function initMap() {
     	lng: 17.234
     },
     zoom: 3,
-    mapTypeId: 'roadmap'
+    mapTypeId: 'roadmap',
+    scrollwheel: false
   };
                   
   // Display a map on the page
@@ -1084,7 +1085,6 @@ function initMap() {
     marker = new google.maps.Marker({
       position: position,
       map: map,
-      animation: google.maps.Animation.DROP,
       title: markers[i][0],
     });
     

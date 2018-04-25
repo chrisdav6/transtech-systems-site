@@ -9,11 +9,12 @@ function initMap() {
 
   var mapOptions = {
     center: {
-    	lat: 39.385,
-    	lng: -95.381
+    	lat: 35.643,
+    	lng: -98.910
     },
-    zoom: 5,
-    mapTypeId: 'roadmap'
+    zoom: 4,
+    mapTypeId: 'roadmap',
+    scrollwheel: false
   };
   
 	var icons = {
@@ -649,7 +650,6 @@ function initMap() {
 			marker = new google.maps.Marker({
 	      position: position,
 	      map: map,
-	      animation: google.maps.Animation.DROP,
 	      title: markers[i][0],
 	      icon: icons.transtech.icon
 	    });
@@ -657,7 +657,6 @@ function initMap() {
 			marker = new google.maps.Marker({
 	      position: position,
 	      map: map,
-	      animation: google.maps.Animation.DROP,
 	      title: markers[i][0]
 	    });
 		}
