@@ -35,6 +35,7 @@
     font-weight: 600;
     font-size: 1.35rem;
     line-height: 1.25;
+    cursor: pointer;
   
     &:hover,
     &:active {
@@ -56,4 +57,41 @@
     }
   }
   
+}
+
+.newsModal h4 {
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.newsModal p {
+  font-size: 1.1rem;
+  
+  .link {
+    color: black;
+    padding: 0 .3em;
+    background: $logo-yellow;
+    line-height: .5;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.newsModal img {
+  width: 100%;
+}
+
+.contactDist {
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.phone-link {
+  color: $dark-gray;
+  
+  &:hover,
+  &:active {
+    color: $dark-gray;
+  }
 }

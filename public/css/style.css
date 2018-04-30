@@ -373,7 +373,8 @@ header {
     color: #303030;
     font-weight: 600;
     font-size: 1.35rem;
-    line-height: 1.25; }
+    line-height: 1.25;
+    cursor: pointer; }
     #news .news-link:hover, #news .news-link:active {
       text-decoration: none; }
   #news p {
@@ -383,6 +384,30 @@ header {
       color: #303030; }
       #news p .link:hover, #news p .link:active {
         text-decoration: none; }
+
+.newsModal h4 {
+  font-family: 'Alfa Slab One', sans-serif; }
+
+.newsModal p {
+  font-size: 1.1rem; }
+  .newsModal p .link {
+    color: black;
+    padding: 0 .3em;
+    background: #FFDE00;
+    line-height: .5; }
+    .newsModal p .link:hover, .newsModal p .link:active {
+      text-decoration: underline; }
+
+.newsModal img {
+  width: 100%; }
+
+.contactDist {
+  font-family: 'Alfa Slab One', sans-serif; }
+
+.phone-link {
+  color: #303030; }
+  .phone-link:hover, .phone-link:active {
+    color: #303030; }
 
 #newsletter {
   font-size: 1.25rem;
