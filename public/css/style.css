@@ -388,6 +388,9 @@ header {
 .newsModal h4 {
   font-family: 'Alfa Slab One', sans-serif; }
 
+.newsModal .modal-header {
+  padding-bottom: 0; }
+
 .newsModal p {
   font-size: 1.1rem; }
   .newsModal p .link {
