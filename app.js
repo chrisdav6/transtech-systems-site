@@ -30,6 +30,11 @@ app.get("/distributorsInternational", function(req, res) {
   res.render("distributorsInternational");
 });
 
+//Sales Request
+app.get("/salesRequest", function(req, res) {
+  res.render("salesRequest");
+});
+
 //Corporate News
 app.get("/corporateNews", function(req, res) {
   res.render("corporateNews");

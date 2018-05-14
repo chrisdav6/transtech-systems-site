@@ -282,17 +282,17 @@ header {
 #map {
   height: 45vh; }
 
-#address {
+#contact {
   font-size: 1.25rem;
   padding: 3em 0;
   border-top: 1px solid #727272; }
-  #address .phone-link {
+  #contact .phone-link {
     color: #303030; }
-    #address .phone-link:hover, #address .phone-link:active {
+    #contact .phone-link:hover, #contact .phone-link:active {
       text-decoration: none; }
-  #address p {
+  #contact p {
     margin-bottom: 0; }
-  #address .form-control {
+  #contact .form-control {
     font-size: 1.25rem; }
 
 .map-text {
