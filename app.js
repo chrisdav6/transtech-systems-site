@@ -30,9 +30,14 @@ app.get("/distributorsInternational", function(req, res) {
   res.render("distributorsInternational");
 });
 
-//Sales Request
+//Product Sales Request
 app.get("/salesRequest", function(req, res) {
   res.render("salesRequest");
+});
+
+//Product Warranty Registration
+app.get("/productRegistration", function(req, res) {
+  res.render("productRegistration");
 });
 
 //Corporate News
