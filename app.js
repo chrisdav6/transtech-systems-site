@@ -40,6 +40,11 @@ app.get("/productRegistration", function(req, res) {
   res.render("productRegistration");
 });
 
+//Product Repair/ Calibration
+app.get("/repairRequest", function(req, res) {
+  res.render("repairRequest");
+});
+
 //Corporate News
 app.get("/corporateNews", function(req, res) {
   res.render("corporateNews");
