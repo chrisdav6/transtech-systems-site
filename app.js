@@ -15,6 +15,11 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+//Product Manuals
+app.get("/productManuals", function(req, res) {
+  res.render("productManuals");
+});
+
 //Contact Corporate
 app.get("/contactCorporate", function(req, res) {
   res.render("contactCorporate");

@@ -279,6 +279,57 @@ header {
 .modal p {
   font-size: 1rem; }
 
+#support {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid #727272;
+  min-height: 100vh; }
+  #support hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #c2c2c2;
+    margin-bottom: 2em; }
+  #support h3 {
+    font-size: 1.35rem;
+    background: #FFDE00;
+    display: inline-block;
+    padding: .35em .5em; }
+  #support .card .swm {
+    max-width: 130px;
+    display: block;
+    margin: 0 auto; }
+  @media (max-width: 50em) {
+    #support .card .swm {
+      max-width: 200px; } }
+
+.newsModal h4 {
+  font-family: 'Alfa Slab One', sans-serif; }
+
+.newsModal .modal-header {
+  padding-bottom: 0; }
+
+.newsModal p {
+  font-size: 1.1rem; }
+  .newsModal p .link {
+    color: black;
+    padding: 0 .3em;
+    background: #FFDE00;
+    line-height: .5; }
+    .newsModal p .link:hover, .newsModal p .link:active {
+      text-decoration: underline; }
+
+.newsModal img {
+  width: 100%; }
+
+.contactDist {
+  font-family: 'Alfa Slab One', sans-serif; }
+
+.phone-link {
+  color: #303030; }
+  .phone-link:hover, .phone-link:active {
+    color: #303030; }
+
 #map {
   height: 45vh; }
 

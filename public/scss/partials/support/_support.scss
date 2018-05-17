@@ -1,0 +1,76 @@
+#support {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid $gray;
+  min-height: 100vh;
+
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: darken($light-gray, 10%);
+    margin-bottom: 2em;
+  }
+  
+  h3 {
+    font-size: 1.35rem;
+    background: $logo-yellow;
+    display: inline-block;
+    padding: .35em .5em;
+  }
+  
+  .card {
+    .swm {
+      max-width: 130px;
+      display: block;
+      margin: 0 auto;
+    }
+    @include mq {
+     .swm {
+        max-width: 200px;
+      }
+    }
+  }
+  
+}
+
+.newsModal h4 {
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.newsModal .modal-header {
+  padding-bottom: 0;
+}
+
+.newsModal p {
+  font-size: 1.1rem;
+  
+  .link {
+    color: black;
+    padding: 0 .3em;
+    background: $logo-yellow;
+    line-height: .5;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.newsModal img {
+  width: 100%;
+}
+
+.contactDist {
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.phone-link {
+  color: $dark-gray;
+  
+  &:hover,
+  &:active {
+    color: $dark-gray;
+  }
+}
