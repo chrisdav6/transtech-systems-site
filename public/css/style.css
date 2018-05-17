@@ -109,7 +109,7 @@ header {
 
 #hero {
   height: calc(100vh - 100px);
-  background: url(../img/hero-bg3.jpg);
+  background: #191919 url(../img/hero-bg3.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
