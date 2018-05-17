@@ -18,16 +18,17 @@ $(function() {
 		//Hide the submit button
 		$corpContactBtn.hide();
 		//Show the spinner gif
-		$(".ajaxSpinner").show();
+		$(".fa-spinner").show();
 
 		//Wait 2 seconds
 		setTimeout(function() {
 			//Hide the spinner gif
-			$(".ajaxSpinner").hide();
-			//Show the submit button
-			$corpContactBtn.show();
+			$(".fa-spinner").hide();
 			//Flash the success message
-			$(".submitMessage").fadeIn("slow").delay(2000).fadeOut("fast");
+			$(".submitMessage").fadeIn("slow").delay(2000).fadeOut("fast", function() {
+				//Show the submit button
+				$corpContactBtn.show();
+			});
 			//Clear form fields
 			$nameInput.val("");
 			$emailInput.val("");
