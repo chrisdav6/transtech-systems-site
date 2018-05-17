@@ -89,26 +89,61 @@
   <!-- Walk MS 2017 Modal -->
   
   <div class="modal fade communityModal" id="walkMS2017" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">2016 Walk MS: Albany</h4>
+          <h4 class="modal-title">Manual Download</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body text-center">
-          <a data-flickr-embed="true" href="https://www.flickr.com/photos/upstatenychapter/34172709404/in/album-72157681143736123/" title="Walk MS:  2017 Albany Video"><img src="https://farm5.staticflickr.com/4268/34679355432_9b04713782_c.jpg" width="800" height="450" alt="Walk MS:  2017 Albany Video"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-          <!--<img class="mb-4" src="img/community/walkMS2017.jpg">-->
-          <p class="mt-3" >
-            TransTech Systems was proud to participate with the <a class="link" href="http://main.nationalmssociety.org/site/TR/Walk/NYRWalkEvents?pg=entry&fr_id=29841" target="_blank">Albany Chapter.</a>
-            2017 Walk for MS. It is an experience unlike any other, connecting people living with MS and those who care about them. A day to come together, to celebrate the progress we've made and to show the power of our connections.
-          </p>
-          <p>
-            When you participate in Walk MS, the funds you raise give hope to the more than 12,800 people
-            living with MS in our community. The dollars raised support life-changing programs and cutting-edge research.
-            Every connection counts. Register now, connect with others and start fundraising today.
-          </p>
+        <div class="modal-body">
+          <form id="manualForm" action="" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control form-control-lg" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" class="form-control form-control-lg" name="company" id="company" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control form-control-lg" name="email" id="email" required>
+            </div>
+            <div class="form-group mt-4">
+              <label class="d-block">Current TransTech Systems Customer?</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="yes" checked>
+                <label class="form-check-label" for="currentCustomerYes">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="no">
+                <label class="form-check-label" for="currentCustomerNo">No</label>
+              </div>
+            </div>
+            <div class="form-group mt-4 hearAbout">
+              <label for="reach">How did you hear about us?</label>
+              <select class="form-control form-control-lg" name="reach" id="reach">
+                <option>Asphalt Contractor Magazine</option>
+                <option>NAPA - Asphalt Pavement Magazine</option>
+                <option>Asphalt Pro Magazine</option>
+                <option>TXAPA Magazine</option>
+                <option>Ohio Flexible Pavements Magazine</option>
+                <option>Florida Asphalt Association Magazine</option>
+                <option>Facebook</option>
+                <option>Twitter</option>
+                <option>Google Plus</option>
+                <option>Instagram</option>
+                <option>Linked In</option>
+                <option>World of Asphalt</option>
+                <option>ConExpo</option>
+                <option>Other Tradeshow</option>
+                <option>Friend</option>
+              </select>
+            </div>
+            <button id="manualDownloadBtn" class="btn btn-success btn-lg submit-btn btn-block mt-5">Submit</button>
+          </form>
         </div>
       </div>
     </div>

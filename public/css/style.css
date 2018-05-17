@@ -303,6 +303,9 @@ header {
     #support .card .swm {
       max-width: 200px; } }
 
+.hearAbout {
+  display: none; }
+
 .newsModal h4 {
   font-family: 'Alfa Slab One', sans-serif; }
 

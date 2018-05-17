@@ -58,4 +58,17 @@ $(function() {
     }
   });
   
+  
+  
+	//Download Manuals Form
+	$("#currentCustomerNo").on("change", function() {
+		$(".hearAbout").fadeIn();
+		$("#reach").attr("required", true);
+	});
+				
+	$("#currentCustomerYes").on("change", function() {
+		$(".hearAbout").fadeOut();
+		$("#reach").attr("required", false);
+	});
+  
 });
