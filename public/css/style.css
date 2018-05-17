@@ -295,6 +295,9 @@ header {
   #contact .form-control {
     font-size: 1.25rem; }
 
+.ajaxSpinner, .submitMessage {
+  display: none; }
+
 .map-text {
   font-size: .85rem; }
   .map-text span {
