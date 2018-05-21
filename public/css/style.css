@@ -349,7 +349,7 @@ header {
   #contact .form-control {
     font-size: 1.25rem; }
 
-.fa-spinner, .submitMessage {
+.fa-spinner, .submitMessage, #manualDownloadLink {
   display: none; }
 
 .map-text {
