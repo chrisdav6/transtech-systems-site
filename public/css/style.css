@@ -105,7 +105,17 @@ header {
   #footer .phone-link {
     color: #303030; }
     #footer .phone-link:hover, #footer .phone-link:active {
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: bold; }
+  #footer .secondary-links {
+    color: #191919;
+    font-size: .8rem;
+    padding: .5em;
+    border-bottom: 1px solid #191919; }
+    #footer .secondary-links:hover, #footer .secondary-links:active {
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid #191919; }
 
 #hero {
   height: calc(100vh - 100px);

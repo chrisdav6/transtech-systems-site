@@ -67,6 +67,21 @@
     &:hover,
     &:active {
       text-decoration: none;
+      font-weight: bold;
+    }
+  }
+  
+  .secondary-links {
+    color: $extreme-dark-gray;
+    font-size: .8rem;
+    padding: .5em;
+    border-bottom: 1px solid $extreme-dark-gray;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid $extreme-dark-gray;
     }
   }
 }
