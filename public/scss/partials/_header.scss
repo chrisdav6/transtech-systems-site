@@ -52,19 +52,34 @@ header {
 
 .dropdown-menu {
   border-radius: 0;
+  padding: 0;
 }
 
 .dropdown-item {
   font-weight: 600;
-  padding-top: .75em;
-  padding-bottom: .75em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   
   &:hover {
-    background: lighten($logo-yellow, 40%);
+    background: lighten($logo-yellow, 10%);
   }
   
   &:active {
-    background: $gray;
+    background: $extreme-dark-gray;
+    color: $white;
+  }
+}
+
+//youtube dropdown item
+.youtube {
+    &:hover {
+    background: #ff0000;
+    color: $white;
+  }
+  
+  &:active {
+    background: #282828;
+    color: $white;
   }
 }
 
