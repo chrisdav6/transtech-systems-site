@@ -1,10 +1,13 @@
 #privacy {
+  background: $extreme-dark-gray;
+  color: $white;
   font-size: 1.1rem;
   padding: 3em 0 5em 0;
   border-top: 1px solid $gray;
   
   hr {
     margin-bottom: 2em;
+    background: $white;
   }
   
   h4 {
@@ -14,7 +17,7 @@
   }
   
   .privacy_link {
-    color: $extreme-dark-gray;
+    color: $white;
     font-weight: bold;
     text-decoration: underline;
     
