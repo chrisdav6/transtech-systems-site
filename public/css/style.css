@@ -299,6 +299,23 @@ header {
 .modal p {
   font-size: 1rem; }
 
+#privacy {
+  font-size: 1.1rem;
+  padding: 3em 0 5em 0;
+  border-top: 1px solid #727272; }
+  #privacy hr {
+    margin-bottom: 2em; }
+  #privacy h4 {
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 1em; }
+  #privacy .privacy_link {
+    color: #191919;
+    font-weight: bold;
+    text-decoration: underline; }
+    #privacy .privacy_link:hover, #privacy .privacy_link:active {
+      text-decoration: none; }
+
 #support {
   font-size: 1.25rem;
   padding: 3em 0;

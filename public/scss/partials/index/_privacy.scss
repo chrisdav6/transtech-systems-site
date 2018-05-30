@@ -1,0 +1,26 @@
+#privacy {
+  font-size: 1.1rem;
+  padding: 3em 0 5em 0;
+  border-top: 1px solid $gray;
+  
+  hr {
+    margin-bottom: 2em;
+  }
+  
+  h4 {
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .privacy_link {
+    color: $extreme-dark-gray;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}

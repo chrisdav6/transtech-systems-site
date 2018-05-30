@@ -70,6 +70,11 @@ app.get("/newsletter", function(req, res) {
   res.render("newsletter");
 });
 
+//Privacy
+app.get("/privacy", function(req, res) {
+  res.render("privacy");
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");
