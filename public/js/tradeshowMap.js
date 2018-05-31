@@ -23,6 +23,7 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+    ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
     ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
@@ -45,6 +46,18 @@ function initMap() {
 	    'Bangkok, Thailand<br>' +
 	    'September 6-8 2018<br>' +
 	    '<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
+    ],
+    
+		// TXAPA
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" src="../img/txapa-logo.png">' +
+	    '<span>TXAPA</span><br>' +
+	    '<hr>' +
+	    'Horseshoe Bay, TX<br>' +
+	    'September 18-21 2018<br>' +
+	    '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
