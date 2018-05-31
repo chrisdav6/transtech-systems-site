@@ -30,6 +30,7 @@ function initMap() {
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
+    ['APAM, Battle Creek, MI', 42.296783,  -85.076260],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -44,7 +45,7 @@ function initMap() {
 	    '<span>Intermat ASEAN</span><br>' +
 	    '<hr>' +
 	    'Bangkok, Thailand<br>' +
-	    'September 6-8 2018<br>' +
+	    'September 6-8, 2018<br>' +
 	    '<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -56,7 +57,7 @@ function initMap() {
 	    '<span>TXAPA</span><br>' +
 	    '<hr>' +
 	    'Horseshoe Bay, TX<br>' +
-	    'September 18-21 2018<br>' +
+	    'September 18-21, 2018<br>' +
 	    '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -68,7 +69,7 @@ function initMap() {
 	    '<span>NEAUPG</span><br>' +
 	    '<hr>' +
 	    'Atlantic City, NJ<br>' +
-	    'October 16-17 2018<br>' +
+	    'October 16-17, 2018<br>' +
 	    '<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -80,7 +81,7 @@ function initMap() {
 	    '<span>SEAUPG</span><br>' +
 	    '<hr>' +
 	    'Raleigh, NC<br>' +
-	    'November 12-15 2018<br>' +
+	    'November 12-15, 2018<br>' +
 	    '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -92,7 +93,7 @@ function initMap() {
 	    '<span>APAI</span><br>' +
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
-	    'December 19-21 2018<br>' +
+	    'December 19-21, 2018<br>' +
 	    '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -104,7 +105,7 @@ function initMap() {
 	    '<span>TRB</span><br>' +
 	    '<hr>' +
 	    'Washington D.C.<br>' +
-	    'January 13-17 2019<br>' +
+	    'January 13-17, 2019<br>' +
 	    '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -117,7 +118,7 @@ function initMap() {
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
 	    'Booth# 26127<br>' +
-	    'February 12-14 2019<br>' +
+	    'February 12-14, 2019<br>' +
 	    '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
@@ -129,8 +130,20 @@ function initMap() {
 	    '<span>RMACES</span><br>' +
 	    '<hr>' +
 	    'Denver, CO<br>' +
-	    'February 27-March 1 2019<br>' +
+	    'February 27-March 1, 2019<br>' +
 	    '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
+    ],
+    
+    // APAM
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" src="../img/apam-logo.png">' +
+	    '<span>APAM</span><br>' +
+	    '<hr>' +
+	    'Battle Creek, MI<br>' +
+	    'March 6-7, 2019<br>' +
+	    '<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -141,7 +154,7 @@ function initMap() {
 	    '<span>ConExpo</span><br>' +
 	    '<hr>' +
 	    'Las Vegas, Nevada<br>' +
-	    'March 10-14 2020<br>' +
+	    'March 10-14, 2020<br>' +
 	    '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ]
