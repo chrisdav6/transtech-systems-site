@@ -30,7 +30,8 @@ function initMap() {
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
-    ['APAM, Battle Creek, MI', 42.296783,  -85.076260],
+    ['APAM, Battle Creek, MI', 42.296783, -85.076260],
+    ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -144,6 +145,18 @@ function initMap() {
 	    'Battle Creek, MI<br>' +
 	    'March 6-7, 2019<br>' +
 	    '<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
+    ],
+    
+    // Ohio
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" src="../img/ohio-logo.png">' +
+	    '<span>Ohio Asphalt Expo</span><br>' +
+	    '<hr>' +
+	    'Columbus, OH<br>' +
+	    'March 26-27, 2019<br>' +
+	    '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
