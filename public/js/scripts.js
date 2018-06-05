@@ -1,5 +1,10 @@
 $(function() {
   
+  //Fade In Body on page Load
+  $("body").animate({
+    opacity: 1
+  },1000);
+  
   //Smooth Scroll on #featured and #about only
   var scrollFeatured = new SmoothScroll('a[href="#featured"]', {
     speed: 800,
