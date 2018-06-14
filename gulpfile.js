@@ -5,7 +5,7 @@ var sass = require("gulp-sass");
 //Complie Sass & Inject into browser
 gulp.task("sass", function() {
   return gulp.src(["node_modules/bootstrap/scss/bootstrap.scss", "public/scss/*.scss"])
-  .pipe(sass())
+  .pipe(sass({outputStyle: 'compressed'}))
   .pipe(gulp.dest("public/css"))
   .pipe(browserSync.stream());
 });
