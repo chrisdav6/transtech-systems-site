@@ -20,6 +20,10 @@ app.get("/pqi380", function(req, res) {
   res.render("pqi380");
 });
 
+app.get("/sdg200", function(req, res) {
+  res.render("sdg200");
+});
+
 //Product Manuals
 app.get("/productManuals", function(req, res) {
   res.render("productManuals");

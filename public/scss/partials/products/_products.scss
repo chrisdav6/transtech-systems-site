@@ -1,21 +1,25 @@
-#productHero {
-  height: 40vh;
-  background: $extreme-dark-gray url(../img/pqi380bg.jpg);
-  background-size: cover;
-  background-position: -200px;
-  background-attachment: fixed;
+.pqi {
+  background: $extreme-dark-gray url(../img/asphalt-bg.jpg);
+}
+
+.sdg {
+  background: $extreme-dark-gray url(../img/soil-bg.jpg);
 }
 
 #title {
   padding: 2em;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .6);
   border: 2px solid white;
   color: $logo-yellow;
-  
+
   hr {
     border: none;
     height: 1px;
     background: $white;
+  }
+  
+  .secondary-text {
+    font-size: 2.25rem;
   }
   
   a {
@@ -27,9 +31,17 @@
   }
 }
 
-@media (max-width: 1025px) {
-  #productHero {
-    background-position: -700px;
-    height: 50vh;
-  }
+.sdgTitle {
+  color: #3cb7ab;
+}
+
+.feature-block {
+  max-height: 307px;
+  background: rgba(0, 0, 0, .6);
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.product-feature {
+  margin-top: -70px;
 }
