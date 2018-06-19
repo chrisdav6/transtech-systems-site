@@ -17,6 +17,14 @@
     height: 1px;
     background: $white;
   }
+  
+  a {
+    color: $white;
+  }
+  
+  a:hover {
+    color: #212529;
+  }
 }
 
 @media (max-width: 1025px) {
