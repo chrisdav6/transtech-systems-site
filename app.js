@@ -15,6 +15,11 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+//Products
+app.get("/pqi380", function(req, res) {
+  res.render("pqi380");
+});
+
 //Product Manuals
 app.get("/productManuals", function(req, res) {
   res.render("productManuals");

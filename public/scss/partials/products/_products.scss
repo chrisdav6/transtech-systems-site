@@ -1,0 +1,27 @@
+#productHero {
+  height: 40vh;
+  background: $extreme-dark-gray url(../img/pqi380bg.jpg);
+  background-size: cover;
+  background-position: -200px;
+  background-attachment: fixed;
+}
+
+#title {
+  padding: 2em;
+  background: rgba(0, 0, 0, .5);
+  border: 2px solid white;
+  color: $logo-yellow;
+  
+  hr {
+    border: none;
+    height: 1px;
+    background: $white;
+  }
+}
+
+@media (max-width: 1025px) {
+  #productHero {
+    background-position: -700px;
+    height: 50vh;
+  }
+}
