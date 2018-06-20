@@ -1,0 +1,31 @@
+#productNav {
+  background: $extreme-dark-gray;
+}
+
+.productLinkBtn {
+  border: 1px solid $logo-yellow;
+  color: $logo-yellow;
+  
+  @include mq {
+    display: block;
+  }
+}
+
+.productLinkBtn:hover {
+  background: $logo-yellow;
+  color: $extreme-dark-gray;
+}
+
+.sdgLinkBtn {
+  border: 1px solid #3cb7ab;
+  color: #3cb7ab;
+  
+  @include mq {
+    display: block;
+  }
+}
+
+.sdgLinkBtn:hover {
+  background: #3cb7ab;
+  color: $extreme-dark-gray;
+}
