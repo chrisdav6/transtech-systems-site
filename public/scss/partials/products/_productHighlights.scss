@@ -1,0 +1,14 @@
+#productHighlights ul {
+  display: table;
+}
+
+#productHighlights li {
+  font-size: 1.25rem;
+    list-style-position: inside;
+    padding-left: 1em;
+    text-indent: -.75em;
+}
+
+#productHighlights li:before {
+  content: "- ";
+}
