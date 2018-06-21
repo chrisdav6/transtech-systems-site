@@ -5,4 +5,9 @@
 .imageContainer img {
   max-height: 125px;
   margin: .5em;
+  transition: .3s;
+}
+
+.imageContainer img:hover {
+  transform: scale(1.1);
 }
