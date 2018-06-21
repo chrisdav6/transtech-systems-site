@@ -17,8 +17,8 @@
 }
 
 .sdgLinkBtn {
-  border: 1px solid #3cb7ab;
-  color: #3cb7ab;
+  border: 1px solid $sdgGreen;
+  color: $sdgGreen;
   
   @include mq {
     display: block;
@@ -26,6 +26,6 @@
 }
 
 .sdgLinkBtn:hover {
-  background: #3cb7ab;
+  background: $sdgGreen;
   color: $extreme-dark-gray;
 }

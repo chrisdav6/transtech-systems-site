@@ -71,9 +71,22 @@ header {
 }
 
 //youtube dropdown item
-.youtube {
+.redDropItem {
     &:hover {
     background: #ff0000;
+    color: $white;
+  }
+  
+  &:active {
+    background: #282828;
+    color: $white;
+  }
+}
+
+//sdg dropdown item
+.greenDropItem {
+    &:hover {
+    background: $sdgGreen;
     color: $white;
   }
   
