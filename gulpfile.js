@@ -10,11 +10,22 @@ gulp.task("sass", function() {
   .pipe(browserSync.stream());
 });
 
+//Move CSS libraries to public folder
+gulp.task("css", function() {
+  return gulp.src("node_modules/lightbox2/dist/css/lightbox.min.css")
+  .pipe(gulp.dest("public/css"))
+  .pipe(browserSync.stream());
+});
+
 //Move JS files to Public folder
 gulp.task("js", function() {
-  return gulp.src(["node_modules/bootstrap/dist/js/bootstrap.min.js", "node_modules/jquery/dist/jquery.min.js", "node_modules/popper.js/dist/umd/popper.min.js"])
+  return gulp.src([
+    "node_modules/bootstrap/dist/js/bootstrap.min.js", 
+    "node_modules/jquery/dist/jquery.min.js", 
+    "node_modules/popper.js/dist/umd/popper.min.js",
+    "node_modules/lightbox2/dist/js/lightbox.min.js"])
   .pipe(gulp.dest("public/js"))
   .pipe(browserSync.stream());
 });
 
-gulp.task("default", ["sass", "js"]);
+gulp.task("default", ["sass", "css", "js"]);
