@@ -29,10 +29,16 @@
     }
   }
   
+  @include mq1024 {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
   @include mq {
     height: 85vh;
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
     
     .hero-logo {
