@@ -57,3 +57,11 @@
   left:0;
   z-index:3;
 }
+
+.vimeoLink {
+  white-space:normal;
+  
+  @include mq {
+    display: block;
+  }
+}
