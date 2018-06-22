@@ -60,8 +60,4 @@
 
 .vimeoLink {
   white-space:normal;
-  
-  @include mq {
-    display: block;
-  }
 }
