@@ -5,15 +5,24 @@
 #productFaqs .list-group-item {
   padding: 1.75rem 1.25rem;
   border: 1px solid $extreme-dark-gray;
-  vertical-align: middle;
+  line-height: 1.25;
+
+  .link {
+    font-weight: 600;
+    color: $extreme-dark-gray;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    text-decoration: none;
+  }
 }
 
 #productFaqs .list-group-item.active {
   background: $extreme-dark-gray;
   padding: .75rem 1.25rem;
   font-size: 1.5rem;
-  font-weight: 600;
-  
+
   span {
     color: $logo-yellow;
   }
@@ -21,8 +30,6 @@
 
 #productFaqs span {
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
