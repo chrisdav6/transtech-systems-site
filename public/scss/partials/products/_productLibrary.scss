@@ -4,14 +4,22 @@
   border-top-width: 3px;
   display: inline-block;
   color: $extreme-dark-gray;
-  background: $light-gray;
+  background: lighten($light-gray, 5%);
   transition: .3s;
   min-height: 160px;
   width: 100%;
+  
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 .libraryItem:hover {
   text-decoration: none;
   color: $extreme-dark-gray;
-  background: $white;
+  background: lighten($logo-yellow, 25%);
+}
+
+.specMessage {
+  font-size: 1.1rem;
 }
