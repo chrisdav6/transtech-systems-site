@@ -1,0 +1,17 @@
+.libraryItem {
+  padding: 1em;
+  border: 1px solid $extreme-dark-gray;
+  border-top-width: 3px;
+  display: inline-block;
+  color: $extreme-dark-gray;
+  background: $light-gray;
+  transition: .3s;
+  min-height: 160px;
+  width: 100%;
+}
+
+.libraryItem:hover {
+  text-decoration: none;
+  color: $extreme-dark-gray;
+  background: $white;
+}
