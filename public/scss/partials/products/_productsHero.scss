@@ -44,4 +44,9 @@
 
 .product-feature {
   margin-top: -70px;
+  transition: 1s;
+}
+
+.product-feature:hover {
+  transform: scale(1.2);
 }
