@@ -4,7 +4,6 @@
   border-top-width: 3px;
   display: inline-block;
   color: $extreme-dark-gray;
-  background: lighten($light-gray, 5%);
   transition: .3s;
   min-height: 160px;
   width: 100%;
@@ -14,10 +13,20 @@
   }
 }
 
-.libraryItem:hover {
+.yellowLib, .greenLib {
+  background: lighten($light-gray, 5%);
+}
+
+.yellowLib:hover {
   text-decoration: none;
   color: $extreme-dark-gray;
   background: lighten($logo-yellow, 25%);
+}
+
+.greenLib:hover {
+  text-decoration: none;
+  color: $extreme-dark-gray;
+  background: lighten($sdgGreen, 35%);
 }
 
 .specMessage {
