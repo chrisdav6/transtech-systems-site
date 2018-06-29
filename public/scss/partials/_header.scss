@@ -78,7 +78,7 @@ header {
   }
   
   &:active {
-    background: #282828;
+    background: darken(#ff0000, 10%);
     color: $white;
   }
 }
@@ -91,7 +91,7 @@ header {
   }
   
   &:active {
-    background: #282828;
+    background: darken($sdgGreen, 10%);
     color: $white;
   }
 }
