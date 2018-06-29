@@ -1,0 +1,44 @@
+#training {
+  font-size: 1.25rem;
+  border-top: 1px solid $gray;
+  min-height: 70vh;
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  hr {
+    margin: 5em 0;
+    
+    @include mq {
+      margin: 2em;
+    }
+  }
+  
+  .link {
+    font-weight: 600;
+    color: $extreme-dark-gray;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .youtubeLink {
+    white-space: normal;
+    display: block;
+    border: 1px solid #FF0000;
+    border-radius: none;
+    padding: 1em;
+    color: #FF0000;
+    text-decoration:none;
+    font-size: 1.5rem;
+    transition: .3s;
+  }
+  
+  .youtubeLink:hover {
+    background: #FF0000;
+    color: white;
+  }
+}

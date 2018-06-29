@@ -10,11 +10,11 @@
   .link {
     font-weight: 600;
     color: $extreme-dark-gray;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .link:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 

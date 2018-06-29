@@ -29,6 +29,11 @@ app.get("/productManuals", function(req, res) {
   res.render("productManuals");
 });
 
+//Training
+app.get("/training", function(req, res) {
+  res.render("training");
+});
+
 //Contact Corporate
 app.get("/contactCorporate", function(req, res) {
   res.render("contactCorporate");
