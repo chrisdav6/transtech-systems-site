@@ -1,8 +1,8 @@
-.pqi {
+.asphalt {
   background: $extreme-dark-gray url(../img/asphalt-bg.jpg);
 }
 
-.sdg {
+.dirt {
   background: $extreme-dark-gray url(../img/soil-bg.jpg);
 }
 
@@ -48,5 +48,14 @@
 }
 
 .product-feature:hover {
+  transform: scale(1.2);
+}
+
+.pqi301-feature {
+  margin-top: -80px;
+  transition: 1s;
+}
+
+.pqi301-feature:hover {
   transform: scale(1.2);
 }

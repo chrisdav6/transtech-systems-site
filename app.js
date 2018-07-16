@@ -24,6 +24,10 @@ app.get("/sdg200", function(req, res) {
   res.render("sdg200");
 });
 
+app.get("/pqi301", function(req, res) {
+  res.render("pqi301");
+});
+
 //Product Manuals
 app.get("/productManuals", function(req, res) {
   res.render("productManuals");
