@@ -28,6 +28,10 @@ app.get("/nwjm", function(req, res) {
   res.render("nwjm");
 });
 
+app.get("/swm", function(req, res) {
+  res.render("swm");
+});
+
 app.get("/pqi301", function(req, res) {
   res.render("pqi301");
 });

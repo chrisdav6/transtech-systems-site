@@ -11,6 +11,7 @@
   background: rgba(0, 0, 0, .6);
   border: 2px solid white;
   color: $logo-yellow;
+  min-height: 307px;
 
   hr {
     border: none;
@@ -57,5 +58,13 @@
 }
 
 .pqi301-feature:hover {
+  transform: scale(1.2);
+}
+
+.swm-feature {
+  transition: 1s;
+}
+
+.swm-feature:hover {
   transform: scale(1.2);
 }

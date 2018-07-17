@@ -16,4 +16,38 @@
     color: white;
     font-weight: 600;
   }
+  
+  .swm-beware {
+    white-space: normal;
+    display: block;
+    border: 1px solid #FF0000;
+    padding: .75em;
+    color: #FF0000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .3s;
+    text-align: center;
+  }
+  
+  .swm-beware:hover {
+    background: #FF0000;
+    color: white;
+  }
+  
+  .swm-fed-study {
+    white-space: normal;
+    display: block;
+    border: 1px solid $extreme-dark-gray;
+    padding: .75em;
+    color: $extreme-dark-gray;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .3s;
+    text-align: center;
+  }
+  
+  .swm-fed-study:hover {
+    background: $extreme-dark-gray;
+    color: white;
+  }
 }
