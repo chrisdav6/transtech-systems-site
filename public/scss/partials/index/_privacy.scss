@@ -19,11 +19,12 @@
   .privacy_link {
     color: $white;
     font-weight: bold;
-    text-decoration: underline;
+    transition: .5s;
     
     &:hover,
     &:active {
-      text-decoration: none;
+      text-decoration: underline;
+      color: $logo-yellow;
     }
   }
 }
