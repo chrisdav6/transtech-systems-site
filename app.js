@@ -32,6 +32,10 @@ app.get("/swm", function(req, res) {
   res.render("swm");
 });
 
+app.get("/pts3000", function(req, res) {
+  res.render("pts3000");
+});
+
 app.get("/pqi301", function(req, res) {
   res.render("pqi301");
 });
