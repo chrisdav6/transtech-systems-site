@@ -111,40 +111,40 @@ $(function() {
 				//Update Link href
 				switch (dataId) {
 					case '380manual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/PQI380Manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/PQI380Manual.pdf");
 						break;
 					case '380quick':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/PQI 380 quickstart guide.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/PQI380QuickstartGuide.pdf");
 						break;
 					case '380offset':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/PQI 380 Offset Cheat Sheet.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/PQI380OffsetCheatSheet.pdf");
 						break;
 					case '200manual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/SDG200Manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/SDG200Manual.pdf");
 						break;
 					case '200quick':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/SDG 200 quickstart guide.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/SDG200QuickstartGuide.pdf");
 						break;
 					case '200startUp':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/SDG 200 Start Up Cheat Sheet.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/SDG200StartUpCheatSheet.pdf");
 						break;
 					case 'nwjmmanual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/nwjm original manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/NWJMOriginalManual.pdf");
 						break;
 					case 'nwjmThinmanual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/nwjm-TL manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/NWJMTLManual.pdf");
 						break;
 					case 'swmmanual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/SWM manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/SWMManual.pdf");
 						break;
 					case 'ptsmanual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/PTS 3000 manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/PTS3000Manual.pdf");
 						break;
 					case '301manual':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/PQI 301 manual.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/PQI301Manual.pdf");
 						break;
 					case '301offset':
-						$("#manualDownloadLink").attr("href", "http://www.transtechsys.com/pdf/PQI 301 Offset Cheat Sheet.pdf");
+						$("#manualDownloadLink").attr("href", "/pdf/PQI301OffsetCheatSheet.pdf");
 						break;
 				}
 				//Clear form fields
