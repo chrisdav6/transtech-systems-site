@@ -5,9 +5,11 @@
 .productLinkBtn {
   border: 1px solid $logo-yellow;
   color: $logo-yellow;
-  
+  background: transparent;
+
   @include mq {
     display: block;
+    width: 100%;
   }
 }
 
@@ -19,9 +21,11 @@
 .sdgLinkBtn {
   border: 1px solid $sdgGreen;
   color: $sdgGreen;
+  background: transparent;
   
   @include mq {
     display: block;
+    width: 100%;
   }
 }
 

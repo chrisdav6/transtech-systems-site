@@ -7,12 +7,12 @@
       <div class="row">
         <div class="col">
           <div class="productLinks">
-            <a href="#" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true">Brochure</a>
-            <a href="#" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true">Nuke Trade-In</a>
-            <a href="#" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true">Manual</a>
-            <a href="#" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true">Quickstart</a>
-            <a href="#" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true">Report Template</a>
-            <a href="#" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true">Offset Cheat Sheet</a>
+            <a href="/pdf/pqi380brochure.pdf" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Brochure</a>
+            <a href="/pdf/nuclearTradeIn.pdf" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Nuke Trade-In</a>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="380manual" data-toggle="modal" data-target="#manualDownload">Manual</button>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="380quick" data-toggle="modal" data-target="#manualDownload">Quick Start Guide</button>
+            <a href="/pdf/PQI Report.xls" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Report Template</a>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="380offset" data-toggle="modal" data-target="#manualDownload">Offset Cheat Sheet</button>
           </div>
         </div>
       </div>
@@ -437,5 +437,77 @@
     </div>
   </section>
   <!-- /product message section -->
+  
+  
+  <!-- Modals -->
+  
+  <!-- Download Manual Modal -->
+  
+  <div class="modal fade communityModal" id="manualDownload" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Manual Download</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="manualForm" action="" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control form-control-lg" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" class="form-control form-control-lg" name="company" id="company" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control form-control-lg" name="email" id="email" required>
+            </div>
+            <div class="form-group mt-4">
+              <label class="d-block">Current TransTech Systems Customer?</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="yes" checked>
+                <label class="form-check-label" for="currentCustomerYes">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="no">
+                <label class="form-check-label" for="currentCustomerNo">No</label>
+              </div>
+            </div>
+            <div class="form-group mt-4 hearAbout">
+              <label for="reach">How did you hear about us?</label>
+              <select class="form-control form-control-lg" name="reach" id="reach">
+                <option>Asphalt Contractor Magazine</option>
+                <option>NAPA - Asphalt Pavement Magazine</option>
+                <option>Asphalt Pro Magazine</option>
+                <option>TXAPA Magazine</option>
+                <option>Ohio Flexible Pavements Magazine</option>
+                <option>Florida Asphalt Association Magazine</option>
+                <option>Facebook</option>
+                <option>Twitter</option>
+                <option>Google Plus</option>
+                <option>Instagram</option>
+                <option>Linked In</option>
+                <option>World of Asphalt</option>
+                <option>ConExpo</option>
+                <option>Other Tradeshow</option>
+                <option>Friend</option>
+              </select>
+            </div>
+            <div class="form-group d-none"><!--HoneyPot-->
+              <input type="address" class="form-control form-control-lg" name="address" id="address">
+            </div>
+            <button id="manualDownloadBtn" class="btn btn-success btn-lg submit-btn btn-block mt-5">Submit</button>
+            <i class="fas fa-spinner fa-2x fa-spin mt-4 mb-3 mx-auto"></i><!--Initially hidden in the css-->
+            <span class="submitMessage text-center mx-auto">Thank you, you may download the manual</span><!--Initially hidden in the css-->
+          </form>
+          <a id="manualDownloadLink" class="btn btn-outline-success btn-lg btn-block mt-3" href="#" target="_blank">Download Manual</a><!--Initially hidden in the css-->
+        </div>
+      </div>
+    </div>
+  </div>
   
 <% include ./partials/footer %>
