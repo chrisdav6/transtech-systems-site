@@ -8,11 +8,13 @@
   border-top: 1px solid $gray;
   
   .phone-link {
-    color: $dark-gray;
+    font-weight: 600;
+    color: $extreme-dark-gray;
+    text-decoration: none;
     
     &:hover,
     &:active {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
   
@@ -25,7 +27,6 @@
   }
   
 }
-
 
 .fa-spinner, .submitMessage, #manualDownloadLink {
   display: none;
