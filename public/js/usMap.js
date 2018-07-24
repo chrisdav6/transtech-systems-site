@@ -9,17 +9,17 @@ function initMap() {
 
   var mapOptions = {
     center: {
-    	lat: 35.643,
-    	lng: -98.910
+    	lat: 38.643,
+    	lng: -94.910
     },
-    zoom: 4,
+    zoom: 5,
     mapTypeId: 'roadmap',
     scrollwheel: false
   };
   
 	var icons = {
     transtech: {
-      icon: '../img/transtech-map-icon.png'
+      icon: '../img/transtech-map-icon-new.png'
     }
   };
                   
