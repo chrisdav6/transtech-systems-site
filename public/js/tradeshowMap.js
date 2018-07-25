@@ -46,6 +46,7 @@ function initMap() {
 	    '<span>Intermat ASEAN</span><br>' +
 	    '<hr>' +
 	    'Bangkok, Thailand<br>' +
+	    'Booth# C20<br>' +
 	    'September 6-8, 2018<br>' +
 	    '<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
