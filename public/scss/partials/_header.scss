@@ -7,18 +7,10 @@ header {
 }
 
 .top-bar {
-  background: $logo-yellow;
+  background: linear-gradient(rgba(255, 222, 0, 0.70), rgba(255, 222, 0, 0.70)), url(../img/topBarBg.png); //Background Pattern with tinted yellow over
   color: $dark-gray;
   font-family: 'Alfa Slab One', sans-serif;
   font-size: 1.2rem;
-  
-  // background: repeating-linear-gradient(
-  //   45deg,
-  //   #ffea68,
-  //   #ffea68 10px,
-  //   #f7efbe 10px,
-  //   #f7efbe 20px
-  // );
   
   .phone-link {
     color: $dark-gray;
