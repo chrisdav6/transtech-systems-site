@@ -17,6 +17,12 @@
   .about-text {
     font-size: 1.5rem;
     line-height: 1.9;
+    
+    span {
+      padding: .05em .2em;
+      background: $logo-yellow;
+      font-weight: 600;
+    }
   }
   
   .fa-angle-down {
