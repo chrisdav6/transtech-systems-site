@@ -23,6 +23,9 @@ $(function() {
     trigger: "hover"
   });
   
+  //Enable Bootstrap 4 ToolTips
+  $('[data-toggle="tooltip"]').tooltip();
+  
   
   
   //Scroll to top button animation
