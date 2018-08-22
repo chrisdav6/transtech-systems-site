@@ -149,9 +149,10 @@ app.post("/contactCorporate", function(req, res) {
       }
     });
 
-    let body = `<p>From: ${name} </p>`;
-    body += `<p>Username: ${email} </p>`;
-    body += `<p>Message: ${message} </p>`;
+    let body = `<h2><u>Corporate Contact Inquiry</u></h2>`;
+    body += `<p><strong>From:</strong> ${name}<br>`;
+    body += `<strong>Email:</strong> ${email}</p>`;
+    body += `<p><strong>Message:</strong> ${message}</p>`;
 
     // setup email data with unicode symbols
     let mailOptions = {
