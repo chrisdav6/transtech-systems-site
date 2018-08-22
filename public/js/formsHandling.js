@@ -2,11 +2,7 @@ $(function() {
   
   //Corporate Contact Form
   $("#corporateContactForm").on("submit", function(event) {
-    event.preventDefault();
-    
-    let $nameInput = $("#name");
-		let $emailInput = $("#email");
-		let $messageInput = $("#message");
+
 		let $address = $("#address"); //Honeypot field
 		let $corpContactBtn = $("#corpContactBtn");
 
@@ -29,13 +25,8 @@ $(function() {
 				//Show the submit button
 				$corpContactBtn.show();
 			});
-			//Clear form fields
-			$nameInput.val("");
-			$emailInput.val("");
-			$messageInput.val("");
 		},2000);
 		
-		//Send Ajax to PHP file
   });
   
   
