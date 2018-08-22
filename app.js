@@ -18,7 +18,7 @@ app.use(session({
 }));
 app.use(flash());
 
-//Require DOTENV variables
+//Require DOTENV environment variables
 require('dotenv').config();
 
 //Set Static Folders

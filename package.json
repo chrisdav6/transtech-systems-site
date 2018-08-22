@@ -13,12 +13,18 @@
   "author": "Chris Davis",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.0.0",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "lightbox2": "^2.10.0",
+    "nodemailer": "^4.6.8",
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
