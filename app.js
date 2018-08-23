@@ -158,6 +158,7 @@ app.post("/contactCorporate", function(req, res) {
     let mailOptions = {
       from: 'cdavis@transtechsys.com', // sender address
       to: 'cdavis@transtechsys.com', // list of receivers
+      replyTo: email,
       subject: "TransTech Systems Contact Form", // Subject line
       text: message, // plain text body
       html: body // html body
