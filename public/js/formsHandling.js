@@ -1,6 +1,6 @@
 $(function() {
   
-  //Corporate Contact Form
+  //Corporate Contact Form Submit
   $("#corporateContactForm").on("submit", function(event) {
 
 		let $address = $("#address"); //Honeypot field
@@ -41,12 +41,24 @@ $(function() {
     let countryVal = $("#country").val();
     $("#confirmPrivacy").prop("checked", false);
     
-    if(countryVal !== "US") {
+    if(countryVal !== "United States") {
       $(".privacy").slideDown();
     } else {
       $(".privacy").slideUp();
       $("#confirmPrivacy").prop("checked", true);
     }
+  });
+  
+  //Sales Request Form Submit
+  $("#salesRequestForm").on("submit", function(event) {
+
+		let $address = $("#address"); //Honeypot field
+
+		if($address.val() !== "") {
+			alert("Nice try bot!");
+			return false;
+		}
+		
   });
   
   
