@@ -1,5 +1,23 @@
 $(function() {
   
+  //When Available - Show Privacy statement on forms if country is not US
+  $(".privacy").hide();
+  $("#confirmPrivacy").prop("checked", true);
+  
+  $("#country").on("input", function() {
+    let countryVal = $("#country").val();
+    $("#confirmPrivacy").prop("checked", false);
+    
+    if(countryVal !== "United States") {
+      $(".privacy").slideDown();
+    } else {
+      $(".privacy").slideUp();
+      $("#confirmPrivacy").prop("checked", true);
+    }
+  });
+  
+  
+  
   //Corporate Contact Form Submit
   $("#corporateContactForm").on("submit", function(event) {
 
@@ -30,24 +48,6 @@ $(function() {
   });
   
   
-  
-  //Sales Request Form
-  
-  //Show Privacy statement if country is not US
-  $(".privacy").hide();
-  $("#confirmPrivacy").prop("checked", true);
-  
-  $("#country").on("input", function() {
-    let countryVal = $("#country").val();
-    $("#confirmPrivacy").prop("checked", false);
-    
-    if(countryVal !== "United States") {
-      $(".privacy").slideDown();
-    } else {
-      $(".privacy").slideUp();
-      $("#confirmPrivacy").prop("checked", true);
-    }
-  });
   
   //Sales Request Form Submit
   $("#salesRequestForm").on("submit", function(event) {
