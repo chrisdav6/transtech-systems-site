@@ -156,7 +156,7 @@ app.post("/contactCorporate", function(req, res) {
 
     // setup email data with unicode symbols
     let mailOptions = {
-      from: 'cdavis@transtechsys.com', // sender address
+      from: 'webforms@transtechsys.com', // sender address
       to: 'cdavis@transtechsys.com', // list of receivers
       replyTo: email,
       subject: "TransTech Systems Contact Form", // Subject line
@@ -213,7 +213,7 @@ app.post("/salesRequest", function(req, res) {
 
     // setup email data with unicode symbols
     let mailOptions = {
-      from: 'cdavis@transtechsys.com', // sender address
+      from: 'webforms@transtechsys.com', // sender address
       to: 'cdavis@transtechsys.com', // list of receivers
       replyTo: email,
       subject: "TransTech Systems Sales Request Form", // Subject line
