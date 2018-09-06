@@ -289,7 +289,7 @@ app.post("/salesRequest", function(req, res) {
 
 //PQI 380 Product Page Manuals Download Form
 app.post("/pqi380", function(req, res) {
-  let { manualName, name, company, email, currentCustomer, reach } = req.body;
+  let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
     // create reusable transporter object using the default SMTP transport
@@ -309,6 +309,7 @@ app.post("/pqi380", function(req, res) {
     let body = `<h2><u>${manualName} Download</u></h2>`;
     body += `<p><strong>From:</strong> ${name}<br>`;
     body += `<strong>Company:</strong> ${company}<br>`;
+    body += `<strong>Country:</strong> ${country}<br>`;
     body += `<strong>Email:</strong> ${email}<br>`;
     body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
     body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
@@ -340,7 +341,7 @@ app.post("/pqi380", function(req, res) {
 
 //SDG 200 Product Page Manuals Download Form
 app.post("/sdg200", function(req, res) {
-  let { manualName, name, company, email, currentCustomer, reach } = req.body;
+  let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
     // create reusable transporter object using the default SMTP transport
@@ -360,6 +361,7 @@ app.post("/sdg200", function(req, res) {
     let body = `<h2><u>${manualName} Download</u></h2>`;
     body += `<p><strong>From:</strong> ${name}<br>`;
     body += `<strong>Company:</strong> ${company}<br>`;
+    body += `<strong>Country:</strong> ${country}<br>`;
     body += `<strong>Email:</strong> ${email}<br>`;
     body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
     body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
