@@ -8,8 +8,8 @@
         <div class="col">
           <div class="productLinks">
             <a href="/pdf/NWJMBrochure.pdf" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Brochure</a>
-            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="nwjmmanual" data-toggle="modal" data-target="#manualDownload">Original User Manual</button>
-            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="nwjmThinmanual" data-toggle="modal" data-target="#manualDownload">Thin-Lift User Manual</button>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="NWJM Manual" data-toggle="modal" data-target="#manualDownload">Original User Manual</button>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="NWJM Thin Lift Manual" data-toggle="modal" data-target="#manualDownload">Thin-Lift User Manual</button>
           </div>
         </div>
       </div>
@@ -183,7 +183,10 @@
           </button>
         </div>
         <div class="modal-body">
-          <form id="manualForm" action="" method="post">
+          <form id="manualForm" action="/nwjm" method="post">
+            <div class="form-group d-none">
+              <input type="text" class="form-control form-control-lg" name="manualName" id="manualName"> <!-- Send Manual name to backend -->
+            </div>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control form-control-lg" name="name" id="name" required>
@@ -193,17 +196,21 @@
               <input type="text" class="form-control form-control-lg" name="company" id="company" required>
             </div>
             <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" class="form-control form-control-lg" name="country" id="country" required>
+            </div>
+            <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" class="form-control form-control-lg" name="email" id="email" required>
             </div>
             <div class="form-group mt-4">
               <label class="d-block">Current TransTech Systems Customer?</label>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="yes" checked>
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="Yes" checked>
                 <label class="form-check-label" for="currentCustomerYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="no">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="No">
                 <label class="form-check-label" for="currentCustomerNo">No</label>
               </div>
             </div>

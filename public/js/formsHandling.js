@@ -131,10 +131,10 @@ $(function() {
 					case 'SDG 200 StartUp Cheat Sheet':
 						$("#manualDownloadLink").attr("href", "/pdf/SDG200StartUpCheatSheet.pdf");
 						break;
-					case 'nwjmmanual':
+					case 'NWJM Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/NWJMOriginalManual.pdf");
 						break;
-					case 'nwjmThinmanual':
+					case 'NWJM Thin Lift Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/NWJMTLManual.pdf");
 						break;
 					case 'swmmanual':
