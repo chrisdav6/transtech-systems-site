@@ -9,10 +9,10 @@
           <div class="productLinks">
             <a href="/pdf/pqi380brochure.pdf" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Brochure</a>
             <a href="/pdf/nuclearTradeIn.pdf" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Nuke Trade-In</a>
-            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="380manual" data-toggle="modal" data-target="#manualDownload">Manual</button>
-            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="380quick" data-toggle="modal" data-target="#manualDownload">Quick Start Guide</button>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="PQI 380 Manual" data-toggle="modal" data-target="#manualDownload">Manual</button>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="PQI 380 QuickStart Guide" data-toggle="modal" data-target="#manualDownload">Quick Start Guide</button>
             <a href="/pdf/PQI Report.xls" class="btn productLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Report Template</a>
-            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="380offset" data-toggle="modal" data-target="#manualDownload">Offset Cheat Sheet</button>
+            <button class="btn productLinkBtn mb-2 mb-lg-0" data-id="PQI 380 Offset Cheat Sheet" data-toggle="modal" data-target="#manualDownload">Offset Cheat Sheet</button>
           </div>
         </div>
       </div>
@@ -453,7 +453,10 @@
           </button>
         </div>
         <div class="modal-body">
-          <form id="manualForm" action="" method="post">
+          <form id="manualForm" action="/pqi380" method="post">
+            <div class="form-group d-none">
+              <input type="text" class="form-control form-control-lg" name="manualName" id="manualName"> <!-- Send Manual name to backend -->
+            </div>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control form-control-lg" name="name" id="name" required>
@@ -469,11 +472,11 @@
             <div class="form-group mt-4">
               <label class="d-block">Current TransTech Systems Customer?</label>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="yes" checked>
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="Yes" checked>
                 <label class="form-check-label" for="currentCustomerYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="no">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="No">
                 <label class="form-check-label" for="currentCustomerNo">No</label>
               </div>
             </div>

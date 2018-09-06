@@ -63,7 +63,7 @@ $(function() {
   
   
   
-	//Download Manuals Form
+	//Download Manuals Form Product Pages
 	$("#currentCustomerNo").on("change", function() {
 		$(".hearAbout").fadeIn();
 		$("#reach").attr("required", true);
@@ -81,17 +81,17 @@ $(function() {
     
 		//Download Manuals Form Submit
 	  $("#manualForm").on("submit", function(event) {
-	    event.preventDefault();
 	    
 	    let $nameInput = $("#name");
 	    let $compnayInput = $("#company");
 			let $emailInput = $("#email");
-			let $currentCustomerYes = $("#currentCustomerYes");
-			let $currentCustomerNo = $("#currentCustomerNo");
-			let $reach = $("#reach");
+			let $manualName = $("#manualName");
 			let $address = $("#address"); //HoneyPot
 			let $manualDownloadBtn = $("#manualDownloadBtn");
-	
+			
+			//Send ManualName on form when email is sent
+			$manualName.val(dataId);
+			
 			if($address.val() !== "") {
 				alert("Nice try bot!");
 				return false;
@@ -113,13 +113,13 @@ $(function() {
 				$("#manualDownloadLink").css("display", "block");
 				//Update Link href
 				switch (dataId) {
-					case '380manual':
+					case 'PQI 380 Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/PQI380Manual.pdf");
 						break;
-					case '380quick':
+					case 'PQI 380 QuickStart Guide':
 						$("#manualDownloadLink").attr("href", "/pdf/PQI380QuickstartGuide.pdf");
 						break;
-					case '380offset':
+					case 'PQI 380 Offset Cheat Sheet':
 						$("#manualDownloadLink").attr("href", "/pdf/PQI380OffsetCheatSheet.pdf");
 						break;
 					case '200manual':
@@ -155,8 +155,6 @@ $(function() {
 				$compnayInput.val("");
 				$emailInput.val("");
 			},2000);
-			
-			//Send Ajax to PHP file
 	  });
 	});
 	
@@ -168,6 +166,9 @@ $(function() {
   	$("#manualDownloadLink").hide();
   	$("#manualDownloadBtn").show();
   	$('#manualDownload').modal('hide');
+  	//Redirect back to original window from modal
+  	let currentLocation = window.location.href;
+  	window.location.href = currentLocation;
   });
   
 });
