@@ -10,10 +10,10 @@
             <a href="/pdf/sdg200brochure.pdf" class="btn sdgLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Brochure</a>
             <a href="/pdf/mtlGeneratorVer949.xls" class="btn sdgLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">MTL Generator</a>
             <a href="/pdf/SDGmtlFileTool.xls" class="btn sdgLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">MTL File Tool</a>
-            <button class="btn sdgLinkBtn mb-2 mb-lg-0" data-id="200manual" data-toggle="modal" data-target="#manualDownload">Manual</button>
-            <button class="btn sdgLinkBtn mb-2 mb-lg-0" data-id="200quick" data-toggle="modal" data-target="#manualDownload">Quick Start Guide</button>
+            <button class="btn sdgLinkBtn mb-2 mb-lg-0" data-id="SDG 200 Manual" data-toggle="modal" data-target="#manualDownload">Manual</button>
+            <button class="btn sdgLinkBtn mb-2 mb-lg-0" data-id="SDG 200 QuickStart Guide" data-toggle="modal" data-target="#manualDownload">Quick Start Guide</button>
             <a href="/pdf/SDG Report.xls" class="btn sdgLinkBtn mb-2 mb-lg-0" role="button" aria-disabled="true" target="_blank">Report Template</a>
-            <button class="btn sdgLinkBtn mb-2 mb-lg-0" data-id="200startUp" data-toggle="modal" data-target="#manualDownload">Cheat Sheet</button>
+            <button class="btn sdgLinkBtn mb-2 mb-lg-0" data-id="SDG 200 StartUp Cheat Sheet" data-toggle="modal" data-target="#manualDownload">Cheat Sheet</button>
           </div>
         </div>
       </div>
@@ -321,7 +321,10 @@
           </button>
         </div>
         <div class="modal-body">
-          <form id="manualForm" action="" method="post">
+          <form id="manualForm" action="/sdg200" method="post">
+            <div class="form-group d-none">
+              <input type="text" class="form-control form-control-lg" name="manualName" id="manualName"> <!-- Send Manual name to backend -->
+            </div>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control form-control-lg" name="name" id="name" required>
@@ -337,11 +340,11 @@
             <div class="form-group mt-4">
               <label class="d-block">Current TransTech Systems Customer?</label>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="yes" checked>
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerYes" value="Yes" checked>
                 <label class="form-check-label" for="currentCustomerYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="no">
+                <input class="form-check-input" type="radio" name="currentCustomer" id="currentCustomerNo" value="No">
                 <label class="form-check-label" for="currentCustomerNo">No</label>
               </div>
             </div>

@@ -122,13 +122,13 @@ $(function() {
 					case 'PQI 380 Offset Cheat Sheet':
 						$("#manualDownloadLink").attr("href", "/pdf/PQI380OffsetCheatSheet.pdf");
 						break;
-					case '200manual':
+					case 'SDG 200 Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/SDG200Manual.pdf");
 						break;
-					case '200quick':
+					case 'SDG 200 QuickStart Guide':
 						$("#manualDownloadLink").attr("href", "/pdf/SDG200QuickstartGuide.pdf");
 						break;
-					case '200startUp':
+					case 'SDG 200 StartUp Cheat Sheet':
 						$("#manualDownloadLink").attr("href", "/pdf/SDG200StartUpCheatSheet.pdf");
 						break;
 					case 'nwjmmanual':
