@@ -143,10 +143,10 @@ $(function() {
 					case 'PTS 3000 Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/PTS3000Manual.pdf");
 						break;
-					case '301manual':
+					case 'PQI 301 Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/PQI301Manual.pdf");
 						break;
-					case '301offset':
+					case 'PQI 301 Offset Cheat Sheet':
 						$("#manualDownloadLink").attr("href", "/pdf/PQI301OffsetCheatSheet.pdf");
 						break;
 				}
