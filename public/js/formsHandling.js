@@ -137,7 +137,7 @@ $(function() {
 					case 'NWJM Thin Lift Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/NWJMTLManual.pdf");
 						break;
-					case 'swmmanual':
+					case 'SWM Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/SWMManual.pdf");
 						break;
 					case 'ptsmanual':

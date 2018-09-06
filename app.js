@@ -443,6 +443,58 @@ app.post("/nwjm", function(req, res) {
   });
 });
 
+//SWM Product Page Manuals Download Form
+app.post("/swm", function(req, res) {
+  let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
+  
+  nodemailer.createTestAccount((err, account) => {
+    // create reusable transporter object using the default SMTP transport
+    var transporter = nodemailer.createTransport({
+      host: 'smtp.office365.com', // Office 365 server
+      port: 587,     // secure SMTP
+      secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD
+      },
+      tls: {
+        ciphers: 'SSLv3'
+      }
+    });
+
+    let body = `<h2><u>${manualName} Download</u></h2>`;
+    body += `<p><strong>From:</strong> ${name}<br>`;
+    body += `<strong>Company:</strong> ${company}<br>`;
+    body += `<strong>Country:</strong> ${country}<br>`;
+    body += `<strong>Email:</strong> ${email}<br>`;
+    body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
+    body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+      from: 'webforms@transtechsys.com', // sender address
+      to: 'cdavis@transtechsys.com', // list of receivers
+      replyTo: email,
+      subject: "TransTech Systems Product Manual Download", // Subject line
+      text: body, // plain text body
+      html: body // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+      // Preview only available when sending through an Ethereal account
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+      // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+      // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    });
+  });
+});
+
 //Start Server
 app.listen(process.env.PORT, process.env.IP, function() {
   console.log("Server has started!");
