@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 
 //Homepage
 app.get("/", function(req, res) {
-  res.render("index");
+  res.render("index", {flash: {success: req.flash("success")}});
 });
 
 //Products
@@ -129,6 +129,55 @@ app.get("/privacy", function(req, res) {
 
 
 //------POST Routes--------//
+
+//Homepage Newsletter Signup Form
+app.post("/", function(req, res) {
+  let { email } = req.body;
+  
+  nodemailer.createTestAccount((err, account) => {
+    // create reusable transporter object using the default SMTP transport
+    var transporter = nodemailer.createTransport({
+      host: 'smtp.office365.com', // Office 365 server
+      port: 587,     // secure SMTP
+      secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD
+      },
+      tls: {
+        ciphers: 'SSLv3'
+      }
+    });
+
+    let body = `<h2><u>TransTech Systems Newsletter Signup</u></h2>`;
+    body += `<p><strong>Please sign me up for the TransTech Systems Newsletter, my email address is:</strong> ${email}</p>`;
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+      from: 'webforms@transtechsys.com', // sender address
+      to: 'cdavis@transtechsys.com', // list of receivers
+      replyTo: email,
+      subject: "TransTech Systems Newsletter Signup Form", // Subject line
+      text: body, // plain text body
+      html: body // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+      // Preview only available when sending through an Ethereal account
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+      // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+      // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    });
+  });
+  req.flash('success', 'Request to join newsletter has been sent. Thank You!');
+  res.redirect("/");
+});
 
 //Contact Corporate Contact Us Form
 app.post("/contactCorporate", function(req, res) {
