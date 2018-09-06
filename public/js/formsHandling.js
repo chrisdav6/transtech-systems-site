@@ -140,7 +140,7 @@ $(function() {
 					case 'SWM Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/SWMManual.pdf");
 						break;
-					case 'ptsmanual':
+					case 'PTS 3000 Manual':
 						$("#manualDownloadLink").attr("href", "/pdf/PTS3000Manual.pdf");
 						break;
 					case '301manual':
