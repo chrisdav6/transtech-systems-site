@@ -94,7 +94,7 @@ app.get("/salesRequest", function(req, res) {
 
 //Product Warranty Registration
 app.get("/productRegistration", function(req, res) {
-  res.render("productRegistration");
+  res.render("productRegistration", {flash: {success: req.flash("success")}});
 });
 
 //Product Repair/ Calibration
@@ -257,7 +257,7 @@ app.post("/salesRequest", function(req, res) {
     body += `<strong>Phone:</strong> ${phone}<br>`;
     body += `<strong>Email:</strong> ${email}<br>`;
     body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
-    body += `<strong>Please send more info:</strong> ${moreInfo}<br>`;
+    body += `<strong>Please send more info:</strong> ${moreInfo}</p>`;
     body += `<p><strong>Message:</strong><br> ${message}</p>`;
 
     // setup email data with unicode symbols
@@ -313,7 +313,7 @@ app.post("/repairRequest", function(req, res) {
     body += `<strong>Country:</strong> ${country}<br>`;
     body += `<strong>Phone:</strong> ${phone}<br>`;
     body += `<strong>Email:</strong> ${email}<br>`;
-    body += `<strong>Estimate Required:</strong> ${estimate}<br>`;
+    body += `<strong>Estimate Required:</strong> ${estimate}</p>`;
     body += `<p><strong>Description of Repair:</strong><br> ${serviceMessage}</p>`;
 
     // setup email data with unicode symbols
@@ -341,6 +341,63 @@ app.post("/repairRequest", function(req, res) {
   });
   req.flash('success', 'Repair request has been sent. Thank You!');
   res.redirect("/repairRequest");
+});
+
+//Product Registration Form
+app.post("/productRegistration", function(req, res) {
+  let { name, company, state, country, phone, email, registerProduct, date, serial } = req.body;
+  
+  nodemailer.createTestAccount((err, account) => {
+    // create reusable transporter object using the default SMTP transport
+    var transporter = nodemailer.createTransport({
+      host: 'smtp.office365.com', // Office 365 server
+      port: 587,     // secure SMTP
+      secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD
+      },
+      tls: {
+        ciphers: 'SSLv3'
+      }
+    });
+
+    let body = `<h2><u>Product Registration</u></h2>`;
+    body += `<p><strong>From:</strong> ${name}<br>`;
+    body += `<strong>Company:</strong> ${company}<br>`;
+    body += `<strong>State:</strong> ${state}<br>`;
+    body += `<strong>Country:</strong> ${country}<br>`;
+    body += `<strong>Phone:</strong> ${phone}<br>`;
+    body += `<strong>Email:</strong> ${email}<br>`;
+    body += `<strong>TransTech Product:</strong> ${registerProduct}<br>`;
+    body += `<strong>Date:</strong> ${date}<br>`;
+    body += `<strong>Serial Number:</strong> ${serial}</p>`;
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+      from: 'webforms@transtechsys.com', // sender address
+      to: 'cdavis@transtechsys.com', // list of receivers
+      replyTo: email,
+      subject: "TransTech Systems Repair Request Form", // Subject line
+      text: body, // plain text body
+      html: body // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+      // Preview only available when sending through an Ethereal account
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+      // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+      // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    });
+  });
+  req.flash('success', 'Product registration has been sent. Thank You!');
+  res.redirect("/productRegistration");
 });
 
 //PQI 380 Product Page Manuals Download Form
