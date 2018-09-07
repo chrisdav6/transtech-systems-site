@@ -63,6 +63,9 @@ $(function() {
 		
   });
   
+  
+  
+  
   //Repair Request Form Submit
   $("#repairRequestForm").on("submit", function(event) {
 
@@ -74,6 +77,9 @@ $(function() {
 		}
 		
   });
+  
+  
+  
   
   //Product Registration Form Submit
   $("#productRegistrationForm").on("submit", function(event) {
@@ -87,6 +93,21 @@ $(function() {
 		
   });
   
+  
+  
+  //Product Registration Form remove required serial # if PTS3000 is selected
+  $("#productRegistrationForm").on("change", function(event) {
+
+		let $serial = $("#serial");
+		let $pts3000 = $("#register3");
+
+		if($pts3000.is(':checked')) {
+			$serial.prop("required", false);
+		} else {
+			$serial.prop("required", true);
+		}
+		
+  });
   
   
 	//Download Manuals Form Product Pages
