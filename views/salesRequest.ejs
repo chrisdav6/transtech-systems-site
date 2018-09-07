@@ -19,7 +19,7 @@
           <% } %>
           <!-- /Node Flash Message -->
  
-          <form action="/salesRequest" method="post"id="salesRequestForm" class="d-flex flex-column">
+          <form action="/salesRequest" method="post" id="salesRequestForm" class="d-flex flex-column">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control form-control-lg" name="name" id="name" required>
@@ -35,7 +35,8 @@
                 <div class="form-group">
                   <label for="state">State</label>
                   <select class="form-control form-control-lg" name="state" id="state">
-                    <option value="AL">Alabama</option>
+                    <option value="Not Available">Not Available</option>
+                    <option value="AL" selected>Alabama</option>
                   	<option value="AK">Alaska</option>
                   	<option value="AZ">Arizona</option>
                   	<option value="AR">Arkansas</option>

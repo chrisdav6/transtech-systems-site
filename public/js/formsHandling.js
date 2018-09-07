@@ -10,9 +10,11 @@ $(function() {
     
     if(countryVal !== "United States") {
       $(".privacy").slideDown();
+      $('#state option:contains("Not Available")').prop('selected',true);
     } else {
       $(".privacy").slideUp();
       $("#confirmPrivacy").prop("checked", true);
+      $('#state option:contains("Alabama")').prop('selected',true);
     }
   });
   
