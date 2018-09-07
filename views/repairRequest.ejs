@@ -8,6 +8,17 @@
         <div class="col">
           <h2 class="pb-4 text-center text-md-left">Product Repair/Calibration RMA Request</h2>
           
+          <!-- Node Flash Message -->
+          <% if(flash && flash.success && flash.success.length > 0) { %>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <%= flash.success %>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <% } %>
+          <!-- /Node Flash Message -->
+          
           <p class="lead mb-3">
             Please complete the TransTech product repair request form and a representative will contact you shortly with regard
             to the details of your repair.
@@ -21,7 +32,7 @@
             If you have any questions please contact us at <a class="phone-link" href="tel:+18007243606">1-800-724-6306</a> or <a class="phone-link" href="tel:+5183705558">518-370-5558</a>.
           </p>
           
-          <form action="" method="post" class="d-flex flex-column">
+          <form action="/repairRequest" method="post" id="repairRequestForm" class="d-flex flex-column">
             
             <div class="form-group">
               <label for="name">Name</label>
@@ -362,14 +373,25 @@
               </div>
             </div>
             
-            <div class="form-check mt-4">
-              <input type="checkbox" class="form-check-input mt-2" id="estimate">
-              <label class="form-check-label" for="estimate">Please Include Estimate</label>
+            <div class="form-group mt-4">
+              <p>Please Include Estimate</p>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="estimate" id="estimate1" value="Yes" checked>
+                <label class="form-check-label" for="estimate1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="estimate" id="estimate2" value="No">
+                <label class="form-check-label" for="estimate2">No</label>
+              </div>
             </div>
 
-            <div class="form-group mt-5">
+            <div class="form-group mt-4">
               <label for="serviceMessage">Description of Service Required</label>
               <textarea class="form-control" name="serviceMessage" id="serviceMessage" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-group d-none"><!--HoneyPot-->
+              <input type="address" class="form-control form-control-lg" name="address" id="address">
             </div>
 
             <button class="btn btn-outline-success btn-lg submit-btn ml-0 ml-lg-auto mt-4">Submit</button>

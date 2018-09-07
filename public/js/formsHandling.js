@@ -63,6 +63,18 @@ $(function() {
 		
   });
   
+  //Repair Request Form Submit
+  $("#repairRequestForm").on("submit", function(event) {
+
+		let $address = $("#address"); //Honeypot field
+
+		if($address.val() !== "") {
+			alert("Nice try bot!");
+			return false;
+		}
+		
+  });
+  
   
   
 	//Download Manuals Form Product Pages
