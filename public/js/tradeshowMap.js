@@ -22,7 +22,7 @@ function initMap() {
   
   // Map Marker Locations
   var markers = [
-    ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+    // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
     ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
@@ -40,17 +40,17 @@ function initMap() {
   var infoWindowContent = [
     
 		// Intermat ASEAN
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/intermat-asean-logo.png">' +
-	    '<span>Intermat ASEAN</span><br>' +
-	    '<hr>' +
-	    'Bangkok, Thailand<br>' +
-	    'Booth# C20<br>' +
-	    'September 6-8, 2018<br>' +
-	    '<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
+    // [
+	   // '<div class="map-text">' +
+	   // '<img class="d-block mb-3" src="../img/intermat-asean-logo.png">' +
+	   // '<span>Intermat ASEAN</span><br>' +
+	   // '<hr>' +
+	   // 'Bangkok, Thailand<br>' +
+	   // 'Booth# C20<br>' +
+	   // 'September 6-8, 2018<br>' +
+	   // '<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	   // '</div>'
+    // ],
     
 		// TXAPA
     [
