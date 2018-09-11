@@ -63,5 +63,12 @@ $(function() {
       $(this).append(iframe);
     });// /click
   }); // /each video
+  
+  
+  
+  //End Capital Business Beat video when modal closes on corporate news page
+  $("#capitalBusiness").on('hidden.bs.modal', function (e) {
+    $("#capitalBusiness iframe").attr("src", $("#capitalBusiness iframe").attr("src"));
+  });
 
 });
