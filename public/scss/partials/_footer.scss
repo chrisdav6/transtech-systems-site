@@ -8,49 +8,46 @@
     font-size: 1.2rem;
   }
   
-  .social li {
+  .social a {
     position: relative;
     top: 0;
-    transition: .3s;
-  }
-  
-  .social a {
     text-decoration: none;
+    transition: .3s;
   }
   
   .facebook:hover {
     top: -3px;
-    color: #3b5998;
+    color: #3b5998 !important;
   }
   
   .twitter:hover {
     top: -3px;
-    color: #1DA1F2;
+    color: #1DA1F2 !important;
   }
   
   .instagram:hover {
     top: -3px;
-    color: #262626;
+    color: #262626 !important;
   }
 
   .google:hover {
     top: -3px;
-    color: #D84B37;
+    color: #D84B37 !important;
   }
   
   .youtube:hover {
     top: -3px;
-    color: #ff0000;
+    color: #ff0000 !important;
   }
   
   .vimeo:hover {
     top: -3px;
-    color: #1ab7ea;
+    color: #1ab7ea !important;
   }
   
   .linked:hover {
     top: -3px;
-    color: #0077b5;
+    color: #0077b5 !important;
   }
   
   .address {
