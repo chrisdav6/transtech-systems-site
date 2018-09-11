@@ -34,97 +34,162 @@ app.use(bodyParser.json());
 
 //Homepage
 app.get("/", function(req, res) {
-  res.render("index", {flash: {success: req.flash("success")}});
+  res.render("index", {
+    flash: {success: req.flash("success")},
+    title: "TransTech Systems",
+    metaTitle: "Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions."
+  });
 });
 
 //Products
 app.get("/pqi380", function(req, res) {
-  res.render("pqi380");
+  res.render("pqi380", {
+    title: "PQI 380 Non-Nuclear Asphalt Density Gauge",
+    metaTitle: "TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380."
+  });
 });
 
 app.get("/sdg200", function(req, res) {
-  res.render("sdg200");
+  res.render("sdg200", {
+    title: "SDG 200 Non-Nuclear Soil Density Gauge",
+    metaTitle: "TransTech Systems next generation Non-Nuclear soil density gauge, the SDG 200."
+  });
 });
 
 app.get("/nwjm", function(req, res) {
-  res.render("nwjm");
+  res.render("nwjm", {
+    title: "NWJM - Notched Wedge Joint Maker",
+    metaTitle: "TransTech Systems longitudinal joint screed attachment, the NWJM shapes the longitudinal joint as the hot mix asphalt is spread."
+  });
 });
 
 app.get("/swm", function(req, res) {
-  res.render("swm");
+  res.render("swm", {
+    title: "SWM - Shoulder Wedge Maker",
+    metaTitle: "TransTech Systems shoulder wedge screed attachment, the SWM provides a 30 degree beveled shoulder edge that gradually transitions wayward vehicles off shoulderless road surfaces and back on with relative ease."
+  });
 });
 
 app.get("/pts3000", function(req, res) {
-  res.render("pts3000");
+  res.render("pts3000", {
+    title: "PTS3000 - Pavement Temperature Sentry",
+    metaTitle: "TransTech Systems roller mounted asphalt temperature sentry. The PTS 3000 was designed and built to provide accurate HMA mat temperatures on the run."
+  });
 });
 
 app.get("/pqi301", function(req, res) {
-  res.render("pqi301");
+  res.render("pqi301", {
+    title: "PQI 301 - Non-Nuclear Asphalt Density Gauge (Discontinued)",
+    metaTitle: "TransTech Systems legacy Non-Nuclear asphalt density gauge, the PQI 301. The gauge that started it all!"
+  });
 });
 
 //Product Manuals
 app.get("/productManuals", function(req, res) {
-  res.render("productManuals");
+  res.render("productManuals", {
+    title: "TransTech Systems Product Manuals",
+    metaTitle: "TransTech Systems downloadable pdf products user manuals and quick start guides."
+  });
 });
 
 //Training
 app.get("/training", function(req, res) {
-  res.render("training");
+  res.render("training", {
+    title: "TransTech Systems Training",
+    metaTitle: "Join us at our facility in New York for training on our PQI 380, SDG 200 or any of our other products free of charge."
+  });
 });
 
 //Contact Corporate
 app.get("/contactCorporate", function(req, res) {
-  res.render("contactCorporate", {flash: {success: req.flash("success")}});
+  res.render("contactCorporate", {
+    flash: {success: req.flash("success")},
+    title: "TransTech Systems Corporate Contact",
+    metaTitle: "Our headquarters are located in Latham, NY. Contact us at 1-800-724-6306 or email us at sales@transtechsys.com."
+  });
 });
 
 //Distributors United States
 app.get("/distributorsUnitedStates", function(req, res) {
-  res.render("distributorsUnitedStates");
+  res.render("distributorsUnitedStates", {
+    title: "TransTech Systems United States Distributors",
+    metaTitle: "Would you like to purchase one of our products in the United States or just have questions? Contact one of our many distributors stateside."
+  });
 });
 
 //Distributors International
 app.get("/distributorsInternational", function(req, res) {
-  res.render("distributorsInternational");
+  res.render("distributorsInternational", {
+    title: "TransTech Systems International Distributors",
+    metaTitle: "Would you like to purchase one of our products Internationally or just have questions? Contact one of our many distributors worldwide."
+  });
 });
 
 //Product Sales Request
 app.get("/salesRequest", function(req, res) {
-  res.render("salesRequest", {flash: {success: req.flash("success")}});
+  res.render("salesRequest", {
+    flash: {success: req.flash("success")},
+    title: "TransTech Systems Product Sales Request",
+    metaTitle: "Are you interested in purchasing one of our products or just have questions? Contact us today!"
+  });
 });
 
 //Product Warranty Registration
 app.get("/productRegistration", function(req, res) {
-  res.render("productRegistration", {flash: {success: req.flash("success")}});
+  res.render("productRegistration", {
+    flash: {success: req.flash("success")},
+    title: "TransTech Systems Product Registration",
+    metaTitle: "Submit a TransTech Systems product warranty registration."
+  });
 });
 
 //Product Repair/ Calibration
 app.get("/repairRequest", function(req, res) {
-  res.render("repairRequest", {flash: {success: req.flash("success")}});
+  res.render("repairRequest", {
+    flash: {success: req.flash("success")},
+    title: "TransTech Systems Product Repair/Calibration RMA Request",
+    metaTitle: "Submit a TransTech Systems product repair/calibration RMA request."
+  });
 });
 
 //Corporate News
 app.get("/corporateNews", function(req, res) {
-  res.render("corporateNews");
+  res.render("corporateNews", {
+    title: "TransTech Systems Corporate News",
+    metaTitle: "TransTech Systems news, stories and highlights."
+  });
 });
 
 //Tradeshows
 app.get("/tradeshows", function(req, res) {
-  res.render("tradeshows");
+  res.render("tradeshows", {
+    title: "TransTech Systems Tradeshows",
+    metaTitle: "We are very active promoting our Non-Nuclear technology during tradeshow season. Check the dates, see our products at a location near you!"
+  });
 });
 
 //Community
 app.get("/community", function(req, res) {
-  res.render("community");
+  res.render("community", {
+    title: "TransTech Systems In the Community",
+    metaTitle: "We believe having strong ties and supporting our community is extremely important. Look at what we have been up to :)"
+  });
 });
 
 //Newsletter
 app.get("/newsletter", function(req, res) {
-  res.render("newsletter");
+  res.render("newsletter", {
+    title: "TransTech Systems Newsletter",
+    metaTitle: "Do you want to find out the latest news on our products and industry? Check out the TransTech Systems newsletter."
+  });
 });
 
 //Privacy
 app.get("/privacy", function(req, res) {
-  res.render("privacy");
+  res.render("privacy", {
+    title: "TransTech Systems Privacy Policy",
+    metaTitle: "TransTech Systems privacy policy and international compliance."
+  });
 });
 
 
