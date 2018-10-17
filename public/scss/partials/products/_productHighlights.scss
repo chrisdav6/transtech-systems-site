@@ -1,14 +1,24 @@
-#productHighlights ul {
-  display: table;
-}
-
-#productHighlights li {
-  font-size: 1.25rem;
+#productHighlights {
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
+  
+  ul {
+    display: table;
+  }
+  
+  li {
+    font-size: 1.25rem;
     list-style-position: inside;
     padding-left: 1em;
     text-indent: -.75em;
-}
-
-#productHighlights li:before {
-  content: "- ";
+  }
+  
+  li:before {
+    content: "- ";
+  }
 }

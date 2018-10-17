@@ -1,34 +1,47 @@
-.libraryItem {
-  padding: 1em;
-  border: 1px solid $extreme-dark-gray;
-  border-top-width: 3px;
-  display: inline-block;
-  color: $extreme-dark-gray;
-  transition: .3s;
-  min-height: 160px;
-  width: 100%;
+#productLibrary {
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
   
-  p {
+  .specMessage {
     font-size: 1.1rem;
+  }
+  
+  .libraryItem {
+    padding: 1em;
+    border: 1px solid $extreme-dark-gray;
+    border-top-width: 3px;
+    display: inline-block;
+    color: $extreme-dark-gray;
+    transition: .3s;
+    min-height: 160px;
+    width: 100%;
+    
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .yellowLib, .greenLib {
+    background: lighten($light-gray, 5%);
+  }
+  
+  .yellowLib:hover {
+    text-decoration: none;
+    color: $extreme-dark-gray;
+    background: lighten($logo-yellow, 25%);
+  }
+  
+  .greenLib:hover {
+    text-decoration: none;
+    color: $extreme-dark-gray;
+    background: lighten($sdgGreen, 35%);
   }
 }
 
-.yellowLib, .greenLib {
-  background: lighten($light-gray, 5%);
-}
 
-.yellowLib:hover {
-  text-decoration: none;
-  color: $extreme-dark-gray;
-  background: lighten($logo-yellow, 25%);
-}
 
-.greenLib:hover {
-  text-decoration: none;
-  color: $extreme-dark-gray;
-  background: lighten($sdgGreen, 35%);
-}
-
-.specMessage {
-  font-size: 1.1rem;
-}

@@ -1,39 +1,49 @@
-#productFaqs ul {
-  font-size: 1.25rem;
-}
-
-#productFaqs .list-group-item {
-  padding: 1.75rem 1.25rem;
-  border: 1px solid $extreme-dark-gray;
-  line-height: 1.25;
-
-  .link {
-    font-weight: 600;
-    color: $extreme-dark-gray;
-    text-decoration: none;
+#productFaqs {
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
   }
   
-  .link:hover {
-    text-decoration: underline;
-  }
-}
-
-#productFaqs .list-group-item.active {
-  background: $extreme-dark-gray;
-  padding: .75rem 1.25rem;
-  font-size: 1.5rem;
-
-  span.yellow {
-    color: $logo-yellow;
+  ul {
+    font-size: 1.25rem;
   }
   
-  span.green {
-    color: $sdgGreen;
+  .list-group-item {
+    padding: 1.75rem 1.25rem;
+    border: 1px solid $extreme-dark-gray;
+    line-height: 1.25;
+  
+    .link {
+      font-weight: 600;
+      color: $extreme-dark-gray;
+      text-decoration: none;
+    }
+    
+    .link:hover {
+      text-decoration: underline;
+    }
   }
-}
-
-#productFaqs span {
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding: 0;
+  
+  .list-group-item.active {
+    background: $extreme-dark-gray;
+    padding: .75rem 1.25rem;
+    font-size: 1.5rem;
+  
+    span.yellow {
+      color: $logo-yellow;
+    }
+    
+    span.green {
+      color: $sdgGreen;
+    }
+  }
+  
+  span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0;
+  }
 }

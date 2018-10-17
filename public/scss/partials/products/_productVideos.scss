@@ -1,3 +1,13 @@
+#productVideos {
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
+}
+
 .youtubeEmbed { /* continer (responsive) */
   position: relative;
   cursor: pointer;

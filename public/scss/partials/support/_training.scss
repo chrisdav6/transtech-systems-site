@@ -11,7 +11,11 @@
   }
   
   hr {
-    margin: 2em 0;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: lighten($dark-gray, 30%);
+    margin: 3em 0;
   }
   
   .link {

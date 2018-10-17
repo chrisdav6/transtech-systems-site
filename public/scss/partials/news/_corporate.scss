@@ -4,6 +4,14 @@
   border-top: 1px solid $gray;
   min-height: 100vh;
   
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
+  
   .news-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -12,14 +20,6 @@
     @include mq() {
       grid-template-columns: 1fr;
     }
-  }
-
-  hr {
-    border: none;
-    height: 1px;
-    width: 100%;
-    background: darken($light-gray, 10%);
-    margin-bottom: 2em;
   }
   
   h3 {
