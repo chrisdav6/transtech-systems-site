@@ -24,7 +24,7 @@ function initMap() {
   var markers = [
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
-    ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
+    // ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     ['NAPA, Atlanta, GA', 33.763244, -84.397191],
     ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
@@ -66,16 +66,16 @@ function initMap() {
     // ],
     
 		// NEAUPG
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/neaupg-logo.png">' +
-	    '<span>NEAUPG</span><br>' +
-	    '<hr>' +
-	    'Atlantic City, NJ<br>' +
-	    'October 16-17, 2018<br>' +
-	    '<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
+    // [
+	   // '<div class="map-text">' +
+	   // '<img class="d-block mb-3" src="../img/neaupg-logo.png">' +
+	   // '<span>NEAUPG</span><br>' +
+	   // '<hr>' +
+	   // 'Atlantic City, NJ<br>' +
+	   // 'October 16-17, 2018<br>' +
+	   // '<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	   // '</div>'
+    // ],
     
     // NAPA
     [
