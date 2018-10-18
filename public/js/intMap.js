@@ -61,7 +61,6 @@ function initMap() {
 		['TransTech Europe (Wirtgen Budapest Kft.) , Hungary', 47.171044,19.215088],
 		['ABAS AS , Iceland', 64.883646,-18.549413],
 		['M/s. Taisei International , India', 22.755921,79.40918],
-		['PT Panairsan Pratama , Indonesia', -4.367027,121.966030],
 		['CFU International Trade & Services , Iraq', 32.850776,42.844469],
 		['JR Technical Services , Ireland', 53.362026,-8.006287],
 		['Nishio Rent All Co., Ltd. , Japan', 35.871247,138.295898],
@@ -100,7 +99,6 @@ function initMap() {
 		['Bav Corporation, Inc. , Tajikistan', 38.882481,70.817871],
 		['Beratest AG , Tchad', 14.98724,18.896484],
 		['Asia Testing Equipment Co., Ltd. , Thailand', 15.961329,100.722656],
-		['PT Panairsan Pratama , Timor Leste', -8.762791,125.898373],
 		['Beratest AG , Togo', 8.439772,1.07666],
 		['Beratest AG , Tunisie', 34.343436,9.349365],
 		['Bav Corporation, Inc. , Turkmenistan', 39.571822,59.040527],
@@ -545,17 +543,6 @@ function initMap() {
 	    '</div>'
     ],
     
-		// Indonesia
-    [
-	    '<div class="map-text">' +
-	    '<span>PT Panairsan Pratama</span><br>' +
-	    '<hr>' +
-	    '+62-21-580-7881<br>' +
-	    'Attn: Irsan Aditama<br>' +
-	    '<p><a class="link" href="mailto:irsan@panairsan.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-	    '</div>'
-    ],
-    
 		// Iraq
     [
 	    '<div class="map-text">' +
@@ -971,17 +958,6 @@ function initMap() {
 	    '+02-553-0809<br>' +
 	    'Attn: Mr. Nantapong Phuetphon<br>' +
 	    '<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-	    '</div>'
-    ],
-    
-		// Timor Leste
-    [
-	    '<div class="map-text">' +
-	    '<span>PT Panairsan Pratama</span><br>' +
-	    '<hr>' +
-	    '+62-21-580-7881<br>' +
-	    'Attn: Irsan Aditama<br>' +
-	    '<p><a class="link" href="mailto:irsan@panairsan.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 	    '</div>'
     ],
     
