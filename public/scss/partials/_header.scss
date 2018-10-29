@@ -50,6 +50,10 @@ header {
 
 .nav-item {
   font-size: 1.2rem;
+  
+  @include mq {
+    font-size: 1rem;
+  }
 }
 
 .dropdown-item:first-child {
@@ -69,6 +73,10 @@ header {
   &:active {
     background: $extreme-dark-gray;
     color: $white;
+  }
+  
+  @include mq {
+    font-size: 1rem;
   }
 }
 
