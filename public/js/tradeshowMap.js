@@ -181,6 +181,7 @@ function initMap() {
 	    '<span>ConExpo</span><br>' +
 	    '<hr>' +
 	    'Las Vegas, Nevada<br>' +
+	    'Booth# C30947<br>' +
 	    'March 10-14, 2020<br>' +
 	    '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
