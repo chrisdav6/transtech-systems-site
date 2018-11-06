@@ -1,11 +1,11 @@
-var express = require("express");
+const express = require("express");
 const helmet = require("helmet");
-let bodyParser = require("body-parser");
-let nodemailer = require('nodemailer');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var flash = require("connect-flash");
-var app = express();
+const bodyParser = require("body-parser");
+const nodemailer = require('nodemailer');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const flash = require("connect-flash");
+const app = express();
 
 //Use Helmet
 app.use(helmet());
