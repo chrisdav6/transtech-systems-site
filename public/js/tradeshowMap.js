@@ -25,7 +25,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
     // ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
-    ['NAPA, Atlanta, GA', 33.763244, -84.397191],
+    // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
     ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -78,16 +78,16 @@ function initMap() {
     // ],
     
     // NAPA
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/napa-logo.png">' +
-	    '<span>NAPA Conference on Stone-Matrix Asphalt</span><br>' +
-	    '<hr>' +
-	    'Atlanta, GA<br>' +
-	    'November 5-7, 2018<br>' +
-	    '<p><a class="link" href="http://www.asphaltpavement.org/index.php?option=com_content&view=article&id=1148&Itemid=100375" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
+    // [
+	   // '<div class="map-text">' +
+	   // '<img class="d-block mb-3" src="../img/napa-logo.png">' +
+	   // '<span>NAPA Conference on Stone-Matrix Asphalt</span><br>' +
+	   // '<hr>' +
+	   // 'Atlanta, GA<br>' +
+	   // 'November 5-7, 2018<br>' +
+	   // '<p><a class="link" href="http://www.asphaltpavement.org/index.php?option=com_content&view=article&id=1148&Itemid=100375" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	   // '</div>'
+    // ],
     
 		// SEAUPG
     [
