@@ -47,6 +47,15 @@ $(function() {
   
   
   
+  //Product Page Lightbox Options
+  lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'fitImagesInViewport': true
+  });
+  
+  
+  
   //Load Youtube Videos on Click
   $(".youtubeEmbed").each(function() {
     // Set the BG image from the youtube ID
