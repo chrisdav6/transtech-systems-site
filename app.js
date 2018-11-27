@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require("connect-flash");
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 const app = express();
 
 //Use Helmet
