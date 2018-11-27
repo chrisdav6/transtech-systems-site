@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require("connect-flash");
+const port = 3000 || process.env.PORT;
 const app = express();
 
 //Use Helmet
@@ -840,6 +841,6 @@ app.post("/productManuals", function(req, res) {
 });
 
 //Start Server
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(port, process.env.IP, function() {
   console.log("Server has started!");
 });
