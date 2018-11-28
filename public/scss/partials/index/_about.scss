@@ -2,6 +2,10 @@
   min-height: 100vh;
   background: $extreme-dark-gray;
 
+  @include mq600 {
+    padding-bottom: 2em;
+  }
+
   h1 {
     padding: 2.5em 0 .5em 0;
   }
@@ -51,6 +55,13 @@
     
     .fa-angle-down {
       margin-top: .1em;
+    }
+  }
+
+  @include mq600 {
+    h1 {
+      font-size: 2rem;
+      padding: 2em 0 .5em 0;
     }
   }
 }
