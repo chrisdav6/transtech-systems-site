@@ -97,17 +97,6 @@ header {
   }
 }
 
-//sdg dropdown item
-.greenDropItem {
-  &:hover {
-    background: $sdgGreen;
-  }
-  
-  &:active {
-    background: darken($sdgGreen, 10%);
-  }
-}
-
 .navbar-dark .navbar-nav .nav-link {
   color: $light-gray;
   
