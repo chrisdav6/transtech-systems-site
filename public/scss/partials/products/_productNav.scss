@@ -17,19 +17,3 @@
   background: $logo-yellow;
   color: $extreme-dark-gray;
 }
-
-.sdgLinkBtn {
-  border: 1px solid $sdgGreen;
-  color: $sdgGreen;
-  background: transparent;
-  
-  @include mq {
-    display: block;
-    width: 100%;
-  }
-}
-
-.sdgLinkBtn:hover {
-  background: $sdgGreen;
-  color: $extreme-dark-gray;
-}

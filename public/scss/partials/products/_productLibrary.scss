@@ -26,7 +26,7 @@
     }
   }
   
-  .yellowLib, .greenLib {
+  .yellowLib {
     background: lighten($light-gray, 5%);
   }
   
@@ -34,12 +34,6 @@
     text-decoration: none;
     color: $extreme-dark-gray;
     background: lighten($logo-yellow, 25%);
-  }
-  
-  .greenLib:hover {
-    text-decoration: none;
-    color: $extreme-dark-gray;
-    background: lighten($sdgGreen, 35%);
   }
 }
 
