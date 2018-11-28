@@ -26,7 +26,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba($extreme-dark-gray, .9);
+  background: $extreme-dark-gray;
 }
 
 .navbar-dark .navbar-brand {
