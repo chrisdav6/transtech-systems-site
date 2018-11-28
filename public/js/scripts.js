@@ -5,13 +5,18 @@ $(function() {
     opacity: 1
   },500);
   
-  //Smooth Scroll on #featured and #about only
+  //Smooth Scroll on #featured #about and #gaugesMap
   var scrollFeatured = new SmoothScroll('a[href="#featured"]', {
     speed: 800,
     easing: 'easeInOutQuart'
   });
   
   var scrollAbout = new SmoothScroll('a[href="#about"]', {
+    speed: 800,
+    easing: 'easeInOutQuart'
+  });
+
+  var scrollAbout = new SmoothScroll('a[href="#gaugesMap"]', {
     speed: 800,
     easing: 'easeInOutQuart'
   });
