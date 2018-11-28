@@ -27,8 +27,6 @@
     padding: 0em 0em 5em 0em;
     
     .announce-btn {
-      display: block;
-      width: 100%;
       font-size: 1.5rem;
       font-weight: 700;
     }
@@ -40,5 +38,12 @@
     .announce-icon-div {
       font-size: 12em;
     }
+  }
+
+  @include mq600 {
+    .announce-btn {
+      display: block;
+      width: 100%;
+    } 
   }
 }
