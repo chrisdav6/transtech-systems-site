@@ -11,15 +11,6 @@ header {
   color: $dark-gray;
   font-family: 'Alfa Slab One', sans-serif;
   font-size: 1.2rem;
-  
-  .phone-link {
-    color: $dark-gray;
-
-    &:hover,
-    &:active {
-      text-decoration: none;
-    }
-  }
 }
 
 .navbar {

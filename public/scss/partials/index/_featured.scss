@@ -3,7 +3,7 @@
   
   .title {
     padding: 2.5em 0 .5em 0;
-    color: $dark-gray;
+    color: $extreme-dark-gray;
   }
   
   hr {
@@ -17,6 +17,7 @@
   .category-title {
     padding: .25em;
     background: $logo-yellow;
+    color: $extreme-dark-gray;
   }
   
   a {
@@ -36,7 +37,30 @@
     }
     
     p {
-      font-weight: 600;
+      font-weight: 500;
+    }
+
+    .card-link {
+      color: $extreme-dark-gray;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    a {
+      font-weight: 700;
+      color: $extreme-dark-gray;
+    
+      &:hover {
+        text-decoration: underline;
+        color: $extreme-dark-gray;
+      }
+    }
+
+    span {
+      font-weight: 700;
+      color: $extreme-dark-gray;
     }
   }
   

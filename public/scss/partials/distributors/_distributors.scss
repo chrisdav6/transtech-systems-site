@@ -57,25 +57,6 @@
       font-weight: 600;
     }
     
-    .phone-link {
-      color: $dark-gray;
-    
-      &:hover,
-      &:active {
-        text-decoration: none;
-      }
-    }
-    
-    .link {
-      color: $dark-gray;
-      font-weight: 600;
-    
-      &:hover,
-      &:active {
-        text-decoration: none;
-      }
-    }
-    
     @include mq() {
       grid-template-columns: 1fr;
     }

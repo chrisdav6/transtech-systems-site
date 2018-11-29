@@ -1,6 +1,10 @@
 #announcements {
   padding: 4em 0;
   
+  .title {
+    color: $extreme-dark-gray;
+  }
+
   hr {
     border: none;
     height: 1px;

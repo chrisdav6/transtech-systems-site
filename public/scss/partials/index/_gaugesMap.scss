@@ -9,15 +9,17 @@
 
   .title {
     padding: 2.5em 0 .5em 0;
-    color: $dark-gray;
+    color: $extreme-dark-gray;
   }
   
   .about-text {
     font-size: 1.5rem;
     line-height: 1.9;
+    color: $extreme-dark-gray;
   }
   
   .fa-angle-down {
+    color: $extreme-dark-gray;
     position: relative;
     top: -5px;
     transition: 250ms;

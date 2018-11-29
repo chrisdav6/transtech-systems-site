@@ -24,3 +24,57 @@ form {
 .form-control {
   border: 1px solid $extreme-dark-gray;
 }
+
+.header-link {
+  color: $extreme-dark-gray;
+ 
+  &:hover {
+    text-decoration: underline;
+    color: $extreme-dark-gray;
+  }
+}
+
+.footer-link {
+  font-weight: 600;
+  color: $extreme-dark-gray;
+ 
+  &:hover {
+    text-decoration: underline;
+    color: $extreme-dark-gray;
+  }
+}
+
+.standard-link {
+  font-weight: 600;
+  color: $extreme-dark-gray;
+  padding: 0 .2em;
+ 
+  &:hover {
+    text-decoration: underline;
+    color: $extreme-dark-gray;
+    background: $logo-yellow;
+  }
+}
+
+.phone-link {
+  font-weight: 600;
+  color: $extreme-dark-gray;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: $extreme-dark-gray;
+  }
+}
+
+.link {
+  color: $extreme-dark-gray;
+  font-weight: 500;
+
+  &:hover,
+  &:active {
+    color: $extreme-dark-gray;
+    text-decoration: none;
+  }
+}
+  

@@ -28,22 +28,13 @@
   
     &:hover,
     &:active {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
   
   p {
     font-size: 1.1rem;
     margin-bottom: 3em;
-    
-    .link {
-      color: $dark-gray;
-  
-      &:hover,
-      &:active {
-        text-decoration: none;
-      }
-    }
   }
   
 }

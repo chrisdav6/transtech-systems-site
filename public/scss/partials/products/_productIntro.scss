@@ -1,19 +1,13 @@
 #intro {
-  .link {
-    font-weight: 600;
-    color: $extreme-dark-gray;
-    text-decoration: none;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
-  .discontinued {
+    .discontinued {
     padding: .75em;
     display: inline-block;
     background: red;
     color: white;
+    font-weight: 600;
+  }
+
+  span {
     font-weight: 600;
   }
   
