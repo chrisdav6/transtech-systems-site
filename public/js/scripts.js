@@ -16,7 +16,7 @@ $(function() {
     easing: 'easeInOutQuart'
   });
 
-  var scrollAbout = new SmoothScroll('a[href="#gaugesMap"]', {
+  var scrollGaugesMap = new SmoothScroll('a[href="#gaugesMap"]', {
     speed: 800,
     easing: 'easeInOutQuart'
   });
