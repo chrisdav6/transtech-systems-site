@@ -365,7 +365,7 @@ app.post("/salesRequest", function(req, res) {
 
 //Repair Request Form
 app.post("/repairRequest", function(req, res) {
-  let { name, company, state, country, phone, email, estimate, serviceMessage } = req.body;
+  let { name, company, state, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
     // create reusable transporter object using the default SMTP transport
@@ -389,6 +389,8 @@ app.post("/repairRequest", function(req, res) {
     body += `<strong>Country:</strong> ${country}<br>`;
     body += `<strong>Phone:</strong> ${phone}<br>`;
     body += `<strong>Email:</strong> ${email}<br>`;
+    body += `<strong>Product for Repair:</strong> ${repairProduct}<br>`;
+    body += `<strong>Serial Number:</strong> ${repairSerial}<br>`;
     body += `<strong>Estimate Required:</strong> ${estimate}</p>`;
     body += `<p><strong>Description of Repair:</strong><br> ${serviceMessage}</p>`;
 

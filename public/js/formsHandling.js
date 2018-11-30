@@ -77,7 +77,24 @@ $(function() {
 			return false;
 		}
 		
-  });
+	});
+	
+
+
+	//Product Repair Form remove required serial # if PTS3000 or Other is selected
+	$("#repairRequestForm").on("change", function (event) {
+
+		let $repairSerial = $("#repairSerial");
+		let $pts3000 = $("#repair4");
+		let $other = $("#repair5");
+
+		if ($pts3000.is(':checked') || $other.is(':checked')) {
+			$repairSerial.prop("required", false);
+		} else {
+			$repairSerial.prop("required", true);
+		}
+
+	});
   
   
   
