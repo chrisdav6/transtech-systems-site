@@ -56,6 +56,17 @@ form {
   }
 }
 
+.standard-link-light {
+  color: white;
+  padding: 0 .2em;
+ 
+  &:hover {
+    text-decoration: underline;
+    color: $extreme-dark-gray;
+    background: $logo-yellow;
+  }
+}
+
 .phone-link {
   font-weight: 600;
   color: $extreme-dark-gray;
