@@ -89,6 +89,13 @@ app.get("/pqi301", function(req, res) {
   });
 });
 
+app.get("/legacyProducts", function (req, res) {
+  res.render("legacyProducts", {
+    title: "TransTech Systems Legacy Products",
+    metaTitle: "Retired or discontinued products manufactured by TransTech Systems"
+  });
+});
+
 //Product Manuals
 app.get("/productManuals", function(req, res) {
   res.render("productManuals", {
