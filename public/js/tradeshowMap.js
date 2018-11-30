@@ -26,12 +26,13 @@ function initMap() {
     // ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
     // ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
-    // ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
+		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
+		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
-    ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
+		['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
+		['CAPA, Raleigh, NC', 35.827463, -78.645086],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
-    ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
@@ -99,7 +100,19 @@ function initMap() {
 	   // 'November 12-15, 2018<br>' +
 	   // '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	   // '</div>'
-    // ],
+		// ],
+		
+		// APAM
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" src="../img/apam-logo.png">' +
+		// 	'<span>APAM</span><br>' +
+		// 	'<hr>' +
+		// 	'Battle Creek, MI<br>' +
+		// 	'March 6-7, 2019<br>' +
+		// 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
     
 		// APAI
     [
@@ -129,14 +142,25 @@ function initMap() {
     [
 	    '<div class="map-text">' +
 	    '<img class="d-block mb-3" src="../img/woa-logo.png">' +
-	    '<span>World of Asphalt</span><br>' +
+	    '<span>World of Asphalt - Booth# 26127</span><br>' +
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
-	    'Booth# 26127<br>' +
 	    'February 12-14, 2019<br>' +
 	    '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
-    ],
+		],
+		
+		// CAPA
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" src="../img/capa-logo.png">' +
+			'<span>CAPA</span><br>' +
+			'<hr>' +
+			'Raleigh, NC<br>' +
+			'February 21-22, 2019<br>' +
+			'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
     
 		// RMACES
     [
@@ -150,18 +174,6 @@ function initMap() {
 	    '</div>'
     ],
     
-    // APAM
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/apam-logo.png">' +
-	    '<span>APAM</span><br>' +
-	    '<hr>' +
-	    'Battle Creek, MI<br>' +
-	    'March 6-7, 2019<br>' +
-	    '<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
-    
     // Ohio
     [
 	    '<div class="map-text">' +
@@ -172,20 +184,20 @@ function initMap() {
 	    'March 26-27, 2019<br>' +
 	    '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
-    ],
-    
+		],
+		
 		// ConExpo
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/conexpo-logo.png">' +
-	    '<span>ConExpo</span><br>' +
-	    '<hr>' +
-	    'Las Vegas, Nevada<br>' +
-	    'Booth# C30947<br>' +
-	    'March 10-14, 2020<br>' +
-	    '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ]
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" src="../img/conexpo-logo.png">' +
+			'<span>ConExpo - Booth# C30947</span><br>' +
+			'<hr>' +
+			'Las Vegas, NV<br>' +
+			'March 10-14, 2020<br>' +
+			'<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		]
+    
   ];
   
   
