@@ -17,6 +17,15 @@
     color: $white;
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
   }
+
+  .non-nuclear {
+    display: inline-block;
+    padding: .1em .35em;
+    margin: .2em 0;
+    background: $logo-yellow;
+    text-shadow: none;
+    color: $extreme-dark-gray;
+  }
   
   .fa-angle-down {
     position: relative;
@@ -48,15 +57,6 @@
     .fa-angle-down {
       margin-top: .1em;
     }
-    
   }
 }
-
-.non-nuclear {
-  display: inline-block;
-  padding: .1em .35em;
-  margin: .2em 0;
-  background: $logo-yellow;
-  text-shadow: none;
-  color: $dark-gray;
-}
+  
