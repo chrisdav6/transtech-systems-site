@@ -25,6 +25,8 @@ function initMap() {
 	// Map Marker Locations
 	var markers = [
 		['Afghanistan', 34.234306, 66.209291],
+		['Alaska', 58.243872, -156.079493],
+		['Alberta', 55.025249, -115.289692],
 		['Algeria', 29.343875, 2.109375],
 		['Angola', -12.554564, 17.182617],
 		['Argentina', -33.550655, -63.950483],
@@ -38,13 +40,10 @@ function initMap() {
 		['Benin', 10.00131, 2.285156],
 		['Bolivia', -17.555479, -63.395588],
 		['Brazil', -9.795678, -49.833984],
+		['British Columbia', 49.259067, -123.11245],
 		['Bulgaria', 42.646081, 25.081787],
 		['Burkina Faso', 12.415119, -1.669922],
 		['Cameroun', 5.441022, 12.678223],
-		['British Columbia', 49.259067, -123.11245],
-		['Quebec', 45.520301, -73.55484],
-		['Ontario', 43.239599, -79.796287],
-		['Alberta', 51.380788, -114.974718],
 		['Chile', -26.824071, -70.224609],
 		['China', 34.597042, 103.974609],
 		['Congo', -0.329588, 15.864258],
@@ -58,6 +57,7 @@ function initMap() {
 		['France', 46.754917, 2.39502],
 		['Gabon', -0.659165, 11.469727],
 		['Germany', 51.220647, 10.524902],
+		['Guatemala', 14.871967, -90.534885],
 		['Guinée', 10.941192, -10.678711],
 		['Guinée-Bissau', 12.084982, -14.902954],
 		['Hungary', 47.171044, 19.215088],
@@ -73,6 +73,7 @@ function initMap() {
 		['Lithuania', 55.463285, 23.917236],
 		['Malaysia', 4.19303, 102.172852],
 		['Mali', 17.874203, -1.560059],
+		['Manitoba', 55.709642, -96.839918],
 		['Maroc', 32.444885, -6.009521],
 		['Mauritanie', 20.179724, -9.689941],
 		['Mexico', 24.44715, -102.271729],
@@ -83,14 +84,17 @@ function initMap() {
 		['Niger', 17.497389, 9.777832],
 		['Norway', 61.143235, 9.228516],
 		['Oman', 20.306682, 56.007590],
+		['Ontario', 43.239599, -79.796287],
 		['Pakistan', 29.618773, 69.265330],
 		['Panama', 8.504292, -81.456683],
 		['Philippines', 12.533115, 123.046875],
 		['Poland', 52.456009, 19.02832],
 		['Portugal', 39.740986, -8.4375],
 		['Qatar', 25.304304, 51.212769],
+		['Quebec', 45.520301, -73.55484],
 		['République Centrafricaine', 6.850078, 20.566406],
 		['Russia', 63.074866, 93.339844],
+		['Saskatchewan', 54.587785, -106.011977],
 		['Sénégal', 14.743011, -14.72168],
 		['Singapore', 1.364922, 103.815994],
 		['Slovenia', 46.029389, 14.655762],
@@ -121,21 +125,21 @@ function initMap() {
 	for (i = 0; i < markers.length; i++) {
 
 		var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
-
+		
 		marker = new google.maps.Marker({
 			position: position,
+			icon: {
+				path: google.maps.SymbolPath.CIRCLE,
+				fillOpacity: 1,
+				fillColor: "yellow",
+				strokeColor: "black",
+				strokeWeight: 3,
+				scale: 6
+			},
 			map: map,
 			title: markers[i][0],
 		});
-
-
-		// Allow each marker to have an info window    
-		google.maps.event.addListener(marker, 'click', (function (marker, i) {
-			return function () {
-				infoWindow.setContent(infoWindowContent[i][0]);
-				infoWindow.open(map, marker);
-			}
-		})(marker, i));
+		
 	}
 
 }
