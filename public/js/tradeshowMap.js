@@ -44,7 +44,7 @@ function initMap() {
 		// Intermat ASEAN
     // [
 	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" src="../img/intermat-asean-logo.png">' +
+	   // '<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
 	   // '<span>Intermat ASEAN</span><br>' +
 	   // '<hr>' +
 	   // 'Bangkok, Thailand<br>' +
@@ -57,7 +57,7 @@ function initMap() {
 		// TXAPA
     // [
 	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" src="../img/txapa-logo.png">' +
+	   // '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
 	   // '<span>TXAPA</span><br>' +
 	   // '<hr>' +
 	   // 'Horseshoe Bay, TX<br>' +
@@ -69,7 +69,7 @@ function initMap() {
 		// NEAUPG
     // [
 	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" src="../img/neaupg-logo.png">' +
+	   // '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
 	   // '<span>NEAUPG</span><br>' +
 	   // '<hr>' +
 	   // 'Atlantic City, NJ<br>' +
@@ -81,7 +81,7 @@ function initMap() {
     // NAPA
     // [
 	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" src="../img/napa-logo.png">' +
+	   // '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
 	   // '<span>NAPA Conference on Stone-Matrix Asphalt</span><br>' +
 	   // '<hr>' +
 	   // 'Atlanta, GA<br>' +
@@ -93,7 +93,7 @@ function initMap() {
 		// SEAUPG
     // [
 	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" src="../img/seaupg-logo.png">' +
+	   // '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
 	   // '<span>SEAUPG</span><br>' +
 	   // '<hr>' +
 	   // 'Raleigh, NC<br>' +
@@ -105,7 +105,7 @@ function initMap() {
 		// APAM
 		// [
 		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" src="../img/apam-logo.png">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/apam-logo.png">' +
 		// 	'<span>APAM</span><br>' +
 		// 	'<hr>' +
 		// 	'Battle Creek, MI<br>' +
@@ -117,7 +117,7 @@ function initMap() {
 		// APAI
     [
 	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/apai-logo.png">' +
+	    '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
 	    '<span>APAI</span><br>' +
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
@@ -129,7 +129,7 @@ function initMap() {
 		// TRB
     [
 	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/trb-logo.png">' +
+	    '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
 	    '<span>TRB</span><br>' +
 	    '<hr>' +
 	    'Washington D.C.<br>' +
@@ -141,7 +141,7 @@ function initMap() {
 		// World of Asphalt
     [
 	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/woa-logo.png">' +
+	    '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
 	    '<span>World of Asphalt - Booth# 26127</span><br>' +
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
@@ -153,7 +153,7 @@ function initMap() {
 		// CAPA
 		[
 			'<div class="map-text">' +
-			'<img class="d-block mb-3" src="../img/capa-logo.png">' +
+			'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
 			'<span>CAPA</span><br>' +
 			'<hr>' +
 			'Raleigh, NC<br>' +
@@ -165,7 +165,7 @@ function initMap() {
 		// RMACES
     [
 	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/rmaces-logo.png">' +
+	    '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
 	    '<span>RMACES</span><br>' +
 	    '<hr>' +
 	    'Denver, CO<br>' +
@@ -177,7 +177,7 @@ function initMap() {
     // Ohio
     [
 	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" src="../img/ohio-logo.png">' +
+	    '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
 	    '<span>Ohio Asphalt Expo</span><br>' +
 	    '<hr>' +
 	    'Columbus, OH<br>' +
@@ -189,7 +189,7 @@ function initMap() {
 		// ConExpo
 		[
 			'<div class="map-text">' +
-			'<img class="d-block mb-3" src="../img/conexpo-logo.png">' +
+			'<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
 			'<span>ConExpo - Booth# C30947</span><br>' +
 			'<hr>' +
 			'Las Vegas, NV<br>' +
