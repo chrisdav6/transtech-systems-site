@@ -116,28 +116,26 @@ function initMap() {
 		['Vietnam', 13.20786, 108.511963]
 	];
 
-
-	
-	// Display multiple markers on a map
-	var infoWindow = new google.maps.InfoWindow(), marker, i;
-
 	// Loop through our array of markers & place each one on the map  
 	for (i = 0; i < markers.length; i++) {
 
 		var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
-		
+		// var icon = "http://maps.google.com/mapfiles/kml/pal3/icon49.png";
+		var yellowT = {
+			path: 'M303.49,409.76v-14.74h-5.23v-4.88h15.93v4.88h-5.23v14.62l11.81-11.8c0.51-0.52,0.51-1.35,0-1.87l-13.67-13.66 c-0.51-0.51-1.35-0.51-1.86,0l-13.66,13.66c-0.52,0.52-0.52,1.35,0,1.87L303.49,409.76z',
+			fillColor: '#FFDD00',
+			fillOpacity: 0.8,
+			scale: 1,
+			strokeColor: 'black',
+			strokeWeight: 1,
+			anchor: new google.maps.Point(310,400) // Used to correct offset when using custom svg icon, delete if using standard icon
+		};
+
 		marker = new google.maps.Marker({
 			position: position,
-			icon: {
-				path: google.maps.SymbolPath.CIRCLE,
-				fillOpacity: 1,
-				fillColor: "yellow",
-				strokeColor: "black",
-				strokeWeight: 3,
-				scale: 6
-			},
+			icon: yellowT,
 			map: map,
-			title: markers[i][0],
+			title: markers[i][0]
 		});
 		
 	}
