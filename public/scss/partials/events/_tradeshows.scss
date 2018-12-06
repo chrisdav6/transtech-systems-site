@@ -9,7 +9,6 @@
     height: 1px;
     width: 100%;
     background: $dark-gray;
-    margin-bottom: 2em;
   }
   
   h3 {
@@ -17,6 +16,11 @@
     background: $logo-yellow;
     display: inline-block;
     padding: .35em .5em;
+  }
+
+  .attending {
+    font-size: 1.25rem;
+    font-weight: 500;
   }
 
   .not-attending-title {
