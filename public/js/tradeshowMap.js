@@ -22,7 +22,6 @@ function initMap() {
   
   // Map Marker Locations
   var markers = [
-    // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
     // ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
@@ -33,26 +32,14 @@ function initMap() {
 		['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		['CAPA, Raleigh, NC', 35.827463, -78.645086],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
-    ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
 
   // Info Window Content
   var infoWindowContent = [
-    
-		// Intermat ASEAN
-    // [
-	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
-	   // '<span>Intermat ASEAN</span><br>' +
-	   // '<hr>' +
-	   // 'Bangkok, Thailand<br>' +
-	   // 'Booth# C20<br>' +
-	   // 'September 6-8, 2018<br>' +
-	   // '<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	   // '</div>'
-    // ],
     
 		// TXAPA
     // [
@@ -184,6 +171,18 @@ function initMap() {
 	    'March 26-27, 2019<br>' +
 	    '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
+		],
+
+		//Intermat ASEAN
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
+			'<span>Intermat ASEAN</span><br>' +
+			'<hr>' +
+			'Bangkok, Thailand<br>' +
+			'September 5-7, 2019<br>' +
+			'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
 		],
 		
 		// ConExpo
