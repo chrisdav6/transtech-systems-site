@@ -9,10 +9,10 @@ function initMap() {
 
   var mapOptions = {
     center: {
-    	lat: 38.643,
-    	lng: -94.910
+    	lat: 35.643,
+    	lng: -90.910
     },
-    zoom: 5,
+    zoom: 4,
     mapTypeId: 'roadmap',
     scrollwheel: false
   };
