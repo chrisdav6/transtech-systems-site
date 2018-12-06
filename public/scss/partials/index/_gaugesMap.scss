@@ -14,6 +14,10 @@
   .title {
     padding-top: 2.25em;
     color: $extreme-dark-gray;
+
+    @include mq1024 {
+      font-size: 2rem;
+    }
   }
   
   .about-text {
@@ -33,19 +37,4 @@
     }
   }
   
-  @include mq {
-    .title {
-      font-size: 2rem;
-      padding: 2.75em 0 .15em 0;
-    }
-    
-    .about-text {
-      font-size: 1.25rem;
-      line-height: inherit;
-    }
-    
-    .fa-angle-down {
-      margin-top: .1em;
-    }
-  }
 }
