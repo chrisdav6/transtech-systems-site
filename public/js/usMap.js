@@ -94,7 +94,8 @@ function initMap() {
 	    '<hr>' +
 	    '866-917-3447<br>' +
 	    'Attn: Paul Eikenberry<br>' +
-	    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -175,7 +176,8 @@ function initMap() {
 	    '<hr>' +
 	    '888-260-5584<br>' +
 	    'Attn: Scot Hall<br>' +
-	    '<p><a class="link" href="mailto:scothall@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:scothall@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -186,7 +188,8 @@ function initMap() {
 	    '<hr>' +
 	    '800-752-9416<br>' +
 	    'Attn: Stephanie Miller<br>' +
-	    '<p><a class="link" href="mailto:stephanie@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:stephanie@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -197,7 +200,8 @@ function initMap() {
 	    '<hr>' +
 	    '800-569-8950<br>' +
 	    'Attn: Sam Goodson<br>' +
-	    '<p><a class="link" href="mailto:sgoodson@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:sgoodson@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -208,7 +212,8 @@ function initMap() {
 	    '<hr>' +
 	    '800-535-7384<br>' +
 	    'Attn: Lou Lemenze<br>' +
-	    '<p><a class="link" href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -249,7 +254,8 @@ function initMap() {
 	    '<hr>' +
 	    '815-220-7709<br>' +
 	    'Attn: Steve Hoscheid<br>' +
-	    '<p><a class="link" href="mailto:hoscheids@greatlakeseq.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:hoscheids@greatlakeseq.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.greatlakesequipment.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -300,7 +306,8 @@ function initMap() {
 	    '<hr>' +
 	    '866-917-3447<br>' +
 	    'Attn: Paul Eikenberry<br>' +
-	    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -361,7 +368,8 @@ function initMap() {
 	    '<hr>' +
 	    '866-917-3447<br>' +
 	    'Attn: Paul Eikenberry<br>' +
-	    '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -502,7 +510,8 @@ function initMap() {
 	    '<hr>' +
 	    '717-766-7671<br>' +
 	    'Attn: Matt Wilson<br>' +
-	    '<p><a class="link" href="mailto:mattwilson@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:mattwilson@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.grofftractor.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
@@ -513,7 +522,8 @@ function initMap() {
 	    '<hr>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
-	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
 		
