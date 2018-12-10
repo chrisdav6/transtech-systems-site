@@ -119,7 +119,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -130,7 +131,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -141,7 +143,8 @@ function initMap() {
 	    '<hr>' +
 	    '+351-21-752-05-60<br>' +
 	    'Attn: Paulo Frias Costa<br>' +
-	    '<p><a class="link" href="mailto:pfcosta@perta.pt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:pfcosta@perta.pt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.perta.pt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -152,7 +155,8 @@ function initMap() {
 	    '<hr>' +
 	    '+591-3-336-7676<br>' +
 	    'Attn: Mauricio Lijeron Eguez<br>' +
-	    '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -163,7 +167,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -174,7 +179,8 @@ function initMap() {
 	    '<hr>' +
 	    '+61-418-235-048<br>' +
 	    'Attn: Adrian Rogers<br>' +
-	    '<p><a class="link" href="mailto:bear.adrianrogers@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bear.adrianrogers@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -185,7 +191,8 @@ function initMap() {
 	    '<hr>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
-	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -196,7 +203,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -207,7 +215,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -218,7 +227,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -229,7 +239,8 @@ function initMap() {
 	    '<hr>' +
 	    '+31-(0)620248145<br>' +
 	    'Attn: Joop Mennink<br>' +
-	    '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://asintra.eu/nederlands.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -240,7 +251,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -251,7 +263,8 @@ function initMap() {
 	    '<hr>' +
 	    '+591-3-336-7676<br>' +
 	    'Attn: Mauricio Lijeron Eguez<br>' +
-	    '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -262,7 +275,8 @@ function initMap() {
 	    '<hr>' +
 	    '+5511-3289-0211<br>' +
 	    'Attn: Rodrigo Barella<br>' +
-	    '<p><a class="link" href="mailto:rodrigobarella@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:rodrigobarella@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.solotest.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -273,7 +287,8 @@ function initMap() {
 	    '<hr>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
-	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -284,7 +299,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -295,7 +311,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -306,7 +323,8 @@ function initMap() {
 	    '<hr>' +
 	    '604-872-7894<br>' +
 	    'Attn: Jamie Emery<br>' +
-	    '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -317,7 +335,8 @@ function initMap() {
 	    '<hr>' +
 	    '514-735-5267<br>' +
 	    'Attn: Sylvain Paquette<br>' +
-	    '<p><a class="link" href="mailto:spaquette@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:spaquette@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -328,7 +347,8 @@ function initMap() {
 	    '<hr>' +
 	    '905-333-5510<br>' +
 	    'Attn: Melanie Crossman<br>' +
-	    '<p><a class="link" href="mailto:mcrossman@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:mcrossman@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -339,7 +359,8 @@ function initMap() {
 	    '<hr>' +
 	    '780-434-2645<br>' +
 	    'Attn: Jamie Emery<br>' +
-	    '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -350,7 +371,8 @@ function initMap() {
 	    '<hr>' +
 	    '+562 24069792<br>' +
 	    'Attn: Claudio Fuentes Lopez<br>' +
-	    '<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.indexsa.cl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -361,7 +383,8 @@ function initMap() {
 	    '<hr>' +
 	    '+852-2392-8698<br>' +
 	    'Attn: Janet Lo<br>' +
-	    '<p><a class="link" href="mailto:janet@epc.com.hk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:janet@epc.com.hk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.epc.com.hk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -374,7 +397,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -385,7 +409,8 @@ function initMap() {
 	    '<hr>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
-	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -396,7 +421,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -407,7 +433,8 @@ function initMap() {
 	    '<hr>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
-	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -418,7 +445,8 @@ function initMap() {
 	    '<hr>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
-	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -440,7 +468,8 @@ function initMap() {
 	    '<hr>' +
 	    '+370-3497-8021<br>' +
 	    'Attn: Edvinas Peleckas<br>' +
-	    '<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -451,7 +480,8 @@ function initMap() {
 	    '<hr>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
-	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -462,7 +492,8 @@ function initMap() {
 	    '<hr>' +
 	    '+333-8927-1644<br>' +
 	    'Attn: Michel Grollemund<br>' +
-	    '<p><a class="link" href="mailto:michel@grollemund.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:michel@grollemund.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.laboroutes.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -473,7 +504,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -484,7 +516,8 @@ function initMap() {
 	    '<hr>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
-	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -495,7 +528,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -506,7 +540,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -517,7 +552,8 @@ function initMap() {
 	    '<hr>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
-	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -528,7 +564,8 @@ function initMap() {
 	    '<hr>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
-	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -539,7 +576,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -550,7 +588,8 @@ function initMap() {
 	    '<hr>' +
 	    '+964-750-464-9002<br>' +
 	    'Attn: Ahmed Hamad<br>' +
-	    '<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -561,7 +600,8 @@ function initMap() {
 	    '<hr>' +
 	    '+44-191-461-1103<br>' +
 	    'Attn: Callum Brady<br>' +
-	    '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -572,7 +612,8 @@ function initMap() {
 	    '<hr>' +
 	    '+816-6241-0240<br>' +
 	    'Attn: Yukihiro Kimura<br>' +
-	    '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -583,7 +624,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -605,7 +647,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -616,7 +659,8 @@ function initMap() {
 	    '<hr>' +
 	    '+370-3497-8021<br>' +
 	    'Attn: Edvinas Peleckas<br>' +
-	    '<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -627,7 +671,8 @@ function initMap() {
 	    '<hr>' +
 	    '+370-3497-8021<br>' +
 	    'Attn: Edvinas Peleckas<br>' +
-	    '<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -638,7 +683,8 @@ function initMap() {
 	    '<hr>' +
 	    '+603-802-41615<br>' +
 	    'Attn: H.S. Yap<br>' +
-	    '<p><a class="link" href="mailto:yhs@msisb.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:yhs@msisb.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://msisb.com/index.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -649,7 +695,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -660,7 +707,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -671,7 +719,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -682,7 +731,8 @@ function initMap() {
 	    '<hr>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
-	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -693,7 +743,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -704,7 +755,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -715,7 +767,8 @@ function initMap() {
 	    '<hr>' +
 	    '+31-(0)620248145<br>' +
 	    'Attn: Joop Mennink<br>' +
-	    '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://asintra.eu/nederlands.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -726,7 +779,8 @@ function initMap() {
 	    '<hr>' +
 	    '+61-418-235-048<br>' +
 	    'Attn: Adrian Rogers<br>' +
-	    '<p><a class="link" href="mailto:bear.adrianrogers@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bear.adrianrogers@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -737,7 +791,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -748,7 +803,8 @@ function initMap() {
 	    '<hr>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
-	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -759,7 +815,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -770,7 +827,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -781,7 +839,8 @@ function initMap() {
 	    '<hr>' +
 	    '727-530-9581<br>' +
 	    'Attn: Carlos Licona<br>' +
-	    '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -792,7 +851,8 @@ function initMap() {
 	    '<hr>' +
 	    '+632 711-8416/22<br>' +
 	    'Attn: Victor Pulido<br>' +
-	    '<p><a class="link" href="mailto:vpulido@smi-group.com.ph?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:vpulido@smi-group.com.ph?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.smi-group.com.ph" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -803,7 +863,8 @@ function initMap() {
 	    '<hr>' +
 	    '+4822-519-4070<br>' +
 	    'Attn: Krzysztof; Tomasz Roszkowski<br>' +
-	    '<p><a class="link" href="mailto:krzysztof@toropol.pl?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:krzysztof@toropol.pl?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://toropol.pl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -814,7 +875,8 @@ function initMap() {
 	    '<hr>' +
 	    '+4822-519-4070<br>' +
 	    'Attn: Carlos Blazquez<br>' +
-	    '<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://proetisa.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -825,7 +887,8 @@ function initMap() {
 	    '<hr>' +
 	    '+974-4462-1168<br>' +
 	    'Attn: N. S. Hegde / Vikram Shekhawat<br>' +
-	    '<p><a class="link" href="mailto:vikram@intermodalqatar.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:vikram@intermodalqatar.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.intermodalqatar.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -836,7 +899,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -847,7 +911,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -858,7 +923,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -869,7 +935,8 @@ function initMap() {
 	    '<hr>' +
 	    '+816-6241-0240<br>' +
 	    'Attn: Yukihiro Kimura<br>' +
-	    '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -880,7 +947,8 @@ function initMap() {
 	    '<hr>' +
 	    '+49-441-3501227<br>' +
 	    'Attn: Bernd Diedrichs<br>' +
-	    '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -891,7 +959,8 @@ function initMap() {
 	    '<hr>' +
 	    '+4822-519-4070<br>' +
 	    'Attn: Carlos Blazquez<br>' +
-	    '<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://proetisa.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -902,7 +971,8 @@ function initMap() {
 	    '<hr>' +
 	    '91-044-26162877<br>' +
 	    'Attn: G. Parasuranam<br>' +
-	    '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -913,7 +983,8 @@ function initMap() {
 	    '<hr>' +
 	    '+47 32 24 35 30<br>' +
 	    'Attn: Geir Solberg<br>' +
-	    '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -924,7 +995,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -935,7 +1007,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -946,7 +1019,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -957,7 +1031,8 @@ function initMap() {
 	    '<hr>' +
 	    '+02-553-0809<br>' +
 	    'Attn: Mr. Nantapong Phuetphon<br>' +
-	    '<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.asiatest.co.th/ATE.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -968,7 +1043,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -979,7 +1055,8 @@ function initMap() {
 	    '<hr>' +
 	    '+41-62-723-42-23<br>' +
 	    'Attn: Max Gysin<br>' +
-	    '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -990,7 +1067,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -1001,7 +1079,8 @@ function initMap() {
 	    '<hr>' +
 	    '+964-750-464-9002<br>' +
 	    'Attn: Ahmed Hamad<br>' +
-	    '<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -1012,7 +1091,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -1023,7 +1103,8 @@ function initMap() {
 	    '<hr>' +
 	    '+44-191-461-1103<br>' +
 	    'Attn: Callum Brady<br>' +
-	    '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -1034,7 +1115,8 @@ function initMap() {
 	    '<hr>' +
 	    '781-784-3095<br>' +
 	    'Attn: Alexander Baranov<br>' +
-	    '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
@@ -1045,7 +1127,8 @@ function initMap() {
 	    '<hr>' +
 	    '+816-6241-0240<br>' +
 	    'Attn: Yukihiro Kimura<br>' +
-	    '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ]
   ];
