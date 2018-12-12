@@ -406,24 +406,19 @@
 									<label for="repairSerial">Product Serial Number</label>
 									<input type="text" class="form-control form-control-lg" name="repairSerial" id="repairSerial" required>
 								</div>
+								<div class="form-group mt-4">
+									<label for="estimate">Please Include Estimate</label>
+									<select class="form-control form-control-lg" name="estimate">
+										<option value="Over $1000">If cost of repair is more than $1000</option>
+										<option value="Over $750">If cost of repair is more than $750</option>
+										<option value="Over $500">If cost of repair is more than $500</option>
+										<option value="Over Calibration Cost">If cost of repair is more than calibration cost</option>
+										<option value="No" selected>No</option>
+									</select>
+								</div>
 							</div>
 						</div>
 						
-            
-            <div class="form-group mt-4">
-              <p>Please Include Estimate</p>
-              <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="estimate" id="estimate1" value="Yes" checked>
-                <label class="form-check-label" for="estimate1">Yes</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="estimate" id="estimate2" value="No">
-                <label class="form-check-label" for="estimate2">No</label>
-              </div>
-						</div>
-						
-						
-
             <div class="form-group mt-4">
               <label for="serviceMessage">Description of Service Required</label>
               <textarea class="form-control" name="serviceMessage" id="serviceMessage" rows="5" required></textarea>
