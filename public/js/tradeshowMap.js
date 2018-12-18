@@ -31,7 +31,8 @@ function initMap() {
     ['TRB, Washington D.C.', 38.911744, -77.018697],
 		['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		['CAPA, Raleigh, NC', 35.827463, -78.645086],
-    ['RMACES, Denver, CO', 39.771474, -104.806882],
+		['RMACES, Denver, CO', 39.771474, -104.806882],
+		['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
@@ -159,7 +160,19 @@ function initMap() {
 	    'February 27-March 1, 2019<br>' +
 	    '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
-    ],
+		],
+		
+		// CalAPA
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+			'<span>CalAPA Spring Conference</span><br>' +
+			'<hr>' +
+			'Ontario, CA<br>' +
+			'March 20-21, 2019<br>' +
+			'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
     
     // Ohio
     [
