@@ -27,7 +27,7 @@ function initMap() {
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-    ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
 		['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		['CAPA, Raleigh, NC', 35.827463, -78.645086],
@@ -103,16 +103,16 @@ function initMap() {
 		// ],
     
 		// APAI
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
-	    '<span>APAI</span><br>' +
-	    '<hr>' +
-	    'Indianapolis, IN<br>' +
-	    'December 19-21, 2018<br>' +
-	    '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
+    // [
+	  //   '<div class="map-text">' +
+	  //   '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
+	  //   '<span>APAI</span><br>' +
+	  //   '<hr>' +
+	  //   'Indianapolis, IN<br>' +
+	  //   'December 19-21, 2018<br>' +
+	  //   '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	  //   '</div>'
+    // ],
     
 		// TRB
     [
@@ -130,7 +130,7 @@ function initMap() {
     [
 	    '<div class="map-text">' +
 	    '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-	    '<span>World of Asphalt - Booth# 26127</span><br>' +
+	    '<span>World of Asphalt - Booth #26127</span><br>' +
 	    '<hr>' +
 	    'Indianapolis, IN<br>' +
 	    'February 12-14, 2019<br>' +
@@ -178,7 +178,7 @@ function initMap() {
     [
 	    '<div class="map-text">' +
 	    '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-	    '<span>Ohio Asphalt Expo</span><br>' +
+	    '<span>Ohio Asphalt Expo - Booth #21</span><br>' +
 	    '<hr>' +
 	    'Columbus, OH<br>' +
 	    'March 26-27, 2019<br>' +
@@ -202,7 +202,7 @@ function initMap() {
 		[
 			'<div class="map-text">' +
 			'<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
-			'<span>ConExpo - Booth# C30947</span><br>' +
+			'<span>ConExpo - Booth #C30947</span><br>' +
 			'<hr>' +
 			'Las Vegas, NV<br>' +
 			'March 10-14, 2020<br>' +
