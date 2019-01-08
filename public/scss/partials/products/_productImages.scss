@@ -11,3 +11,7 @@
 .imageContainer img:hover {
   transform: scale(1.1);
 }
+
+.img-thumbnail { //overriding lightbox thumbnail padding
+  padding: .18rem;
+}
