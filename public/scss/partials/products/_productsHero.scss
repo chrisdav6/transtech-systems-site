@@ -69,6 +69,11 @@
   margin-top: -50px;
   margin-left: 75px;
   transition: 1s;
+  max-width: 400px;
+
+  @include mq1024 {
+    margin-left: 20px;
+  }
 }
 
 .pts-feature:hover {
