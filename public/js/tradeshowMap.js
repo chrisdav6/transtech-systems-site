@@ -28,7 +28,7 @@ function initMap() {
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
-    ['TRB, Washington D.C.', 38.911744, -77.018697],
+    // ['TRB, Washington D.C.', 38.911744, -77.018697],
 		['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
@@ -115,16 +115,16 @@ function initMap() {
     // ],
     
 		// TRB
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-	    '<span>TRB</span><br>' +
-	    '<hr>' +
-	    'Washington D.C.<br>' +
-	    'January 13-17, 2019<br>' +
-	    '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
+    // [
+	  //   '<div class="map-text">' +
+	  //   '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+	  //   '<span>TRB</span><br>' +
+	  //   '<hr>' +
+	  //   'Washington D.C.<br>' +
+	  //   'January 13-17, 2019<br>' +
+	  //   '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	  //   '</div>'
+    // ],
     
 		// World of Asphalt
     [
