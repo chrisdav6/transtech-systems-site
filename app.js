@@ -463,7 +463,7 @@ app.post("/productRegistration", function(req, res) {
       from: 'webforms@transtechsys.com', // sender address
       to: 'cdavis@transtechsys.com', // list of receivers
       replyTo: email,
-      subject: "TransTech Systems Repair Request Form", // Subject line
+      subject: "TransTech Systems Product Registration Form", // Subject line
       text: body, // plain text body
       html: body // html body
     };

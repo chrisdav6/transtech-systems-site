@@ -165,7 +165,9 @@ $(function() {
 			//Hide the submit button
 			$manualDownloadBtn.hide();
 			//Show the spinner gif
-			$(".fa-spinner").css("display", "block");
+			$(".fa-spinner").css({
+				"display": "block"
+			});
 			$(".fa-spinner").show();
 	
 			//Wait 2 seconds
