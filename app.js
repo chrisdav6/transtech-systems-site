@@ -816,7 +816,7 @@ app.post("/productManuals", function(req, res) {
       }
     });
 
-    let body = `<h2><u>${manualName} Download</u></h2>`;
+    let body = `<h2><u>${manualName} Download - Manuals Page</u></h2>`;
     body += `<p><strong>From:</strong> ${name}<br>`;
     body += `<strong>Company:</strong> ${company}<br>`;
     body += `<strong>Country:</strong> ${country}<br>`;
