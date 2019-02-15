@@ -29,7 +29,7 @@ function initMap() {
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
-		['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
+		// ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['CalAPA, Ontario, CA', 34.055032, -117.615421],
@@ -127,16 +127,16 @@ function initMap() {
     // ],
     
 		// World of Asphalt
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-	    '<span>World of Asphalt - Booth #26127</span><br>' +
-	    '<hr>' +
-	    'Indianapolis, IN<br>' +
-	    'February 12-14, 2019<br>' +
-	    '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-		],
+    // [
+	  //   '<div class="map-text">' +
+	  //   '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
+	  //   '<span>World of Asphalt - Booth #26127</span><br>' +
+	  //   '<hr>' +
+	  //   'Indianapolis, IN<br>' +
+	  //   'February 12-14, 2019<br>' +
+	  //   '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	  //   '</div>'
+		// ],
 		
 		// CAPA
 		[
