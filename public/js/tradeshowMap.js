@@ -30,7 +30,7 @@ function initMap() {
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
 		// ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
-		['CAPA, Raleigh, NC', 35.827463, -78.645086],
+		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
@@ -139,16 +139,16 @@ function initMap() {
 		// ],
 		
 		// CAPA
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
-			'<span>CAPA</span><br>' +
-			'<hr>' +
-			'Raleigh, NC<br>' +
-			'February 21-22, 2019<br>' +
-			'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
+		// 	'<span>CAPA</span><br>' +
+		// 	'<hr>' +
+		// 	'Raleigh, NC<br>' +
+		// 	'February 21-22, 2019<br>' +
+		// 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
     
 		// RMACES
     [
