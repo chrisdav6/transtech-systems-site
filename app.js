@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 //------GET Routes--------//
 
 //Homepage
-app.get("/test", function (req, res) {
+app.get("/", function (req, res) {
   res.render("test/index");
 });
 
