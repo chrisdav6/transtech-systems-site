@@ -38,8 +38,13 @@ app.use(bodyParser.json());
 //------GET Routes--------//
 
 //Homepage
-app.get("/", function(req, res) {
-  res.render("index", {
+app.get("/test", function (req, res) {
+  res.render("test/index");
+});
+
+//Products Hompage
+app.get("/products", function(req, res) {
+  res.render("products/index", {
     flash: {success: req.flash("success")},
     title: "TransTech Systems",
     metaTitle: "Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions."
@@ -47,74 +52,74 @@ app.get("/", function(req, res) {
 });
 
 //Products
-app.get("/pqi380", function(req, res) {
-  res.render("pqi380", {
+app.get("/products/pqi380", function(req, res) {
+  res.render("products/pqi380", {
     title: "PQI 380 Non-Nuclear Asphalt Density Gauge",
     metaTitle: "TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380."
   });
 });
 
-app.get("/sdg200", function(req, res) {
-  res.render("sdg200", {
+app.get("/products/sdg200", function(req, res) {
+  res.render("products/sdg200", {
     title: "SDG 200 Non-Nuclear Soil Density Gauge",
     metaTitle: "TransTech Systems next generation Non-Nuclear soil density gauge, the SDG 200."
   });
 });
 
-app.get("/nwjm", function(req, res) {
-  res.render("nwjm", {
+app.get("/products/nwjm", function(req, res) {
+  res.render("products/nwjm", {
     title: "NWJM - Notched Wedge Joint Maker",
     metaTitle: "TransTech Systems longitudinal joint screed attachment, the NWJM shapes the longitudinal joint as the hot mix asphalt is spread."
   });
 });
 
-app.get("/swm", function(req, res) {
-  res.render("swm", {
+app.get("/products/swm", function(req, res) {
+  res.render("products/swm", {
     title: "SWM - Shoulder Wedge Maker",
     metaTitle: "TransTech Systems shoulder wedge screed attachment, the SWM provides a 30 degree beveled shoulder edge that gradually transitions wayward vehicles off shoulderless road surfaces and back on with relative ease."
   });
 });
 
-app.get("/pts3000", function(req, res) {
-  res.render("pts3000", {
+app.get("/products/pts3000", function(req, res) {
+  res.render("products/pts3000", {
     title: "PTS3000 - Pavement Temperature Sentry",
     metaTitle: "TransTech Systems roller mounted asphalt temperature sentry. The PTS 3000 was designed and built to provide accurate HMA mat temperatures on the run."
   });
 });
 
-app.get("/pqi301", function(req, res) {
-  res.render("pqi301", {
+app.get("/products/pqi301", function(req, res) {
+  res.render("products/pqi301", {
     title: "PQI 301 - Non-Nuclear Asphalt Density Gauge (Discontinued)",
     metaTitle: "TransTech Systems legacy Non-Nuclear asphalt density gauge, the PQI 301. The gauge that started it all!"
   });
 });
 
-app.get("/legacyProducts", function (req, res) {
-  res.render("legacyProducts", {
+app.get("/products/legacyProducts", function (req, res) {
+  res.render("products/legacyProducts", {
     title: "TransTech Systems Legacy Products",
     metaTitle: "Retired or discontinued products manufactured by TransTech Systems"
   });
 });
 
 //Product Manuals
-app.get("/productManuals", function(req, res) {
-  res.render("productManuals", {
+app.get("/products/productManuals", function(req, res) {
+  res.render("products/productManuals", {
     title: "TransTech Systems Product Manuals",
     metaTitle: "TransTech Systems downloadable pdf products user manuals and quick start guides."
   });
 });
 
 //Training
-app.get("/training", function(req, res) {
-  res.render("training", {
+app.get("/products/training", function(req, res) {
+  res.render("products/training", {
     title: "TransTech Systems Training",
     metaTitle: "Join us at our facility in New York for training on our PQI 380, SDG 200 or any of our other products free of charge."
   });
 });
 
 //Contact Corporate
-app.get("/contactCorporate", function(req, res) {
-  res.render("contactCorporate", {
+app.get("/products/contactCorporate", function(req, res) {
+  res.render("products/contactCorporate", {
     flash: {success: req.flash("success")},
     title: "TransTech Systems Corporate Contact",
     metaTitle: "Our headquarters are located in Latham, NY. Contact us at 1-800-724-6306 or email us at sales@transtechsys.com."
@@ -122,24 +127,24 @@ app.get("/contactCorporate", function(req, res) {
 });
 
 //Distributors United States
-app.get("/distributorsUnitedStates", function(req, res) {
-  res.render("distributorsUnitedStates", {
+app.get("/products/distributorsUnitedStates", function(req, res) {
+  res.render("products/distributorsUnitedStates", {
     title: "TransTech Systems United States Distributors",
     metaTitle: "Would you like to purchase one of our products in the United States or just have questions? Contact one of our many distributors stateside."
   });
 });
 
 //Distributors International
-app.get("/distributorsInternational", function(req, res) {
-  res.render("distributorsInternational", {
+app.get("/products/distributorsInternational", function(req, res) {
+  res.render("products/distributorsInternational", {
     title: "TransTech Systems International Distributors",
     metaTitle: "Would you like to purchase one of our products Internationally or just have questions? Contact one of our many distributors worldwide."
   });
 });
 
 //Product Sales Request
-app.get("/salesRequest", function(req, res) {
-  res.render("salesRequest", {
+app.get("/products/salesRequest", function(req, res) {
+  res.render("products/salesRequest", {
     flash: {success: req.flash("success")},
     title: "TransTech Systems Product Sales Request",
     metaTitle: "Are you interested in purchasing one of our products or just have questions? Contact us today!"
@@ -147,8 +152,8 @@ app.get("/salesRequest", function(req, res) {
 });
 
 //Product Warranty Registration
-app.get("/productRegistration", function(req, res) {
-  res.render("productRegistration", {
+app.get("/products/productRegistration", function(req, res) {
+  res.render("products/productRegistration", {
     flash: {success: req.flash("success")},
     title: "TransTech Systems Product Registration",
     metaTitle: "Submit a TransTech Systems product warranty registration."
@@ -156,8 +161,8 @@ app.get("/productRegistration", function(req, res) {
 });
 
 //Product Repair/ Calibration
-app.get("/repairRequest", function(req, res) {
-  res.render("repairRequest", {
+app.get("/products/repairRequest", function(req, res) {
+  res.render("products/repairRequest", {
     flash: {success: req.flash("success")},
     title: "TransTech Systems Product Repair/Calibration RMA Request",
     metaTitle: "Submit a TransTech Systems product repair/calibration RMA request."
@@ -165,40 +170,40 @@ app.get("/repairRequest", function(req, res) {
 });
 
 //Corporate News
-app.get("/corporateNews", function(req, res) {
-  res.render("corporateNews", {
+app.get("/products/corporateNews", function(req, res) {
+  res.render("products/corporateNews", {
     title: "TransTech Systems Corporate News",
     metaTitle: "TransTech Systems news, stories and highlights."
   });
 });
 
 //Tradeshows
-app.get("/tradeshows", function(req, res) {
-  res.render("tradeshows", {
+app.get("/products/tradeshows", function(req, res) {
+  res.render("products/tradeshows", {
     title: "TransTech Systems Tradeshows",
     metaTitle: "We are very active promoting our Non-Nuclear technology during tradeshow season. Check the dates, see our products at a location near you!"
   });
 });
 
 //Community
-app.get("/community", function(req, res) {
-  res.render("community", {
+app.get("/products/community", function(req, res) {
+  res.render("products/community", {
     title: "TransTech Systems In the Community",
     metaTitle: "We believe having strong ties and supporting our community is extremely important. Look at what we have been up to :)"
   });
 });
 
 //Newsletter
-app.get("/newsletter", function(req, res) {
-  res.render("newsletter", {
+app.get("/products/newsletter", function(req, res) {
+  res.render("products/newsletter", {
     title: "TransTech Systems Newsletter",
     metaTitle: "Do you want to find out the latest news on our products and industry? Check out the TransTech Systems newsletter."
   });
 });
 
 //Privacy
-app.get("/privacy", function(req, res) {
-  res.render("privacy", {
+app.get("/products/privacy", function(req, res) {
+  res.render("products/privacy", {
     title: "TransTech Systems Privacy Policy",
     metaTitle: "TransTech Systems privacy policy and international compliance."
   });
@@ -208,7 +213,7 @@ app.get("/privacy", function(req, res) {
 //------POST Routes--------//
 
 //Homepage Newsletter Signup Form
-app.post("/", function(req, res) {
+app.post("/products", function(req, res) {
   let { email } = req.body;
   
   if(email == undefined || email.length == 0) {
@@ -258,12 +263,12 @@ app.post("/", function(req, res) {
       });
     });
     req.flash('success', 'Request to join newsletter has been sent. Thank You!');
-    res.redirect("/");
+    res.redirect("/products");
   }
 });
 
 //Contact Corporate Contact Us Form
-app.post("/contactCorporate", function(req, res) {
+app.post("/products/contactCorporate", function(req, res) {
   let { name, email, message } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -310,11 +315,11 @@ app.post("/contactCorporate", function(req, res) {
     });
   });
   req.flash('success', 'Message has been sent. Thank You!');
-  res.redirect("/contactCorporate");
+  res.redirect("/products/contactCorporate");
 });
 
 //Product Sales Request Form
-app.post("/salesRequest", function(req, res) {
+app.post("/products/salesRequest", function(req, res) {
   let { name, company, state, country, phone, email, reach, moreInfo, message } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -367,11 +372,11 @@ app.post("/salesRequest", function(req, res) {
     });
   });
   req.flash('success', 'Sales request has been sent. Thank You!');
-  res.redirect("/salesRequest");
+  res.redirect("/products/salesRequest");
 });
 
 //Repair Request Form
-app.post("/repairRequest", function(req, res) {
+app.post("/products/repairRequest", function(req, res) {
   let { name, company, state, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -425,11 +430,11 @@ app.post("/repairRequest", function(req, res) {
     });
   });
   req.flash('success', 'Repair request has been sent. Thank You!');
-  res.redirect("/repairRequest");
+  res.redirect("/products/repairRequest");
 });
 
 //Product Registration Form
-app.post("/productRegistration", function(req, res) {
+app.post("/products/productRegistration", function(req, res) {
   let { name, company, state, country, phone, email, registerProduct, date, serial } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -482,11 +487,11 @@ app.post("/productRegistration", function(req, res) {
     });
   });
   req.flash('success', 'Product registration has been sent. Thank You!');
-  res.redirect("/productRegistration");
+  res.redirect("/products/productRegistration");
 });
 
 //PQI 380 Product Page Manuals Download Form
-app.post("/pqi380", function(req, res) {
+app.post("/products/pqi380", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -538,7 +543,7 @@ app.post("/pqi380", function(req, res) {
 });
 
 //SDG 200 Product Page Manuals Download Form
-app.post("/sdg200", function(req, res) {
+app.post("/products/sdg200", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -590,7 +595,7 @@ app.post("/sdg200", function(req, res) {
 });
 
 //NWJM Product Page Manuals Download Form
-app.post("/nwjm", function(req, res) {
+app.post("/products/nwjm", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -642,7 +647,7 @@ app.post("/nwjm", function(req, res) {
 });
 
 //SWM Product Page Manuals Download Form
-app.post("/swm", function(req, res) {
+app.post("/products/swm", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -694,7 +699,7 @@ app.post("/swm", function(req, res) {
 });
 
 //PTS 3000 Product Page Manuals Download Form
-app.post("/pts3000", function(req, res) {
+app.post("/products/pts3000", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -746,7 +751,7 @@ app.post("/pts3000", function(req, res) {
 });
 
 //PQI 301 Product Page Manuals Download Form
-app.post("/pqi301", function(req, res) {
+app.post("/products/pqi301", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {
@@ -798,7 +803,7 @@ app.post("/pqi301", function(req, res) {
 });
 
 //Product Manuals Page Manuals Download Form
-app.post("/productManuals", function(req, res) {
+app.post("/products/productManuals", function(req, res) {
   let { manualName, name, company, country, email, currentCustomer, reach } = req.body;
   
   nodemailer.createTestAccount((err, account) => {

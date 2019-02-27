@@ -6,7 +6,7 @@
       <div class="row">
         
         <div class="col">
-          <h2 class="text-center text-md-left">Product Warranty Registration</h2>
+          <h2 class="text-center text-md-left">Product Sales Request</h2>
           <hr>
           
           <!-- Node Flash Message -->
@@ -19,8 +19,8 @@
             </div>
           <% } %>
           <!-- /Node Flash Message -->
-          
-          <form action="/productRegistration" method="post" id="productRegistrationForm" class="d-flex flex-column">
+ 
+          <form action="/products/salesRequest" method="post" id="salesRequestForm" class="d-flex flex-column">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control form-control-lg" name="name" id="name" required>
@@ -343,7 +343,7 @@
               <input type="checkbox" class="form-check-input mt-2" id="confirmPrivacy" required>
               <label class="form-check-label" for="confirmPrivacy">By checking this box you acknowledge and approve TransTech Systems to share your contact information with distributors as needed to fulfill your request</label>
             </div>
-
+            
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -361,42 +361,60 @@
             </div>
             
             <div class="form-group mt-4">
-              <p class="mb-2">Choose product to register</p>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" name="registerProduct" id="register1" value="PQI 380" checked>
-                <label class="form-check-label" for="register1">PQI 380 - Non-Nuclear Asphalt Density Gauge</label>
+              <label for="reach">How did you hear about us?</label>
+              <select class="form-control form-control-lg" name="reach" id="reach" required>
+                <option>Asphalt Contractor Magazine</option>
+                <option>NAPA - Asphalt Pavement Magazine</option>
+                <option>Asphalt Pro Magazine</option>
+                <option>TXAPA Magazine</option>
+                <option>Ohio Flexible Pavements Magazine</option>
+                <option>Florida Asphalt Association Magazine</option>
+                <option>Facebook</option>
+                <option>Twitter</option>
+                <option>Google Plus</option>
+                <option>Instagram</option>
+                <option>Linked In</option>
+                <option>World of Asphalt</option>
+                <option>ConExpo</option>
+                <option>Other Tradeshow</option>
+                <option>Friend</option>
+              </select>
+            </div>
+            
+            <div class="form-group mt-4">
+              <p class="mb-3">Please send me information on</p>
+              <div class="form-check ml-3">
+                <input class="form-check-input mt-2" type="checkbox" name="moreInfo" id="asphaltDensity" value="PQI 380">
+                <label class="form-check-label" for="asphaltDensity">PQI 380 - Non-Nuclear Asphalt Density Gauge</label>
               </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" name="registerProduct" id="register2" value="SDG 200">
-                <label class="form-check-label" for="register2">SDG 200 - Non-Nuclear Soil Density Gauge</label>
+              <div class="form-check ml-3 mt-2">
+                <input class="form-check-input mt-2" type="checkbox" name="moreInfo" id="soilDensity" value=" SDG 200">
+                <label class="form-check-label" for="soilDensity">SDG 200 - Non-Nuclear Soil Density Gauge</label>
               </div>
-              <div class="form-check">
-                <input type="radio" class="form-check-input" name="registerProduct" id="register3" value="PTS3000">
-                <label class="form-check-label" for="register3">PTS 3000 - Pavement Temperature Sentry</label>
+              <div class="form-check ml-3 mt-2">
+                <input class="form-check-input mt-2" type="checkbox" name="moreInfo" id="swm" value=" SWM">
+                <label class="form-check-label" for="swm">SWM - Shoulder Wedge Maker</label>
               </div>
+              <div class="form-check ml-3 mt-2">
+                <input class="form-check-input mt-2" type="checkbox" name="moreInfo" id="nwjm" value=" NWJM">
+                <label class="form-check-label" for="nwjm">NWJM - Notched Wedge Joint Maker</label>
+              </div>
+              <div class="form-check ml-3 mt-2">
+                <input class="form-check-input mt-2" type="checkbox" name="moreInfo" id="pts" value=" PTS 3000">
+                <label class="form-check-label" for="pts">PTS 3000 - Pavement Temperature Sentry</label>
+              </div>
+            </div>
+
+            <div class="form-group mt-4">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
             </div>
             
             <div class="form-group d-none"><!--HoneyPot-->
               <input type="text" class="form-control form-control-lg" name="address" id="address">
             </div>
             
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group mt-4">
-                  <label for="date">Date Purchased</label>
-                  <input type="date" class="form-control form-control-lg" name="date" id="date" required>
-                </div>                
-              </div>
-              
-              <div class="col-md-6">
-                <div class="form-group mt-4">
-                  <label for="serial">Product Serial Number</label>
-                  <input type="text" class="form-control form-control-lg" name="serial" id="serial" required>
-                </div>                
-              </div>
-            </div>
-
-            <button class="btn btn-outline-success btn-lg submit-btn ml-0 ml-lg-auto mt-4">Submit</button>
+            <button id="salesRequestBtn" class="btn btn-outline-success btn-lg submit-btn ml-0 ml-lg-auto mt-4">Submit</button>
           </form>
         </div>
         
