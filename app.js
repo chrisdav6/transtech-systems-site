@@ -39,7 +39,7 @@ app.use(bodyParser.json());
 
 //Homepage
 app.get("/", function (req, res) {
-  res.render("test/index");
+  res.render("index");
 });
 
 //Products Hompage
