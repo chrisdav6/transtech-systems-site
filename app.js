@@ -214,11 +214,11 @@ app.get("/products/privacy", function(req, res) {
 
 //Homepage Newsletter Signup Form
 app.post("/products", function(req, res) {
-  let { email } = req.body;
+  let { email, businessAddress } = req.body;
   
-  if(email == undefined || email.length == 0) {
-    req.flash('success', 'Email field must be entered');
-    res.redirect("/");
+  if(businessAddress.length !== 0) {
+    req.flash('success', 'Sorry Bot!');
+    res.redirect("/products");
   } else {
     console.log(`email: ${email}`);
     nodemailer.createTestAccount((err, account) => {
