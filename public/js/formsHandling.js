@@ -23,13 +23,7 @@ $(function() {
   //Corporate Contact Form Submit
   $("#corporateContactForm").on("submit", function(event) {
 
-		let $address = $("#address"); //Honeypot field
 		let $corpContactBtn = $("#corpContactBtn");
-
-		if($address.val() !== "") {
-			alert("Nice try bot!");
-			return false;
-		}
     
 		//Hide the submit button
 		$corpContactBtn.hide();

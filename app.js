@@ -220,7 +220,6 @@ app.post("/products", function(req, res) {
     req.flash('success', 'Sorry Bot!');
     res.redirect("/products");
   } else {
-    console.log(`email: ${email}`);
     nodemailer.createTestAccount((err, account) => {
       // create reusable transporter object using the default SMTP transport
       var transporter = nodemailer.createTransport({
@@ -269,53 +268,58 @@ app.post("/products", function(req, res) {
 
 //Contact Corporate Contact Us Form
 app.post("/products/contactCorporate", function(req, res) {
-  let { name, email, message } = req.body;
+  let { name, email, message, businessAddress } = req.body;
   
-  nodemailer.createTestAccount((err, account) => {
-    // create reusable transporter object using the default SMTP transport
-    var transporter = nodemailer.createTransport({
-      host: 'smtp.office365.com', // Office 365 server
-      port: 587,     // secure SMTP
-      secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD
-      },
-      tls: {
-        ciphers: 'SSLv3'
-      }
+  if (businessAddress.length !== 0) {
+    req.flash('success', 'Sorry Bot!');
+    res.redirect("/products/contactCorporate");
+  } else {
+    nodemailer.createTestAccount((err, account) => {
+      // create reusable transporter object using the default SMTP transport
+      var transporter = nodemailer.createTransport({
+        host: 'smtp.office365.com', // Office 365 server
+        port: 587,     // secure SMTP
+        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASSWORD
+        },
+        tls: {
+          ciphers: 'SSLv3'
+        }
+      });
+
+      let body = `<h2><u>Corporate Contact Inquiry</u></h2>`;
+      body += `<p><strong>From:</strong> ${name}<br>`;
+      body += `<strong>Email:</strong> ${email}</p>`;
+      body += `<p><strong>Message:</strong> ${message}</p>`;
+
+      // setup email data with unicode symbols
+      let mailOptions = {
+        from: 'webforms@transtechsys.com', // sender address
+        to: 'cdavis@transtechsys.com', // list of receivers
+        replyTo: email,
+        subject: "TransTech Systems Contact Form", // Subject line
+        text: message, // plain text body
+        html: body // html body
+      };
+
+      // send mail with defined transport object
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);
+        // Preview only available when sending through an Ethereal account
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+      });
     });
-
-    let body = `<h2><u>Corporate Contact Inquiry</u></h2>`;
-    body += `<p><strong>From:</strong> ${name}<br>`;
-    body += `<strong>Email:</strong> ${email}</p>`;
-    body += `<p><strong>Message:</strong> ${message}</p>`;
-
-    // setup email data with unicode symbols
-    let mailOptions = {
-      from: 'webforms@transtechsys.com', // sender address
-      to: 'cdavis@transtechsys.com', // list of receivers
-      replyTo: email,
-      subject: "TransTech Systems Contact Form", // Subject line
-      text: message, // plain text body
-      html: body // html body
-    };
-
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return console.log(error);
-      }
-      console.log('Message sent: %s', info.messageId);
-      // Preview only available when sending through an Ethereal account
-      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-      // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-      // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    });
-  });
-  req.flash('success', 'Message has been sent. Thank You!');
-  res.redirect("/products/contactCorporate");
+    req.flash('success', 'Message has been sent. Thank You!');
+    res.redirect("/products/contactCorporate");
+  }
 });
 
 //Product Sales Request Form
