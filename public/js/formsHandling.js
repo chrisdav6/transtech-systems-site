@@ -43,23 +43,8 @@ $(function() {
 		
   });
 
-  
-  
-  
-  //Sales Request Form Submit
-  $("#salesRequestForm").on("submit", function(event) {
 
-		let $address = $("#address"); //Honeypot field
-
-		if($address.val() !== "") {
-			alert("Nice try bot!");
-			return false;
-		}
-		
-  });
-  
-  
-  
+  //Sales Request form does not need spinner gif
   
   //Repair Request Form Submit
   $("#repairRequestForm").on("submit", function(event) {
