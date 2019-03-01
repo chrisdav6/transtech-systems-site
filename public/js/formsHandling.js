@@ -46,20 +46,9 @@ $(function() {
 
   //Sales Request form does not need spinner gif
   
-  //Repair Request Form Submit
-  $("#repairRequestForm").on("submit", function(event) {
+  //Repair Request Form does not need spinner gif
 
-		let $address = $("#address"); //Honeypot field
-
-		if($address.val() !== "") {
-			alert("Nice try bot!");
-			return false;
-		}
-		
-	});
 	
-
-
 	//Product Repair Form remove required serial # if PTS3000 or Other is selected
 	$("#repairRequestForm").on("change", function (event) {
 
