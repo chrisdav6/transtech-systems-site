@@ -106,16 +106,10 @@ $(function() {
 	    let $compnayInput = $("#company");
 			let $emailInput = $("#email");
 			let $manualName = $("#manualName");
-			let $address = $("#address"); //HoneyPot
 			let $manualDownloadBtn = $("#manualDownloadBtn");
 			
 			//Send ManualName on form when email is sent
 			$manualName.val(dataId);
-			
-			if($address.val() !== "") {
-				alert("Nice try bot!");
-				return false;
-			}
 	    
 			//Hide the submit button
 			$manualDownloadBtn.hide();
