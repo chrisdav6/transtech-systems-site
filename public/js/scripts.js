@@ -1,9 +1,9 @@
 $(function() {
   
   //Fade In Body on page Load
-  $("body").animate({
-    opacity: 1
-  },500);
+  // $("body").animate({
+  //   opacity: 1
+  // },500);
   
   //Smooth Scroll on #featured #about and #gaugesMap
   var scrollFeatured = new SmoothScroll('a[href="#featured"]', {

@@ -39,7 +39,10 @@ app.use(bodyParser.json());
 
 //Homepage
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("index", {
+    title: "TransTech Systems",
+    metaTitle: "Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions."
+  });
 });
 
 //Products Hompage
