@@ -22,7 +22,6 @@ function initMap() {
   
   // Map Marker Locations
   var markers = [
-    // ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
@@ -35,24 +34,13 @@ function initMap() {
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
 	// Info Window Content
   var infoWindowContent = [
-    
-		// NEAUPG
-    // [
-	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-	   // '<span>NEAUPG</span><br>' +
-	   // '<hr>' +
-	   // 'Atlantic City, NJ<br>' +
-	   // 'October 16-17, 2018<br>' +
-	   // '<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	   // '</div>'
-    // ],
     
     // NAPA
     // [
@@ -195,6 +183,18 @@ function initMap() {
 		'San Antonio, TX<br>' +
 		'September 17-20, 2019<br>' +
 		'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		'</div>'
+		],
+
+		// NEAUPG
+		[
+		'<div class="map-text">' +
+		'<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+		'<span>NEAUPG</span><br>' +
+		'<hr>' +
+		'Portland, ME<br>' +
+		'October 23-24, 2019<br>' +
+		'<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		'</div>'
 		],
 
