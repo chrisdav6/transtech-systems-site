@@ -32,13 +32,14 @@ function initMap() {
 		// ['RMACES, Denver, CO', 39.771474, -104.806882],
 		['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
-  // Info Window Content
+	// Info Window Content
   var infoWindowContent = [
     
 		// NEAUPG
@@ -159,6 +160,18 @@ function initMap() {
 	    'March 26-27, 2019<br>' +
 	    '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
+		],
+
+		// Maine
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
+			'<span>MAPA</span><br>' +
+			'<hr>' +
+			'Bangor, ME<br>' +
+			'April 2-3, 2019<br>' +
+			'<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
 		],
 
 		//Intermat ASEAN
