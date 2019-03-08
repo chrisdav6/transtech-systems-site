@@ -156,11 +156,11 @@ body {
   border: 2px solid rgba(255,255,255,.5);
   display: block;
   color: #fff;
-  transition: .8s;
+  transition: transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.75), background .2s;
   position: relative;
 
   &:hover {
-    transform: scale(1.10);
+    transform: scale(1.08);
     background: #000;
     text-decoration: none;
     color: #fff;
