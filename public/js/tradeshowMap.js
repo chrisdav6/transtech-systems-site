@@ -25,7 +25,6 @@ function initMap() {
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-		// ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		// ['RMACES, Denver, CO', 39.771474, -104.806882],
 		['CalAPA, Ontario, CA', 34.055032, -117.615421],
@@ -36,7 +35,8 @@ function initMap() {
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['APAI, Indianapolis, IN', 40.031171, -86.939831],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
-    ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
+		['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
+		['World of Asphalt, Atlanta, GA', 33.764130, -84.420611],
   ];
 
 	// Info Window Content
@@ -76,18 +76,6 @@ function initMap() {
 		// 	'March 6-7, 2019<br>' +
 		// 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// 	'</div>'
-		// ],
-    
-		// World of Asphalt
-    // [
-	  //   '<div class="map-text">' +
-	  //   '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-	  //   '<span>World of Asphalt - Booth #26127</span><br>' +
-	  //   '<hr>' +
-	  //   'Indianapolis, IN<br>' +
-	  //   'February 12-14, 2019<br>' +
-	  //   '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	  //   '</div>'
 		// ],
 		
 		// CAPA
@@ -220,7 +208,19 @@ function initMap() {
 			'March 10-14, 2020<br>' +
 			'<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
-		]
+		],
+
+		// World of Asphalt
+		[
+		'<div class="map-text">' +
+		'<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
+		'<span>World of Asphalt 2021</span><br>' +
+		'<hr>' +
+		'Atlanta, GA<br>' +
+		'March 9-11, 2021<br>' +
+		'<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		'</div>'
+		],
     
   ];
   
