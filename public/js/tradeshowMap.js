@@ -27,7 +27,6 @@ function initMap() {
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
-    // ['TRB, Washington D.C.', 38.911744, -77.018697],
 		// ['World of Asphalt, Indianapolis, IN', 39.761228, -85.553272],
 		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		// ['RMACES, Denver, CO', 39.771474, -104.806882],
@@ -35,6 +34,7 @@ function initMap() {
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+		['TRB, Washington D.C.', 38.911744, -77.018697],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -98,18 +98,6 @@ function initMap() {
 	  //   'Indianapolis, IN<br>' +
 	  //   'December 19-21, 2018<br>' +
 	  //   '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	  //   '</div>'
-    // ],
-    
-		// TRB
-    // [
-	  //   '<div class="map-text">' +
-	  //   '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-	  //   '<span>TRB</span><br>' +
-	  //   '<hr>' +
-	  //   'Washington D.C.<br>' +
-	  //   'January 13-17, 2019<br>' +
-	  //   '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	  //   '</div>'
     // ],
     
@@ -194,6 +182,18 @@ function initMap() {
 		'San Antonio, TX<br>' +
 		'September 17-20, 2019<br>' +
 		'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		'</div>'
+		],
+
+		// TRB
+		[
+		'<div class="map-text">' +
+		'<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+		'<span>TRB</span><br>' +
+		'<hr>' +
+		'Washington D.C.<br>' +
+		'January 12-16, 2020<br>' +
+		'<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		'</div>'
 		],
 		
