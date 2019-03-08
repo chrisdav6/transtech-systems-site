@@ -22,7 +22,6 @@ function initMap() {
   
   // Map Marker Locations
   var markers = [
-    // ['TXAPA, Horseshoe Bay, TX', 30.539444, -98.362758],
     // ['NEAUPG, Atlantic City, NJ', 39.363485, -74.423107],
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
@@ -35,24 +34,12 @@ function initMap() {
 		['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
-
   // Info Window Content
   var infoWindowContent = [
-    
-		// TXAPA
-    // [
-	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-	   // '<span>TXAPA</span><br>' +
-	   // '<hr>' +
-	   // 'Horseshoe Bay, TX<br>' +
-	   // 'September 18-21, 2018<br>' +
-	   // '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	   // '</div>'
-    // ],
     
 		// NEAUPG
     // [
@@ -196,6 +183,18 @@ function initMap() {
 			'September 5-7, 2019<br>' +
 			'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
+		],
+
+		//TXAPA
+		[
+		'<div class="map-text">' +
+		'<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+		'<span>TXAPA</span><br>' +
+		'<hr>' +
+		'San Antonio, TX<br>' +
+		'September 17-20, 2019<br>' +
+		'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		'</div>'
 		],
 		
 		// ConExpo
