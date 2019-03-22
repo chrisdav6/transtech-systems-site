@@ -32,7 +32,7 @@ function initMap() {
     ['TransTech Systems, Alaska', 66.073198, -151.421268, "transtech"],
     ['TransTech Systems, Arizona', 34.528727, -111.767859, "transtech"],
     ['TransTech Systems, Arkansas', 34.841498, -92.285615, "transtech"],
-    ['TransTech Systems, California', 36.692245, -119.620438, "transtech"],
+    ['Marcus McCorison, California', 36.692245, -119.620438, "transtech"],
     ['TransTech Systems, Colorado', 39.158062, -105.509759, "transtech"],
 		['Marcus McCorison, Connecticut', 41.654445, -73.083801, "transtech"],
 		['TransTech Systems, Delaware', 39.180106, -75.499366, "transtech"],
@@ -132,10 +132,10 @@ function initMap() {
 		// California
     [
 	    '<div class="map-text">' +
-	    '<span>TransTech Systems</span><br>' +
+	    '<span>Marcus McCorison</span><br>' +
 	    '<hr>' +
-	    '1-800-724-6306<br>' +
-	    '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+	    '860-883-6470<br>' +
+	    '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 	    '</div>'
     ],
     
