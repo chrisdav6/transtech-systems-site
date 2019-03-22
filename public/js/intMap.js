@@ -24,7 +24,6 @@ function initMap() {
   var markers = [
     ['M/s. Taisei International , Afghanistan', 34.234306,66.209291],
     ['Beratest AG , Algeria', 29.343875,2.109375],
-		['Perta , Angola', -12.554564,17.182617],
 		['Mertind , Argentina', -33.550655,-63.950483],
 		['Bav Corporation, Inc. , Armenia', 40.455307,44.653931],
 		['Motorway Technologies , Australia', -24.367114,133.769531],
@@ -133,18 +132,6 @@ function initMap() {
 	    'Attn: Max Gysin<br>' +
 			'<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-    ],
-    
-		// Angola
-    [
-	    '<div class="map-text">' +
-	    '<span>Perta</span><br>' +
-	    '<hr>' +
-	    '+351-21-752-05-60<br>' +
-	    'Attn: Paulo Frias Costa<br>' +
-			'<p><a class="link" href="mailto:pfcosta@perta.pt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-			'<p class="mt-0"><a class="link" href="http://www.perta.pt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
     
