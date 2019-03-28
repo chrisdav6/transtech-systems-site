@@ -28,7 +28,7 @@ function initMap() {
 		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		// ['RMACES, Denver, CO', 39.771474, -104.806882],
 		// ['CalAPA, Ontario, CA', 34.055032, -117.615421],
-		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+		// ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
@@ -115,16 +115,16 @@ function initMap() {
 		// ],
     
     // Ohio
-    [
-	    '<div class="map-text">' +
-	    '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-	    '<span>Ohio Asphalt Expo - Booth #21</span><br>' +
-	    '<hr>' +
-	    'Columbus, OH<br>' +
-	    'March 26-27, 2019<br>' +
-	    '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	    '</div>'
-		],
+    // [
+	  //   '<div class="map-text">' +
+	  //   '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+	  //   '<span>Ohio Asphalt Expo - Booth #21</span><br>' +
+	  //   '<hr>' +
+	  //   'Columbus, OH<br>' +
+	  //   'March 26-27, 2019<br>' +
+	  //   '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	  //   '</div>'
+		// ],
 
 		// Maine
 		[
