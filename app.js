@@ -37,6 +37,11 @@ app.use(bodyParser.json());
 
 //------GET Routes--------//
 
+//Example Redirect for old URLSs
+// router.get('/products/pqi380.php', function(req,res){
+//   res.redirect('/products/pqi380', '301');
+// });
+
 //Homepage
 app.get("/", function (req, res) {
   res.render("index", {
