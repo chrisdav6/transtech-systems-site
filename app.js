@@ -1,6 +1,5 @@
 const express = require("express");
 const helmet = require("helmet");
-const bodyParser = require("body-parser");
 const nodemailer = require('nodemailer');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
@@ -31,8 +30,8 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
 
 //Use BodyParser
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 
 //------GET Routes--------//
