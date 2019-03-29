@@ -1,5 +1,6 @@
 const express = require("express");
 const helmet = require("helmet");
+const dotenv = require('dotenv').config();
 const nodemailer = require('nodemailer');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
@@ -21,9 +22,6 @@ app.use(session({
   resave: true
 }));
 app.use(flash());
-
-//Require DOTENV environment variables
-require('dotenv').config();
 
 //Set Static Folders
 app.use(express.static(__dirname + "/public"));
