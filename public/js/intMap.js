@@ -333,8 +333,8 @@ function initMap() {
 	    '<span>Hoskin Scientific</span><br>' +
 	    '<hr>' +
 	    '905-333-5510<br>' +
-	    'Attn: Melanie Crossman<br>' +
-			'<p><a class="link" href="mailto:mcrossman@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+	    'Attn: Joseph Zambito-Orazio<br>' +
+			'<p><a class="link" href="mailto:jzambito@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	    '</div>'
     ],
