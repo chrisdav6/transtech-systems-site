@@ -31,7 +31,6 @@ app.use(express.static(__dirname + "/views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 //------GET Routes--------//
 
 //Example Redirect for old URLSs
