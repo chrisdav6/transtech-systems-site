@@ -26,7 +26,6 @@ function initMap() {
 		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
-		// ['RMACES, Denver, CO', 39.771474, -104.806882],
 		// ['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		// ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		// ['MAPA, Bangor, ME', 44.831204, -68.781424],
@@ -35,6 +34,7 @@ function initMap() {
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['APAI, Indianapolis, IN', 40.031171, -86.939831],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
+		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
 		['World of Asphalt, Atlanta, GA', 33.764130, -84.420611],
   ];
@@ -88,18 +88,6 @@ function initMap() {
 		// 	'February 21-22, 2019<br>' +
 		// 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// 	'</div>'
-		// ],
-    
-		// RMACES
-    // [
-	  //   '<div class="map-text">' +
-	  //   '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-	  //   '<span>RMACES</span><br>' +
-	  //   '<hr>' +
-	  //   'Denver, CO<br>' +
-	  //   'February 27-March 1, 2019<br>' +
-	  //   '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	  //   '</div>'
 		// ],
 		
 		// CalAPA
@@ -196,6 +184,18 @@ function initMap() {
 		'January 12-16, 2020<br>' +
 		'<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		'</div>'
+		],
+
+		// RMACES
+    [
+	    '<div class="map-text">' +
+	    '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
+	    '<span>RMACES</span><br>' +
+	    '<hr>' +
+	    'Denver, CO<br>' +
+	    'February 19-21, 2020<br>' +
+	    '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+	    '</div>'
 		],
 		
 		// ConExpo
