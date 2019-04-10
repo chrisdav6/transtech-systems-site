@@ -24,7 +24,6 @@ function initMap() {
   var markers = [
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		// ['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		// ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		// ['MAPA, Bangor, ME', 44.831204, -68.781424],
@@ -36,6 +35,7 @@ function initMap() {
 		['TRB, Washington D.C.', 38.911744, -77.018697],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
+		['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		['World of Asphalt, Atlanta, GA', 33.764130, -84.420611],
   ];
 
@@ -63,18 +63,6 @@ function initMap() {
 		// 	'Battle Creek, MI<br>' +
 		// 	'March 6-7, 2019<br>' +
 		// 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// 	'</div>'
-		// ],
-		
-		// CAPA
-		// [
-		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
-		// 	'<span>CAPA</span><br>' +
-		// 	'<hr>' +
-		// 	'Raleigh, NC<br>' +
-		// 	'February 21-22, 2019<br>' +
-		// 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// 	'</div>'
 		// ],
 		
@@ -209,6 +197,18 @@ function initMap() {
 			'<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
+
+			// CAPA
+			[
+				'<div class="map-text">' +
+				'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
+				'<span>CAPA</span><br>' +
+				'<hr>' +
+				'Pinehurst, NC<br>' +
+				'April 1-3, 2020<br>' +
+				'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+				'</div>'
+			],
 
 		// World of Asphalt
 		[
