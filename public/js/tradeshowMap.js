@@ -19,11 +19,10 @@ function initMap() {
                   
   // Display a map on the page
   map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  
-  // Map Marker Locations
+
+	// Map Marker Locations
   var markers = [
     // ['NAPA, Atlanta, GA', 33.763244, -84.397191],
-		// ['SEAUPG, Raleigh, NC', 35.778769, -78.638633],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		// ['CAPA, Raleigh, NC', 35.827463, -78.645086],
 		// ['CalAPA, Ontario, CA', 34.055032, -117.615421],
@@ -32,6 +31,7 @@ function initMap() {
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
+		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
 		['APAI, Indianapolis, IN', 40.031171, -86.939831],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
@@ -53,18 +53,6 @@ function initMap() {
 	   // '<p><a class="link" href="http://www.asphaltpavement.org/index.php?option=com_content&view=article&id=1148&Itemid=100375" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 	   // '</div>'
     // ],
-    
-		// SEAUPG
-    // [
-	   // '<div class="map-text">' +
-	   // '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-	   // '<span>SEAUPG</span><br>' +
-	   // '<hr>' +
-	   // 'Raleigh, NC<br>' +
-	   // 'November 12-15, 2018<br>' +
-	   // '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-	   // '</div>'
-		// ],
 		
 		// APAM
 		// [
@@ -161,6 +149,18 @@ function initMap() {
 		'<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		'</div>'
 		],
+
+		// SEAUPG
+    [
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
+			'<span>SEAUPG</span><br>' +
+			'<hr>' +
+			'Baton Rouge, LA<br>' +
+			'November 18-21, 2019<br>' +
+			'<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		 ],
 
 		// APAI
 		[
