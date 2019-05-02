@@ -87,4 +87,14 @@ form {
     text-decoration: none;
   }
 }
+
+.ttsBtn {
+  border: 1px solid #FDDC00;
+  color: #FDDC00;
+
+  &:hover {
+    background: #FDDC00;
+    color: #191919;
+  }
+}
   
