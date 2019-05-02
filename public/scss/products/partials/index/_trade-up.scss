@@ -35,4 +35,11 @@
       font-size: 12em;
     }
   }
+
+  @include mq600 {
+    .trade-btn {
+      display: block;
+      width: 100%;
+    }
+  }
 }
