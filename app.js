@@ -524,7 +524,7 @@ app.post("/products/productRegistration", function (req, res) {
 
 //Trade Up Form
 app.post("/products/tradeUp", function (req, res) {
-  let { name, company, state, country, phone, email, tradeProduct, tradeSerial, businessAddress } = req.body;
+  let { name, company, state, country, phone, email, tradeProduct, tradeSerial, tradeMessage, businessAddress } = req.body;
 
   if (businessAddress.length !== 0) {
     req.flash('success', 'Sorry Bot!');
@@ -554,6 +554,7 @@ app.post("/products/tradeUp", function (req, res) {
       body += `<strong>Email:</strong> ${email}<br>`;
       body += `<strong>Product for Trade:</strong> ${tradeProduct}<br>`;
       body += `<strong>Serial Number:</strong> ${tradeSerial}`;
+      body += `<p><strong>Additional Comments:</strong><br> ${tradeMessage}</p>`;
 
 
       // setup email data with unicode symbols
