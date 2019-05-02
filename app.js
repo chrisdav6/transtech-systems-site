@@ -254,7 +254,7 @@ app.post("/products", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Newsletter Signup Form", // Subject line
         text: body, // plain text body
@@ -310,7 +310,7 @@ app.post("/products/contactCorporate", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Contact Form", // Subject line
         text: message, // plain text body
@@ -372,7 +372,7 @@ app.post("/products/salesRequest", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Sales Request Form", // Subject line
         text: message, // plain text body
@@ -435,7 +435,7 @@ app.post("/products/repairRequest", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Repair Request Form", // Subject line
         text: body, // plain text body
@@ -497,7 +497,7 @@ app.post("/products/productRegistration", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Product Registration Form", // Subject line
         text: body, // plain text body
@@ -560,7 +560,7 @@ app.post("/products/tradeUp", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Trade Up Request Form", // Subject line
         text: body, // plain text body
