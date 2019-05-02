@@ -175,7 +175,7 @@ app.get("/products/repairRequest", function (req, res) {
 
 //PQI 300/301 Trade Up
 app.get("/products/tradeUp", function (req, res) {
-  res.render("products/TradeUp", {
+  res.render("products/tradeUp", {
     flash: { success: req.flash("success") },
     title: "TransTech Systems PQI 300/301 Trade-Up Program",
     metaTitle: "Your legacy PQI 300/301 could earn you dollars towards a new PQI 380 Non-Nuclear Asphalt Density Gauge"
