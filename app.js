@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const helmet = require("helmet");
 const dotenv = require('dotenv').config();
@@ -24,8 +25,8 @@ app.use(session({
 app.use(flash());
 
 //Set Static Folders
-app.use(express.static(__dirname + "/public"));
-app.use(express.static(__dirname + "/views"));
+app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "/views")));
 
 //Use BodyParser
 app.use(express.urlencoded({ extended: true }));
