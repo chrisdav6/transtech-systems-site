@@ -984,6 +984,14 @@ app.post("/products/productManuals", function (req, res) {
   }
 });
 
+//404 Page Not Found
+app.get("*", function (req, res) {
+  res.status(404).render("products/NotFound404", {
+    title: "TransTech Systems",
+    metaTitle: "Oops! Looks like that page is gone!"
+  });
+});
+
 //Start Server
 app.listen(port, process.env.IP, function () {
   console.log("Server has started!");
