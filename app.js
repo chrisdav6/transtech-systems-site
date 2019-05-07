@@ -423,7 +423,7 @@ app.post("/products/salesRequest", function (req, res) {
 
 //Repair Request Form
 app.post("/products/repairRequest", function (req, res) {
-  let { name, company, state, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage, businessAddress } = req.body;
+  let { name, company, address, state, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage, businessAddress } = req.body;
 
   if (businessAddress.length !== 0) {
     req.flash('success', 'Sorry Bot!');
@@ -447,6 +447,7 @@ app.post("/products/repairRequest", function (req, res) {
       let body = `<h2><u>Repair Request</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
       body += `<strong>Company:</strong> ${company}<br>`;
+      body += `<strong>Address:</strong> ${address}<br>`;
       body += `<strong>State:</strong> ${state}<br>`;
       body += `<strong>Country:</strong> ${country}<br>`;
       body += `<strong>Phone:</strong> ${phone}<br>`;
