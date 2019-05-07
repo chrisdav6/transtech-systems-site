@@ -791,7 +791,7 @@ app.post("/products/swm", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
+        to: 'sales@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Product Manual Download", // Subject line
         text: body, // plain text body
