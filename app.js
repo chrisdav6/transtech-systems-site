@@ -498,7 +498,7 @@ app.post("/products/productRegistration", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        to: 'cborski@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Product Registration Form", // Subject line
         text: body, // plain text body
