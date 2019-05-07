@@ -62,6 +62,9 @@ redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
   });
 });
 
+//Use date for footer copyright
+app.locals.date = new Date().getFullYear();
+
 //Homepage
 app.get("/", function (req, res) {
   res.render("index", {
