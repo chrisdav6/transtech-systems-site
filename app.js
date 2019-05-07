@@ -561,7 +561,7 @@ app.post("/products/tradeUp", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        to: 'tapkarian@transtechsys.com', // list of receivers
         replyTo: email,
         subject: "TransTech Systems Trade Up Request Form", // Subject line
         text: body, // plain text body
