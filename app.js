@@ -62,12 +62,6 @@ redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
   });
 });
 
-// app.get('/products/pqi380.php', function (req, res) {
-//   res.redirect(301, '/products/pqi380');
-// });
-
-//------GET Routes--------//
-
 //Homepage
 app.get("/", function (req, res) {
   res.render("index", {
