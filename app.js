@@ -32,12 +32,41 @@ app.use(express.static(path.join(__dirname, "/views")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//------GET Routes--------//
+//------301 Redirects--------//
 
-//Example Redirect for old URLSs
-// app.get('/products/pqi380.php', function(req,res){
-//   res.redirect('/products/pqi380', '301');
+const redirects = [
+  { from: '/products/index.php', to: '/products' },
+  { from: '/products/pqi380.php', to: '/products/pqi380' },
+  { from: '/products/sdg200.php', to: '/products/sdg200' },
+  { from: '/products/nwjm.php', to: '/products/nwjm' },
+  { from: '/products/swm.php', to: '/products/swm' },
+  { from: '/products/pts.php', to: '/products/pts3000' },
+  { from: '/products/pqi301.php', to: '/products/pqi301' },
+  { from: '/products/corporate%20news.php', to: '/products/corporateNews' },
+  { from: '/products/newsletter.php', to: '/products/newsletter' },
+  { from: '/products/tradeshows.php', to: '/products/tradeshows' },
+  { from: '/products/training.php', to: '/products/training' },
+  { from: '/products/state%20dot%20specs.php', to: '/products' },
+  { from: '/products/key%20links.php', to: '/products' },
+  { from: '/products/contact%20united%20states.php', to: '/products/distributorsUnitedStates' },
+  { from: '/products/contact%20international.php', to: '/products/distributorsInternational' },
+  { from: '/products/product%20info.php', to: '/products/salesRequest' },
+  { from: '/products/product%20warranty.php', to: '/products/productRegistration' },
+  { from: '/products/product%20repair.php', to: '/products/repairRequest' },
+  { from: '/products/employment%20transtech.php', to: '/products' },
+];
+
+redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
+  app[method](from, (req, res) => {
+    res.redirect(type, to)
+  });
+});
+
+// app.get('/products/pqi380.php', function (req, res) {
+//   res.redirect(301, '/products/pqi380');
 // });
+
+//------GET Routes--------//
 
 //Homepage
 app.get("/", function (req, res) {
