@@ -87,8 +87,11 @@ footer {
   .social {
     color: #343A40;
     transition: .3s;
+    position: relative;
+    top: 0;
 
     &:hover {
+      top: -3px;
       color: rgb(23, 25, 27);
     }
   }
