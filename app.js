@@ -54,6 +54,9 @@ const redirects = [
   { from: '/products/product%20warranty.php', to: '/products/productRegistration' },
   { from: '/products/product%20repair.php', to: '/products/repairRequest' },
   { from: '/products/employment%20transtech.php', to: '/products' },
+  { from: '/europe/index.php', to: '/europe' },
+  { from: '/europe/pqi380.php', to: '/europe/pqi380' },
+  { from: '/europe/sdg200.php', to: '/europe/sdg200' },
 ];
 
 redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
