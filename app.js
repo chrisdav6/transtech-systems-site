@@ -1016,6 +1016,21 @@ app.post("/products/productManuals", function (req, res) {
   }
 });
 
+//Europe Homepage
+app.get("/europe", (req, res) => {
+  res.render("europe/index")
+});
+
+//Europe PQI380
+app.get("/europe/pqi380", (req, res) => {
+  res.render("europe/pqi380")
+});
+
+//Europe SDG200
+app.get("/europe/sdg200", (req, res) => {
+  res.render("europe/sdg200")
+});
+
 //404 Page Not Found
 app.get("*", function (req, res) {
   res.status(404).render("products/NotFound404", {
