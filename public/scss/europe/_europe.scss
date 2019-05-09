@@ -19,6 +19,17 @@
   }
 }
 
+//BASE STYLES
+.link {
+  font-weight: 600;
+  color: #ED8C0E;
+  transition: .3s;
+
+  &:hover {
+    color: rgb(197, 112, 0);
+  }
+}
+
 
 //INDEX PAGE
 #jumbo img {
