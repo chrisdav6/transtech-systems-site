@@ -57,6 +57,7 @@ const redirects = [
   { from: '/europe/index.php', to: '/europe' },
   { from: '/europe/pqi380.php', to: '/europe/pqi380' },
   { from: '/europe/sdg200.php', to: '/europe/sdg200' },
+  { from: '/payment.php', to: 'http://payment.transtechsys.com' }
 ];
 
 redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
