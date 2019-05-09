@@ -1,4 +1,8 @@
+//HEADER//
 .pqiBtn {
+  padding: .5em 1em;
+  border-radius: 0;
+
   &:hover {
     background: #ED8C0E;
     color: #343A40;
@@ -6,8 +10,75 @@
 }
 
 .sdgBtn {
+  padding: .5em 1em;
+  border-radius: 0;
+
   &:hover {
     background: #21b644;
     color: #343A40;
+  }
+}
+
+
+//INDEX PAGE
+#jumbo img {
+  border: 2px solid black;
+}
+
+#title {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 400;
+  }
+}
+
+#services {
+  .service {
+    margin-top: 2em;
+  }
+
+  h4 {
+    padding: .5em;
+    background: #CCCCCC;
+  }
+
+  .service-text {
+    padding: .6em;
+  }
+
+  ul {
+    font-size: 1.15em;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.15em;
+  }
+}
+
+//FOOTER
+footer {
+  hr {
+    border: 0;
+    width: 100%;
+    height: 2px;
+    background: #CCCCCC;
+  }
+
+  ul {
+    height: 100%;
+  }
+
+  .social {
+    color: #343A40;
+    transition: .3s;
+
+    &:hover {
+      color: rgb(23, 25, 27);
+    }
   }
 }
