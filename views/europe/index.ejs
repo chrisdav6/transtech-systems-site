@@ -21,22 +21,7 @@
 
 <body>
 
-  <header class="my-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 text-center text-lg-left">
-          <a href="/europe">
-            <img src="/img/europelogo.jpg" class="img-fluid" alt="TransTech Systems Europe Logo">
-          </a>
-        </div>
-        <div class="col-lg-8 d-flex flex-column flex-lg-row justify-content-lg-end align-items-lg-end">
-          <a href="/europe/pqi380" class="btn btn-outline-dark pqiBtn mr-0 mr-lg-3 mt-4">PQI 380
-            Asphaltdichte-Messgerät</a>
-          <a href="/europe/sdg200" class="btn btn-outline-dark sdgBtn mt-3">SDG 200 Erdbaudichte-Messgerät</a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <% include ./partials/header %>
 
   <section id="jumbo">
     <div class="container">
@@ -91,39 +76,7 @@
     </div>
   </section><!-- /services -->
 
-  <footer class="my-5">
-    <div class="container">
-      <hr class="mb-5">
-
-      <div class="row">
-        <div class="col-lg-6 text-center text-lg-left">
-          <address>
-            <strong>TransTech Systems Europe</strong><br>
-            Osterdiek 11, Oldenburg D-26125, Germany<br>
-            Phone: +49-441-3501227 (Attn: Bernd Diedrichs)<br>
-            <a class="link"
-              href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Europe Website">Contact TransTech
-              Systems Europe</a>
-          </address>
-        </div>
-        <div class="col-lg-6 text-center text-lg-right">
-          <ul class="list-unstyled d-flex justify-content-center justify-content-lg-end align-items-end">
-            <li><a class="social" href="https://www.facebook.com/TranstechSystems" target="_blank"><i
-                  class="fab fa-facebook-square fa-2x pr-1"></i></a></li>
-            <li><a class="social" href="https://twitter.com/TransTechSystem" target="_blank"><i
-                  class="fab fa-twitter-square fa-2x pr-1"></i></a></li>
-            <li><a class="social" href="https://www.instagram.com/transtechsystems" target="_blank"><i
-                  class="fab fa-instagram fa-2x pr-1"></i></a></li>
-            <li><a class="social" href="https://www.youtube.com/user/TransTechSystems" target="_blank"><i
-                  class="fab fa-youtube-square fa-2x pr-1"></i></a></li>
-            <li><a class="social" href="https://www.linkedin.com/company/transtech-systems-incorporated"
-                target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <% include ./partials/footer %>
 
   <script src="/js/jquery.min.js"></script>
   <script src="/js/popper.min.js"></script>
