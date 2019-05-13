@@ -26,7 +26,6 @@ app.use(flash());
 
 //Set Static Folders
 app.use(express.static(path.join(__dirname, "/public")));
-app.use(express.static(path.join(__dirname, "/views")));
 
 //Use BodyParser
 app.use(express.urlencoded({ extended: true }));
