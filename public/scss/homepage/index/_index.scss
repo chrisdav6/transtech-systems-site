@@ -9,10 +9,11 @@ body {
 
 .news {
   padding: .55em 1.75em;
-  background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, .6);
   color: #fff;
   transition: background .3s, color .3s, border .3s;
-  border: 2px solid#fff;
+  border: 2px solid rgb(236, 188, 29);
+  ;
 }
 
 .news span {
@@ -22,7 +23,7 @@ body {
 .news:hover {
   text-decoration: none;
   color: rgb(236, 188, 29);
-  background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, .8);
   border: 2px solid rgb(236, 188, 29);
 }
 
@@ -30,13 +31,19 @@ body {
   height: 1.75em;
 }
 
+.social {
+  background: rgba(0, 0, 0, .8);
+  padding: .1em .25em .1em .35em;
+  border: 2px solid black;
+}
+
 .social a {
   position: relative;
   display: inline-block;
   top: 0;
   text-decoration: none;
+  margin-right: 2px;
   transition: .3s;
-  padding: 2px 4px 1px 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,9 +51,7 @@ body {
 }
 
 .facebook {
-  background: #3C5A99;
-  color: #fff;
-  border-radius: 6px;
+  color: #3C5A99;
 }
 
 .facebook:hover {
@@ -55,9 +60,7 @@ body {
 }
 
 .twitter {
-  background: #1DA1F2;
-  color: #fff;
-  border-radius: 6px;
+  color: #1DA1F2;
 }
 
 .twitter:hover {
@@ -66,10 +69,7 @@ body {
 }
 
 .instagram {
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  color: #fff;
-  border-radius: 6px;
+  color: #d6249f;
 }
 
 .instagram:hover {
@@ -78,9 +78,7 @@ body {
 }
 
 .youtube {
-  background: #ff0000;
-  color: #fff;
-  border-radius: 6px;
+  color: #ff0000;
 }
 
 .youtube:hover {
@@ -89,9 +87,7 @@ body {
 }
 
 .vimeo {
-  background: #1ab7ea;
-  color: #fff;
-  border-radius: 6px;
+  color: #1ab7ea;
 }
 
 .vimeo:hover {
@@ -100,9 +96,7 @@ body {
 }
 
 .linked {
-  background: #0077b5;
-  color: #fff;
-  border-radius: 6px;
+  color: #0077b5;
 }
 
 .linked:hover {
@@ -152,8 +146,8 @@ body {
 
 .productNavItem {
   padding: 1em;
-  background: rgba(255,255,255,.1);
-  border: 2px solid rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .5);
   display: block;
   color: #fff;
   transition: transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.75), background .2s;
@@ -165,7 +159,7 @@ body {
     text-decoration: none;
     color: #fff;
     z-index: 100;
-    box-shadow: 0px 0px 35px 24px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 35px 24px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -242,7 +236,7 @@ footer {
       color: #fff;
       border: 1px solid rgb(236, 188, 29);
       margin: .45em 0;
-      
+
       &:hover {
         color: rgb(236, 188, 29);
       }
@@ -250,7 +244,7 @@ footer {
   }
 
   .footer-link {
-    color:#fff;
+    color: #fff;
     font-weight: 500;
     transition: .3s;
 
@@ -259,8 +253,3 @@ footer {
     }
   }
 }
-
-
-
-
-
