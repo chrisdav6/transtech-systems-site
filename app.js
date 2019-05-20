@@ -68,6 +68,12 @@ redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
   });
 });
 
+//Redirect www to non-www
+app.get('/*', function (req, res, next) {
+  if (req.headers.host.match(/^www/) !== null) res.redirect(301, 'http://' + req.headers.host.replace(/^www\./, '') + req.url);
+  else next();
+});
+
 //Use date for footer copyright
 app.locals.date = new Date().getFullYear();
 
