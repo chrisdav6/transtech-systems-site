@@ -44,7 +44,7 @@ function initMap() {
 		['Hoskin Scientific , Alberta', 51.380788, -114.974718],
 		['Equipos de Auscultacion , Chile', -26.824071, -70.224609],
 		['Earth Products China Limited  , China', 34.597042, 103.974609],
-		['Atlantic Supply , Columbia', 4.315974, -73.072573],
+		['Atlantic Supply , Colombia', 4.315974, -73.072573],
 		['Beratest AG , Congo', -0.329588, 15.864258],
 		['Atlantic Supply , Costa Rica', 9.903910, -83.841379],
 		['Beratest AG , Côte d’Ivoire', 7.700105, -5.646973],
