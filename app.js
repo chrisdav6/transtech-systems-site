@@ -1,10 +1,11 @@
 const path = require("path");
 const express = require("express");
 const helmet = require("helmet");
-const dotenv = require('dotenv').config();
-const nodemailer = require('nodemailer');
-const cookieParser = require('cookie-parser');
-const session = require('express-session');
+const dotenv = require("dotenv").config();
+const validator = require('validator');
+const nodemailer = require("nodemailer");
+const cookieParser = require("cookie-parser");
+const session = require("express-session");
 const flash = require("connect-flash");
 const port = process.env.PORT || 3000;
 const app = express();
@@ -342,9 +343,9 @@ app.post("/products/contactCorporate", function (req, res) {
       });
 
       let body = `<h2><u>Corporate Contact Inquiry</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
+      body += `<p><strong>From:</strong> ${validator.escape(name)}<br>`;
       body += `<strong>Email:</strong> ${email}</p>`;
-      body += `<p><strong>Message:</strong> ${message}</p>`;
+      body += `<p><strong>Message:</strong> ${validator.escape(message)}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {

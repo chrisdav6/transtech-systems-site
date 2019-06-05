@@ -1,11 +1,11 @@
 #featured {
   padding-bottom: 2em;
-  
+
   .title {
     padding: 2.5em 0 .5em 0;
     color: $extreme-dark-gray;
   }
-  
+
   hr {
     border: none;
     height: 1px;
@@ -13,29 +13,29 @@
     background: $dark-gray;
     margin-bottom: 2.5em;
   }
-  
+
   .category-title {
     padding: .25em;
     background: $logo-yellow;
     color: $extreme-dark-gray;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   .card {
     border: none;
     background: #F8F9FA;
-    
+
     .card-img-top {
       max-width: 250px;
     }
-    
+
     .swm {
       max-width: 125px;
     }
-    
+
     p {
       font-weight: 500;
     }
@@ -51,28 +51,28 @@
     a {
       font-weight: 700;
       color: $extreme-dark-gray;
-    
+
       &:hover {
         text-decoration: underline;
         color: $extreme-dark-gray;
       }
     }
   }
-  
+
   @include mq {
     .title {
       font-size: 2rem;
       padding: 2.75em 0 .15em 0;
     }
-    
+
     hr {
       margin-bottom: 2em;
     }
-    
+
     .card-title {
       font-size: 1.5rem;
     }
-    
+
     .category-title {
       font-size: 1.75rem;
     }
