@@ -10,7 +10,7 @@
     width: 100%;
     background: $dark-gray;
   }
-  
+
   h3 {
     font-size: 1.35rem;
     text-decoration: underline;
@@ -23,21 +23,33 @@
     }
   }
 
-  .attending {
-    font-size: 1.25rem;
+  .attending-status {
+    font-size: 1rem;
+    margin-top: 1em;
+    padding: .25em .5em;
+    color: white;
+    display: inline-block;
   }
 
-  .not-attending-title {
+  .attending {
+    background: $dark-gray;
+  }
+
+  .not-attending {
+    background: #DC3545;
+  }
+
+  .industry-events-title {
     margin-top: 4em;
   }
-  
+
   .tradeshow-link {
     display: block;
     color: $dark-gray;
     font-weight: 600;
     font-size: 1.35rem;
     line-height: 1.25;
-  
+
     &:hover,
     &:active {
       text-decoration: underline;
@@ -47,9 +59,9 @@
   .tradeshow-social {
     font-size: 1.5rem;
   }
-  
+
   p {
     font-size: 1.1rem;
   }
-  
+
 }
