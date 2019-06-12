@@ -82,7 +82,7 @@ function initMap() {
 		[
 			'<div class="map-text">' +
 			'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
-			'<span>Intermat ASEAN - Booth #B14</span><br>' +
+			'<span>Intermat ASEAN - Booth #B18</span><br>' +
 			'<hr>' +
 			'Bangkok, Thailand<br>' +
 			'September 5-7, 2019<br>' +
