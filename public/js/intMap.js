@@ -118,7 +118,7 @@ function initMap() {
 			'<span>M/s. Taisei International</span><br>' +
 			'<hr>' +
 			'91-044-26162877<br>' +
-			'Attn: G. Parasuranam<br>' +
+			'Attn: G. Parasuraman<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
@@ -202,7 +202,7 @@ function initMap() {
 			'<span>M/s. Taisei International</span><br>' +
 			'<hr>' +
 			'91-044-26162877<br>' +
-			'Attn: G. Parasuranam<br>' +
+			'Attn: G. Parasuraman<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
@@ -575,7 +575,7 @@ function initMap() {
 			'<span>M/s. Taisei International</span><br>' +
 			'<hr>' +
 			'91-044-26162877<br>' +
-			'Attn: G. Parasuranam<br>' +
+			'Attn: G. Parasuraman<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
@@ -754,7 +754,7 @@ function initMap() {
 			'<span>M/s. Taisei International</span><br>' +
 			'<hr>' +
 			'91-044-26162877<br>' +
-			'Attn: G. Parasuranam<br>' +
+			'Attn: G. Parasuraman<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
@@ -814,7 +814,7 @@ function initMap() {
 			'<span>M/s. Taisei International</span><br>' +
 			'<hr>' +
 			'91-044-26162877<br>' +
-			'Attn: G. Parasuranam<br>' +
+			'Attn: G. Parasuraman<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
@@ -826,7 +826,7 @@ function initMap() {
 			'<span>M/s. Taisei International</span><br>' +
 			'<hr>' +
 			'91-044-26162877<br>' +
-			'Attn: G. Parasuranam<br>' +
+			'Attn: G. Parasuraman<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
