@@ -19,7 +19,7 @@
         <hr>
         <img class="img-fluid mb-4 buildingImg" src="../img/transtechBuildingContact.jpg"
           alt="TransTech Systems Facility">
-        <div class="contact-info">
+        <!-- <div class="contact-info">
           <address>
             900 Albany Shaker Road<br>
             Suite #2<br>
@@ -31,25 +31,40 @@
           <p><a class="phone-link" href="tel:+18007246306"><i class="fas fa-phone-square"
                 data-fa-transform="flip-h"></i> 1-800-724-6306</a></p>
           <p><i class="fas fa-fax"></i> +1-518-370-5538</p>
-        </div>
+        </div> -->
       </div>
 
       <div class="col-md-5 ml-auto mt-5 mt-md-0">
         <h2 class="text-center text-md-left">Contact Us</h2>
         <hr>
 
+        <div class="contact-info text-center text-md-left">
+          <address>
+            900 Albany Shaker Road<br>
+            Suite #2<br>
+            Latham, NY 12110<br>
+          </address>
+
+          <p><a class="phone-link" href="tel:+5183705558"><i class="fas fa-phone-square" data-fa-transform="flip-h"></i>
+              +1-518-370-5558</a></p>
+          <p><a class="phone-link" href="tel:+18007246306"><i class="fas fa-phone-square"
+                data-fa-transform="flip-h"></i>
+              1-800-724-6306</a></p>
+          <p><i class="fas fa-fax"></i> +1-518-370-5538</p>
+        </div>
+
         <!-- Node Flash Message -->
-        <% if(flash && flash.success && flash.success.length > 0) { %>
+        <!-- <% if(flash && flash.success && flash.success.length > 0) { %>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
           <%= flash.success %>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <% } %>
+        <% } %> -->
         <!-- /Node Flash Message -->
 
-        <form action="/products/contactCorporate" method="post" id="corporateContactForm"
+        <!-- <form action="/products/contactCorporate" method="post" id="corporateContactForm"
           class="d-flex flex-column mb-4">
           <div class="form-group">
             <label for="name" class="text-left">Name</label>
@@ -64,15 +79,16 @@
             <textarea class="form-control form-control-lg" name="message" id="message" rows="5" required></textarea>
           </div>
           <div class="form-group business-address">
-            <input type="text" class="form-control form-control-lg" name="businessAddress" id="businessAddress" tabindex="-1">
+            <input type="text" class="form-control form-control-lg" name="businessAddress" id="businessAddress"
+              tabindex="-1">
           </div>
 
           <button id="corpContactBtn" class="btn btn-outline-success btn-lg submit-btn btn-block mt-3">Submit</button>
           <i class="fas fa-spinner fa-2x fa-spin mt-4 mx-auto"></i>
-          <!--Initially hidden in the css-->
+          
           <span class="submitMessage text-center mt-4 mb-3 mx-auto">Thank you, your message has been sent</span>
-          <!--Initially hidden in the css-->
-        </form>
+          
+        </form> -->
       </div>
     </div>
   </div>
