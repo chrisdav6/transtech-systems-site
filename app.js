@@ -59,6 +59,7 @@ const redirects = [
   { from: '/europe/sdg200.php', to: '/europe/sdg200' },
   { from: '/payment.php', to: 'http://payment.transtechsys.com' },
   { from: '/about.php', to: '/products#about' },
+  { from: '/privacy.php', to: '/products/privacy' },
   { from: '/sdg/mtl%20Generator%20Ver%20949.xls', to: '/pdf/mtlGeneratorVer949.xls' },
   { from: '/sdg/SDG%20mtl%20File%20Tool.xls', to: '/pdf/SDGmtlFileTool.xls' }
 ];
