@@ -94,7 +94,7 @@ function initMap() {
 		[
 			'<div class="map-text">' +
 			'<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-			'<span>TXAPA</span><br>' +
+			'<span>TXAPA - Booth #16</span><br>' +
 			'<hr>' +
 			'San Antonio, TX<br>' +
 			'September 17-20, 2019<br>' +
