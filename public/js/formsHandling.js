@@ -187,9 +187,12 @@ $(function () {
 		$("#manualDownloadLink").hide();
 		$("#manualDownloadBtn").show();
 		$('#manualDownload').modal('hide');
-		//Redirect back to original window from modal
-		let currentLocation = window.location.href;
-		window.location.href = currentLocation;
+		//Redirect back to original window from modal after pdf downloads- otherwise there is not enought time
+		setTimeout(function () {
+			let currentLocation = window.location.href;
+			window.location.href = currentLocation;
+		}, 1000);
+
 	});
 
 });
