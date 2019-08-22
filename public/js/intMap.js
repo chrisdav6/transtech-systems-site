@@ -466,7 +466,7 @@ function initMap() {
 			'<div class="map-text">' +
 			'<span>Bincis UAB</span><br>' +
 			'<hr>' +
-			'+370-3497-8021<br>' +
+			'+370-698-06311<br>' +
 			'Attn: Edvinas Peleckas<br>' +
 			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
@@ -657,7 +657,7 @@ function initMap() {
 			'<div class="map-text">' +
 			'<span>Bincis UAB</span><br>' +
 			'<hr>' +
-			'+370-3497-8021<br>' +
+			'+370-698-06311<br>' +
 			'Attn: Edvinas Peleckas<br>' +
 			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
@@ -669,7 +669,7 @@ function initMap() {
 			'<div class="map-text">' +
 			'<span>Bincis UAB</span><br>' +
 			'<hr>' +
-			'+370-3497-8021<br>' +
+			'+370-698-06311<br>' +
 			'Attn: Edvinas Peleckas<br>' +
 			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
