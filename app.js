@@ -437,6 +437,11 @@ app.post("/products/repairRequest", function (req, res) {
   let { name, company, address, city, state, zip, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage } = req.body;
 
   //Google captcha code
+  if (req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null) {
+    req.flash('success', 'Please select google captcha');
+    return res.redirect("/products/repairRequest");
+  }
+
   const secretKey = "6LdOJrUUAAAAAEcDXXzymgvHEY2XDMamj3pGXra-";
   const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
 
@@ -445,7 +450,7 @@ app.post("/products/repairRequest", function (req, res) {
     body = JSON.parse(body);
 
     if (body.success !== undefined && !body.success) {
-      req.flash('success', 'Please select google captcha');
+      req.flash('success', 'Failed captcha verification');
       return res.redirect("/products/repairRequest");
     }
 
@@ -483,7 +488,8 @@ app.post("/products/repairRequest", function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cborski@transtechsys.com,jmorse@transtechsys.com,rberube@transtechsys.com', // list of receivers
+        // to: 'cborski@transtechsys.com,jmorse@transtechsys.com,rberube@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com',
         replyTo: email,
         subject: "TransTech Systems Repair Request Form", // Subject line
         text: body, // plain text body
