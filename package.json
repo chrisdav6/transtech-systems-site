@@ -26,6 +26,7 @@
     "lightbox2": "^2.10.0",
     "nodemailer": "^4.6.8",
     "popper.js": "^1.14.4",
+    "request": "^2.88.0",
     "validator": "^11.0.0"
   },
   "devDependencies": {

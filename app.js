@@ -7,6 +7,7 @@ const nodemailer = require("nodemailer");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const flash = require("connect-flash");
+const request = require('request');
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -433,12 +434,22 @@ app.post("/products/salesRequest", function (req, res) {
 
 //Repair Request Form
 app.post("/products/repairRequest", function (req, res) {
-  let { name, company, address, city, state, zip, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage, businessAddress } = req.body;
+  let { name, company, address, city, state, zip, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect("/products/repairRequest");
-  } else {
+  //Google captcha code
+  const secretKey = "6LdOJrUUAAAAAEcDXXzymgvHEY2XDMamj3pGXra-";
+  const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+
+  //Send verification to google
+  request(verificationURL, function (error, response, body) {
+    body = JSON.parse(body);
+
+    if (body.success !== undefined && !body.success) {
+      req.flash('success', 'Please select google captcha');
+      return res.redirect("/products/repairRequest");
+    }
+
+    //If google passes - send form
     nodemailer.createTestAccount((err, account) => {
       // create reusable transporter object using the default SMTP transport
       var transporter = nodemailer.createTransport({
@@ -494,7 +505,8 @@ app.post("/products/repairRequest", function (req, res) {
     });
     req.flash('success', 'Repair request has been sent. Thank You!');
     res.redirect("/products/repairRequest");
-  }
+  });
+
 });
 
 //Product Registration Form
