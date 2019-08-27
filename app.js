@@ -437,7 +437,7 @@ app.post("/products/repairRequest", function (req, res) {
   let { name, company, address, city, state, zip, country, phone, email, repairProduct, repairSerial, estimate, serviceMessage } = req.body;
 
   //Google captcha code
-  const secretKey = "6LdOJrUUAAAAAEcDXXzymgvHEY2XDMamj3pGXra-";
+  const secretKey = process.env.RECAPTCHA_SECRET;
   const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
 
   //Send verification to google
