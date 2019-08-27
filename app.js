@@ -446,10 +446,10 @@ app.post("/products/repairRequest", function (req, res) {
   const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
 
   //Send verification to google
-  request(verificationURL, function (error, response, body) {
-    body = JSON.parse(body);
+  request(verificationURL, function (error, response, data) {
+    data = JSON.parse(data);
 
-    if (body.success !== undefined && !body.success) {
+    if (data.success !== undefined && !data.success) {
       req.flash('success', 'Failed captcha verification');
       return res.redirect("/products/repairRequest");
     }
