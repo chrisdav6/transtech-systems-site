@@ -49,10 +49,8 @@ function initMap() {
 		['Atlantic Supply , Costa Rica', 9.903910, -83.841379],
 		['Beratest AG , Côte d’Ivoire', 7.700105, -5.646973],
 		['TransTech Europe , Czech Republic', 49.894324, 15.097526],
-		['ABAS AS , Denmark', 55.507024, 9.698619],
 		['Imporequip , Ecuador', -1.428075, -78.574219],
 		['Bincis UAB , Estonia', 58.867745, 25.559692],
-		['ABAS , Finland', 63.312683, 26.894531],
 		['Grollemund Laboroutes , France', 46.754917, 2.39502],
 		['Beratest AG , Gabon', -0.659165, 11.469727],
 		['TransTech Europe , Germany', 51.220647, 10.524902],
@@ -94,7 +92,6 @@ function initMap() {
 		['TransTech Europe (Celab d.o.o.)  , Slovenia', 46.029389, 14.655762],
 		['Proeti, S.A.  , Spain', 40.413496, -3.603516],
 		['M/s. Taisei International , Sri Lanka', 7.8775394, 80.7003428],
-		['ABAS  , Sweden', 64.052978, 16.875],
 		['Beratest AG , Switzerland', 46.991494, 8.234253],
 		['Bav Corporation, Inc. , Tajikistan', 38.882481, 70.817871],
 		['Beratest AG , Tchad', 14.98724, 18.896484],
@@ -438,18 +435,6 @@ function initMap() {
 			'</div>'
 		],
 
-		// Denmark
-		[
-			'<div class="map-text">' +
-			'<span>ABAS AS</span><br>' +
-			'<hr>' +
-			'+47 32 24 35 30<br>' +
-			'Attn: Geir Solberg<br>' +
-			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
-
 		// Ecuador
 		[
 			'<div class="map-text">' +
@@ -470,18 +455,6 @@ function initMap() {
 			'Attn: Edvinas Peleckas<br>' +
 			'<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
-
-		// Finland
-		[
-			'<div class="map-text">' +
-			'<span>ABAS AS</span><br>' +
-			'<hr>' +
-			'+47 32 24 35 30<br>' +
-			'Attn: Geir Solberg<br>' +
-			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
@@ -973,18 +946,6 @@ function initMap() {
 			'Attn: G. Parasuranam<br>' +
 			'<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
-
-		// Sweden
-		[
-			'<div class="map-text">' +
-			'<span>ABAS AS</span><br>' +
-			'<hr>' +
-			'+47 32 24 35 30<br>' +
-			'Attn: Geir Solberg<br>' +
-			'<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-			'<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
