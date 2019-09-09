@@ -25,7 +25,7 @@ function initMap() {
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		// ['CalAPA, Ontario, CA', 34.055032, -117.615421],
-		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+		// ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
@@ -79,16 +79,16 @@ function initMap() {
 		// ],
 
 		//Intermat ASEAN
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
-			'<span>Intermat ASEAN - Booth #B18</span><br>' +
-			'<hr>' +
-			'Bangkok, Thailand<br>' +
-			'September 5-7, 2019<br>' +
-			'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
+		// 	'<span>Intermat ASEAN - Booth #B18</span><br>' +
+		// 	'<hr>' +
+		// 	'Bangkok, Thailand<br>' +
+		// 	'September 5-7, 2019<br>' +
+		// 	'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
 
 		//TXAPA
 		[
