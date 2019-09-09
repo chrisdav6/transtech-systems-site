@@ -30,7 +30,7 @@
     "validator": "^11.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   }
