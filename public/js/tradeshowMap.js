@@ -24,10 +24,10 @@ function initMap() {
 	var markers = [
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-		// ['CalAPA, Ontario, CA', 34.055032, -117.615421],
 		// ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
+		['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
 		['APAI, Indianapolis, IN', 40.031171, -86.939831],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -66,18 +66,6 @@ function initMap() {
 		// 	'</div>'
 		// ],
 
-		// CalAPA
-		// [
-		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-		// 	'<span>CalAPA Spring Conference</span><br>' +
-		// 	'<hr>' +
-		// 	'Ontario, CA<br>' +
-		// 	'March 20-21, 2019<br>' +
-		// 	'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// 	'</div>'
-		// ],
-
 		//Intermat ASEAN
 		// [
 		// 	'<div class="map-text">' +
@@ -111,6 +99,18 @@ function initMap() {
 			'Portland, ME<br>' +
 			'October 23-24, 2019<br>' +
 			'<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
+
+		//CalAPA
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+			'<span>CalAPA Fall Conference</span><br>' +
+			'<hr>' +
+			'Sacramento, CA<br>' +
+			'November 6-7, 2019<br>' +
+			'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
