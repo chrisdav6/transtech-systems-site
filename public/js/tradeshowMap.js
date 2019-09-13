@@ -24,7 +24,6 @@ function initMap() {
 	var markers = [
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-		// ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['CalAPA, Sacramento, CA', 38.575478, -121.498530],
@@ -36,6 +35,7 @@ function initMap() {
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
+		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['World of Asphalt, Atlanta, GA', 33.764130, -84.420611],
 	];
 
@@ -63,18 +63,6 @@ function initMap() {
 		// 	'Battle Creek, MI<br>' +
 		// 	'March 6-7, 2019<br>' +
 		// 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// 	'</div>'
-		// ],
-
-		//Intermat ASEAN
-		// [
-		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
-		// 	'<span>Intermat ASEAN - Booth #B18</span><br>' +
-		// 	'<hr>' +
-		// 	'Bangkok, Thailand<br>' +
-		// 	'September 5-7, 2019<br>' +
-		// 	'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// 	'</div>'
 		// ],
 
@@ -208,6 +196,18 @@ function initMap() {
 			'Bangor, ME<br>' +
 			'April 7-8, 2020<br>' +
 			'<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
+
+		//Intermat ASEAN
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
+			'<span>Intermat ASEAN</span><br>' +
+			'<hr>' +
+			'Bangkok, Thailand<br>' +
+			'September 9-11, 2020<br>' +
+			'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
