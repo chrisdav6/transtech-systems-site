@@ -35,7 +35,7 @@ function initMap() {
 		['Marcus McCorison, California', 36.692245, -119.620438, "transtech"],
 		['TransTech Systems, Colorado', 39.158062, -105.509759, "transtech"],
 		['Marcus McCorison, Connecticut', 41.654445, -73.083801, "transtech"],
-		['TransTech Systems, Delaware', 39.180106, -75.499366, "transtech"],
+		['GT Mid Atlantic, Inc., Delaware', 39.180106, -75.499366],
 		['Atlantic Supply, Jacksonville Florida', 30.31466, -81.655884],
 		['Atlantic Supply, Largo Florida', 27.909467, -82.787324],
 		['Atlantic Supply, Orlando Florida', 28.516294, -81.367493],
@@ -50,7 +50,7 @@ function initMap() {
 		['TransTech Systems, Kentucky', 37.630124, -84.538175, "transtech"],
 		['Atlantic Supply, Louisiana', 30.489397, -91.903111],
 		['Marcus McCorison, Maine', 45.413876, -69.466553, "transtech"],
-		['TransTech Systems, Maryland', 39.140858, -76.682258, "transtech"],
+		['GT Mid Atlantic, Inc., Maryland', 39.140858, -76.682258],
 		['Marcus McCorison, Massachusetts', 42.5207, -71.383667, "transtech"],
 		['Marcus McCorison, Michigan', 43.563136, -84.678763, "transtech"],
 		['TransTech Systems, Minnesota', 46.555991, -94.274308, "transtech"],
@@ -60,7 +60,7 @@ function initMap() {
 		['Marcus McCorison, Nebraska', 41.648757, -99.658929, "transtech"],
 		['TransTech Systems, Nevada', 40.079192, -116.892773, "transtech"],
 		['Marcus McCorison, New Hampshire', 43.405047, -71.575928, "transtech"],
-		['TransTech Systems, New Jersey', 39.751595, -74.466530, "transtech"],
+		['GT Mid Atlantic, Inc., New Jersey', 39.751595, -74.466530],
 		['TransTech Systems, New Mexico', 34.490538, -105.928939, "transtech"],
 		['TransTech Systems, New York', 42.776429, -73.866104, "transtech"],
 		['Marcus McCorison, North Carolina', 35.568479, -78.856170, "transtech"],
@@ -162,10 +162,12 @@ function initMap() {
 		// Delaware
 		[
 			'<div class="map-text">' +
-			'<span>TransTech Systems</span><br>' +
+			'<span>GT Mid Atlantic, Inc.</span><br>' +
 			'<hr>' +
-			'1-800-724-6306<br>' +
-			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'240-278-7694<br>' +
+			'Attn: Jim Head<br>' +
+			'<p><a class="link" href="mailto:jimhead@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
@@ -324,10 +326,12 @@ function initMap() {
 		// Maryland
 		[
 			'<div class="map-text">' +
-			'<span>TransTech Systems</span><br>' +
+			'<span>GT Mid Atlantic, Inc.</span><br>' +
 			'<hr>' +
-			'1-800-724-6306<br>' +
-			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'240-278-7694<br>' +
+			'Attn: Jim Head<br>' +
+			'<p><a class="link" href="mailto:jimhead@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
@@ -426,10 +430,12 @@ function initMap() {
 		// New Jersey
 		[
 			'<div class="map-text">' +
-			'<span>TransTech Systems</span><br>' +
+			'<span>GT Mid Atlantic, Inc.</span><br>' +
 			'<hr>' +
-			'1-800-724-6306<br>' +
-			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'610-574-6313<br>' +
+			'Attn: Colin Chenet<br>' +
+			'<p><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
