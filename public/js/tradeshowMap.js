@@ -24,7 +24,7 @@ function initMap() {
 	var markers = [
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+		// ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
@@ -67,16 +67,16 @@ function initMap() {
 		// ],
 
 		//TXAPA
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-			'<span>TXAPA - Booth #16</span><br>' +
-			'<hr>' +
-			'San Antonio, TX<br>' +
-			'September 17-20, 2019<br>' +
-			'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+		// 	'<span>TXAPA - Booth #16</span><br>' +
+		// 	'<hr>' +
+		// 	'San Antonio, TX<br>' +
+		// 	'September 17-20, 2019<br>' +
+		// 	'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
 
 		// NEAUPG
 		[
