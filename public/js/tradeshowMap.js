@@ -106,7 +106,7 @@ function initMap() {
 		[
 			'<div class="map-text">' +
 			'<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-			'<span>SEAUPG</span><br>' +
+			'<span>SEAUPG - Booth #14</span><br>' +
 			'<hr>' +
 			'Baton Rouge, LA<br>' +
 			'November 18-21, 2019<br>' +
