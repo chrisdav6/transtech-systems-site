@@ -28,6 +28,14 @@
     border: none;
     background: #F8F9FA;
 
+    .card-title {
+      transition: .5s;
+    }
+
+    &:hover .card-title {
+      text-shadow: 0px 0px 4px #FFDE00;
+    }
+
     .card-img-top {
       max-width: 250px;
     }
