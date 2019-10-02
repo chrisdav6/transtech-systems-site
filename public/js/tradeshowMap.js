@@ -130,7 +130,7 @@ function initMap() {
 		[
 			'<div class="map-text">' +
 			'<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-			'<span>TRB</span><br>' +
+			'<span>TRB - Booth #1046</span><br>' +
 			'<hr>' +
 			'Washington D.C.<br>' +
 			'January 12-16, 2020<br>' +
