@@ -25,6 +25,7 @@ function initMap() {
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		// ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+		//['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
@@ -33,7 +34,6 @@ function initMap() {
 		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
-		['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['World of Asphalt, Atlanta, GA', 33.764130, -84.420611],
@@ -75,6 +75,18 @@ function initMap() {
 		// 	'San Antonio, TX<br>' +
 		// 	'September 17-20, 2019<br>' +
 		// 	'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
+
+		// CAPA
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
+		// 	'<span>CAPA</span><br>' +
+		// 	'<hr>' +
+		// 	'Pinehurst, NC<br>' +
+		// 	'April 1-3, 2020<br>' +
+		// 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// 	'</div>'
 		// ],
 
@@ -171,19 +183,6 @@ function initMap() {
 			'Columbus, OH<br>' +
 			'March 24-25, 2020<br>' +
 			'<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
-
-
-		// CAPA
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/capa-logo.png">' +
-			'<span>CAPA</span><br>' +
-			'<hr>' +
-			'Pinehurst, NC<br>' +
-			'April 1-3, 2020<br>' +
-			'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
