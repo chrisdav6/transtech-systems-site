@@ -23,7 +23,6 @@ function initMap() {
 	// Map Marker Locations
 	var markers = [
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
-		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		// ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		//['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		['NEAUPG, Portland, ME', 43.682557, -70.295278],
@@ -33,6 +32,7 @@ function initMap() {
 		['TRB, Washington D.C.', 38.911744, -77.018697],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
+		['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
@@ -52,18 +52,6 @@ function initMap() {
 		// 'November 5-7, 2018<br>' +
 		// '<p><a class="link" href="http://www.asphaltpavement.org/index.php?option=com_content&view=article&id=1148&Itemid=100375" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// '</div>'
-		// ],
-
-		// APAM
-		// [
-		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" width="100" src="../img/apam-logo.png">' +
-		// 	'<span>APAM</span><br>' +
-		// 	'<hr>' +
-		// 	'Battle Creek, MI<br>' +
-		// 	'March 6-7, 2019<br>' +
-		// 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// 	'</div>'
 		// ],
 
 		//TXAPA
@@ -121,7 +109,7 @@ function initMap() {
 			'<span>SEAUPG - Booth #14</span><br>' +
 			'<hr>' +
 			'Baton Rouge, LA<br>' +
-			'November 18-21, 2019<br>' +
+			'November 20-21, 2019<br>' +
 			'<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
@@ -157,7 +145,7 @@ function initMap() {
 			'<span>RMACES</span><br>' +
 			'<hr>' +
 			'Denver, CO<br>' +
-			'February 19-21, 2020<br>' +
+			'February 19-20, 2020<br>' +
 			'<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
@@ -171,6 +159,18 @@ function initMap() {
 			'Las Vegas, NV<br>' +
 			'March 10-14, 2020<br>' +
 			'<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
+
+		//APAM
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/apam-logo.png">' +
+			'<span>APAM</span><br>' +
+			'<hr>' +
+			'Battle Creek, MI<br>' +
+			'March 18-19, 2020<br>' +
+			'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
