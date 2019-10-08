@@ -822,7 +822,7 @@ function initMap() {
 			'<div class="map-text">' +
 			'<span>Siccion Marketing</span><br>' +
 			'<hr>' +
-			'+632 711-8416/22<br>' +
+			'+632 8711-8416/22<br>' +
 			'Attn: Victor Pulido<br>' +
 			'<p><a class="link" href="mailto:vpulido@smi-group.com.ph?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="http://www.smi-group.com.ph" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
