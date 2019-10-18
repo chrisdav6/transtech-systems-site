@@ -559,9 +559,9 @@ function initMap() {
 			'<div class="map-text">' +
 			'<span>CFU Intl Trade & Services</span><br>' +
 			'<hr>' +
-			'+964-750-464-9002<br>' +
-			'Attn: Ahmed Hamad<br>' +
-			'<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'+90 312-3940132<br>' +
+			'Attn: Utku CIRIK<br>' +
+			'<p><a class="link" href="mailto:ucirik@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
@@ -1036,11 +1036,11 @@ function initMap() {
 		// Turkey
 		[
 			'<div class="map-text">' +
-			'<span>CFU Intl Trade &amp; Services</span><br>' +
+			'<span>CFU Intl Trade & Services</span><br>' +
 			'<hr>' +
-			'+964-750-464-9002<br>' +
-			'Attn: Ahmed Hamad<br>' +
-			'<p><a class="link" href="mailto:ahamad@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'+90 312-3940132<br>' +
+			'Attn: Utku CIRIK<br>' +
+			'<p><a class="link" href="mailto:ucirik@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
