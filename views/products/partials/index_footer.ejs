@@ -3,19 +3,10 @@
   <div class="container">
 
     <div class="row text-center">
-      <div class="col-md-6 mx-auto">
+      <div class="col">
         <h3>Stay Connected</h3>
-        <p class="join">Join our newsletter mailing list</p>
-        <form action="/products" method="post">
-          <div class="input-group input-group-lg">
-            <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" name="email"
-              id="email" required>
-            <div class="input-group-append">
-              <button class="btn btn-outline-success" type="submit">Sign-Up</button>
-            </div>
-          </div>
-          <input type="text" class="form-control d-none" name="businessAddress" id="businessAddress"><!-- Honey -->
-        </form>
+        <button class="btn btn-outline-dark btn-lg mt-2" data-toggle="modal" data-target=".newsModal">Join our
+          Newsletter Mailing List</button>
         <div class="social">
           <ul class="list-inline mt-4">
 
@@ -144,6 +135,43 @@
   </div>
 </section>
 <!-- /awards -->
+
+<!-- Modals -->
+
+<!-- newsletter Modal -->
+<div class="modal fade newsModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Join Our Newsletter!</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="newsletterForm" action="/products" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control form-control-lg" name="name" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" class="form-control form-control-lg" name="company" id="company" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control form-control-lg" name="country" id="country" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control form-control-lg" name="email" id="email" required>
+          </div>
+          <button id="newsBtn" class="btn btn-success btn-lg submit-btn btn-block mt-4">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Scroll to top -->

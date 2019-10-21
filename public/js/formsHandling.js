@@ -48,7 +48,6 @@ $(function () {
 
 	});
 
-
 	//Sales Request form does not need spinner gif
 
 	//Repair Request Form does not need spinner gif
