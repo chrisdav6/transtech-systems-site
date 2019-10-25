@@ -109,7 +109,7 @@ function initMap() {
 			'<span>SEAUPG - Booth #14</span><br>' +
 			'<hr>' +
 			'Baton Rouge, LA<br>' +
-			'November 20-21, 2019<br>' +
+			'November 19-21, 2019<br>' +
 			'<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
