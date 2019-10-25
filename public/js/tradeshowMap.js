@@ -25,7 +25,7 @@ function initMap() {
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		// ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		//['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-		['NEAUPG, Portland, ME', 43.682557, -70.295278],
+		// ['NEAUPG, Portland, ME', 43.682557, -70.295278],
 		['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
 		['APAI, Indianapolis, IN', 40.031171, -86.939831],
@@ -79,16 +79,16 @@ function initMap() {
 		// ],
 
 		// NEAUPG
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-			'<span>NEAUPG</span><br>' +
-			'<hr>' +
-			'Portland, ME<br>' +
-			'October 23-24, 2019<br>' +
-			'<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+		// 	'<span>NEAUPG</span><br>' +
+		// 	'<hr>' +
+		// 	'Portland, ME<br>' +
+		// 	'October 23-24, 2019<br>' +
+		// 	'<p><a class="link" href="http://www.neaupg.uconn.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
 
 		//CalAPA
 		[
