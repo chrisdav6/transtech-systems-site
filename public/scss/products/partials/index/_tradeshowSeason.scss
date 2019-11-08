@@ -1,0 +1,36 @@
+.tradeshowSeason {
+  background-color: rgba(255, 221, 0, 0.8);
+  padding: .5em 1em;
+  text-align: center;
+  color: #191919;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; //Fade In with jQuery
+  transition: .3s;
+
+  &:hover {
+    text-decoration: none;
+    color: #191919;
+    background: rgba(255, 221, 0, 1);
+    border-left: 10px solid white;
+  }
+
+  @include mq600 {
+    width: 100%;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
