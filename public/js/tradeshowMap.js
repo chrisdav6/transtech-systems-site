@@ -26,7 +26,7 @@ function initMap() {
 		// ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		//['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		// ['NEAUPG, Portland, ME', 43.682557, -70.295278],
-		['CalAPA, Sacramento, CA', 38.575478, -121.498530],
+		//['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
 		['APAI, Indianapolis, IN', 40.031171, -86.939831],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -91,16 +91,16 @@ function initMap() {
 		// ],
 
 		//CalAPA
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-			'<span>CalAPA Fall Conference</span><br>' +
-			'<hr>' +
-			'Sacramento, CA<br>' +
-			'November 6-7, 2019<br>' +
-			'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+		// 	'<span>CalAPA Fall Conference</span><br>' +
+		// 	'<hr>' +
+		// 	'Sacramento, CA<br>' +
+		// 	'November 6-7, 2019<br>' +
+		// 	'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
 
 		// SEAUPG
 		[
