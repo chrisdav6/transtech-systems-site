@@ -14,12 +14,16 @@
   h3 {
     font-size: 1.35rem;
     text-decoration: underline;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
 
   .tradeshow-items {
     img {
       max-height: 125px;
+
+      @include mq600 {
+        max-width: 200px;
+      }
     }
   }
 
