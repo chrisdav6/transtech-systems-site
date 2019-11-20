@@ -269,7 +269,7 @@ app.get("/products/privacy", function (req, res) {
 
 //Homepage Newsletter Signup Form
 app.post("/products", function (req, res) {
-  let { name, company, country, email } = req.body;
+  let { name, company, state, country, email, currentCustomer, reach } = req.body;
 
   nodemailer.createTestAccount((err, account) => {
     // create reusable transporter object using the default SMTP transport
@@ -289,8 +289,11 @@ app.post("/products", function (req, res) {
     let body = `<h2><u>TransTech Systems Newsletter Signup</u></h2>`;
     body += `<p><strong>From:</strong> ${name}<br>`;
     body += `<strong>Company:</strong> ${company}<br>`;
+    body += `<strong>State:</strong> ${state}<br>`;
     body += `<strong>Country:</strong> ${country}<br>`;
     body += `<strong>Email:</strong> ${email}<br>`;
+    body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
+    body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
 
     // setup email data with unicode symbols
     let mailOptions = {
