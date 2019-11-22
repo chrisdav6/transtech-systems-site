@@ -3,7 +3,7 @@ $(function () {
   //Tradeshow Season Fade In
   $('.tradeshowSeason').animate({
     opacity: 1
-  }, 1000);
+  }, 500);
 
   //Fade In Body on page Load
   // $("body").animate({
