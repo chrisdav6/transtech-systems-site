@@ -23,7 +23,6 @@ function initMap() {
 	// Map Marker Locations
 	var markers = [
 		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
-		// ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		//['CAPA, Pinehurst, NC', 35.189523, -79.462592],
 		//['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		//['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
@@ -35,6 +34,7 @@ function initMap() {
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Albany, NY', 42.728662, -73.799678],
 		['World of Asphalt, Atlanta, GA', 33.764130, -84.420611],
 	];
@@ -52,18 +52,6 @@ function initMap() {
 		// 'November 5-7, 2018<br>' +
 		// '<p><a class="link" href="http://www.asphaltpavement.org/index.php?option=com_content&view=article&id=1148&Itemid=100375" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// '</div>'
-		// ],
-
-		//TXAPA
-		// [
-		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-		// 	'<span>TXAPA - Booth #16</span><br>' +
-		// 	'<hr>' +
-		// 	'San Antonio, TX<br>' +
-		// 	'September 17-20, 2019<br>' +
-		// 	'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// 	'</div>'
 		// ],
 
 		// CAPA
@@ -195,6 +183,18 @@ function initMap() {
 			'Bangkok, Thailand<br>' +
 			'September 9-11, 2020<br>' +
 			'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
+
+		//TXAPA
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+			'<span>TXAPA</span><br>' +
+			'<hr>' +
+			'San Antonio, TX<br>' +
+			'September 15-18, 2020<br>' +
+			'<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
