@@ -22,9 +22,7 @@ function initMap() {
 
 	// Map Marker Locations
 	var markers = [
-		// ['NAPA, Atlanta, GA', 33.763244, -84.397191],
 		//['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-		//['CalAPA, Sacramento, CA', 38.575478, -121.498530],
 		//['SEAUPG, Baton Rouge, LA', 30.452293, -91.127889],
 		//['APAI, Indianapolis, IN', 40.031171, -86.939831],
 		['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -33,6 +31,7 @@ function initMap() {
 		['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
+		['CalAPA, Anaheim, CA', 33.830204, -117.909703],
 		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -41,18 +40,6 @@ function initMap() {
 
 	// Info Window Content
 	var infoWindowContent = [
-
-		// NAPA
-		// [
-		// '<div class="map-text">' +
-		// '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-		// '<span>NAPA Conference on Stone-Matrix Asphalt</span><br>' +
-		// '<hr>' +
-		// 'Atlanta, GA<br>' +
-		// 'November 5-7, 2018<br>' +
-		// '<p><a class="link" href="http://www.asphaltpavement.org/index.php?option=com_content&view=article&id=1148&Itemid=100375" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// '</div>'
-		// ],
 
 		// CAPA
 		// [
@@ -63,18 +50,6 @@ function initMap() {
 		// 	'Pinehurst, NC<br>' +
 		// 	'April 1-3, 2020<br>' +
 		// 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-		// 	'</div>'
-		// ],
-
-		//CalAPA
-		// [
-		// 	'<div class="map-text">' +
-		// 	'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-		// 	'<span>CalAPA Fall Conference</span><br>' +
-		// 	'<hr>' +
-		// 	'Sacramento, CA<br>' +
-		// 	'November 6-7, 2019<br>' +
-		// 	'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 		// 	'</div>'
 		// ],
 
@@ -171,6 +146,18 @@ function initMap() {
 			'Bangor, ME<br>' +
 			'April 7-8, 2020<br>' +
 			'<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+			'</div>'
+		],
+
+		//CalAPA
+		[
+			'<div class="map-text">' +
+			'<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+			'<span>CalAPA Spring Conference</span><br>' +
+			'<hr>' +
+			'Anaheim, CA<br>' +
+			'April 16-17, 2020<br>' +
+			'<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
 			'</div>'
 		],
 
