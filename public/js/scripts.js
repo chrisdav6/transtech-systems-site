@@ -1,5 +1,8 @@
 $(function () {
 
+  //Holiday Banner
+  $('.holidayBanner').delay(1000).fadeIn(400).delay(10000).fadeOut(400);
+
   //Tradeshow Season Fade In
   $('.tradeshowSeason').animate({
     opacity: 1
