@@ -32,9 +32,9 @@ function initMap() {
 		['TransTech Systems, Alaska', 66.073198, -151.421268, "transtech"],
 		['TransTech Systems, Arizona', 34.528727, -111.767859, "transtech"],
 		['TransTech Systems, Arkansas', 34.841498, -92.285615, "transtech"],
-		['Marcus McCorison, California', 36.692245, -119.620438, "transtech"],
+		['TransTech Systems, California', 36.692245, -119.620438, "transtech"],
 		['TransTech Systems, Colorado', 39.158062, -105.509759, "transtech"],
-		['Marcus McCorison, Connecticut', 41.654445, -73.083801, "transtech"],
+		['TransTech Systems, Connecticut', 41.654445, -73.083801, "transtech"],
 		['GT Mid Atlantic, Inc., Delaware', 39.180106, -75.499366],
 		['Atlantic Supply, Jacksonville Florida', 30.31466, -81.655884],
 		['Atlantic Supply, Largo Florida', 27.909467, -82.787324],
@@ -42,39 +42,39 @@ function initMap() {
 		['Atlantic Supply, Riviera Beach Florida', 26.775341, -80.058097],
 		['TransTech Systems, Georgia', 33.065286, -83.541289, "transtech"],
 		['TransTech Systems, Hawaii', 19.610030, -155.544456, "transtech"],
-		['Marcus McCorison, Idaho', 44.059733, -114.428075, "transtech"],
+		['TransTech Systems, Idaho', 44.059733, -114.428075, "transtech"],
 		['Great Lakes Equipment / Patten Tractor, Illinois', 41.095912, -89.494629],
-		['Marcus McCorison, Indiana', 39.707081, -86.001824, "transtech"],
+		['TransTech Systems, Indiana', 39.707081, -86.001824, "transtech"],
 		['TransTech Systems, Iowa', 42.246724, -93.527497, "transtech"],
 		['TransTech Systems, Kansas', 38.570758, -98.446819, "transtech"],
 		['TransTech Systems, Kentucky', 37.630124, -84.538175, "transtech"],
 		['Atlantic Supply, Louisiana', 30.489397, -91.903111],
-		['Marcus McCorison, Maine', 45.413876, -69.466553, "transtech"],
+		['TransTech Systems, Maine', 45.413876, -69.466553, "transtech"],
 		['GT Mid Atlantic, Inc., Maryland', 39.140858, -76.682258],
-		['Marcus McCorison, Massachusetts', 42.5207, -71.383667, "transtech"],
-		['Marcus McCorison, Michigan', 43.563136, -84.678763, "transtech"],
+		['TransTech Systems, Massachusetts', 42.5207, -71.383667, "transtech"],
+		['TransTech Systems, Michigan', 43.563136, -84.678763, "transtech"],
 		['TransTech Systems, Minnesota', 46.555991, -94.274308, "transtech"],
 		['Atlantic Supply, Mississippi', 32.509762, -89.428711],
-		['Marcus McCorison, Missouri', 38.476882, -92.601894, "transtech"],
+		['TransTech Systems, Missouri', 38.476882, -92.601894, "transtech"],
 		['TransTech Systems, Montana', 47.257664, -109.540552, "transtech"],
-		['Marcus McCorison, Nebraska', 41.648757, -99.658929, "transtech"],
+		['TransTech Systems, Nebraska', 41.648757, -99.658929, "transtech"],
 		['TransTech Systems, Nevada', 40.079192, -116.892773, "transtech"],
-		['Marcus McCorison, New Hampshire', 43.405047, -71.575928, "transtech"],
+		['TransTech Systems, New Hampshire', 43.405047, -71.575928, "transtech"],
 		['GT Mid Atlantic, Inc., New Jersey', 39.751595, -74.466530],
 		['TransTech Systems, New Mexico', 34.490538, -105.928939, "transtech"],
 		['TransTech Systems, New York', 42.776429, -73.866104, "transtech"],
-		['Marcus McCorison, North Carolina', 35.568479, -78.856170, "transtech"],
+		['TransTech Systems, North Carolina', 35.568479, -78.856170, "transtech"],
 		['TransTech Systems, North Dakota', 47.571878, -100.338895, "transtech"],
-		['Marcus McCorison, Ohio', 39.954965, -82.932924, "transtech"],
+		['TransTech Systems, Ohio', 39.954965, -82.932924, "transtech"],
 		['TransTech Systems, Oklahoma', 35.737529, -97.519473, "transtech"],
 		['TransTech Systems, Oregon', 44.036589, -120.375932, "transtech"],
 		['Groff Tractor & Equipment , Pennsylvania', 41.302571, -77.211914],
 		['Atlantic Supply, Puerto Rico', 18.245026, -66.569655],
-		['Marcus McCorison , Rhode Island', 41.631867, -71.471558, "transtech"],
-		['Marcus McCorison, South Carolina', 33.897999, -80.905078, "transtech"],
+		['TransTech Systems , Rhode Island', 41.631867, -71.471558, "transtech"],
+		['TransTech Systems, South Carolina', 33.897999, -80.905078, "transtech"],
 		['TransTech Systems, South Dakota', 44.740993, -100.336661, "transtech"],
 		['TransTech Systems, Tennessee', 35.780740, -86.495376, "transtech"],
-		['Marcus McCorison, Texas', 31.319622, -99.088073, "transtech"],
+		['TransTech Systems, Texas', 31.319622, -99.088073, "transtech"],
 		['TransTech Systems, Utah', 39.393259, -111.636420, "transtech"],
 		['TransTech Systems, Vermont', 43.890007, -72.737469, "transtech"],
 		['TransTech Systems, Virginia', 37.598711, -78.339174, "transtech"],
@@ -132,10 +132,10 @@ function initMap() {
 		// California
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -152,10 +152,10 @@ function initMap() {
 		// Connecticut
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -242,10 +242,10 @@ function initMap() {
 		// Idaho
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -264,10 +264,10 @@ function initMap() {
 		// Indiana
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -316,10 +316,10 @@ function initMap() {
 		// Maine
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -338,20 +338,20 @@ function initMap() {
 		// Massachusetts
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
 		// Michigan
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -380,10 +380,10 @@ function initMap() {
 		// Missouri
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -400,10 +400,10 @@ function initMap() {
 		// Nebraska
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -420,10 +420,10 @@ function initMap() {
 		// New Hampshire
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -462,10 +462,10 @@ function initMap() {
 		// North Carolina
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -482,10 +482,10 @@ function initMap() {
 		// Ohio
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -536,20 +536,20 @@ function initMap() {
 		// Rhode Island
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
 		// South Carolina
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
@@ -576,10 +576,10 @@ function initMap() {
 		// Texas
 		[
 			'<div class="map-text">' +
-			'<span>Marcus McCorison</span><br>' +
+			'<span>TransTech Systems</span><br>' +
 			'<hr>' +
-			'860-883-6470<br>' +
-			'<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+			'1-800-724-6306<br>' +
+			'<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
 			'</div>'
 		],
 
