@@ -9,10 +9,10 @@ function initMap() {
 
 	var mapOptions = {
 		center: {
-			lat: 33.415,
-			lng: -22.30
+			lat: 38.415,
+			lng: -93.30
 		},
-		zoom: 3,
+		zoom: 4,
 		mapTypeId: 'roadmap',
 		scrollwheel: false
 	};
@@ -27,11 +27,11 @@ function initMap() {
 		['TRB, Washington D.C.', 38.911744, -77.018697],
 		['RMACES, Denver, CO', 39.771474, -104.806882],
 		['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
-		['APAM, Battle Creek, MI', 42.296783, -85.076260],
+		// ['APAM, Battle Creek, MI', 42.296783, -85.076260],
 		['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
 		['MAPA, Bangor, ME', 44.831204, -68.781424],
 		['CalAPA, Anaheim, CA', 33.830204, -117.909703],
-		['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+		// ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
 		['TXAPA, San Antonio, TX', 29.461083, -98.499359],
 		['NEAUPG, Albany, NY', 42.728662, -73.799678],
 		['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
@@ -102,16 +102,16 @@ function initMap() {
 		],
 
 		//APAM
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/apam-logo.png">' +
-			'<span>APAM</span><br>' +
-			'<hr>' +
-			'Battle Creek, MI<br>' +
-			'March 18-19, 2020<br>' +
-			'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/apam-logo.png">' +
+		// 	'<span>APAM</span><br>' +
+		// 	'<hr>' +
+		// 	'Battle Creek, MI<br>' +
+		// 	'March 18-19, 2020<br>' +
+		// 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
 
 		//Ohio
 		[
@@ -150,16 +150,16 @@ function initMap() {
 		],
 
 		//Intermat ASEAN
-		[
-			'<div class="map-text">' +
-			'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
-			'<span>Intermat ASEAN</span><br>' +
-			'<hr>' +
-			'Bangkok, Thailand<br>' +
-			'September 9-11, 2020<br>' +
-			'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-			'</div>'
-		],
+		// [
+		// 	'<div class="map-text">' +
+		// 	'<img class="d-block mb-3" width="100" src="../img/intermat-asean-logo.png">' +
+		// 	'<span>Intermat ASEAN</span><br>' +
+		// 	'<hr>' +
+		// 	'Bangkok, Thailand<br>' +
+		// 	'September 9-11, 2020<br>' +
+		// 	'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+		// 	'</div>'
+		// ],
 
 		//TXAPA
 		[
