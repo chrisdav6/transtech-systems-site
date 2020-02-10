@@ -1,0 +1,43 @@
+#usedGauges {
+  font-size: 1.25rem;
+  padding: 3em 0;
+  border-top: 1px solid $gray;
+  min-height: 100vh;
+
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+
+  .listing {
+    padding: 2em;
+    border: 1px solid $dark-gray;
+    background: #eaeaea;
+    margin-bottom: 2em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    background: $logo-yellow;
+    display: inline-block;
+    padding: .35em .5em;
+    margin-bottom: 0;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+  }
+
+  .thumb {
+    width: 150px;
+  }
+}

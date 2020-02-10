@@ -2,39 +2,38 @@
   background: $light-gray;
   padding: 4em 0;
   border-top: 1px solid $gray;
-  
+
   hr {
     border: none;
     height: 1px;
     width: 100%;
     background: $dark-gray;
   }
-  
   .join {
     font-weight: 200;
     font-size: 1.2rem;
   }
-  
+
   .social a {
     position: relative;
     top: 0;
     text-decoration: none;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .facebook {
     color: #3b5998;
   }
-  
+
   .facebook:hover {
     top: -3px;
     color: $dark-gray;
   }
 
   .twitter {
-    color: #1DA1F2;
+    color: #1da1f2;
   }
-  
+
   .twitter:hover {
     top: -3px;
     color: $dark-gray;
@@ -43,14 +42,14 @@
   .instagram {
     color: #262626;
   }
-  
+
   .instagram:hover {
     top: -3px;
     color: $dark-gray;
   }
 
   .google {
-    color: #D84B37;
+    color: #d84b37;
   }
 
   .google:hover {
@@ -61,7 +60,7 @@
   .youtube {
     color: #ff0000;
   }
-  
+
   .youtube:hover {
     top: -3px;
     color: $dark-gray;
@@ -70,7 +69,7 @@
   .vimeo {
     color: #1ab7ea;
   }
-  
+
   .vimeo:hover {
     top: -3px;
     color: $dark-gray;
@@ -79,36 +78,36 @@
   .linked {
     color: #0077b5;
   }
-  
+
   .linked:hover {
     top: -3px;
     color: $dark-gray;
   }
-  
+
   .address {
-    font-size: .95rem;
-    
+    font-size: 0.95rem;
+
     span {
       font-weight: 600;
     }
   }
-  
+
   .phone-link {
     color: $dark-gray;
-    
+
     &:hover,
     &:active {
       text-decoration: none;
       font-weight: bold;
     }
   }
-  
+
   .secondary-links {
     color: $extreme-dark-gray;
-    font-size: .8rem;
-    padding: .5em 1em;
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
     border-bottom: 1px solid $extreme-dark-gray;
-    
+
     &:hover,
     &:active {
       text-decoration: none;
