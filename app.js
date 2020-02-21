@@ -174,12 +174,14 @@ app.get('/products/legacyProducts', function(req, res) {
   });
 });
 
+/*
 app.get('/products/usedGauges', function(req, res) {
   res.render('products/usedGauges', {
     title: 'TransTech Systems Used Gauges',
     metaTitle: 'Lightly used gauges for sale'
   });
 });
+*/
 
 //Product Manuals
 app.get('/products/productManuals', function(req, res) {
