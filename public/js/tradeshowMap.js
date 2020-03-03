@@ -22,7 +22,6 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-    //['TRB, Washington D.C.', 38.911744, -77.018697],
     //['RMACES, Denver, CO', 39.771474, -104.806882],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
@@ -34,6 +33,7 @@ function initMap() {
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611]
   ];
 
@@ -48,18 +48,6 @@ function initMap() {
     // 	'Pinehurst, NC<br>' +
     // 	'April 1-3, 2020<br>' +
     // 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    // 	'</div>'
-    // ],
-
-    // TRB
-    // [
-    // 	'<div class="map-text">' +
-    // 	'<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-    // 	'<span>TRB - Booth #1046</span><br>' +
-    // 	'<hr>' +
-    // 	'Washington D.C.<br>' +
-    // 	'January 12-16, 2020<br>' +
-    // 	'<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     // 	'</div>'
     // ],
 
@@ -192,6 +180,18 @@ function initMap() {
         'Indianapolis, IN<br>' +
         'December 16-18, 2020<br>' +
         '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    // TRB
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+        '<span>TRB</span><br>' +
+        '<hr>' +
+        'Washington D.C.<br>' +
+        'January 24-28, 2021<br>' +
+        '<p><a class="link" href="https://events.jspargo.com/trb21/public/enter.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
 
