@@ -1,7 +1,6 @@
 // Asynchronously Load the map API
 var script = document.createElement('script');
-script.src =
-  'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
+script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
 document.body.appendChild(script);
 
 function initMap() {
@@ -23,7 +22,6 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-    //['APAI, Indianapolis, IN', 40.031171, -86.939831],
     //['TRB, Washington D.C.', 38.911744, -77.018697],
     //['RMACES, Denver, CO', 39.771474, -104.806882],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
@@ -35,6 +33,7 @@ function initMap() {
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
+    ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611]
   ];
 
@@ -49,18 +48,6 @@ function initMap() {
     // 	'Pinehurst, NC<br>' +
     // 	'April 1-3, 2020<br>' +
     // 	'<p><a class="link" href="http://www.carolinaasphalt.org/aws/CAPA/pt/sp/calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    // 	'</div>'
-    // ],
-
-    // APAI
-    // [
-    // 	'<div class="map-text">' +
-    // 	'<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
-    // 	'<span>APAI</span><br>' +
-    // 	'<hr>' +
-    // 	'Indianapolis, IN<br>' +
-    // 	'December 11-13, 2019<br>' +
-    // 	'<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     // 	'</div>'
     // ],
 
@@ -193,6 +180,18 @@ function initMap() {
         'Knoxville, TN<br>' +
         'November 16-19, 2020<br>' +
         '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    // APAI
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
+        '<span>APAI</span><br>' +
+        '<hr>' +
+        'Indianapolis, IN<br>' +
+        'December 16-18, 2020<br>' +
+        '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
 
