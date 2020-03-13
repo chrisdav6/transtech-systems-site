@@ -26,7 +26,7 @@ function initMap() {
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
-    ['MAPA, Bangor, ME', 44.831204, -68.781424],
+    // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
@@ -100,16 +100,16 @@ function initMap() {
     // ],
 
     // Maine
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
-        '<span>MAPA</span><br>' +
-        '<hr>' +
-        'Bangor, ME<br>' +
-        'April 7-8, 2020<br>' +
-        '<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
+    //     '<span>MAPA</span><br>' +
+    //     '<hr>' +
+    //     'Bangor, ME<br>' +
+    //     'April 7-8, 2020<br>' +
+    //     '<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     //CalAPA
     [
