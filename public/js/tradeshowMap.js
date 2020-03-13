@@ -25,7 +25,7 @@ function initMap() {
     //['RMACES, Denver, CO', 39.771474, -104.806882],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-    ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['MAPA, Bangor, ME', 44.831204, -68.781424],
     ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
@@ -88,16 +88,16 @@ function initMap() {
     // ],
 
     //Ohio
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-        '<span>Ohio Asphalt Expo</span><br>' +
-        '<hr>' +
-        'Columbus, OH<br>' +
-        'March 24-25, 2020<br>' +
-        '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+    //     '<span>Ohio Asphalt Expo</span><br>' +
+    //     '<hr>' +
+    //     'Columbus, OH<br>' +
+    //     'March 24-25, 2020<br>' +
+    //     '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // Maine
     [
