@@ -23,7 +23,7 @@ function initMap() {
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     //['RMACES, Denver, CO', 39.771474, -104.806882],
-    ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
+    // ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
@@ -64,16 +64,16 @@ function initMap() {
     // ],
 
     // ConExpo
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
-        '<span>ConExpo - Booth #C30947</span><br>' +
-        '<hr>' +
-        'Las Vegas, NV<br>' +
-        'March 10-14, 2020<br>' +
-        '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
+    //     '<span>ConExpo - Booth #C30947</span><br>' +
+    //     '<hr>' +
+    //     'Las Vegas, NV<br>' +
+    //     'March 10-14, 2020<br>' +
+    //     '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     //APAM
     // [
