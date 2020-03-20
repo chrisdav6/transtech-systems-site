@@ -55,7 +55,7 @@ body {
 
 .covid19 {
   margin-top: 3.25em;
-  margin-bottom: -2.5em;
+  margin-bottom: 1em;
   z-index: 10;
 
   a {
@@ -73,6 +73,12 @@ body {
       color: #FFDE00;
       transform: scale(1.08);
     }
+  }
+}
+
+@media (min-height: 1025px) {
+  .covid19 {
+    margin-bottom: -2.5em;
   }
 }
 
