@@ -136,7 +136,6 @@ function initMap() {
     // ],
 
     //TXAPA
-
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
