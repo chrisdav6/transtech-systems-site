@@ -27,7 +27,7 @@ function initMap() {
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
+    // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -112,16 +112,16 @@ function initMap() {
     // ],
 
     //CalAPA
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-        '<span>CalAPA Spring Conference</span><br>' +
-        '<hr>' +
-        'Anaheim, CA<br>' +
-        'April 16-17, 2020<br>' +
-        '<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+    //     '<span>CalAPA Spring Conference</span><br>' +
+    //     '<hr>' +
+    //     'Anaheim, CA<br>' +
+    //     'April 16-17, 2020<br>' +
+    //     '<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     //Intermat ASEAN
     // [
