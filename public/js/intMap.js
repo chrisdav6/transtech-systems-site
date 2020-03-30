@@ -434,7 +434,7 @@ function initMap() {
     ],
 
     // Ecuador
-    ['<div class="map-text">' + '<span>Imporequip</span><br>' + '<hr>' + '+08-715-4550<br>' + 'Attn: Vladimir Rojas<br>' + '<p><a class="link" href="mailto:ventas@imporequip.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' + '</div>'],
+    ['<div class="map-text">' + '<span>Imporequip</span><br>' + '<hr>' + '5939-63181296<br>' + 'Attn: Vladimir Rojas<br>' + '<p><a class="link" href="mailto:vladobm@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' + '</div>'],
 
     // Estonia
     [
