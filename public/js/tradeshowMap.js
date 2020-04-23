@@ -34,6 +34,7 @@ function initMap() {
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611]
   ];
@@ -181,6 +182,18 @@ function initMap() {
         'Indianapolis, IN<br>' +
         'December 16-18, 2020<br>' +
         '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    // Pavement Expo
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/pavement-expo-logo.png">' +
+        '<span>National Pavement Expo - Booth #739</span><br>' +
+        '<hr>' +
+        'Nashville, TN<br>' +
+        'January 20-22, 2021<br>' +
+        '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
 
