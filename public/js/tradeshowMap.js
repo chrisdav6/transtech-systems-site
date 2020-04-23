@@ -1,6 +1,7 @@
 // Asynchronously Load the map API
 var script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
+script.src =
+  'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
 document.body.appendChild(script);
 
 function initMap() {
@@ -199,7 +200,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-        '<span>World of Asphalt 2021</span><br>' +
+        '<span>World of Asphalt - Booth #3421</span><br>' +
         '<hr>' +
         'Atlanta, GA<br>' +
         'March 9-11, 2021<br>' +
@@ -227,8 +228,8 @@ function initMap() {
     google.maps.event.addListener(
       marker,
       'click',
-      (function(marker, i) {
-        return function() {
+      (function (marker, i) {
+        return function () {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
