@@ -9,6 +9,7 @@
     width: 100%;
     background: $dark-gray;
   }
+
   .join {
     font-weight: 200;
     font-size: 1.2rem;
@@ -80,6 +81,15 @@
   }
 
   .linked:hover {
+    top: -3px;
+    color: $dark-gray;
+  }
+
+  .snapchat {
+    color: #000000;
+  }
+
+  .snapchat:hover {
     top: -3px;
     color: $dark-gray;
   }
