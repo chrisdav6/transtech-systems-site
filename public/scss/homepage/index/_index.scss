@@ -183,6 +183,15 @@ body {
   color: #fff;
 }
 
+.snapchat {
+  color: #fffc00;
+}
+
+.snapchat:hover {
+  top: -3px;
+  color: #fff;
+}
+
 @media (max-width: 450px) {
   .social a {
     font-size: 1.75rem;
