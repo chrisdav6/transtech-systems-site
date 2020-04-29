@@ -9,10 +9,10 @@ function initMap() {
 
   var mapOptions = {
     center: {
-      lat: 38.415,
-      lng: -93.3
+      lat: 37,
+      lng: -96.3
     },
-    zoom: 4,
+    zoom: 5,
     mapTypeId: 'roadmap',
     scrollwheel: false
   };
@@ -23,10 +23,7 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-    //['RMACES, Denver, CO', 39.771474, -104.806882],
-    // ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
-    // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
@@ -36,7 +33,10 @@ function initMap() {
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
-    ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611]
+    ['RMACES, Denver, CO', 39.771474, -104.806882],
+    ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611],
+    ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274]
   ];
 
   // Info Window Content
@@ -53,30 +53,6 @@ function initMap() {
     // 	'</div>'
     // ],
 
-    // RMACES
-    // [
-    // 	'<div class="map-text">' +
-    // 	'<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-    // 	'<span>RMACES</span><br>' +
-    // 	'<hr>' +
-    // 	'Denver, CO<br>' +
-    // 	'February 19-20, 2020<br>' +
-    // 	'<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    // 	'</div>'
-    // ],
-
-    // ConExpo
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
-    //     '<span>ConExpo - Booth #C30947</span><br>' +
-    //     '<hr>' +
-    //     'Las Vegas, NV<br>' +
-    //     'March 10-14, 2020<br>' +
-    //     '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
-    // ],
-
     //APAM
     // [
     // 	'<div class="map-text">' +
@@ -87,18 +63,6 @@ function initMap() {
     // 	'March 18-19, 2020<br>' +
     // 	'<p><a class="link" href="http://www.apa-mi.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     // 	'</div>'
-    // ],
-
-    //Ohio
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-    //     '<span>Ohio Asphalt Expo</span><br>' +
-    //     '<hr>' +
-    //     'Columbus, OH<br>' +
-    //     'March 24-25, 2020<br>' +
-    //     '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
     // ],
 
     // Maine
@@ -209,6 +173,18 @@ function initMap() {
         '</div>'
     ],
 
+    // RMACES
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
+        '<span>RMACES</span><br>' +
+        '<hr>' +
+        'Denver, CO<br>' +
+        'February 17-18, 2021<br>' +
+        '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
     // World of Asphalt
     [
       '<div class="map-text">' +
@@ -218,6 +194,30 @@ function initMap() {
         'Atlanta, GA<br>' +
         'March 9-11, 2021<br>' +
         '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    //Ohio
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+        '<span>Ohio Asphalt Expo</span><br>' +
+        '<hr>' +
+        'Columbus, OH<br>' +
+        'March 30-31, 2021<br>' +
+        '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    // ConExpo
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
+        '<span>ConExpo</span><br>' +
+        '<hr>' +
+        'Las Vegas, NV<br>' +
+        'March 14-18, 2023<br>' +
+        '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ]
   ];
