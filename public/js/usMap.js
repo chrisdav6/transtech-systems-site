@@ -163,7 +163,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>GT Mid Atlantic, Inc.</span><br>' +
         '<hr>' +
-        '240-278-7694<br>' +
+        '610-574-6313<br>' +
         'Attn: Colin Chenet<br>' +
         '<p><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
@@ -327,7 +327,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>GT Mid Atlantic, Inc.</span><br>' +
         '<hr>' +
-        '240-278-7694<br>' +
+        '610-574-6313<br>' +
         'Attn: Colin Chenet<br>' +
         '<p><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
