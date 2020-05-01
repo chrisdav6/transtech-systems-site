@@ -165,7 +165,12 @@ function initMap() {
         '<hr>' +
         '610-574-6313<br>' +
         'Attn: Colin Chenet<br>' +
-        '<p><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<hr>' +
+        '610-574-6313<br>' +
+        'Attn: Mike Chenet<br>' +
+        '<p class="mt-0"><a class="link" href="mailto:mikechenet@gtmidatlantic.com?subject=Inquiry%20from%20TransTech%20Systems%20Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<hr>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -329,7 +334,12 @@ function initMap() {
         '<hr>' +
         '610-574-6313<br>' +
         'Attn: Colin Chenet<br>' +
-        '<p><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<hr>' +
+        '610-574-6313<br>' +
+        'Attn: Mike Chenet<br>' +
+        '<p class="mt-0"><a class="link" href="mailto:mikechenet@gtmidatlantic.com?subject=Inquiry%20from%20TransTech%20Systems%20Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<hr>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -433,7 +443,12 @@ function initMap() {
         '<hr>' +
         '610-574-6313<br>' +
         'Attn: Colin Chenet<br>' +
-        '<p><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="mailto:colinchenet@gtmidatlantic.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<hr>' +
+        '610-574-6313<br>' +
+        'Attn: Mike Chenet<br>' +
+        '<p class="mt-0"><a class="link" href="mailto:mikechenet@gtmidatlantic.com?subject=Inquiry%20from%20TransTech%20Systems%20Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<hr>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
