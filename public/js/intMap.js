@@ -1,6 +1,7 @@
 // Asynchronously Load the map API
 var script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
+script.src =
+  'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
 document.body.appendChild(script);
 
 function initMap() {
@@ -21,88 +22,89 @@ function initMap() {
 
   // Map Marker Locations
   var markers = [
-    ['M/s. Taisei International , Afghanistan', 34.234306, 66.209291],
-    ['Beratest AG , Algeria', 29.343875, 2.109375],
-    ['Mertind , Argentina', -33.550655, -63.950483],
+    ['M/s. Taisei International, Afghanistan', 34.234306, 66.209291],
+    ['Beratest AG, Algeria', 29.343875, 2.109375],
+    ['Mertind, Argentina', -33.550655, -63.950483],
     ['Bav Corporation, Inc. , Armenia', 40.455307, 44.653931],
-    ['Motorway Technologies , Australia', -24.367114, 133.769531],
-    ['TransTech Europe , Austria', 47.554287, 14.512939],
+    ['Motorway Technologies, Australia', -24.367114, 133.769531],
+    ['TransTech Europe, Austria', 47.554287, 14.512939],
     ['Bav Corporation, Inc. , Azerbaijan', 40.33817, 48.054199],
-    ['M/s. Taisei International , Bangladesh', 23.980712, 90.091666],
-    ['Bav Corporation, Inc. , Belarus', 53.520717, 28.355713],
-    ['ASINTRA , Belgium', 50.840636, 4.482422],
-    ['Beratest AG , Benin', 10.00131, 2.285156],
-    ['Mertind , Bolivia', -17.555479, -63.395588],
-    ['Solotest , Brazil', -9.795678, -49.833984],
-    ['TransTech Europe (Gepasz) , Bulgaria', 42.646081, 25.081787],
-    ['Beratest AG , Burkina Faso', 12.415119, -1.669922],
-    ['Beratest AG , Cameroun', 5.441022, 12.678223],
-    ['Hoskin Scientific , British Columbia', 49.259067, -123.11245],
-    ['Hoskin Scientific , Quebec', 45.520301, -73.55484],
-    ['Hoskin Scientific , Ontario', 43.239599, -79.796287],
-    ['Hoskin Scientific , Alberta', 51.380788, -114.974718],
-    ['Equipos de Auscultacion , Chile', -26.824071, -70.224609],
-    ['Earth Products China Limited  , China', 34.597042, 103.974609],
-    ['Atlantic Supply , Colombia', 4.315974, -73.072573],
-    ['Beratest AG , Congo', -0.329588, 15.864258],
-    ['Atlantic Supply , Costa Rica', 9.90391, -83.841379],
-    ['Beratest AG , Côte d’Ivoire', 7.700105, -5.646973],
-    ['TransTech Europe , Czech Republic', 49.894324, 15.097526],
-    ['Imporequip , Ecuador', -1.428075, -78.574219],
-    ['Bincis UAB , Estonia', 58.867745, 25.559692],
-    ['Grollemund Laboroutes , France', 46.754917, 2.39502],
-    ['Beratest AG , Gabon', -0.659165, 11.469727],
-    ['TransTech Europe , Germany', 51.220647, 10.524902],
-    ['Beratest AG , Guinée', 10.941192, -10.678711],
-    ['Beratest AG , Guinée-Bissau', 12.084982, -14.902954],
-    ['TransTech Europe (Wirtgen Budapest Kft.) , Hungary', 47.171044, 19.215088],
-    ['ABAS AS , Iceland', 64.883646, -18.549413],
-    ['M/s. Taisei International , India', 22.755921, 79.40918],
-    ['CFU International Trade & Services , Iraq', 32.850776, 42.844469],
-    ['JR Technical Services , Ireland', 53.362026, -8.006287],
-    ['Nishio Rent All Co., Ltd. , Japan', 35.871247, 138.295898],
-    ['Bav Corporation, Inc. , Kazakhstan', 48.224673, 66.796875],
-    ['Sam Jun Scientific Co., Ltd. , Korea', 36.615528, 127.902832],
-    ['Bav Corporation, Inc. , Kyrgyzstan', 41.533254, 74.476318],
-    ['Bincis UAB , Latvia', 56.932987, 25.010376],
-    ['Bincis UAB , Lithuania', 55.463285, 23.917236],
-    ['MS Instruments (SEA) Sdn Bhd , Malaysia', 4.19303, 102.172852],
-    ['Beratest AG , Mali', 17.874203, -1.560059],
-    ['Beratest AG , Maroc', 32.444885, -6.009521],
-    ['Beratest AG , Mauritanie', 20.179724, -9.689941],
-    ['Atlantic Supply , Mexico', 24.44715, -102.271729],
-    ['Bav Corporation, Inc. , Moldova', 47.323931, 28.674316],
-    ['M/s. Taisei International , Nepal', 28.1579, 83.895047],
-    ['Asintra , Netherlands', 52.173932, 5.734863],
-    ['Motorway Technologies , New Zealand', -42.763146, 172.177734],
-    ['Beratest AG , Niger', 17.497389, 9.777832],
-    ['ABAS AS , Norway', 61.143235, 9.228516],
-    ['M/s. Taisei International , Oman', 20.306682, 56.00759],
-    ['M/s. Taisei International , Pakistan', 29.618773, 69.26533],
-    ['Atlantic Supply , Panama', 8.504292, -81.456683],
-    ['Siccion Marketing , Philippines', 12.533115, 123.046875],
-    ['Toropol, Ltd. , Poland', 52.456009, 19.02832],
-    ['Proeti, S.A. , Portugal', 39.740986, -8.4375],
-    ['Intermodal Services Co. W.L.L. , Qatar', 25.304304, 51.212769],
-    ['Beratest AG  , République Centrafricaine', 6.850078, 20.566406],
-    ['Bav Corporation, Inc.  , Russia', 63.074866, 93.339844],
-    ['Beratest AG  , Sénégal', 14.743011, -14.72168],
-    ['Nishio Rent All Co., Ltd.  , Singapore', 1.364922, 103.815994],
-    ['TransTech Europe (Celab d.o.o.)  , Slovenia', 46.029389, 14.655762],
-    ['Proeti, S.A.  , Spain', 40.413496, -3.603516],
-    ['M/s. Taisei International , Sri Lanka', 7.8775394, 80.7003428],
-    ['Beratest AG , Switzerland', 46.991494, 8.234253],
-    ['Bav Corporation, Inc. , Tajikistan', 38.882481, 70.817871],
-    ['Beratest AG , Tchad', 14.98724, 18.896484],
-    ['Asia Testing Equipment Co., Ltd. , Thailand', 15.961329, 100.722656],
-    ['Beratest AG , Togo', 8.439772, 1.07666],
-    ['Beratest AG , Tunisie', 34.343436, 9.349365],
-    ['Bav Corporation, Inc. , Turkmenistan', 39.571822, 59.040527],
-    ['CFU International Trade & Services , Turkey', 39.164141, 35.046387],
-    ['Bav Corporation, Inc. , Ukraine', 49.009051, 31.618652],
-    ['JR Technical Services , United Kindom', 54.393352, -2.06543],
-    ['Bav Corporation, Inc. , Uzbekistan', 42.016652, 63.457031],
-    ['Nishio Rent All Co., Ltd. , Vietnam', 13.20786, 108.511963]
+    ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
+    ['Bav Corporation, Inc., Belarus', 53.520717, 28.355713],
+    ['ASINTRA, Belgium', 50.840636, 4.482422],
+    ['Beratest AG, Benin', 10.00131, 2.285156],
+    ['Mertind, Bolivia', -17.555479, -63.395588],
+    ['Solotest, Brazil', -9.795678, -49.833984],
+    ['TransTech Europe (Gepasz), Bulgaria', 42.646081, 25.081787],
+    ['Beratest AG, Burkina Faso', 12.415119, -1.669922],
+    ['Beratest AG, Cameroun', 5.441022, 12.678223],
+    ['Hoskin Scientific, British Columbia', 49.259067, -123.11245],
+    ['Hoskin Scientific, Quebec', 45.520301, -73.55484],
+    ['Hoskin Scientific, Ontario', 43.239599, -79.796287],
+    ['Hoskin Scientific, Alberta', 51.380788, -114.974718],
+    ['Equipos de Auscultacion, Chile', -26.824071, -70.224609],
+    ['Earth Products China Limited, China', 34.597042, 103.974609],
+    ['Atlantic Supply, Colombia', 4.315974, -73.072573],
+    ['Beratest AG, Congo', -0.329588, 15.864258],
+    ['Atlantic Supply, Costa Rica', 9.90391, -83.841379],
+    ['Beratest AG, Côte d’Ivoire', 7.700105, -5.646973],
+    ['TransTech Europe, Czech Republic', 49.894324, 15.097526],
+    ['Imporequip, Ecuador', -1.428075, -78.574219],
+    ['Bincis UAB, Estonia', 58.867745, 25.559692],
+    ['Grollemund Laboroutes, France', 46.754917, 2.39502],
+    ['Beratest AG, Gabon', -0.659165, 11.469727],
+    ['TransTech Europe, Germany', 51.220647, 10.524902],
+    ['Beratest AG, Guinée', 10.941192, -10.678711],
+    ['Beratest AG, Guinée-Bissau', 12.084982, -14.902954],
+    ['TransTech Europe (Wirtgen Budapest Kft.), Hungary', 47.171044, 19.215088],
+    ['ABAS AS, Iceland', 64.883646, -18.549413],
+    ['M/s. Taisei International, India', 22.755921, 79.40918],
+    ['CFU International Trade & Services, Iraq', 32.850776, 42.844469],
+    ['JR Technical Services, Ireland', 53.362026, -8.006287],
+    ['Nishio Rent All Co., Ltd., Japan', 35.871247, 138.295898],
+    ['Bav Corporation, Inc., Kazakhstan', 48.224673, 66.796875],
+    ['Sam Jun Scientific Co., Ltd., Korea', 36.615528, 127.902832],
+    ['Bav Corporation, Inc., Kyrgyzstan', 41.533254, 74.476318],
+    ['Bincis UAB, Latvia', 56.932987, 25.010376],
+    ['Bincis UAB, Lithuania', 55.463285, 23.917236],
+    ['MS Instruments (SEA) Sdn Bhd, Malaysia', 4.19303, 102.172852],
+    ['Beratest AG, Mali', 17.874203, -1.560059],
+    ['Beratest AG, Maroc', 32.444885, -6.009521],
+    ['Beratest AG, Mauritanie', 20.179724, -9.689941],
+    ['Atlantic Supply, Mexico', 24.44715, -102.271729],
+    ['Bav Corporation, Inc., Moldova', 47.323931, 28.674316],
+    ['M/s. Taisei International, Nepal', 28.1579, 83.895047],
+    ['Asintra, Netherlands', 52.173932, 5.734863],
+    ['Motorway Technologies, New Zealand', -42.763146, 172.177734],
+    ['Beratest AG, Niger', 17.497389, 9.777832],
+    ['ABAS AS, Norway', 61.143235, 9.228516],
+    ['M/s. Taisei International, Oman', 20.306682, 56.00759],
+    ['M/s. Taisei International, Pakistan', 29.618773, 69.26533],
+    ['Atlantic Supply, Panama', 8.504292, -81.456683],
+    ['Siccion Marketing, Philippines', 12.533115, 123.046875],
+    ['Toropol, Ltd., Poland', 52.456009, 19.02832],
+    ['Proeti, S.A., Portugal', 39.740986, -8.4375],
+    ['Intermodal Services Co. W.L.L., Qatar', 25.304304, 51.212769],
+    ['Beratest AG, République Centrafricaine', 6.850078, 20.566406],
+    ['Tecnoservice Equipment S.R.L., Romania', 45.523971, 24.740059],
+    ['Bav Corporation, Inc., Russia', 63.074866, 93.339844],
+    ['Beratest AG, Sénégal', 14.743011, -14.72168],
+    ['Nishio Rent All Co., Ltd., Singapore', 1.364922, 103.815994],
+    ['TransTech Europe (Celab d.o.o.), Slovenia', 46.029389, 14.655762],
+    ['Proeti, S.A., Spain', 40.413496, -3.603516],
+    ['M/s. Taisei International, Sri Lanka', 7.8775394, 80.7003428],
+    ['Beratest AG, Switzerland', 46.991494, 8.234253],
+    ['Bav Corporation, Inc., Tajikistan', 38.882481, 70.817871],
+    ['Beratest AG, Tchad', 14.98724, 18.896484],
+    ['Asia Testing Equipment Co., Ltd., Thailand', 15.961329, 100.722656],
+    ['Beratest AG, Togo', 8.439772, 1.07666],
+    ['Beratest AG, Tunisie', 34.343436, 9.349365],
+    ['Bav Corporation, Inc., Turkmenistan', 39.571822, 59.040527],
+    ['CFU International Trade & Services, Turkey', 39.164141, 35.046387],
+    ['Bav Corporation, Inc., Ukraine', 49.009051, 31.618652],
+    ['JR Technical Services, United Kindom', 54.393352, -2.06543],
+    ['Bav Corporation, Inc., Uzbekistan', 42.016652, 63.457031],
+    ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963]
   ];
 
   // Info Window Content
@@ -434,7 +436,15 @@ function initMap() {
     ],
 
     // Ecuador
-    ['<div class="map-text">' + '<span>Imporequip</span><br>' + '<hr>' + '5939-63181296<br>' + 'Attn: Vladimir Rojas<br>' + '<p><a class="link" href="mailto:vladobm@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' + '</div>'],
+    [
+      '<div class="map-text">' +
+        '<span>Imporequip</span><br>' +
+        '<hr>' +
+        '5939-63181296<br>' +
+        'Attn: Vladimir Rojas<br>' +
+        '<p><a class="link" href="mailto:vladobm@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '</div>'
+    ],
 
     // Estonia
     [
@@ -867,6 +877,18 @@ function initMap() {
         '</div>'
     ],
 
+    // Romania
+    [
+      '<div class="map-text">' +
+        '<span>Tecnoservice Equipment S.R.L.</span><br>' +
+        '<hr>' +
+        '+40-21-316-88-57<br>' +
+        'Attn: George Sicoe<br>' +
+        '<p><a class="link" href="mailto:gsicoe@tecnos.ro?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.tecnos.ro" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
     // Russia
     [
       '<div class="map-text">' +
@@ -1103,8 +1125,8 @@ function initMap() {
     google.maps.event.addListener(
       marker,
       'click',
-      (function(marker, i) {
-        return function() {
+      (function (marker, i) {
+        return function () {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
