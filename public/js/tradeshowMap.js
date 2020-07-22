@@ -27,15 +27,15 @@ function initMap() {
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
-    ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
-    ['NEAUPG, Albany, NY', 42.728662, -73.799678],
+    // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
-    ['TRB, Washington D.C.', 38.911744, -77.018697],
+    // ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274]
   ];
 
@@ -102,28 +102,16 @@ function initMap() {
     // ],
 
     //TXAPA
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPA</span><br>' +
-        '<hr>' +
-        'San Antonio, TX<br>' +
-        'September 15-18, 2020<br>' +
-        '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
-
-    // NEAUPG
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-        '<span>NEAUPG</span><br>' +
-        '<hr>' +
-        'Albany, NY<br>' +
-        'October 28-29, 2020<br>' +
-        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+    //     '<span>TXAPA</span><br>' +
+    //     '<hr>' +
+    //     'San Antonio, TX<br>' +
+    //     'September 15-18, 2020<br>' +
+    //     '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // SEAUPG
     [
@@ -162,16 +150,16 @@ function initMap() {
     ],
 
     // TRB
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-        '<span>TRB</span><br>' +
-        '<hr>' +
-        'Washington D.C.<br>' +
-        'January 24-28, 2021<br>' +
-        '<p><a class="link" href="https://events.jspargo.com/trb21/public/enter.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+    //     '<span>TRB</span><br>' +
+    //     '<hr>' +
+    //     'Washington D.C.<br>' +
+    //     'January 24-28, 2021<br>' +
+    //     '<p><a class="link" href="https://events.jspargo.com/trb21/public/enter.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // RMACES
     [
@@ -206,6 +194,18 @@ function initMap() {
         'Columbus, OH<br>' +
         'March 30-31, 2021<br>' +
         '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    // NEAUPG
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+        '<span>NEAUPG</span><br>' +
+        '<hr>' +
+        'Albany, NY<br>' +
+        'October 27-28, 2021<br>' +
+        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
 
