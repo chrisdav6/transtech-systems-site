@@ -1,46 +1,47 @@
-@import "base";
-@import "header";
-@import "footer";
-@import "notFound";
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'notFound';
 
 //Products Homepage
-@import "index/tradeshowSeason";
-@import "index/hero";
-@import "index/gaugesMap";
-@import "index/about";
-@import "index/featured";
-@import "index/trade-up";
-@import "index/announcements";
-@import "index/modals";
-@import "index/privacy";
+@import 'index/tradeshowSeason';
+@import 'index/hero';
+@import 'index/gaugesMap';
+@import 'index/about';
+@import 'index/featured';
+@import 'index/trade-up';
+@import 'index/announcements';
+@import 'index/modals';
+@import 'index/privacy';
 
 //Products
-@import "products/productNav";
-@import "products/productsHero";
-@import "products/productImages";
-@import "products/productIntro";
-@import "products/productHighlights";
-@import "products/productVideos";
-@import "products/productLibrary";
-@import "products/productFaqs";
-@import "products/productsMessage";
-@import "products/legacyProducts";
-@import "products/usedGauges";
+@import 'products/productNav';
+@import 'products/productsHero';
+@import 'products/productImages';
+@import 'products/productIntro';
+@import 'products/productHighlights';
+@import 'products/productVideos';
+@import 'products/rotationVideo';
+@import 'products/productLibrary';
+@import 'products/productFaqs';
+@import 'products/productsMessage';
+@import 'products/legacyProducts';
+@import 'products/usedGauges';
 
 //Support
-@import "support/support";
-@import "support/training";
+@import 'support/support';
+@import 'support/training';
 
 //Contact Corporate Page
-@import "contact/contact";
+@import 'contact/contact';
 
 //Distributors Pages
-@import "distributors/distributors";
+@import 'distributors/distributors';
 
 //News Pages
-@import "news/corporate";
-@import "news/newsletter";
+@import 'news/corporate';
+@import 'news/newsletter';
 
 //Events Pages
-@import "events/tradeshows";
-@import "events/community";
+@import 'events/tradeshows';
+@import 'events/community';

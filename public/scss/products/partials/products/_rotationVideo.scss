@@ -1,0 +1,21 @@
+#rotationVideo {
+  width: 100%;
+  border-top: 3px solid#191919;
+  border-bottom: 3px solid#191919;
+  background: linear-gradient(
+    279deg,
+    rgba(214, 215, 221, 1) 0%,
+    rgba(207, 204, 203, 1) 100%
+  );
+}
+
+#rotationVideo_vid {
+  max-height: 60vh;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#rotationVideo.sdgRotation {
+  background: linear-gradient(279deg, #d8d3d3 0%, #d5d2d1 100%);
+}
