@@ -64,6 +64,7 @@ function initMap() {
     ['Nishio Rent All Co., Ltd., Japan', 35.871247, 138.295898],
     ['Bav Corporation, Inc., Kazakhstan', 48.224673, 66.796875],
     ['Sam Jun Scientific Co., Ltd., Korea', 36.615528, 127.902832],
+    ['Burgan Equipment Co., Kuwait', 29.43018, 47.648215],
     ['Bav Corporation, Inc., Kyrgyzstan', 41.533254, 74.476318],
     ['Bincis UAB, Latvia', 56.932987, 25.010376],
     ['Bincis UAB, Lithuania', 55.463285, 23.917236],
@@ -610,6 +611,18 @@ function initMap() {
         '+82-(0)31-889-2558<br>' +
         'Attn: Mr. Won-Yang Park<br>' +
         '<p><a class="link" href="mailto:wypark16@nate.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '</div>'
+    ],
+
+    // Kuwait
+    [
+      '<div class="map-text">' +
+        '<span>Burgan Equipment Co.</span><br>' +
+        '<hr>' +
+        '+965-2243-7670<br>' +
+        '+965-2242-8730<br>' +
+        'Attn: Mr. Ajith Kumar<br>' +
+        '<p><a class="link" href="mailto:contact@burganequip.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>'
     ],
 
