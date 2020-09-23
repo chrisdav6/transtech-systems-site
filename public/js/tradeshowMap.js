@@ -120,7 +120,7 @@ function initMap() {
         '<span>SEAUPG</span><br>' +
         '<hr>' +
         'Knoxville, TN<br>' +
-        'November 16-19, 2020<br>' +
+        'November 17-19, 2020<br>' +
         '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -241,8 +241,8 @@ function initMap() {
     google.maps.event.addListener(
       marker,
       'click',
-      (function (marker, i) {
-        return function () {
+      (function(marker, i) {
+        return function() {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
