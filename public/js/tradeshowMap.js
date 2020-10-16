@@ -32,7 +32,7 @@ function initMap() {
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
-    ['RMACES, Denver, CO', 39.771474, -104.806882],
+    // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -162,16 +162,16 @@ function initMap() {
     // ],
 
     // RMACES
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-        '<span>RMACES</span><br>' +
-        '<hr>' +
-        'Denver, CO<br>' +
-        'February 17-18, 2021<br>' +
-        '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
+    //     '<span>RMACES</span><br>' +
+    //     '<hr>' +
+    //     'Denver, CO<br>' +
+    //     'February 17-18, 2021<br>' +
+    //     '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // World of Asphalt
     [
