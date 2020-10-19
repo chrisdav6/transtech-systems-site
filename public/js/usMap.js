@@ -43,7 +43,7 @@ function initMap() {
     ['TransTech Systems, Georgia', 33.065286, -83.541289, 'transtech'],
     ['TransTech Systems, Hawaii', 19.61003, -155.544456, 'transtech'],
     ['TransTech Systems, Idaho', 44.059733, -114.428075, 'transtech'],
-    ['Great Lakes Equipment / Patten Tractor, Illinois', 41.095912, -89.494629],
+    ['TransTech Systems, Illinois', 41.095912, -89.494629, 'transtech'],
     ['TransTech Systems, Indiana', 39.707081, -86.001824, 'transtech'],
     ['TransTech Systems, Iowa', 42.246724, -93.527497, 'transtech'],
     ['TransTech Systems, Kansas', 38.570758, -98.446819, 'transtech'],
@@ -256,12 +256,10 @@ function initMap() {
     // Illinois
     [
       '<div class="map-text">' +
-        '<span>Great Lakes Equipment / Patten Tractor</span><br>' +
+        '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '815-220-7709<br>' +
-        'Attn: Steve Hoscheid<br>' +
-        '<p><a class="link" href="mailto:hoscheids@greatlakeseq.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="https://www.greatlakesequipment.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '1-800-724-6306<br>' +
+        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>'
     ],
 
@@ -696,8 +694,8 @@ function initMap() {
     google.maps.event.addListener(
       marker,
       'click',
-      (function (marker, i) {
-        return function () {
+      (function(marker, i) {
+        return function() {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
