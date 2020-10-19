@@ -30,7 +30,7 @@ function initMap() {
     ['TransTech Europe, Austria', 47.554287, 14.512939],
     ['BAV Group Ltd. , Azerbaijan', 40.33817, 48.054199],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
-    ['Bav Corporation / Road Technologies, Belarus', 53.520717, 28.355713],
+    ['BAV Corporation / Road Technologies, Belarus', 53.520717, 28.355713],
     ['ASINTRA, Belgium', 50.840636, 4.482422],
     ['Beratest AG, Benin', 10.00131, 2.285156],
     ['Mertind, Bolivia', -17.555479, -63.395588],
@@ -63,10 +63,10 @@ function initMap() {
     ['CFU International Trade & Services, Iraq', 32.850776, 42.844469],
     ['JR Technical Services, Ireland', 53.362026, -8.006287],
     ['Nishio Rent All Co., Ltd., Japan', 35.871247, 138.295898],
-    ['Bav Corporation / Uneedus Group LLP, Kazakhstan', 48.224673, 66.796875],
+    ['BAV Corporation / Uneedus Group LLP, Kazakhstan', 48.224673, 66.796875],
     ['Sam Jun Scientific Co., Ltd., Korea', 36.615528, 127.902832],
     ['Burgan Equipment Co., Kuwait', 29.43018, 47.648215],
-    ['Bav Corporation / Uneedus Group LLP, Kyrgyzstan', 41.533254, 74.476318],
+    ['BAV Corporation / Uneedus Group LLP, Kyrgyzstan', 41.533254, 74.476318],
     ['Bincis UAB, Latvia', 56.932987, 25.010376],
     ['Bincis UAB, Lithuania', 55.463285, 23.917236],
     ['MS Instruments (SEA) Sdn Bhd, Malaysia', 4.19303, 102.172852],
@@ -74,7 +74,7 @@ function initMap() {
     ['Beratest AG, Maroc', 32.444885, -6.009521],
     ['Beratest AG, Mauritanie', 20.179724, -9.689941],
     ['Atlantic Supply, Mexico', 24.44715, -102.271729],
-    ['Bav Corporation / Uniprom LLC, Moldova', 47.323931, 28.674316],
+    ['BAV Corporation / Uniprom LLC, Moldova', 47.323931, 28.674316],
     ['M/s. Taisei International, Nepal', 28.1579, 83.895047],
     ['Asintra, Netherlands', 52.173932, 5.734863],
     ['Motorway Technologies, New Zealand', -42.763146, 172.177734],
@@ -89,23 +89,23 @@ function initMap() {
     ['Intermodal Services Co. W.L.L., Qatar', 25.304304, 51.212769],
     ['Beratest AG, République Centrafricaine', 6.850078, 20.566406],
     ['Tecnoservice Equipment S.R.L., Romania', 45.523971, 24.740059],
-    ['Bav Company Ltd., Russia', 63.074866, 93.339844],
+    ['BAV Company Ltd., Russia', 63.074866, 93.339844],
     ['Beratest AG, Sénégal', 14.743011, -14.72168],
     ['Nishio Rent All Co., Ltd., Singapore', 1.364922, 103.815994],
     ['TransTech Europe (Celab d.o.o.), Slovenia', 46.029389, 14.655762],
     ['Proeti, S.A., Spain', 40.413496, -3.603516],
     ['M/s. Taisei International, Sri Lanka', 7.8775394, 80.7003428],
     ['Beratest AG, Switzerland', 46.991494, 8.234253],
-    ['Bav Corporation / Uneedus Group LLP, Tajikistan', 38.882481, 70.817871],
+    ['BAV Corporation / Uneedus Group LLP, Tajikistan', 38.882481, 70.817871],
     ['Beratest AG, Tchad', 14.98724, 18.896484],
     ['Asia Testing Equipment Co., Ltd., Thailand', 15.961329, 100.722656],
     ['Beratest AG, Togo', 8.439772, 1.07666],
     ['Beratest AG, Tunisie', 34.343436, 9.349365],
-    ['Bav Corporation / Uneedus Group LLP, Turkmenistan', 39.571822, 59.040527],
+    ['BAV Corporation / Uneedus Group LLP, Turkmenistan', 39.571822, 59.040527],
     ['CFU International Trade & Services, Turkey', 39.164141, 35.046387],
-    ['Bav Corporation / Uniprom LLC, Ukraine', 49.009051, 31.618652],
+    ['BAV Corporation / Uniprom LLC, Ukraine', 49.009051, 31.618652],
     ['JR Technical Services, United Kindom', 54.393352, -2.06543],
-    ['Bav Corporation / Uneedus Group LLP, Uzbekistan', 42.016652, 63.457031],
+    ['BAV Corporation / Uneedus Group LLP, Uzbekistan', 42.016652, 63.457031],
     ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963]
   ];
 
@@ -210,7 +210,7 @@ function initMap() {
     // Belarus
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Road Technologies</span><br>' +
+        '<span>BAV Corporation / Road Technologies</span><br>' +
         '<hr>' +
         '+375 29 610 0095<br>' +
         'Attn: Kostia Minin<br>' +
@@ -607,7 +607,7 @@ function initMap() {
     // Kazakhstan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
         '<hr>' +
         '+7 771 808 88 88<br>' +
         'Attn: Nadzhot Kholikov<br>' +
@@ -738,7 +738,7 @@ function initMap() {
     // Moldova (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uniprom LLC</span><br>' +
+        '<span>BAV Corporation / Uniprom LLC</span><br>' +
         '<hr>' +
         '+380 44 501 6000<br>' +
         'Attn: Oleksandr Volyanyk<br>' +
@@ -918,7 +918,7 @@ function initMap() {
     // Russia
     [
       '<div class="map-text">' +
-        '<span>Bav Company Ltd.</span><br>' +
+        '<span>BAV Company Ltd.</span><br>' +
         '<hr>' +
         '+7 926 203 20 02<br>' +
         'Attn: Sergey Baranov<br>' +
@@ -1002,7 +1002,7 @@ function initMap() {
     // Tajikistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
         '<hr>' +
         '+7 771 808 88 88<br>' +
         'Attn: Nadzhot Kholikov<br>' +
@@ -1062,7 +1062,7 @@ function initMap() {
     // Turkmenistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
         '<hr>' +
         '+7 771 808 88 88<br>' +
         'Attn: Nadzhot Kholikov<br>' +
@@ -1086,7 +1086,7 @@ function initMap() {
     // Ukraine
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uniprom LLC</span><br>' +
+        '<span>BAV Corporation / Uniprom LLC</span><br>' +
         '<hr>' +
         '+380 44 501 6000<br>' +
         'Attn: Oleksandr Volyanyk<br>' +
@@ -1110,7 +1110,7 @@ function initMap() {
     // Uzbekistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
         '<hr>' +
         '+7 771 808 88 88<br>' +
         'Attn: Nadzhot Kholikov<br>' +
