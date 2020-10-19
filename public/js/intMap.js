@@ -623,7 +623,7 @@ function initMap() {
         '<hr>' +
         '+82-(0)31-889-2558<br>' +
         'Attn: Mr. Won-Yang Park<br>' +
-        '<p><a class="link" href="mailto:wypark16@nate.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p><a class="link" href="mailto:wypark11@nate.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>'
     ],
 
