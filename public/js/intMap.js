@@ -30,7 +30,11 @@ function initMap() {
     ['TransTech Europe, Austria', 47.554287, 14.512939],
     ['Bav Corporation, Inc. , Azerbaijan', 40.33817, 48.054199],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
-    ['Bav Corporation, Inc., Belarus', 53.520717, 28.355713],
+    [
+      'Bav Corporation, Inc. / Road Technologies, Belarus',
+      53.520717,
+      28.355713
+    ],
     ['ASINTRA, Belgium', 50.840636, 4.482422],
     ['Beratest AG, Benin', 10.00131, 2.285156],
     ['Mertind, Bolivia', -17.555479, -63.395588],
@@ -53,6 +57,7 @@ function initMap() {
     ['Bincis UAB, Estonia', 58.867745, 25.559692],
     ['Grollemund Laboroutes, France', 46.754917, 2.39502],
     ['Beratest AG, Gabon', -0.659165, 11.469727],
+    ['Bav Corporation, Inc. , Georgia', 42.067034, 43.763783],
     ['TransTech Europe, Germany', 51.220647, 10.524902],
     ['Beratest AG, Guinée', 10.941192, -10.678711],
     ['Beratest AG, Guinée-Bissau', 12.084982, -14.902954],
@@ -62,10 +67,18 @@ function initMap() {
     ['CFU International Trade & Services, Iraq', 32.850776, 42.844469],
     ['JR Technical Services, Ireland', 53.362026, -8.006287],
     ['Nishio Rent All Co., Ltd., Japan', 35.871247, 138.295898],
-    ['Bav Corporation, Inc., Kazakhstan', 48.224673, 66.796875],
+    [
+      'Bav Corporation, Inc. / Uneedus Group LLP, Kazakhstan',
+      48.224673,
+      66.796875
+    ],
     ['Sam Jun Scientific Co., Ltd., Korea', 36.615528, 127.902832],
     ['Burgan Equipment Co., Kuwait', 29.43018, 47.648215],
-    ['Bav Corporation, Inc., Kyrgyzstan', 41.533254, 74.476318],
+    [
+      'Bav Corporation, Inc. / Uneedus Group LLP, Kyrgyzstan',
+      41.533254,
+      74.476318
+    ],
     ['Bincis UAB, Latvia', 56.932987, 25.010376],
     ['Bincis UAB, Lithuania', 55.463285, 23.917236],
     ['MS Instruments (SEA) Sdn Bhd, Malaysia', 4.19303, 102.172852],
@@ -73,7 +86,7 @@ function initMap() {
     ['Beratest AG, Maroc', 32.444885, -6.009521],
     ['Beratest AG, Mauritanie', 20.179724, -9.689941],
     ['Atlantic Supply, Mexico', 24.44715, -102.271729],
-    ['Bav Corporation, Inc., Moldova', 47.323931, 28.674316],
+    ['Bav Corporation, Inc. / Uniprom LLC, Moldova', 47.323931, 28.674316],
     ['M/s. Taisei International, Nepal', 28.1579, 83.895047],
     ['Asintra, Netherlands', 52.173932, 5.734863],
     ['Motorway Technologies, New Zealand', -42.763146, 172.177734],
@@ -95,16 +108,28 @@ function initMap() {
     ['Proeti, S.A., Spain', 40.413496, -3.603516],
     ['M/s. Taisei International, Sri Lanka', 7.8775394, 80.7003428],
     ['Beratest AG, Switzerland', 46.991494, 8.234253],
-    ['Bav Corporation, Inc., Tajikistan', 38.882481, 70.817871],
+    [
+      'Bav Corporation, Inc. / Uneedus Group LLP, Tajikistan',
+      38.882481,
+      70.817871
+    ],
     ['Beratest AG, Tchad', 14.98724, 18.896484],
     ['Asia Testing Equipment Co., Ltd., Thailand', 15.961329, 100.722656],
     ['Beratest AG, Togo', 8.439772, 1.07666],
     ['Beratest AG, Tunisie', 34.343436, 9.349365],
-    ['Bav Corporation, Inc., Turkmenistan', 39.571822, 59.040527],
+    [
+      'Bav Corporation, Inc. / Uneedus Group LLP, Turkmenistan',
+      39.571822,
+      59.040527
+    ],
     ['CFU International Trade & Services, Turkey', 39.164141, 35.046387],
-    ['Bav Corporation, Inc., Ukraine', 49.009051, 31.618652],
+    ['Bav Corporation, Inc. / Uniprom LLC, Ukraine', 49.009051, 31.618652],
     ['JR Technical Services, United Kindom', 54.393352, -2.06543],
-    ['Bav Corporation, Inc., Uzbekistan', 42.016652, 63.457031],
+    [
+      'Bav Corporation, Inc. / Uneedus Group LLP, Uzbekistan',
+      42.016652,
+      63.457031
+    ],
     ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963]
   ];
 
@@ -151,9 +176,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>Bav Corporation, Inc.</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+995 599 51 50 56<br>' +
+        'Attn: Shota Mosiashvilli<br>' +
+        '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -187,9 +212,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>Bav Corporation, Inc.</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+995 599 51 50 56<br>' +
+        'Attn: Shota Mosiashvilli<br>' +
+        '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -209,11 +234,11 @@ function initMap() {
     // Belarus
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Road Technologies</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+375 29 610 0095<br>' +
+        'Attn: Kostia Minin<br>' +
+        '<p><a class="link" href="mailto:info@roadtec.by?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -483,6 +508,18 @@ function initMap() {
         '</div>'
     ],
 
+    // Georgia
+    [
+      '<div class="map-text">' +
+        '<span>Bav Corporation, Inc.</span><br>' +
+        '<hr>' +
+        '+995 599 51 50 56<br>' +
+        'Attn: Shota Mosiashvilli<br>' +
+        '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
     // Germany
     [
       '<div class="map-text">' +
@@ -594,11 +631,11 @@ function initMap() {
     // Kazakhstan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uneedus Group LLP</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+7 771 808 88 88<br>' +
+        'Attn: Nadzhot Kholikov<br>' +
+        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -629,11 +666,11 @@ function initMap() {
     // Kyrgyzstan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uneedus Group LLP</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+7 771 808 88 88<br>' +
+        'Attn: Nadzhot Kholikov<br>' +
+        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -725,11 +762,11 @@ function initMap() {
     // Moldova (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uniprom LLC</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+380 44 501 6000<br>' +
+        'Attn: Oleksandr Volyanyk<br>' +
+        '<p><a class="link" href="mailto:uniprom@uniprom.com.ua?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -907,9 +944,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>Bav Corporation, Inc.</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+7 926 203 20 02<br>' +
+        'Attn: Sergey Baranov<br>' +
+        '<p><a class="link" href="mailto:info@bavcompany.ru?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -989,11 +1026,11 @@ function initMap() {
     // Tajikistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uneedus Group LLP</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+7 771 808 88 88<br>' +
+        'Attn: Nadzhot Kholikov<br>' +
+        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -1049,11 +1086,11 @@ function initMap() {
     // Turkmenistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uneedus Group LLP</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+7 771 808 88 88<br>' +
+        'Attn: Nadzhot Kholikov<br>' +
+        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -1073,11 +1110,11 @@ function initMap() {
     // Ukraine
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uniprom LLC</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+380 44 501 6000<br>' +
+        'Attn: Oleksandr Volyanyk<br>' +
+        '<p><a class="link" href="mailto:uniprom@uniprom.com.ua?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -1097,11 +1134,11 @@ function initMap() {
     // Uzbekistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation, Inc.</span><br>' +
+        '<span>Bav Corporation, Inc. / Uneedus Group LLP</span><br>' +
         '<hr>' +
-        '781-784-3095<br>' +
-        'Attn: Alexander Baranov<br>' +
-        '<p><a class="link" href="mailto:info@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+7 771 808 88 88<br>' +
+        'Attn: Nadzhot Kholikov<br>' +
+        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -1138,8 +1175,8 @@ function initMap() {
     google.maps.event.addListener(
       marker,
       'click',
-      (function (marker, i) {
-        return function () {
+      (function(marker, i) {
+        return function() {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
