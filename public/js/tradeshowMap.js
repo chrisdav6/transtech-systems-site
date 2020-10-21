@@ -29,7 +29,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
-    ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
@@ -126,16 +126,16 @@ function initMap() {
     ],
 
     // APAI
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
-        '<span>APAI</span><br>' +
-        '<hr>' +
-        'Indianapolis, IN<br>' +
-        'December 16-18, 2020<br>' +
-        '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
+    //     '<span>APAI</span><br>' +
+    //     '<hr>' +
+    //     'Indianapolis, IN<br>' +
+    //     'December 16-18, 2020<br>' +
+    //     '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // Pavement Expo
     [
