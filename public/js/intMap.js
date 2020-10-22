@@ -49,7 +49,7 @@ function initMap() {
     ['Atlantic Supply, Costa Rica', 9.90391, -83.841379],
     ['Beratest AG, Côte d’Ivoire', 7.700105, -5.646973],
     ['TransTech Europe, Czech Republic', 49.894324, 15.097526],
-    ['Imporequip, Ecuador', -1.428075, -78.574219],
+    // ['Imporequip, Ecuador', -1.428075, -78.574219],
     ['Bincis UAB, Estonia', 58.867745, 25.559692],
     ['Grollemund Laboroutes, France', 46.754917, 2.39502],
     ['Beratest AG, Gabon', -0.659165, 11.469727],
@@ -438,15 +438,15 @@ function initMap() {
     ],
 
     // Ecuador
-    [
-      '<div class="map-text">' +
-        '<span>Imporequip</span><br>' +
-        '<hr>' +
-        '5939-63181296<br>' +
-        'Attn: Vladimir Rojas<br>' +
-        '<p><a class="link" href="mailto:vladobm@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Imporequip</span><br>' +
+    //     '<hr>' +
+    //     '5939-63181296<br>' +
+    //     'Attn: Vladimir Rojas<br>' +
+    //     '<p><a class="link" href="mailto:vladobm@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '</div>'
+    // ],
 
     // Estonia
     [
