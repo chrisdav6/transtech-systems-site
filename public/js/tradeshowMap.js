@@ -35,7 +35,7 @@ function initMap() {
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
-    ['NEAUPG, Albany, NY', 42.728662, -73.799678],
+    // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274]
   ];
 
@@ -198,16 +198,16 @@ function initMap() {
     ],
 
     // NEAUPG
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-        '<span>NEAUPG</span><br>' +
-        '<hr>' +
-        'Albany, NY<br>' +
-        'October 27-28, 2021<br>' +
-        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+    //     '<span>NEAUPG</span><br>' +
+    //     '<hr>' +
+    //     'Albany, NY<br>' +
+    //     'October 27-28, 2021<br>' +
+    //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // ConExpo
     [
