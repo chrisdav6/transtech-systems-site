@@ -33,7 +33,7 @@ function initMap() {
     ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
-    ['World of Asphalt, Atlanta, GA', 33.76413, -84.420611],
+    ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274]
@@ -179,8 +179,8 @@ function initMap() {
         '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
         '<span>World of Asphalt - Booth #3421</span><br>' +
         '<hr>' +
-        'Atlanta, GA<br>' +
-        'March 9-11, 2021<br>' +
+        'Nashville, TN<br>' +
+        'March 29-31, 2022<br>' +
         '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
