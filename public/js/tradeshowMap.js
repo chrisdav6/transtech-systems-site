@@ -28,7 +28,7 @@ function initMap() {
     // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
-    ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
+    // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['National Pavement Expo, Nashville, TN', 36.186314, -87.0654323],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -114,16 +114,16 @@ function initMap() {
     // ],
 
     // SEAUPG
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-        '<span>SEAUPG</span><br>' +
-        '<hr>' +
-        'Knoxville, TN<br>' +
-        'November 17-19, 2020<br>' +
-        '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
+    //     '<span>SEAUPG</span><br>' +
+    //     '<hr>' +
+    //     'Knoxville, TN<br>' +
+    //     'November 17-19, 2020<br>' +
+    //     '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>'
+    // ],
 
     // APAI
     // [
