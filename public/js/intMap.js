@@ -164,9 +164,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>Motorway Technologies</span><br>' +
         '<hr>' +
-        '+61-418-235-048<br>' +
-        'Attn: Adrian Rogers<br>' +
-        '<p><a class="link" href="mailto:adrian@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+61-403-869-145<br>' +
+        'Attn: Gabrielle Rogers<br>' +
+        '<p><a class="link" href="mailto:gabrielle@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
@@ -776,9 +776,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>Motorway Technologies</span><br>' +
         '<hr>' +
-        '+61-418-235-048<br>' +
-        'Attn: Adrian Rogers<br>' +
-        '<p><a class="link" href="mailto:adrian@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+61-403-869-145<br>' +
+        'Attn: Gabrielle Rogers<br>' +
+        '<p><a class="link" href="mailto:gabrielle@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
