@@ -12,7 +12,7 @@ function initMap() {
       lat: 37,
       lng: -96.3
     },
-    zoom: 5,
+    zoom: 4.75,
     mapTypeId: 'roadmap',
     scrollwheel: false
   };
@@ -27,13 +27,13 @@ function initMap() {
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
-    // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274]
@@ -99,18 +99,6 @@ function initMap() {
     // 	'September 9-11, 2020<br>' +
     // 	'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     // 	'</div>'
-    // ],
-
-    //TXAPA
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-    //     '<span>TXAPA</span><br>' +
-    //     '<hr>' +
-    //     'San Antonio, TX<br>' +
-    //     'September 15-18, 2020<br>' +
-    //     '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
     // ],
 
     // SEAUPG
@@ -182,6 +170,18 @@ function initMap() {
         'Columbus, OH<br>' +
         'March 30-31, 2021<br>' +
         '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    //TXAPA
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+        '<span>TXAPA</span><br>' +
+        '<hr>' +
+        'San Antonio, TX<br>' +
+        'September 21-24, 2021<br>' +
+        '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
 
