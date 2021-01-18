@@ -1,13 +1,13 @@
 #map {
   height: 45vh;
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.36);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.36);
 }
 
 #contact {
   font-size: 1.25rem;
   padding: 3em 0;
   border-top: 1px solid $gray;
-  
+
   hr {
     border: none;
     height: 1px;
@@ -15,7 +15,7 @@
     background: $dark-gray;
     margin-bottom: 2em;
   }
-  
+
   p {
     margin-bottom: 0;
   }
@@ -23,13 +23,24 @@
   .buildingImg {
     border: 1px solid $extreme-dark-gray;
   }
-  
+
+  .serviceCenter {
+    font-size: 1rem;
+    display: inline-block;
+    background: #000;
+    padding: .25em .5em;
+    margin: 0 0 1em 0;
+    color: $logo-yellow;
+  }
+
   .form-control {
     font-size: 1.25rem;
   }
-  
+
 }
 
-.fa-spinner, .submitMessage, #manualDownloadLink {
+.fa-spinner,
+.submitMessage,
+#manualDownloadLink {
   display: none;
 }

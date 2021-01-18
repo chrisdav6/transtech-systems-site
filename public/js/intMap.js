@@ -166,6 +166,7 @@ function initMap() {
         '<hr>' +
         '+61-403-869-145<br>' +
         'Attn: Gabrielle Rogers<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:gabrielle@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -250,6 +251,7 @@ function initMap() {
         '<hr>' +
         '+591-3-336-7676<br>' +
         'Attn: Mauricio Lijeron Eguez<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -358,6 +360,7 @@ function initMap() {
         '<hr>' +
         '+562 24069792<br>' +
         'Attn: Claudio Fuentes Lopez<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.indexsa.cl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -503,6 +506,7 @@ function initMap() {
         '<hr>' +
         '+49-441-3501227<br>' +
         'Attn: Bernd Diedrichs<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -563,6 +567,7 @@ function initMap() {
         '<hr>' +
         '91-044-26162877<br>' +
         'Attn: G. Parasuraman<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -599,6 +604,7 @@ function initMap() {
         '<hr>' +
         '+816-6241-0240<br>' +
         'Attn: Yukihiro Kimura<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -802,6 +808,7 @@ function initMap() {
         '<hr>' +
         '+47 32 24 35 30<br>' +
         'Attn: Geir Solberg<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -850,6 +857,7 @@ function initMap() {
         '<hr>' +
         '+632 8711-8416/22<br>' +
         'Attn: Victor Pulido<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:vpulido@smi-group.com.ph?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.smi-group.com.ph" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -886,6 +894,7 @@ function initMap() {
         '<hr>' +
         '+974-4462-1168<br>' +
         'Attn: N. S. Hegde / Vikram Shekhawat<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:vikram@intermodalqatar.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.intermodalqatar.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -922,6 +931,7 @@ function initMap() {
         '<hr>' +
         '+7 926 203 20 02<br>' +
         'Attn: Sergey Baranov<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@bavcompany.ru?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -1078,6 +1088,7 @@ function initMap() {
         '<hr>' +
         '+90 312-3940132<br>' +
         'Attn: Utku CIRIK<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:ucirik@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
@@ -1102,6 +1113,7 @@ function initMap() {
         '<hr>' +
         '+44-191-461-1103<br>' +
         'Attn: Callum Brady<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
