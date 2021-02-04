@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="/css/productsStyle.css">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <title><%= typeof title!='undefined' ? title : 'TransTech Systems' %></title>
+  <title>
+    <%= typeof title!='undefined' ? title : 'TransTech Systems' %>
+  </title>
   <!-- Recaptcha -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
@@ -113,6 +115,7 @@
               <a class="dropdown-item" href="/products/repairRequest"><i class="fas fa-wrench fa-flip-horizontal"></i>
                 Product Repair/Calibration Request</a>
               <a class="dropdown-item" href="/products/productRegistration">Product Warranty Registration</a>
+              <a class="dropdown-item" href="/pdf/CommitmentToQuality.pdf" target="_blank">Our Commitment to You</a>
             </div>
           </li>
 
