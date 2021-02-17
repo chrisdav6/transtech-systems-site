@@ -199,7 +199,8 @@ app.get('/products/resources', function(req, res) {
   res.render('products/resources', {
     title: 'TransTech Systems Product Resources',
     metaTitle:
-      'TransTech Systems downloadable pdf products user manuals and quick start guides.'
+      'TransTech Systems downloadable pdf products user manuals and quick start guides.',
+    robots: 'noindex'
   });
 });
 
