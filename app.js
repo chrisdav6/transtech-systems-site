@@ -194,6 +194,15 @@ app.get('/products/productManuals', function(req, res) {
   });
 });
 
+//Resources
+app.get('/products/resources', function(req, res) {
+  res.render('products/resources', {
+    title: 'TransTech Systems Product Resources',
+    metaTitle:
+      'TransTech Systems downloadable pdf products user manuals and quick start guides.'
+  });
+});
+
 //Training
 app.get('/products/training', function(req, res) {
   res.render('products/training', {
