@@ -29,6 +29,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
@@ -65,7 +66,7 @@ function initMap() {
     // 	'</div>'
     // ],
 
-    // Maine
+    // MAPA (Maine)
     // [
     //   '<div class="map-text">' +
     //     '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
@@ -122,6 +123,18 @@ function initMap() {
         'Indianapolis, IN<br>' +
         'December 15-17, 2021<br>' +
         '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
+    // MAPA (Missouri)
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/mapa-logo.png">' +
+        '<span>32nd Annual MAPA Conference</span><br>' +
+        '<hr>' +
+        'Columbia, MO<br>' +
+        'January 10-12, 2022<br>' +
+        '<p><a class="link" href="https://moasphalt.org/events/annual-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
 
