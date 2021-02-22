@@ -28,7 +28,7 @@ function initMap() {
     // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
-    // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     // ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
@@ -114,16 +114,16 @@ function initMap() {
     // ],
 
     // APAI
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
-    //     '<span>APAI</span><br>' +
-    //     '<hr>' +
-    //     'Indianapolis, IN<br>' +
-    //     'December 16-18, 2020<br>' +
-    //     '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
+        '<span>APAI</span><br>' +
+        '<hr>' +
+        'Indianapolis, IN<br>' +
+        'December 15-17, 2021<br>' +
+        '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
 
     // TRB
     // [
