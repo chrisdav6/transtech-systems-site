@@ -29,8 +29,8 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
-    // ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
@@ -126,6 +126,18 @@ function initMap() {
         '</div>'
     ],
 
+    // TRB
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+        '<span>TRB 101st Annual Meeting</span><br>' +
+        '<hr>' +
+        'Washington D.C.<br>' +
+        'January 9-13, 2022<br>' +
+        '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
+
     // MAPA (Missouri)
     [
       '<div class="map-text">' +
@@ -137,18 +149,6 @@ function initMap() {
         '<p><a class="link" href="https://moasphalt.org/events/annual-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>'
     ],
-
-    // TRB
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-    //     '<span>TRB</span><br>' +
-    //     '<hr>' +
-    //     'Washington D.C.<br>' +
-    //     'January 24-28, 2021<br>' +
-    //     '<p><a class="link" href="https://events.jspargo.com/trb21/public/enter.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
-    // ],
 
     // RMACES
     // [
