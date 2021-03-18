@@ -4,7 +4,9 @@ body {
   background: $white;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Alfa Slab One', sans-serif;
 }
 
@@ -16,7 +18,7 @@ form {
   display: none;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   z-index: 1000;
 }
 
@@ -26,7 +28,7 @@ form {
 
 .header-link {
   color: $extreme-dark-gray;
- 
+
   &:hover {
     text-decoration: underline;
     color: $extreme-dark-gray;
@@ -36,7 +38,7 @@ form {
 .footer-link {
   font-weight: 600;
   color: $extreme-dark-gray;
- 
+
   &:hover {
     text-decoration: underline;
     color: $extreme-dark-gray;
@@ -47,7 +49,7 @@ form {
   font-weight: 600;
   color: $extreme-dark-gray;
   padding: 0 .2em;
- 
+
   &:hover {
     text-decoration: underline;
     color: $extreme-dark-gray;
@@ -58,7 +60,7 @@ form {
 .standard-link-light {
   color: white;
   padding: 0 .2em;
- 
+
   &:hover {
     text-decoration: underline;
     color: $extreme-dark-gray;
@@ -97,4 +99,3 @@ form {
     color: #191919;
   }
 }
-  
