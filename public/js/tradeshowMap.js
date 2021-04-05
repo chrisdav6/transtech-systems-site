@@ -33,7 +33,7 @@ function initMap() {
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
-    // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -175,16 +175,16 @@ function initMap() {
     ],
 
     //Ohio
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-    //     '<span>Ohio Asphalt Expo</span><br>' +
-    //     '<hr>' +
-    //     'Columbus, OH<br>' +
-    //     'March 30-31, 2021<br>' +
-    //     '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+        '<span>Ohio Asphalt Expo</span><br>' +
+        '<hr>' +
+        'Columbus, OH<br>' +
+        'March 8-9, 2022<br>' +
+        '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
 
     //TXAPA
     // [
