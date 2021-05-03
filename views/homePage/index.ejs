@@ -25,81 +25,97 @@
 
 <body>
 
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/">
-      <img src="/img/logo.png" alt="TransTech Systems Logo" width="150">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <header>
+    <nav>
+      <a href="/"><img class="logo" src="/img/logo.png" alt="TransTech Systems Logo"></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="/products">Our Products</a></li>
+          <li><a href="/products">About Us</a></li>
+          <li><a href="/products">History</a></li>
+          <li>
+            <a href="http://payment.transtechsys.com" class="ttsBtn" target="_blank">Pay Invoice Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+    <!-- navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">
+        <img src="/img/logo.png" alt="TransTech Systems Logo" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/products/pqi380">PQI 380 - Non-Nuclear Asphalt Density Gauge</a>
-            <a class="dropdown-item" href="/products/sdg200">SDG 200 - Non-Nuclear Soil Density Gauge</a>
-            <a class="dropdown-item" href="/products/nwjm">NWJM - Notched Wedge Joint Maker</a>
-            <a class="dropdown-item" href="/products/swm">SWM - Shoulder Wedge Maker</a>
-            <a class="dropdown-item" href="/products/pts3000">PTS 3000 - Pavement Temperature Sentry</a>
-            <a class="dropdown-item" href="/products/pqi301">PQI 301 - Non-Nuclear Asphalt Density Gauge</a>
-            <div class="dropdown-divider my-0"></div>
-            <a class="dropdown-item" href="http://034fe90.netsolhost.com/opencart" target="_blank">Replacement
-              Parts</a>
-            <a class="dropdown-item" href="/products/legacyProducts">Legacy Products</a>
-          </div>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/products/corporateNews">Corporate</a>
-            <a class="dropdown-item" href="/products/newsletter">Newsletter</a>
-          </div>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/products/pqi380">PQI 380 - Non-Nuclear Asphalt Density Gauge</a>
+              <a class="dropdown-item" href="/products/sdg200">SDG 200 - Non-Nuclear Soil Density Gauge</a>
+              <a class="dropdown-item" href="/products/nwjm">NWJM - Notched Wedge Joint Maker</a>
+              <a class="dropdown-item" href="/products/swm">SWM - Shoulder Wedge Maker</a>
+              <a class="dropdown-item" href="/products/pts3000">PTS 3000 - Pavement Temperature Sentry</a>
+              <a class="dropdown-item" href="/products/pqi301">PQI 301 - Non-Nuclear Asphalt Density Gauge</a>
+              <div class="dropdown-divider my-0"></div>
+              <a class="dropdown-item" href="http://034fe90.netsolhost.com/opencart" target="_blank">Replacement
+                Parts</a>
+              <a class="dropdown-item" href="/products/legacyProducts">Legacy Products</a>
+            </div>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/products/tradeshows">Tradeshows</a>
-            <a class="dropdown-item" href="/products/community">In the Community</a>
-          </div>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/products/corporateNews">Corporate</a>
+              <a class="dropdown-item" href="/products/newsletter">Newsletter</a>
+            </div>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="/products/productManuals">Product Manuals</a>
-            <a class="dropdown-item" href="/products/training">Training</a>
-            <a class="dropdown-item redDropItem" href="https://www.youtube.com/playlist?list=PLICqvSHKaFbKx9ldJyIhKRFCIQbCVCSAI" target="_blank"><i class="fab fa-youtube"></i> Youtube Training Videos</a>
-            <a class="dropdown-item" href="/products/repairRequest"><i class="fas fa-wrench fa-flip-horizontal"></i>
-              Product Repair/Calibration Request</a>
-            <a class="dropdown-item" href="/products/productRegistration">Product Warranty Registration</a>
-            <a class="dropdown-item" href="/pdf/CommitmentToQuality.pdf" target="_blank">Our Commitment to You</a>
-          </div>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/products/tradeshows">Tradeshows</a>
+              <a class="dropdown-item" href="/products/community">In the Community</a>
+            </div>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="/products/contactCorporate">Corporate Office</a>
-            <a class="dropdown-item" href="/products/distributorsUnitedStates">United States Distributors</a>
-            <a class="dropdown-item" href="/products/distributorsInternational">International Distributors</a>
-            <a class="dropdown-item" href="/products/salesRequest">Product Sales Request</a>
-          </div>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="/products/productManuals">Product Manuals</a>
+              <a class="dropdown-item" href="/products/training">Training</a>
+              <a class="dropdown-item redDropItem" href="https://www.youtube.com/playlist?list=PLICqvSHKaFbKx9ldJyIhKRFCIQbCVCSAI" target="_blank"><i class="fab fa-youtube"></i> Youtube Training Videos</a>
+              <a class="dropdown-item" href="/products/repairRequest"><i class="fas fa-wrench fa-flip-horizontal"></i>
+                Product Repair/Calibration Request</a>
+              <a class="dropdown-item" href="/products/productRegistration">Product Warranty Registration</a>
+              <a class="dropdown-item" href="/pdf/CommitmentToQuality.pdf" target="_blank">Our Commitment to You</a>
+            </div>
+          </li>
 
-        <li class="nav-item">
-          <a href="http://payment.transtechsys.com" class="btn ttsBtn mt-1 ml-0 ml-lg-3" target="_blank">Pay
-            Invoice Online</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- /navbar -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="/products/contactCorporate">Corporate Office</a>
+              <a class="dropdown-item" href="/products/distributorsUnitedStates">United States Distributors</a>
+              <a class="dropdown-item" href="/products/distributorsInternational">International Distributors</a>
+              <a class="dropdown-item" href="/products/salesRequest">Product Sales Request</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="http://payment.transtechsys.com" class="btn ttsBtn mt-1 ml-0 ml-lg-3" target="_blank">Pay
+              Invoice Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <!-- /navbar -->
+  </header>
 
   <!-- Hero section -->
   <section id="hero">
