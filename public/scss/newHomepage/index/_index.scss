@@ -18,12 +18,14 @@ $sdgGreen: #27b278;
 body {
   position: relative;
   font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
   position: relative;
   z-index: 1000;
-  padding: 2% 6%;
+  padding: 2em 3em;
 
   .logo {
     width: 200px;
@@ -42,8 +44,12 @@ header {
 
       li {
         display: inline-block;
-        padding: 12px;
         position: relative;
+        padding: 12px 20px;
+
+        &:hover::after {
+          width: 100%;
+        }
 
         &:last-child::after {
           background: transparent;
@@ -51,11 +57,12 @@ header {
 
         &::after {
           content: '';
-          width: 100%;
+          width: 0%;
           height: 2px;
           background: $logo-yellow;
           display: block;
           margin: auto;
+          transition: .5s;
         }
 
         a {
@@ -67,72 +74,6 @@ header {
     }
   }
 }
-
-// .navbar {
-//   position: sticky;
-//   top: 0;
-//   z-index: 1000;
-//   background: rgba($extreme-dark-gray, .8);
-//   box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.36);
-//   padding: 1.5em 3em;
-// }
-
-// .navbar-dark .navbar-brand {
-//   font-weight: 600;
-//   transition: 250ms;
-
-//   span {
-//     font-weight: 300;
-//     margin-left: 2px;
-//   }
-
-//   &:hover {
-//     color: $logo-yellow;
-//   }
-// }
-
-// .dropdown-menu {
-//   border-radius: 0;
-//   padding: 0;
-// }
-
-// .nav-item {
-//   font-size: 1.2rem;
-// }
-
-// .dropdown-item:first-child {
-//   border-top: 4px solid $logo-yellow;
-//   /*add yellow border to the top of first dropdown item*/
-// }
-
-// .dropdown-item {
-//   font-size: 1.2rem;
-//   font-weight: 600;
-//   padding-top: 1em;
-//   padding-bottom: 1em;
-
-//   &:hover {
-//     background: lighten($logo-yellow, 10%);
-//   }
-
-//   &:active {
-//     background: $extreme-dark-gray;
-//     color: $white;
-//   }
-// }
-
-// .dropdown-divider {
-//   border-color: #c4c4c4;
-// }
-
-// .navbar-dark .navbar-nav .nav-link {
-//   color: white;
-
-//   &:hover,
-//   &:active {
-//     color: $logo-yellow;
-//   }
-// }
 
 .ttsBtn {
   border: 1px solid #FDDC00;
@@ -163,17 +104,24 @@ header {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100%;
-  background: gray url(../img/mikeHomepage.jpg);
+  width: 100vw;
+  background: #000 url(../img/mikeHomepage.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: #fff;
 
   .hero-content {
     position: relative;
     z-index: 10;
+    width: 80%;
   }
+}
+
+#about {
+  height: 2000px;
 }
