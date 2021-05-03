@@ -1,3 +1,14 @@
+$white: #f7f7f7;
+$dark: #202329;
+$logo-yellow: #FFDE00;
+$light-gray: #dbdbdb;
+$gray: #727272;
+$dark-gray: #303030;
+$extreme-dark-gray: #191919;
+$dark-opacity: rgba($dark, .95);
+$dark-blue: #152235;
+$sdgGreen: #27b278;
+
 * {
   box-sizing: border-box;
 }
@@ -10,20 +21,76 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.5);
-  align-items: center;
-  padding: 1em 3em;
+  background: rgba($extreme-dark-gray, .8);
   box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.36);
+  padding: 1.5em 3em;
 }
 
-.navbar-brand img {
-  width: 200px;
+.navbar-dark .navbar-brand {
+  font-weight: 600;
+  transition: 250ms;
+
+  span {
+    font-weight: 300;
+    margin-left: 2px;
+  }
+
+  &:hover {
+    color: $logo-yellow;
+  }
 }
 
-.nav-link {
-  color: #fff !important;
-  font-size: 1.25rem;
-  padding-left: 1.5em !important;
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+}
+
+.dropdown-item:first-child {
+  border-top: 4px solid $logo-yellow;
+  /*add yellow border to the top of first dropdown item*/
+}
+
+.dropdown-item {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  &:hover {
+    background: lighten($logo-yellow, 10%);
+  }
+
+  &:active {
+    background: $extreme-dark-gray;
+    color: $white;
+  }
+}
+
+.dropdown-divider {
+  border-color: #c4c4c4;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+
+  &:hover,
+  &:active {
+    color: $logo-yellow;
+  }
+}
+
+.ttsBtn {
+  border: 1px solid #FDDC00;
+  color: #FDDC00;
+
+  &:hover {
+    background: #FDDC00;
+    color: #191919;
+  }
 }
 
 #hero::after {
