@@ -13,16 +13,17 @@ $sdgGreen: #27b278;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  position: relative;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -90,18 +91,6 @@ header {
   }
 }
 
-#hero::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: #1d5163;
-  mix-blend-mode: overlay;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 #hero {
   position: relative;
   top: 0;
@@ -133,6 +122,18 @@ header {
       text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.64);
     }
   }
+}
+
+#hero::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #17404e;
+  mix-blend-mode: overlay;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 #about {

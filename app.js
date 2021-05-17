@@ -101,13 +101,13 @@ app.get('/*', function(req, res, next) {
 app.locals.date = new Date().getFullYear();
 
 //NewHomepage
-app.get('/homepage', function(req, res) {
+/*app.get('/homepage', function(req, res) {
   res.render('homePage/index', {
     title: 'TransTech Systems',
     metaTitle:
       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.'
   });
-});
+});*/
 
 //Homepage
 app.get('/', function(req, res) {
