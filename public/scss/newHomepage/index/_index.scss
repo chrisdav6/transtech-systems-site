@@ -17,6 +17,10 @@ $sdgGreen: #27b278;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
@@ -167,6 +171,59 @@ body {
 
 #about {
   min-height: 100vh;
+  background: $extreme-dark-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5em;
+
+  .content {
+    max-width: 1200px;
+
+    h2 {
+      color: #F8F9FA;
+      font-family: 'Alfa Slab One', sans-serif;
+      padding: 2.5em 0 .5em 0;
+      font-size: 2.25rem;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      width: 100%;
+      background: #F8F9FA;
+      margin-bottom: 2.5em;
+    }
+
+    p {
+      color: #F8F9FA;
+      font-size: 1.5rem;
+      line-height: 1.9;
+    }
+  }
+}
+
+#history {
+  min-height: 100vh;
+  background: $light-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5em;
+
+  .content {
+    max-width: 1200px;
+
+    hr {
+      border: none;
+      height: 1px;
+      width: 100%;
+      background: $extreme-dark-gray;
+      margin-bottom: 2.5em;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -182,6 +239,24 @@ body {
 
       p {
         font-size: 1.5rem;
+      }
+    }
+  }
+
+  #about {
+    .content {
+      h2 {
+        padding: 2.5em 0 .5em 0;
+        font-size: 1.5rem;
+      }
+
+      hr {
+        margin-bottom: 1.5em;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.5;
       }
     }
   }
