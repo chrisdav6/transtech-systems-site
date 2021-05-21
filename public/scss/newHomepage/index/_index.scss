@@ -43,6 +43,10 @@ body {
       margin-right: 20px;
       font-size: 1.2rem;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
       .nav-link {
         color: #fff;
         transition: .2s ease-in-out;
