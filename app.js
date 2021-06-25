@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const helmet = require('helmet');
+const badbots = require('express-badbots');
 const dotenv = require('dotenv').config();
 const validator = require('validator');
 const expressSanitizer = require('express-sanitizer');
@@ -14,6 +15,9 @@ const app = express();
 
 //Use Helmet
 app.use(helmet());
+
+//Use Express Badbots
+app.use(badbots({ isApi: false }));
 
 //Use EJS
 app.set('view engine', 'ejs');
