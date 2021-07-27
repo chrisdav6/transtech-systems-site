@@ -25,7 +25,7 @@ function initMap() {
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     // ['APAM, Battle Creek, MI', 42.296783, -85.076260],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    // ['CalAPA, Anaheim, CA', 33.830204, -117.909703],
+    ['CalAPA, Sacramento, CA', 38.572388, -121.47897],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
@@ -79,16 +79,16 @@ function initMap() {
     // ],
 
     //CalAPA
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-    //     '<span>CalAPA Spring Conference</span><br>' +
-    //     '<hr>' +
-    //     'Anaheim, CA<br>' +
-    //     'April 16-17, 2020<br>' +
-    //     '<p><a class="link" href="http://www.calapa.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+        '<span>CalAPA Fall Conference</span><br>' +
+        '<hr>' +
+        'Sacramento, CA<br>' +
+        'October 13, 2021<br>' +
+        '<p><a class="link" href="https://www.calapa.net/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>'
+    ],
 
     //Intermat ASEAN
     // [
