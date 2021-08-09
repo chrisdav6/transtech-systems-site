@@ -10,11 +10,11 @@ function initMap() {
   var mapOptions = {
     center: {
       lat: 37,
-      lng: -96.3
+      lng: -96.3,
     },
     zoom: 4.75,
     mapTypeId: 'roadmap',
-    scrollwheel: false
+    scrollwheel: false,
   };
 
   // Display a map on the page
@@ -32,12 +32,13 @@ function initMap() {
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
+    ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
-    ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274]
+    ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
   // Info Window Content
@@ -87,7 +88,7 @@ function initMap() {
         'Sacramento, CA<br>' +
         'October 13, 2021<br>' +
         '<p><a class="link" href="https://www.calapa.net/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     //Intermat ASEAN
@@ -111,7 +112,7 @@ function initMap() {
         'Knoxville, TN<br>' +
         'November 16-18, 2021<br>' +
         '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // APAI
@@ -123,7 +124,7 @@ function initMap() {
         'Indianapolis, IN<br>' +
         'December 15-17, 2021<br>' +
         '<p><a class="link" href="https://asphaltindiana.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // TRB
@@ -135,7 +136,7 @@ function initMap() {
         'Washington D.C.<br>' +
         'January 9-13, 2022<br>' +
         '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // MAPA (Missouri)
@@ -147,7 +148,7 @@ function initMap() {
         'Columbia, MO<br>' +
         'January 10-12, 2022<br>' +
         '<p><a class="link" href="https://moasphalt.org/events/annual-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // RMACES
@@ -159,7 +160,19 @@ function initMap() {
         'Denver, CO<br>' +
         'February 22-24, 2022<br>' +
         '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
+    ],
+
+    // Illionois Asphalt Conference
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/illinois-asphalt-logo.png">' +
+        '<span>IAPA Annual Conference</span><br>' +
+        '<hr>' +
+        'Springfield, IL<br>' +
+        'March 14 - 15, 2022<br>' +
+        '<p><a class="link" href="https://www.il-asphalt.org/membership/annual-convention/details" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
     ],
 
     // World of Asphalt
@@ -171,7 +184,7 @@ function initMap() {
         'Nashville, TN<br>' +
         'March 29-31, 2022<br>' +
         '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     //Ohio
@@ -183,7 +196,7 @@ function initMap() {
         'Columbus, OH<br>' +
         'March 8-9, 2022<br>' +
         '<p><a class="link" href="http://www.flexiblepavements.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     //TXAPA
@@ -195,7 +208,7 @@ function initMap() {
         'San Antonio, TX<br>' +
         'September 21-24, 2021<br>' +
         '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Pavement Expo
@@ -207,7 +220,7 @@ function initMap() {
         'Charlotte, NC<br>' +
         'February 23-25, 2022<br>' +
         '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // NEAUPG
@@ -219,7 +232,7 @@ function initMap() {
         'Albany, NY<br>' +
         'October 27-28, 2021<br>' +
         '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // ConExpo
@@ -231,8 +244,8 @@ function initMap() {
         'Las Vegas, NV<br>' +
         'March 14-18, 2023<br>' +
         '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ]
+        '</div>',
+    ],
   ];
 
   // Display multiple markers on a map
@@ -247,7 +260,7 @@ function initMap() {
     marker = new google.maps.Marker({
       position: position,
       map: map,
-      title: markers[i][0]
+      title: markers[i][0],
     });
 
     // Allow each marker to have an info window
