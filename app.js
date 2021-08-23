@@ -28,7 +28,7 @@ app.use(
   session({
     secret: 'secret123',
     saveUninitialized: true,
-    resave: true
+    resave: true,
   })
 );
 app.use(flash());
@@ -59,16 +59,16 @@ const redirects = [
   { from: '/products/key%20links.php', to: '/products' },
   {
     from: '/products/contact%20united%20states.php',
-    to: '/products/distributorsUnitedStates'
+    to: '/products/distributorsUnitedStates',
   },
   {
     from: '/products/contact%20international.php',
-    to: '/products/distributorsInternational'
+    to: '/products/distributorsInternational',
   },
   { from: '/products/product%20info.php', to: '/products/salesRequest' },
   {
     from: '/products/product%20warranty.php',
-    to: '/products/productRegistration'
+    to: '/products/productRegistration',
   },
   { from: '/products/product%20repair.php', to: '/products/repairRequest' },
   { from: '/products/employment%20transtech.php', to: '/products' },
@@ -80,9 +80,9 @@ const redirects = [
   { from: '/privacy.php', to: '/products/privacy' },
   {
     from: '/sdg/mtl%20Generator%20Ver%20949.xls',
-    to: '/pdf/mtlGeneratorVer949.xls'
+    to: '/pdf/mtlGeneratorVer949.xls',
   },
-  { from: '/sdg/SDG%20mtl%20File%20Tool.xls', to: '/pdf/SDGmtlFileTool.xls' }
+  { from: '/sdg/SDG%20mtl%20File%20Tool.xls', to: '/pdf/SDGmtlFileTool.xls' },
 ];
 
 redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
@@ -92,7 +92,7 @@ redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
 });
 
 //Redirect www to non-www
-app.get('/*', function(req, res, next) {
+app.get('/*', function (req, res, next) {
   if (req.headers.host.match(/^www/) !== null)
     res.redirect(
       301,
@@ -105,87 +105,87 @@ app.get('/*', function(req, res, next) {
 app.locals.date = new Date().getFullYear();
 
 //NewHomepage
-/*app.get('/homepage', function(req, res) {
+/*app.get('/homepage', function (req, res) {
   res.render('homePage/index', {
     title: 'TransTech Systems',
     metaTitle:
-      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.'
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
   });
 });*/
 
 //Homepage
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.render('index', {
     title: 'TransTech Systems',
     metaTitle:
-      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.'
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
   });
 });
 
 //Products Hompage
-app.get('/products', function(req, res) {
+app.get('/products', function (req, res) {
   res.render('products/index', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems',
     metaTitle:
-      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.'
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
   });
 });
 
 //Products
-app.get('/products/pqi380', function(req, res) {
+app.get('/products/pqi380', function (req, res) {
   res.render('products/pqi380', {
     title: 'PQI 380 Non-Nuclear Asphalt Density Gauge',
     metaTitle:
-      'TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380.'
+      'TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380.',
   });
 });
 
-app.get('/products/sdg200', function(req, res) {
+app.get('/products/sdg200', function (req, res) {
   res.render('products/sdg200', {
     title: 'SDG 200 Non-Nuclear Soil Density Gauge',
     metaTitle:
-      'TransTech Systems next generation Non-Nuclear soil density gauge, the SDG 200.'
+      'TransTech Systems next generation Non-Nuclear soil density gauge, the SDG 200.',
   });
 });
 
-app.get('/products/nwjm', function(req, res) {
+app.get('/products/nwjm', function (req, res) {
   res.render('products/nwjm', {
     title: 'NWJM - Notched Wedge Joint Maker',
     metaTitle:
-      'TransTech Systems longitudinal joint screed attachment, the NWJM shapes the longitudinal joint as the hot mix asphalt is spread.'
+      'TransTech Systems longitudinal joint screed attachment, the NWJM shapes the longitudinal joint as the hot mix asphalt is spread.',
   });
 });
 
-app.get('/products/swm', function(req, res) {
+app.get('/products/swm', function (req, res) {
   res.render('products/swm', {
     title: 'SWM - Shoulder Wedge Maker',
     metaTitle:
-      'TransTech Systems shoulder wedge screed attachment, the SWM provides a 30 degree beveled shoulder edge that gradually transitions wayward vehicles off shoulderless road surfaces and back on with relative ease.'
+      'TransTech Systems shoulder wedge screed attachment, the SWM provides a 30 degree beveled shoulder edge that gradually transitions wayward vehicles off shoulderless road surfaces and back on with relative ease.',
   });
 });
 
-app.get('/products/pts3000', function(req, res) {
+app.get('/products/pts3000', function (req, res) {
   res.render('products/pts3000', {
     title: 'PTS3000 - Pavement Temperature Sentry',
     metaTitle:
-      'TransTech Systems roller mounted asphalt temperature sentry. The PTS 3000 was designed and built to provide accurate HMA mat temperatures on the run.'
+      'TransTech Systems roller mounted asphalt temperature sentry. The PTS 3000 was designed and built to provide accurate HMA mat temperatures on the run.',
   });
 });
 
-app.get('/products/pqi301', function(req, res) {
+app.get('/products/pqi301', function (req, res) {
   res.render('products/pqi301', {
     title: 'PQI 301 - Non-Nuclear Asphalt Density Gauge (Discontinued)',
     metaTitle:
-      'TransTech Systems legacy Non-Nuclear asphalt density gauge, the PQI 301. The gauge that started it all!'
+      'TransTech Systems legacy Non-Nuclear asphalt density gauge, the PQI 301. The gauge that started it all!',
   });
 });
 
-app.get('/products/legacyProducts', function(req, res) {
+app.get('/products/legacyProducts', function (req, res) {
   res.render('products/legacyProducts', {
     title: 'TransTech Systems Legacy Products',
     metaTitle:
-      'Retired or discontinued products manufactured by TransTech Systems'
+      'Retired or discontinued products manufactured by TransTech Systems',
   });
 });
 
@@ -199,156 +199,149 @@ app.get('/products/usedGauges', function(req, res) {
 */
 
 //Product Manuals
-app.get('/products/productManuals', function(req, res) {
+app.get('/products/productManuals', function (req, res) {
   res.render('products/productManuals', {
     title: 'TransTech Systems Product Manuals',
     metaTitle:
-      'TransTech Systems downloadable pdf products user manuals and quick start guides.'
+      'TransTech Systems downloadable pdf products user manuals and quick start guides.',
   });
 });
 
 //Resources
-app.get('/products/resources', function(req, res) {
+app.get('/products/resources', function (req, res) {
   res.render('products/resources', {
     title: 'TransTech Systems Product Resources',
     metaTitle:
       'TransTech Systems downloadable pdf products user manuals and quick start guides.',
-    robots: 'noindex'
+    robots: 'noindex',
   });
 });
 
 //Training
-app.get('/products/training', function(req, res) {
+app.get('/products/training', function (req, res) {
   res.render('products/training', {
     title: 'TransTech Systems Training',
     metaTitle:
-      'Join us at our facility in New York for training on our PQI 380, SDG 200 or any of our other products free of charge.'
+      'Join us at our facility in New York for training on our PQI 380, SDG 200 or any of our other products free of charge.',
   });
 });
 
 //Contact Corporate
-app.get('/products/contactCorporate', function(req, res) {
+app.get('/products/contactCorporate', function (req, res) {
   res.render('products/contactCorporate', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems Corporate Contact',
     metaTitle:
-      'Our headquarters are located in Latham, NY. Contact us at 1-800-724-6306 or email us at sales@transtechsys.com.'
+      'Our headquarters are located in Latham, NY. Contact us at 1-800-724-6306 or email us at sales@transtechsys.com.',
   });
 });
 
 //Distributors United States
-app.get('/products/distributorsUnitedStates', function(req, res) {
+app.get('/products/distributorsUnitedStates', function (req, res) {
   res.render('products/distributorsUnitedStates', {
     title: 'TransTech Systems United States Distributors',
     metaTitle:
-      'Would you like to purchase one of our products in the United States or just have questions? Contact one of our many distributors stateside.'
+      'Would you like to purchase one of our products in the United States or just have questions? Contact one of our many distributors stateside.',
   });
 });
 
 //Distributors International
-app.get('/products/distributorsInternational', function(req, res) {
+app.get('/products/distributorsInternational', function (req, res) {
   res.render('products/distributorsInternational', {
     title: 'TransTech Systems International Distributors',
     metaTitle:
-      'Would you like to purchase one of our products Internationally or just have questions? Contact one of our many distributors worldwide.'
+      'Would you like to purchase one of our products Internationally or just have questions? Contact one of our many distributors worldwide.',
   });
 });
 
 //Product Sales Request
-app.get('/products/salesRequest', function(req, res) {
+app.get('/products/salesRequest', function (req, res) {
   res.render('products/salesRequest', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems Product Sales Request',
     metaTitle:
-      'Are you interested in purchasing one of our products or just have questions? Contact us today!'
+      'Are you interested in purchasing one of our products or just have questions? Contact us today!',
   });
 });
 
 //Product Warranty Registration
-app.get('/products/productRegistration', function(req, res) {
+app.get('/products/productRegistration', function (req, res) {
   res.render('products/productRegistration', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems Product Registration',
-    metaTitle: 'Submit a TransTech Systems product warranty registration.'
+    metaTitle: 'Submit a TransTech Systems product warranty registration.',
   });
 });
 
 //Product Repair/ Calibration
-app.get('/products/repairRequest', function(req, res) {
+app.get('/products/repairRequest', function (req, res) {
   res.render('products/repairRequest', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems Product Repair/Calibration RMA Request',
     metaTitle:
-      'Submit a TransTech Systems product repair/calibration RMA request.'
+      'Submit a TransTech Systems product repair/calibration RMA request.',
   });
 });
 
 //PQI 300/301 Trade Up
-app.get('/products/tradeUp', function(req, res) {
+app.get('/products/tradeUp', function (req, res) {
   res.render('products/tradeUp', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems PQI 300/301 Trade-Up Program',
     metaTitle:
-      'Your legacy PQI 300/301 could earn you dollars towards a new PQI 380 Non-Nuclear Asphalt Density Gauge'
+      'Your legacy PQI 300/301 could earn you dollars towards a new PQI 380 Non-Nuclear Asphalt Density Gauge',
   });
 });
 
 //Corporate News
-app.get('/products/corporateNews', function(req, res) {
+app.get('/products/corporateNews', function (req, res) {
   res.render('products/corporateNews', {
     title: 'TransTech Systems Corporate News',
-    metaTitle: 'TransTech Systems news, stories and highlights.'
+    metaTitle: 'TransTech Systems news, stories and highlights.',
   });
 });
 
 //Tradeshows
-app.get('/products/tradeshows', function(req, res) {
+app.get('/products/tradeshows', function (req, res) {
   res.render('products/tradeshows', {
     title: 'TransTech Systems Tradeshows',
     metaTitle:
-      'We are very active promoting our Non-Nuclear technology during tradeshow season. Check the dates, see our products at a location near you!'
+      'We are very active promoting our Non-Nuclear technology during tradeshow season. Check the dates, see our products at a location near you!',
   });
 });
 
 //Community
-app.get('/products/community', function(req, res) {
+app.get('/products/community', function (req, res) {
   res.render('products/community', {
     title: 'TransTech Systems In the Community',
     metaTitle:
-      'We believe having strong ties and supporting our community is extremely important. Look at what we have been up to :)'
+      'We believe having strong ties and supporting our community is extremely important. Look at what we have been up to :)',
   });
 });
 
 //Newsletter
-app.get('/products/newsletter', function(req, res) {
+app.get('/products/newsletter', function (req, res) {
   res.render('products/newsletter', {
     title: 'TransTech Systems Newsletter',
     metaTitle:
-      'Do you want to find out the latest news on our products and industry? Check out the TransTech Systems newsletter.'
+      'Do you want to find out the latest news on our products and industry? Check out the TransTech Systems newsletter.',
   });
 });
 
 //Privacy
-app.get('/products/privacy', function(req, res) {
+app.get('/products/privacy', function (req, res) {
   res.render('products/privacy', {
     title: 'TransTech Systems Privacy Policy',
-    metaTitle: 'TransTech Systems privacy policy and international compliance.'
+    metaTitle: 'TransTech Systems privacy policy and international compliance.',
   });
 });
 
 //------POST Routes--------//
 
 //Homepage Newsletter Signup Form
-app.post('/products', function(req, res) {
-  let {
-    name,
-    company,
-    state,
-    country,
-    email,
-    currentCustomer,
-    reach
-  } = req.body;
+app.post('/products', function (req, res) {
+  let { name, company, state, country, email, currentCustomer, reach } =
+    req.body;
 
   nodemailer.createTestAccount((err, account) => {
     // create reusable transporter object using the default SMTP transport
@@ -358,11 +351,11 @@ app.post('/products', function(req, res) {
       secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
       auth: {
         user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD
+        pass: process.env.SMTP_PASSWORD,
       },
       tls: {
-        ciphers: 'SSLv3'
-      }
+        ciphers: 'SSLv3',
+      },
     });
 
     let body = `<h2><u>TransTech Systems Newsletter Signup</u></h2>`;
@@ -381,7 +374,7 @@ app.post('/products', function(req, res) {
       replyTo: email,
       subject: 'TransTech Systems Newsletter Signup Form', // Subject line
       text: body, // plain text body
-      html: body // html body
+      html: body, // html body
     };
 
     // send mail with defined transport object
@@ -451,7 +444,7 @@ app.post('/products', function(req, res) {
 }); */
 
 //Product Sales Request Form
-app.post('/products/salesRequest', function(req, res) {
+app.post('/products/salesRequest', function (req, res) {
   let {
     name,
     company,
@@ -462,7 +455,7 @@ app.post('/products/salesRequest', function(req, res) {
     reach,
     moreInfo,
     message,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -477,11 +470,11 @@ app.post('/products/salesRequest', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>Sales Request</u></h2>`;
@@ -498,12 +491,11 @@ app.post('/products/salesRequest', function(req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to:
-          'sales@transtechsys.com,tapkarian@transtechsys.com,jmorse@transtechsys.com', // list of receivers
+        to: 'sales@transtechsys.com,tapkarian@transtechsys.com,jmorse@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Sales Request Form', // Subject line
         text: message, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -525,7 +517,7 @@ app.post('/products/salesRequest', function(req, res) {
 });
 
 //Repair Request Form
-app.post('/products/repairRequest', function(req, res) {
+app.post('/products/repairRequest', function (req, res) {
   let {
     name,
     company,
@@ -539,7 +531,7 @@ app.post('/products/repairRequest', function(req, res) {
     repairProduct,
     repairSerial,
     estimate,
-    serviceMessage
+    serviceMessage,
   } = req.body;
 
   //Sanitize incoming data
@@ -573,7 +565,7 @@ app.post('/products/repairRequest', function(req, res) {
     req.connection.remoteAddress;
 
   //Send verification to google
-  request(verificationURL, function(error, response, data) {
+  request(verificationURL, function (error, response, data) {
     data = JSON.parse(data);
 
     if (data.success !== undefined && !data.success) {
@@ -590,11 +582,11 @@ app.post('/products/repairRequest', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>Repair Request</u></h2>`;
@@ -615,12 +607,11 @@ app.post('/products/repairRequest', function(req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to:
-          'cdavis@transtechsys.com,jmorse@transtechsys.com,rberube@transtechsys.com,service@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,jmorse@transtechsys.com,rberube@transtechsys.com,service@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Repair Request Form', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -642,7 +633,7 @@ app.post('/products/repairRequest', function(req, res) {
 });
 
 //Product Registration Form
-app.post('/products/productRegistration', function(req, res) {
+app.post('/products/productRegistration', function (req, res) {
   let {
     name,
     company,
@@ -653,7 +644,7 @@ app.post('/products/productRegistration', function(req, res) {
     registerProduct,
     date,
     serial,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -668,11 +659,11 @@ app.post('/products/productRegistration', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>Product Registration</u></h2>`;
@@ -693,7 +684,7 @@ app.post('/products/productRegistration', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Registration Form', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -715,7 +706,7 @@ app.post('/products/productRegistration', function(req, res) {
 });
 
 //Trade Up Form
-app.post('/products/tradeUp', function(req, res) {
+app.post('/products/tradeUp', function (req, res) {
   let {
     name,
     company,
@@ -726,7 +717,7 @@ app.post('/products/tradeUp', function(req, res) {
     tradeProduct,
     tradeSerial,
     tradeMessage,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -741,11 +732,11 @@ app.post('/products/tradeUp', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>PQI 300/301 Trade Up Request</u></h2>`;
@@ -766,7 +757,7 @@ app.post('/products/tradeUp', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Trade Up Request Form', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -788,7 +779,7 @@ app.post('/products/tradeUp', function(req, res) {
 });
 
 //PQI 380 Product Page Manuals Download Form
-app.post('/products/pqi380', function(req, res) {
+app.post('/products/pqi380', function (req, res) {
   let {
     manualName,
     name,
@@ -797,7 +788,7 @@ app.post('/products/pqi380', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -812,11 +803,11 @@ app.post('/products/pqi380', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
@@ -834,7 +825,7 @@ app.post('/products/pqi380', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -854,7 +845,7 @@ app.post('/products/pqi380', function(req, res) {
 });
 
 //SDG 200 Product Page Manuals Download Form
-app.post('/products/sdg200', function(req, res) {
+app.post('/products/sdg200', function (req, res) {
   let {
     manualName,
     name,
@@ -863,7 +854,7 @@ app.post('/products/sdg200', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -878,11 +869,11 @@ app.post('/products/sdg200', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
@@ -900,7 +891,7 @@ app.post('/products/sdg200', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -920,7 +911,7 @@ app.post('/products/sdg200', function(req, res) {
 });
 
 //NWJM Product Page Manuals Download Form
-app.post('/products/nwjm', function(req, res) {
+app.post('/products/nwjm', function (req, res) {
   let {
     manualName,
     name,
@@ -929,7 +920,7 @@ app.post('/products/nwjm', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -944,11 +935,11 @@ app.post('/products/nwjm', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
@@ -966,7 +957,7 @@ app.post('/products/nwjm', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -986,7 +977,7 @@ app.post('/products/nwjm', function(req, res) {
 });
 
 //SWM Product Page Manuals Download Form
-app.post('/products/swm', function(req, res) {
+app.post('/products/swm', function (req, res) {
   let {
     manualName,
     name,
@@ -995,7 +986,7 @@ app.post('/products/swm', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -1010,11 +1001,11 @@ app.post('/products/swm', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
@@ -1032,7 +1023,7 @@ app.post('/products/swm', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -1052,7 +1043,7 @@ app.post('/products/swm', function(req, res) {
 });
 
 //PTS 3000 Product Page Manuals Download Form
-app.post('/products/pts3000', function(req, res) {
+app.post('/products/pts3000', function (req, res) {
   let {
     manualName,
     name,
@@ -1061,7 +1052,7 @@ app.post('/products/pts3000', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -1076,11 +1067,11 @@ app.post('/products/pts3000', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
@@ -1098,7 +1089,7 @@ app.post('/products/pts3000', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -1118,7 +1109,7 @@ app.post('/products/pts3000', function(req, res) {
 });
 
 //PQI 301 Product Page Manuals Download Form
-app.post('/products/pqi301', function(req, res) {
+app.post('/products/pqi301', function (req, res) {
   let {
     manualName,
     name,
@@ -1127,7 +1118,7 @@ app.post('/products/pqi301', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -1142,11 +1133,11 @@ app.post('/products/pqi301', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
@@ -1164,7 +1155,7 @@ app.post('/products/pqi301', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -1184,7 +1175,7 @@ app.post('/products/pqi301', function(req, res) {
 });
 
 //Product Manuals Page Manuals Download Form
-app.post('/products/productManuals', function(req, res) {
+app.post('/products/productManuals', function (req, res) {
   let {
     manualName,
     name,
@@ -1193,7 +1184,7 @@ app.post('/products/productManuals', function(req, res) {
     email,
     currentCustomer,
     reach,
-    businessAddress
+    businessAddress,
   } = req.body;
 
   if (businessAddress.length !== 0) {
@@ -1208,11 +1199,11 @@ app.post('/products/productManuals', function(req, res) {
         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
         auth: {
           user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
+          pass: process.env.SMTP_PASSWORD,
         },
         tls: {
-          ciphers: 'SSLv3'
-        }
+          ciphers: 'SSLv3',
+        },
       });
 
       let body = `<h2><u>${manualName} Download - Manuals Page</u></h2>`;
@@ -1230,7 +1221,7 @@ app.post('/products/productManuals', function(req, res) {
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
-        html: body // html body
+        html: body, // html body
       };
 
       // send mail with defined transport object
@@ -1265,14 +1256,14 @@ app.get('/europe/sdg200', (req, res) => {
 });
 
 //404 Page Not Found
-app.get('*', function(req, res) {
+app.get('*', function (req, res) {
   res.status(404).render('products/NotFound404', {
     title: 'TransTech Systems',
-    metaTitle: 'Oops! Looks like that page is gone!'
+    metaTitle: 'Oops! Looks like that page is gone!',
   });
 });
 
 //Start Server
-app.listen(port, process.env.IP, function() {
+app.listen(port, process.env.IP, function () {
   console.log('Server has started!');
 });
