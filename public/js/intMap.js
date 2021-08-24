@@ -10,11 +10,11 @@ function initMap() {
   var mapOptions = {
     center: {
       lat: 28.711,
-      lng: 17.234
+      lng: 17.234,
     },
     zoom: 3,
     mapTypeId: 'roadmap',
-    scrollwheel: false
+    scrollwheel: false,
   };
 
   // Display a map on the page
@@ -104,9 +104,10 @@ function initMap() {
     ['BAV Corporation / Uneedus Group LLP, Turkmenistan', 39.571822, 59.040527],
     ['CFU International Trade & Services, Turkey', 39.164141, 35.046387],
     ['BAV Corporation / Uniprom LLC, Ukraine', 49.009051, 31.618652],
+    ['Burgan Equipment Co., United Arab Emirates', 23.616186, 54.136582],
     ['JR Technical Services, United Kindom', 54.393352, -2.06543],
     ['BAV Corporation / Uneedus Group LLP, Uzbekistan', 42.016652, 63.457031],
-    ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963]
+    ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963],
   ];
 
   // Info Window Content
@@ -120,7 +121,7 @@ function initMap() {
         'Attn: G. Parasuraman<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Algeria
@@ -133,7 +134,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Argentina
@@ -145,7 +146,7 @@ function initMap() {
         'Attn: Mauricio Lijeron Eguez<br>' +
         '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Armenia (CIS)
@@ -157,7 +158,7 @@ function initMap() {
         'Attn: Shota Mosiashvilli<br>' +
         '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Australia
@@ -170,7 +171,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:gabrielle@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Austria
@@ -182,7 +183,7 @@ function initMap() {
         'Attn: Bernd Diedrichs<br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Azerbaijan (CIS)
@@ -194,7 +195,7 @@ function initMap() {
         'Attn: Shota Mosiashvilli<br>' +
         '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Bangladesh
@@ -206,7 +207,7 @@ function initMap() {
         'Attn: G. Parasuraman<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Belarus
@@ -218,7 +219,7 @@ function initMap() {
         'Attn: Kostia Minin<br>' +
         '<p><a class="link" href="mailto:info@roadtec.by?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Belgium
@@ -230,7 +231,7 @@ function initMap() {
         'Attn: Joop Mennink<br>' +
         '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://asintra.eu/nederlands.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Benin
@@ -242,7 +243,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Bolivia
@@ -255,7 +256,7 @@ function initMap() {
         // '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Brazil
@@ -267,7 +268,7 @@ function initMap() {
         'Attn: Rodrigo Barella<br>' +
         '<p><a class="link" href="mailto:rodrigobarella@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.solotest.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Bulgaria
@@ -279,7 +280,7 @@ function initMap() {
         'Attn: Bernd Diedrichs<br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Burkina Faso
@@ -291,7 +292,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Cameroun
@@ -303,7 +304,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Canada - British Columbia
@@ -315,7 +316,7 @@ function initMap() {
         'Attn: Jamie Emery<br>' +
         '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Canada - Quebec
@@ -327,7 +328,7 @@ function initMap() {
         'Attn: Sylvain Paquette<br>' +
         '<p><a class="link" href="mailto:spaquette@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Canada - Ontario
@@ -339,7 +340,7 @@ function initMap() {
         'Attn: Joseph Zambito-Orazio<br>' +
         '<p><a class="link" href="mailto:jzambito@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Canada - Alberta
@@ -351,7 +352,7 @@ function initMap() {
         'Attn: Jamie Emery<br>' +
         '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Chile
@@ -364,7 +365,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.indexsa.cl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // China
@@ -376,7 +377,7 @@ function initMap() {
         'Attn: Janet Lo<br>' +
         '<p><a class="link" href="mailto:janet@epc.com.hk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.epc.com.hk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // CIS - No Map Location //
@@ -390,7 +391,7 @@ function initMap() {
         'Attn: Carlos Licona<br>' +
         '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Congo
@@ -402,7 +403,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Costa Rica
@@ -414,7 +415,7 @@ function initMap() {
         'Attn: Carlos Licona<br>' +
         '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Côte d’Ivoire
@@ -426,7 +427,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Czech Republic
@@ -438,7 +439,7 @@ function initMap() {
         'Attn: Bernd Diedrichs<br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Ecuador
@@ -461,7 +462,7 @@ function initMap() {
         'Attn: Edvinas Peleckas<br>' +
         '<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // France
@@ -473,7 +474,7 @@ function initMap() {
         'Attn: Michel Grollemund<br>' +
         '<p><a class="link" href="mailto:michel@grollemund.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.laboroutes.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Gabon
@@ -485,7 +486,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Georgia
@@ -497,7 +498,7 @@ function initMap() {
         'Attn: Shota Mosiashvilli<br>' +
         '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Germany
@@ -510,7 +511,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Guinée
@@ -522,7 +523,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Guinée-Bissau
@@ -534,7 +535,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Hungary
@@ -546,7 +547,7 @@ function initMap() {
         'Attn: Bernd Diedrichs<br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Iceland
@@ -558,7 +559,7 @@ function initMap() {
         'Attn: Geir Solberg<br>' +
         '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // India
@@ -571,7 +572,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Iraq
@@ -583,7 +584,7 @@ function initMap() {
         'Attn: Utku CIRIK<br>' +
         '<p><a class="link" href="mailto:ucirik@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Ireland
@@ -595,7 +596,7 @@ function initMap() {
         'Attn: Callum Brady<br>' +
         '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Japan
@@ -608,7 +609,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Kazakhstan (CIS)
@@ -620,7 +621,7 @@ function initMap() {
         'Attn: Nadzhot Kholikov<br>' +
         '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Korea
@@ -631,7 +632,7 @@ function initMap() {
         '+82-(0)31-889-2558<br>' +
         'Attn: Mr. Won-Yang Park<br>' +
         '<p><a class="link" href="mailto:wypark11@nate.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Kuwait
@@ -643,7 +644,7 @@ function initMap() {
         '+965-2242-8730<br>' +
         'Attn: Mr. Ajith Kumar<br>' +
         '<p><a class="link" href="mailto:contact@burganequip.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Kyrgyzstan (CIS)
@@ -655,7 +656,7 @@ function initMap() {
         'Attn: Nadzhot Kholikov<br>' +
         '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Latvia
@@ -667,7 +668,7 @@ function initMap() {
         'Attn: Edvinas Peleckas<br>' +
         '<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Lithuania
@@ -679,7 +680,7 @@ function initMap() {
         'Attn: Edvinas Peleckas<br>' +
         '<p><a class="link" href="mailto:ep@bincis.lt?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.bincis.lt/lt" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Malaysia
@@ -691,7 +692,7 @@ function initMap() {
         'Attn: H.S. Yap<br>' +
         '<p><a class="link" href="mailto:yhs@msisb.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://msisb.com/index.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Mali
@@ -703,7 +704,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Maroc
@@ -715,7 +716,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Mauritanie
@@ -727,7 +728,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Mexico
@@ -739,7 +740,7 @@ function initMap() {
         'Attn: Carlos Licona<br>' +
         '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Moldova (CIS)
@@ -751,7 +752,7 @@ function initMap() {
         'Attn: Oleksandr Volyanyk<br>' +
         '<p><a class="link" href="mailto:uniprom@uniprom.com.ua?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Nepal
@@ -763,7 +764,7 @@ function initMap() {
         'Attn: G. Parasuraman<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Netherlands
@@ -775,7 +776,7 @@ function initMap() {
         'Attn: Joop Mennink<br>' +
         '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://asintra.eu/nederlands.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // New Zealand
@@ -787,7 +788,7 @@ function initMap() {
         'Attn: Gabrielle Rogers<br>' +
         '<p><a class="link" href="mailto:gabrielle@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Niger
@@ -799,7 +800,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Norway
@@ -812,7 +813,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Oman
@@ -824,7 +825,7 @@ function initMap() {
         'Attn: G. Parasuraman<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Pakistan
@@ -836,7 +837,7 @@ function initMap() {
         'Attn: G. Parasuraman<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Panama
@@ -848,7 +849,7 @@ function initMap() {
         'Attn: Carlos Licona<br>' +
         '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Philippines
@@ -861,7 +862,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:vpulido@smi-group.com.ph?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.smi-group.com.ph" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Poland
@@ -873,7 +874,7 @@ function initMap() {
         'Attn: Krzysztof; Tomasz Roszkowski<br>' +
         '<p><a class="link" href="mailto:krzysztof@toropol.pl?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://toropol.pl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Portugal
@@ -885,7 +886,7 @@ function initMap() {
         'Attn: Carlos Blazquez<br>' +
         '<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://proetisa.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Qatar
@@ -898,7 +899,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:vikram@intermodalqatar.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.intermodalqatar.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // République Centrafricaine
@@ -910,7 +911,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Romania
@@ -922,7 +923,7 @@ function initMap() {
         'Attn: George Sicoe<br>' +
         '<p><a class="link" href="mailto:gsicoe@tecnos.ro?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.tecnos.ro" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Russia
@@ -935,7 +936,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@bavcompany.ru?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Sénégal
@@ -947,7 +948,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Singapore
@@ -959,7 +960,7 @@ function initMap() {
         'Attn: Yukihiro Kimura<br>' +
         '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Slovenia
@@ -971,7 +972,7 @@ function initMap() {
         'Attn: Bernd Diedrichs<br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Spain
@@ -983,7 +984,7 @@ function initMap() {
         'Attn: Carlos Blazquez<br>' +
         '<p><a class="link" href="mailto:calidad@proetisa.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://proetisa.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Sri Lanka
@@ -995,7 +996,7 @@ function initMap() {
         'Attn: G. Parasuranam<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Switzerland
@@ -1007,7 +1008,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Tajikistan (CIS)
@@ -1019,7 +1020,7 @@ function initMap() {
         'Attn: Nadzhot Kholikov<br>' +
         '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Tchad
@@ -1031,7 +1032,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Thailand
@@ -1043,7 +1044,7 @@ function initMap() {
         'Attn: Mr. Nantapong Phuetphon<br>' +
         '<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.asiatest.co.th/ATE.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Togo
@@ -1055,7 +1056,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Tunisia
@@ -1067,7 +1068,7 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Turkmenistan (CIS)
@@ -1079,7 +1080,7 @@ function initMap() {
         'Attn: Nadzhot Kholikov<br>' +
         '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Turkey
@@ -1092,7 +1093,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:ucirik@cfu.com.tr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.cfu.com.tr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Ukraine
@@ -1104,7 +1105,19 @@ function initMap() {
         'Attn: Oleksandr Volyanyk<br>' +
         '<p><a class="link" href="mailto:uniprom@uniprom.com.ua?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
+    ],
+
+    // United Arab Emirates
+    [
+      '<div class="map-text">' +
+        '<span>Burgan Equipment Co.</span><br>' +
+        '<hr>' +
+        '+971-4-2724759<br>' +
+        'Attn: Ajith Kumar<br>' +
+        '<p><a class="link" href="mailto:burganequipmentdubai@burganequipment.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.burganequipment.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
     ],
 
     // United Kingdom
@@ -1117,7 +1130,7 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Uzbekistan (CIS)
@@ -1129,7 +1142,7 @@ function initMap() {
         'Attn: Nadzhot Kholikov<br>' +
         '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Vietnam
@@ -1141,8 +1154,8 @@ function initMap() {
         'Attn: Yukihiro Kimura<br>' +
         '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
-    ]
+        '</div>',
+    ],
   ];
 
   // Display multiple markers on a map
@@ -1157,15 +1170,15 @@ function initMap() {
     marker = new google.maps.Marker({
       position: position,
       map: map,
-      title: markers[i][0]
+      title: markers[i][0],
     });
 
     // Allow each marker to have an info window
     google.maps.event.addListener(
       marker,
       'click',
-      (function(marker, i) {
-        return function() {
+      (function (marker, i) {
+        return function () {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
