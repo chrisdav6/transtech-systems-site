@@ -38,6 +38,7 @@ function initMap() {
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
+    ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -234,6 +235,18 @@ function initMap() {
     //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     //     '</div>',
     // ],
+
+    // WAPA
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
+        '<span>WAPA Annual Conference</span><br>' +
+        '<hr>' +
+        'Wisconsin Dells, WI<br>' +
+        'November 30-December 1, 2021<br>' +
+        '<p><a class="link" href="https://www.wispave.org/wapas-62nd-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // ConExpo
     [
