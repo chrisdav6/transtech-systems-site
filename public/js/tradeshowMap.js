@@ -37,6 +37,7 @@ function initMap() {
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
+    ['MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
@@ -221,6 +222,18 @@ function initMap() {
         'Charlotte, NC<br>' +
         'February 23-25, 2022<br>' +
         '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //TXAPA Maps
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+        '<span>Maps Conference</span><br>' +
+        '<hr>' +
+        'Waco, TX<br>' +
+        'March 8-9, 2022<br>' +
+        '<p><a class="link" href="https://www.texasasphalt.org/maps" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
