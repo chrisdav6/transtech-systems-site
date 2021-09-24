@@ -35,7 +35,7 @@ function initMap() {
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
-    ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+    // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     ['MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -202,16 +202,16 @@ function initMap() {
     ],
 
     //TXAPA
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPA</span><br>' +
-        '<hr>' +
-        'San Antonio, TX<br>' +
-        'September 21-24, 2021<br>' +
-        '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+    //     '<span>TXAPA</span><br>' +
+    //     '<hr>' +
+    //     'San Antonio, TX<br>' +
+    //     'September 21-24, 2021<br>' +
+    //     '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Pavement Expo
     [
