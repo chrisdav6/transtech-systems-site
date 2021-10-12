@@ -60,6 +60,7 @@ function initMap() {
     ['TransTech Europe (Wirtgen Budapest Kft.), Hungary', 47.171044, 19.215088],
     ['ABAS AS, Iceland', 64.883646, -18.549413],
     ['M/s. Taisei International, India', 22.755921, 79.40918],
+    ['PT Panairsan Pratama, Indonesia', -2.054191, 120.550732],
     ['CFU International Trade & Services, Iraq', 32.850776, 42.844469],
     ['JR Technical Services, Ireland', 53.362026, -8.006287],
     ['Nishio Rent All Co., Ltd., Japan', 35.871247, 138.295898],
@@ -572,6 +573,18 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // Indonesia
+    [
+      '<div class="map-text">' +
+        '<span>PT Panairsan Pratama</span><br>' +
+        '<hr>' +
+        '+62-21-5807881<br>' +
+        'Attn: Irsan Aditama<br>' +
+        '<p><a class="link" href="mailto:irsan@panairsan-group.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.panairsan.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
