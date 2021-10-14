@@ -12,7 +12,7 @@ function initMap() {
       lat: 37,
       lng: -96.3,
     },
-    zoom: 4.75,
+    zoom: 4.6,
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -24,7 +24,7 @@ function initMap() {
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    ['CalAPA, Sacramento, CA', 38.572388, -121.47897],
+    // ['CalAPA, Sacramento, CA', 38.572388, -121.47897],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
@@ -72,16 +72,16 @@ function initMap() {
     // ],
 
     //CalAPA
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-        '<span>CalAPA Fall Conference</span><br>' +
-        '<hr>' +
-        'Sacramento, CA<br>' +
-        'October 13, 2021<br>' +
-        '<p><a class="link" href="https://www.calapa.net/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+    //     '<span>CalAPA Fall Conference</span><br>' +
+    //     '<hr>' +
+    //     'Sacramento, CA<br>' +
+    //     'October 13, 2021<br>' +
+    //     '<p><a class="link" href="https://www.calapa.net/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Intermat ASEAN
     // [
