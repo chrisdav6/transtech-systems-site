@@ -55,6 +55,7 @@ function initMap() {
     ['Beratest AG, Gabon', -0.659165, 11.469727],
     ['BAV Group Ltd. , Georgia', 42.067034, 43.763783],
     ['TransTech Europe, Germany', 51.220647, 10.524902],
+    ['IKEYS Engineering Services, Ghana', 7.767872, -1.127134],
     ['Beratest AG, Guinée', 10.941192, -10.678711],
     ['Beratest AG, Guinée-Bissau', 12.084982, -14.902954],
     ['TransTech Europe (Wirtgen Budapest Kft.), Hungary', 47.171044, 19.215088],
@@ -512,6 +513,18 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // Ghana
+    [
+      '<div class="map-text">' +
+        '<span>IKEYS Engineering Services</span><br>' +
+        '<hr>' +
+        '+233-245-253462<br>' +
+        'Attn: Isaac Acquah<br>' +
+        '<p><a class="link" href="mailto:acquahike9@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://ikeysengineeringservices.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
