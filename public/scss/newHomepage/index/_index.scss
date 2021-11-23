@@ -183,6 +183,10 @@ body {
   text-align: center;
   padding: 100px 2em;
 
+  @media screen and (max-width: 768px) {
+    padding: 50px 1em;
+  }
+
   .content {
     max-width: 1200px;
 
@@ -217,6 +221,11 @@ body {
   justify-content: center;
   text-align: center;
   padding: 100px 2em;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 1em;
+  }
 
   .content {
     max-width: 1200px;
@@ -357,7 +366,7 @@ body {
     @media screen and (max-width: 768px) {
       .timeline {
         &::before {
-          left: 50px;
+          left: 10px;
         }
 
         .timeline-img {
@@ -371,6 +380,9 @@ body {
         }
 
         .timeline-item {
+          margin-left: -40px;
+          width: 110%;
+
           &:nth-child(even) {
             .timeline-content {
               float: none;
