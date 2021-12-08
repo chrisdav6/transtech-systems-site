@@ -491,7 +491,8 @@ app.post('/products/salesRequest', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com,tapkarian@transtechsys.com,jmorse@transtechsys.com', // list of receivers
+        // to: 'sales@transtechsys.com,tapkarian@transtechsys.com,jmorse@transtechsys.com',
+        to: 'sales@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Sales Request Form', // Subject line
         text: message, // plain text body
@@ -614,18 +615,21 @@ app.post('/products/repairRequest', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+      if (company !== 'google') {
+        //Trying to stop spam coming in with google as company name
+        // send mail with defined transport object
+        transporter.sendMail(mailOptions, (error, info) => {
+          if (error) {
+            return console.log(error);
+          }
+          console.log('Message sent: %s', info.messageId);
+          // Preview only available when sending through an Ethereal account
+          console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
+          // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+          // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+        });
+      }
     });
     req.flash('success', 'Repair request has been sent. Thank You!');
     res.redirect('/products/repairRequest');
