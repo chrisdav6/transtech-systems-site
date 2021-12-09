@@ -41,7 +41,7 @@ function initMap() {
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, Minneapolis, MN', 44.968247, -93.264742],
-    ['Illinois Bituminous Conference, Champaign, IL', 40.109752, -88.260804],
+    // ['Illinois Bituminous Conference, Champaign, IL', 40.109752, -88.260804],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -276,16 +276,16 @@ function initMap() {
     // ],
 
     // Illinois Bituminous Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/illinois-bituminous-logo.png">' +
-        '<span>Illinois Bituminous Conference</span><br>' +
-        '<hr>' +
-        'Champaign, IL<br>' +
-        'December 7-8, 2021<br>' +
-        '<p><a class="link" href="https://ict.illinois.edu/outreach/bituminous" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/illinois-bituminous-logo.png">' +
+    //     '<span>Illinois Bituminous Conference</span><br>' +
+    //     '<hr>' +
+    //     'Champaign, IL<br>' +
+    //     'December 7-8, 2021<br>' +
+    //     '<p><a class="link" href="https://ict.illinois.edu/outreach/bituminous" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // ConExpo
     [
