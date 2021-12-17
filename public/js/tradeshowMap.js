@@ -291,7 +291,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
-        '<span>ConExpo</span><br>' +
+        '<span>ConExpo - Booth #C-30867</span><br>' +
         '<hr>' +
         'Las Vegas, NV<br>' +
         'March 14-18, 2023<br>' +
