@@ -222,7 +222,7 @@ function initMap() {
         '<span>National Pavement Expo - Booth #634</span><br>' +
         '<hr>' +
         'Charlotte, NC<br>' +
-        'February 23-25, 2022<br>' +
+        'February 23-26, 2022<br>' +
         '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
