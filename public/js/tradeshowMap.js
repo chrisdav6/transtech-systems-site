@@ -231,7 +231,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>Maps Conference</span><br>' +
+        '<span>Maps Conference - Booth #14</span><br>' +
         '<hr>' +
         'Waco, TX<br>' +
         'March 8-9, 2022<br>' +
