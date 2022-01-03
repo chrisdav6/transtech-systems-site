@@ -101,7 +101,7 @@ app.get('/*', function (req, res, next) {
   else next();
 });
 
-//Use date for footer copyright
+//Use date for footer copyright - added comment to update to 2022
 app.locals.date = new Date().getFullYear();
 
 //NewHomepage
