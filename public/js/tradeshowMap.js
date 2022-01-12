@@ -151,7 +151,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-        '<span>RMACES</span><br>' +
+        '<span>RMACES - Booth #1458</span><br>' +
         '<hr>' +
         'Denver, CO<br>' +
         'February 22-24, 2022<br>' +
