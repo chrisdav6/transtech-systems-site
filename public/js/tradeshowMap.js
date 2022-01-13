@@ -28,7 +28,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
-    // ['TRB, Washington D.C.', 38.911744, -77.018697],
+    ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['MAPA, Columbia, MO', 38.948857, -92.334012],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
@@ -124,16 +124,16 @@ function initMap() {
     // ],
 
     // TRB
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-    //     '<span>TRB 101st Annual Meeting - Booth #854</span><br>' +
-    //     '<hr>' +
-    //     'Washington D.C.<br>' +
-    //     'January 9-13, 2022<br>' +
-    //     '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+        '<span>TRB 102nd Annual Meeting</span><br>' +
+        '<hr>' +
+        'Washington D.C.<br>' +
+        'January 8-12, 2023<br>' +
+        '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // MAPA (Missouri)
     // [
