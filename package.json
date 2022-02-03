@@ -9,10 +9,6 @@
   "keywords": [
     "Bootstrap 4"
   ],
-  "engines": {
-    "npm": ">=6.4.0",
-    "node": ">=14.16.0"
-  },
   "author": "Chris Davis",
   "license": "ISC",
   "dependencies": {
