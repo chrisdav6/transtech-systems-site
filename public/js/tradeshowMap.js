@@ -30,7 +30,7 @@ function initMap() {
     // ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['MAPA, Columbia, MO', 38.948857, -92.334012],
-    ['RMACES, Denver, CO', 39.771474, -104.806882],
+    // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
@@ -148,16 +148,16 @@ function initMap() {
     // ],
 
     // RMACES
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-        '<span>RMACES - Booth #1458</span><br>' +
-        '<hr>' +
-        'Denver, CO<br>' +
-        'February 22-24, 2022<br>' +
-        '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
+    //     '<span>RMACES - Booth #1458</span><br>' +
+    //     '<hr>' +
+    //     'Denver, CO<br>' +
+    //     'February 22-24, 2022<br>' +
+    //     '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //APAM
     [
