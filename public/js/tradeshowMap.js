@@ -38,7 +38,7 @@ function initMap() {
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     ['MAPS Conference, Waco, TX', 31.554423, -97.162525],
-    // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
+    ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, Minneapolis, MN', 44.968247, -93.264742],
     [
@@ -244,16 +244,16 @@ function initMap() {
     ],
 
     // NEAUPG
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-    //     '<span>NEAUPG</span><br>' +
-    //     '<hr>' +
-    //     'Albany, NY<br>' +
-    //     'October 27-28, 2021<br>' +
-    //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+        '<span>NEAUPG</span><br>' +
+        '<hr>' +
+        'Albany, NY<br>' +
+        'November 2-3, 2022<br>' +
+        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // WAPA
     // [
