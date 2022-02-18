@@ -135,7 +135,6 @@ function initMap() {
         'Attn: Max Gysin<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -244,7 +243,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -293,7 +291,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -305,7 +302,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -404,7 +400,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -428,7 +423,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -487,7 +481,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -536,7 +529,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -548,7 +540,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -729,7 +720,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -741,7 +731,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -753,7 +742,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -825,7 +813,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -936,7 +923,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -973,7 +959,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -1033,7 +1018,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -1057,7 +1041,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -1081,7 +1064,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -1093,7 +1075,6 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.beratest.com/default.asp?lang=e" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
