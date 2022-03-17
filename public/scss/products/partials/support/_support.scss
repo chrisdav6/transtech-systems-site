@@ -11,27 +11,34 @@
     background: $dark-gray;
     margin-bottom: 2em;
   }
-  
+
   h3 {
     font-size: 1.7rem;
     background: $logo-yellow;
     display: inline-block;
     padding: .35em .5em;
   }
-  
+
   .card {
     .swm {
       max-width: 130px;
       display: block;
       margin: 0 auto;
     }
+
     @include mq {
-     .swm {
+      .swm {
         max-width: 200px;
       }
     }
   }
-  
+
+}
+
+.packaging-alert {
+  font-weight: bold;
+  background: $logo-yellow;
+  padding: .25em .5em;
 }
 
 .hearAbout {
@@ -48,7 +55,7 @@
 
 .newsModal p {
   font-size: 1.1rem;
-  
+
   .link {
     color: black;
     padding: 0 .3em;
@@ -72,7 +79,7 @@
 
 .phone-link {
   color: $dark-gray;
-  
+
   &:hover,
   &:active {
     color: $dark-gray;
