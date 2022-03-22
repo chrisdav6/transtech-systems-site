@@ -40,7 +40,7 @@ function initMap() {
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     // ['MAPS Conference, Waco, TX', 31.554423, -97.162525],
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
-    // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
+    ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, Minneapolis, MN', 44.968247, -93.264742],
     [
       '63rd Illinois Bituminous Paving Conference, Champaign, IL',
@@ -269,16 +269,16 @@ function initMap() {
     ],
 
     // WAPA
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
-    //     '<span>WAPA Annual Conference</span><br>' +
-    //     '<hr>' +
-    //     'Wisconsin Dells, WI<br>' +
-    //     'November 30-December 1, 2021<br>' +
-    //     '<p><a class="link" href="https://www.wispave.org/wapas-62nd-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
+        '<span>WAPA 63rd Annual Conference</span><br>' +
+        '<hr>' +
+        'Wisconsin Dells, WI<br>' +
+        'November 29-30, 2022<br>' +
+        '<p><a class="link" href="https://www.wispave.org/wapas-63rd-annual-conference-and-business-meeting-save-the-date" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Minnesota Asphalt Conference
     // [
