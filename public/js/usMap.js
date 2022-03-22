@@ -10,20 +10,20 @@ function initMap() {
   var mapOptions = {
     center: {
       lat: 35.643,
-      lng: -90.91
+      lng: -90.91,
     },
     zoom: 4,
     mapTypeId: 'roadmap',
-    scrollwheel: false
+    scrollwheel: false,
   };
 
   var icons = {
     transtech: {
-      icon: '../img/transtech-map-icon-new.png'
+      icon: '../img/transtech-map-icon-new.png',
     },
     direct: {
-      icon: '../img/transtech-map-icon-direct.png'
-    }
+      icon: '../img/transtech-map-icon-direct.png',
+    },
   };
 
   // Display a map on the page
@@ -84,7 +84,7 @@ function initMap() {
     ['TransTech Systems, Washington', 47.426994, -119.815286, 'transtech'],
     ['TransTech Systems, West Virginia', 38.70075, -80.846758, 'transtech'],
     ['TransTech Systems, Wisconsin', 44.878719, -89.658613, 'direct'],
-    ['TransTech Systems, Wyoming', 43.347377, -107.236324, 'transtech']
+    ['TransTech Systems, Wyoming', 43.347377, -107.236324, 'transtech'],
   ];
 
   // Info Window Content
@@ -98,7 +98,7 @@ function initMap() {
         'Attn: Paul Eikenberry<br>' +
         '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Alaska
@@ -108,7 +108,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Arizona
@@ -119,7 +119,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Arkansas
@@ -129,7 +129,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // California
@@ -140,7 +140,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Colorado
@@ -150,7 +150,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Connecticut
@@ -161,7 +161,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Delaware
@@ -178,7 +178,7 @@ function initMap() {
         '<p class="mt-0"><a class="link" href="mailto:mikechenet@gtmidatlantic.com?subject=Inquiry%20from%20TransTech%20Systems%20Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<hr>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Jacksonville Florida
@@ -190,7 +190,7 @@ function initMap() {
         'Attn: Scot Hall<br>' +
         '<p><a class="link" href="mailto:scothall@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Largo Florida
@@ -202,7 +202,7 @@ function initMap() {
         'Attn: Stephanie Miller<br>' +
         '<p><a class="link" href="mailto:stephanie@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Orlando Florida
@@ -214,7 +214,7 @@ function initMap() {
         'Attn: Sam Goodson<br>' +
         '<p><a class="link" href="mailto:sgoodson@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Riviera Beach Florida
@@ -226,7 +226,7 @@ function initMap() {
         'Attn: Lou Lemenze<br>' +
         '<p><a class="link" href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Georgia
@@ -236,7 +236,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Hawaii
@@ -246,7 +246,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Idaho
@@ -256,7 +256,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Illinois
@@ -267,7 +267,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Indiana
@@ -278,7 +278,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Iowa
@@ -289,7 +289,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Kansas
@@ -299,7 +299,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Kentucky
@@ -309,7 +309,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Louisiana
@@ -321,7 +321,7 @@ function initMap() {
         'Attn: Paul Eikenberry<br>' +
         '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Maine
@@ -332,7 +332,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Maryland
@@ -349,7 +349,7 @@ function initMap() {
         '<p class="mt-0"><a class="link" href="mailto:mikechenet@gtmidatlantic.com?subject=Inquiry%20from%20TransTech%20Systems%20Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<hr>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Massachusetts
@@ -360,7 +360,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Michigan
@@ -371,7 +371,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Minnesota
@@ -382,7 +382,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Mississippi
@@ -394,7 +394,7 @@ function initMap() {
         'Attn: Paul Eikenberry<br>' +
         '<p><a class="link" href="mailto:peikenberry@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Missouri
@@ -405,7 +405,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Montana
@@ -415,7 +415,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Nebraska
@@ -425,7 +425,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Nevada
@@ -435,7 +435,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // New Hampshire
@@ -446,7 +446,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // New Jersey
@@ -463,7 +463,7 @@ function initMap() {
         '<p class="mt-0"><a class="link" href="mailto:mikechenet@gtmidatlantic.com?subject=Inquiry%20from%20TransTech%20Systems%20Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<hr>' +
         '<p class="mt-0"><a class="link" href="https://www.gtmidatlantic.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // New Mexico
@@ -474,7 +474,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // New York
@@ -484,7 +484,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // North Carolina
@@ -495,7 +495,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // North Dakota
@@ -505,7 +505,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Ohio
@@ -516,7 +516,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Oklahoma
@@ -526,7 +526,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Oregon
@@ -536,7 +536,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Pennsylvania
@@ -548,7 +548,7 @@ function initMap() {
         'Attn: Matt Wilson<br>' +
         '<p><a class="link" href="mailto:mattwilson@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.grofftractor.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Puerto Rico
@@ -560,7 +560,7 @@ function initMap() {
         'Attn: Carlos Licona<br>' +
         '<p><a class="link" href="mailto:clicona@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Rhode Island
@@ -571,7 +571,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // South Carolina
@@ -582,7 +582,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // South Dakota
@@ -592,7 +592,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Tennessee
@@ -602,7 +602,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Texas
@@ -613,7 +613,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Utah
@@ -623,7 +623,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Vermont
@@ -634,7 +634,7 @@ function initMap() {
         '860-883-6470<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Virginia
@@ -644,7 +644,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Washington
@@ -654,7 +654,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // West Virginia
@@ -664,7 +664,7 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Wisconsin
@@ -675,7 +675,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
+        '</div>',
     ],
 
     // Wyoming
@@ -685,8 +685,8 @@ function initMap() {
         '<hr>' +
         '1-800-724-6306<br>' +
         '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '</div>'
-    ]
+        '</div>',
+    ],
   ];
 
   // Display multiple markers on a map
@@ -703,20 +703,20 @@ function initMap() {
         position: position,
         map: map,
         title: markers[i][0],
-        icon: icons.transtech.icon
+        icon: icons.transtech.icon,
       });
     } else if (markers[i][3] == 'direct') {
       marker = new google.maps.Marker({
         position: position,
         map: map,
         title: markers[i][0],
-        icon: icons.direct.icon
+        icon: icons.direct.icon,
       });
     } else {
       marker = new google.maps.Marker({
         position: position,
         map: map,
-        title: markers[i][0]
+        title: markers[i][0],
       });
     }
 
@@ -724,8 +724,8 @@ function initMap() {
     google.maps.event.addListener(
       marker,
       'click',
-      (function(marker, i) {
-        return function() {
+      (function (marker, i) {
+        return function () {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
