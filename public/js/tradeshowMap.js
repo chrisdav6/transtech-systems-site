@@ -29,6 +29,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
@@ -133,6 +134,18 @@ function initMap() {
         'Indianapolis, IN<br>' +
         'December 14-16, 2022<br>' +
         '<p><a class="link" href="http://mms.asphaltindiana.org/Calendar/moreinfo.php?eventid=69409" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // APAI Joint Summer Meeting
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
+        '<span>APAI/IMAA Joint Summer Meeting</span><br>' +
+        '<hr>' +
+        'South Bend, IN<br>' +
+        'July 15-17, 2022<br>' +
+        '<p><a class="link" href="https://mms.asphaltindiana.org//Calendar/moreinfo.php?eventid=69410" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
