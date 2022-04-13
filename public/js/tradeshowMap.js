@@ -40,6 +40,7 @@ function initMap() {
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     ['NAPA Midyear Meeting, Santa Barbara , CA', 34.429663, -119.711756],
+    ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     // ['MAPS Conference, Waco, TX', 31.554423, -97.162525],
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -268,6 +269,18 @@ function initMap() {
         'Santa Barbara , CA<br>' +
         'July 10-13, 2022<br>' +
         '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-midyear-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //NAPA Annual Meeting
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+        '<span>NAPA 2023 Annual Meeting</span><br>' +
+        '<hr>' +
+        'Miami Beach, FL<br>' +
+        'February 5-8, 2023<br>' +
+        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
