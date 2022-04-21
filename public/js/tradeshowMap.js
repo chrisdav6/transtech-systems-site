@@ -38,7 +38,7 @@ function initMap() {
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
-    ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
+    // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     ['NAPA Midyear Meeting, Santa Barbara , CA', 34.429663, -119.711756],
     ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
@@ -249,16 +249,16 @@ function initMap() {
     ],
 
     //TXAPA Quarterly Membership Meeting
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPA Quarterly Membership Meeting</span><br>' +
-        '<hr>' +
-        'Buda, TX<br>' +
-        'April 20, 2022<br>' +
-        '<p><a class="link" href="https://www.texasasphalt.org/ev_calendar_day.asp?date=4/20/2022&eventid=284" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+    //     '<span>TXAPA Quarterly Membership Meeting</span><br>' +
+    //     '<hr>' +
+    //     'Buda, TX<br>' +
+    //     'April 20, 2022<br>' +
+    //     '<p><a class="link" href="https://www.texasasphalt.org/ev_calendar_day.asp?date=4/20/2022&eventid=284" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //NAPA Midyear Meeting
     [
