@@ -1,18 +1,18 @@
 <% include ./partials/header %>
 
-<!-- Newsletter Sign Up Node Flash Message -->
-<% if(flash && flash.success && flash.success.length > 0) { %>
-<div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
-  <%= flash.success %>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<% } %>
-<!-- /Newsletter Sign Up Node Flash Message -->
+  <!-- Newsletter Sign Up Node Flash Message -->
+  <% if(flash && flash.success && flash.success.length> 0) { %>
+    <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+      <%= flash.success %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <% } %>
+      <!-- /Newsletter Sign Up Node Flash Message -->
 
-<!--Tradeshow Season Banner -->
-<!-- <a href="/products/tradeshows" class="tradeshowSeason">
+      <!--Tradeshow Season Banner -->
+      <!-- <a href="/products/tradeshows" class="tradeshowSeason">
   <div class="mr-2">
     <i class="fas fa-road"></i>
   </div>
@@ -22,360 +22,360 @@
   </div>
 </a> -->
 
-<!--Covid 19 Banner -->
-<a href="http://034fe90.netsolhost.com/pdf/covid19.pdf" target="_blank" class="tradeshowSeason">
+      <!--Covid 19 Banner -->
+      <!-- <a href="http://034fe90.netsolhost.com/pdf/covid19.pdf" target="_blank" class="tradeshowSeason">
   <div class="mr-2">
     <i class="fas fa-exclamation-triangle"></i>
   </div>
   <div>
     <h4>COVID-19 Notice</h4>
   </div>
-</a>
+</a> -->
 
-<!-- hero section -->
-<section id="hero" class="d-flex">
-  <div class="container my-auto text-center">
+      <!-- hero section -->
+      <section id="hero" class="d-flex">
+        <div class="container my-auto text-center">
 
-    <div class="row mb-2 mb-md-5">
-      <div class="col col-md-8 col-lg-6 mx-auto">
-        <img class="img-fluid hero-logo" src="../img/logo-lg.png" alt="Asphalt Paved Road Close Up">
-      </div>
-    </div>
+          <div class="row mb-2 mb-md-5">
+            <div class="col col-md-8 col-lg-6 mx-auto">
+              <img class="img-fluid hero-logo" src="../img/logo-lg.png" alt="Asphalt Paved Road Close Up">
+            </div>
+          </div>
 
-    <div class="row">
-      <div class="col">
-        <hr class="divider">
-        <h1 class="mt-2 mt-md-5">
-          Experts in <span class="non-nuclear">Non-Nuclear</span><br> Asphalt &amp; Soil Density Technology
-        </h1>
-      </div>
-    </div>
+          <div class="row">
+            <div class="col">
+              <hr class="divider">
+              <h1 class="mt-2 mt-md-5">
+                Experts in <span class="non-nuclear">Non-Nuclear</span><br> Asphalt &amp; Soil Density Technology
+              </h1>
+            </div>
+          </div>
 
-    <div class="row d-none d-md-block">
-      <a href="#gaugesMap" class="mx-auto text-light"><i class="fas fa-angle-down fa-4x"></i></a>
-    </div>
+          <div class="row d-none d-md-block">
+            <a href="#gaugesMap" class="mx-auto text-light"><i class="fas fa-angle-down fa-4x"></i></a>
+          </div>
 
-  </div>
-</section>
-<!-- /hero section -->
+        </div>
+      </section>
+      <!-- /hero section -->
 
 
 
-<!-- gauge map section -->
-<section id="gaugesMap" class="d-none d-md-flex flex-column text-center">
+      <!-- gauge map section -->
+      <section id="gaugesMap" class="d-none d-md-flex flex-column text-center">
 
-  <div class="my-auto align-content-center">
+        <div class="my-auto align-content-center">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <h1 class="title">Our Non-Nuclear Technology Used Around the World!</h1>
-          <p class="lead about-text mb-0">
-            TransTech Systems Non-Nuclear density gauges are sold by 24 exclusive international distributors into 87
-            countries
-          </p>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <h1 class="title">Our Non-Nuclear Technology Used Around the World!</h1>
+                <p class="lead about-text mb-0">
+                  TransTech Systems Non-Nuclear density gauges are sold by 24 exclusive international distributors into 87
+                  countries
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- Google Map Script -->
+            <script src="../js/indexMap.js"></script>
+            <section id="indexMap" class="my-5"></section>
+          </div>
+
+          <div class="d-none d-md-block">
+            <a href="#about" class="mx-auto"><i class="fas fa-angle-down fa-4x"></i></a>
+          </div>
+
+        </div>
+      </section>
+      <!-- /gaugesMap section -->
+
+
+
+      <!-- about section -->
+      <section id="about" class="d-flex text-center text-light">
+        <div class="container my-auto align-content-center">
+          <h1>About TransTech Systems Products</h1>
+          <hr>
+
+          <div class="row">
+            <div class="col mx-auto">
+              <p class="lead about-text">The founders of TransTech Systems recognized from the start that many construction,
+                civil engineering and other disciplines
+                continue to be handled by methods that have changed very little over the decades. TransTech responded by
+                providing the
+                first non-nuclear density gauge technology. Holding the original patent, TransTech strives to continue to push
+                this
+                technology to what the industry needs. Asphalt and soil non-nuclear density testing is our expertise, and we
+                look
+                forward to pursuing additional applications of this technology.
+              </p>
+            </div>
+          </div>
+
+          <div class="row d-none d-md-block">
+            <a href="#featured" class="mx-auto text-light"><i class="fas fa-angle-down fa-4x"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- /about section -->
+
+
+
+      <!-- featured -->
+      <section id="featured" class="bg-light text-center">
+        <div class="container">
+          <h1 class="title">Our Products</h1>
+          <hr>
+
+          <!-- row - non-nuclear -->
+          <div class="row align-items-center mb-4">
+            <div class="col-lg-4">
+              <h1 class="category-title">Non-Nuclear</h1>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card border-none">
+                <a href="/products/pqi380" class="card-link">
+                  <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/pqi380-featured.png" alt="Non-Nuclear Asphalt Density Gauge">
+                  <div class="card-body">
+                    <h3 class="card-title">PQI 380 Asphalt Density Gauge</h3>
+                </a>
+                <p class="lead">
+                  Our flagship product<br>
+                  the PQI 380 conforms to<br>
+                  <a class="standard-link" href="https://www.astm.org/Standards/D7113.htm" target="_blank">ASTM D7113</a><br>
+                  <a class="standard-link" href="https://www.transportation.org" target="_blank">AASHTO T 343-12</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-none">
+              <a href="/products/sdg200" class="card-link">
+                <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/sdg200-featured.png" alt="Non-Nuclear Soil Density Gauge">
+                <div class="card-body">
+                  <h3 class="card-title">SDG 200 Soil Density Gauge</h3>
+              </a>
+              <p class="lead">
+                Our next generation<br>
+                soil density gauge<br>
+                the SDG 200 conforms to<br>
+                <a class="standard-link" href="https://www.astm.org/Standards/D7830.htm" target="_blank">ASTM D7830</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- /row - non-nuclear -->
+
+        <!-- row -compaction -->
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-4 order-2 order-lg-1">
+            <div class="card border-none">
+              <a href="/products/nwjm" class="card-link">
+                <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/nwjm-featured.png" alt="Notched Wedge Joint Maker Screed Attachment">
+                <div class="card-body">
+                  <h3 class="card-title">NWJM - Notched Wedge Joint Maker</h3>
+              </a>
+              <p class="lead">Screed attachment that shapes the longitudinal joint as the hot mix asphalt is spread</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 order-3 order-lg-2">
+          <div class="card border-none">
+            <a href="/products/swm" class="card-link">
+              <img class="swm mx-auto mt-4 mt-lg-0" src="../img/swm-featured.png" alt="Shoulder Wedge Maker Screed Attachment">
+              <div class="card-body">
+                <h3 class="card-title">SWM - Shoulder Wedge Maker</h3>
+            </a>
+            <p class="lead">Screed attachment that shapes a 30&#176; beveled shoulder edge on asphalt roads</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4 order-1 order-lg-3">
+          <h1 class="category-title">Compaction</h1>
+        </div>
+        </div>
+        <!-- /row -compaction -->
+
+        <!-- row - temp sensing -->
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <h1 class="category-title">Temp Sensing</h1>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card border-none">
+              <a href="/products/pts3000" class="card-link">
+                <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/pts3000-featured.png" alt="PTS 3000 Pavement Temperature Sentry">
+                <div class="card-body">
+                  <h3 class="card-title">PTS3000 - Asphalt Pavement Temp Sentry</h3>
+              </a>
+              <p class="lead">Mounted at the roller operator station, the PTS3000 provide's accurate HMA mat temperatures on
+                the run</p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!-- /row - temp sensing -->
+
+        </div>
+      </section>
+      <!-- /featured -->
+
+
+
+      <!-- trade-up -->
+      <section id="trade-up" class="text-center text-light">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-8 order-2 order-lg-1">
+              <h1>Trade-In / Trade-Up Program</h1>
+              <hr>
+              <p class="lead mb-5">Your nuclear density gauge or legacy PQI 300/301 could earn you up to $500 toward the
+                purchase of a TransTech Systems Non-Nuclear PQI 380 asphalt density gauge</p>
+              <a href="../pdf/nuclearTradeIn.pdf" target="_blank" class="btn btn-outline-success trade-btn btn-large mr-0 mr-md-4 mb-3 mb-md-0" role="button">Nuclear
+                Gauge</a>
+              <a href="/products/tradeUp" class="btn btn-outline-success trade-btn btn-large" role="button">Legacy PQI
+                300/301</a>
+            </div>
+
+            <div class="col-lg-4 trade-icon-div order-1 order-lg-2">
+              <i class="fas fa-recycle"></i>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- /trade-up -->
+
+
+
+      <!-- announcments -->
+      <section id="announcements" class="text-center bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-4 announce-icon-div">
+              <i class="fas fa-bullhorn" data-fa-transform="flip-h"></i>
+            </div>
+
+            <div class="col-lg-8">
+              <h1 class="title">Discontinued Gauges</h1>
+              <hr>
+              <p class="lead mb-5">A few of our legacy non-nuclear asphalt density gauges have been discontinued, select your
+                gauge and click below to find out more</p>
+              <button class="btn btn-outline-dark announce-btn btn-large mr-0 mr-md-4 mb-3 mb-md-0" type="button" data-toggle="modal" data-target=".pqi300-modal">PQI 300</button>
+              <button class="btn btn-outline-dark announce-btn btn-large" type="button" data-toggle="modal" data-target=".pqi301-modal">PQI 301</button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- /announcments -->
+
+
+
+      <!-- Modals -->
+
+      <!-- PQI 300 Modal -->
+      <div class="modal fade pqi300-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">PQI 300 Discontinued</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <img class="my-5" src="../img/pqi300.png" alt="Discontinued PQI 300 Non-Nuclear Asphalt Density Gauge">
+              <p class="lead">
+                As of December 31, 2014, TransTech will no longer repair the PQI Model 300, due to the
+                unavailability of the electronic component parts used in this product. We are also not
+                able to perform an upgrade on this equipment.
+              </p>
+              <p class="lead">
+                If your PQI 300 is still in good working condition and you wish to continue using it,
+                please do so! TransTech will be able to perform annual calibration on the PQI 300, just
+                not provide repair parts or service.
+              </p>
+              <p class="lead">
+                With this in mind, you may want to consider upgrading to the latest in the non-nuclear
+                technology. The PQI Model 380 can help your company stay on track with your paving
+                practices.
+              </p>
+              <p class="lead">
+                If you have any questions about the discontinuation of the PQI 300, or about the latest
+                model PQI 380, please contact your local representative at 518-370-5558 or 1-800-724-6306.
+              </p>
+              <p class="lead">
+                We truly appreciate our past business with you, and look forward to our continue future
+                together.
+              </p>
+              <p class="lead">
+                A list of our distributors can be found on our website:
+              </p>
+              <div class="distributor-buttons mt-4 mb-3">
+                <a href="/products/distributorsUnitedStates" class="btn btn-outline-success btn-lg d-block d-md-inline-block mr-0 mr-md-4 mb-3 mb-lg-0">USA
+                  Distributors</a>
+                <a href="/products/distributorsInternational" class="btn btn-outline-success btn-lg d-block d-md-inline-block">International Distributors</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div>
-      <!-- Google Map Script -->
-      <script src="../js/indexMap.js"></script>
-      <section id="indexMap" class="my-5"></section>
-    </div>
-
-    <div class="d-none d-md-block">
-      <a href="#about" class="mx-auto"><i class="fas fa-angle-down fa-4x"></i></a>
-    </div>
-
-  </div>
-</section>
-<!-- /gaugesMap section -->
 
 
-
-<!-- about section -->
-<section id="about" class="d-flex text-center text-light">
-  <div class="container my-auto align-content-center">
-    <h1>About TransTech Systems Products</h1>
-    <hr>
-
-    <div class="row">
-      <div class="col mx-auto">
-        <p class="lead about-text">The founders of TransTech Systems recognized from the start that many construction,
-          civil engineering and other disciplines
-          continue to be handled by methods that have changed very little over the decades. TransTech responded by
-          providing the
-          first non-nuclear density gauge technology. Holding the original patent, TransTech strives to continue to push
-          this
-          technology to what the industry needs. Asphalt and soil non-nuclear density testing is our expertise, and we
-          look
-          forward to pursuing additional applications of this technology.
-        </p>
-      </div>
-    </div>
-
-    <div class="row d-none d-md-block">
-      <a href="#featured" class="mx-auto text-light"><i class="fas fa-angle-down fa-4x"></i></a>
-    </div>
-  </div>
-</section>
-<!-- /about section -->
-
-
-
-<!-- featured -->
-<section id="featured" class="bg-light text-center">
-  <div class="container">
-    <h1 class="title">Our Products</h1>
-    <hr>
-
-    <!-- row - non-nuclear -->
-    <div class="row align-items-center mb-4">
-      <div class="col-lg-4">
-        <h1 class="category-title">Non-Nuclear</h1>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="card border-none">
-          <a href="/products/pqi380" class="card-link">
-            <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/pqi380-featured.png" alt="Non-Nuclear Asphalt Density Gauge">
-            <div class="card-body">
-              <h3 class="card-title">PQI 380 Asphalt Density Gauge</h3>
-          </a>
-          <p class="lead">
-            Our flagship product<br>
-            the PQI 380 conforms to<br>
-            <a class="standard-link" href="https://www.astm.org/Standards/D7113.htm" target="_blank">ASTM D7113</a><br>
-            <a class="standard-link" href="https://www.transportation.org" target="_blank">AASHTO T 343-12</a>
-          </p>
+      <!-- PQI 301 Modal -->
+      <div class="modal fade pqi301-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">PQI 301 Discontinued</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <img class="my-5" src="../img/pqi-301.png" alt="Discontinued PQI 301 Non-Nuclear Asphalt Density Gauge">
+              <p class="lead">
+                As of December 31, 2016, TransTech will no longer manufacture the PQI Model 301. We will
+                continue to service the PQI 301, as long as we are able to purchase the electronic components
+                used in this product. We will also continue to provide annual re-calibration on the PQI 301.
+              </p>
+              <p class="lead">
+                As the electronic components used in the PQI 301 become harder to find and purchase, you may
+                want to consider upgrading to the latest in the non-nuclear technology. The PQI Model 380 can
+                help your company stay on track with your paving practices.
+              </p>
+              <p class="lead">
+                If you have any questions about the discontinuation of the PQI 301, or about the latest model PQI
+                380, please feel free to contact us at 1-800-724-6306.
+              </p>
+              <p class="lead">
+                We truly appreciate our past business with you, and look forward to our continue future
+                together.
+              </p>
+              <p class="lead">
+                A list of our distributors can be found on our website:
+              </p>
+              <div class="distributor-buttons mt-4 mb-3">
+                <a href="/products/distributorsUnitedStates" class="btn btn-outline-success btn-lg d-block d-md-inline-block mr-0 mr-md-4 mb-3 mb-lg-0">USA
+                  Distributors</a>
+                <a href="/products/distributorsInternational" class="btn btn-outline-success btn-lg d-block d-md-inline-block">International Distributors</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-lg-4">
-      <div class="card border-none">
-        <a href="/products/sdg200" class="card-link">
-          <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/sdg200-featured.png" alt="Non-Nuclear Soil Density Gauge">
-          <div class="card-body">
-            <h3 class="card-title">SDG 200 Soil Density Gauge</h3>
-        </a>
-        <p class="lead">
-          Our next generation<br>
-          soil density gauge<br>
-          the SDG 200 conforms to<br>
-          <a class="standard-link" href="https://www.astm.org/Standards/D7830.htm" target="_blank">ASTM D7830</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- /row - non-nuclear -->
-
-  <!-- row -compaction -->
-  <div class="row align-items-center mb-4">
-    <div class="col-lg-4 order-2 order-lg-1">
-      <div class="card border-none">
-        <a href="/products/nwjm" class="card-link">
-          <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/nwjm-featured.png" alt="Notched Wedge Joint Maker Screed Attachment">
-          <div class="card-body">
-            <h3 class="card-title">NWJM - Notched Wedge Joint Maker</h3>
-        </a>
-        <p class="lead">Screed attachment that shapes the longitudinal joint as the hot mix asphalt is spread</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 order-3 order-lg-2">
-    <div class="card border-none">
-      <a href="/products/swm" class="card-link">
-        <img class="swm mx-auto mt-4 mt-lg-0" src="../img/swm-featured.png" alt="Shoulder Wedge Maker Screed Attachment">
-        <div class="card-body">
-          <h3 class="card-title">SWM - Shoulder Wedge Maker</h3>
-      </a>
-      <p class="lead">Screed attachment that shapes a 30&#176; beveled shoulder edge on asphalt roads</p>
-    </div>
-  </div>
-  </div>
-
-  <div class="col-lg-4 order-1 order-lg-3">
-    <h1 class="category-title">Compaction</h1>
-  </div>
-  </div>
-  <!-- /row -compaction -->
-
-  <!-- row - temp sensing -->
-  <div class="row align-items-center">
-    <div class="col-lg-4">
-      <h1 class="category-title">Temp Sensing</h1>
-    </div>
-
-    <div class="col-lg-4">
-      <div class="card border-none">
-        <a href="/products/pts3000" class="card-link">
-          <img class="card-img-top mx-auto mt-4 mt-lg-0" src="../img/pts3000-featured.png" alt="PTS 3000 Pavement Temperature Sentry">
-          <div class="card-body">
-            <h3 class="card-title">PTS3000 - Asphalt Pavement Temp Sentry</h3>
-        </a>
-        <p class="lead">Mounted at the roller operator station, the PTS3000 provide's accurate HMA mat temperatures on
-          the run</p>
-      </div>
-    </div>
-  </div>
-
-  </div>
-  <!-- /row - temp sensing -->
-
-  </div>
-</section>
-<!-- /featured -->
-
-
-
-<!-- trade-up -->
-<section id="trade-up" class="text-center text-light">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-lg-8 order-2 order-lg-1">
-        <h1>Trade-In / Trade-Up Program</h1>
-        <hr>
-        <p class="lead mb-5">Your nuclear density gauge or legacy PQI 300/301 could earn you up to $500 toward the
-          purchase of a TransTech Systems Non-Nuclear PQI 380 asphalt density gauge</p>
-        <a href="../pdf/nuclearTradeIn.pdf" target="_blank" class="btn btn-outline-success trade-btn btn-large mr-0 mr-md-4 mb-3 mb-md-0" role="button">Nuclear
-          Gauge</a>
-        <a href="/products/tradeUp" class="btn btn-outline-success trade-btn btn-large" role="button">Legacy PQI
-          300/301</a>
-      </div>
-
-      <div class="col-lg-4 trade-icon-div order-1 order-lg-2">
-        <i class="fas fa-recycle"></i>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- /trade-up -->
-
-
-
-<!-- announcments -->
-<section id="announcements" class="text-center bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-lg-4 announce-icon-div">
-        <i class="fas fa-bullhorn" data-fa-transform="flip-h"></i>
-      </div>
-
-      <div class="col-lg-8">
-        <h1 class="title">Discontinued Gauges</h1>
-        <hr>
-        <p class="lead mb-5">A few of our legacy non-nuclear asphalt density gauges have been discontinued, select your
-          gauge and click below to find out more</p>
-        <button class="btn btn-outline-dark announce-btn btn-large mr-0 mr-md-4 mb-3 mb-md-0" type="button" data-toggle="modal" data-target=".pqi300-modal">PQI 300</button>
-        <button class="btn btn-outline-dark announce-btn btn-large" type="button" data-toggle="modal" data-target=".pqi301-modal">PQI 301</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- /announcments -->
-
-
-
-<!-- Modals -->
-
-<!-- PQI 300 Modal -->
-<div class="modal fade pqi300-modal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">PQI 300 Discontinued</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-        <img class="my-5" src="../img/pqi300.png" alt="Discontinued PQI 300 Non-Nuclear Asphalt Density Gauge">
-        <p class="lead">
-          As of December 31, 2014, TransTech will no longer repair the PQI Model 300, due to the
-          unavailability of the electronic component parts used in this product. We are also not
-          able to perform an upgrade on this equipment.
-        </p>
-        <p class="lead">
-          If your PQI 300 is still in good working condition and you wish to continue using it,
-          please do so! TransTech will be able to perform annual calibration on the PQI 300, just
-          not provide repair parts or service.
-        </p>
-        <p class="lead">
-          With this in mind, you may want to consider upgrading to the latest in the non-nuclear
-          technology. The PQI Model 380 can help your company stay on track with your paving
-          practices.
-        </p>
-        <p class="lead">
-          If you have any questions about the discontinuation of the PQI 300, or about the latest
-          model PQI 380, please contact your local representative at 518-370-5558 or 1-800-724-6306.
-        </p>
-        <p class="lead">
-          We truly appreciate our past business with you, and look forward to our continue future
-          together.
-        </p>
-        <p class="lead">
-          A list of our distributors can be found on our website:
-        </p>
-        <div class="distributor-buttons mt-4 mb-3">
-          <a href="/products/distributorsUnitedStates" class="btn btn-outline-success btn-lg d-block d-md-inline-block mr-0 mr-md-4 mb-3 mb-lg-0">USA
-            Distributors</a>
-          <a href="/products/distributorsInternational" class="btn btn-outline-success btn-lg d-block d-md-inline-block">International Distributors</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- PQI 301 Modal -->
-<div class="modal fade pqi301-modal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">PQI 301 Discontinued</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-        <img class="my-5" src="../img/pqi-301.png" alt="Discontinued PQI 301 Non-Nuclear Asphalt Density Gauge">
-        <p class="lead">
-          As of December 31, 2016, TransTech will no longer manufacture the PQI Model 301. We will
-          continue to service the PQI 301, as long as we are able to purchase the electronic components
-          used in this product. We will also continue to provide annual re-calibration on the PQI 301.
-        </p>
-        <p class="lead">
-          As the electronic components used in the PQI 301 become harder to find and purchase, you may
-          want to consider upgrading to the latest in the non-nuclear technology. The PQI Model 380 can
-          help your company stay on track with your paving practices.
-        </p>
-        <p class="lead">
-          If you have any questions about the discontinuation of the PQI 301, or about the latest model PQI
-          380, please feel free to contact us at 1-800-724-6306.
-        </p>
-        <p class="lead">
-          We truly appreciate our past business with you, and look forward to our continue future
-          together.
-        </p>
-        <p class="lead">
-          A list of our distributors can be found on our website:
-        </p>
-        <div class="distributor-buttons mt-4 mb-3">
-          <a href="/products/distributorsUnitedStates" class="btn btn-outline-success btn-lg d-block d-md-inline-block mr-0 mr-md-4 mb-3 mb-lg-0">USA
-            Distributors</a>
-          <a href="/products/distributorsInternational" class="btn btn-outline-success btn-lg d-block d-md-inline-block">International Distributors</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<% include ./partials/index_footer %>
+      <% include ./partials/index_footer %>
