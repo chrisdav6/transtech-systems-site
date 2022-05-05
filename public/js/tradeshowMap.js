@@ -28,6 +28,7 @@ function initMap() {
     // ['CalAPA Spring, Brea, CA', 33.928047, -117.883404],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Knoxville, TN', 35.952985, -83.935225],
+    ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -127,6 +128,18 @@ function initMap() {
     //     '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     //     '</div>',
     // ],
+
+    // BATT Lab Open House
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/BattLabLogo.png">' +
+        '<span>BATT Lab Open House</span><br>' +
+        '<hr>' +
+        'Richmond, KY<br>' +
+        'May 24, 2022<br>' +
+        '<p><a class="link" href="https://www.blankenshipasphalttech.com/batt-lab-news" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // APAI
     [
