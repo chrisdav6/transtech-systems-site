@@ -24,7 +24,7 @@ function initMap() {
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    // ['CalAPA Fall, Ontario, CA', 34.038544, -117.60651],
+    ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Brea, CA', 33.928047, -117.883404],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Raleigh, NC', 35.848221, -78.650206],
@@ -83,16 +83,16 @@ function initMap() {
     // ],
 
     //CalAPA Fall
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-    //     '<span>CalAPA Fall Conference</span><br>' +
-    //     '<hr>' +
-    //     'Sacramento, CA<br>' +
-    //     'October 13, 2021<br>' +
-    //     '<p><a class="link" href="https://www.calapa.net/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+        '<span>CalAPA Fall Conference</span><br>' +
+        '<hr>' +
+        'Sacramento, CA<br>' +
+        'October 27, 2022<br>' +
+        '<p><a class="link" href="https://calapa.weblinkconnect.com/events/FallAsphalt%20Pavement%20Conference%20Sacramento-5029/details" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //CalAPA Spring
     // [
