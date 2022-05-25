@@ -28,7 +28,7 @@ function initMap() {
     // ['CalAPA Spring, Brea, CA', 33.928047, -117.883404],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Raleigh, NC', 35.848221, -78.650206],
-    ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
+    // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
@@ -131,16 +131,16 @@ function initMap() {
     ],
 
     // BATT Lab Open House
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/BattLabLogo.png">' +
-        '<span>BATT Lab Open House</span><br>' +
-        '<hr>' +
-        'Richmond, KY<br>' +
-        'May 24, 2022<br>' +
-        '<p><a class="link" href="https://www.blankenshipasphalttech.com/batt-lab-news" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/BattLabLogo.png">' +
+    //     '<span>BATT Lab Open House</span><br>' +
+    //     '<hr>' +
+    //     'Richmond, KY<br>' +
+    //     'May 24, 2022<br>' +
+    //     '<p><a class="link" href="https://www.blankenshipasphalttech.com/batt-lab-news" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Illinois Asphalt Golf Outing
     [
