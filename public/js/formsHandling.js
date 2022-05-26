@@ -112,73 +112,76 @@ $(function () {
       // });
       // $('.fa-spinner').show();
 
-      //Wait 3 seconds
-      // setTimeout(function () {
-      //Hide the spinner gif
-      // $('.fa-spinner').hide();
-      //Flash the success message
-      $('.submitMessage').fadeIn('slow');
-      //Show Download Link
-      $('#manualDownloadLink').css('display', 'block');
-      //Update Link href
-      switch (dataId) {
-        case 'PQI 380 Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/PQI380Manual.pdf');
-          break;
-        case 'PQI 380 QuickStart Guide':
-          $('#manualDownloadLink').attr(
-            'href',
-            '/pdf/PQI380QuickstartGuide.pdf'
-          );
-          break;
-        case 'PQI 380 Offset Cheat Sheet':
-          $('#manualDownloadLink').attr(
-            'href',
-            '/pdf/PQI380OffsetCheatSheet.pdf'
-          );
-          break;
-        case 'SDG 200 Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/SDG200Manual.pdf');
-          break;
-        case 'SDG 200 QuickStart Guide':
-          $('#manualDownloadLink').attr(
-            'href',
-            '/pdf/SDG200QuickstartGuide.pdf'
-          );
-          break;
-        case 'SDG 200 StartUp Cheat Sheet':
-          $('#manualDownloadLink').attr(
-            'href',
-            '/pdf/SDG200StartUpCheatSheet.pdf'
-          );
-          break;
-        case 'NWJM Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/NWJMOriginalManual.pdf');
-          break;
-        case 'NWJM Thin Lift Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/NWJMTLManual.pdf');
-          break;
-        case 'SWM Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/SWMManual.pdf');
-          break;
-        case 'PTS 3000 Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/PTS3000Manual.pdf');
-          break;
-        case 'PQI 301 Manual':
-          $('#manualDownloadLink').attr('href', '/pdf/PQI301Manual.pdf');
-          break;
-        case 'PQI 301 Offset Cheat Sheet':
-          $('#manualDownloadLink').attr(
-            'href',
-            '/pdf/PQI301OffsetCheatSheet.pdf'
-          );
-          break;
-      }
-      //Clear form fields
-      $nameInput.val('');
-      $compnayInput.val('');
-      $emailInput.val('');
-      // }, 3000);
+      //Wait 2 seconds
+      setTimeout(function () {
+        //Hide the spinner gif
+        // $('.fa-spinner').hide();
+        //Flash the success message
+        $('.submitMessage').fadeIn('slow');
+        //Show Download Link
+        $('#manualDownloadLink').css('display', 'block');
+        //Update Link href
+        switch (dataId) {
+          case 'PQI 380 Manual':
+            $('#manualDownloadLink').attr('href', '/pdf/PQI380Manual.pdf');
+            break;
+          case 'PQI 380 QuickStart Guide':
+            $('#manualDownloadLink').attr(
+              'href',
+              '/pdf/PQI380QuickstartGuide.pdf'
+            );
+            break;
+          case 'PQI 380 Offset Cheat Sheet':
+            $('#manualDownloadLink').attr(
+              'href',
+              '/pdf/PQI380OffsetCheatSheet.pdf'
+            );
+            break;
+          case 'SDG 200 Manual':
+            $('#manualDownloadLink').attr('href', '/pdf/SDG200Manual.pdf');
+            break;
+          case 'SDG 200 QuickStart Guide':
+            $('#manualDownloadLink').attr(
+              'href',
+              '/pdf/SDG200QuickstartGuide.pdf'
+            );
+            break;
+          case 'SDG 200 StartUp Cheat Sheet':
+            $('#manualDownloadLink').attr(
+              'href',
+              '/pdf/SDG200StartUpCheatSheet.pdf'
+            );
+            break;
+          case 'NWJM Manual':
+            $('#manualDownloadLink').attr(
+              'href',
+              '/pdf/NWJMOriginalManual.pdf'
+            );
+            break;
+          case 'NWJM Thin Lift Manual':
+            $('#manualDownloadLink').attr('href', '/pdf/NWJMTLManual.pdf');
+            break;
+          case 'SWM Manual':
+            $('#manualDownloadLink').attr('href', '/pdf/SWMManual.pdf');
+            break;
+          case 'PTS 3000 Manual':
+            $('#manualDownloadLink').attr('href', '/pdf/PTS3000Manual.pdf');
+            break;
+          case 'PQI 301 Manual':
+            $('#manualDownloadLink').attr('href', '/pdf/PQI301Manual.pdf');
+            break;
+          case 'PQI 301 Offset Cheat Sheet':
+            $('#manualDownloadLink').attr(
+              'href',
+              '/pdf/PQI301OffsetCheatSheet.pdf'
+            );
+            break;
+        }
+        //Clear form fields
+        $nameInput.val('');
+        $compnayInput.val('');
+        $emailInput.val('');
+      }, 2000);
     });
   });
 
