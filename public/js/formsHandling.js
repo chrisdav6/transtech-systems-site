@@ -107,15 +107,15 @@ $(function () {
       //Hide the submit button
       $manualDownloadBtn.hide();
       //Show the spinner gif
-      $('.fa-spinner').css({
-        display: 'block',
-      });
-      $('.fa-spinner').show();
+      // $('.fa-spinner').css({
+      //   display: 'block',
+      // });
+      // $('.fa-spinner').show();
 
       //Wait 2 seconds
       // setTimeout(function () {
       //Hide the spinner gif
-      $('.fa-spinner').hide();
+      // $('.fa-spinner').hide();
       //Flash the success message
       $('.submitMessage').fadeIn('slow');
       //Show Download Link
