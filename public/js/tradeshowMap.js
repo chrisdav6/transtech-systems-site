@@ -40,6 +40,7 @@ function initMap() {
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+    ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     ['NAPA Midyear Meeting, Santa Barbara , CA', 34.429663, -119.711756],
     ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
@@ -271,6 +272,18 @@ function initMap() {
         'San Antonio, TX<br>' +
         'September 20-23, 2022<br>' +
         '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //AASHTO Annual Meeting
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
+        '<span>2022 AASHTO Annual Meeting</span><br>' +
+        '<hr>' +
+        'Orlando, FL<br>' +
+        'October 19-23, 2022<br>' +
+        '<p><a class="link" href="https://web.cvent.com/event/117fd874-bc35-47ab-923b-a928162d55c4/websitePage:33bb36ed-69a1-42a4-85e6-6b25fb660a71" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
