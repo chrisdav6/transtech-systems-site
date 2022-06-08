@@ -30,7 +30,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Raleigh, NC', 35.848221, -78.650206],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
-    ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
+    // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
     ['APAI, Indianapolis, IN', 40.031171, -86.939831],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
@@ -157,16 +157,16 @@ function initMap() {
     // ],
 
     // Illinois Asphalt Golf Outing
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/illinois-asphalt-logo.png">' +
-        '<span>IAPAs 2nd Annual Golf Outing</span><br>' +
-        '<hr>' +
-        'Morris, IL<br>' +
-        'June 7, 2022<br>' +
-        '<p><a class="link" href="https://www.il-asphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/illinois-asphalt-logo.png">' +
+    //     '<span>IAPAs 2nd Annual Golf Outing</span><br>' +
+    //     '<hr>' +
+    //     'Morris, IL<br>' +
+    //     'June 7, 2022<br>' +
+    //     '<p><a class="link" href="https://www.il-asphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // APAI
     [
