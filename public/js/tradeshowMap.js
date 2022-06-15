@@ -43,6 +43,7 @@ function initMap() {
     ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
+    ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Santa Barbara , CA', 34.429663, -119.711756],
     ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
@@ -311,6 +312,18 @@ function initMap() {
     //     '<p><a class="link" href="https://www.texasasphalt.org/ev_calendar_day.asp?date=4/20/2022&eventid=284" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     //     '</div>',
     // ],
+
+    // APAI Golf outing
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
+        '<span>APAI Trine University Golf Outing</span><br>' +
+        '<hr>' +
+        'Angola, IN<br>' +
+        'June 17, 2022<br>' +
+        '<p><a class="link" href="https://mms.asphaltindiana.org//Calendar/moreinfo.php?eventid=69408" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //NAPA Midyear Meeting
     [
