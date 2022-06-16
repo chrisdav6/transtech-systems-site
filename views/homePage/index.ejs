@@ -23,6 +23,15 @@
   <title>
     <%= typeof title!='undefined' ? title : 'TransTech Systems' %>
   </title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM2NP8PDJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VM2NP8PDJM');
+  </script>
 </head>
 
 <body id="home">
@@ -548,16 +557,6 @@
       });
     });
 
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM2NP8PDJM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-VM2NP8PDJM');
   </script>
 
   <!-- Start of transtechsys Zendesk Widget script -->
