@@ -43,7 +43,7 @@ function initMap() {
     ['Atlantic Supply, Largo Florida', 27.909467, -82.787324],
     ['Atlantic Supply, Orlando Florida', 28.516294, -81.367493],
     ['Atlantic Supply, Riviera Beach Florida', 26.775341, -80.058097],
-    ['TransTech Systems, Georgia', 33.065286, -83.541289, 'transtech'],
+    ['QC Lab Supply, Georgia', 33.065286, -83.541289],
     ['TransTech Systems, Hawaii', 19.61003, -155.544456, 'transtech'],
     ['TransTech Systems, Idaho', 44.059733, -114.428075, 'transtech'],
     ['TransTech Systems, Illinois', 41.095912, -89.494629, 'direct'],
@@ -232,10 +232,12 @@ function initMap() {
     // Georgia
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>QC Lab Supply</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '404-849-5438<br>' +
+        'Attn: Ronnie Spradley<br>' +
+        '<p><a class="link" href="mailto:ronnie@qclabsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://qclabsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
