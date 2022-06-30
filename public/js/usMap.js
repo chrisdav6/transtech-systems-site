@@ -50,7 +50,7 @@ function initMap() {
     ['TransTech Systems, Indiana', 39.707081, -86.001824, 'direct'],
     ['TransTech Systems, Iowa', 42.246724, -93.527497, 'direct'],
     ['TransTech Systems, Kansas', 38.570758, -98.446819, 'transtech'],
-    ['TransTech Systems, Kentucky', 37.630124, -84.538175, 'transtech'],
+    ['TransTech Systems, Kentucky', 37.630124, -84.538175, 'direct'],
     ['Atlantic Supply, Louisiana', 30.489397, -91.903111],
     ['TransTech Systems, Maine', 45.413876, -69.466553, 'direct'],
     ['GT Mid Atlantic, Inc., Maryland', 39.140858, -76.682258],
@@ -309,8 +309,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '518-560-0387<br>' +
+        'Attn: John Lamond<br>' +
+        '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
