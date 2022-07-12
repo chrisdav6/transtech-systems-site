@@ -31,7 +31,7 @@ function initMap() {
     ['BAV Group Ltd. , Azerbaijan', 40.33817, 48.054199],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
     ['BAV Corporation / Road Technologies, Belarus', 53.520717, 28.355713],
-    ['ASINTRA, Belgium', 50.840636, 4.482422],
+    ['ABM van Zijl B.V., Belgium', 50.840636, 4.482422],
     ['Beratest AG, Benin', 10.00131, 2.285156],
     ['Mertind, Bolivia', -17.555479, -63.395588],
     ['Solotest, Brazil', -9.795678, -49.833984],
@@ -78,7 +78,7 @@ function initMap() {
     ['Atlantic Supply, Mexico', 24.44715, -102.271729],
     ['BAV Corporation / Uniprom LLC, Moldova', 47.323931, 28.674316],
     ['M/s. Taisei International, Nepal', 28.1579, 83.895047],
-    ['Asintra, Netherlands', 52.173932, 5.734863],
+    ['ABM van Zijl B.V., Netherlands', 52.173932, 5.734863],
     ['Motorway Tech Party Ltd., New Zealand', -42.763146, 172.177734],
     ['Beratest AG, Niger', 17.497389, 9.777832],
     ['ABAS AS, Norway', 61.143235, 9.228516],
@@ -226,12 +226,12 @@ function initMap() {
     // Belgium
     [
       '<div class="map-text">' +
-        '<span>Asintra</span><br>' +
+        '<span>ABM van Zijl B.V.</span><br>' +
         '<hr>' +
-        '+31-(0)620248145<br>' +
-        'Attn: Joop Mennink<br>' +
-        '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://asintra.eu/nederlands.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '+31(0)653-165-245<br>' +
+        'Attn: Fred van Zijl<br>' +
+        '<p><a class="link" href="mailto:fred@abmbv.nl?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.abmbv.nl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -784,12 +784,12 @@ function initMap() {
     // Netherlands
     [
       '<div class="map-text">' +
-        '<span>Asintra</span><br>' +
+        '<span>ABM van Zijl B.V.</span><br>' +
         '<hr>' +
-        '+31-(0)620248145<br>' +
-        'Attn: Joop Mennink<br>' +
-        '<p><a class="link" href="mailto:info@asintra.eu?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://asintra.eu/nederlands.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '+31(0)653-165-245<br>' +
+        'Attn: Fred van Zijl<br>' +
+        '<p><a class="link" href="mailto:fred@abmbv.nl?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.abmbv.nl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
