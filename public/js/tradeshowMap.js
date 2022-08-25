@@ -51,11 +51,11 @@ function initMap() {
     ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
-    [
-      '63rd Illinois Bituminous Paving Conference, Champaign, IL',
-      40.109752,
-      -88.260804,
-    ],
+    // [
+    //   '63rd Illinois Bituminous Paving Conference, Champaign, IL',
+    //   40.109752,
+    //   -88.260804,
+    // ],
     ['ConExpo, Las Vegas, Nevada', 36.161515, -115.161274],
   ];
 
@@ -410,16 +410,16 @@ function initMap() {
     ],
 
     // Illinois Bituminous Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/illinois-bituminous-logo.png">' +
-        '<span>63rd Illinois Bituminous Paving Conference</span><br>' +
-        '<hr>' +
-        'Champaign, IL<br>' +
-        'December 6-7, 2022<br>' +
-        '<p><a class="link" href="https://ict.illinois.edu/outreach/bituminous" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/illinois-bituminous-logo.png">' +
+    //     '<span>63rd Illinois Bituminous Paving Conference</span><br>' +
+    //     '<hr>' +
+    //     'Champaign, IL<br>' +
+    //     'December 6-7, 2022<br>' +
+    //     '<p><a class="link" href="https://ict.illinois.edu/outreach/bituminous" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // ConExpo
     [
