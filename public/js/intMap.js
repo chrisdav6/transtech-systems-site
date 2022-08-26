@@ -12,7 +12,7 @@ function initMap() {
       lat: 28.711,
       lng: 17.234,
     },
-    zoom: 3,
+    zoom: 2.6,
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -26,7 +26,7 @@ function initMap() {
     ['Beratest AG, Algeria', 29.343875, 2.109375],
     ['Mertind, Argentina', -33.550655, -63.950483],
     ['BAV Group Ltd. , Armenia', 40.455307, 44.653931],
-    ['Motorway Tech Party Ltd., Australia', -24.367114, 133.769531],
+    ['Motorway Tech, Australia', -24.367114, 133.769531],
     ['TransTech Europe, Austria', 47.554287, 14.512939],
     ['BAV Group Ltd. , Azerbaijan', 40.33817, 48.054199],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
@@ -79,7 +79,7 @@ function initMap() {
     ['BAV Corporation / Uniprom LLC, Moldova', 47.323931, 28.674316],
     ['M/s. Taisei International, Nepal', 28.1579, 83.895047],
     ['ABM van Zijl B.V., Netherlands', 52.173932, 5.734863],
-    ['Motorway Tech Party Ltd., New Zealand', -42.763146, 172.177734],
+    ['Motorway Tech, New Zealand', -42.763146, 172.177734],
     ['Beratest AG, Niger', 17.497389, 9.777832],
     ['ABAS AS, Norway', 61.143235, 9.228516],
     ['M/s. Taisei International, Oman', 20.306682, 56.00759],
@@ -165,9 +165,9 @@ function initMap() {
     // Australia
     [
       '<div class="map-text">' +
-        '<span>Motorway Tech Party Ltd.</span><br>' +
+        '<span>Motorway Tech</span><br>' +
         '<hr>' +
-        '+1300-416-313<br>' +
+        '+61-1300-416-313<br>' +
         'Attn: Lorraine Duffy<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:lorraine@hitechindustrial.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
@@ -796,9 +796,9 @@ function initMap() {
     // New Zealand
     [
       '<div class="map-text">' +
-        '<span>Motorway Tech Party Ltd.</span><br>' +
+        '<span>Motorway Tech</span><br>' +
         '<hr>' +
-        '+1300-416-313<br>' +
+        '+61-1300-416-313<br>' +
         'Attn: Lorraine Duffy<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:lorraine@hitechindustrial.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
