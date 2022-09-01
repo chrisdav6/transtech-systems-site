@@ -417,7 +417,7 @@ function initMap() {
         '<span>2022 Minnesota Asphalt Conference</span><br>' +
         '<hr>' +
         'Prior Lake, MN<br>' +
-        'November 30-December 1, 2022<br>' +
+        'December 1-2, 2022<br>' +
         '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1618804" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
