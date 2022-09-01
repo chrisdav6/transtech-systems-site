@@ -31,7 +31,7 @@ function initMap() {
     ['SEAUPG, Raleigh, NC', 35.848221, -78.650206],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
-    ['APAI, Indianapolis, IN', 40.031171, -86.939831],
+    ['APAI, Muncie, IN', 40.206962, -85.393312],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['MAPA, Columbia, MO', 38.948857, -92.334012],
@@ -176,7 +176,7 @@ function initMap() {
         '<img class="d-block mb-3" width="100" src="../img/apai-logo.png">' +
         '<span>APAI Winter Conference</span><br>' +
         '<hr>' +
-        'Indianapolis, IN<br>' +
+        'Muncie, IN<br>' +
         'December 14-16, 2022<br>' +
         '<p><a class="link" href="http://mms.asphaltindiana.org/Calendar/moreinfo.php?eventid=69409" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
