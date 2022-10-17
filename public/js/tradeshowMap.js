@@ -36,7 +36,7 @@ function initMap() {
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     // ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
-    // ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
+    ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
@@ -232,16 +232,16 @@ function initMap() {
     // ],
 
     //APAM
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/michigan-asphalt-logo.png">' +
-    //     '<span>APAM</span><br>' +
-    //     '<hr>' +
-    //     'Mt Pleasant, MI<br>' +
-    //     'February 22-23, 2022<br>' +
-    //     '<p><a class="link" href="https://www.apa-mi.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/michigan-asphalt-logo.png">' +
+        '<span>APAM 66th Annual Paving Conference</span><br>' +
+        '<hr>' +
+        'Mt Pleasant, MI<br>' +
+        'February 21-22, 2023<br>' +
+        '<p><a class="link" href="https://www.apa-mi.org/events.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Illinois Asphalt Conference
     [
