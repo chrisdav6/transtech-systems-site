@@ -100,7 +100,7 @@ function initMap() {
     ['Beratest AG, Switzerland', 46.991494, 8.234253],
     ['BAV Corporation / Uneedus Group LLP, Tajikistan', 38.882481, 70.817871],
     ['Beratest AG, Tchad', 14.98724, 18.896484],
-    ['Asia Testing Equipment Co., Ltd., Thailand', 15.961329, 100.722656],
+    // ['Asia Testing Equipment Co., Ltd., Thailand', 15.961329, 100.722656],
     ['Beratest AG, Togo', 8.439772, 1.07666],
     ['Beratest AG, Tunisie', 34.343436, 9.349365],
     ['BAV Corporation / Uneedus Group LLP, Turkmenistan', 39.571822, 59.040527],
@@ -1046,16 +1046,16 @@ function initMap() {
     ],
 
     // Thailand
-    [
-      '<div class="map-text">' +
-        '<span>Asia Testing Equipment Co., Ltd</span><br>' +
-        '<hr>' +
-        '+02-553-0809<br>' +
-        'Attn: Mr. Nantapong Phuetphon<br>' +
-        '<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.asiatest.co.th/ATE.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Asia Testing Equipment Co., Ltd</span><br>' +
+    //     '<hr>' +
+    //     '+02-553-0809<br>' +
+    //     'Attn: Mr. Nantapong Phuetphon<br>' +
+    //     '<p><a class="link" href="mailto:nantapong@asiatest.co.th?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.asiatest.co.th/ATE.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Togo
     [
