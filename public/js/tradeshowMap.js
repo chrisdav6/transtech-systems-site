@@ -118,7 +118,7 @@ function initMap() {
         '<span>2022 CalCima Education Conference</span><br>' +
         '<hr>' +
         'La Jolla, CA<br>' +
-        'October 24-27, 2022<br>' +
+        'October 26-27, 2022<br>' +
         '<p><a class="link" href="https://www.calcima.org/edconf" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
