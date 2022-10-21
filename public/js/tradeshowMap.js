@@ -42,7 +42,7 @@ function initMap() {
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
-    ['AASHTO, Orlando, FL', 28.551161, -81.373221],
+    // ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
@@ -304,16 +304,16 @@ function initMap() {
     // ],
 
     //AASHTO Annual Meeting
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
-        '<span>2022 AASHTO Annual Meeting</span><br>' +
-        '<hr>' +
-        'Orlando, FL<br>' +
-        'October 19-23, 2022<br>' +
-        '<p><a class="link" href="https://web.cvent.com/event/117fd874-bc35-47ab-923b-a928162d55c4/websitePage:33bb36ed-69a1-42a4-85e6-6b25fb660a71" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
+    //     '<span>2022 AASHTO Annual Meeting</span><br>' +
+    //     '<hr>' +
+    //     'Orlando, FL<br>' +
+    //     'October 19-23, 2022<br>' +
+    //     '<p><a class="link" href="https://web.cvent.com/event/117fd874-bc35-47ab-923b-a928162d55c4/websitePage:33bb36ed-69a1-42a4-85e6-6b25fb660a71" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //TXAPA Quarterly Membership Meeting
     // [
