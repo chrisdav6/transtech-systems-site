@@ -49,7 +49,7 @@ function initMap() {
     ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
     ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
-    ['NEAUPG, Albany, NY', 42.728662, -73.799678],
+    // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
     ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
@@ -388,16 +388,16 @@ function initMap() {
     ],
 
     // NEAUPG
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-        '<span>NEAUPG</span><br>' +
-        '<hr>' +
-        'Albany, NY<br>' +
-        'November 2-3, 2022<br>' +
-        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+    //     '<span>NEAUPG</span><br>' +
+    //     '<hr>' +
+    //     'Albany, NY<br>' +
+    //     'November 2-3, 2022<br>' +
+    //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // WAPA
     [
