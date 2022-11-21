@@ -359,9 +359,9 @@ function initMap() {
         '<span>Equipos de Auscultacion</span><br>' +
         '<hr>' +
         '+562 24069792<br>' +
-        'Attn: Claudio Fuentes Lopez<br>' +
+        'Attn: Carolina Fuentes<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:claudio.fuentes.lopez@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p><a class="link" href="mailto:carolina.fuentes@gaussindex.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.indexsa.cl" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
