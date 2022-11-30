@@ -339,7 +339,7 @@ app.get('/products/privacy', function (req, res) {
 //------POST Routes--------//
 
 //Homepage Newsletter Signup Form
-app.post('/products', function (req, res) {
+/*app.post('/products', function (req, res) {
   let { name, company, state, country, email, currentCustomer, reach } =
     req.body;
 
@@ -393,6 +393,7 @@ app.post('/products', function (req, res) {
   req.flash('success', 'Request to join newsletter has been sent. Thank You!');
   res.redirect('/products');
 });
+*/
 
 //Contact Corporate Contact Us Form
 /* app.post("/products/contactCorporate", function (req, res) {
