@@ -52,7 +52,7 @@ function initMap() {
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
-    ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
+    // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
     //   '63rd Illinois Bituminous Paving Conference, Champaign, IL',
     //   40.109752,
@@ -424,16 +424,16 @@ function initMap() {
     // ],
 
     // Missouri S&T Asphalt Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/missourisandt.png">' +
-        '<span>Missouri S&T Asphalt Conference</span><br>' +
-        '<hr>' +
-        'Rolla, MO<br>' +
-        'December 6-7, 2022<br>' +
-        '<p><a class="link" href="https://asphalt.mst.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/missourisandt.png">' +
+    //     '<span>Missouri S&T Asphalt Conference</span><br>' +
+    //     '<hr>' +
+    //     'Rolla, MO<br>' +
+    //     'December 6-7, 2022<br>' +
+    //     '<p><a class="link" href="https://asphalt.mst.edu" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Illinois Bituminous Conference
     // [
