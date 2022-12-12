@@ -235,7 +235,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/michigan-asphalt-logo.png">' +
-        '<span>APAM 66th Annual Paving Conference</span><br>' +
+        '<span>APAM 66th Annual Paving Conference - Booth #20</span><br>' +
         '<hr>' +
         'Mt Pleasant, MI<br>' +
         'February 21-22, 2023<br>' +
