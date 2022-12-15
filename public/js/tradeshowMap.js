@@ -382,7 +382,7 @@ function initMap() {
         '<span>TXAPA Maps Conference</span><br>' +
         '<hr>' +
         'Waco, TX<br>' +
-        'March 20-22, 2023<br>' +
+        'May 15-17, 2023<br>' +
         '<p><a class="link" href="https://www.texasasphalt.org/maps" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
