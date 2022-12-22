@@ -368,7 +368,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
-        '<span>PAIKY 2023 Winter Training</span><br>' +
+        '<span>PAIKY 2023 Winter Training - Booth #14</span><br>' +
         '<hr>' +
         'Louisville, KY<br>' +
         'February 15-17, 2023<br>' +
