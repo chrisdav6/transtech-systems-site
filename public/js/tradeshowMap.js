@@ -25,7 +25,7 @@ function initMap() {
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
-    // ['CalAPA Spring, Brea, CA', 33.928047, -117.883404],
+    ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
     // ['CalCima, La Jolla, CA', 32.882325, -117.246684],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Raleigh, NC', 35.848221, -78.650206],
@@ -100,16 +100,16 @@ function initMap() {
     // ],
 
     //CalAPA Spring
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-    //     '<span>CalAPA Spring Conference - Tech Tuneup</span><br>' +
-    //     '<hr>' +
-    //     'Brea, CA<br>' +
-    //     'April 5-6, 2022<br>' +
-    //     '<p><a class="link" href="https://calapa.weblinkconnect.com/events/CalAPASpring%20Conference%20Tech%20Tuneup%20%20Orange%20County-5025/details" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+        '<span>CalAPA Spring Conference</span><br>' +
+        '<hr>' +
+        'Ontario, CA<br>' +
+        'March 22-24, 2023<br>' +
+        '<p><a class="link" href="https://www.calapa.net/conferences.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //CalCima Education Conference
     // [
