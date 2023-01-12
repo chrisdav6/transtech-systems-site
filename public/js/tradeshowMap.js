@@ -201,10 +201,10 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-        '<span>TRB 102nd Annual Meeting - Booth #1044</span><br>' +
+        '<span>TRB 103rd Annual Meeting - Booth #1042</span><br>' +
         '<hr>' +
         'Washington D.C.<br>' +
-        'January 8-12, 2023<br>' +
+        'January 7-11, 2024<br>' +
         '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
