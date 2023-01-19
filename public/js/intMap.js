@@ -170,8 +170,8 @@ function initMap() {
         '+61-1300-416-313<br>' +
         'Attn: Lorraine Duffy<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:lorraine@hitechindustrial.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="https://www.hitechindustrial.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="mailto:lorraine@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -801,8 +801,8 @@ function initMap() {
         '+61-1300-416-313<br>' +
         'Attn: Lorraine Duffy<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:lorraine@hitechindustrial.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="https://www.hitechindustrial.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="mailto:lorraine@motorwaytechnologies.com.au?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://motorwaytechnologies.com.au" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
