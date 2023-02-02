@@ -40,7 +40,7 @@ function initMap() {
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
-    ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
+    // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
     // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['AASHTO, Orlando, FL', 28.551161, -81.373221],
@@ -282,16 +282,16 @@ function initMap() {
     // ],
 
     //Ohio Asphalt Paving Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-        '<span>Ohio Asphalt Paving Conference</span><br>' +
-        '<hr>' +
-        'Columbus, OH<br>' +
-        'February 1, 2023<br>' +
-        '<p><a class="link" href="https://www.flexiblepavements.org/2023-ohio-asphalt-paving-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+    //     '<span>Ohio Asphalt Paving Conference</span><br>' +
+    //     '<hr>' +
+    //     'Columbus, OH<br>' +
+    //     'February 1, 2023<br>' +
+    //     '<p><a class="link" href="https://www.flexiblepavements.org/2023-ohio-asphalt-paving-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //TXAPA
     // [
