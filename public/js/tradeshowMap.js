@@ -49,7 +49,7 @@ function initMap() {
     ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
     ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
     ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
-    // ['National Pavement Expo, Charlotte, NC', 35.216826, -80.851489],
+    ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
@@ -390,16 +390,16 @@ function initMap() {
     ],
 
     // Pavement Expo
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/pavement-expo-logo.png">' +
-    //     '<span>National Pavement Expo - Booth #333</span><br>' +
-    //     '<hr>' +
-    //     'Charlotte, NC<br>' +
-    //     'January 25-27, 2023<br>' +
-    //     '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/pavement-expo-logo.png">' +
+        '<span>National Pavement Expo</span><br>' +
+        '<hr>' +
+        'Tampa, FL<br>' +
+        'January 23-25, 2024<br>' +
+        '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //TXAPA Maps
     [
