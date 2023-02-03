@@ -26,7 +26,7 @@ function initMap() {
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
-    // ['CalCima, La Jolla, CA', 32.882325, -117.246684],
+    ['CalCima, Palm Springs, CA', 33.845971, -116.544408],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['SEAUPG, Raleigh, NC', 35.848221, -78.650206],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
@@ -114,16 +114,16 @@ function initMap() {
     ],
 
     //CalCima Education Conference
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/calcimaLogo.png">' +
-    //     '<span>2022 CalCima Education Conference</span><br>' +
-    //     '<hr>' +
-    //     'La Jolla, CA<br>' +
-    //     'October 26-27, 2022<br>' +
-    //     '<p><a class="link" href="https://www.calcima.org/edconf" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/calcimaLogo.png">' +
+        '<span>2023 CalCima Education Conference</span><br>' +
+        '<hr>' +
+        'Palm Springs, CA<br>' +
+        'November 6-9, 2023<br>' +
+        '<p><a class="link" href="https://www.calcima.org/edconf" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Intermat ASEAN
     // [
