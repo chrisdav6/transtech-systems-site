@@ -608,7 +608,7 @@ app.post('/products/repairRequest', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com,jmorse@transtechsys.com,rberube@transtechsys.com,service@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com,jmorse@transtechsys.com,calibration@transtechsys.com,service@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Repair Request Form', // Subject line
         text: body, // plain text body
