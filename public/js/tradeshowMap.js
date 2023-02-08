@@ -47,7 +47,7 @@ function initMap() {
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
-    ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
+    // ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
     ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
@@ -366,16 +366,16 @@ function initMap() {
     ],
 
     //NAPA Annual Meeting
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-        '<span>NAPA 2023 Annual Meeting</span><br>' +
-        '<hr>' +
-        'Miami Beach, FL<br>' +
-        'February 5-8, 2023<br>' +
-        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+    //     '<span>NAPA 2023 Annual Meeting</span><br>' +
+    //     '<hr>' +
+    //     'Miami Beach, FL<br>' +
+    //     'February 5-8, 2023<br>' +
+    //     '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //PAIKY Winter Training
     [
