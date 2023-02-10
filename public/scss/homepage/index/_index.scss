@@ -68,7 +68,8 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.75), scale 0.2s;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.75),
+      scale 0.2s;
 
     &:hover {
       color: #ffde00;
@@ -202,12 +203,14 @@ body {
 /***** Logo ******/
 
 #logo {
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-left: -15px; // Center Logo Appearance
 }
 
 @media (max-height: 950px) {
   #logo {
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -239,7 +242,8 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.5);
   display: block;
   color: #fff;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.75), background 0.2s;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.75),
+    background 0.2s;
   position: relative;
 
   &:hover {
