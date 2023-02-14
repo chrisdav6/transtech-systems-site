@@ -104,6 +104,14 @@ app.get('/*', function (req, res, next) {
 //Use date for footer copyright - added comment to update to 2022
 app.locals.date = new Date().getFullYear();
 
+//MGR Domain Redirect
+app.get('/products/customerPortal', function (req, res) {
+  res.render('products/customerPortal', {
+    title: 'TransTech Systems Customer Portal',
+    metaTitle: 'TransTech Systems Customer Portal',
+  });
+});
+
 //NewHomepage
 app.get('/homepage', function (req, res) {
   res.render('homePage/index', {
