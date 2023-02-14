@@ -106,9 +106,11 @@ app.locals.date = new Date().getFullYear();
 
 //MGR Domain Redirect
 app.get('/products/customerPortal', function (req, res) {
+  const path = req.params.path;
   res.render('products/customerPortal', {
     title: 'TransTech Systems Customer Portal',
     metaTitle: 'TransTech Systems Customer Portal',
+    path: path,
   });
 });
 
