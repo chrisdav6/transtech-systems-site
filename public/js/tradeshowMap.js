@@ -48,7 +48,7 @@ function initMap() {
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
     // ['NAPA Annual Meeting, Miami Beach, FL', 25.793237, -80.133619],
-    ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
+    // ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -378,16 +378,16 @@ function initMap() {
     // ],
 
     //PAIKY Winter Training
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
-        '<span>PAIKY 2023 Winter Training - Booth #14</span><br>' +
-        '<hr>' +
-        'Louisville, KY<br>' +
-        'February 15-17, 2023<br>' +
-        '<p><a class="link" href="https://members.paiky.org/site_event_detail.cfm?pk_association_event=25352" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
+    //     '<span>PAIKY 2023 Winter Training - Booth #14</span><br>' +
+    //     '<hr>' +
+    //     'Louisville, KY<br>' +
+    //     'February 15-17, 2023<br>' +
+    //     '<p><a class="link" href="https://members.paiky.org/site_event_detail.cfm?pk_association_event=25352" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Pavement Expo
     [
