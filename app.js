@@ -110,7 +110,7 @@ app.get('/products/customerPortal', function (req, res) {
   res.render('products/customerPortal', {
     title: 'TransTech Systems Customer Portal',
     metaTitle: 'TransTech Systems Customer Portal',
-    path: path,
+    path: path || '',
   });
 });
 
