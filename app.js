@@ -106,13 +106,20 @@ app.locals.date = new Date().getFullYear();
 
 //MGR Domain Redirect
 app.get('/products/customerPortal', function (req, res) {
-  const path = req.query.path;
+  const path =
+    req.query.path ||
+    'customer?portal=297fff75bdc1ab0d'; /* set this to 'customer?portal=297fff75bdc1ab0d' if req.query.path does not exists */
+
   res.render('products/customerPortal', {
     title: 'TransTech Systems Customer Portal',
     metaTitle: 'TransTech Systems Customer Portal',
-    path: path || '',
+    path: path,
   });
 });
+
+// just to explain they are 2 difefremt URL
+// Portal: https://www.mygadgetrepairs.com/customer?portal=297fff75bdc1ab0d - This one needs portal identifier and below doesn't
+// Customer Setup: https://www.mygadgetrepairs.com/customer-setup/9607a918-5056-0fff-ff996fa9ad344b29/
 
 //NewHomepage
 app.get('/homepage', function (req, res) {

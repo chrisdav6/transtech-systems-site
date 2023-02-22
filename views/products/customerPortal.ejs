@@ -10,6 +10,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <title>
+
     <%= typeof title!='undefined' ? title : 'TransTech Systems' %>
   </title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,10 +22,11 @@
 
     gtag('config', 'G-VM2NP8PDJM');
   </script>
+
 </head>
 
 <body style="margin:0px;padding:0px;overflow:hidden">
-  <iframe src='https://www.mygadgetrepairs.com/customer/?portal=297fff75bdc1ab0d&<%- decodeURIComponent(path) %>' frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+  <iframe src='https://www.mygadgetrepairs.com/<%- decodeURIComponent(path) %>' frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
 </body>
 
 </html>
