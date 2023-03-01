@@ -41,7 +41,7 @@ function initMap() {
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
-    // ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+    ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
@@ -294,16 +294,16 @@ function initMap() {
     // ],
 
     //TXAPA
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-    //     '<span>TXAPAs 47th Annual Meeting</span><br>' +
-    //     '<hr>' +
-    //     'San Antonio, TX<br>' +
-    //     'September 20-23, 2022<br>' +
-    //     '<p><a class="link" href="https://www.texasasphalt.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+        '<span>TXAPAs 48th Annual Meeting</span><br>' +
+        '<hr>' +
+        'San Antonio, TX<br>' +
+        'September 18-21, 2023<br>' +
+        '<p><a class="link" href="https://texasasphalt.org/events/2023-annual-meeting/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Rocky Mountain Asphalt
     // [
