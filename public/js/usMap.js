@@ -223,7 +223,7 @@ function initMap() {
         '<span>Atlantic Supply</span><br>' +
         '<hr>' +
         '800-535-7384<br>' +
-        'Attn: Lou Lemenze<br>' +
+        'Attn: Ray Collette<br>' +
         '<p><a class="link" href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
