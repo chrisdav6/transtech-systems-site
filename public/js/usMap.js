@@ -158,7 +158,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -332,7 +332,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -360,7 +360,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -446,7 +446,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -495,7 +495,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -571,7 +571,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -582,7 +582,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
@@ -634,7 +634,7 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '860-883-6470<br>' +
+        '1-800-724-6306<br>' +
         'Attn: Marcus McCorison<br>' +
         '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
