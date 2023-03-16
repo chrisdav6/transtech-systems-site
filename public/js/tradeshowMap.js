@@ -50,7 +50,7 @@ function initMap() {
     ['NAPA Annual Meeting, ChampionsGate, FL', 28.262904, -81.616245],
     // ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
-    ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
+    // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
@@ -402,16 +402,16 @@ function initMap() {
     ],
 
     //TXAPA Maps
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPA Maps Conference</span><br>' +
-        '<hr>' +
-        'Waco, TX<br>' +
-        'May 15-17, 2023<br>' +
-        '<p><a class="link" href="https://www.texasasphalt.org/maps" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+    //     '<span>TXAPA Maps Conference</span><br>' +
+    //     '<hr>' +
+    //     'Waco, TX<br>' +
+    //     'May 15-17, 2023<br>' +
+    //     '<p><a class="link" href="https://www.texasasphalt.org/maps" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // NEAUPG
     // [
