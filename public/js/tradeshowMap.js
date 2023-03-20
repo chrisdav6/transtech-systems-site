@@ -477,10 +477,10 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
-        '<span>ConExpo - Booth #C-30867</span><br>' +
+        '<span>ConExpo</span><br>' +
         '<hr>' +
         'Las Vegas, NV<br>' +
-        'March 14-18, 2023<br>' +
+        'March 3-7, 2026<br>' +
         '<p><a class="link" href="http://www.conexpoconagg.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
