@@ -609,10 +609,10 @@ function initMap() {
       '<div class="map-text">' +
         '<span>JR Technical Services UK Ltd</span><br>' +
         '<hr>' +
-        '+44-191-461-1103<br>' +
+        '+44-0191-461-1103<br>' +
         'Attn: Callum Brady<br>' +
-        '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="mailto:callum@highwayservice.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://highwayservice.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -1133,11 +1133,11 @@ function initMap() {
       '<div class="map-text">' +
         '<span>JR Technical Services UK Ltd</span><br>' +
         '<hr>' +
-        '+44-191-461-1103<br>' +
+        '+44-0191-461-1103<br>' +
         'Attn: Callum Brady<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:info@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="mailto:callum@highwayservice.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://highwayservice.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
