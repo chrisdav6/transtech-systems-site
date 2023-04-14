@@ -262,7 +262,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/woa-logoTemp.png">' +
-        '<span>World of Asphalt</span><br>' +
+        '<span>World of Asphalt - Booth #2528</span><br>' +
         '<hr>' +
         'Nashville, TN<br>' +
         'March 25-27, 2024<br>' +
