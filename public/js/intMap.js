@@ -23,7 +23,7 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     ['M/s. Taisei International, Afghanistan', 34.234306, 66.209291],
-    ['Beratest AG, Algeria', 29.343875, 2.109375],
+    ['Somagex, Algeria', 29.343875, 2.109375],
     ['Mertind, Argentina', -33.550655, -63.950483],
     ['BAV Group Ltd. , Armenia', 40.455307, 44.653931],
     ['Motorway Tech, Australia', -24.367114, 133.769531],
@@ -129,12 +129,12 @@ function initMap() {
     // Algeria
     [
       '<div class="map-text">' +
-        '<span>Beratest AG</span><br>' +
+        '<span>Somagex</span><br>' +
         '<hr>' +
-        '0041 (0)78 822 21 26<br>' +
-        'Attn: Max Gysin<br>' +
+        '023-47-13-15<br>' +
+        'Attn: Mohamed Yahmi<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p><a class="link" href="mailto:md_yahmi@hotmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
