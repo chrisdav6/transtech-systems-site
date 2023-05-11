@@ -37,7 +37,7 @@ function initMap() {
     // ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     // ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
-    // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
+    ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
@@ -247,16 +247,16 @@ function initMap() {
     // ],
 
     // Illinois Asphalt Conference
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/illinois-asphalt-logo.png">' +
-    //     '<span>2023 IAPA Annual Conference</span><br>' +
-    //     '<hr>' +
-    //     'Springfield, IL<br>' +
-    //     'March 27-28, 2023<br>' +
-    //     '<p><a class="link" href="https://www.il-asphalt.org/membership/annual-convention/details" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/illinois-asphalt-logo.png">' +
+        '<span>2024 IAPA Annual Conference</span><br>' +
+        '<hr>' +
+        'Springfield, IL<br>' +
+        'March 11-12, 2024<br>' +
+        '<p><a class="link" href="https://www.il-asphalt.org/membership/annual-convention/details" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // World of Asphalt
     [
