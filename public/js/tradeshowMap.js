@@ -55,7 +55,7 @@ function initMap() {
     // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
-    // ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
+    ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
     //   '63rd Illinois Bituminous Paving Conference, Champaign, IL',
@@ -464,16 +464,16 @@ function initMap() {
     // ],
 
     // Minnesota Asphalt Conference
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
-    //     '<span>2022 Minnesota Asphalt Conference</span><br>' +
-    //     '<hr>' +
-    //     'Prior Lake, MN<br>' +
-    //     'December 1-2, 2022<br>' +
-    //     '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1618804" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
+        '<span>2023 Minnesota Asphalt Conference</span><br>' +
+        '<hr>' +
+        'Prior Lake, MN<br>' +
+        'December 14-15, 2023<br>' +
+        '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1618804" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Missouri S&T Asphalt Conference
     // [
