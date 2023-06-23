@@ -98,7 +98,9 @@ function initMap() {
   };
 
   // Display a map on the page
-  map = new google.maps.Map(document.getElementById('indexMap'), mapOptions);
+  (function () {
+    map = new google.maps.Map(document.getElementById('indexMap'), mapOptions);
+  })();
 
   // Map Marker Locations
   var markers = [

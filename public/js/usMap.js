@@ -27,7 +27,9 @@ function initMap() {
   };
 
   // Display a map on the page
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  (function () {
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  })();
 
   // Map Marker Locations
   var markers = [
