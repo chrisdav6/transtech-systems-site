@@ -68,7 +68,7 @@ function initMap() {
     ['GT Mid Atlantic, Inc., New Jersey', 39.751595, -74.46653],
     ['TransTech Systems, New Mexico', 34.490538, -105.928939, 'direct'],
     ['TransTech Systems, New York', 42.776429, -73.866104, 'transtech'],
-    ['TransTech Systems, North Carolina', 35.568479, -78.85617, 'direct'],
+    ['TransTech Systems, North Carolina', 35.568479, -78.85617],
     ['TransTech Systems, North Dakota', 47.571878, -100.338895, 'transtech'],
     ['TransTech Systems, Ohio', 39.954965, -82.932924, 'direct'],
     ['TransTech Systems, Oklahoma', 35.737529, -97.519473, 'transtech'],
@@ -76,13 +76,13 @@ function initMap() {
     ['Groff Tractor & Equipment , Pennsylvania', 41.302571, -77.211914],
     ['Atlantic Supply, Puerto Rico', 18.245026, -66.569655],
     ['TransTech Systems , Rhode Island', 41.631867, -71.471558, 'direct'],
-    ['TransTech Systems, South Carolina', 33.897999, -80.905078, 'direct'],
+    ['TransTech Systems, South Carolina', 33.897999, -80.905078],
     ['TransTech Systems, South Dakota', 44.740993, -100.336661, 'transtech'],
     ['TransTech Systems, Tennessee', 35.78074, -86.495376, 'transtech'],
     ['TransTech Systems, Texas', 31.319622, -99.088073, 'direct'],
     ['TransTech Systems, Utah', 39.393259, -111.63642, 'transtech'],
     ['TransTech Systems, Vermont', 43.890007, -72.737469, 'direct'],
-    ['TransTech Systems, Virginia', 37.598711, -78.339174, 'transtech'],
+    ['TransTech Systems, Virginia', 37.598711, -78.339174],
     ['TransTech Systems, Washington', 47.426994, -119.815286, 'transtech'],
     ['TransTech Systems, West Virginia', 38.70075, -80.846758, 'transtech'],
     ['TransTech Systems, Wisconsin', 44.878719, -89.658613, 'direct'],
@@ -495,11 +495,12 @@ function initMap() {
     // North Carolina
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>Gordon Technical Sales & Service</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        'Attn: Marcus McCorison<br>' +
-        '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '804-878-1623<br>' +
+        'Attn: Mike Gordon<br>' +
+        '<p><a class="link" href="mailto:mikeg@gtssi.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.gtssi.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -582,11 +583,12 @@ function initMap() {
     // South Carolina
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>Gordon Technical Sales & Service</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        'Attn: Marcus McCorison<br>' +
-        '<p><a class="link" href="mailto:mmccorison@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '804-878-1623<br>' +
+        'Attn: Mike Gordon<br>' +
+        '<p><a class="link" href="mailto:mikeg@gtssi.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.gtssi.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -645,10 +647,12 @@ function initMap() {
     // Virginia
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>Gordon Technical Sales & Service</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '804-878-1623<br>' +
+        'Attn: Mike Gordon<br>' +
+        '<p><a class="link" href="mailto:mikeg@gtssi.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.gtssi.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
