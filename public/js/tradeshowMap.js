@@ -58,7 +58,7 @@ function initMap() {
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
-    // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
+    ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
@@ -468,16 +468,16 @@ function initMap() {
     // ],
 
     // WAPA
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
-    //     '<span>WAPA 63rd Annual Conference</span><br>' +
-    //     '<hr>' +
-    //     'Wisconsin Dells, WI<br>' +
-    //     'November 29-30, 2022<br>' +
-    //     '<p><a class="link" href="https://www.wispave.org/wapas-63rd-annual-conference-and-business-meeting-save-the-date" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
+        '<span>WAPA 64th Annual Conference</span><br>' +
+        '<hr>' +
+        'Wisconsin Dells, WI<br>' +
+        'November 28-29, 2023<br>' +
+        '<p><a class="link" href="https://www.wispave.org/event/wapas-64th-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Minnesota Asphalt Conference
     [
