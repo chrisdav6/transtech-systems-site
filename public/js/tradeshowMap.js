@@ -411,7 +411,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
-        '<span>Pave/X - Booth #131</span><br>' +
+        '<span>Pave/X - Booth #637</span><br>' +
         '<hr>' +
         'San Antonio, TX<br>' +
         'January 30-February 1, 2024<br>' +
