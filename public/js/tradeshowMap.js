@@ -46,14 +46,14 @@ function initMap() {
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
-    ['TXAPA, San Antonio, TX', 29.461083, -98.499359],
+    ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     // ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
     ['NAPA Annual Meeting, ChampionsGate, FL', 28.262904, -81.616245],
-    ['Pave/X, San Antonio, TX', 29.436334, -98.498679],
+    ['Pave/X, San Antonio, TX', 29.449007, -98.716937],
     // ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
@@ -327,7 +327,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPAs 48th Annual Meeting</span><br>' +
+        '<span>TXAPAs 48th Annual Meeting - Booth #21</span><br>' +
         '<hr>' +
         'San Antonio, TX<br>' +
         'September 18-21, 2023<br>' +
