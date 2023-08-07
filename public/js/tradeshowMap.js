@@ -39,7 +39,7 @@ function initMap() {
     ['APAI, Muncie, IN', 40.206962, -85.393312],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
-    // ['MAPA, Columbia, MO', 38.948857, -92.334012],
+    ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     // ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
@@ -240,16 +240,16 @@ function initMap() {
     ],
 
     // MAPA (Missouri)
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/mapa-logo.png">' +
-    //     '<span>33rd Annual MAPA Conference</span><br>' +
-    //     '<hr>' +
-    //     'Columbia, MO<br>' +
-    //     'January 9-11, 2023<br>' +
-    //     '<p><a class="link" href="https://moasphalt.org/events/https-moasphalt-org-2023-registration-form" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/mapa-logo.png">' +
+        '<span>34th Annual MAPA Conference</span><br>' +
+        '<hr>' +
+        'Columbia, MO<br>' +
+        'January 8-10, 2024<br>' +
+        '<p><a class="link" href="https://moasphalt.org/events/2024-annual-mapa-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // RMACES
     // [
