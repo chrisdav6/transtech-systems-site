@@ -327,7 +327,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPAs 48th Annual Meeting - Booth #21</span><br>' +
+        '<span>TXAPAs 48th Annual Meeting - Booth #2</span><br>' +
         '<hr>' +
         'San Antonio, TX<br>' +
         'September 18-21, 2023<br>' +
