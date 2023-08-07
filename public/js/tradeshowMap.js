@@ -123,7 +123,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/taceraLogo.png">' +
-        '<span>TACERA Fall Conference</span><br>' +
+        '<span>TACERA Fall Conference - Booth #201</span><br>' +
         '<hr>' +
         'College Station, TX<br>' +
         'October 24-26, 2023<br>' +
