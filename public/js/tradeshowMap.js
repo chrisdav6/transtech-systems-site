@@ -9,11 +9,10 @@ function initMap() {
 
   var mapOptions = {
     center: {
-      lat: 26.5,
-      lng: 350.3,
+      lat: 37,
+      lng: -94.5,
     },
-    // zoom: 4.7,
-    zoom: 3.45,
+    zoom: 4.7,
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -44,6 +43,7 @@ function initMap() {
     // ['APAM, Mt Pleasant, MI', 43.595835, -84.772652],
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
+    ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
@@ -296,6 +296,18 @@ function initMap() {
         'Nashville, TN<br>' +
         'March 25-27, 2024<br>' +
         '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // NCAT Test Track Conference
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/ncat-conference.png">' +
+        '<span>NCAT Test Track Conference</span><br>' +
+        '<hr>' +
+        'Auburn, AL<br>' +
+        'May 7-9, 2024<br>' +
+        '<p><a class="link" href="http://eng.auburn.edu/research/centers/ncat/testtrack/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
