@@ -172,7 +172,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-        '<span>SEAUPG</span><br>' +
+        '<span>SEAUPG - Booth #27</span><br>' +
         '<hr>' +
         'Little Rock, AR<br>' +
         'November 14-16, 2023<br>' +
