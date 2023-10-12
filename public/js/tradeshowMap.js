@@ -58,6 +58,7 @@ function initMap() {
     // ['PAIKY 2023 Winter Training, Louisville, KY', 38.203105, -85.631109],
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
+    ['TML Annual Conference, Dallas, TX', 33.083334, -96.809783],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
@@ -477,6 +478,18 @@ function initMap() {
         'Waco, TX<br>' +
         'May 13-15, 2024<br>' +
         '<p><a class="link" href="https://texasasphalt.org/events/2024-maps-conference/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //Texas Municipal League
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/tml-logo.png">' +
+        '<span>TML Annual Conference</span><br>' +
+        '<hr>' +
+        'Dallas, TX<br>' +
+        'October 9-11, 2024<br>' +
+        '<p><a class="link" href="https://tmlconference.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
