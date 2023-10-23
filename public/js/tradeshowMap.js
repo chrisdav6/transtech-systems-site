@@ -55,6 +55,7 @@ function initMap() {
     // ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
     // ['NAPA Annual Meeting, ChampionsGate, FL', 28.262904, -81.616245],
     ['Pave/X, San Antonio, TX', 29.449007, -98.716937],
+    ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
     ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
@@ -442,6 +443,18 @@ function initMap() {
         'San Antonio, TX<br>' +
         'January 30-February 1, 2024<br>' +
         '<p><a class="link" href="https://www.pavexshow.com/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //Greater Iowa Asphalt Conference
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/iowa-asphalt-logo.png">' +
+        '<span>2024 Greater Iowa Asphalt Conference</span><br>' +
+        '<hr>' +
+        'Des Moines, IA<br>' +
+        'March 6-8, 2024<br>' +
+        '<p><a class="link" href="https://www.apai.net/events.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
