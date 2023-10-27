@@ -28,7 +28,7 @@ function initMap() {
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
-    ['Tacera, College Station, TX', 30.623946, -96.319299],
+    // ['Tacera, College Station, TX', 30.623946, -96.319299],
     ['Roads and Traffic Expo, Bankok, Thailand', 3.671407, 100.609143],
     ['CalCima, Palm Springs, CA', 33.845971, -116.544408],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
@@ -123,16 +123,16 @@ function initMap() {
     // ],
 
     //Tacera Fall Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/taceraLogo.png">' +
-        '<span>TACERA Fall Conference - Booth #201</span><br>' +
-        '<hr>' +
-        'College Station, TX<br>' +
-        'October 24-26, 2023<br>' +
-        '<p><a class="link" href="https://tacera1.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/taceraLogo.png">' +
+    //     '<span>TACERA Fall Conference - Booth #201</span><br>' +
+    //     '<hr>' +
+    //     'College Station, TX<br>' +
+    //     'October 24-26, 2023<br>' +
+    //     '<p><a class="link" href="https://tacera1.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Roads and Traffic Expo
     [
