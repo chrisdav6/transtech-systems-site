@@ -29,7 +29,7 @@ function initMap() {
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
-    ['Roads and Traffic Expo, Bankok, Thailand', 3.671407, 100.609143],
+    // ['Roads and Traffic Expo, Bankok, Thailand', 3.671407, 100.609143],
     ['CalCima, Palm Springs, CA', 33.845971, -116.544408],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Little Rock, AR', 34.731085, -92.344018],
@@ -135,16 +135,16 @@ function initMap() {
     // ],
 
     //Roads and Traffic Expo
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/roadAndTrafficExpoLogo.png">' +
-        '<span>Roads & Traffic Expo Thailand 2023</span><br>' +
-        '<hr>' +
-        'Bangkok, Thailand<br>' +
-        'November 1-2, 2023<br>' +
-        '<p><a class="link" href="https://www.terrapinn.com/exhibition/roads-traffic-thailand/index.stm" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/roadAndTrafficExpoLogo.png">' +
+    //     '<span>Roads & Traffic Expo Thailand 2023</span><br>' +
+    //     '<hr>' +
+    //     'Bangkok, Thailand<br>' +
+    //     'November 1-2, 2023<br>' +
+    //     '<p><a class="link" href="https://www.terrapinn.com/exhibition/roads-traffic-thailand/index.stm" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //CalCima Education Conference
     [
