@@ -30,7 +30,7 @@ function initMap() {
     // ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
     // ['Roads and Traffic Expo, Bankok, Thailand', 3.671407, 100.609143],
-    ['CalCima, Palm Springs, CA', 33.845971, -116.544408],
+    // ['CalCima, Palm Springs, CA', 33.845971, -116.544408],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     ['SEAUPG, Little Rock, AR', 34.731085, -92.344018],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
@@ -147,16 +147,16 @@ function initMap() {
     // ],
 
     //CalCima Education Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/calcimaLogo.png">' +
-        '<span>2023 CalCima Education Conference</span><br>' +
-        '<hr>' +
-        'Palm Springs, CA<br>' +
-        'November 6-9, 2023<br>' +
-        '<p><a class="link" href="https://www.calcima.org/edconf" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/calcimaLogo.png">' +
+    //     '<span>2023 CalCima Education Conference</span><br>' +
+    //     '<hr>' +
+    //     'Palm Springs, CA<br>' +
+    //     'November 6-9, 2023<br>' +
+    //     '<p><a class="link" href="https://www.calcima.org/edconf" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Intermat ASEAN
     // [
