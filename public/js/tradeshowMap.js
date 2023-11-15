@@ -41,6 +41,7 @@ function initMap() {
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['APAM, Battle Creek, MI', 42.31697, -85.183573],
+    ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
@@ -275,6 +276,18 @@ function initMap() {
         'Battle Creek, MI<br>' +
         'February 27-28, 2024<br>' +
         '<p><a class="link" href="https://mms.apa-mi.org//Calendar/moreinfo.php?eventid=103902" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //Utah Asphalt Conference
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/utah-asphalt-logo.png">' +
+        '<span>2024 Utah Asphalt Conference</span><br>' +
+        '<hr>' +
+        'Sandy, UT<br>' +
+        'February 27-28, 2024<br>' +
+        '<p><a class="link" href="http://events.r20.constantcontact.com/register/event?oeidk=a07ek1vxotpaac8fe71&llr=vq5zhinab" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
