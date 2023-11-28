@@ -60,7 +60,7 @@ function initMap() {
     ['IKEYS Engineering Services, Ghana', 7.767872, -1.127134],
     ['Beratest AG, Guinée', 10.941192, -10.678711],
     ['Beratest AG, Guinée-Bissau', 12.084982, -14.902954],
-    ['TransTech Europe (Wirtgen Budapest Kft.), Hungary', 47.171044, 19.215088],
+    // ['TransTech Europe (Wirtgen Budapest Kft.), Hungary', 47.171044, 19.215088],
     ['ABAS AS, Iceland', 64.883646, -18.549413],
     ['M/s. Taisei International, India', 22.755921, 79.40918],
     ['PT Panairsan Pratama, Indonesia', -2.054191, 120.550732],
@@ -547,16 +547,16 @@ function initMap() {
     ],
 
     // Hungary
-    [
-      '<div class="map-text">' +
-        '<span>TransTech Europe (Wirtgen Budapest Kft.)</span><br>' +
-        '<hr>' +
-        '+49-441-3501227<br>' +
-        'Attn: Bernd Diedrichs<br>' +
-        '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>TransTech Europe (Wirtgen Budapest Kft.)</span><br>' +
+    //     '<hr>' +
+    //     '+49-441-3501227<br>' +
+    //     'Attn: Bernd Diedrichs<br>' +
+    //     '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Iceland
     [
