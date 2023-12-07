@@ -188,8 +188,8 @@ function initMap() {
         '<span>Atlantic Supply</span><br>' +
         '<hr>' +
         '888-260-5584<br>' +
-        'Attn: Scot Hall<br>' +
-        '<p><a class="link" href="mailto:scothall@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: James Allen<br>' +
+        '<p><a class="link" href="mailto:jallen@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
