@@ -64,6 +64,11 @@ body {
         }
       }
     }
+
+    .dropdown-item:focus {
+      background-color: #e9ecef;
+      color: #212529;
+    }
   }
 }
 
