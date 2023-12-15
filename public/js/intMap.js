@@ -12,7 +12,7 @@ function initMap() {
       lat: 28.711,
       lng: 17.234,
     },
-    zoom: 2.6,
+    zoom: 2.5,
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -99,6 +99,7 @@ function initMap() {
     ['TransTech Europe (Celab d.o.o.), Slovenia', 46.029389, 14.655762],
     ['Proeti, S.A., Spain', 40.413496, -3.603516],
     ['M/s. Taisei International, Sri Lanka', 7.8775394, 80.7003428],
+    ['ABAS AS, Sweden', 63.832054, 16.829426],
     ['Beratest AG, Switzerland', 46.991494, 8.234253],
     ['BAV Corporation / Uneedus Group LLP, Tajikistan', 38.882481, 70.817871],
     ['Beratest AG, Tchad', 14.98724, 18.896484],
@@ -1011,6 +1012,18 @@ function initMap() {
         'Attn: G. Parasuranam<br>' +
         '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // Sweden
+    [
+      '<div class="map-text">' +
+        '<span>ABAS AS</span><br>' +
+        '<hr>' +
+        '+47 32 24 35 30<br>' +
+        'Attn: Geir Solberg<br>' +
+        '<p><a class="link" href="mailto:gsolberg@abas-as.no?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://abas-as.simplesite.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
