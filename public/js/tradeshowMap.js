@@ -306,7 +306,7 @@ function initMap() {
     // World of Asphalt
     [
       '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/woa-logoTemp.png">' +
+        '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
         '<span>World of Asphalt - Booth #2528</span><br>' +
         '<hr>' +
         'Nashville, TN<br>' +
