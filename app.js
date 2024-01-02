@@ -117,22 +117,22 @@ app.get('/products/customerPortal', function (req, res) {
   });
 });
 
-// just to explain they are 2 difefremt URL
+// just to explain they are 2 different URL
 // Portal: https://www.mygadgetrepairs.com/customer?portal=297fff75bdc1ab0d - This one needs portal identifier and below doesn't
 // Customer Setup: https://www.mygadgetrepairs.com/customer-setup/9607a918-5056-0fff-ff996fa9ad344b29/
 
 //NewHomepage
-app.get('/homepage', function (req, res) {
-  res.render('homePage/index', {
-    title: 'TransTech Systems',
-    metaTitle:
-      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
-  });
-});
+// app.get('/homepage', function (req, res) {
+//   res.render('homePage/index', {
+//     title: 'TransTech Systems',
+//     metaTitle:
+//       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+//   });
+// });
 
 //Homepage
 app.get('/', function (req, res) {
-  res.render('index', {
+  res.render('homePage/index', {
     title: 'TransTech Systems',
     metaTitle:
       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
