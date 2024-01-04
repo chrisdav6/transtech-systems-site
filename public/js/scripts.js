@@ -2,6 +2,29 @@ $(function () {
   //Holiday Banner
   $('.holidayBanner').delay(1000).fadeIn(400).delay(10000).fadeOut(400);
 
+  //New Homepage Image Slideshow
+  setTimeout(() => {
+    $('#hero').css('background-image', 'url(../img/mikeHomepage2.jpg)');
+    setTimeout(() => {
+      $('#hero').css('background-image', 'url(../img/mikeHomepage3.jpg)');
+      setTimeout(() => {
+        $('#hero').css('background-image', 'url(../img/mikeHomepage.jpg)');
+        setTimeout(() => {
+          $('#hero').css('background-image', 'url(../img/mikeHomepage2.jpg)');
+          setTimeout(() => {
+            $('#hero').css('background-image', 'url(../img/mikeHomepage3.jpg)');
+            setTimeout(() => {
+              $('#hero').css(
+                'background-image',
+                'url(../img/mikeHomepage.jpg)'
+              );
+            }, 15000);
+          }, 15000);
+        }, 15000);
+      }, 15000);
+    }, 15000);
+  }, 15000);
+
   //Tradeshow Season Fade In
   $('.tradeshowSeason').animate(
     {
