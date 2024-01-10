@@ -52,7 +52,7 @@ function initMap() {
     // ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
-    // ['NAPA Midyear Meeting, Kansas City, MO', 39.127084, -94.522848],
+    ['NAPA Midyear Meeting, Brooklyn, NY', 40.649069, -73.945903],
     // ['NAPA Annual Meeting, ChampionsGate, FL', 28.262904, -81.616245],
     ['Pave/X, San Antonio, TX', 29.449007, -98.716937],
     ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
@@ -411,16 +411,16 @@ function initMap() {
     // ],
 
     //NAPA Midyear Meeting
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-    //     '<span>NAPA Midyear Meeting</span><br>' +
-    //     '<hr>' +
-    //     'Kansas City, MO<br>' +
-    //     'July 9-12, 2023<br>' +
-    //     '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-midyear-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+        '<span>NAPA Midyear Meeting</span><br>' +
+        '<hr>' +
+        'Brooklyn, NY<br>' +
+        'July 21-24, 2024<br>' +
+        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-midyear-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //NAPA Annual Meeting
     // [
