@@ -31,7 +31,7 @@ function initMap() {
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
     ['CalCima, Napa, CA', 38.303477, -122.293907],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
-    // ['SEAUPG, Little Rock, AR', 34.731085, -92.344018],
+    ['SEAUPG, Mobile, AL', 30.702498, -88.056333],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
     // ['APAI, Muncie, IN', 40.206962, -85.393312],
@@ -159,16 +159,16 @@ function initMap() {
     // ],
 
     // SEAUPG
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-    //     '<span>SEAUPG - Booth #27</span><br>' +
-    //     '<hr>' +
-    //     'Little Rock, AR<br>' +
-    //     'November 14-16, 2023<br>' +
-    //     '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
+        '<span>SEAUPG</span><br>' +
+        '<hr>' +
+        'Mobile, AL<br>' +
+        'November 19-21, 2024<br>' +
+        '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // BATT Lab Open House
     // [
