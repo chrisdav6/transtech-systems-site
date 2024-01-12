@@ -36,7 +36,7 @@ function initMap() {
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
     // ['APAI, Muncie, IN', 40.206962, -85.393312],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
-    // ['TRB, Washington D.C.', 38.911744, -77.018697],
+    ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['APAM, Battle Creek, MI', 42.31697, -85.183573],
@@ -219,16 +219,16 @@ function initMap() {
     // ],
 
     // TRB
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-    //     '<span>TRB 103rd Annual Meeting - Booth #1042</span><br>' +
-    //     '<hr>' +
-    //     'Washington D.C.<br>' +
-    //     'January 7-11, 2024<br>' +
-    //     '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
+        '<span>TRB 104th Annual Meeting</span><br>' +
+        '<hr>' +
+        'Washington D.C.<br>' +
+        'January 5-9, 2025<br>' +
+        '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // MAPA (Missouri)
     [
