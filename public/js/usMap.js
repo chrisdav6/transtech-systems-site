@@ -523,6 +523,7 @@ function initMap() {
         '518-560-0387<br>' +
         'Attn: John Lamond<br>' +
         '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.flexiblepavements.org" target="_blank"><i class="fa-solid fa-award fa-lg"></i> Visit Flexible Pavements Of Ohio</a></p>' +
         '</div>',
     ],
 
