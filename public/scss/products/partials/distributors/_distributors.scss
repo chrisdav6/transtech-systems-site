@@ -45,11 +45,19 @@
     padding: 0.35em 0.5em;
   }
 
+  .map-icons {
+    @include mq() {
+      font-size: 1rem;
+    }
+
+    font-size: 1.2rem;
+  }
+
   .companies {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    .comnpany-container {
+    .company-container {
       margin-bottom: 1.75em;
     }
 
