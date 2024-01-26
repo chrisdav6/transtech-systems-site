@@ -474,10 +474,10 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/pavement-expo-logo.png">' +
-        '<span>National Pavement Expo - Booth #524</span><br>' +
+        '<span>National Pavement Expo</span><br>' +
         '<hr>' +
         'Tampa, FL<br>' +
-        'January 23-25, 2024<br>' +
+        'January 29-31, 2025<br>' +
         '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
