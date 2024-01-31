@@ -222,7 +222,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-        '<span>TRB 104th Annual Meeting</span><br>' +
+        '<span>TRB 104th Annual Meeting - Booth #1034</span><br>' +
         '<hr>' +
         'Washington D.C.<br>' +
         'January 5-9, 2025<br>' +
