@@ -57,7 +57,7 @@ function initMap() {
     ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
     ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
-    ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
+    // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     ['TML Annual Conference, Dallas, TX', 33.083334, -96.809783],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
@@ -471,16 +471,16 @@ function initMap() {
     ],
 
     // Pavement Expo
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/pavement-expo-logo.png">' +
-        '<span>National Pavement Expo</span><br>' +
-        '<hr>' +
-        'Tampa, FL<br>' +
-        'January 29-31, 2025<br>' +
-        '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/pavement-expo-logo.png">' +
+    //     '<span>National Pavement Expo</span><br>' +
+    //     '<hr>' +
+    //     'Tampa, FL<br>' +
+    //     'January 15-17, 2025<br>' +
+    //     '<p><a class="link" href="https://www.nationalpavementexpo.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //TXAPA Maps
     [
