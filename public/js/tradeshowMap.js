@@ -9,10 +9,10 @@ function initMap() {
 
   var mapOptions = {
     center: {
-      lat: 37,
+      lat: 35,
       lng: -94.5,
     },
-    zoom: 4.7,
+    zoom: 4.2,
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -53,7 +53,7 @@ function initMap() {
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Brooklyn, NY', 40.649069, -73.945903],
-    // ['NAPA Annual Meeting, ChampionsGate, FL', 28.262904, -81.616245],
+    ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
     ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
     ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
@@ -423,16 +423,16 @@ function initMap() {
     ],
 
     //NAPA Annual Meeting
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-    //     '<span>NAPA 2024 Annual Meeting</span><br>' +
-    //     '<hr>' +
-    //     'ChampionsGate, FL<br>' +
-    //     'January 28-31, 2024<br>' +
-    //     '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+        '<span>NAPA 2025 Annual Meeting</span><br>' +
+        '<hr>' +
+        'Maui, HI<br>' +
+        'February 2-5, 2025<br>' +
+        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Pave/X
     [
