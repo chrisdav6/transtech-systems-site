@@ -438,7 +438,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
-        '<span>Pave/X</span><br>' +
+        '<span>Pave/X - Booth #1035</span><br>' +
         '<hr>' +
         'Chattanooga, TN<br>' +
         'January 28-30, 2025<br>' +
