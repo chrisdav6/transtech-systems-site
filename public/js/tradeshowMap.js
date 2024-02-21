@@ -270,7 +270,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/utah-asphalt-logo.png">' +
-        '<span>2024 Utah Asphalt Conference - Booth #104</span><br>' +
+        '<span>2024 Utah Asphalt Conference - Booth #103</span><br>' +
         '<hr>' +
         'Sandy, UT<br>' +
         'February 27-28, 2024<br>' +
