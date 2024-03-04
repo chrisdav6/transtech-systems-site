@@ -80,7 +80,7 @@ function initMap() {
     ['TransTech Systems, South Dakota', 44.740993, -100.336661, 'transtech'],
     ['QC Lab Supply, Tennessee', 35.78074, -86.495376],
     ['TransTech Systems, Texas', 31.319622, -99.088073, 'direct'],
-    ['TransTech Systems, Utah', 39.393259, -111.63642, 'transtech'],
+    ['TransTech Systems, Utah', 39.393259, -111.63642, 'direct'],
     ['TransTech Systems, Vermont', 43.890007, -72.737469, 'transtech'],
     ['TransTech Systems, Virginia', 37.598711, -78.339174],
     ['TransTech Systems, Washington', 47.426994, -119.815286, 'transtech'],
@@ -645,8 +645,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '518-560-0387<br>' +
+        'Attn: John Lamond<br>' +
+        '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
