@@ -55,8 +55,8 @@ function initMap() {
     ['NAPA Midyear Meeting, Brooklyn, NY', 40.649069, -73.945903],
     ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
     ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
-    ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
-    ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
+    // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
+    // ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     ['TML Annual Conference, Dallas, TX', 33.083334, -96.809783],
@@ -447,28 +447,28 @@ function initMap() {
     ],
 
     //Greater Iowa Asphalt Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/iowa-asphalt-logo.png">' +
-        '<span>2024 Greater Iowa Asphalt Conference</span><br>' +
-        '<hr>' +
-        'Des Moines, IA<br>' +
-        'March 6-8, 2024<br>' +
-        '<p><a class="link" href="https://www.apai.net/events.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/iowa-asphalt-logo.png">' +
+    //     '<span>2024 Greater Iowa Asphalt Conference</span><br>' +
+    //     '<hr>' +
+    //     'Des Moines, IA<br>' +
+    //     'March 6-8, 2024<br>' +
+    //     '<p><a class="link" href="https://www.apai.net/events.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //PAIKY Winter Training
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
-        '<span>PAIKY 2024 Winter Training School</span><br>' +
-        '<hr>' +
-        'Louisville, KY<br>' +
-        'March 6-8, 2024<br>' +
-        '<p><a class="link" href="https://www.paiky.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
+    //     '<span>PAIKY 2024 Winter Training School</span><br>' +
+    //     '<hr>' +
+    //     'Louisville, KY<br>' +
+    //     'March 6-8, 2024<br>' +
+    //     '<p><a class="link" href="https://www.paiky.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Pavement Expo
     // [
