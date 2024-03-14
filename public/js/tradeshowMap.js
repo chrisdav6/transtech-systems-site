@@ -44,7 +44,7 @@ function initMap() {
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
     ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
-    ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
     // ['Highways USA Conference, Dallas, TX', 32.798137, -96.806722],
@@ -315,16 +315,16 @@ function initMap() {
     ],
 
     //Ohio Asphalt Expo
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-        '<span>Ohio Asphalt Expo</span><br>' +
-        '<hr>' +
-        'Columbus, OH<br>' +
-        'March 12-13, 2024<br>' +
-        '<p><a class="link" href="https://www.flexiblepavements.org/OhioAsphaltExpo" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+    //     '<span>Ohio Asphalt Expo</span><br>' +
+    //     '<hr>' +
+    //     'Columbus, OH<br>' +
+    //     'March 12-13, 2024<br>' +
+    //     '<p><a class="link" href="https://www.flexiblepavements.org/OhioAsphaltExpo" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Ohio Asphalt Paving Conference
     // [
