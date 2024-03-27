@@ -42,7 +42,7 @@ function initMap() {
     // ['APAM, Battle Creek, MI', 42.31697, -85.183573],
     // ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
-    ['World of Asphalt, Nashville, TN', 36.101958, -86.375711],
+    ['World of Asphalt, St. Louis, MO', 38.635403, -90.203293],
     ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
@@ -294,10 +294,10 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-        '<span>World of Asphalt - Booth #2528</span><br>' +
+        '<span>World of Asphalt 2025</span><br>' +
         '<hr>' +
-        'Nashville, TN<br>' +
-        'March 25-27, 2024<br>' +
+        'St. Louis, MO<br>' +
+        'March 25-27, 2025<br>' +
         '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
