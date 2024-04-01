@@ -632,15 +632,16 @@ app.post('/products/repairRequest', function (req, res) {
         html: body, // html body
       };
 
-      let userBody = `<h2><u>TransTech Systems Repair Request Received</u></h2>`;
-      userBody += `<p>Thank you, ${name} for your repair submission for gauge serial number ${repairSerial}<br>`;
-      userBody += `A representative will contact you shortly, please do not reply to this email.</p>`;
+      let userBody = `<h2><u>TransTech Systems Calibration/Repair Request Received</u></h2>`;
+      userBody += `<p>Thank you, ${name} for your calibration/repair submission for gauge serial number ${repairSerial}<br>`;
+      userBody += `Our service team will reply with your ticket(s) shortly.</p>`;
+      userBody += `<p><b>This is not a monitored mailbox. Please do not reply.</b></p>`;
 
       // Send mail to user letting them know we received their request
       let mailOptions2 = {
         from: 'webforms@transtechsys.com', // sender address
         to: email, // list of receivers
-        subject: 'TransTech Systems Repair Request Form Submitted', // Subject line
+        subject: 'TransTech Systems Calibration/Repair Request Received', // Subject line
         text: userBody, // plain text body
         html: userBody, // html body
       };
