@@ -632,10 +632,35 @@ app.post('/products/repairRequest', function (req, res) {
         html: body, // html body
       };
 
+      let userBody = `<h2><u>TransTech Systems Repair Request Received</u></h2>`;
+      userBody += `<p>Thank you, ${name} for your repair submission for gauge serial number ${repairSerial}<br>`;
+      userBody += `A representative will contact you shortly, please do not reply to this email.</p>`;
+
+      // Send mail to user letting them know we received their request
+      let mailOptions2 = {
+        from: 'webforms@transtechsys.com', // sender address
+        to: email, // list of receivers
+        subject: 'TransTech Systems Repair Request Form Submitted', // Subject line
+        text: userBody, // plain text body
+        html: userBody, // html body
+      };
+
       if (company !== 'google') {
         //Trying to stop spam coming in with google as company name
         // send mail with defined transport object
         transporter.sendMail(mailOptions, (error, info) => {
+          if (error) {
+            return console.log(error);
+          }
+          console.log('Message sent: %s', info.messageId);
+          // Preview only available when sending through an Ethereal account
+          console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+          // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+          // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+        });
+
+        transporter.sendMail(mailOptions2, (error, info) => {
           if (error) {
             return console.log(error);
           }
