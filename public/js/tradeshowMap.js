@@ -485,12 +485,12 @@ function initMap() {
     //TXAPA Maps
     [
       '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
+        '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
         '<span>TXAPA Maps Conference</span><br>' +
         '<hr>' +
         'Waco, TX<br>' +
         'May 13-15, 2024<br>' +
-        '<p><a class="link" href="https://texasasphalt.org/events/2024-maps-conference/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://texasasphalt.swoogo.com/txapa-maps-2024" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
