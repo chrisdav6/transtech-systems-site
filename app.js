@@ -121,6 +121,11 @@ app.get('/products/customerPortal', function (req, res) {
 // Portal: https://www.mygadgetrepairs.com/customer?portal=297fff75bdc1ab0d - This one needs portal identifier and below doesn't
 // Customer Setup: https://www.mygadgetrepairs.com/customer-setup/9607a918-5056-0fff-ff996fa9ad344b29/
 
+//Redirect /payment to payment site
+app.get('/payment', function (req, res) {
+  res.redirect('https://securepayment.link/transtechsys');
+});
+
 //NewHomepage
 // app.get('/homepage', function (req, res) {
 //   res.render('homePage/index', {
