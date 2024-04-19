@@ -306,7 +306,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/ncat-conference.png">' +
-        '<span>NCAT Test Track Conference</span><br>' +
+        '<span>NCAT Test Track Conference - Booth #13</span><br>' +
         '<hr>' +
         'Auburn, AL<br>' +
         'May 7-9, 2024<br>' +
