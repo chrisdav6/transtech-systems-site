@@ -294,7 +294,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-        '<span>World of Asphalt 2025</span><br>' +
+        '<span>World of Asphalt 2025 - Booth #1008</span><br>' +
         '<hr>' +
         'St. Louis, MO<br>' +
         'March 25-27, 2025<br>' +
