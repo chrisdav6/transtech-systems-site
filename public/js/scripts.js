@@ -4,17 +4,23 @@ $(function () {
 
   //New Homepage Image Slideshow
   setTimeout(() => {
-    $('#hero').css('background-image', 'url(../img/mikeHomepage2.jpg)');
+    $('#heroHome').css('background-image', 'url(../img/mikeHomepage2.jpg)');
     setTimeout(() => {
-      $('#hero').css('background-image', 'url(../img/mikeHomepage3.jpg)');
+      $('#heroHome').css('background-image', 'url(../img/mikeHomepage3.jpg)');
       setTimeout(() => {
-        $('#hero').css('background-image', 'url(../img/mikeHomepage.jpg)');
+        $('#heroHome').css('background-image', 'url(../img/mikeHomepage.jpg)');
         setTimeout(() => {
-          $('#hero').css('background-image', 'url(../img/mikeHomepage2.jpg)');
+          $('#heroHome').css(
+            'background-image',
+            'url(../img/mikeHomepage2.jpg)'
+          );
           setTimeout(() => {
-            $('#hero').css('background-image', 'url(../img/mikeHomepage3.jpg)');
+            $('#heroHome').css(
+              'background-image',
+              'url(../img/mikeHomepage3.jpg)'
+            );
             setTimeout(() => {
-              $('#hero').css(
+              $('#heroHome').css(
                 'background-image',
                 'url(../img/mikeHomepage.jpg)'
               );
