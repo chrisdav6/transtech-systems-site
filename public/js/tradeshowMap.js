@@ -489,7 +489,7 @@ function initMap() {
         '<span>TXAPA Maps Conference</span><br>' +
         '<hr>' +
         'Waco, TX<br>' +
-        'May 13-15, 2024<br>' +
+        'May 14-15, 2024<br>' +
         '<p><a class="link" href="https://texasasphalt.swoogo.com/txapa-maps-2024" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
