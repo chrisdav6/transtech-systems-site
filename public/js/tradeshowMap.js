@@ -342,7 +342,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPAs 49th Annual Meeting</span><br>' +
+        '<span>TXAPAs 49th Annual Meeting - Booth #26</span><br>' +
         '<hr>' +
         'San Antonio, TX<br>' +
         'September 9-12, 2024<br>' +
