@@ -62,7 +62,7 @@ function initMap() {
     ['TML Annual Conference, Houston, TX', 29.787386, -95.360779],
     // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
-    ['Minnesota Asphalt Conference, Prior Lake, MN', 44.725722, -93.464836],
+    ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
     //   '63rd Illinois Bituminous Paving Conference, Champaign, IL',
@@ -536,9 +536,9 @@ function initMap() {
         '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
         '<span>2024 Minnesota Asphalt Conference</span><br>' +
         '<hr>' +
-        'Prior Lake, MN<br>' +
-        'December 12-13, 2024<br>' +
-        '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1618804" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        'St Cloud, MN<br>' +
+        'December 10-11, 2024<br>' +
+        '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1853252&group=" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
