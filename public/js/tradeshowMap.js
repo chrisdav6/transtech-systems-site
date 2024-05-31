@@ -31,6 +31,7 @@ function initMap() {
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
     ['CalCima, Napa, CA', 38.303477, -122.293907],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
+    ['AASHTO Annual Meeting, Philadelphia, PA', 39.95585, -75.164579],
     ['SEAUPG, Mobile, AL', 30.702498, -88.056333],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
@@ -157,6 +158,18 @@ function initMap() {
     // 	'<p><a class="link" href="https://asean.intermatconstruction.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     // 	'</div>'
     // ],
+
+    // AASHTO
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
+        '<span>AASHTO Annual Meeting</span><br>' +
+        '<hr>' +
+        'Philadelphia, PA<br>' +
+        'October 29-December 1, 2024<br>' +
+        '<p><a class="link" href="https://transportation.org/meetings/meetings" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // SEAUPG
     [
