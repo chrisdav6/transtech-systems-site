@@ -39,6 +39,14 @@ $(function () {
     500
   );
 
+  //Ames Fade In
+  $('.ames').animate(
+    {
+      opacity: 1,
+    },
+    500
+  );
+
   //Fade In Body on page Load
   // $("body").animate({
   //   opacity: 1
