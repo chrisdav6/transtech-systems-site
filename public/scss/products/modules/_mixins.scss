@@ -1,17 +1,23 @@
 @mixin mq($width: 50em) {
-  @media(max-width: $width) {
+  @media (max-width: $width) {
     @content;
   }
 }
 
 @mixin mq600($width: 600px) {
-  @media(max-width: $width) {
+  @media (max-width: $width) {
     @content;
   }
 }
 
 @mixin mq1024($width: 1024px) {
-  @media(max-width: $width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin mq1200($width: 1200px) {
+  @media (max-width: $width) {
     @content;
   }
 }

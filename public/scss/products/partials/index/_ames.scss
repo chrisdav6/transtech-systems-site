@@ -1,13 +1,8 @@
 .ames {
   background-color: rgba(255, 221, 0, 0.8);
-  padding: 0.5em 1em;
   text-align: left;
   color: #191919;
   position: absolute;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
   opacity: 0; //Fade In with jQuery
   transition: 0.3s;
 
@@ -16,6 +11,31 @@
     color: #191919;
     background: rgba(255, 221, 0, 1);
     border-left: 15px solid #0aaf55;
+  }
+
+  .top {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+
+    img {
+      width: 200px;
+    }
+
+    @include mq1200 {
+      display: none;
+    }
   }
 
   @include mq600 {
