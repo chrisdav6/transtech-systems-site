@@ -26,7 +26,7 @@ function initMap() {
   var markers = [
     ['M/s. Taisei International, Afghanistan', 34.234306, 66.209291],
     ['Somagex, Algeria', 29.343875, 2.109375],
-    ['Mertind, Argentina', -33.550655, -63.950483],
+    // ['Mertind, Argentina', -33.550655, -63.950483],
     ['BAV Group Ltd. , Armenia', 40.455307, 44.653931],
     ['Motorway Tech, Australia', -24.367114, 133.769531],
     ['TransTech Europe, Austria', 47.554287, 14.512939],
@@ -143,16 +143,16 @@ function initMap() {
     ],
 
     // Argentina
-    [
-      '<div class="map-text">' +
-        '<span>Mertind Ltda.</span><br>' +
-        '<hr>' +
-        '+591-3-336-7676<br>' +
-        'Attn: Mauricio Lijeron Eguez<br>' +
-        '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Mertind Ltda.</span><br>' +
+    //     '<hr>' +
+    //     '+591-3-336-7676<br>' +
+    //     'Attn: Mauricio Lijeron Eguez<br>' +
+    //     '<p><a class="link" href="mailto:mauriciolijeron@mertind.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="https://www.mertind.com/bolivia" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Armenia (CIS)
     [
