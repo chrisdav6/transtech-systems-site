@@ -61,7 +61,7 @@ function initMap() {
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     ['TML Annual Conference, Houston, TX', 29.787386, -95.360779],
-    // ['NEAUPG, Albany, NY', 42.728662, -73.799678],
+    ['NEAUPG, Springfield, MA', 42.104945, -72.591488],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
@@ -520,16 +520,16 @@ function initMap() {
     ],
 
     // NEAUPG
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-    //     '<span>NEAUPG</span><br>' +
-    //     '<hr>' +
-    //     'Albany, NY<br>' +
-    //     'November 2-3, 2022<br>' +
-    //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+        '<span>NEAUPG Fall Meeting</span><br>' +
+        '<hr>' +
+        'Springfield, MA<br>' +
+        'October 16-17, 2024<br>' +
+        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // WAPA
     [
