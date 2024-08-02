@@ -39,9 +39,9 @@ function initMap() {
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
-    // ['RMACES, Denver, CO', 39.771474, -104.806882],
+    ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['APAM, Mt. Pleasant, MI', 43.600198, -84.769425],
-    ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
+    // ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, St. Louis, MO', 38.635403, -90.203293],
     // ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
@@ -256,16 +256,16 @@ function initMap() {
     ],
 
     // RMACES
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-    //     '<span>RMACES</span><br>' +
-    //     '<hr>' +
-    //     'Denver, CO<br>' +
-    //     'February 7-8, 2023<br>' +
-    //     '<p><a class="link" href="https://www.rmaces.org/index.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
+        '<span>RMACES</span><br>' +
+        '<hr>' +
+        'Denver, CO<br>' +
+        'February 18-19, 2025<br>' +
+        '<p><a class="link" href="http://www.rmaces.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //APAM
     [
@@ -280,16 +280,16 @@ function initMap() {
     ],
 
     //Utah Asphalt Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/utah-asphalt-logo.png">' +
-        '<span>2024 Utah Asphalt Conference</span><br>' +
-        '<hr>' +
-        'Sandy, UT<br>' +
-        'February 19-20, 2025<br>' +
-        '<p><a class="link" href="https://utahasphalt.org/uapa-events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/utah-asphalt-logo.png">' +
+    //     '<span>2024 Utah Asphalt Conference</span><br>' +
+    //     '<hr>' +
+    //     'Sandy, UT<br>' +
+    //     'February 19-20, 2025<br>' +
+    //     '<p><a class="link" href="https://utahasphalt.org/uapa-events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Illinois Asphalt Conference
     // [
