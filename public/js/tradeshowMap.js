@@ -26,7 +26,7 @@ function initMap() {
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     // ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
+    // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
     ['CalCima, Napa, CA', 38.303477, -122.293907],
@@ -100,16 +100,16 @@ function initMap() {
     // ],
 
     //CalAPA Fall
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-        '<span>CalAPA Fall Conference</span><br>' +
-        '<hr>' +
-        'Sacramento, CA<br>' +
-        'October 23-25, 2024<br>' +
-        '<p><a class="link" href="https://www.calapa.net/conferences.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+    //     '<span>CalAPA Fall Conference</span><br>' +
+    //     '<hr>' +
+    //     'Sacramento, CA<br>' +
+    //     'October 23-25, 2024<br>' +
+    //     '<p><a class="link" href="https://www.calapa.net/conferences.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //CalAPA Spring
     // [
