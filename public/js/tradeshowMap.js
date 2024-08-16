@@ -25,7 +25,7 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-    // ['MAPA, Bangor, ME', 44.831204, -68.781424],
+    ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
@@ -88,16 +88,16 @@ function initMap() {
     // ],
 
     // MAPA (Maine)
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
-    //     '<span>MAPA</span><br>' +
-    //     '<hr>' +
-    //     'Bangor, ME<br>' +
-    //     'April 7-8, 2020<br>' +
-    //     '<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>'
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
+        '<span>MAPA</span><br>' +
+        '<hr>' +
+        'Bangor, ME<br>' +
+        'April 8-9, 2025<br>' +
+        '<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //CalAPA Fall
     // [
