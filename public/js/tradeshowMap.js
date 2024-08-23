@@ -50,7 +50,6 @@ function initMap() {
     ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
     // ['Highways USA Conference, Dallas, TX', 32.798137, -96.806722],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
-    // ['AASHTO, Orlando, FL', 28.551161, -81.373221],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     // ['NAPA Midyear Meeting, Brooklyn, NY', 40.649069, -73.945903],
@@ -159,14 +158,14 @@ function initMap() {
     // 	'</div>'
     // ],
 
-    // AASHTO
+    // AASHTO Annaul Meeting
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
         '<span>AASHTO Annual Meeting</span><br>' +
         '<hr>' +
         'Philadelphia, PA<br>' +
-        'October 29-December 1, 2024<br>' +
+        'October 29-November 1, 2024<br>' +
         '<p><a class="link" href="https://transportation.org/meetings/meetings" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -262,7 +261,7 @@ function initMap() {
         '<span>RMACES</span><br>' +
         '<hr>' +
         'Denver, CO<br>' +
-        'February 18-19, 2025<br>' +
+        'February 19-20, 2025<br>' +
         '<p><a class="link" href="http://www.rmaces.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -384,18 +383,6 @@ function initMap() {
     //     'Reno, NV<br>' +
     //     'October 12-13, 2022<br>' +
     //     '<p><a class="link" href="https://www.co-asphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
-
-    //AASHTO Annual Meeting
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
-    //     '<span>2022 AASHTO Annual Meeting</span><br>' +
-    //     '<hr>' +
-    //     'Orlando, FL<br>' +
-    //     'October 19-23, 2022<br>' +
-    //     '<p><a class="link" href="https://web.cvent.com/event/117fd874-bc35-47ab-923b-a928162d55c4/websitePage:33bb36ed-69a1-42a4-85e6-6b25fb660a71" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     //     '</div>',
     // ],
 
@@ -549,7 +536,7 @@ function initMap() {
         '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
         '<span>2024 Minnesota Asphalt Conference</span><br>' +
         '<hr>' +
-        'St Cloud, MN<br>' +
+        'St. Cloud, MN<br>' +
         'December 10-11, 2024<br>' +
         '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1853252&group=" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
