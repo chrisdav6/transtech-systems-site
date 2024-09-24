@@ -27,7 +27,7 @@ function initMap() {
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     ['MAPA, Bangor, ME', 44.831204, -68.781424],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
-    // ['CalAPA Spring, Ontario, CA', 34.039986, -117.592088],
+    ['CalAPA Spring, Pomona, CA', 34.053067, -117.749428],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
     ['CalCima, Napa, CA', 38.303477, -122.293907],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
@@ -111,16 +111,16 @@ function initMap() {
     // ],
 
     //CalAPA Spring
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
-    //     '<span>CalAPA Spring Conference</span><br>' +
-    //     '<hr>' +
-    //     'Ontario, CA<br>' +
-    //     'March 22-24, 2023<br>' +
-    //     '<p><a class="link" href="https://www.calapa.net/conferences.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/calapa-logo.png">' +
+        '<span>CalAPA Spring Conference</span><br>' +
+        '<hr>' +
+        'Pomona, CA<br>' +
+        'February 25-26, 2025<br>' +
+        '<p><a class="link" href="https://www.calapa.net/conferences.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Tacera Fall Conference
     // [
