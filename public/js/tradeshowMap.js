@@ -53,7 +53,7 @@ function initMap() {
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
-    // ['NAPA Midyear Meeting, Brooklyn, NY', 40.649069, -73.945903],
+    ['NAPA Midyear Meeting, Louisville, KY', 38.233585, -85.770498],
     ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
     ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
@@ -424,16 +424,16 @@ function initMap() {
     // ],
 
     //NAPA Midyear Meeting
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-    //     '<span>NAPA Midyear Meeting</span><br>' +
-    //     '<hr>' +
-    //     'Brooklyn, NY<br>' +
-    //     'July 21-24, 2024<br>' +
-    //     '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-midyear-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+        '<span>NAPA Midyear Meeting</span><br>' +
+        '<hr>' +
+        'Louisville, KY<br>' +
+        'July 8-11, 2025<br>' +
+        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-midyear-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //NAPA Annual Meeting
     [
