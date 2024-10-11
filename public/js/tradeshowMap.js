@@ -60,7 +60,7 @@ function initMap() {
     // ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
-    ['TML Annual Conference, Houston, TX', 29.787386, -95.360779],
+    ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Springfield, MA', 42.104945, -72.591488],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
@@ -513,8 +513,8 @@ function initMap() {
         '<img class="d-block mb-3" width="100" src="../img/tml-logo.png">' +
         '<span>TML Annual Conference</span><br>' +
         '<hr>' +
-        'Dallas, TX<br>' +
-        'October 9-11, 2024<br>' +
+        'Fort Worth, TX<br>' +
+        'October 29-31, 2025<br>' +
         '<p><a class="link" href="https://tmlexhibits.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
