@@ -87,6 +87,7 @@ function initMap() {
     ['M/s. Taisei International, Oman', 20.306682, 56.00759],
     ['M/s. Taisei International, Pakistan', 29.618773, 69.26533],
     ['Atlantic Supply, Panama', 8.504292, -81.456683],
+    ['Solotest, Paraguay', -22.739887, -58.50537],
     ['Siccion Marketing, Philippines', 12.533115, 123.046875],
     ['Toropol, Ltd., Poland', 52.456009, 19.02832],
     ['Proeti, S.A., Portugal', 39.740986, -8.4375],
@@ -111,6 +112,7 @@ function initMap() {
     ['BAV Corporation / Uniprom LLC, Ukraine', 49.009051, 31.618652],
     ['Burgan Equipment Co., United Arab Emirates', 23.616186, 54.136582],
     ['JR Technical Services, United Kindom', 54.393352, -2.06543],
+    ['Solotest, Uruguay', -32.490907, -56.0182],
     ['BAV Corporation / Uneedus Group LLP, Uzbekistan', 42.016652, 63.457031],
     ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963],
   ];
@@ -885,6 +887,18 @@ function initMap() {
         '</div>',
     ],
 
+    // Paraguay
+    [
+      '<div class="map-text">' +
+        '<span>Solotest</span><br>' +
+        '<hr>' +
+        '+5511-3289-0211<br>' +
+        'Attn: Rodrigo Barella<br>' +
+        '<p><a class="link" href="mailto:rodrigobarella@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.solotest.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
     // Philippines
     [
       '<div class="map-text">' +
@@ -1169,6 +1183,18 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:callum@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // Uruguay
+    [
+      '<div class="map-text">' +
+        '<span>Solotest</span><br>' +
+        '<hr>' +
+        '+5511-3289-0211<br>' +
+        'Attn: Rodrigo Barella<br>' +
+        '<p><a class="link" href="mailto:rodrigobarella@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.solotest.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
