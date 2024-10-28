@@ -188,6 +188,13 @@ function initMap() {
         'Attn: Bernd Diedrichs<br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p class="mb-2 mt-4"><u>Service</u></p>' +
+        '<span>MIT</span><br>' +
+        '<hr>' +
+        '+49 (0) 351/87181-25<br>' +
+        'Attn: Mrs. Andrea Ulbricht<br>' +
+        '<p><a class="link" href="mailto:andrea.ulbricht@mit-dresden.de?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.mit-dresden.de" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -508,9 +515,16 @@ function initMap() {
         '<hr>' +
         '+49-441-3501227<br>' +
         'Attn: Bernd Diedrichs<br>' +
-        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p class="mb-2 mt-4"><u>Service</u></p>' +
+        '<span>MIT</span><br>' +
+        '<hr>' +
+        '+49 (0) 351/87181-25<br>' +
+        'Attn: Mrs. Andrea Ulbricht<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
+        '<p><a class="link" href="mailto:andrea.ulbricht@mit-dresden.de?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.mit-dresden.de" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
