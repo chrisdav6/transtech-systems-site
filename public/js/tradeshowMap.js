@@ -54,7 +54,7 @@ function initMap() {
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Louisville, KY', 38.233585, -85.770498],
-    ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
+    // ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
     ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     // ['PAIKY 2024 Winter Training, Louisville, KY', 38.203105, -85.631109],
@@ -436,16 +436,16 @@ function initMap() {
     ],
 
     //NAPA Annual Meeting
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-        '<span>NAPA 2025 Annual Meeting</span><br>' +
-        '<hr>' +
-        'Maui, HI<br>' +
-        'February 2-5, 2025<br>' +
-        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+    //     '<span>NAPA 2025 Annual Meeting</span><br>' +
+    //     '<hr>' +
+    //     'Maui, HI<br>' +
+    //     'February 2-5, 2025<br>' +
+    //     '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Pave/X
     [
