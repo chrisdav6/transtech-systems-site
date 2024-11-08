@@ -588,8 +588,8 @@ function initMap() {
         '<span>Groff Tractor & Equipment</span><br>' +
         '<hr>' +
         '717-766-7671<br>' +
-        'Attn: Matt Wilson<br>' +
-        '<p><a class="link" href="mailto:mattwilson@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Steve Weikert<br>' +
+        '<p><a class="link" href="mailto:steveweikert@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.grofftractor.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
