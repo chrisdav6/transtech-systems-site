@@ -45,7 +45,7 @@ function initMap() {
     // ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, St. Louis, MO', 38.635403, -90.203293],
-    // ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
+    ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
     ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
@@ -328,16 +328,16 @@ function initMap() {
     ],
 
     // NCAT Test Track Conference
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/ncat-conference.png">' +
-    //     '<span>NCAT Test Track Conference - Booth #13</span><br>' +
-    //     '<hr>' +
-    //     'Auburn, AL<br>' +
-    //     'May 7-9, 2024<br>' +
-    //     '<p><a class="link" href="http://eng.auburn.edu/research/centers/ncat/testtrack/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/ncat-conference.png">' +
+        '<span>NCAT Test Track Conference</span><br>' +
+        '<hr>' +
+        'Auburn, AL<br>' +
+        '2027<br>' +
+        '<p><a class="link" href="http://eng.auburn.edu/research/centers/ncat/testtrack/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Ohio Asphalt Expo
     [
