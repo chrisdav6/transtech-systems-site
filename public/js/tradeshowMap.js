@@ -32,7 +32,7 @@ function initMap() {
     // ['CalCima, Napa, CA', 38.303477, -122.293907],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['AASHTO Annual Meeting, Philadelphia, PA', 39.95585, -75.164579],
-    ['NCAUPG, Indianapolis , IN', 39.778201, -86.157126],
+    // ['NCAUPG, Indianapolis , IN', 39.778201, -86.157126],
     ['SEAUPG, Mobile, AL', 30.702498, -88.056333],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
@@ -172,16 +172,16 @@ function initMap() {
     // ],
 
     // NCAUPG
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/NCAUPGLogo.png">' +
-        '<span>NCAUPG</span><br>' +
-        '<hr>' +
-        'Indianapolis , IN<br>' +
-        'November 12-14, 2024<br>' +
-        '<p><a class="link" href="https://engineering.purdue.edu/~ncaupg" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/NCAUPGLogo.png">' +
+    //     '<span>NCAUPG</span><br>' +
+    //     '<hr>' +
+    //     'Indianapolis , IN<br>' +
+    //     'November 12-14, 2024<br>' +
+    //     '<p><a class="link" href="https://engineering.purdue.edu/~ncaupg" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // SEAUPG
     [
