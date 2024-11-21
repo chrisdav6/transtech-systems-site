@@ -287,7 +287,7 @@ function initMap() {
         '<hr>' +
         'Mt. Pleasant, MI<br>' +
         'February 26-27, 2025<br>' +
-        '<p><a class="link" href="https://mms.apa-mi.org//Calendar/moreinfo.php?eventid=137288" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.apa-mi.org/pc_home_page.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
