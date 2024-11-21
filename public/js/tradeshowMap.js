@@ -551,7 +551,7 @@ function initMap() {
         '<hr>' +
         'St. Cloud, MN<br>' +
         'December 10-11, 2024<br>' +
-        '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1853252&group=" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.asphaltisbest.com/page/conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
