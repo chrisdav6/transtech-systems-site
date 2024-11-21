@@ -33,7 +33,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['AASHTO Annual Meeting, Philadelphia, PA', 39.95585, -75.164579],
     // ['NCAUPG, Indianapolis , IN', 39.778201, -86.157126],
-    ['SEAUPG, Mobile, AL', 30.702498, -88.056333],
+    // ['SEAUPG, Mobile, AL', 30.702498, -88.056333],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
     ['APAI, Muncie, IN', 40.206962, -85.393312],
