@@ -539,7 +539,7 @@ function initMap() {
         '<hr>' +
         'Wisconsin Dells, WI<br>' +
         'December 3-4, 2024<br>' +
-        '<p><a class="link" href="https://www.wispave.org/event/wapas-65th-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.wispave.org/wapas-65th-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
