@@ -371,7 +371,7 @@ function initMap() {
         '<hr>' +
         'San Antonio, TX<br>' +
         'September 8-11, 2025<br>' +
-        '<p><a class="link" href="https://texasasphalt.org/events/2024-annual-meeting/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://texasasphalt.org/events/2025-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
