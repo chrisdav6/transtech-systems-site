@@ -126,9 +126,36 @@ app.get('/payment', function (req, res) {
   res.redirect('https://securepayment.link/transtechsys');
 });
 
-//TTS - Ames Digital Landing Page
-app.get('/products/digital', function (req, res) {
-  res.render('products/digital', {
+//TTS - Ames Digital Landing Page - Asphalt Contractor
+app.get('/products/digitalAC', function (req, res) {
+  res.render('products/digitalAC', {
+    title: 'TransTech Systems / Ames Engineering Digital Landing Page',
+    metaTitle:
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+  });
+});
+
+//TTS - Ames Digital Landing Page - Asphalt Pro
+app.get('/products/digitalAP', function (req, res) {
+  res.render('products/digitalAP', {
+    title: 'TransTech Systems / Ames Engineering Digital Landing Page',
+    metaTitle:
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+  });
+});
+
+//TTS - Ames Digital Landing Page - NAPA
+app.get('/products/digitalNAPA', function (req, res) {
+  res.render('products/digitalNAPA', {
+    title: 'TransTech Systems / Ames Engineering Digital Landing Page',
+    metaTitle:
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+  });
+});
+
+//TTS - Ames Digital Landing Page - TXAPA
+app.get('/products/digitalTXAPA', function (req, res) {
+  res.render('products/digitalTXAPA', {
     title: 'TransTech Systems / Ames Engineering Digital Landing Page',
     metaTitle:
       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
