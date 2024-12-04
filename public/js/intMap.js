@@ -97,7 +97,7 @@ function initMap() {
     ['BAV Company Ltd., Russia', 63.074866, 93.339844],
     ['Beratest AG, Sénégal', 14.743011, -14.72168],
     ['Nishio Rent All Co., Ltd., Singapore', 1.364922, 103.815994],
-    ['TransTech Europe (Celab d.o.o.), Slovenia', 46.029389, 14.655762],
+    ['CELAB D.O.O., Slovenia', 46.029389, 14.655762],
     ['Proeti, S.A., Spain', 40.413496, -3.603516],
     ['M/s. Taisei International, Sri Lanka', 7.8775394, 80.7003428],
     ['ABAS AS, Sweden', 63.832054, 16.829426],
@@ -1011,12 +1011,12 @@ function initMap() {
     // Slovenia
     [
       '<div class="map-text">' +
-        '<span>TransTech Europe (Celab d.o.o.)</span><br>' +
+        '<span>CELAB D.O.O.</span><br>' +
         '<hr>' +
-        '+49-441-3501227<br>' +
-        'Attn: Bernd Diedrichs<br>' +
-        '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '+386 (0) 31 524 225<br>' +
+        'Attn: Gregor Cej<br>' +
+        '<p><a class="link" href="mailto:gregor.cej@celab.si?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://celab.si" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
