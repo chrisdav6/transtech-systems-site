@@ -589,6 +589,7 @@ app.post('/products/repairRequest', function (req, res) {
     email,
     repairProduct,
     repairSerial,
+    repairQty,
     estimate,
     serviceMessage,
   } = req.body;
@@ -602,6 +603,7 @@ app.post('/products/repairRequest', function (req, res) {
   phone = req.sanitize(phone).replace(/<\/?[^>]+(>|$)/g, '');
   email = req.sanitize(email).replace(/<\/?[^>]+(>|$)/g, '');
   repairSerial = req.sanitize(repairSerial).replace(/<\/?[^>]+(>|$)/g, '');
+  repairQty = req.sanitize(repairQty).replace(/<\/?[^>]+(>|$)/g, '');
   serviceMessage = req.sanitize(serviceMessage).replace(/<\/?[^>]+(>|$)/g, '');
 
   //Google captcha code
@@ -660,6 +662,7 @@ app.post('/products/repairRequest', function (req, res) {
       body += `<strong>Email:</strong> ${email}<br>`;
       body += `<strong>Product for Repair:</strong> ${repairProduct}<br>`;
       body += `<strong>Serial Number:</strong> ${repairSerial}<br>`;
+      body += `<strong>Total Qty of Units for Service:</strong> ${repairQty}<br>`;
       body += `<strong>Estimate Required:</strong> ${estimate}</p>`;
       body += `<p><strong>Description of Repair:</strong><br> ${serviceMessage}</p>`;
 
