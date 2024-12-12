@@ -325,8 +325,8 @@ function initMap() {
         '<span>Hoskin Scientific</span><br>' +
         '<hr>' +
         '604-872-7894<br>' +
-        'Attn: Jamie Emery<br>' +
-        '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Roger Laham<br>' +
+        '<p><a class="link" href="mailto:rlaham@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -361,8 +361,8 @@ function initMap() {
         '<span>Hoskin Scientific</span><br>' +
         '<hr>' +
         '780-434-2645<br>' +
-        'Attn: Jamie Emery<br>' +
-        '<p><a class="link" href="mailto:jemery@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Roger Laham<br>' +
+        '<p><a class="link" href="mailto:rlaham@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
