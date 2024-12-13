@@ -57,7 +57,7 @@ function initMap() {
     // ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
     ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
-    ['PAIKY 2025 Winter Training, Louisville, KY', 38.203105, -85.631109],
+    ['PAIKY 2025 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
