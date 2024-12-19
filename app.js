@@ -661,7 +661,7 @@ app.post('/products/repairRequest', function (req, res) {
       body += `<strong>Phone:</strong> ${phone}<br>`;
       body += `<strong>Email:</strong> ${email}<br>`;
       body += `<strong>Product for Repair:</strong> ${repairProduct}<br>`;
-      body += `<strong>Serial Number:</strong> ${repairSerial}<br>`;
+      body += `<strong>Serial Number(s):</strong> ${repairSerial}<br>`;
       body += `<strong>Total Qty of Units for Service:</strong> ${repairQty}<br>`;
       body += `<strong>Estimate Required:</strong> ${estimate}</p>`;
       body += `<p><strong>Description of Repair:</strong><br> ${serviceMessage}</p>`;
@@ -677,7 +677,7 @@ app.post('/products/repairRequest', function (req, res) {
       };
 
       let userBody = `<h2><u>TransTech Systems Calibration/Repair Request Received</u></h2>`;
-      userBody += `<p>Thank you, ${name} for your calibration/repair submission for gauge serial number ${repairSerial}<br>`;
+      userBody += `<p>Thank you, ${name} for your calibration/repair submission for gauge serial number(s) ${repairSerial}<br>`;
       userBody += `Our service team will reply with your ticket(s) shortly.</p>`;
       userBody += `<p><b>This is not a monitored mailbox. Please do not reply.</b></p>`;
 
