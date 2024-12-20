@@ -1,6 +1,6 @@
 $(function () {
   //Holiday Banner
-  $('.holidayBanner').delay(1000).fadeIn(400).delay(10000).fadeOut(400);
+  $('.holiday').delay(1000).fadeIn(400).delay(10000).fadeOut(400);
 
   //New Homepage Image Slideshow
   setTimeout(() => {

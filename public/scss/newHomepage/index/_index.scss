@@ -173,6 +173,28 @@ body {
   }
 }
 
+.holiday {
+  display: none;
+  background: rgba(255, 0, 0, 0.771);
+  padding: 10px 20px;
+  margin-top: 30px;
+
+  i {
+    font-size: 3rem;
+    color: rgb(12, 238, 12);
+  }
+
+  p {
+    font-size: 1.45rem !important;
+    margin-bottom: 0;
+
+    span {
+      font-size: 1.2rem;
+      display: block;
+    }
+  }
+}
+
 #heroHome {
   position: relative;
   top: 0;
