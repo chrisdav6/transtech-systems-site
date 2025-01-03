@@ -29,7 +29,7 @@ function initMap() {
     // ['Mertind, Argentina', -33.550655, -63.950483],
     ['BAV Group Ltd. , Armenia', 40.455307, 44.653931],
     ['Motorway Tech, Australia', -24.367114, 133.769531],
-    ['TransTech Europe, Austria', 47.554287, 14.512939],
+    ['MIT, Austria', 47.554287, 14.512939],
     ['BAV Group Ltd. , Azerbaijan', 40.33817, 48.054199],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
     ['BAV Corporation / Road Technologies, Belarus', 53.520717, 28.355713],
@@ -37,7 +37,7 @@ function initMap() {
     ['Beratest AG, Benin', 10.00131, 2.285156],
     ['Mertind, Bolivia', -17.555479, -63.395588],
     ['Solotest, Brazil', -9.795678, -49.833984],
-    ['TransTech Europe (Gepasz), Bulgaria', 42.646081, 25.081787],
+    // ['TransTech Europe (Gepasz), Bulgaria', 42.646081, 25.081787],
     ['Beratest AG, Burkina Faso', 12.415119, -1.669922],
     ['Beratest AG, Cameroun', 5.441022, 12.678223],
     ['Hoskin Scientific, British Columbia', 49.259067, -123.11245],
@@ -50,13 +50,13 @@ function initMap() {
     ['Beratest AG, Congo', -0.329588, 15.864258],
     ['Atlantic Supply, Costa Rica', 9.90391, -83.841379],
     ['Beratest AG, Côte d’Ivoire', 7.700105, -5.646973],
-    ['TransTech Europe, Czech Republic', 49.894324, 15.097526],
+    // ['TransTech Europe, Czech Republic', 49.894324, 15.097526],
     // ['Imporequip, Ecuador', -1.428075, -78.574219],
     ['Bincis UAB, Estonia', 58.867745, 25.559692],
     ['Grollemund Laboroutes, France', 46.754917, 2.39502],
     ['Beratest AG, Gabon', -0.659165, 11.469727],
     ['BAV Group Ltd. , Georgia', 42.067034, 43.763783],
-    ['TransTech Europe, Germany', 51.220647, 10.524902],
+    ['MIT, Germany', 51.220647, 10.524902],
     ['IKEYS Engineering Services, Ghana', 7.767872, -1.127134],
     ['Beratest AG, Guinée', 10.941192, -10.678711],
     ['Beratest AG, Guinée-Bissau', 12.084982, -14.902954],
@@ -184,13 +184,6 @@ function initMap() {
     // Austria
     [
       '<div class="map-text">' +
-        '<span>TransTech Europe</span><br>' +
-        '<hr>' +
-        '+49-441-3501227<br>' +
-        'Attn: Bernd Diedrichs<br>' +
-        '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '<p class="mb-2 mt-4"><u>Service</u></p>' +
         '<span>MIT</span><br>' +
         '<hr>' +
         '+49 (0) 351/87181-25<br>' +
@@ -286,16 +279,16 @@ function initMap() {
     ],
 
     // Bulgaria
-    [
-      '<div class="map-text">' +
-        '<span>TransTech Europe (Gepasz)</span><br>' +
-        '<hr>' +
-        '+49-441-3501227<br>' +
-        'Attn: Bernd Diedrichs<br>' +
-        '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>TransTech Europe (Gepasz)</span><br>' +
+    //     '<hr>' +
+    //     '+49-441-3501227<br>' +
+    //     'Attn: Bernd Diedrichs<br>' +
+    //     '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Burkina Faso
     [
@@ -441,16 +434,16 @@ function initMap() {
     ],
 
     // Czech Republic
-    [
-      '<div class="map-text">' +
-        '<span>TransTech Europe</span><br>' +
-        '<hr>' +
-        '+49-441-3501227<br>' +
-        'Attn: Bernd Diedrichs<br>' +
-        '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>TransTech Europe</span><br>' +
+    //     '<hr>' +
+    //     '+49-441-3501227<br>' +
+    //     'Attn: Bernd Diedrichs<br>' +
+    //     '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Ecuador
     // [
@@ -513,13 +506,6 @@ function initMap() {
     // Germany
     [
       '<div class="map-text">' +
-        '<span>TransTech Europe</span><br>' +
-        '<hr>' +
-        '+49-441-3501227<br>' +
-        'Attn: Bernd Diedrichs<br>' +
-        '<p><a class="link" href="mailto:bernd.diedrichs@ewetel.net?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.transtechsys.com/europe" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '<p class="mb-2 mt-4"><u>Service</u></p>' +
         '<span>MIT</span><br>' +
         '<hr>' +
         '+49 (0) 351/87181-25<br>' +
