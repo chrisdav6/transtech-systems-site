@@ -667,7 +667,9 @@ function initMap() {
         '+965-2243-7670<br>' +
         '+965-2242-8730<br>' +
         'Attn: Mr. Ajith Kumar<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:contact@burganequip.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.burganequipment.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
