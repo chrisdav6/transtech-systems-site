@@ -36,6 +36,7 @@ function initMap() {
     ['ABM van Zijl B.V., Belgium', 50.840636, 4.482422],
     ['Beratest AG, Benin', 10.00131, 2.285156],
     ['Mertind, Bolivia', -17.555479, -63.395588],
+    ['RO-TEHNOLOGIJA d.o.o., Bosnia', 44.268188, 17.698854],
     ['Solotest, Brazil', -9.795678, -49.833984],
     // ['TransTech Europe (Gepasz), Bulgaria', 42.646081, 25.081787],
     ['Beratest AG, Burkina Faso', 12.415119, -1.669922],
@@ -52,6 +53,7 @@ function initMap() {
     ['Beratest AG, Côte d’Ivoire', 7.700105, -5.646973],
     // ['TransTech Europe, Czech Republic', 49.894324, 15.097526],
     // ['Imporequip, Ecuador', -1.428075, -78.574219],
+    ['RO-TEHNOLOGIJA d.o.o., Croatia', 45.007252, 14.935602],
     ['Bincis UAB, Estonia', 58.867745, 25.559692],
     ['Grollemund Laboroutes, France', 46.754917, 2.39502],
     ['Beratest AG, Gabon', -0.659165, 11.469727],
@@ -265,6 +267,19 @@ function initMap() {
         '</div>',
     ],
 
+    // Bosnia
+    [
+      '<div class="map-text">' +
+        '<span>RO-TEHNOLOGIJA d.o.o.</span><br>' +
+        '<hr>' +
+        '+385 51 / 272 205<br>' +
+        'Mobile: + 385 99 / 218 2709<br>' +
+        'Attn: Dalibor Atlija<br>' +
+        '<p><a class="link" href="mailto:datlija@rotech.hr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.rotech.hr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
     // Brazil
     [
       '<div class="map-text">' +
@@ -430,6 +445,19 @@ function initMap() {
         '0041 (0)78 822 21 26<br>' +
         'Attn: Max Gysin<br>' +
         '<p><a class="link" href="mailto:info@beratest.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '</div>',
+    ],
+
+    // Croatia
+    [
+      '<div class="map-text">' +
+        '<span>RO-TEHNOLOGIJA d.o.o.</span><br>' +
+        '<hr>' +
+        '+385 51 / 272 205<br>' +
+        'Mobile: + 385 99 / 218 2709<br>' +
+        'Attn: Dalibor Atlija<br>' +
+        '<p><a class="link" href="mailto:datlija@rotech.hr?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="http://www.rotech.hr" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
