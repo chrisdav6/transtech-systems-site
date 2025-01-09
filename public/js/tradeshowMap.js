@@ -247,10 +247,10 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-        '<span>TRB 104th Annual Meeting - Booth #1034</span><br>' +
+        '<span>TRB 105th Annual Meeting - Booth #727</span><br>' +
         '<hr>' +
         'Washington D.C.<br>' +
-        'January 5-9, 2025<br>' +
+        'January 11-15, 2026<br>' +
         '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -259,11 +259,11 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/mapa-logo.png">' +
-        '<span>35th Annual MAPA Conference</span><br>' +
+        '<span>36th Annual MAPA Conference</span><br>' +
         '<hr>' +
         'Columbia, MO<br>' +
-        'January 6-8, 2025<br>' +
-        '<p><a class="link" href="https://moasphalt.org/events/35th-annual-mapa-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        'January 5-7, 2026<br>' +
+        '<p><a class="link" href="https://moasphalt.org/events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
