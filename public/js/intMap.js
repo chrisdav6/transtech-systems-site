@@ -29,7 +29,7 @@ function initMap() {
     // ['Mertind, Argentina', -33.550655, -63.950483],
     ['BAV Group Ltd. , Armenia', 40.455307, 44.653931],
     ['Motorway Tech, Australia', -24.367114, 133.769531],
-    ['MIT, Austria', 47.554287, 14.512939],
+    ['MIT Mess- und Prüftechnik GmbH, Austria', 47.554287, 14.512939],
     ['BAV Group Ltd. , Azerbaijan', 40.33817, 48.054199],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
     ['BAV Corporation / Road Technologies, Belarus', 53.520717, 28.355713],
@@ -58,7 +58,7 @@ function initMap() {
     ['Grollemund Laboroutes, France', 46.754917, 2.39502],
     ['Beratest AG, Gabon', -0.659165, 11.469727],
     ['BAV Group Ltd. , Georgia', 42.067034, 43.763783],
-    ['MIT, Germany', 51.220647, 10.524902],
+    ['MIT Mess- und Prüftechnik GmbH, Germany', 51.220647, 10.524902],
     ['IKEYS Engineering Services, Ghana', 7.767872, -1.127134],
     ['Beratest AG, Guinée', 10.941192, -10.678711],
     ['Beratest AG, Guinée-Bissau', 12.084982, -14.902954],
@@ -186,7 +186,7 @@ function initMap() {
     // Austria
     [
       '<div class="map-text">' +
-        '<span>MIT</span><br>' +
+        '<span>MIT Mess- und Prüftechnik GmbH</span><br>' +
         '<hr>' +
         '+49 (0) 351/87181-25<br>' +
         'Attn: Mrs. Andrea Ulbricht<br>' +
@@ -534,7 +534,7 @@ function initMap() {
     // Germany
     [
       '<div class="map-text">' +
-        '<span>MIT</span><br>' +
+        '<span>MIT Mess- und Prüftechnik GmbH</span><br>' +
         '<hr>' +
         '+49 (0) 351/87181-25<br>' +
         'Attn: Mrs. Andrea Ulbricht<br>' +
