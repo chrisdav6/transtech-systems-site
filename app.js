@@ -1333,17 +1333,17 @@ app.post('/products/productManuals', function (req, res) {
 
 //Europe Homepage
 app.get('/europe', (req, res) => {
-  res.render('europe/index');
+  res.redirect('https://www.mit-dresden.de');
 });
 
 //Europe PQI380
 app.get('/europe/pqi380', (req, res) => {
-  res.render('europe/pqi380');
+  res.redirect('https://www.mit-dresden.de');
 });
 
 //Europe SDG200
 app.get('/europe/sdg200', (req, res) => {
-  res.render('europe/sdg200');
+  res.redirect('https://www.mit-dresden.de');
 });
 
 //404 Page Not Found
