@@ -63,7 +63,7 @@ function initMap() {
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Springfield, MA', 42.104945, -72.591488],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
-    // ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
+    ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
     //   '63rd Illinois Bituminous Paving Conference, Champaign, IL',
@@ -544,16 +544,16 @@ function initMap() {
     ],
 
     // Minnesota Asphalt Conference
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
-    //     '<span>2024 Minnesota Asphalt Conference</span><br>' +
-    //     '<hr>' +
-    //     'St. Cloud, MN<br>' +
-    //     'December 10-11, 2024<br>' +
-    //     '<p><a class="link" href="https://www.asphaltisbest.com/page/conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
+        '<span>2025 Minnesota Asphalt Conference</span><br>' +
+        '<hr>' +
+        'St. Cloud, MN<br>' +
+        'December 9-10, 2025<br>' +
+        '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1853252&group=" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Missouri S&T Asphalt Conference
     // [
