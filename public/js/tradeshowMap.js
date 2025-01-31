@@ -55,7 +55,7 @@ function initMap() {
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Louisville, KY', 38.233585, -85.770498],
     // ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
-    ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
+    // ['Pave/X, Chattanooga, TN', 35.038162, -85.305639],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     ['PAIKY 2025 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
@@ -448,16 +448,16 @@ function initMap() {
     // ],
 
     //Pave/X
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
-        '<span>Pave/X - Booth #1035</span><br>' +
-        '<hr>' +
-        'Chattanooga, TN<br>' +
-        'January 28-30, 2025<br>' +
-        '<p><a class="link" href="https://www.pavexshow.com/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
+    //     '<span>Pave/X - Booth #1035</span><br>' +
+    //     '<hr>' +
+    //     'Chattanooga, TN<br>' +
+    //     'January 28-30, 2025<br>' +
+    //     '<p><a class="link" href="https://www.pavexshow.com/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Greater Iowa Asphalt Conference
     // [
