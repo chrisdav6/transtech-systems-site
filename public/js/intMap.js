@@ -30,7 +30,8 @@ function initMap() {
     ['BAV Group Ltd. , Armenia', 40.455307, 44.653931],
     ['Motorway Tech, Australia', -24.367114, 133.769531],
     ['MIT Mess- und Prüftechnik GmbH, Austria', 47.554287, 14.512939],
-    ['BAV Group Ltd. , Azerbaijan', 40.33817, 48.054199],
+    ['BAV Group Ltd., Azerbaijan', 40.33817, 48.054199],
+    ['Al Kaabi for Testing Equipment, Bahrain', 25.997368, 50.564184],
     ['M/s. Taisei International, Bangladesh', 23.980712, 90.091666],
     ['BAV Corporation / Road Technologies, Belarus', 53.520717, 28.355713],
     ['ABM van Zijl B.V., Belgium', 50.840636, 4.482422],
@@ -97,6 +98,7 @@ function initMap() {
     ['Beratest AG, République Centrafricaine', 6.850078, 20.566406],
     ['Tecnoservice Equipment S.R.L., Romania', 45.523971, 24.740059],
     ['BAV Company Ltd., Russia', 63.074866, 93.339844],
+    ['Al Kaabi for Testing Equipment, Saudi Arabia', 24.86174, 44.612658],
     ['Beratest AG, Sénégal', 14.743011, -14.72168],
     ['Nishio Rent All Co., Ltd., Singapore', 1.364922, 103.815994],
     ['CELAB D.O.O., Slovenia', 46.029389, 14.655762],
@@ -204,6 +206,18 @@ function initMap() {
         'Attn: Shota Mosiashvilli<br>' +
         '<p><a class="link" href="mailto:mosiashvili_shota@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // Bahrain
+    [
+      '<div class="map-text">' +
+        '<span>Al Kaabi for Testing Equipment</span><br>' +
+        '<hr>' +
+        '+966 505 538 278<br>' +
+        'Attn: Mr. Dawood Khan<br>' +
+        '<p><a class="link" href="mailto:dawood.khan@kaabi.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://kaabi.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -998,6 +1012,18 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:info@bavcompany.ru?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // Saudi Arabia
+    [
+      '<div class="map-text">' +
+        '<span>Al Kaabi for Testing Equipment</span><br>' +
+        '<hr>' +
+        '+966 505 538 278<br>' +
+        'Attn: Mr. Dawood Khan<br>' +
+        '<p><a class="link" href="mailto:dawood.khan@kaabi.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://kaabi.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
