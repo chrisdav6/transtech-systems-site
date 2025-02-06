@@ -59,7 +59,8 @@ function initMap() {
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     ['PAIKY 2025 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
-    // ['TXAPA MAPS Conference, Waco, TX', 31.554423, -97.162525],
+    // ['TXAPA MAPS Conference, Houston, TX', 29.78009, -95.369866],
+    // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Springfield, MA', 42.104945, -72.591488],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
@@ -495,15 +496,27 @@ function initMap() {
     //     '</div>',
     // ],
 
-    //TXAPA Maps
+    //TXAPA Maps - Houston
     // [
     //   '<div class="map-text">' +
     //     '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
     //     '<span>TXAPA Maps Conference</span><br>' +
     //     '<hr>' +
-    //     'Waco, TX<br>' +
-    //     'May 14-15, 2024<br>' +
-    //     '<p><a class="link" href="https://texasasphalt.swoogo.com/txapa-maps-2024" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     'Houston, TX<br>' +
+    //     'May 7, 2025<br>' +
+    //     '<p><a class="link" href="https://texasasphalt.org/events/maps-houston" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
+
+    //TXAPA Maps - Plano
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
+    //     '<span>TXAPA Maps Conference</span><br>' +
+    //     '<hr>' +
+    //     'Plano, TX<br>' +
+    //     'May 21, 2025<br>' +
+    //     '<p><a class="link" href="https://texasasphalt.org/events/maps-plano" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
     //     '</div>',
     // ],
 
