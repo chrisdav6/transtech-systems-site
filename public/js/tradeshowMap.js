@@ -452,7 +452,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
-        '<span>Pave/X 2026</span><br>' +
+        '<span>Pave/X 2026 - Booth #442</span><br>' +
         '<hr>' +
         'New Orleans, LA<br>' +
         'February 9-12, 2026<br>' +
