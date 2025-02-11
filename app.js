@@ -162,6 +162,15 @@ app.get('/products/digitalTXAPA', function (req, res) {
   });
 });
 
+//TTS - Ames Digital Landing Page - WOA 2025
+app.get('/products/digitalWOA2025', function (req, res) {
+  res.render('products/digitalWOA2025', {
+    title: 'TransTech Systems / Ames Engineering Digital Landing Page',
+    metaTitle:
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+  });
+});
+
 //NewHomepage
 // app.get('/homepage', function (req, res) {
 //   res.render('homePage/index', {
