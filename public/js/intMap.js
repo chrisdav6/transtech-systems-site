@@ -42,10 +42,10 @@ function initMap() {
     // ['TransTech Europe (Gepasz), Bulgaria', 42.646081, 25.081787],
     ['Beratest AG, Burkina Faso', 12.415119, -1.669922],
     ['Beratest AG, Cameroun', 5.441022, 12.678223],
-    ['Hoskin Scientific, British Columbia', 49.259067, -123.11245],
-    ['Hoskin Scientific, Quebec', 45.520301, -73.55484],
-    ['Hoskin Scientific, Ontario', 43.239599, -79.796287],
-    ['Hoskin Scientific, Alberta', 51.380788, -114.974718],
+    // ['Hoskin Scientific, British Columbia', 49.259067, -123.11245],
+    // ['Hoskin Scientific, Quebec', 45.520301, -73.55484],
+    // ['Hoskin Scientific, Ontario', 43.239599, -79.796287],
+    // ['Hoskin Scientific, Alberta', 51.380788, -114.974718],
     ['Equipos de Auscultacion, Chile', -26.824071, -70.224609],
     ['Earth Products China Limited, China', 34.597042, 103.974609],
     ['Atlantic Supply, Colombia', 4.315974, -73.072573],
@@ -342,52 +342,52 @@ function initMap() {
     ],
 
     // Canada - British Columbia
-    [
-      '<div class="map-text">' +
-        '<span>Hoskin Scientific</span><br>' +
-        '<hr>' +
-        '604-872-7894<br>' +
-        'Attn: Roger Laham<br>' +
-        '<p><a class="link" href="mailto:rlaham@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Hoskin Scientific</span><br>' +
+    //     '<hr>' +
+    //     '604-872-7894<br>' +
+    //     'Attn: Roger Laham<br>' +
+    //     '<p><a class="link" href="mailto:rlaham@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Canada - Quebec
-    [
-      '<div class="map-text">' +
-        '<span>Hoskin Scientific</span><br>' +
-        '<hr>' +
-        '514-735-5267<br>' +
-        'Attn: Sylvain Paquette<br>' +
-        '<p><a class="link" href="mailto:spaquette@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Hoskin Scientific</span><br>' +
+    //     '<hr>' +
+    //     '514-735-5267<br>' +
+    //     'Attn: Sylvain Paquette<br>' +
+    //     '<p><a class="link" href="mailto:spaquette@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Canada - Ontario
-    [
-      '<div class="map-text">' +
-        '<span>Hoskin Scientific</span><br>' +
-        '<hr>' +
-        '905-333-5510<br>' +
-        'Attn: Joseph Zambito-Orazio<br>' +
-        '<p><a class="link" href="mailto:jzambito@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Hoskin Scientific</span><br>' +
+    //     '<hr>' +
+    //     '905-333-5510<br>' +
+    //     'Attn: Joseph Zambito-Orazio<br>' +
+    //     '<p><a class="link" href="mailto:jzambito@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Canada - Alberta
-    [
-      '<div class="map-text">' +
-        '<span>Hoskin Scientific</span><br>' +
-        '<hr>' +
-        '780-434-2645<br>' +
-        'Attn: Roger Laham<br>' +
-        '<p><a class="link" href="mailto:rlaham@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>Hoskin Scientific</span><br>' +
+    //     '<hr>' +
+    //     '780-434-2645<br>' +
+    //     'Attn: Roger Laham<br>' +
+    //     '<p><a class="link" href="mailto:rlaham@hoskin.ca?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.hoskin.ca" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Chile
     [
