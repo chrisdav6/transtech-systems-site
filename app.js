@@ -350,8 +350,8 @@ app.get('/products/repairRequest', function (req, res) {
   });
 });
 
-//PQI 300/301 Trade Up
-app.get('/products/tradeUp', function (req, res) {
+//PQI 300/301 Trade Up - Not used as of March 2025
+/*app.get('/products/tradeUp', function (req, res) {
   res.render('products/tradeUp', {
     flash: { success: req.flash('success') },
     title: 'TransTech Systems PQI 300/301 Trade-Up Program',
@@ -359,6 +359,7 @@ app.get('/products/tradeUp', function (req, res) {
       'Your legacy PQI 300/301 could earn you dollars towards a new PQI 380 Non-Nuclear Asphalt Density Gauge',
   });
 });
+*/
 
 //Corporate News
 app.get('/products/corporateNews', function (req, res) {
@@ -805,8 +806,8 @@ app.post('/products/productRegistration', function (req, res) {
   }
 });
 
-//Trade Up Form
-app.post('/products/tradeUp', function (req, res) {
+//Trade Up Form - Not used as of March 2025
+/*app.post('/products/tradeUp', function (req, res) {
   let {
     name,
     company,
@@ -877,6 +878,7 @@ app.post('/products/tradeUp', function (req, res) {
     res.redirect('/products/tradeUp');
   }
 });
+*/
 
 //PQI 380 Product Page Manuals Download Form
 app.post('/products/pqi380', function (req, res) {
