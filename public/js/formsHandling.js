@@ -109,6 +109,12 @@ $(function () {
 
       //Update Link href
       switch (dataId) {
+        case 'PQI 380 Plus Offset Cheat Sheet':
+          $('#manualDownloadLink').attr(
+            'href',
+            '/pdf/PQI380PlusOffsetCheatSheet.pdf'
+          );
+          break;
         case 'PQI 380 Manual':
           $('#manualDownloadLink').attr('href', '/pdf/PQI380Manual.pdf');
           break;
