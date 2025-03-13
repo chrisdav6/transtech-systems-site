@@ -8,7 +8,7 @@
 
 #title {
   padding: 2em;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
   border: 2px solid white;
   color: $logo-yellow;
   min-height: 307px;
@@ -18,15 +18,15 @@
     height: 1px;
     background: $white;
   }
-  
+
   .secondary-text {
     font-size: 2.25rem;
   }
-  
+
   a {
     color: $white;
   }
-  
+
   a:hover {
     color: #212529;
   }
@@ -34,7 +34,7 @@
 
 .feature-block {
   max-height: 307px;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
   border: 2px solid white;
   overflow: hidden;
 }
@@ -45,6 +45,26 @@
 }
 
 .product-feature:hover {
+  transform: scale(1.2);
+}
+
+.product-feature-plus {
+  margin-top: -60px;
+  margin-left: 60px;
+  max-height: 450px;
+  transform: rotate(2deg);
+  transition: 1s;
+
+  @include mq600 {
+    margin-left: 0;
+  }
+
+  @include mq1024 {
+    margin-left: 10px;
+  }
+}
+
+.product-feature-plus:hover {
   transform: scale(1.2);
 }
 
