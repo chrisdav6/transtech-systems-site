@@ -38,7 +38,7 @@ function initMap() {
     ['TransTech Systems, Arizona', 34.528727, -111.767859, 'direct'],
     ['TransTech Systems, Arkansas', 34.841498, -92.285615, 'transtech'],
     ['TransTech Systems, California', 36.692245, -119.620438, 'direct'],
-    ['TransTech Systems, Colorado', 39.158062, -105.509759, 'transtech'],
+    ['TransTech Systems, Colorado', 39.158062, -105.509759, 'direct'],
     ['TransTech Systems, Connecticut', 41.654445, -73.083801, 'transtech'],
     ['TransTech Systems, Delaware', 39.180106, -75.499366, 'transtech'],
     ['Atlantic Supply, Jacksonville Florida', 30.31466, -81.655884],
@@ -153,8 +153,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '518-560-0387<br>' +
+        'Attn: John Lamond<br>' +
+        '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
