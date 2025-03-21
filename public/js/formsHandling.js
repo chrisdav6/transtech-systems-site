@@ -109,6 +109,15 @@ $(function () {
 
       //Update Link href
       switch (dataId) {
+        case 'PQI 380 Plus Manual':
+          $('#manualDownloadLink').attr('href', '/pdf/PQI380PlusManual.pdf');
+          break;
+        case 'PQI 380 Plus QuickStart Guide':
+          $('#manualDownloadLink').attr(
+            'href',
+            '/pdf/PQI380PlusQuickstartGuide.pdf'
+          );
+          break;
         case 'PQI 380 Plus Offset Cheat Sheet':
           $('#manualDownloadLink').attr(
             'href',
@@ -175,7 +184,7 @@ $(function () {
     $('#manualDownloadLink').hide();
     $('#manualDownloadBtn').show();
     $('#manualDownload').modal('hide');
-    //Redirect back to original window from modal after pdf downloads- otherwise there is not enought time
+    //Redirect back to original window from modal after pdf downloads- otherwise there is not enough time
     setTimeout(function () {
       let currentLocation = window.location.href;
       window.location.href = currentLocation;
