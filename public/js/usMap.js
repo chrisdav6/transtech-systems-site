@@ -73,7 +73,7 @@ function initMap() {
     ['TransTech Systems, Ohio', 39.954965, -82.932924, 'direct'],
     ['TransTech Systems, Oklahoma', 35.737529, -97.519473, 'transtech'],
     ['TransTech Systems, Oregon', 44.036589, -120.375932, 'transtech'],
-    ['Groff Tractor & Equipment , Pennsylvania', 41.302571, -77.211914],
+    ['TransTech Systems, Pennsylvania', 41.302571, -77.211914, 'transtech'],
     ['Atlantic Supply, Puerto Rico', 18.245026, -66.569655],
     ['TransTech Systems , Rhode Island', 41.631867, -71.471558, 'transtech'],
     ['TransTech Systems, South Carolina', 33.897999, -80.905078],
@@ -586,12 +586,10 @@ function initMap() {
     // Pennsylvania
     [
       '<div class="map-text">' +
-        '<span>Groff Tractor & Equipment</span><br>' +
+        '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '717-766-7671<br>' +
-        'Attn: Steve Weikert<br>' +
-        '<p><a class="link" href="mailto:steveweikert@grofftractor.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.grofftractor.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '1-800-724-6306<br>' +
+        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
