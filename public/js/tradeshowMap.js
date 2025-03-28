@@ -45,7 +45,7 @@ function initMap() {
     // ['APAM, Mt. Pleasant, MI', 43.600198, -84.769425],
     // ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
-    ['World of Asphalt, St. Louis, MO', 38.635403, -90.203293],
+    ['World of Asphalt, New Orleans, LA', 29.942845, -90.409834],
     ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
     // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
@@ -56,7 +56,7 @@ function initMap() {
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Louisville, KY', 38.233585, -85.770498],
     // ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
-    ['Pave/X 2026, New Orleans, LA', 29.944642, -90.083407],
+    ['Pave/X 2026, New Orleans, LA', 29.904131, -89.928186],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     // ['PAIKY 2025 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
@@ -332,11 +332,11 @@ function initMap() {
     // World of Asphalt
     [
       '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/woa-logo.png">' +
-        '<span>World of Asphalt 2025 - Booth #1008</span><br>' +
+        '<img class="d-block mb-3" width="100" src="../img/woa-logo-2027.png">' +
+        '<span>World of Asphalt 2027</span><br>' +
         '<hr>' +
-        'St. Louis, MO<br>' +
-        'March 25-27, 2025<br>' +
+        'New Orleans, LA<br>' +
+        'March 15-17, 2027<br>' +
         '<p><a class="link" href="http://www.worldofasphalt.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
