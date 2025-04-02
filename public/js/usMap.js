@@ -73,7 +73,7 @@ function initMap() {
     ['TransTech Systems, Ohio', 39.954965, -82.932924, 'direct'],
     ['TransTech Systems, Oklahoma', 35.737529, -97.519473, 'transtech'],
     ['TransTech Systems, Oregon', 44.036589, -120.375932, 'transtech'],
-    ['TransTech Systems, Pennsylvania', 41.302571, -77.211914, 'transtech'],
+    ['TransTech Systems, Pennsylvania', 41.302571, -77.211914, 'direct'],
     ['Atlantic Supply, Puerto Rico', 18.245026, -66.569655],
     ['TransTech Systems , Rhode Island', 41.631867, -71.471558, 'transtech'],
     ['TransTech Systems, South Carolina', 33.897999, -80.905078],
@@ -588,8 +588,9 @@ function initMap() {
       '<div class="map-text">' +
         '<span>TransTech Systems</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '518-560-0387<br>' +
+        'Attn: John Lamond<br>' +
+        '<p><a class="link" href="mailto:jlamond@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
