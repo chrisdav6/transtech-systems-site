@@ -88,7 +88,7 @@ function initMap() {
     ['Beratest AG, Niger', 17.497389, 9.777832],
     ['ABAS AS, Norway', 61.143235, 9.228516],
     ['M/s. Taisei International, Oman', 20.306682, 56.00759],
-    ['M/s. Taisei International, Pakistan', 29.618773, 69.26533],
+    // ['M/s. Taisei International, Pakistan', 29.618773, 69.26533],
     ['Atlantic Supply, Panama', 8.504292, -81.456683],
     ['Solotest, Paraguay', -22.739887, -58.50537],
     ['Siccion Marketing, Philippines', 12.533115, 123.046875],
@@ -893,16 +893,16 @@ function initMap() {
     ],
 
     // Pakistan
-    [
-      '<div class="map-text">' +
-        '<span>M/s. Taisei International</span><br>' +
-        '<hr>' +
-        '91-044-26162877<br>' +
-        'Attn: G. Parasuraman<br>' +
-        '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>M/s. Taisei International</span><br>' +
+    //     '<hr>' +
+    //     '91-044-26162877<br>' +
+    //     'Attn: G. Parasuraman<br>' +
+    //     '<p><a class="link" href="mailto:g.parasuraman@yahoo.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://www.taiseint.com/home" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Panama
     [
