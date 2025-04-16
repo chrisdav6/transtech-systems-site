@@ -25,7 +25,7 @@ function initMap() {
   // Map Marker Locations
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
-    // ['MAPA, Bangor, ME', 44.831204, -68.781424],
+    ['MAPA, Bangor, ME', 44.831204, -68.781424],
     ['NACE 2025, Schaumburg, IL', 42.030436, -88.081699],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Pomona, CA', 34.053067, -117.749428],
@@ -34,7 +34,7 @@ function initMap() {
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['AASHTO Annual Meeting, Philadelphia, PA', 39.95585, -75.164579],
     // ['NCAUPG, Indianapolis , IN', 39.778201, -86.157126],
-    // ['SEAUPG, Mobile, AL', 30.702498, -88.056333],
+    ['SEAUPG, Charleston, WV', 38.353411, -81.637535],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
     // ['APAI, Muncie, IN', 40.206962, -85.393312],
@@ -90,16 +90,16 @@ function initMap() {
     // ],
 
     // MAPA (Maine)
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
-    //     '<span>MAPA</span><br>' +
-    //     '<hr>' +
-    //     'Bangor, ME<br>' +
-    //     'April 8-9, 2025<br>' +
-    //     '<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/maine-logo.png">' +
+        '<span>MAPA</span><br>' +
+        '<hr>' +
+        'Bangor, ME<br>' +
+        'April 7-8, 2026<br>' +
+        '<p><a class="link" href="https://maine-apa.org/paving-seminar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // NACE
     [
@@ -198,16 +198,16 @@ function initMap() {
     // ],
 
     // SEAUPG
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-    //     '<span>SEAUPG - Booth #3</span><br>' +
-    //     '<hr>' +
-    //     'Mobile, AL<br>' +
-    //     'November 19-21, 2024<br>' +
-    //     '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
+        '<span>SEAUPG</span><br>' +
+        '<hr>' +
+        'Charleston, WV<br>' +
+        'November 18-20, 2025<br>' +
+        '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // BATT Lab Open House
     // [
