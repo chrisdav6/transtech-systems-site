@@ -26,7 +26,7 @@ function initMap() {
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    // ['NACE 2025, Schaumburg, IL', 42.030436, -88.081699],
+    ['NACE 2026, Arlington, TX', 32.72627, -97.110463],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Pomona, CA', 34.053067, -117.749428],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
@@ -102,16 +102,16 @@ function initMap() {
     ],
 
     // NACE
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/naceLogo.png">' +
-    //     '<span>NACE 2025 Annual Conference</span><br>' +
-    //     '<hr>' +
-    //     'Schaumburg, IL<br>' +
-    //     'April 14-17, 2025<br>' +
-    //     '<p><a class="link" href="https://www.countyengineers.org/2025-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/naceLogo.png">' +
+        '<span>NACE 2026 Annual Conference</span><br>' +
+        '<hr>' +
+        'Arlington, TX<br>' +
+        'April 12-15, 2026<br>' +
+        '<p><a class="link" href="https://www.countyengineers.org/future-meetings" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //CalAPA Fall
     // [
