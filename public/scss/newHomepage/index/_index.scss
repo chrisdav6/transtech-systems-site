@@ -373,6 +373,10 @@ body {
         border-width: 10px 0 10px 15px;
         border-color: transparent transparent transparent $extreme-dark-gray;
       }
+
+      .timeline-link {
+        text-decoration: none;
+      }
     }
 
     .timeline-img {
