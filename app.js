@@ -202,9 +202,9 @@ app.get('/products', function (req, res) {
 //Products
 app.get('/products/pqi380Plus', function (req, res) {
   res.render('products/pqi380Plus', {
-    title: 'PQI 380 Plus Non-Nuclear Asphalt Density Gauge',
+    title: 'PQI 380+ Non-Nuclear Asphalt Density Gauge',
     metaTitle:
-      'TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380 Plus.',
+      'TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380+.',
   });
 });
 
