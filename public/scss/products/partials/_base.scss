@@ -48,7 +48,8 @@ form {
 .standard-link {
   font-weight: 600;
   color: $extreme-dark-gray;
-  padding: 0 .2em;
+  padding: 0 0.1em;
+  margin-left: -0.1em;
 
   &:hover {
     text-decoration: underline;
@@ -59,7 +60,7 @@ form {
 
 .standard-link-light {
   color: white;
-  padding: 0 .2em;
+  padding: 0 0.2em;
 
   &:hover {
     text-decoration: underline;
@@ -91,11 +92,11 @@ form {
 }
 
 .ttsBtn {
-  border: 1px solid #FDDC00;
-  color: #FDDC00;
+  border: 1px solid #fddc00;
+  color: #fddc00;
 
   &:hover {
-    background: #FDDC00;
+    background: #fddc00;
     color: #191919;
   }
 }
