@@ -671,9 +671,9 @@ function initMap() {
         '<span>Nishio Rent All Co., Ltd</span><br>' +
         '<hr>' +
         '+816-6241-0240<br>' +
-        'Attn: Yukihiro Kimura<br>' +
+        'Attn: Ms. Katayama<br>' +
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p><a class="link" href="mailto:chie.katayama@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -1043,8 +1043,8 @@ function initMap() {
         '<span>Nishio Rent All Co., Ltd</span><br>' +
         '<hr>' +
         '+816-6241-0240<br>' +
-        'Attn: Yukihiro Kimura<br>' +
-        '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Ms. Katayama<br>' +
+        '<p><a class="link" href="mailto:chie.katayama@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -1258,8 +1258,8 @@ function initMap() {
         '<span>Nishio Rent All Co., Ltd</span><br>' +
         '<hr>' +
         '+816-6241-0240<br>' +
-        'Attn: Yukihiro Kimura<br>' +
-        '<p><a class="link" href="mailto:yukihiro.kimura@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Ms. Katayama<br>' +
+        '<p><a class="link" href="mailto:chie.katayama@nishio-rent.co.jp?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.nishio-rent.co.jp" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
