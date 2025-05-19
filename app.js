@@ -205,6 +205,9 @@ app.get('/products/pqi380Plus', function (req, res) {
     title: 'PQI 380+ Non-Nuclear Asphalt Density Gauge',
     metaTitle:
       'TransTech Systems next generation Non-Nuclear asphalt density gauge, the PQI 380+.',
+    ogTitle: 'PQI 380+ Non-Nuclear Asphalt Density Gauge',
+    ogUrl: 'https://transtechsys.com/products/pqi380Plus',
+    ogImage: 'https://transtechsys.com/img/og/ogPQI380Plus.jpg',
   });
 });
 
