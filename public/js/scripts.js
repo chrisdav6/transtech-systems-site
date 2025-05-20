@@ -47,6 +47,14 @@ $(function () {
     500
   );
 
+  //Connect Fade In
+  $('.connect').animate(
+    {
+      opacity: 1,
+    },
+    500
+  );
+
   //Fade In Body on page Load
   // $("body").animate({
   //   opacity: 1
