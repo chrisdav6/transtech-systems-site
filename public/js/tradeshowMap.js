@@ -381,11 +381,11 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPAs 50th Annual Meeting</span><br>' +
+        '<span>TXAPAs 50th Annual Meeting  - Booth #17</span><br>' +
         '<hr>' +
         'San Antonio, TX<br>' +
         'September 8-11, 2025<br>' +
-        '<p><a class="link" href="https://texasasphalt.org/events/2025-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://texasasphalt.swoogo.com/TXAPA-50th-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
