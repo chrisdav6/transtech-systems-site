@@ -1015,7 +1015,7 @@ app.post('/products/pqi380', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
@@ -1081,7 +1081,7 @@ app.post('/products/sdg200', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
@@ -1147,7 +1147,7 @@ app.post('/products/nwjm', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
@@ -1213,7 +1213,7 @@ app.post('/products/swm', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
@@ -1279,7 +1279,7 @@ app.post('/products/pts3000', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
@@ -1345,7 +1345,7 @@ app.post('/products/pqi301', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
@@ -1411,7 +1411,7 @@ app.post('/products/productManuals', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Product Manual Download', // Subject line
         text: body, // plain text body
