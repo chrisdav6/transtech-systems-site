@@ -9,10 +9,10 @@ function initMap() {
 
   var mapOptions = {
     center: {
-      lat: 35,
+      lat: 39,
       lng: -94.5,
     },
-    zoom: 4.2,
+    zoom: 4.3,
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -55,6 +55,7 @@ function initMap() {
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Louisville, KY', 38.233585, -85.770498],
+    ['AASHTO - Materials and Pavement, Hartford, CT', 41.762526, -72.67796],
     // ['NAPA Annual Meeting, Maui, HI', 20.788874, -156.315323],
     ['Pave/X 2026, New Orleans, LA', 29.904131, -89.928186],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
@@ -173,7 +174,7 @@ function initMap() {
     // 	'</div>'
     // ],
 
-    // AASHTO Annaul Meeting
+    // AASHTO Annual Meeting
     // [
     //   '<div class="map-text">' +
     //     '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
@@ -446,6 +447,18 @@ function initMap() {
         'Louisville, KY<br>' +
         'July 8-11, 2025<br>' +
         '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-midyear-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // AASHTO Materials and Pavement
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
+        '<span>AASHTO - Materials and Pavement</span><br>' +
+        '<hr>' +
+        'Hartford, CT<br>' +
+        'August 3-7, 2025<br>' +
+        '<p><a class="link" href="https://web.cvent.com/event/6250a4fe-d85f-47f4-957c-ce80790d696b/summary" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
