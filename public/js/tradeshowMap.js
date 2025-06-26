@@ -468,7 +468,7 @@ function initMap() {
         '<span>Pave/X 2026 - Booth #442</span><br>' +
         '<hr>' +
         'New Orleans, LA<br>' +
-        'February 9-12, 2026<br>' +
+        'February 10-12, 2026<br>' +
         '<p><a class="link" href="https://www.pavexshow.com/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
