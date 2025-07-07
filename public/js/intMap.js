@@ -1021,6 +1021,7 @@ function initMap() {
         '<hr>' +
         '+966 505 538 278<br>' +
         'Attn: Mr. Dawood Khan<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:dawood.khan@kaabi.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://kaabi.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
