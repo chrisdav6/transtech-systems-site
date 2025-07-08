@@ -639,7 +639,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/conexpo-logo.png">' +
-        '<span>ConExpo</span><br>' +
+        '<span>ConExpo - Booth #C32468</span><br>' +
         '<hr>' +
         'Las Vegas, NV<br>' +
         'March 3-7, 2026<br>' +
