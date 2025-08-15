@@ -47,14 +47,14 @@ function initMap() {
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, New Orleans, LA', 29.942845, -90.409834],
     ['NCAT Test Track Conference, Auburn, AL', 32.620384, -85.473941],
-    // ['Ohio Asphalt Expo, Columbus, OH', 40.139683, -82.976837],
+    ['Ohio Asphalt Expo, Columbus, OH', 40.172691, -82.995966],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
     // ['Highways USA Conference, Dallas, TX', 32.798137, -96.806722],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
-    ['NAPA Midyear Meeting, Columbus, OH', 39.94513, -82.971247],
+    ['NAPA Midyear Meeting, Columbus, OH', 39.791769, -82.97262],
     // ['AASHTO - Materials and Pavement, Hartford, CT', 41.762526, -72.67796],
     [
       'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
@@ -360,16 +360,16 @@ function initMap() {
     ],
 
     //Ohio Asphalt Expo
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-    //     '<span>Ohio Asphalt Expo</span><br>' +
-    //     '<hr>' +
-    //     'Columbus, OH<br>' +
-    //     'March 18-19, 2025<br>' +
-    //     '<p><a class="link" href="https://www.flexiblepavements.org/OhioAsphaltExpo" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
+        '<span>Ohio Asphalt Expo</span><br>' +
+        '<hr>' +
+        'Columbus, OH<br>' +
+        'March 17-18, 2026<br>' +
+        '<p><a class="link" href="https://www.flexiblepavements.org/OhioAsphaltExpo" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Ohio Asphalt Paving Conference
     // [
