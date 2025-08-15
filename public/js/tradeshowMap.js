@@ -55,7 +55,7 @@ function initMap() {
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Columbus, OH', 39.94513, -82.971247],
-    ['AASHTO - Materials and Pavement, Hartford, CT', 41.762526, -72.67796],
+    // ['AASHTO - Materials and Pavement, Hartford, CT', 41.762526, -72.67796],
     [
       'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
       13.588022,
@@ -456,16 +456,16 @@ function initMap() {
     ],
 
     // AASHTO Materials and Pavement
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
-        '<span>AASHTO - Materials and Pavement</span><br>' +
-        '<hr>' +
-        'Hartford, CT<br>' +
-        'August 3-7, 2025<br>' +
-        '<p><a class="link" href="https://web.cvent.com/event/6250a4fe-d85f-47f4-957c-ce80790d696b/summary" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
+    //     '<span>AASHTO - Materials and Pavement</span><br>' +
+    //     '<hr>' +
+    //     'Hartford, CT<br>' +
+    //     'August 3-7, 2025<br>' +
+    //     '<p><a class="link" href="https://web.cvent.com/event/6250a4fe-d85f-47f4-957c-ce80790d696b/summary" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // International Symposium Towards Holistic Roads and Beyond
     [
