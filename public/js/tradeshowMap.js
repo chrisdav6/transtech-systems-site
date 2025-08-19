@@ -40,6 +40,7 @@ function initMap() {
     ['APAI, Muncie, IN', 40.206962, -85.393312],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
+    ['PAPA, Hershey, PA', 40.284559, -75.947767],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     ['RMACES, Denver, CO', 39.771474, -104.806882],
     // ['APAM, Mt. Pleasant, MI', 43.600198, -84.769425],
@@ -272,6 +273,18 @@ function initMap() {
         'Washington D.C.<br>' +
         'January 11-15, 2026<br>' +
         '<p><a class="link" href="http://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // PAPA
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/penn-asphalt-logo.png">' +
+        '<span>66th Annual PAPA Conference</span><br>' +
+        '<hr>' +
+        'Hershey, PA<br>' +
+        'January 19-21, 2026<br>' +
+        '<p><a class="link" href="https://www.pa-asphalt.org/events/papa-events/146-66th-annual-papa-conference-save-the-date" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
