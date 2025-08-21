@@ -42,7 +42,7 @@ function initMap() {
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['PAPA, Hershey, PA', 40.284559, -75.947767],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
-    ['RMACES, Denver, CO', 39.771474, -104.806882],
+    // ['RMACES, Denver, CO', 39.771474, -104.806882],
     // ['APAM, Mt. Pleasant, MI', 43.600198, -84.769425],
     // ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
@@ -301,16 +301,16 @@ function initMap() {
     ],
 
     // RMACES
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
-        '<span>RMACES</span><br>' +
-        '<hr>' +
-        'Denver, CO<br>' +
-        'February 12-13, 2026<br>' +
-        '<p><a class="link" href="http://www.rmaces.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/rmaces-logo.png">' +
+    //     '<span>RMACES</span><br>' +
+    //     '<hr>' +
+    //     'Denver, CO<br>' +
+    //     'February 12-13, 2026<br>' +
+    //     '<p><a class="link" href="http://www.rmaces.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //APAM
     // [
