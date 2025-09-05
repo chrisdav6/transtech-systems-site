@@ -57,11 +57,11 @@ function initMap() {
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Columbus, OH', 39.791769, -82.97262],
     // ['AASHTO - Materials and Pavement, Hartford, CT', 41.762526, -72.67796],
-    [
-      'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
-      13.588022,
-      100.5808,
-    ],
+    // [
+    //   'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
+    //   13.588022,
+    //   100.5808,
+    // ],
     ['NAPA Annual Meeting, Scottsdale, AZ', 33.638639, -111.871476],
     ['Pave/X 2026, New Orleans, LA', 29.904131, -89.928186],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
@@ -481,16 +481,16 @@ function initMap() {
     // ],
 
     // International Symposium Towards Holistic Roads and Beyond
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/rathLogo.png">' +
-        '<span>International Symposium Towards Holistic Roads and Beyond</span><br>' +
-        '<hr>' +
-        'Bangkok, Thailand<br>' +
-        'September 4-5, 2025<br>' +
-        '<p><a class="link" href="https://www.roadassothai.com/news/931" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/rathLogo.png">' +
+    //     '<span>International Symposium Towards Holistic Roads and Beyond</span><br>' +
+    //     '<hr>' +
+    //     'Bangkok, Thailand<br>' +
+    //     'September 4-5, 2025<br>' +
+    //     '<p><a class="link" href="https://www.roadassothai.com/news/931" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //NAPA Annual Meeting
     [
