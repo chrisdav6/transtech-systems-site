@@ -70,7 +70,7 @@ function initMap() {
     // ['TXAPA MAPS Conference, Houston, TX', 29.78009, -95.369866],
     // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
-    ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
+    // ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
@@ -589,16 +589,16 @@ function initMap() {
     // ],
 
     // NEAUPG
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-        '<span>NEAUPG Fall Meeting</span><br>' +
-        '<hr>' +
-        'Harrisburg, PA<br>' +
-        'October 29-30, 2025<br>' +
-        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+    //     '<span>NEAUPG Fall Meeting</span><br>' +
+    //     '<hr>' +
+    //     'Harrisburg, PA<br>' +
+    //     'October 29-30, 2025<br>' +
+    //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // WAPA
     [
