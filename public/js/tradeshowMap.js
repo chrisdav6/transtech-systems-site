@@ -27,6 +27,7 @@ function initMap() {
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     ['MAPA, Bangor, ME', 44.831204, -68.781424],
     ['NACE 2026, Arlington, TX', 32.72627, -97.110463],
+    ['RPUG 2026, Pittsburgh, PA', 40.433366, -79.995863],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Pomona, CA', 34.053067, -117.749428],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
@@ -117,6 +118,18 @@ function initMap() {
         'Arlington, TX<br>' +
         'April 12-15, 2026<br>' +
         '<p><a class="link" href="https://www.countyengineers.org/future-meetings" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // RPUG
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/RPUGLogo.png">' +
+        '<span>RPUG 2026</span><br>' +
+        '<hr>' +
+        'Pittsburgh, PA<br>' +
+        'April 28-May 1, 2026<br>' +
+        '<p><a class="link" href="https://rpug.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
