@@ -126,6 +126,11 @@ app.get('/payment', function (req, res) {
   res.redirect('https://securepayment.link/transtechsys');
 });
 
+//Redirect /payment to payment site
+app.get('/payment2', function (req, res) {
+  res.redirect('https://api.ipospays.com/v1/sl/1mPt0_170925134140');
+});
+
 //TTS - Ames Digital Landing Page - Asphalt Contractor
 app.get('/products/digitalAC', function (req, res) {
   res.render('products/digitalAC', {
