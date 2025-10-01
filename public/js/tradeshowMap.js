@@ -225,7 +225,7 @@ function initMap() {
         '<hr>' +
         'Charleston, WV<br>' +
         'November 18-20, 2025<br>' +
-        '<p><a class="link" href="http://www.seaupg.org" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://saug.memberclicks.net" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
