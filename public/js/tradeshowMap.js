@@ -309,7 +309,7 @@ function initMap() {
         '<hr>' +
         'Columbia, MO<br>' +
         'January 5-7, 2026<br>' +
-        '<p><a class="link" href="https://moasphalt.org/events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://moasphalt.org/events/2026-annual-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
