@@ -619,6 +619,7 @@ app.post('/products/repairRequest', function (req, res) {
     state,
     zip,
     country,
+    residential,
     phone,
     email,
     repairProduct,
@@ -692,6 +693,9 @@ app.post('/products/repairRequest', function (req, res) {
       body += `<strong>State:</strong> ${state}<br>`;
       body += `<strong>Zipcode:</strong> ${zip}<br>`;
       body += `<strong>Country:</strong> ${country}<br>`;
+      body += `<strong>Residential Address:</strong> ${
+        residential ? 'Yes' : 'No'
+      }<br>`;
       body += `<strong>Phone:</strong> ${phone}<br>`;
       body += `<strong>Email:</strong> ${email}<br>`;
       body += `<strong>Product for Repair:</strong> ${repairProduct}<br>`;
