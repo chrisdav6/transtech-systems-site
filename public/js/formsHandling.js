@@ -17,6 +17,21 @@ $(function () {
     }
   });
 
+  //Hide reachInfoGroup textbox until radio button is checked
+  $('.reachInfoGroup').hide();
+
+  const reachChecked = $('input[name="reach"]:checked');
+
+  $('input[name="reach"]').on('change', function () {
+    if (reachChecked) {
+      $('.reachInfoGroup').slideDown();
+      console.log('Checked');
+    } else {
+      $('.reachInfoGroup').slideUp();
+      console.log('Not Checked');
+    }
+  });
+
   //Hide honeypot field
   let $businessAddress = $('.business-address');
   $businessAddress.hide();

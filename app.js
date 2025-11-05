@@ -546,6 +546,7 @@ app.post('/products/salesRequest', function (req, res) {
     phone,
     email,
     reach,
+    reachInfo,
     moreInfo,
     message,
     businessAddress,
@@ -578,13 +579,17 @@ app.post('/products/salesRequest', function (req, res) {
       body += `<strong>Phone:</strong> ${phone}<br>`;
       body += `<strong>Email:</strong> ${email}<br>`;
       body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
+      body += `<strong>Reach Info:</strong> ${
+        reachInfo || 'User Did Not Specify'
+      }<br>`;
       body += `<strong>Please send more info:</strong> ${moreInfo}</p>`;
       body += `<p><strong>Message:</strong><br> ${message}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        // to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com',
         replyTo: email,
         subject: 'TransTech Systems Sales Request Form', // Subject line
         text: message, // plain text body
