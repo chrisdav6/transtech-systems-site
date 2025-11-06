@@ -221,7 +221,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/seaupg-logo.png">' +
-        '<span>SEAUPG</span><br>' +
+        '<span>SEAUPG - Booth #21</span><br>' +
         '<hr>' +
         'Charleston, WV<br>' +
         'November 18-20, 2025<br>' +
