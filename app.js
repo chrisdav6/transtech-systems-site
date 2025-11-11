@@ -553,8 +553,18 @@ app.post('/products/salesRequest', function (req, res) {
   } = req.body;
 
   if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/salesRequest');
+    return;
+    // req.flash('success', 'Sorry Bot!');
+    // res.redirect('/products/salesRequest');
+  } else if (
+    name.includes('DGSVNL') ||
+    company.includes('DGSVNL') ||
+    phone.includes('DGSVNL') ||
+    email.includes('DGSVNL') ||
+    reachInfo.includes('DGSVNL') ||
+    message.includes('DGSVNL')
+  ) {
+    return;
   } else {
     nodemailer.createTestAccount((err, account) => {
       // create reusable transporter object using the default SMTP transport
@@ -588,7 +598,8 @@ app.post('/products/salesRequest', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        // to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Sales Request Form', // Subject line
         text: message, // plain text body
