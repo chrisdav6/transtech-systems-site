@@ -564,6 +564,7 @@ app.post('/products/salesRequest', function (req, res) {
     reachInfo.includes('DGSVNL') ||
     message.includes('DGSVNL')
   ) {
+    res.redirect('/products/salesRequest');
     return;
   } else {
     nodemailer.createTestAccount((err, account) => {
