@@ -562,7 +562,13 @@ app.post('/products/salesRequest', function (req, res) {
     phone.includes('DGSVNL') ||
     email.includes('DGSVNL') ||
     reachInfo.includes('DGSVNL') ||
-    message.includes('DGSVNL')
+    message.includes('DGSVNL') ||
+    name.includes('GOXOEG') ||
+    company.includes('GOXOEG') ||
+    phone.includes('GOXOEG') ||
+    email.includes('GOXOEG') ||
+    reachInfo.includes('GOXOEG') ||
+    message.includes('GOXOEG')
   ) {
     res.redirect('/products/salesRequest');
     return;
