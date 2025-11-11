@@ -561,12 +561,14 @@ app.post('/products/salesRequest', function (req, res) {
     company.includes('DGSVNL') ||
     phone.includes('DGSVNL') ||
     email.includes('DGSVNL') ||
+    reach.includes('DGSVNL') ||
     reachInfo.includes('DGSVNL') ||
     message.includes('DGSVNL') ||
     name.includes('GOXOEG') ||
     company.includes('GOXOEG') ||
     phone.includes('GOXOEG') ||
     email.includes('GOXOEG') ||
+    reach.includes('GOXOEG') ||
     reachInfo.includes('GOXOEG') ||
     message.includes('GOXOEG')
   ) {
