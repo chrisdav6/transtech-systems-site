@@ -559,17 +559,23 @@ app.post('/products/salesRequest', function (req, res) {
   } else if (
     name.includes('DGSVNL') ||
     company.includes('DGSVNL') ||
+    state.includes('DGSVNL') ||
+    country.includes('DGSVNL') ||
     phone.includes('DGSVNL') ||
     email.includes('DGSVNL') ||
     reach.includes('DGSVNL') ||
     reachInfo.includes('DGSVNL') ||
+    moreInfo.includes('DGSVNL') ||
     message.includes('DGSVNL') ||
     name.includes('GOXOEG') ||
     company.includes('GOXOEG') ||
+    state.includes('GOXOEG') ||
+    country.includes('GOXOEG') ||
     phone.includes('GOXOEG') ||
     email.includes('GOXOEG') ||
     reach.includes('GOXOEG') ||
     reachInfo.includes('GOXOEG') ||
+    moreInfo.includes('GOXOEG') ||
     message.includes('GOXOEG')
   ) {
     res.redirect('/products/salesRequest');
