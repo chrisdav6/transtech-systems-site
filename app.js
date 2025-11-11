@@ -537,6 +537,107 @@ app.get('/products/privacy', function (req, res) {
 }); */
 
 //Product Sales Request Form
+// app.post('/products/salesRequest', function (req, res) {
+//   let {
+//     name,
+//     company,
+//     state,
+//     country,
+//     phone,
+//     email,
+//     reach,
+//     reachInfo,
+//     moreInfo,
+//     message,
+//     businessAddress,
+//   } = req.body;
+
+//   if (businessAddress.length !== 0) {
+//     return;
+//     // req.flash('success', 'Sorry Bot!');
+//     // res.redirect('/products/salesRequest');
+//   } else if (
+//     name.includes('DGSVNL') ||
+//     company.includes('DGSVNL') ||
+//     state.includes('DGSVNL') ||
+//     country.includes('DGSVNL') ||
+//     phone.includes('DGSVNL') ||
+//     email.includes('DGSVNL') ||
+//     reach.includes('DGSVNL') ||
+//     reachInfo.includes('DGSVNL') ||
+//     moreInfo.includes('DGSVNL') ||
+//     message.includes('DGSVNL') ||
+//     name.includes('GOXOEG') ||
+//     company.includes('GOXOEG') ||
+//     state.includes('GOXOEG') ||
+//     country.includes('GOXOEG') ||
+//     phone.includes('GOXOEG') ||
+//     email.includes('GOXOEG') ||
+//     reach.includes('GOXOEG') ||
+//     reachInfo.includes('GOXOEG') ||
+//     moreInfo.includes('GOXOEG') ||
+//     message.includes('GOXOEG')
+//   ) {
+//     res.redirect('/products/salesRequest');
+//     return;
+//   } else {
+//     nodemailer.createTestAccount((err, account) => {
+//       // create reusable transporter object using the default SMTP transport
+//       var transporter = nodemailer.createTransport({
+//         host: 'smtp.office365.com', // Office 365 server
+//         port: 587, // secure SMTP
+//         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
+//         auth: {
+//           user: process.env.SMTP_USER,
+//           pass: process.env.SMTP_PASSWORD,
+//         },
+//         tls: {
+//           ciphers: 'SSLv3',
+//         },
+//       });
+
+//       let body = `<h2><u>Sales Request</u></h2>`;
+//       body += `<p><strong>From:</strong> ${name}<br>`;
+//       body += `<strong>Company:</strong> ${company}<br>`;
+//       body += `<strong>State:</strong> ${state}<br>`;
+//       body += `<strong>Country:</strong> ${country}<br>`;
+//       body += `<strong>Phone:</strong> ${phone}<br>`;
+//       body += `<strong>Email:</strong> ${email}<br>`;
+//       body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
+//       body += `<strong>Reach Info:</strong> ${
+//         reachInfo || 'User Did Not Specify'
+//       }<br>`;
+//       body += `<strong>Please send more info:</strong> ${moreInfo}</p>`;
+//       body += `<p><strong>Message:</strong><br> ${message}</p>`;
+
+//       // setup email data with unicode symbols
+//       let mailOptions = {
+//         from: 'webforms@transtechsys.com', // sender address
+//         to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+//         replyTo: email,
+//         subject: 'TransTech Systems Sales Request Form', // Subject line
+//         text: message, // plain text body
+//         html: body, // html body
+//       };
+
+//       // send mail with defined transport object
+//       transporter.sendMail(mailOptions, (error, info) => {
+//         if (error) {
+//           return console.log(error);
+//         }
+//         console.log('Message sent: %s', info.messageId);
+//         // Preview only available when sending through an Ethereal account
+//         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+//         // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+//         // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+//       });
+//     });
+//     req.flash('success', 'Sales request has been sent. Thank You!');
+//     res.redirect('/products/salesRequest');
+//   }
+// });
+
 app.post('/products/salesRequest', function (req, res) {
   let {
     name,
@@ -549,38 +650,49 @@ app.post('/products/salesRequest', function (req, res) {
     reachInfo,
     moreInfo,
     message,
-    businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    return;
-    // req.flash('success', 'Sorry Bot!');
-    // res.redirect('/products/salesRequest');
-  } else if (
-    name.includes('DGSVNL') ||
-    company.includes('DGSVNL') ||
-    state.includes('DGSVNL') ||
-    country.includes('DGSVNL') ||
-    phone.includes('DGSVNL') ||
-    email.includes('DGSVNL') ||
-    reach.includes('DGSVNL') ||
-    reachInfo.includes('DGSVNL') ||
-    moreInfo.includes('DGSVNL') ||
-    message.includes('DGSVNL') ||
-    name.includes('GOXOEG') ||
-    company.includes('GOXOEG') ||
-    state.includes('GOXOEG') ||
-    country.includes('GOXOEG') ||
-    phone.includes('GOXOEG') ||
-    email.includes('GOXOEG') ||
-    reach.includes('GOXOEG') ||
-    reachInfo.includes('GOXOEG') ||
-    moreInfo.includes('GOXOEG') ||
-    message.includes('GOXOEG')
+  //Sanitize incoming data
+  name = req.sanitize(name).replace(/<\/?[^>]+(>|$)/g, '');
+  company = req.sanitize(company).replace(/<\/?[^>]+(>|$)/g, '');
+  state = req.sanitize(state).replace(/<\/?[^>]+(>|$)/g, '');
+  country = req.sanitize(country).replace(/<\/?[^>]+(>|$)/g, '');
+  phone = req.sanitize(phone).replace(/<\/?[^>]+(>|$)/g, '');
+  email = req.sanitize(email).replace(/<\/?[^>]+(>|$)/g, '');
+  reach = req.sanitize(reach).replace(/<\/?[^>]+(>|$)/g, '');
+  reachInfo = req.sanitize(reachInfo).replace(/<\/?[^>]+(>|$)/g, '');
+  moreInfo = req.sanitize(moreInfo).replace(/<\/?[^>]+(>|$)/g, '');
+  message = req.sanitize(message).replace(/<\/?[^>]+(>|$)/g, '');
+
+  //Google captcha code
+  if (
+    req.body['g-recaptcha-response'] === undefined ||
+    req.body['g-recaptcha-response'] === '' ||
+    req.body['g-recaptcha-response'] === null
   ) {
-    res.redirect('/products/salesRequest');
-    return;
-  } else {
+    req.flash('success', 'Please select google captcha');
+    return res.redirect('/products/salesRequest');
+  }
+
+  const secretKey = '6LdOJrUUAAAAAEcDXXzymgvHEY2XDMamj3pGXra-';
+  const verificationURL =
+    'https://www.google.com/recaptcha/api/siteverify?secret=' +
+    secretKey +
+    '&response=' +
+    req.body['g-recaptcha-response'] +
+    '&remoteip=' +
+    req.connection.remoteAddress;
+
+  //Send verification to google
+  request(verificationURL, function (error, response, data) {
+    data = JSON.parse(data);
+
+    if (data.success !== undefined && !data.success) {
+      req.flash('success', 'Failed captcha verification');
+      return res.redirect('/products/salesRequest');
+    }
+
+    //If google passes - send form
     nodemailer.createTestAccount((err, account) => {
       // create reusable transporter object using the default SMTP transport
       var transporter = nodemailer.createTransport({
@@ -633,9 +745,10 @@ app.post('/products/salesRequest', function (req, res) {
         // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
     });
+
     req.flash('success', 'Sales request has been sent. Thank You!');
     res.redirect('/products/salesRequest');
-  }
+  });
 });
 
 //Repair Request Form
