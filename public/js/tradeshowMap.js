@@ -66,7 +66,7 @@ function initMap() {
     ['NAPA Annual Meeting, Scottsdale, AZ', 33.638639, -111.871476],
     ['Pave/X 2026, New Orleans, LA', 29.904131, -89.928186],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
-    // ['PAIKY 2025 Winter Training, Louisville, KY', 38.203105, -84.631109],
+    ['PAIKY 2026 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
     // ['TXAPA MAPS Conference, Houston, TX', 29.78009, -95.369866],
     // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
@@ -542,16 +542,16 @@ function initMap() {
     // ],
 
     //PAIKY Winter Training
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
-    //     '<span>PAIKY 2025 Winter Training School</span><br>' +
-    //     '<hr>' +
-    //     'Louisville, KY<br>' +
-    //     'March 5-7, 2025<br>' +
-    //     '<p><a class="link" href="https://members.paiky.org/site_event_detail.cfm?pk_association_event=31956" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/paiky-logo.png">' +
+        '<span>PAIKY 2026 Winter Training School</span><br>' +
+        '<hr>' +
+        'Louisville, KY<br>' +
+        'February 4-6, 2026<br>' +
+        '<p><a class="link" href="https://members.paiky.org/site_event_detail.cfm?pk_association_event=35109" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Pavement Expo
     // [
