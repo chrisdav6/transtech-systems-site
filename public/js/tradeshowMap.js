@@ -297,7 +297,7 @@ function initMap() {
         '<hr>' +
         'Hershey, PA<br>' +
         'January 19-21, 2026<br>' +
-        '<p><a class="link" href="https://www.pa-asphalt.org/events/papa-events/146-66th-annual-papa-conference-save-the-date" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.pa-asphalt.org/events/papa-events/papa-main-events/179-2026-66th-annual-papa-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
