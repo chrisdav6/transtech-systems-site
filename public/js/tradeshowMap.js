@@ -329,11 +329,11 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/michigan-asphalt-logo.png">' +
-        '<span>APAM&apos;s Annual Paving Conference</span><br>' +
+        '<span>APAM&apos;s Annual Paving Conference - Booth #21</span><br>' +
         '<hr>' +
         'Battle Creek, MI<br>' +
         'February 25-26, 2026<br>' +
-        '<p><a class="link" href="https://mms.apa-mi.org//Calendar/moreinfo.php?org_id=APAM&eventid=184049" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.apa-mi.org/pc_home_page.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
