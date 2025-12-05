@@ -261,7 +261,7 @@ function initMap() {
         '<hr>' +
         'Muncie, IN<br>' +
         'December 10-12, 2025<br>' +
-        '<p><a class="link" href="https://mms.asphaltindiana.org//Calendar/moreinfo.php?org_id=APAI&eventid=167640" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.asphaltindiana.org/conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
