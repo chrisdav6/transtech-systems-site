@@ -174,10 +174,10 @@ body {
 }
 
 .holiday {
-  display: none;
-  background: rgba(255, 0, 0, 0.771);
-  padding: 10px 20px;
-  margin-top: 30px;
+  display: inline-block;
+  background: rgba(255, 0, 0, 0.531);
+  padding: 15px 30px;
+  margin-top: 20px;
 
   i {
     font-size: 3rem;
@@ -187,6 +187,7 @@ body {
   p {
     font-size: 1.45rem !important;
     margin-bottom: 0;
+    line-height: 1.35;
 
     span {
       font-size: 1.2rem;
