@@ -38,7 +38,7 @@ function initMap() {
     // ['SEAUPG, Charleston, WV', 38.353411, -81.637535],
     // ['BATT Lab Open House, Richmond, KY', 37.738889, -84.291252],
     // ['IAPAs 2nd Annual Golf Outing, Morris, IL', 41.378384, -88.427807],
-    ['APAI, Muncie, IN', 40.206962, -85.393312],
+    // ['APAI, Muncie, IN', 40.206962, -85.393312],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
     ['PAPA, Hershey, PA', 40.284559, -75.947767],
@@ -254,16 +254,16 @@ function initMap() {
     // ],
 
     // APAI
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/apai2025.png">' +
-        '<span>APAI Winter Conference</span><br>' +
-        '<hr>' +
-        'Muncie, IN<br>' +
-        'December 10-12, 2025<br>' +
-        '<p><a class="link" href="https://www.asphaltindiana.org/conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/apai2025.png">' +
+    //     '<span>APAI Winter Conference</span><br>' +
+    //     '<hr>' +
+    //     'Muncie, IN<br>' +
+    //     'December 10-12, 2025<br>' +
+    //     '<p><a class="link" href="https://www.asphaltindiana.org/conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // APAI Joint Summer Meeting
     // [
