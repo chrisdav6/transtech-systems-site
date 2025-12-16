@@ -389,7 +389,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/ohio-logo.png">' +
-        '<span>Ohio Asphalt Expo - Booth #20</span><br>' +
+        '<span>Ohio Asphalt Expo - Booth #23</span><br>' +
         '<hr>' +
         'Columbus, OH<br>' +
         'March 17-18, 2026<br>' +
