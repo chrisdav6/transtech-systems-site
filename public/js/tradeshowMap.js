@@ -26,7 +26,7 @@ function initMap() {
   var markers = [
     //['CAPA, Pinehurst, NC', 35.189523, -79.462592],
     ['MAPA, Bangor, ME', 44.831204, -68.781424],
-    ['NACE 2026, Arlington, TX', 32.72627, -97.110463],
+    ['NACE 2026, Arlington, TX', 32.72627, -96.110463],
     ['RPUG 2026, Pittsburgh, PA', 40.433366, -79.995863],
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Pomona, CA', 34.053067, -117.749428],
@@ -68,7 +68,7 @@ function initMap() {
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     ['PAIKY 2026 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
-    // ['TXAPA MAPS Conference, Houston, TX', 29.78009, -95.369866],
+    ['TXAPA MAPS Conference, Dallas-Fort Worth, TX', 32.791572, -97.206667],
     // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
@@ -565,17 +565,17 @@ function initMap() {
     //     '</div>',
     // ],
 
-    //TXAPA Maps - Houston
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
-    //     '<span>TXAPA Maps Conference</span><br>' +
-    //     '<hr>' +
-    //     'Houston, TX<br>' +
-    //     'May 7, 2025<br>' +
-    //     '<p><a class="link" href="https://texasasphalt.org/events/maps-houston" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    //TXAPA Maps - Dallas-Fort Worth
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
+        '<span>TXAPA Maps Conference</span><br>' +
+        '<hr>' +
+        'Dallas-Fort Worth, TX<br>' +
+        'May 27-28, 2026<br>' +
+        '<p><a class="link" href="https://texasasphalt.org/events/maps-dfw-hurst" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //TXAPA Maps - Plano
     // [
