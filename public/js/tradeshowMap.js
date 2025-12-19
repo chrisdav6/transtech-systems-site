@@ -293,7 +293,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/penn-asphalt-logo.png">' +
-        '<span>66th Annual PAPA Conference</span><br>' +
+        '<span>66th Annual PAPA Conference - Booth #6</span><br>' +
         '<hr>' +
         'Hershey, PA<br>' +
         'January 19-21, 2026<br>' +
