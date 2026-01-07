@@ -305,11 +305,11 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/mapa-logo.png">' +
-        '<span>36th Annual MAPA Conference</span><br>' +
+        '<span>37th Annual MAPA Conference</span><br>' +
         '<hr>' +
         'Columbia, MO<br>' +
-        'January 5-7, 2026<br>' +
-        '<p><a class="link" href="https://moasphalt.org/events/2026-annual-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        'January 4-6, 2027<br>' +
+        '<p><a class="link" href="https://moasphalt.org/mapa-events/annual-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
