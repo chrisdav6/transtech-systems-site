@@ -660,7 +660,7 @@ app.post('/products/salesRequest', function (req, res) {
   phone = req.sanitize(phone).replace(/<\/?[^>]+(>|$)/g, '');
   email = req.sanitize(email).replace(/<\/?[^>]+(>|$)/g, '');
   reach = req.sanitize(reach).replace(/<\/?[^>]+(>|$)/g, '');
-  reachInfo = req.sanitize(reachInfo).replace(/<\/?[^>]+(>|$)/g, '');
+  // reachInfo = req.sanitize(reachInfo).replace(/<\/?[^>]+(>|$)/g, '');
   moreInfo = req.sanitize(moreInfo).replace(/<\/?[^>]+(>|$)/g, '');
   message = req.sanitize(message).replace(/<\/?[^>]+(>|$)/g, '');
 
@@ -725,7 +725,8 @@ app.post('/products/salesRequest', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        // to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
+        to: 'cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Sales Request Form', // Subject line
         text: message, // plain text body
