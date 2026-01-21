@@ -41,7 +41,7 @@ function initMap() {
     // ['APAI, Muncie, IN', 40.206962, -85.393312],
     // ['APAI Summer, South Bend, IN', 41.674956, -86.255116],
     ['TRB, Washington D.C.', 38.911744, -77.018697],
-    ['PAPA, Hershey, PA', 40.284559, -75.947767],
+    // ['PAPA, Hershey, PA', 40.284559, -75.947767],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
     ['APAM, Battle Creek, MI', 42.317825, -85.18426],
@@ -290,16 +290,16 @@ function initMap() {
     ],
 
     // PAPA
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/penn-asphalt-logo.png">' +
-        '<span>66th Annual PAPA Conference - Booth #6</span><br>' +
-        '<hr>' +
-        'Hershey, PA<br>' +
-        'January 19-21, 2026<br>' +
-        '<p><a class="link" href="https://www.pa-asphalt.org/events/papa-events/papa-main-events/179-2026-66th-annual-papa-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/penn-asphalt-logo.png">' +
+    //     '<span>66th Annual PAPA Conference - Booth #6</span><br>' +
+    //     '<hr>' +
+    //     'Hershey, PA<br>' +
+    //     'January 19-21, 2026<br>' +
+    //     '<p><a class="link" href="https://www.pa-asphalt.org/events/papa-events/papa-main-events/179-2026-66th-annual-papa-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // MAPA (Missouri)
     [
@@ -698,7 +698,7 @@ function initMap() {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
-      })(marker, i)
+      })(marker, i),
     );
   }
 }
