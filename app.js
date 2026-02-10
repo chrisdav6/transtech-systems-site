@@ -167,7 +167,7 @@ app.get('/products/digitalTXAPA', function (req, res) {
   });
 });
 
-//TTS - Ames Digital Landing Page - WOA 2025
+//TTS - Ames Digital Landing Page - ConEXPO 2026
 app.get('/products/digitalConExpo2026', function (req, res) {
   res.render('products/digitalConExpo2026', {
     title: 'TransTech Systems / Ames Engineering Digital Landing Page',
