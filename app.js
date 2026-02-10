@@ -29,7 +29,7 @@ app.use(
     secret: 'secret123',
     saveUninitialized: true,
     resave: true,
-  })
+  }),
 );
 app.use(flash());
 
@@ -96,7 +96,7 @@ app.get('/*', function (req, res, next) {
   if (req.headers.host.match(/^www/) !== null)
     res.redirect(
       301,
-      'http://' + req.headers.host.replace(/^www\./, '') + req.url
+      'http://' + req.headers.host.replace(/^www\./, '') + req.url,
     );
   else next();
 });
@@ -168,8 +168,8 @@ app.get('/products/digitalTXAPA', function (req, res) {
 });
 
 //TTS - Ames Digital Landing Page - WOA 2025
-app.get('/products/digitalWOA2025', function (req, res) {
-  res.render('products/digitalWOA2025', {
+app.get('/products/digitalConExpo2026', function (req, res) {
+  res.render('products/digitalConExpo2026', {
     title: 'TransTech Systems / Ames Engineering Digital Landing Page',
     metaTitle:
       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
