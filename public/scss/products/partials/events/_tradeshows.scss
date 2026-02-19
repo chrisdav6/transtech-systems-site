@@ -27,10 +27,18 @@
     }
   }
 
+  #attendingShows {
+    scroll-margin-top: 150px;
+  }
+
+  #industryShows {
+    scroll-margin-top: 175px;
+  }
+
   .attending-status {
     font-size: 1rem;
     margin-top: 0;
-    padding: .25em .5em;
+    padding: 0.25em 0.5em;
     color: white;
     display: inline-block;
   }
@@ -40,7 +48,7 @@
   }
 
   .not-attending {
-    background: #DC3545;
+    background: #dc3545;
   }
 
   .industry-events-title {
@@ -67,5 +75,4 @@
   p {
     font-size: 1.1rem;
   }
-
 }
