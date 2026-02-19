@@ -64,7 +64,7 @@ function initMap() {
     //   100.5808,
     // ],
     ['NAPA Annual Meeting, Miami, FL', 25.768192, -80.195353],
-    // ['Pave/X 2026, New Orleans, LA', 29.904131, -89.928186],
+    ['Pave/X 2027, Savannah, GA', 32.069601, -81.09446],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     // ['PAIKY 2026 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
@@ -518,16 +518,16 @@ function initMap() {
     ],
 
     //Pave/X
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
-    //     '<span>Pave/X 2026 - Booth #442</span><br>' +
-    //     '<hr>' +
-    //     'New Orleans, LA<br>' +
-    //     'February 10-12, 2026<br>' +
-    //     '<p><a class="link" href="https://www.pavexshow.com/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
+        '<span>Pave/X 2027</span><br>' +
+        '<hr>' +
+        'Savannah, GA<br>' +
+        'January 25-27, 2027<br>' +
+        '<p><a class="link" href="https://www.pavexshow.com/" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     //Greater Iowa Asphalt Conference
     // [
