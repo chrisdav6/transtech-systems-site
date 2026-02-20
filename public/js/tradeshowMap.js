@@ -72,7 +72,7 @@ function initMap() {
     // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
-    // ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
+    ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     // ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
@@ -614,16 +614,16 @@ function initMap() {
     // ],
 
     // WAPA
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
-    //     '<span>WAPA 66th Annual Conference</span><br>' +
-    //     '<hr>' +
-    //     'Wisconsin Dells, WI<br>' +
-    //     'December 2-3, 2025<br>' +
-    //     '<p><a class="link" href="https://www.wispave.org/wapas-66th-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/wisconsin-asphalt-logo.png">' +
+        '<span>WAPA 67th Annual Conference</span><br>' +
+        '<hr>' +
+        'Wisconsin Dells, WI<br>' +
+        'December 1-2, 2026<br>' +
+        '<p><a class="link" href="https://www.wispave.org/wapas-67th-annual-conference-and-business-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Minnesota Asphalt Conference
     // [
