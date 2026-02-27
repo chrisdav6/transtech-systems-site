@@ -44,7 +44,7 @@ function initMap() {
     ['PAPA, Hershey, PA', 40.284559, -75.947767],
     ['MAPA, Columbia, MO', 38.948857, -92.334012],
     // ['RMACES, Denver, CO', 39.771474, -104.806882],
-    ['APAM, Battle Creek, MI', 42.317825, -85.18426],
+    // ['APAM, Battle Creek, MI', 42.317825, -85.18426],
     // ['Utah Asphalt Conference, Sandy, UT', 40.566145, -111.841571],
     // ['IAPA Annual Conference, Springfield, IL', 39.786973, -89.652644],
     ['World of Asphalt, New Orleans, LA', 29.942845, -90.409834],
@@ -326,16 +326,16 @@ function initMap() {
     // ],
 
     //APAM
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/michigan-asphalt-logo.png">' +
-        '<span>APAM&apos;s Annual Paving Conference - Booth #21</span><br>' +
-        '<hr>' +
-        'Battle Creek, MI<br>' +
-        'February 25-26, 2026<br>' +
-        '<p><a class="link" href="https://www.apa-mi.org/pc_home_page.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/michigan-asphalt-logo.png">' +
+    //     '<span>APAM&apos;s Annual Paving Conference - Booth #21</span><br>' +
+    //     '<hr>' +
+    //     'Battle Creek, MI<br>' +
+    //     'February 25-26, 2026<br>' +
+    //     '<p><a class="link" href="https://www.apa-mi.org/pc_home_page.php" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Utah Asphalt Conference
     // [
