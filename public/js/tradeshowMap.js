@@ -73,7 +73,7 @@ function initMap() {
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
-    // ['Minnesota Asphalt Conference, St. Cloud, MN', 45.553381, -94.164918],
+    ['Minnesota Asphalt Conference, Prior Lake, MN', 44.722574, -93.436505],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
     // [
     //   '63rd Illinois Bituminous Paving Conference, Champaign, IL',
@@ -626,16 +626,16 @@ function initMap() {
     ],
 
     // Minnesota Asphalt Conference
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
-    //     '<span>2025 Minnesota Asphalt Conference</span><br>' +
-    //     '<hr>' +
-    //     'St. Cloud, MN<br>' +
-    //     'December 9-10, 2025<br>' +
-    //     '<p><a class="link" href="https://www.asphaltisbest.com/events/EventDetails.aspx?id=1853252&group=" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/mn-logo.png">' +
+        '<span>2026 Minnesota Asphalt Conference</span><br>' +
+        '<hr>' +
+        'Prior Lake, MN<br>' +
+        'November 30-December 1, 2026<br>' +
+        '<p><a class="link" href="https://www.asphaltisbest.com/events/2026-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // Missouri S&T Asphalt Conference
     // [
