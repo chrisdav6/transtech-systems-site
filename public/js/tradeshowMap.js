@@ -380,7 +380,7 @@ function initMap() {
         '<span>NCAT Test Track Conference</span><br>' +
         '<hr>' +
         'Auburn, AL<br>' +
-        '2027<br>' +
+        'May 11-13, 2027<br>' +
         '<p><a class="link" href="http://eng.auburn.edu/research/centers/ncat/testtrack/conference.html" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
