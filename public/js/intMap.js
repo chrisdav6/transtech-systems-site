@@ -97,7 +97,7 @@ function initMap() {
     ['Intermodal Services Co. W.L.L., Qatar', 25.304304, 51.212769],
     ['Beratest AG, République Centrafricaine', 6.850078, 20.566406],
     ['Tecnoservice Equipment S.R.L., Romania', 45.523971, 24.740059],
-    ['BAV Company Ltd., Russia', 63.074866, 93.339844],
+    // ['BAV Company Ltd., Russia', 63.074866, 93.339844],
     ['Al Kaabi for Testing Equipment, Saudi Arabia', 24.86174, 44.612658],
     ['Beratest AG, Sénégal', 14.743011, -14.72168],
     ['Nishio Rent All Co., Ltd., Singapore', 1.364922, 103.815994],
@@ -1002,17 +1002,17 @@ function initMap() {
     ],
 
     // Russia
-    [
-      '<div class="map-text">' +
-        '<span>BAV Company Ltd.</span><br>' +
-        '<hr>' +
-        '+7 926 203 20 02<br>' +
-        'Attn: Sergey Baranov<br>' +
-        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
-        '<p><a class="link" href="mailto:info@bavcompany.ru?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<span>BAV Company Ltd.</span><br>' +
+    //     '<hr>' +
+    //     '+7 926 203 20 02<br>' +
+    //     'Attn: Sergey Baranov<br>' +
+    //     '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
+    //     '<p><a class="link" href="mailto:info@bavcompany.ru?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+    //     '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // Saudi Arabia
     [
@@ -1290,7 +1290,7 @@ function initMap() {
           infoWindow.setContent(infoWindowContent[i][0]);
           infoWindow.open(map, marker);
         };
-      })(marker, i)
+      })(marker, i),
     );
   }
 }
