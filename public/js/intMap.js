@@ -19,7 +19,7 @@ function initMap() {
 
   var icons = {
     service: {
-      icon: '../img/transtech-map-icon-direct.png',
+      icon: '../img/transtech-map-icon-service.png',
     },
   };
 
@@ -142,6 +142,7 @@ function initMap() {
       'service',
     ],
     ['JR Technical Services, United Kindom', 54.393352, -2.06543, 'service'],
+    ['TransTech Systems, United States', 42.776429, -73.866104, 'service'],
     ['Solotest, Uruguay', -32.490907, -56.0182],
     ['BAV Corporation / Uneedus Group LLP, Uzbekistan', 42.016652, 63.457031],
     ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963],
@@ -1252,6 +1253,17 @@ function initMap() {
         '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
         '<p><a class="link" href="mailto:callum@jrts.co.uk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://www.jrts.co.uk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // United States
+    [
+      '<div class="map-text">' +
+        '<span>TransTech Systems</span><br>' +
+        '<hr>' +
+        '1-800-724-6306<br>' +
+        '<strong><i class="fas fa-tools"></i> Authorized Service Center</strong><br>' +
+        '<p><a class="link" href="mailto:calibration@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '</div>',
     ],
 
