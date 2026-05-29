@@ -68,7 +68,7 @@ function initMap() {
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     // ['PAIKY 2026 Winter Training, Louisville, KY', 38.203105, -84.631109],
     // ['National Pavement Expo, Tampa, FL', 27.940479, -82.455074],
-    ['TXAPA MAPS Conference, Dallas-Fort Worth, TX', 32.791572, -97.206667],
+    // ['TXAPA MAPS Conference, Dallas-Fort Worth, TX', 32.791572, -97.206667],
     // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
     // ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
@@ -566,16 +566,16 @@ function initMap() {
     // ],
 
     //TXAPA Maps - Dallas-Fort Worth
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
-        '<span>TXAPA Maps Conference</span><br>' +
-        '<hr>' +
-        'Dallas-Fort Worth, TX<br>' +
-        'May 27-28, 2026<br>' +
-        '<p><a class="link" href="https://texasasphalt.org/events/maps-dfw-hurst" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/txapa-maps-logo.png">' +
+    //     '<span>TXAPA Maps Conference</span><br>' +
+    //     '<hr>' +
+    //     'Dallas-Fort Worth, TX<br>' +
+    //     'May 27-28, 2026<br>' +
+    //     '<p><a class="link" href="https://texasasphalt.org/events/maps-dfw-hurst" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //TXAPA Maps - Plano
     // [
