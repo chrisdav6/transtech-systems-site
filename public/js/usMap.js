@@ -36,7 +36,7 @@ function initMap() {
     ['Atlantic Supply, Alabama', 32.314991, -86.901855],
     ['TransTech Systems, Alaska', 66.073198, -151.421268, 'transtech'],
     ['TransTech Systems, Arizona', 34.528727, -111.767859, 'direct'],
-    ['TransTech Systems, Arkansas', 34.841498, -92.285615, 'transtech'],
+    ['QC Lab Supply, Arkansas', 34.841498, -92.285615],
     ['TransTech Systems, California', 36.692245, -119.620438, 'direct'],
     ['TransTech Systems, Colorado', 39.158062, -105.509759, 'direct'],
     ['TransTech Systems, Connecticut', 41.654445, -73.083801, 'transtech'],
@@ -51,7 +51,7 @@ function initMap() {
     ['TransTech Systems, Illinois', 41.095912, -89.494629, 'direct'],
     ['TransTech Systems, Indiana', 39.707081, -86.001824, 'direct'],
     ['TransTech Systems, Iowa', 42.246724, -93.527497, 'direct'],
-    ['TransTech Systems, Kansas', 38.570758, -98.446819, 'transtech'],
+    ['QC Lab Supply, Kansas', 38.570758, -98.446819],
     ['TransTech Systems, Kentucky', 37.630124, -84.538175, 'direct'],
     ['Atlantic Supply, Louisiana', 30.489397, -91.903111],
     ['TransTech Systems, Maine', 45.413876, -69.466553, 'transtech'],
@@ -71,7 +71,7 @@ function initMap() {
     ['TransTech Systems, North Carolina', 35.568479, -78.85617],
     ['TransTech Systems, North Dakota', 47.571878, -100.338895, 'transtech'],
     ['TransTech Systems, Ohio', 39.954965, -82.932924, 'direct'],
-    ['TransTech Systems, Oklahoma', 35.737529, -97.519473, 'transtech'],
+    ['QC Lab Supply, Oklahoma', 35.737529, -97.519473],
     ['TransTech Systems, Oregon', 44.036589, -120.375932, 'transtech'],
     ['TransTech Systems, Pennsylvania', 41.302571, -77.211914, 'direct'],
     ['Atlantic Supply, Puerto Rico', 18.245026, -66.569655],
@@ -128,10 +128,12 @@ function initMap() {
     // Arkansas
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>QC Lab Supply</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '404-849-5438<br>' +
+        'Attn: Ronnie Spradley<br>' +
+        '<p><a class="link" href="mailto:ronnie@qclabsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://qclabsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -317,10 +319,12 @@ function initMap() {
     // Kansas
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>QC Lab Supply</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '404-849-5438<br>' +
+        'Attn: Ronnie Spradley<br>' +
+        '<p><a class="link" href="mailto:ronnie@qclabsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://qclabsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
@@ -566,10 +570,12 @@ function initMap() {
     // Oklahoma
     [
       '<div class="map-text">' +
-        '<span>TransTech Systems</span><br>' +
+        '<span>QC Lab Supply</span><br>' +
         '<hr>' +
-        '1-800-724-6306<br>' +
-        '<p><a class="link" href="mailto:sales@transtechsys.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '404-849-5438<br>' +
+        'Attn: Ronnie Spradley<br>' +
+        '<p><a class="link" href="mailto:ronnie@qclabsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://qclabsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
