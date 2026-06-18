@@ -128,7 +128,7 @@ app.get('/products/customerPortal', function (req, res) {
 
 //Redirect /payment to payment site
 app.get('/payment', function (req, res) {
-  res.redirect('https://api.ipospays.com/v1/sl/1mPt0_170925134140');
+  res.redirect('https://api.ipospays.com/v1/sl/rNRCu_180626120615');
 });
 
 //TTS - Ames Digital Landing Page - Asphalt Contractor

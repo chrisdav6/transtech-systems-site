@@ -130,13 +130,13 @@ $(function () {
         case 'PQI 380 Plus QuickStart Guide':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/PQI380PlusQuickstartGuide.pdf'
+            '/pdf/PQI380PlusQuickstartGuide.pdf',
           );
           break;
         case 'PQI 380 Plus Offset Cheat Sheet':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/PQI380PlusOffsetCheatSheet.pdf'
+            '/pdf/PQI380PlusOffsetCheatSheet.pdf',
           );
           break;
         case 'PQI 380 Manual':
@@ -145,13 +145,13 @@ $(function () {
         case 'PQI 380 QuickStart Guide':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/PQI380QuickstartGuide.pdf'
+            '/pdf/PQI380QuickstartGuide.pdf',
           );
           break;
         case 'PQI 380 Offset Cheat Sheet':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/PQI380OffsetCheatSheet.pdf'
+            '/pdf/PQI380OffsetCheatSheet.pdf',
           );
           break;
         case 'SDG 200 Manual':
@@ -160,13 +160,13 @@ $(function () {
         case 'SDG 200 QuickStart Guide':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/SDG200QuickstartGuide.pdf'
+            '/pdf/SDG200QuickstartGuide.pdf',
           );
           break;
         case 'SDG 200 StartUp Cheat Sheet':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/SDG200StartUpCheatSheet.pdf'
+            '/pdf/SDG200StartUpCheatSheet.pdf',
           );
           break;
         case 'NWJM Manual':
@@ -187,7 +187,7 @@ $(function () {
         case 'PQI 301 Offset Cheat Sheet':
           $('#manualDownloadLink').attr(
             'href',
-            '/pdf/PQI301OffsetCheatSheet.pdf'
+            '/pdf/PQI301OffsetCheatSheet.pdf',
           );
           break;
       }
