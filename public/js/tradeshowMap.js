@@ -52,6 +52,7 @@ function initMap() {
     ['Ohio Asphalt Expo, Columbus, OH', 40.172691, -82.995966],
     // ['Ohio Asphalt Paving Conference, Columbus, OH', 40.139683, -82.976837],
     ['TXAPA, San Antonio, TX', 29.462161, -98.223925],
+    ['SWACES, Albuquerque, NM', 35.115518, -106.593363],
     // ['Highways USA Conference, Dallas, TX', 32.798137, -96.806722],
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
@@ -418,6 +419,18 @@ function initMap() {
         'San Antonio, TX<br>' +
         'September 14-17, 2026<br>' +
         '<p><a class="link" href="https://texasasphalt.org/events/2026-txapa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    //New Mexico SWACES
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/NewMexicoAsphalt.png">' +
+        '<span>SWACES</span><br>' +
+        '<hr>' +
+        'Albuquerque, NM<br>' +
+        'October 28-29, 2026<br>' +
+        '<p><a class="link" href="https://apanm.org/swaces" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
