@@ -72,7 +72,7 @@ function initMap() {
     // ['TXAPA MAPS Conference, Dallas-Fort Worth, TX', 32.791572, -97.206667],
     // ['TXAPA MAPS Conference, Plano, TX', 33.052985, -96.761361],
     // ['TML Annual Conference, Fort Worth, TX', 32.736147, -97.327084],
-    // ['NEAUPG, Harrisburg, PA', 40.275412, -76.886086],
+    ['NEAUPG, Nashua, NH', 42.749936, -71.474044],
     ['WAPA, Wisconsin Dells, WI', 43.625082, -89.775456],
     ['Minnesota Asphalt Conference, Prior Lake, MN', 44.722574, -93.436505],
     // ['Missouri S&T Asphalt Conference, Rolla, MO', 37.947304, -91.768538],
@@ -615,16 +615,16 @@ function initMap() {
     // ],
 
     // NEAUPG
-    // [
-    //   '<div class="map-text">' +
-    //     '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
-    //     '<span>NEAUPG Fall Meeting</span><br>' +
-    //     '<hr>' +
-    //     'Harrisburg, PA<br>' +
-    //     'October 29-30, 2025<br>' +
-    //     '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-    //     '</div>',
-    // ],
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/neaupg-logo.png">' +
+        '<span>NEAUPG Fall Meeting</span><br>' +
+        '<hr>' +
+        'Nashua, NH<br>' +
+        'October 21-22, 2026<br>' +
+        '<p><a class="link" href="http://www.neaupg.uconn.edu/meetingsevents" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
 
     // WAPA
     [
