@@ -1,4 +1,20 @@
 $(function () {
+  //Hide and show payment button
+  //Hide reachInfoGroup textbox until radio button is checked
+  $('.paymentAccept').hide();
+
+  const paymentChecked = $('input[name="payment"]:checked');
+
+  $('input[name="payment"]').on('change', function () {
+    if ($(this).is(':checked')) {
+      $('.paymentAccept').slideDown();
+      console.log('Checked');
+    } else {
+      $('.paymentAccept').slideUp();
+      console.log('Not Checked');
+    }
+  });
+
   //Holiday Banner
   $('.holiday').delay(1000).fadeIn(400).delay(10000).fadeOut(400);
 
@@ -12,17 +28,17 @@ $(function () {
         setTimeout(() => {
           $('#heroHome').css(
             'background-image',
-            'url(../img/mikeHomepage2.jpg)'
+            'url(../img/mikeHomepage2.jpg)',
           );
           setTimeout(() => {
             $('#heroHome').css(
               'background-image',
-              'url(../img/mikeHomepage3.jpg)'
+              'url(../img/mikeHomepage3.jpg)',
             );
             setTimeout(() => {
               $('#heroHome').css(
                 'background-image',
-                'url(../img/mikeHomepage.jpg)'
+                'url(../img/mikeHomepage.jpg)',
               );
             }, 15000);
           }, 15000);
@@ -36,7 +52,7 @@ $(function () {
     {
       opacity: 1,
     },
-    500
+    500,
   );
 
   //Ames Fade In
@@ -44,7 +60,7 @@ $(function () {
     {
       opacity: 1,
     },
-    500
+    500,
   );
 
   //Connect Fade In
@@ -52,7 +68,7 @@ $(function () {
     {
       opacity: 1,
     },
-    500
+    500,
   );
 
   //Fade In Body on page Load
@@ -100,7 +116,7 @@ $(function () {
       {
         scrollTop: 0,
       },
-      500
+      500,
     );
   });
 
@@ -116,7 +132,7 @@ $(function () {
     // Set the BG image from the youtube ID
     $(this).css(
       'background-image',
-      'url(//i.ytimg.com/vi/' + this.id + '/hqdefault.jpg)'
+      'url(//i.ytimg.com/vi/' + this.id + '/hqdefault.jpg)',
     );
     // Click the video div
     $(document).delegate('#' + this.id, 'click', function () {
@@ -140,7 +156,7 @@ $(function () {
   $('#capitalBusiness').on('hidden.bs.modal', function (e) {
     $('#capitalBusiness iframe').attr(
       'src',
-      $('#capitalBusiness iframe').attr('src')
+      $('#capitalBusiness iframe').attr('src'),
     );
   });
 });

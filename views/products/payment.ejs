@@ -1,0 +1,39 @@
+<% include ./partials/header %>
+
+  <!-- Payment Section -->
+  <section id="payment" class="py-5 mt-3">
+    <div class="container text-center text-md-left">
+
+      <h2>Payment Terms & Conditions<br />
+        Understanding Your Payment Options
+      </h2>
+      <hr>
+
+      <p class="largerFont"><strong>If you are paying by credit card via this link,</strong> please note that a 3% credit card surcharge will be <u>automatically</u> applied to this transaction.
+        You will <u>enter the invoice total balance amount due</u> onto the payment page (do not calculate the new amount yourself).
+        The final 'PAY' value will automatically calculate as the invoice amount x 1.03; this is the new total amount that will be charged to your card.
+      </p>
+
+      <p class="mt-5 mb-1 largerFont">By checking the box below, you agree to:</p>
+
+      <div class="paymentCheck largerFont">
+        <input type="checkbox" name="payment" id="'checkbox" />
+        <div>
+          <p class="agree">I agree to the terms outlined and confirm that I am authorized to accept them on behalf of my company.</p>
+        </div>
+      </div>
+
+      <div class="paymentAccept largerFont">
+        <p class="mt-5 font-weight-bold">As a recap, you are agreeing to:</p>
+        <p class="mb-0">• A 3% surcharge, above the invoice total balance due on the invoice, will be processed on the entered card.</p>
+        <p>• Accepting these terms on behalf of the company represent, and that I am authorized to accept those terms on behalf of my company.</p>
+
+        <a href="https://api.ipospays.com/v1/sl/rNRCu_180626120615" class="btn paymentLinkBtn mb-2 mt-4" role="button" aria-disabled="true" target="_blank">Continue to Payment Site</a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- /Payment Section -->
+
+  <% include ./partials/footer %>

@@ -1,0 +1,71 @@
+#payment {
+  min-height: 800px;
+
+  p {
+    font-weight: 400;
+  }
+
+  .largerFont {
+    font-size: 1.1em;
+  }
+
+  .paymentCheck {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include mq1024 {
+      flex-direction: column;
+    }
+
+    input[type='checkbox'] {
+      transform: scale(2); /* Makes it 1.5 times larger */
+      margin: 15px; /* Adds spacing around the scaled box */
+    }
+
+    .agree {
+      margin-bottom: 0;
+    }
+  }
+
+  .paymentLinkBtn {
+    border: 1px solid $logo-yellow;
+    padding: 10px 16px;
+    color: black;
+    background: $logo-yellow;
+    font-weight: bold;
+
+    @include mq {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .paymentLinkBtn:hover {
+    background: #ffbf00;
+    color: $extreme-dark-gray;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
+
+  ul {
+    display: table;
+  }
+
+  li {
+    font-size: 1.25rem;
+    list-style-position: inside;
+    padding-left: 1em;
+    text-indent: -0.75em;
+  }
+
+  li:before {
+    content: '- ';
+  }
+}
