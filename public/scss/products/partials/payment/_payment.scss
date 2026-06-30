@@ -28,6 +28,10 @@
     }
   }
 
+  .paymentAccept {
+    display: none;
+  }
+
   .paymentLinkBtn {
     border: 1px solid $logo-yellow;
     padding: 10px 16px;
