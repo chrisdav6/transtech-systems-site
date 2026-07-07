@@ -215,8 +215,8 @@ function initMap() {
         '<span>Atlantic Supply</span><br>' +
         '<hr>' +
         '800-752-9416<br>' +
-        'Attn: Stephanie Miller<br>' +
-        '<p><a class="link" href="mailto:stephanie@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Robyn Cox<br>' +
+        '<p><a class="link" href="mailto:rcox@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '<p class="mt-0"><a class="link" href="http://seaupg.org" target="_blank"><i class="fa-solid fa-award fa-lg"></i> Visit SEAUPG</a></p>' +
         '</div>',
@@ -241,8 +241,8 @@ function initMap() {
         '<span>Atlantic Supply</span><br>' +
         '<hr>' +
         '800-535-7384<br>' +
-        'Attn: Ray Collette<br>' +
-        '<p><a class="link" href="mailto:seflorida@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        'Attn: Kenny Anderson<br>' +
+        '<p><a class="link" href="mailto:kanderson@atlanticsupply.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="https://www.atlanticsupply.com" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '<p class="mt-0"><a class="link" href="http://seaupg.org" target="_blank"><i class="fa-solid fa-award fa-lg"></i> Visit SEAUPG</a></p>' +
         '</div>',
