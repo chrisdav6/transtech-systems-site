@@ -127,9 +127,13 @@ app.get('/products/customerPortal', function (req, res) {
 // });
 
 //Redirect /payment to payment site
-// app.get('/payment', function (req, res) {
-//   res.redirect('https://api.ipospays.com/v1/sl/rNRCu_180626120615');
-// });
+app.get('/payment', function (req, res) {
+  res.render('products/payment', {
+    title: 'TransTech Systems Payment Page',
+    metaTitle:
+      'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+  });
+});
 
 app.get('/products/payment', function (req, res) {
   res.render('products/payment', {
