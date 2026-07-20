@@ -57,7 +57,7 @@ function initMap() {
     // ['RMAUPG 30th Annual Conference, Reno, NV', 39.545669, -119.806902],
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
-    ['NAPA Midyear Meeting, Columbus, OH', 39.791769, -82.97262],
+    ['NAPA Midyear Meeting, Santa Ana, NM', 35.352682, -107.292403],
     ['AASHTO - Materials and Pavement, Richmond, VA', 37.535572, -77.446479],
     // [
     //   'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
@@ -488,9 +488,9 @@ function initMap() {
         '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
         '<span>NAPA Midyear Meeting</span><br>' +
         '<hr>' +
-        'Columbus, OH<br>' +
-        'July 14-17, 2026<br>' +
-        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/meetings-calendar" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        'Santa Ana, NM<br>' +
+        'July 18-21, 2027<br>' +
+        '<p><a class="link" href="https://www.asphaltpavement.org/events/midyear" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
