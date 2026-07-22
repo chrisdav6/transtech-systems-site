@@ -59,6 +59,7 @@ function initMap() {
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Santa Ana, NM', 35.352682, -107.292403],
     ['AASHTO - Materials and Pavement, Richmond, VA', 37.535572, -77.446479],
+    ['ISIC North American Conference, Louisville, KY', 38.205992, -85.634459],
     // [
     //   'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
     //   13.588022,
@@ -503,6 +504,18 @@ function initMap() {
         'Richmond, VA<br>' +
         'August 2-8, 2026<br>' +
         '<p><a class="link" href="https://transportation.org/meetings/events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '</div>',
+    ],
+
+    // ISIC
+    [
+      '<div class="map-text">' +
+        '<img class="d-block mb-3" width="100" src="../img/ISIC.png">' +
+        '<span>2026 ISIC North American Conference</span><br>' +
+        '<hr>' +
+        'Louisville, KY<br>' +
+        'August 24-26, 2026<br>' +
+        '<p><a class="link" href="https://is-ic.org/conferences/isic-local-chapter-meetings/2026-isic-northamerican-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
