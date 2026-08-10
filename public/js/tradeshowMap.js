@@ -58,7 +58,7 @@ function initMap() {
     // ['TXAPA Quarterly Membership Meeting, Buda, TX', 30.068213, -97.830459],
     // ['APAI Golf Outing, Angola, IN', 41.630486, -85.01596],
     ['NAPA Midyear Meeting, Santa Ana, NM', 35.352682, -107.292403],
-    ['AASHTO - Materials and Pavement, Richmond, VA', 37.535572, -77.446479],
+    // ['AASHTO - Materials and Pavement, Richmond, VA', 37.535572, -77.446479],
     ['ISIC North American Conference, Louisville, KY', 38.205992, -85.634459],
     // [
     //   'International Symposium Towards Holistic Roads and Beyond, Bangkok, Thailand',
@@ -496,16 +496,16 @@ function initMap() {
     ],
 
     // AASHTO Materials and Pavement
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
-        '<span>AASHTO - Materials and Pavement</span><br>' +
-        '<hr>' +
-        'Richmond, VA<br>' +
-        'August 2-8, 2026<br>' +
-        '<p><a class="link" href="https://transportation.org/meetings/events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/aashtoLogo.png">' +
+    //     '<span>AASHTO - Materials and Pavement</span><br>' +
+    //     '<hr>' +
+    //     'Richmond, VA<br>' +
+    //     'August 2-8, 2026<br>' +
+    //     '<p><a class="link" href="https://transportation.org/meetings/events" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     // ISIC
     [
