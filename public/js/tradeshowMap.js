@@ -427,7 +427,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/NewMexicoAsphalt.png">' +
-        '<span>SWACES</span><br>' +
+        '<span>SWACES - Booth #D19</span><br>' +
         '<hr>' +
         'Albuquerque, NM<br>' +
         'October 28-29, 2026<br>' +
@@ -547,7 +547,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/pavex.png">' +
-        '<span>Pave/X 2027</span><br>' +
+        '<span>Pave/X 2027 - Booth #1519</span><br>' +
         '<hr>' +
         'Savannah, GA<br>' +
         'January 25-27, 2027<br>' +
