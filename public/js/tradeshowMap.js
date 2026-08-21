@@ -415,7 +415,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/txapa-logo.png">' +
-        '<span>TXAPAs 51st Annual Meeting</span><br>' +
+        '<span>TXAPAs 51st Annual Meeting - Booth #30</span><br>' +
         '<hr>' +
         'San Antonio, TX<br>' +
         'September 14-17, 2026<br>' +
