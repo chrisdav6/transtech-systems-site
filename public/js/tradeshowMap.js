@@ -367,7 +367,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/woa-logo-2027.png">' +
-        '<span>World of Asphalt 2027</span><br>' +
+        '<span>World of Asphalt 2027 - Booth #1055</span><br>' +
         '<hr>' +
         'New Orleans, LA<br>' +
         'March 15-17, 2027<br>' +
@@ -379,7 +379,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/ncat-conference.png">' +
-        '<span>NCAT Test Track Conference</span><br>' +
+        '<span>NCAT Test Track Conference - Booth #19</span><br>' +
         '<hr>' +
         'Auburn, AL<br>' +
         'May 11-13, 2027<br>' +
