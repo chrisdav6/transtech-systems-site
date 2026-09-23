@@ -237,6 +237,14 @@ app.get('/products/pqi380Plus', function (req, res) {
   });
 });
 
+app.get('/products/pqi380go', function (req, res) {
+  res.render('products/pqi380go', {
+    title: 'PQI 380go Non-Nuclear Asphalt Density Gauge',
+    metaTitle:
+      'TransTech Systems next generation low-cost, efficient Non-Nuclear asphalt density gauge, the PQI 380go.',
+  });
+});
+
 app.get('/products/pqi380', function (req, res) {
   res.render('products/pqi380', {
     title: 'PQI 380 Non-Nuclear Asphalt Density Gauge',
