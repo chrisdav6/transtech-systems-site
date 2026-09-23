@@ -427,7 +427,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/NewMexicoAsphalt.png">' +
-        '<span>SWACES - Booth #D19</span><br>' +
+        '<span>SWACES - Booth #D16</span><br>' +
         '<hr>' +
         'Albuquerque, NM<br>' +
         'October 28-29, 2026<br>' +
