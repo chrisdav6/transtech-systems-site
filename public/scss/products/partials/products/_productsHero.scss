@@ -68,6 +68,26 @@
   transform: scale(1.2);
 }
 
+.product-feature-go {
+  margin-top: -60px;
+  margin-left: 60px;
+  max-height: 450px;
+  transform: rotate(2deg);
+  transition: 1s;
+
+  @include mq600 {
+    margin-left: 0;
+  }
+
+  @include mq1024 {
+    margin-left: 10px;
+  }
+}
+
+.product-feature-go:hover {
+  transform: scale(1.2);
+}
+
 .pqi301-feature {
   margin-top: -40px;
   transition: 1s;

@@ -124,6 +124,21 @@ $(function () {
 
       //Update Link href
       switch (dataId) {
+        case 'PQI 380go Manual':
+          $('#manualDownloadLink').attr('href', '/pdf/PQI380goManual.pdf');
+          break;
+        case 'PQI 380go QuickStart Guide':
+          $('#manualDownloadLink').attr(
+            'href',
+            '/pdf/PQI380goQuickstartGuide.pdf',
+          );
+          break;
+        case 'PQI 380go Offset Cheat Sheet':
+          $('#manualDownloadLink').attr(
+            'href',
+            '/pdf/PQI380goOffsetCheatSheet.pdf',
+          );
+          break;
         case 'PQI 380 Plus Manual':
           $('#manualDownloadLink').attr('href', '/pdf/PQI380PlusManual.pdf');
           break;
