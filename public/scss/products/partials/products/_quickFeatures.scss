@@ -1,0 +1,17 @@
+#quickFeatures {
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
+
+  .card {
+    h3 {
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+}
