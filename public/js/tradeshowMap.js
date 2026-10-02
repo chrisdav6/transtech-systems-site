@@ -65,7 +65,7 @@ function initMap() {
     //   13.588022,
     //   100.5808,
     // ],
-    ['NAPA Annual Meeting, Miami, FL', 25.768192, -80.195353],
+    // ['NAPA Annual Meeting, Miami, FL', 25.768192, -80.195353],
     ['Pave/X 2027, Savannah, GA', 32.069601, -81.09446],
     // ['Greater Iowa Asphalt Conference, Des Moines, IA', 41.590298, -93.625914],
     // ['PAIKY 2026 Winter Training, Louisville, KY', 38.203105, -84.631109],
@@ -532,16 +532,16 @@ function initMap() {
     // ],
 
     //NAPA Annual Meeting
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
-        '<span>NAPA 2027 Annual Meeting</span><br>' +
-        '<hr>' +
-        'Miami, FL<br>' +
-        'February 8-11, 2027<br>' +
-        '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/napa-logo.png">' +
+    //     '<span>NAPA 2027 Annual Meeting</span><br>' +
+    //     '<hr>' +
+    //     'Miami, FL<br>' +
+    //     'February 8-11, 2027<br>' +
+    //     '<p><a class="link" href="https://www.asphaltpavement.org/programs/napa-events/napa-annual-meeting" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Pave/X
     [
