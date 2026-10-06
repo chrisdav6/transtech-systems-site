@@ -15,6 +15,19 @@ $(function () {
     }
   });
 
+  //Open lightbox when hero-featured image is clicked
+  document
+    .getElementById('pqi380PlusHero')
+    .addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document
+        .querySelector(
+          'a[data-lightbox="pqi380Plus"][href="../img/pqi380Plus-7.jpg"]',
+        )
+        .click();
+    });
+
   //Holiday Banner
   $('.holiday').delay(1000).fadeIn(400).delay(10000).fadeOut(400);
 
