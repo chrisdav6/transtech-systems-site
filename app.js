@@ -403,16 +403,15 @@ app.get('/products/requestIntegration', function (req, res) {
   });
 });
 
-//PQI 300/301 Trade Up - Not used as of March 2025
-/*app.get('/products/tradeUp', function (req, res) {
+//PQI 380 Trade Up
+app.get('/products/tradeUp', function (req, res) {
   res.render('products/tradeUp', {
     flash: { success: req.flash('success') },
-    title: 'TransTech Systems PQI 300/301 Trade-Up Program',
+    title: 'TransTech Systems PQI 380 Trade-Up Program',
     metaTitle:
-      'Your legacy PQI 300/301 could earn you dollars towards a new PQI 380 Non-Nuclear Asphalt Density Gauge',
+      'Your legacy PQI 380 could earn you dollars towards a new PQI 380+ Non-Nuclear Asphalt Density Gauge',
   });
 });
-*/
 
 //Corporate News
 app.get('/products/corporateNews', function (req, res) {
@@ -1076,8 +1075,8 @@ app.post('/products/requestIntegration', function (req, res) {
   }
 });
 
-//Trade Up Form - Not used as of March 2025
-/*app.post('/products/tradeUp', function (req, res) {
+//Trade Up Form
+app.post('/products/tradeUp', function (req, res) {
   let {
     name,
     company,
@@ -1110,7 +1109,7 @@ app.post('/products/requestIntegration', function (req, res) {
         },
       });
 
-      let body = `<h2><u>PQI 300/301 Trade Up Request</u></h2>`;
+      let body = `<h2><u>PQI 301/380 Trade Up Request</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
       body += `<strong>Company:</strong> ${company}<br>`;
       body += `<strong>State:</strong> ${state}<br>`;
@@ -1124,7 +1123,7 @@ app.post('/products/requestIntegration', function (req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: 'webforms@transtechsys.com', // sender address
-        to: 'tapkarian@transtechsys.com', // list of receivers
+        to: 'tapkarian@transtechsys.com, cdavis@transtechsys.com', // list of receivers
         replyTo: email,
         subject: 'TransTech Systems Trade Up Request Form', // Subject line
         text: body, // plain text body
@@ -1148,7 +1147,6 @@ app.post('/products/requestIntegration', function (req, res) {
     res.redirect('/products/tradeUp');
   }
 });
-*/
 
 //PQI 380 Product Page Manuals Download Form
 app.post('/products/pqi380', function (req, res) {
