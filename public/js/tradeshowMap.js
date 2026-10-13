@@ -179,7 +179,7 @@ function initMap() {
         '<hr>' +
         'Monterey, CA<br>' +
         'November 3-6, 2026<br>' +
-        '<p><a class="link" href="https://calcima.org/events/EventDetails.aspx?id=1984377&group=" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://calcima.org/page/educationconference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
