@@ -283,7 +283,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/trb-logo.png">' +
-        '<span>TRB 106th Annual Meeting - Booth #724</span><br>' +
+        '<span>TRB 106th Annual Meeting - <a class="link" href="https://events.jspargo.com/TRB27/Public/Eventmap.aspx?EventId=897&MapID=1192&MapItBooth=724&shExhList=1&shMode=E" target="_blank">Booth #724</a></span><br>' +
         '<hr>' +
         'Washington D.C.<br>' +
         'January 10-14, 2027<br>' +
