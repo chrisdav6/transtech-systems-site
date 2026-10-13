@@ -367,7 +367,7 @@ function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/woa-logo-2027.png">' +
-        '<span>World of Asphalt 2027 - Booth #1055</span><br>' +
+        '<span>World of Asphalt 2027 - <a class="link" href="https://woaagg127.mapyourshow.com/8_0/floorplan/?hallID=A&selectedBooth=booth%7E1055&level=1" target="_blank">Booth #1055</a></span><br>' +
         '<hr>' +
         'New Orleans, LA<br>' +
         'March 15-17, 2027<br>' +
