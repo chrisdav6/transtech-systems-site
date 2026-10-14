@@ -1109,7 +1109,7 @@ app.post('/products/tradeUp', function (req, res) {
         },
       });
 
-      let body = `<h2><u>PQI 301/380 Trade Up Request</u></h2>`;
+      let body = `<h2><u>PQI 380 Trade Up Request</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
       body += `<strong>Company:</strong> ${company}<br>`;
       body += `<strong>State:</strong> ${state}<br>`;
