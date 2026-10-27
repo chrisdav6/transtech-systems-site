@@ -41,6 +41,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(expressSanitizer());
 
+//Case Study Data
+const caseStudies = require('./data/case-studies');
+
 //------301 Redirects--------//
 
 const redirects = [
@@ -140,6 +143,33 @@ app.get('/products/payment', function (req, res) {
     title: 'TransTech Systems Payment Page',
     metaTitle:
       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
+  });
+});
+
+// Case studies listing page
+app.get('/products/case-studies', (req, res) => {
+  res.render('products/case-studies/index', {
+    title: 'Case Studies | TransTech Systems',
+    metaTitle:
+      'Discover how TransTech Systems technology helps paving teams improve asphalt density testing, quality control, and efficiency.',
+    caseStudies: caseStudies,
+  });
+});
+
+// Individual Case Study pages
+app.get('/products/case-studies/:slug', function (req, res) {
+  const caseStudy = caseStudies.find(function (study) {
+    return study.slug === req.params.slug;
+  });
+
+  if (!caseStudy) {
+    return res.status(404).send('Case study not found');
+  }
+
+  res.render('products/case-studies/detail', {
+    title: caseStudy.title + ' | TransTech Systems',
+    metaTitle: caseStudy.summary,
+    caseStudy: caseStudy,
   });
 });
 

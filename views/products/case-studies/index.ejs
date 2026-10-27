@@ -1,0 +1,62 @@
+<% include ../partials/header %>
+
+  <% const pageTitle='Case Studies' ; %>
+
+    <div class="tts-cs tts-cs--listing">
+
+      <section class="tts-cs__listing-hero">
+        <div class="container">
+          <p class="tts-cs__eyebrow">REAL PROJECTS. REAL RESULTS.</p>
+          <h1 class="tts-cs__listing-title">Case Studies</h1>
+          <p class="tts-cs__listing-intro">
+            See how paving teams use TransTech Systems technology
+            to improve asphalt quality control, efficiency, and confidence
+            in the field.
+          </p>
+        </div>
+      </section>
+
+      <section class="tts-cs__listing-content">
+        <div class="container">
+          <div class="row">
+
+            <% caseStudies.forEach(function(study) { %>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <article class="tts-cs__card">
+
+                  <a class="tts-cs__card-image-link" href="/products/case-studies/<%= study.slug %>" aria-label="Read <%= study.title %>">
+                    <img class="tts-cs__card-image" src="<%= study.cardImage %>" alt="<%= study.title %>" loading="lazy">
+                  </a>
+
+                  <div class="tts-cs__card-body">
+                    <p class="tts-cs__card-customer">
+                      <%= study.customer %>
+                    </p>
+
+                    <h2 class="tts-cs__card-title">
+                      <a href="/products/case-studies/<%= study.slug %>">
+                        <%= study.title %>
+                      </a>
+                    </h2>
+
+                    <p class="tts-cs__card-summary">
+                      <%= study.summary %>
+                    </p>
+
+                    <a class="tts-cs__text-link" href="/products/case-studies/<%= study.slug %>">
+                      Read Case Study
+                      <span aria-hidden="true">&rarr;</span>
+                    </a>
+                  </div>
+
+                </article>
+              </div>
+              <% }); %>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <% include ../partials/footer %>
