@@ -368,6 +368,9 @@
   letter-spacing: 0.025em;
   line-height: 1.25;
   overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .tts-cs__result-label {
