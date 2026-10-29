@@ -59,6 +59,12 @@
 
     .company-container {
       margin-bottom: 1.75em;
+
+      small {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
     }
 
     span {
