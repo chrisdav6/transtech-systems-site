@@ -53,7 +53,7 @@ function initMap() {
     // ['Hoskin Scientific, Ontario', 43.239599, -79.796287],
     // ['Hoskin Scientific, Alberta', 51.380788, -114.974718],
     ['Equipos de Auscultacion, Chile', -26.824071, -70.224609, 'service'],
-    ['Earth Products China Limited, China', 34.597042, 103.974609],
+    ['Shanghai Lrel Instrument Co., Ltd., China', 34.597042, 103.974609],
     ['Atlantic Supply, Colombia', 4.315974, -73.072573],
     ['Beratest AG, Congo', -0.329588, 15.864258],
     ['Atlantic Supply, Costa Rica', 9.90391, -83.841379],
@@ -432,12 +432,12 @@ function initMap() {
     // China
     [
       '<div class="map-text">' +
-        '<span>Earth Products China Limited</span><br>' +
+        '<span>Shanghai Lrel Instrument Co., Ltd.</span><br>' +
         '<hr>' +
-        '+852-2392-8698<br>' +
-        'Attn: Janet Lo<br>' +
-        '<p><a class="link" href="mailto:janet@epc.com.hk?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
-        '<p class="mt-0"><a class="link" href="http://webstore.epc.com.hk" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '+86-21-6354-8408<br>' +
+        'Attn: David Zhao<br>' +
+        '<p><a class="link" href="mailto:david@lrel-instrument.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '<p class="mt-0"><a class="link" href="https://www.lrel.cn" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
