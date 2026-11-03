@@ -1,4 +1,6 @@
 const path = require('path');
+const fs = require('fs');
+const crypto = require('crypto');
 const express = require('express');
 const helmet = require('helmet');
 const badbots = require('express-badbots');
@@ -12,6 +14,48 @@ const flash = require('connect-flash');
 const request = require('request');
 const port = process.env.PORT || 3000;
 const app = express();
+
+// ==========================================
+// STATIC ASSET VERSIONING
+// ==========================================
+
+// Generate stable versions based on file contents.
+// Versions only change when the corresponding file changes.
+const assetVersions = new Map();
+
+app.locals.assetUrl = function (assetPath) {
+  // Only process local CSS and JavaScript assets.
+  if (
+    typeof assetPath !== 'string' ||
+    !/^\/(css|js)\/[\w./-]+\.(css|js)$/.test(assetPath)
+  ) {
+    return assetPath;
+  }
+
+  if (!assetVersions.has(assetPath)) {
+    const filePath = path.join(
+      __dirname,
+      'public',
+      assetPath.replace(/^\/+/, ''),
+    );
+
+    try {
+      const contents = fs.readFileSync(filePath);
+      const version = crypto
+        .createHash('sha256')
+        .update(contents)
+        .digest('hex')
+        .slice(0, 8);
+
+      assetVersions.set(assetPath, version);
+    } catch (error) {
+      console.error('Unable to version asset:', assetPath, error.message);
+      return assetPath;
+    }
+  }
+
+  return `${assetPath}?v=${assetVersions.get(assetPath)}`;
+};
 
 // ==========================================
 // SEO: CANONICAL DOMAIN REDIRECT
