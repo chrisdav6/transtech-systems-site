@@ -8,12 +8,16 @@
   <meta name="description" content="TransTech Systems Europe SDG 200 Page">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="<%= assetUrl('/css/all.min.css') %>" type="text/css">
+
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="<%= assetUrl('/css/bootstrap.css') %>" type="text/css">
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/europeStyle.css">
+  <link rel="stylesheet" href="<%= assetUrl('/css/europeStyle.css') %>">
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <title>TransTech Systems Europe - SDG 200</title>
@@ -23,83 +27,81 @@
 
   <% include ./partials/header %>
 
-  <section id="productTitle">
-    <div class="container text-center text-lg-left">
-      <h1>SDG 200 nicht nukleares Erdbaudichte-Messgerät</h1>
+    <section id="productTitle">
+      <div class="container text-center text-lg-left">
+        <h1>SDG 200 nicht nukleares Erdbaudichte-Messgerät</h1>
 
-      <nav class="productNav mt-3 d-flex flex-column flex-md-row">
-        <a href="/pdf/sdg200brochureGerman.pdf" class="btn btn-outline-dark productBtn m-1" target="_blank">Prospekt</a>
-        <a href="/pdf/mtlGeneratorVer949.xls" class="btn btn-outline-dark productBtn m-1" target="_blank">MTL
-          Anwendung</a>
-        <a href="/pdf/SDGmtlFileTool.xls" class="btn btn-outline-dark productBtn m-1" target="_blank">MTL Datei Tool</a>
-        <a href="/pdf/SDG200Manual.pdf" class="btn btn-outline-dark productBtn m-1" target="_blank">Anleitung</a>
-        <a href="/pdf/SDG200QuickstartGuide.pdf" class="btn btn-outline-dark productBtn m-1"
-          target="_blank">Kurzanleitung</a>
-        <a href="/pdf/SDG%20Report.xlsm" class="btn btn-outline-dark productBtn m-1" target="_blank">SDG Report</a>
-      </nav>
-    </div>
-  </section>
+        <nav class="productNav mt-3 d-flex flex-column flex-md-row">
+          <a href="/pdf/sdg200brochureGerman.pdf" class="btn btn-outline-dark productBtn m-1" target="_blank">Prospekt</a>
+          <a href="/pdf/mtlGeneratorVer949.xls" class="btn btn-outline-dark productBtn m-1" target="_blank">MTL
+            Anwendung</a>
+          <a href="/pdf/SDGmtlFileTool.xls" class="btn btn-outline-dark productBtn m-1" target="_blank">MTL Datei Tool</a>
+          <a href="/pdf/SDG200Manual.pdf" class="btn btn-outline-dark productBtn m-1" target="_blank">Anleitung</a>
+          <a href="/pdf/SDG200QuickstartGuide.pdf" class="btn btn-outline-dark productBtn m-1" target="_blank">Kurzanleitung</a>
+          <a href="/pdf/SDG%20Report.xlsm" class="btn btn-outline-dark productBtn m-1" target="_blank">SDG Report</a>
+        </nav>
+      </div>
+    </section>
 
-  <section id="productMain">
-    <div class="container text-center text-lg-left">
+    <section id="productMain">
+      <div class="container text-center text-lg-left">
 
-      <div class="productImages my-5">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
-            <img class="img-fluid" src="/img/sdg200-1.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Side View">
-          </div>
-          <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
-            <img class="img-fluid" src="/img/sdg200-2.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Front View">
-          </div>
-          <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
-            <img class="img-fluid" src="/img/sdg200-6.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Side View">
-          </div>
-          <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
-            <img class="img-fluid" src="/img/sdg200-8.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Side View">
+        <div class="productImages my-5">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
+              <img class="img-fluid" src="/img/sdg200-1.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Side View">
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
+              <img class="img-fluid" src="/img/sdg200-2.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Front View">
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
+              <img class="img-fluid" src="/img/sdg200-6.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Side View">
+            </div>
+            <div class="col-lg-3 col-sm-6 py-2 py-lg-0">
+              <img class="img-fluid" src="/img/sdg200-8.jpg" alt="SDG 200 Non-Nuclear Soil Density Gauge Side View">
+            </div>
           </div>
         </div>
+
+        <div class="productDescription">
+          <h2>Technische Daten</h2>
+          <p>Vorstellung des nicht nuklearen Transtech Erdbaudichte-Messgeräts der nächsten Generation, das SDG 200. Diese
+            Version des SDG ist ausgestattet mit einem Touch Screen Display und einer anwenderfreundlichen grafischen
+            Benutzeroberfläche. Das SDG arbeitet mit Microsoft Windows CE für einen reibungslosen Betrieb, einfache
+            Software Upgrades und verbesserte Anwenderunterstützung.</p>
+
+          <h4 class="mt-4">Einige Highlights des SDG 200…</h4>
+
+          <ul class="list-unstyled mt-3 ml-0 ml-lg-2">
+            <li>- Farbliches VGA Display</li>
+            <li>- LED Hintergrundbeleuchtung für gute Ablesbarkeit bei Tag und Nacht</li>
+            <li>- Individuelle Eingabe von Projektdaten</li>
+            <li>- Individuelle Eingabe von Materialdaten</li>
+            <li>- Diagnose Messmodus</li>
+            <li>- Datenverwaltung und die Möglichkeit den Datenspeicher auszuschalten</li>
+            <li>- Robustes, leichtes Aluminiumgehäuse (reflektierende Vinyl Grafiken für mehr Sicherheit)</li>
+          </ul>
+
+          <p class="mt-4">Das SDG 200 benutzt auch ein fortschrittliches GPS System für Positions- und
+            Zeitdatenspeicherung. Eine USB Schnittstelle ermöglicht dem Anwender eine einfache Datenübertragung und das
+            Ausdrucken von Messdaten. Der aufladbare leistungsfähige Nickel-Metallhydrid-Akku ist einfach auszuwechseln.
+            Die einfach zu bedienende Benutzeroberfläche ermöglicht eine schnelle Vorbereitung der Messungen. <strong>Das
+              SDG 200 entspricht ASTM Standard D7830</strong></p>
+
+          <a class="youtubeLink d-inline-flex align-items-center align-self-start" href="https://www.youtube.com/user/TransTechSystems" target="_blank">
+            <i class="fab fa-youtube fa-2x mr-2"></i> Besuchen Sie uns auch auf Youtube um weitere Informationen und
+            Anleitungen zu erhalten
+          </a>
+        </div>
+
       </div>
+    </section>
 
-      <div class="productDescription">
-        <h2>Technische Daten</h2>
-        <p>Vorstellung des nicht nuklearen Transtech Erdbaudichte-Messgeräts der nächsten Generation, das SDG 200. Diese
-          Version des SDG ist ausgestattet mit einem Touch Screen Display und einer anwenderfreundlichen grafischen
-          Benutzeroberfläche. Das SDG arbeitet mit Microsoft Windows CE für einen reibungslosen Betrieb, einfache
-          Software Upgrades und verbesserte Anwenderunterstützung.</p>
+    <% include ./partials/footer %>
 
-        <h4 class="mt-4">Einige Highlights des SDG 200…</h4>
-
-        <ul class="list-unstyled mt-3 ml-0 ml-lg-2">
-          <li>- Farbliches VGA Display</li>
-          <li>- LED Hintergrundbeleuchtung für gute Ablesbarkeit bei Tag und Nacht</li>
-          <li>- Individuelle Eingabe von Projektdaten</li>
-          <li>- Individuelle Eingabe von Materialdaten</li>
-          <li>- Diagnose Messmodus</li>
-          <li>- Datenverwaltung und die Möglichkeit den Datenspeicher auszuschalten</li>
-          <li>- Robustes, leichtes Aluminiumgehäuse (reflektierende Vinyl Grafiken für mehr Sicherheit)</li>
-        </ul>
-
-        <p class="mt-4">Das SDG 200 benutzt auch ein fortschrittliches GPS System für Positions- und
-          Zeitdatenspeicherung. Eine USB Schnittstelle ermöglicht dem Anwender eine einfache Datenübertragung und das
-          Ausdrucken von Messdaten. Der aufladbare leistungsfähige Nickel-Metallhydrid-Akku ist einfach auszuwechseln.
-          Die einfach zu bedienende Benutzeroberfläche ermöglicht eine schnelle Vorbereitung der Messungen. <strong>Das
-            SDG 200 entspricht ASTM Standard D7830</strong></p>
-
-        <a class="youtubeLink d-inline-flex align-items-center align-self-start"
-          href="https://www.youtube.com/user/TransTechSystems" target="_blank">
-          <i class="fab fa-youtube fa-2x mr-2"></i> Besuchen Sie uns auch auf Youtube um weitere Informationen und
-          Anleitungen zu erhalten
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <% include ./partials/footer %>
-
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/popper.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+      <script src="<%= assetUrl('/js/jquery.min.js') %>"></script>
+      <script src="<%= assetUrl('/js/popper.min.js') %>"></script>
+      <script src="<%= assetUrl('/js/bootstrap.min.js') %>"></script>
 </body>
 
 </html>

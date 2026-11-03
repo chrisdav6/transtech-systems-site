@@ -8,12 +8,16 @@
   <meta name="description" content="TransTech Systems Europe Homepage">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="<%= assetUrl('/css/all.min.css') %>" type="text/css">
+
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="<%= assetUrl('/css/bootstrap.css') %>" type="text/css">
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/europeStyle.css">
+  <link rel="stylesheet" href="<%= assetUrl('/css/europeStyle.css') %>">
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <title>TransTech Systems Europe</title>
@@ -77,9 +81,9 @@
 
     <% include ./partials/footer %>
 
-      <script src="/js/jquery.min.js"></script>
-      <script src="/js/popper.min.js"></script>
-      <script src="/js/bootstrap.min.js"></script>
+      <script src="<%= assetUrl('/js/jquery.min.js') %>"></script>
+      <script src="<%= assetUrl('/js/popper.min.js') %>"></script>
+      <script src="<%= assetUrl('/js/bootstrap.min.js') %>"></script>
 </body>
 
 </html>
