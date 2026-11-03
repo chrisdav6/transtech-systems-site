@@ -118,8 +118,17 @@ app.get('/sitemap.xml', (req, res) => {
     );
 });
 
-//Set Static Folders
-app.use(express.static(path.join(__dirname, '/public')));
+// Static Files - Browser Caching
+app.use(
+  express.static(path.join(__dirname, 'public'), {
+    setHeaders: (res, filePath) => {
+      // Cache image files for 7 days
+      if (/\.(jpg|jpeg|png|gif|webp|svg|ico|avif)$/i.test(filePath)) {
+        res.setHeader('Cache-Control', 'public, max-age=604800');
+      }
+    },
+  }),
+);
 
 //Use BodyParser
 app.use(express.urlencoded({ extended: true }));
