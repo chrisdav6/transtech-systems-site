@@ -13,6 +13,20 @@ const request = require('request');
 const port = process.env.PORT || 3000;
 const app = express();
 
+// ==========================================
+// SEO: CANONICAL DOMAIN REDIRECT
+// ==========================================
+
+app.use((req, res, next) => {
+  const hostname = req.hostname.toLowerCase();
+
+  if (hostname === 'www.transtechsys.com') {
+    return res.redirect(301, 'https://transtechsys.com' + req.originalUrl);
+  }
+
+  next();
+});
+
 //Use Helmet
 app.use(helmet());
 
@@ -24,14 +38,85 @@ app.set('view engine', 'ejs');
 
 //Use connect-flash
 app.use(cookieParser());
+
+if (!process.env.SESSION_SECRET) {
+  throw new Error('SESSION_SECRET environment variable is required.');
+}
+
 app.use(
   session({
-    secret: 'secret123',
-    saveUninitialized: true,
-    resave: true,
+    secret: process.env.SESSION_SECRET,
+    saveUninitialized: false,
+    resave: false,
   }),
 );
 app.use(flash());
+
+// SEO: canonical URL for EJS templates (fixed public hostname, no query parameters).
+app.use((req, res, next) => {
+  res.locals.canonicalUrl =
+    'https://transtechsys.com' +
+    (req.path === '/' ? '/' : req.path.replace(/\/$/, ''));
+  next();
+});
+
+// SEO: generate the sitemap from approved indexable routes and case-study data.
+// Register before express.static so the old public/sitemap.xml cannot override it.
+app.get('/sitemap.xml', (req, res) => {
+  const caseStudiesForSitemap = require('./data/case-studies');
+  const pages = [
+    '/',
+    '/products',
+    '/products/pqi380Plus',
+    '/products/pqi380go',
+    '/products/pqi380',
+    '/products/sdg200',
+    '/products/nwjm',
+    '/products/swm',
+    '/products/pts3000',
+    '/products/pqi301',
+    '/products/legacyProducts',
+    '/products/usedGauges',
+    '/products/productManuals',
+    '/products/training',
+    '/products/contactCorporate',
+    '/products/distributorsUnitedStates',
+    '/products/distributorsInternational',
+    '/products/salesRequest',
+    '/products/corporateNews',
+    '/products/tradeshows',
+    '/products/community',
+    '/products/newsletter',
+    '/products/privacy',
+    '/products/tradeUp',
+    '/products/case-studies',
+    ...caseStudiesForSitemap.map(
+      (study) => '/products/case-studies/' + encodeURIComponent(study.slug),
+    ),
+  ];
+  const xmlEscape = (value) =>
+    value
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  const urls = [...new Set(pages)]
+    .map(
+      (page) =>
+        '  <url><loc>' +
+        xmlEscape('https://transtechsys.com' + page) +
+        '</loc></url>',
+    )
+    .join('\n');
+  res
+    .type('application/xml')
+    .send(
+      '<?xml version="1.0" encoding="UTF-8"?>\n' +
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+        urls +
+        '\n</urlset>\n',
+    );
+});
 
 //Set Static Folders
 app.use(express.static(path.join(__dirname, '/public')));
@@ -92,16 +177,6 @@ redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
   app[method](from, (req, res) => {
     res.redirect(type, to);
   });
-});
-
-//Redirect www to non-www
-app.get('/*', function (req, res, next) {
-  if (req.headers.host.match(/^www/) !== null)
-    res.redirect(
-      301,
-      'http://' + req.headers.host.replace(/^www\./, '') + req.url,
-    );
-  else next();
 });
 
 //Use date for footer copyright - added comment to update to 2022

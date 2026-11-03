@@ -8,9 +8,11 @@
   <meta name="description" content="<%= typeof metaTitle!='undefined' ? metaTitle : 'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.' %>">
   <meta name="robots" content="<%= typeof robots!='undefined' ? robots : 'all' %>">
 
+  <link rel="canonical" href="<%= canonicalUrl %>">
+
   <!-- OG Meta-->
   <meta property="og:title" content="<%= typeof ogTitle!='undefined' ? ogTitle : 'TransTech Systems - Innovators of Non-Nuclear Density Technology' %>" />
-  <meta property="og:url" content="<%= typeof ogUrl!='undefined' ? ogUrl : 'https://transtechsys.com' %>" />
+  <meta property="og:url" content="<%= typeof ogUrl!='undefined' ? ogUrl : canonicalUrl %>" />
   <meta property="og:image" content="<%= typeof ogImage!='undefined' ? ogImage : 'https://transtechsys.com/img/og/ogDefaultImage.jpg' %>" />
 
   <!-- Google Fonts -->

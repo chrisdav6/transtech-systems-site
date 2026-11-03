@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
-Sitemap: http://www.transtechsys.com/sitemap.xml
+Allow: /
+
+Sitemap: https://transtechsys.com/sitemap.xml
