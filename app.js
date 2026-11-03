@@ -162,12 +162,18 @@ app.get('/sitemap.xml', (req, res) => {
     );
 });
 
-// Static Files - Browser Caching
+// ==========================================
+// STATIC ASSET CACHING
+// ==========================================
+
+// Cache images, CSS, and JavaScript for 7 days.
+// CSS and JavaScript use content-based versioned URLs,
+// ensuring browsers request updated files when they change.
+
 app.use(
   express.static(path.join(__dirname, 'public'), {
     setHeaders: (res, filePath) => {
-      // Cache image files for 7 days
-      if (/\.(jpg|jpeg|png|gif|webp|svg|ico|avif)$/i.test(filePath)) {
+      if (/\.(jpg|jpeg|png|gif|webp|svg|ico|avif|css|js)$/i.test(filePath)) {
         res.setHeader('Cache-Control', 'public, max-age=604800');
       }
     },
