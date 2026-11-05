@@ -414,10 +414,11 @@ app.get('/products/pqi380go', function (req, res) {
 
 app.get('/products/pqi380', function (req, res) {
   res.render('products/pqi380', {
-    title: 'PQI 380 Non-Nuclear Asphalt Density Gauge | TransTech Systems',
+    title:
+      'PQI 380 Non-Nuclear Asphalt Density Gauge (Discontinued) | TransTech Systems',
     metaDescription:
-      'Explore the PQI 380 non-nuclear asphalt density gauge from TransTech Systems. A proven solution for asphalt compaction testing and pavement quality control.',
-    ogTitle: 'PQI 380 | Non-Nuclear Asphalt Density Gauge',
+      'The PQI 380 non-nuclear asphalt density gauge has been discontinued. Explore the next-generation PQI 380+ and PQI 380go gauges from TransTech Systems.',
+    ogTitle: 'PQI 380 | Discontinued Non-Nuclear Asphalt Density Gauge',
     ogUrl: 'https://transtechsys.com/products/pqi380',
     ogImage: 'https://transtechsys.com/img/og/ogDefaultImage.jpg',
   });
