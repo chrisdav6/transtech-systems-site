@@ -12,6 +12,7 @@ const expressSanitizer = require('express-sanitizer');
 const mailTransporter = require('./utils/mailTransporter');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const FileStore = require('session-file-store')(session);
 const flash = require('connect-flash');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const port = process.env.PORT || 3000;
@@ -92,9 +93,21 @@ if (!process.env.SESSION_SECRET) {
 
 app.use(
   session({
+    store: new FileStore({
+      path: '/var/lib/transtech-sessions',
+      ttl: 86400,
+      retries: 0,
+      reapInterval: 3600,
+    }),
     secret: process.env.SESSION_SECRET,
     saveUninitialized: false,
     resave: false,
+    cookie: {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      maxAge: 24 * 60 * 60 * 1000,
+    },
   }),
 );
 app.use(flash());
@@ -385,7 +398,7 @@ app.get('/', function (req, res) {
 //Products Homepage
 app.get('/products', function (req, res) {
   res.render('products/index', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems',
     metaTitle:
       'Leaders in Non-Nuclear asphalt and soil density gauge technology. Manufacturer of the Non-Nuclear PQI Asphalt Density Gauge, Revolutionizing the transportation industry providing advanced technological solutions.',
@@ -513,7 +526,7 @@ app.get('/products/training', function (req, res) {
 //Contact Corporate
 app.get('/products/contactCorporate', function (req, res) {
   res.render('products/contactCorporate', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems Corporate Contact',
     metaTitle:
       'Our headquarters are located in Latham, NY. Contact us at 1-800-724-6306 or email us at sales@transtechsys.com.',
@@ -541,7 +554,7 @@ app.get('/products/distributorsInternational', function (req, res) {
 //Product Sales Request
 app.get('/products/salesRequest', function (req, res) {
   res.render('products/salesRequest', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems Product Sales Request',
     metaTitle:
       'Are you interested in purchasing one of our products or just have questions? Contact us today!',
@@ -551,7 +564,7 @@ app.get('/products/salesRequest', function (req, res) {
 //Product Warranty Registration
 app.get('/products/productRegistration', function (req, res) {
   res.render('products/productRegistration', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems Product Registration',
     metaTitle: 'Submit a TransTech Systems product warranty registration.',
   });
@@ -560,7 +573,7 @@ app.get('/products/productRegistration', function (req, res) {
 //Product Repair/ Calibration
 app.get('/products/repairRequest', function (req, res) {
   res.render('products/repairRequest', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems Product Repair/Calibration RMA Request',
     metaTitle:
       'Submit a TransTech Systems product repair/calibration RMA request.',
@@ -570,7 +583,7 @@ app.get('/products/repairRequest', function (req, res) {
 //Request Integration
 app.get('/products/requestIntegration', function (req, res) {
   res.render('products/requestIntegration', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems Request integration',
     metaTitle:
       'Are you interested in integration with our TransTech Connect density cloud? Contact us today!',
@@ -580,7 +593,7 @@ app.get('/products/requestIntegration', function (req, res) {
 //PQI 380 Trade Up
 app.get('/products/tradeUp', function (req, res) {
   res.render('products/tradeUp', {
-    flash: { success: req.flash('success') },
+    flash: { success: req.flash('success'), error: req.flash('error') },
     title: 'TransTech Systems PQI 380 Trade-Up Program',
     metaTitle:
       'Your legacy PQI 380 could earn you dollars towards a new PQI 380+ Non-Nuclear Asphalt Density Gauge',
@@ -791,7 +804,7 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
     req.body['g-recaptcha-response'] === '' ||
     req.body['g-recaptcha-response'] === null
   ) {
-    req.flash('success', 'Please select google captcha');
+    req.flash('error', 'Please select google captcha');
     return res.redirect('/products/salesRequest');
   }
 
@@ -802,7 +815,7 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
   );
 
   if (!captchaValid) {
-    req.flash('success', 'Failed captcha verification');
+    req.flash('error', 'Failed captcha verification');
     return res.redirect('/products/salesRequest');
   }
 
@@ -882,7 +895,7 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
     req.body['g-recaptcha-response'] === '' ||
     req.body['g-recaptcha-response'] === null
   ) {
-    req.flash('success', 'Please select google captcha');
+    req.flash('error', 'Please select google captcha');
     return res.redirect('/products/repairRequest');
   }
 
@@ -893,7 +906,7 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
   );
 
   if (!captchaValid) {
-    req.flash('success', 'Failed captcha verification');
+    req.flash('error', 'Failed captcha verification');
     return res.redirect('/products/repairRequest');
   }
 
