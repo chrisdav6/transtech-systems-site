@@ -19,16 +19,16 @@
     "dotenv": "^6.1.0",
     "ejs": "^3.1.10",
     "express": "^4.22.3",
+    "express-rate-limit": "^8.7.3",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.19.0",
-    "express-validator": "^5.3.1",
     "font-awesome": "^4.7.0",
     "helmet": "^3.23.3",
     "jquery": "^3.5.1",
     "lightbox2": "^2.10.0",
-    "nodemailer": "^6.10.1",
+    "nodemailer": "10.3.1",
     "popper.js": "^1.16.1",
-    "validator": "^11.0.0"
+    "validator": "13.15.35"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

@@ -103,26 +103,42 @@ $(function () {
     $('#reach').attr('required', false);
   });
 
-  //Get dataId from passed to modal
-  $('#manualDownload').on('show.bs.modal', function (e) {
-    let dataId = $(e.relatedTarget).attr('data-id');
-    console.log(dataId);
+  // Manual download form: submit once and wait for server confirmation.
+  let selectedManual = '';
 
-    //Download Manuals Form Submit
-    $('#manualForm').on('submit', function (event) {
-      let $manualName = $('#manualName');
-      let $manualDownloadBtn = $('#manualDownloadBtn');
+  $('#manualDownload').on('show.bs.modal', function (event) {
+    selectedManual = $(event.relatedTarget).attr('data-id') || '';
 
-      //Send ManualName on form when email is sent
-      $manualName.val(dataId);
+    $('#manualName').val(selectedManual);
+    $('#manualDownloadLink').hide().attr('href', '#');
+    $('#manualDownloadBtn').show().prop('disabled', false);
+    $('#manualFormError').remove();
+  });
 
-      //Hide the submit button
-      $manualDownloadBtn.hide();
+  $('#manualForm').on('submit', function (event) {
+    event.preventDefault();
 
-      //Show Download Link
-      $('#manualDownloadLink').css('display', 'block');
+    const $form = $(this);
+    const $button = $('#manualDownloadBtn');
+    const $link = $('#manualDownloadLink');
 
-      //Update Link href
+    if ($button.prop('disabled')) {
+      return;
+    }
+
+    $('#manualName').val(selectedManual);
+    $('#manualFormError').remove();
+
+    $button.prop('disabled', true).text('Submitting...');
+    $link.hide();
+
+    $.ajax({
+      url: $form.attr('action'),
+      method: 'POST',
+      data: $form.serialize(),
+      success: function () {
+        const dataId = selectedManual;
+
       switch (dataId) {
         case 'PQI 380go Manual':
           $('#manualDownloadLink').attr('href', '/pdf/PQI380goManual.pdf');
@@ -206,6 +222,26 @@ $(function () {
           );
           break;
       }
+
+        if ($link.attr('href') === '#') {
+          $('#manualFormError').remove();
+          $form.append(
+            '<div id="manualFormError" class="alert alert-danger mt-3" role="alert">The selected manual is unavailable.</div>'
+          );
+          $button.prop('disabled', false).text('Submit');
+          return;
+        }
+
+        $button.hide().prop('disabled', false).text('Submit');
+        $link.show();
+      },
+      error: function () {
+        $('#manualFormError').remove();
+        $form.append(
+          '<div id="manualFormError" class="alert alert-danger mt-3" role="alert">We could not process your request. Please try again.</div>'
+        );
+        $button.prop('disabled', false).text('Submit');
+      },
     });
   });
 

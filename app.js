@@ -4,16 +4,19 @@ const crypto = require('crypto');
 const express = require('express');
 const helmet = require('helmet');
 const botFilter = require('./utils/botFilter');
+const formRateLimiter = require('./utils/formRateLimiter');
+const formHoneypot = require('./utils/formHoneypot');
 const dotenv = require('dotenv').config();
 const validator = require('validator');
 const expressSanitizer = require('express-sanitizer');
-const nodemailer = require('nodemailer');
+const mailTransporter = require('./utils/mailTransporter');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const port = process.env.PORT || 3000;
 const app = express();
+app.set('trust proxy', 'loopback');
 
 // ==========================================
 // STATIC ASSET VERSIONING
@@ -630,24 +633,11 @@ app.get('/products/privacy', function (req, res) {
 //------POST Routes--------//
 
 //Homepage Newsletter Signup Form
-/*app.post('/products', function (req, res) {
+/*app.post('/products', formRateLimiter, formHoneypot, async function (req, res) {
   let { name, company, state, country, email, currentCustomer, reach } =
     req.body;
 
-  nodemailer.createTestAccount((err, account) => {
-    // create reusable transporter object using the default SMTP transport
-    var transporter = nodemailer.createTransport({
-      host: 'smtp.office365.com', // Office 365 server
-      port: 587, // secure SMTP
-      secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
-      },
-      tls: {
-        ciphers: 'SSLv3',
-      },
-    });
+  try {
 
     let body = `<h2><u>TransTech Systems Newsletter Signup</u></h2>`;
     body += `<p><strong>From:</strong> ${name}<br>`;
@@ -668,45 +658,26 @@ app.get('/products/privacy', function (req, res) {
       html: body, // html body
     };
 
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return console.log(error);
-      }
-      console.log('Message sent: %s', info.messageId);
-      // Preview only available when sending through an Ethereal account
-      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    await mailTransporter.sendMail(mailOptions);
+    req.flash('success', 'Request to join newsletter has been sent. Thank You!');
+  } catch (error) {
+    console.error('Newsletter signup notification failed:', error);
+    req.flash('error', 'Unable to process your request. Please try again.');
+  }
 
-      // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-      // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    });
-  });
-  req.flash('success', 'Request to join newsletter has been sent. Thank You!');
-  res.redirect('/products');
+  return res.redirect('/products');
 });
 */
 
 //Contact Corporate Contact Us Form
-/* app.post("/products/contactCorporate", function (req, res) {
+/* app.post("/products/contactCorporate", formRateLimiter, formHoneypot, async function (req, res) {
   let { name, email, message, businessAddress } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect("/products/contactCorporate");
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', 
-        port: 587,     
-        secure: false,
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD
-        },
-        tls: {
-          ciphers: 'SSLv3'
-        }
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>Corporate Contact Inquiry</u></h2>`;
       body += `<p><strong>From:</strong> ${validator.escape(name)}<br>`;
@@ -722,122 +693,73 @@ app.get('/products/privacy', function (req, res) {
         html: body 
       };
 
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
     req.flash('success', 'Message has been sent. Thank You!');
-    res.redirect("/products/contactCorporate");
+  } catch (error) {
+    console.error('Corporate Contact notification failed:', error);
+    req.flash('error', 'Unable to send your message. Please try again.');
   }
+
+  return res.redirect("/products/contactCorporate");
 }); */
 
 //Product Sales Request Form
-// app.post('/products/salesRequest', function (req, res) {
-//   let {
-//     name,
-//     company,
-//     state,
-//     country,
-//     phone,
-//     email,
-//     reach,
-//     reachInfo,
-//     moreInfo,
-//     message,
-//     businessAddress,
+// Legacy Sales Request handler (disabled; retained for reference).
+// app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function (req, res) {
+//   const {
+//     name, company, state, country, phone, email,
+//     reach, reachInfo, moreInfo, message, businessAddress
 //   } = req.body;
-
-//   if (businessAddress.length !== 0) {
-//     return;
-//     // req.flash('success', 'Sorry Bot!');
-//     // res.redirect('/products/salesRequest');
-//   } else if (
-//     name.includes('DGSVNL') ||
-//     company.includes('DGSVNL') ||
-//     state.includes('DGSVNL') ||
-//     country.includes('DGSVNL') ||
-//     phone.includes('DGSVNL') ||
-//     email.includes('DGSVNL') ||
-//     reach.includes('DGSVNL') ||
-//     reachInfo.includes('DGSVNL') ||
-//     moreInfo.includes('DGSVNL') ||
-//     message.includes('DGSVNL') ||
-//     name.includes('GOXOEG') ||
-//     company.includes('GOXOEG') ||
-//     state.includes('GOXOEG') ||
-//     country.includes('GOXOEG') ||
-//     phone.includes('GOXOEG') ||
-//     email.includes('GOXOEG') ||
-//     reach.includes('GOXOEG') ||
-//     reachInfo.includes('GOXOEG') ||
-//     moreInfo.includes('GOXOEG') ||
-//     message.includes('GOXOEG')
-//   ) {
-//     res.redirect('/products/salesRequest');
-//     return;
-//   } else {
-//     nodemailer.createTestAccount((err, account) => {
-//       // create reusable transporter object using the default SMTP transport
-//       var transporter = nodemailer.createTransport({
-//         host: 'smtp.office365.com', // Office 365 server
-//         port: 587, // secure SMTP
-//         secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-//         auth: {
-//           user: process.env.SMTP_USER,
-//           pass: process.env.SMTP_PASSWORD,
-//         },
-//         tls: {
-//           ciphers: 'SSLv3',
-//         },
-//       });
-
-//       let body = `<h2><u>Sales Request</u></h2>`;
-//       body += `<p><strong>From:</strong> ${name}<br>`;
-//       body += `<strong>Company:</strong> ${company}<br>`;
-//       body += `<strong>State:</strong> ${state}<br>`;
-//       body += `<strong>Country:</strong> ${country}<br>`;
-//       body += `<strong>Phone:</strong> ${phone}<br>`;
-//       body += `<strong>Email:</strong> ${email}<br>`;
-//       body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
-//       body += `<strong>Reach Info:</strong> ${
-//         reachInfo || 'User Did Not Specify'
-//       }<br>`;
-//       body += `<strong>Please send more info:</strong> ${moreInfo}</p>`;
-//       body += `<p><strong>Message:</strong><br> ${message}</p>`;
-
-//       // setup email data with unicode symbols
-//       let mailOptions = {
-//         from: 'webforms@transtechsys.com', // sender address
-//         to: 'sales@transtechsys.com,tapkarian@transtechsys.com', // list of receivers
-//         replyTo: email,
-//         subject: 'TransTech Systems Sales Request Form', // Subject line
-//         text: message, // plain text body
-//         html: body, // html body
-//       };
-
-//       // send mail with defined transport object
-//       transporter.sendMail(mailOptions, (error, info) => {
-//         if (error) {
-//           return console.log(error);
-//         }
-//         console.log('Message sent: %s', info.messageId);
-//         // Preview only available when sending through an Ethereal account
-//         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-//         // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-//         // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-//       });
-//     });
-//     req.flash('success', 'Sales request has been sent. Thank You!');
-//     res.redirect('/products/salesRequest');
+//
+//   if (businessAddress) {
+//     return res.status(400).send('Invalid form submission.');
 //   }
+//
+//   const spamFields = [
+//     name, company, state, country, phone, email,
+//     reach, reachInfo, moreInfo, message
+//   ];
+//
+//   if (spamFields.some(value =>
+//     String(value || '').includes('DGSVNL') ||
+//     String(value || '').includes('GOXOEG')
+//   )) {
+//     return res.status(400).send('Invalid form submission.');
+//   }
+//
+//   let body = `<h2><u>Sales Request</u></h2>`;
+//   body += `<p><strong>From:</strong> ${name}<br>`;
+//   body += `<strong>Company:</strong> ${company}<br>`;
+//   body += `<strong>State:</strong> ${state}<br>`;
+//   body += `<strong>Country:</strong> ${country}<br>`;
+//   body += `<strong>Phone:</strong> ${phone}<br>`;
+//   body += `<strong>Email:</strong> ${email}<br>`;
+//   body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
+//   body += `<strong>Reach Info:</strong> ${reachInfo || 'User Did Not Specify'}<br>`;
+//   body += `<strong>Please send more info:</strong> ${moreInfo}</p>`;
+//   body += `<p><strong>Message:</strong><br> ${message}</p>`;
+//
+//   const mailOptions = {
+//     from: 'webforms@transtechsys.com',
+//     to: 'sales@transtechsys.com,tapkarian@transtechsys.com',
+//     replyTo: email,
+//     subject: 'TransTech Systems Sales Request Form',
+//     text: message,
+//     html: body,
+//   };
+//
+//   try {
+//     await mailTransporter.sendMail(mailOptions);
+//     req.flash('success', 'Sales request has been sent. Thank You!');
+//   } catch (error) {
+//     console.error('Legacy Sales Request notification failed:', error);
+//     req.flash('error', 'Unable to send your request. Please try again.');
+//   }
+//
+//   return res.redirect('/products/salesRequest');
 // });
-
-app.post('/products/salesRequest', async function (req, res) {
+//
+app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     name,
     company,
@@ -884,21 +806,8 @@ app.post('/products/salesRequest', async function (req, res) {
     return res.redirect('/products/salesRequest');
   }
 
-    //If google passes - send form
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  // Send the request using the shared SMTP transporter.
+  try {
 
       let body = `<h2><u>Sales Request</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -924,26 +833,19 @@ app.post('/products/salesRequest', async function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
 
     req.flash('success', 'Sales request has been sent. Thank You!');
-    res.redirect('/products/salesRequest');
+  } catch (error) {
+    console.error('Sales Request email failed:', error);
+    req.flash('error', 'Unable to send your request. Please try again later.');
+  }
+
+  return res.redirect('/products/salesRequest');
 });
 
 //Repair Request Form
-app.post('/products/repairRequest', async function (req, res) {
+app.post('/products/repairRequest', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     name,
     company,
@@ -995,21 +897,8 @@ app.post('/products/repairRequest', async function (req, res) {
     return res.redirect('/products/repairRequest');
   }
 
-    //If google passes - send form
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  // Send the service request using the shared SMTP transporter.
+  try {
 
       let body = `<h2><u>Repair Request</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1054,40 +943,27 @@ app.post('/products/repairRequest', async function (req, res) {
         html: userBody, // html body
       };
 
-      if (company !== 'google') {
-        //Trying to stop spam coming in with google as company name
-        // send mail with defined transport object
-        transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-            return console.log(error);
-          }
-          console.log('Message sent: %s', info.messageId);
-          // Preview only available when sending through an Ethereal account
-          console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    // The internal request must succeed before we report success.
+    await mailTransporter.sendMail(mailOptions);
 
-          // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-          // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-        });
+    // Customer confirmation is secondary; log failures separately.
+    try {
+      await mailTransporter.sendMail(mailOptions2);
+    } catch (confirmationError) {
+      console.error('Repair Request confirmation email failed:', confirmationError);
+    }
 
-        transporter.sendMail(mailOptions2, (error, info) => {
-          if (error) {
-            return console.log(error);
-          }
-          console.log('Message sent: %s', info.messageId);
-          // Preview only available when sending through an Ethereal account
-          console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-          // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-          // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-        });
-      }
-    });
     req.flash('success', 'Repair request has been sent. Thank You!');
-    res.redirect('/products/repairRequest');
+  } catch (error) {
+    console.error('Repair Request email failed:', error);
+    req.flash('error', 'Unable to send your repair request. Please try again later.');
+  }
+
+  return res.redirect('/products/repairRequest');
 });
 
 //Product Registration Form
-app.post('/products/productRegistration', function (req, res) {
+app.post('/products/productRegistration', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     name,
     company,
@@ -1101,24 +977,12 @@ app.post('/products/productRegistration', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/productRegistration');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    req.flash('error', 'Invalid form submission.');
+    return res.redirect('/products/productRegistration');
+  }
+
+  try {
 
       let body = `<h2><u>Product Registration</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1141,26 +1005,18 @@ app.post('/products/productRegistration', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
     req.flash('success', 'Product registration has been sent. Thank You!');
-    res.redirect('/products/productRegistration');
+  } catch (error) {
+    console.error('Product Registration email failed:', error);
+    req.flash('error', 'Unable to send your registration. Please try again later.');
   }
+
+  return res.redirect('/products/productRegistration');
 });
 
 //Request Integration Form
-app.post('/products/requestIntegration', function (req, res) {
+app.post('/products/requestIntegration', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     name,
     company,
@@ -1173,24 +1029,12 @@ app.post('/products/requestIntegration', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/requestIntegration');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    req.flash('error', 'Invalid form submission.');
+    return res.redirect('/products/requestIntegration');
+  }
+
+  try {
 
       let body = `<h2><u>Request TransTech Connect Integration</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1212,26 +1056,18 @@ app.post('/products/requestIntegration', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
     req.flash('success', 'Integration request has been sent. Thank You!');
-    res.redirect('/products/requestIntegration');
+  } catch (error) {
+    console.error('Request Integration email failed:', error);
+    req.flash('error', 'Unable to send your integration request. Please try again later.');
   }
+
+  return res.redirect('/products/requestIntegration');
 });
 
 //Trade Up Form
-app.post('/products/tradeUp', function (req, res) {
+app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     name,
     company,
@@ -1245,24 +1081,12 @@ app.post('/products/tradeUp', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/tradeUp');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    req.flash('error', 'Invalid form submission.');
+    return res.redirect('/products/tradeUp');
+  }
+
+  try {
 
       let body = `<h2><u>PQI 380 Trade Up Request</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1285,26 +1109,18 @@ app.post('/products/tradeUp', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
     req.flash('success', 'Trade Up request has been sent. Thank You!');
-    res.redirect('/products/tradeUp');
+  } catch (error) {
+    console.error('Trade Up email failed:', error);
+    req.flash('error', 'Unable to send your Trade Up request. Please try again later.');
   }
+
+  return res.redirect('/products/tradeUp');
 });
 
 //PQI 380 Product Page Manuals Download Form
-app.post('/products/pqi380', function (req, res) {
+app.post('/products/pqi380', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1316,24 +1132,11 @@ app.post('/products/pqi380', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/pqi380');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1353,24 +1156,16 @@ app.post('/products/pqi380', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('PQI 380 manual notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
 //SDG 200 Product Page Manuals Download Form
-app.post('/products/sdg200', function (req, res) {
+app.post('/products/sdg200', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1382,24 +1177,11 @@ app.post('/products/sdg200', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/sdg200');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1419,24 +1201,16 @@ app.post('/products/sdg200', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('SDG 200 manual notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
 //NWJM Product Page Manuals Download Form
-app.post('/products/nwjm', function (req, res) {
+app.post('/products/nwjm', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1448,24 +1222,11 @@ app.post('/products/nwjm', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/nwjm');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1485,24 +1246,16 @@ app.post('/products/nwjm', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('NWJM manual notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
 //SWM Product Page Manuals Download Form
-app.post('/products/swm', function (req, res) {
+app.post('/products/swm', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1514,24 +1267,11 @@ app.post('/products/swm', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/swm');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1551,24 +1291,16 @@ app.post('/products/swm', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('SWM manual notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
 //PTS 3000 Product Page Manuals Download Form
-app.post('/products/pts3000', function (req, res) {
+app.post('/products/pts3000', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1580,24 +1312,11 @@ app.post('/products/pts3000', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/pts3000');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1617,24 +1336,16 @@ app.post('/products/pts3000', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('PTS 3000 manual notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
 //PQI 301 Product Page Manuals Download Form
-app.post('/products/pqi301', function (req, res) {
+app.post('/products/pqi301', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1646,24 +1357,11 @@ app.post('/products/pqi301', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/pqi301');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1683,24 +1381,16 @@ app.post('/products/pqi301', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('PQI 301 manual notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
 //Product Manuals Page Manuals Download Form
-app.post('/products/productManuals', function (req, res) {
+app.post('/products/productManuals', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,
@@ -1712,24 +1402,11 @@ app.post('/products/productManuals', function (req, res) {
     businessAddress,
   } = req.body;
 
-  if (businessAddress.length !== 0) {
-    req.flash('success', 'Sorry Bot!');
-    res.redirect('/products/productManuals');
-  } else {
-    nodemailer.createTestAccount((err, account) => {
-      // create reusable transporter object using the default SMTP transport
-      var transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Office 365 server
-        port: 587, // secure SMTP
-        secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASSWORD,
-        },
-        tls: {
-          ciphers: 'SSLv3',
-        },
-      });
+  if (businessAddress) {
+    return res.status(400).send('Invalid form submission.');
+  }
+
+  try {
 
       let body = `<h2><u>${manualName} Download - Manuals Page</u></h2>`;
       body += `<p><strong>From:</strong> ${name}<br>`;
@@ -1749,19 +1426,11 @@ app.post('/products/productManuals', function (req, res) {
         html: body, // html body
       };
 
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-      });
-    });
+    await mailTransporter.sendMail(mailOptions);
+    return res.sendStatus(204);
+  } catch (error) {
+    console.error('Product Manuals notification failed:', error);
+    return res.status(500).send('Unable to process your request.');
   }
 });
 
