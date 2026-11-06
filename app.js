@@ -3,7 +3,7 @@ const fs = require('fs');
 const crypto = require('crypto');
 const express = require('express');
 const helmet = require('helmet');
-const badbots = require('express-badbots');
+const botFilter = require('./utils/botFilter');
 const dotenv = require('dotenv').config();
 const validator = require('validator');
 const expressSanitizer = require('express-sanitizer');
@@ -11,7 +11,7 @@ const nodemailer = require('nodemailer');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
-const request = require('request');
+const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -75,7 +75,7 @@ app.use((req, res, next) => {
 app.use(helmet());
 
 //Use Express Badbots
-app.use(badbots({ isApi: false }));
+app.use(botFilter);
 
 //Use EJS
 app.set('view engine', 'ejs');
@@ -837,7 +837,7 @@ app.get('/products/privacy', function (req, res) {
 //   }
 // });
 
-app.post('/products/salesRequest', function (req, res) {
+app.post('/products/salesRequest', async function (req, res) {
   let {
     name,
     company,
@@ -873,23 +873,16 @@ app.post('/products/salesRequest', function (req, res) {
     return res.redirect('/products/salesRequest');
   }
 
-  const secretKey = '6LdOJrUUAAAAAEcDXXzymgvHEY2XDMamj3pGXra-';
-  const verificationURL =
-    'https://www.google.com/recaptcha/api/siteverify?secret=' +
-    secretKey +
-    '&response=' +
-    req.body['g-recaptcha-response'] +
-    '&remoteip=' +
-    req.connection.remoteAddress;
+  // Verify reCAPTCHA before processing the request
+  const captchaValid = await verifyRecaptcha(
+    req.body['g-recaptcha-response'],
+    req.ip
+  );
 
-  //Send verification to google
-  request(verificationURL, function (error, response, data) {
-    data = JSON.parse(data);
-
-    if (data.success !== undefined && !data.success) {
-      req.flash('success', 'Failed captcha verification');
-      return res.redirect('/products/salesRequest');
-    }
+  if (!captchaValid) {
+    req.flash('success', 'Failed captcha verification');
+    return res.redirect('/products/salesRequest');
+  }
 
     //If google passes - send form
     nodemailer.createTestAccount((err, account) => {
@@ -947,11 +940,10 @@ app.post('/products/salesRequest', function (req, res) {
 
     req.flash('success', 'Sales request has been sent. Thank You!');
     res.redirect('/products/salesRequest');
-  });
 });
 
 //Repair Request Form
-app.post('/products/repairRequest', function (req, res) {
+app.post('/products/repairRequest', async function (req, res) {
   let {
     name,
     company,
@@ -992,23 +984,16 @@ app.post('/products/repairRequest', function (req, res) {
     return res.redirect('/products/repairRequest');
   }
 
-  const secretKey = '6LdOJrUUAAAAAEcDXXzymgvHEY2XDMamj3pGXra-';
-  const verificationURL =
-    'https://www.google.com/recaptcha/api/siteverify?secret=' +
-    secretKey +
-    '&response=' +
-    req.body['g-recaptcha-response'] +
-    '&remoteip=' +
-    req.connection.remoteAddress;
+  // Verify reCAPTCHA before processing the request
+  const captchaValid = await verifyRecaptcha(
+    req.body['g-recaptcha-response'],
+    req.ip
+  );
 
-  //Send verification to google
-  request(verificationURL, function (error, response, data) {
-    data = JSON.parse(data);
-
-    if (data.success !== undefined && !data.success) {
-      req.flash('success', 'Failed captcha verification');
-      return res.redirect('/products/repairRequest');
-    }
+  if (!captchaValid) {
+    req.flash('success', 'Failed captcha verification');
+    return res.redirect('/products/repairRequest');
+  }
 
     //If google passes - send form
     nodemailer.createTestAccount((err, account) => {
@@ -1099,7 +1084,6 @@ app.post('/products/repairRequest', function (req, res) {
     });
     req.flash('success', 'Repair request has been sent. Thank You!');
     res.redirect('/products/repairRequest');
-  });
 });
 
 //Product Registration Form

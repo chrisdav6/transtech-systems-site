@@ -4,7 +4,8 @@
   "description": "TransTech Site WIP",
   "main": "app.js",
   "scripts": {
-    "start": "gulp | node app.js"
+    "start": "node app.js",
+    "build": "gulp"
   },
   "keywords": [
     "Bootstrap 4"
@@ -16,9 +17,8 @@
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "dotenv": "^6.1.0",
-    "ejs": "^2.5.7",
+    "ejs": "^3.1.10",
     "express": "^4.22.3",
-    "express-badbots": "^2.0.3",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.19.0",
     "express-validator": "^5.3.1",
@@ -26,18 +26,17 @@
     "helmet": "^3.23.3",
     "jquery": "^3.5.1",
     "lightbox2": "^2.10.0",
-    "node-fetch": "^3.3.2",
     "nodemailer": "^6.10.1",
     "popper.js": "^1.16.1",
-    "request": "^2.88.0",
     "validator": "^11.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.107.1"
   },
   "engines": {
-    "node": "14.0"
+    "node": "24.x"
   }
 }
