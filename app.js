@@ -1470,7 +1470,12 @@ app.get('*', function (req, res) {
   });
 });
 
-//Start Server
-app.listen(port, process.env.IP, function () {
-  console.log(`Server has started!`);
-});
+// Export the Express application for automated testing.
+module.exports = app;
+
+// Start the server only when this file is executed directly.
+if (require.main === module) {
+  app.listen(port, process.env.IP, function () {
+    console.log('Server has started!');
+  });
+}
