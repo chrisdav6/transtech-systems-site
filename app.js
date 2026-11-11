@@ -995,6 +995,17 @@ app.post('/products/productRegistration', formRateLimiter, formHoneypot, async f
     return res.redirect('/products/productRegistration');
   }
 
+  // Sanitize incoming form data.
+  name = sanitizeFormField(req, name);
+  company = sanitizeFormField(req, company);
+  state = sanitizeFormField(req, state);
+  country = sanitizeFormField(req, country);
+  phone = sanitizeFormField(req, phone);
+  email = sanitizeFormField(req, email);
+  registerProduct = sanitizeFormField(req, registerProduct);
+  date = sanitizeFormField(req, date);
+  serial = sanitizeFormField(req, serial);
+
   try {
 
       let body = `<h2><u>Product Registration</u></h2>`;
@@ -1047,6 +1058,16 @@ app.post('/products/requestIntegration', formRateLimiter, formHoneypot, async fu
     return res.redirect('/products/requestIntegration');
   }
 
+  // Sanitize incoming form data.
+  name = sanitizeFormField(req, name);
+  company = sanitizeFormField(req, company);
+  state = sanitizeFormField(req, state);
+  country = sanitizeFormField(req, country);
+  phone = sanitizeFormField(req, phone);
+  email = sanitizeFormField(req, email);
+  reach = sanitizeFormField(req, reach);
+  message = sanitizeFormField(req, message);
+
   try {
 
       let body = `<h2><u>Request TransTech Connect Integration</u></h2>`;
@@ -1098,6 +1119,17 @@ app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req
     req.flash('error', 'Invalid form submission.');
     return res.redirect('/products/tradeUp');
   }
+
+  // Sanitize incoming form data.
+  name = sanitizeFormField(req, name);
+  company = sanitizeFormField(req, company);
+  state = sanitizeFormField(req, state);
+  country = sanitizeFormField(req, country);
+  phone = sanitizeFormField(req, phone);
+  email = sanitizeFormField(req, email);
+  tradeProduct = sanitizeFormField(req, tradeProduct);
+  tradeSerial = sanitizeFormField(req, tradeSerial);
+  tradeMessage = sanitizeFormField(req, tradeMessage);
 
   try {
 
