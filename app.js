@@ -16,6 +16,7 @@ const FileStore = require('session-file-store')(session);
 const flash = require('./utils/flashMessages');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const sanitizeFormField = require('./utils/sanitizeFormField');
+const manualNames = require('./utils/manualNames');
 const port = process.env.PORT || 3000;
 const app = express();
 app.set('trust proxy', 'loopback');
@@ -1434,7 +1435,7 @@ app.post('/products/pqi301', formRateLimiter, formHoneypot, async function (req,
   }
 });
 
-//Product Manuals Page Manuals Download Form
+// Consolidated Product Manual Download Form
 app.post('/products/productManuals', formRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
@@ -1445,36 +1446,54 @@ app.post('/products/productManuals', formRateLimiter, formHoneypot, async functi
     currentCustomer,
     reach,
     businessAddress,
-  } = req.body;
+  } = req.body || {};
 
   if (businessAddress) {
     return res.status(400).send('Invalid form submission.');
   }
 
+  // Sanitize incoming form data.
+  manualName = sanitizeFormField(req, manualName);
+  name = sanitizeFormField(req, name);
+  company = sanitizeFormField(req, company);
+  country = sanitizeFormField(req, country);
+  email = sanitizeFormField(req, email);
+  currentCustomer = sanitizeFormField(req, currentCustomer);
+  reach = sanitizeFormField(req, reach);
+
+  // Validate the requested manual.
+  if (!manualNames.has(manualName)) {
+    return res.status(400).send('Invalid manual selection.');
+  }
+
+  // Validate required customer information.
+  if (!name || !company || !country || !validator.isEmail(email)) {
+    return res.status(400).send('Please provide valid required information.');
+  }
+
   try {
+    let body = `<h2><u>${manualName} Download</u></h2>`;
+    body += `<p><strong>From:</strong> ${name}<br>`;
+    body += `<strong>Company:</strong> ${company}<br>`;
+    body += `<strong>Country:</strong> ${country}<br>`;
+    body += `<strong>Email:</strong> ${email}<br>`;
+    body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
+    body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
 
-      let body = `<h2><u>${manualName} Download - Manuals Page</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
-      body += `<strong>Company:</strong> ${company}<br>`;
-      body += `<strong>Country:</strong> ${country}<br>`;
-      body += `<strong>Email:</strong> ${email}<br>`;
-      body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
-      body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
-
-      // setup email data with unicode symbols
-      let mailOptions = {
-        from: 'webforms@transtechsys.com', // sender address
-        to: 'cdavis@transtechsys.com', // list of receivers
-        replyTo: email,
-        subject: 'TransTech Systems Product Manual Download', // Subject line
-        text: body, // plain text body
-        html: body, // html body
-      };
+    const mailOptions = {
+      from: 'webforms@transtechsys.com',
+      to: 'cdavis@transtechsys.com',
+      replyTo: email,
+      subject: 'TransTech Systems Product Manual Download',
+      text: body,
+      html: body,
+    };
 
     await mailTransporter.sendMail(mailOptions);
+
     return res.sendStatus(204);
   } catch (error) {
-    console.error('Product Manuals notification failed:', error);
+    console.error('Product Manual notification failed:', error);
     return res.status(500).send('Unable to process your request.');
   }
 });
