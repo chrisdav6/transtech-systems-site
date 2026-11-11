@@ -10,6 +10,14 @@ const pages = [
     expected: 'TransTech Systems',
   },
   {
+    route: '/products',
+    expected: 'TransTech Systems',
+  },
+  {
+    route: '/products/pqi380',
+    expected: 'Discontinued',
+  },
+  {
     route: '/products/pqi380Plus',
     expected: 'PQI 380+',
   },
