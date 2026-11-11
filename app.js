@@ -15,6 +15,7 @@ const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 const flash = require('./utils/flashMessages');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
+const sanitizeFormField = require('./utils/sanitizeFormField');
 const port = process.env.PORT || 3000;
 const app = express();
 app.set('trust proxy', 'loopback');
@@ -787,16 +788,15 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
   } = req.body;
 
   //Sanitize incoming data
-  name = req.sanitize(name).replace(/<\/?[^>]+(>|$)/g, '');
-  company = req.sanitize(company).replace(/<\/?[^>]+(>|$)/g, '');
-  state = req.sanitize(state).replace(/<\/?[^>]+(>|$)/g, '');
-  country = req.sanitize(country).replace(/<\/?[^>]+(>|$)/g, '');
-  phone = req.sanitize(phone).replace(/<\/?[^>]+(>|$)/g, '');
-  email = req.sanitize(email).replace(/<\/?[^>]+(>|$)/g, '');
-  reach = req.sanitize(reach).replace(/<\/?[^>]+(>|$)/g, '');
-  // reachInfo = req.sanitize(reachInfo).replace(/<\/?[^>]+(>|$)/g, '');
-  moreInfo = req.sanitize(moreInfo).replace(/<\/?[^>]+(>|$)/g, '');
-  message = req.sanitize(message).replace(/<\/?[^>]+(>|$)/g, '');
+  name = sanitizeFormField(req, name);
+  company = sanitizeFormField(req, company);
+  state = sanitizeFormField(req, state);
+  country = sanitizeFormField(req, country);
+  phone = sanitizeFormField(req, phone);
+  email = sanitizeFormField(req, email);
+  reach = sanitizeFormField(req, reach);
+  moreInfo = sanitizeFormField(req, moreInfo);
+  message = sanitizeFormField(req, message);
 
   //Google captcha code
   if (
@@ -878,16 +878,16 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
   } = req.body;
 
   //Sanitize incoming data
-  name = req.sanitize(name).replace(/<\/?[^>]+(>|$)/g, '');
-  company = req.sanitize(company).replace(/<\/?[^>]+(>|$)/g, '');
-  address = req.sanitize(address).replace(/<\/?[^>]+(>|$)/g, '');
-  city = req.sanitize(city).replace(/<\/?[^>]+(>|$)/g, '');
-  zip = req.sanitize(zip).replace(/<\/?[^>]+(>|$)/g, '');
-  phone = req.sanitize(phone).replace(/<\/?[^>]+(>|$)/g, '');
-  email = req.sanitize(email).replace(/<\/?[^>]+(>|$)/g, '');
-  repairSerial = req.sanitize(repairSerial).replace(/<\/?[^>]+(>|$)/g, '');
-  repairQty = req.sanitize(repairQty).replace(/<\/?[^>]+(>|$)/g, '');
-  serviceMessage = req.sanitize(serviceMessage).replace(/<\/?[^>]+(>|$)/g, '');
+  name = sanitizeFormField(req, name);
+  company = sanitizeFormField(req, company);
+  address = sanitizeFormField(req, address);
+  city = sanitizeFormField(req, city);
+  zip = sanitizeFormField(req, zip);
+  phone = sanitizeFormField(req, phone);
+  email = sanitizeFormField(req, email);
+  repairSerial = sanitizeFormField(req, repairSerial);
+  repairQty = sanitizeFormField(req, repairQty);
+  serviceMessage = sanitizeFormField(req, serviceMessage);
 
   //Google captcha code
   if (
