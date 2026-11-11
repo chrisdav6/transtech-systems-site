@@ -94,7 +94,7 @@ if (!process.env.SESSION_SECRET) {
 app.use(
   session({
     store: new FileStore({
-      path: '/var/lib/transtech-sessions',
+      path: process.env.SESSION_STORE_PATH || '/var/lib/transtech-sessions',
       ttl: 86400,
       retries: 0,
       reapInterval: 3600,
