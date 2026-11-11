@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "gulp"
+    "build": "gulp",
+    "test": "node --test"
   },
   "keywords": [
     "Bootstrap 4"
