@@ -16,6 +16,7 @@ const FileStore = require('session-file-store')(session);
 const flash = require('./utils/flashMessages');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const sanitizeFormField = require('./utils/sanitizeFormField');
+const escapeHtml = require('./utils/escapeHtml');
 const manualNames = require('./utils/manualNames');
 const port = process.env.PORT || 3000;
 const app = express();
@@ -1202,13 +1203,14 @@ app.post('/products/productManuals', formRateLimiter, formHoneypot, async functi
   }
 
   try {
-    let body = `<h2><u>${manualName} Download</u></h2>`;
-    body += `<p><strong>From:</strong> ${name}<br>`;
-    body += `<strong>Company:</strong> ${company}<br>`;
-    body += `<strong>Country:</strong> ${country}<br>`;
-    body += `<strong>Email:</strong> ${email}<br>`;
-    body += `<strong>Current Customer:</strong> ${currentCustomer}<br>`;
-    body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
+    // Escape customer-provided values before inserting them into HTML.
+    let body = `<h2><u>${escapeHtml(manualName)} Download</u></h2>`;
+    body += `<p><strong>From:</strong> ${escapeHtml(name)}<br>`;
+    body += `<strong>Company:</strong> ${escapeHtml(company)}<br>`;
+    body += `<strong>Country:</strong> ${escapeHtml(country)}<br>`;
+    body += `<strong>Email:</strong> ${escapeHtml(email)}<br>`;
+    body += `<strong>Current Customer:</strong> ${escapeHtml(currentCustomer)}<br>`;
+    body += `<strong>How did you hear about us:</strong> ${escapeHtml(reach)}<br>`;
 
     const mailOptions = {
       from: 'webforms@transtechsys.com',
