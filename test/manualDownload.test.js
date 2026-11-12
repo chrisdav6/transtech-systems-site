@@ -4,6 +4,8 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 
+const manualNames = require('../utils/manualNames');
+
 test('Product Manual Download endpoint validates requests and handles email delivery', async (t) => {
   const directory = fs.mkdtempSync(
     path.join(os.tmpdir(), 'transtech-manual-test-')
@@ -13,10 +15,9 @@ test('Product Manual Download endpoint validates requests and handles email deli
   process.env.SESSION_SECRET = 'temporary-manual-test-secret';
   process.env.SESSION_STORE_PATH = directory;
 
-  // Mock Nodemailer before loading the Express application.
   const nodemailer = require('nodemailer');
-
   const sentEmails = [];
+
   let simulateEmailFailure = false;
 
   const mockTransporter = {
@@ -31,7 +32,6 @@ test('Product Manual Download endpoint validates requests and handles email deli
   };
 
   const originalCreateTransport = nodemailer.createTransport;
-
   nodemailer.createTransport = () => mockTransporter;
 
   let server;
@@ -49,7 +49,6 @@ test('Product Manual Download endpoint validates requests and handles email deli
     });
 
     const port = server.address().port;
-
     let requestNumber = 0;
 
     async function submitForm(fields) {
@@ -71,7 +70,6 @@ test('Product Manual Download endpoint validates requests and handles email deli
     }
 
     const validForm = {
-      manualName: 'PQI 380 Plus Manual',
       name: 'Test User',
       company: 'Test Company',
       country: 'United States',
@@ -80,36 +78,44 @@ test('Product Manual Download endpoint validates requests and handles email deli
       reach: 'Internet',
     };
 
-    await t.test('accepts an approved manual and sends notification', async () => {
-      const response = await submitForm(validForm);
+    await t.test('accepts all 18 approved manual names', async (t) => {
+      assert.equal(manualNames.size, 18);
 
-      assert.equal(response.status, 204);
-      assert.equal(sentEmails.length, 1);
+      for (const manualName of manualNames) {
+        await t.test(manualName, async () => {
+          const previousEmailCount = sentEmails.length;
 
-      assert.equal(
-        sentEmails[0].subject,
-        'TransTech Systems Product Manual Download'
-      );
+          const response = await submitForm({
+            ...validForm,
+            manualName,
+          });
 
-      assert.equal(
-        sentEmails[0].replyTo,
-        'test@example.com'
-      );
+          assert.equal(response.status, 204);
+          assert.equal(sentEmails.length, previousEmailCount + 1);
 
-      assert.match(
-        sentEmails[0].html,
-        /PQI 380 Plus Manual Download/
-      );
+          assert.match(
+            sentEmails.at(-1).html,
+            new RegExp(manualName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          );
+
+          assert.equal(
+            sentEmails.at(-1).replyTo,
+            validForm.email
+          );
+        });
+      }
     });
 
     await t.test('rejects an unknown manual name', async () => {
+      const previousEmailCount = sentEmails.length;
+
       const response = await submitForm({
         ...validForm,
         manualName: 'Unknown Manual',
       });
 
       assert.equal(response.status, 400);
-      assert.equal(sentEmails.length, 1);
+      assert.equal(sentEmails.length, previousEmailCount);
     });
 
     await t.test('rejects missing required fields', async () => {
@@ -126,6 +132,7 @@ test('Product Manual Download endpoint validates requests and handles email deli
     await t.test('rejects invalid email addresses', async () => {
       const response = await submitForm({
         ...validForm,
+        manualName: 'PQI 380 Plus Manual',
         email: 'not-an-email',
       });
 
@@ -135,6 +142,7 @@ test('Product Manual Download endpoint validates requests and handles email deli
     await t.test('rejects populated honeypot fields', async () => {
       const response = await submitForm({
         ...validForm,
+        manualName: 'PQI 380 Plus Manual',
         businessAddress: 'Spam submission',
       });
 
@@ -144,7 +152,10 @@ test('Product Manual Download endpoint validates requests and handles email deli
     await t.test('handles email delivery failures', async () => {
       simulateEmailFailure = true;
 
-      const response = await submitForm(validForm);
+      const response = await submitForm({
+        ...validForm,
+        manualName: 'PQI 380 Plus Manual',
+      });
 
       assert.equal(response.status, 500);
 
