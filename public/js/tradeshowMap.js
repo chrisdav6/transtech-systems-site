@@ -1,7 +1,7 @@
 // Asynchronously Load the map API
 var script = document.createElement('script');
 script.src =
-  'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4_58SHQlSV-JLIOT4y2yYWxM62U2kO38&callback=initMap';
+  `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(window.googleMapsApiKey)}&callback=initMap`;
 document.body.appendChild(script);
 
 function initMap() {

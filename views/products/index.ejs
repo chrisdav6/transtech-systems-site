@@ -126,6 +126,9 @@
           <div>
             <section id="indexMap" class="my-5"></section>
             <!-- Google Map Script -->
+            <script>
+              window.googleMapsApiKey = <%- JSON.stringify(googleMapsApiKey).replace(/</g, '\\u003c') %>;
+            </script>
             <script src="<%= assetUrl('/js/indexMap.js') %>"></script>
           </div>
 

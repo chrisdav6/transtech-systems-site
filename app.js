@@ -23,6 +23,14 @@ const app = express();
 app.set('trust proxy', 'loopback');
 
 // ==========================================
+// GOOGLE MAPS API CONFIGURATION
+// ==========================================
+
+// Public browser API key, selected by deployment environment.
+// Access is controlled through Google Cloud API and website restrictions.
+app.locals.googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY || '';
+
+// ==========================================
 // STATIC ASSET VERSIONING
 // ==========================================
 
