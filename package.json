@@ -19,7 +19,7 @@
     "dotenv": "^6.1.0",
     "ejs": "^3.1.10",
     "express": "^4.22.3",
-    "express-rate-limit": "^8.7.3",
+    "express-rate-limit": "8.7.4",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.19.0",
     "font-awesome": "^4.7.0",
