@@ -1,7 +1,12 @@
-<% include ./partials/header %>
+<%- include('./partials/header') %>
 
   <!-- map section -->
   <section id="map"></section>
+  <!-- Google Maps API configuration -->
+  <script>
+    window.googleMapsApiKey = <%- JSON.stringify(googleMapsApiKey).replace(/</g, String.fromCharCode(92) + "u003c") %>;
+  </script>
+
   <!-- Google Map Script -->
   <script src="<%= assetUrl('/js/tradeshowMap.js') %>"></script>
   <!-- /map section -->
@@ -2931,4 +2936,4 @@
   <!-- /tradeshow Section -->
 
 
-  <% include ./partials/footer %>
+  <%- include('./partials/footer') %>

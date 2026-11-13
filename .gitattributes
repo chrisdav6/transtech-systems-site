@@ -1,0 +1,29 @@
+# Automatically detect text files and normalize them to LF in Git
+* text=auto
+
+# Keep application source files as LF in the working directory
+*.js    text eol=lf
+*.json  text eol=lf
+*.ejs   text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+
+# Shell scripts must use LF
+*.sh    text eol=lf
+
+# Preserve binary files
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.pdf   binary
+*.mp4   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary

@@ -1,4 +1,4 @@
-<% include ./partials/header %>
+<%- include('./partials/header') %>
 
 	<!-- Contact Section -->
 	<section id="contact">
@@ -10,7 +10,15 @@
 					<hr>
 
 					<!-- Node Flash Message -->
-					<% if(flash && flash.success && flash.success.length> 0) { %>
+					<% if(flash && flash.error && flash.error.length > 0) { %>
+         <div class="alert alert-danger alert-dismissible fade show" role="alert">
+             <%= flash.error %>
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+             </button>
+         </div>
+     <% } %>
+     <% if(flash && flash.success && flash.success.length> 0) { %>
 						<div class="alert alert-success alert-dismissible fade show" role="alert">
 							<%= flash.success %>
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -36,6 +44,11 @@
 							</p>
 
 							<form action="/products/tradeUp" method="post" class="d-flex flex-column">
+<div class="position-absolute" style="left:-10000px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+    <label for="website_url">Website URL (leave blank)</label>
+    <input type="text" name="website_url" id="website_url" tabindex="-1" autocomplete="off">
+</div>
+
 
 								<div class="form-group">
 									<label for="name">Name</label>
@@ -422,4 +435,4 @@
 	</section>
 	<!-- /contact Section -->
 
-	<% include ./partials/footer %>
+	<%- include('./partials/footer') %>

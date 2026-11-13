@@ -1,6 +1,14 @@
-<% include ./partials/header %>
+<%- include('./partials/header') %>
 
   <!-- Newsletter Sign Up Node Flash Message -->
+  <% if(flash && flash.error && flash.error.length > 0) { %>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <%= flash.error %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+  <% } %>
   <% if(flash && flash.success && flash.success.length> 0) { %>
     <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
       <%= flash.success %>
@@ -118,6 +126,9 @@
           <div>
             <section id="indexMap" class="my-5"></section>
             <!-- Google Map Script -->
+            <script>
+              window.googleMapsApiKey = <%- JSON.stringify(googleMapsApiKey).replace(/</g, '\\u003c') %>;
+            </script>
             <script src="<%= assetUrl('/js/indexMap.js') %>"></script>
           </div>
 
@@ -483,4 +494,4 @@
         </div>
       </div>
 
-      <% include ./partials/index_footer %>
+      <%- include('./partials/index_footer') %>
