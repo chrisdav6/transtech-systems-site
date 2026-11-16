@@ -81,10 +81,10 @@ function initMap() {
     ['CFU International Trade & Services, Iraq', 32.850776, 42.844469],
     ['JR Technical Services, Ireland', 53.362026, -8.006287],
     ['Nishio Rent All Co., Ltd., Japan', 35.871247, 138.295898, 'service'],
-    ['BAV Corporation / Uneedus Group LLP, Kazakhstan', 48.224673, 66.796875],
+    ['BAV Corporation, Kazakhstan', 48.224673, 66.796875],
     ['Sam Jun Scientific Co., Ltd., Korea', 36.615528, 127.902832],
     ['Burgan Equipment Co., Kuwait', 29.43018, 47.648215],
-    ['BAV Corporation / Uneedus Group LLP, Kyrgyzstan', 41.533254, 74.476318],
+    ['BAV Corporation, Kyrgyzstan', 41.533254, 74.476318],
     ['Bincis UAB, Latvia', 56.932987, 25.010376],
     ['Bincis UAB, Lithuania', 55.463285, 23.917236],
     ['MS Instruments (SEA) Sdn Bhd, Malaysia', 4.19303, 102.172852],
@@ -122,12 +122,12 @@ function initMap() {
     ['M/s. Taisei International, Sri Lanka', 7.8775394, 80.7003428],
     ['ABAS AS, Sweden', 63.832054, 16.829426],
     ['Beratest AG, Switzerland', 46.991494, 8.234253],
-    ['BAV Corporation / Uneedus Group LLP, Tajikistan', 38.882481, 70.817871],
+    ['BAV Corporation, Tajikistan', 38.882481, 70.817871],
     ['Beratest AG, Tchad', 14.98724, 18.896484],
     // ['Asia Testing Equipment Co., Ltd., Thailand', 15.961329, 100.722656],
     ['Beratest AG, Togo', 8.439772, 1.07666],
     ['Beratest AG, Tunisie', 34.343436, 9.349365],
-    ['BAV Corporation / Uneedus Group LLP, Turkmenistan', 39.571822, 59.040527],
+    ['BAV Corporation, Turkmenistan', 39.571822, 59.040527],
     [
       'CFU International Trade & Services, Turkey',
       39.164141,
@@ -144,7 +144,7 @@ function initMap() {
     ['JR Technical Services, United Kindom', 54.393352, -2.06543, 'service'],
     ['TransTech Systems, United States', 42.776429, -73.866104, 'service'],
     ['Solotest, Uruguay', -32.490907, -56.0182],
-    ['BAV Corporation / Uneedus Group LLP, Uzbekistan', 42.016652, 63.457031],
+    ['BAV Corporation, Uzbekistan', 42.016652, 63.457031],
     ['Nishio Rent All Co., Ltd., Vietnam', 13.20786, 108.511963],
   ];
 
@@ -708,11 +708,11 @@ function initMap() {
     // Kazakhstan (CIS)
     [
       '<div class="map-text">' +
-        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation</span><br>' +
         '<hr>' +
-        '+7 771 808 88 88<br>' +
-        'Attn: Nadzhot Kholikov<br>' +
-        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+1 781-784-3095<br>' +
+        'Attn: Alexander Baranov<br>' +
+        '<p><a class="link" href="mailto:alex.baranov@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -744,11 +744,11 @@ function initMap() {
     // Kyrgyzstan (CIS)
     [
       '<div class="map-text">' +
-        '<span>Bav Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation</span><br>' +
         '<hr>' +
-        '+7 771 808 88 88<br>' +
-        'Attn: Nadzhot Kholikov<br>' +
-        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+1 781-784-3095<br>' +
+        'Attn: Alexander Baranov<br>' +
+        '<p><a class="link" href="mailto:alex.baranov@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -1139,11 +1139,11 @@ function initMap() {
     // Tajikistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation</span><br>' +
         '<hr>' +
-        '+7 771 808 88 88<br>' +
-        'Attn: Nadzhot Kholikov<br>' +
-        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+1 781-784-3095<br>' +
+        'Attn: Alexander Baranov<br>' +
+        '<p><a class="link" href="mailto:alex.baranov@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -1196,11 +1196,11 @@ function initMap() {
     // Turkmenistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation</span><br>' +
         '<hr>' +
-        '+7 771 808 88 88<br>' +
-        'Attn: Nadzhot Kholikov<br>' +
-        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+1 781-784-3095<br>' +
+        'Attn: Alexander Baranov<br>' +
+        '<p><a class="link" href="mailto:alex.baranov@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
@@ -1282,11 +1282,11 @@ function initMap() {
     // Uzbekistan (CIS)
     [
       '<div class="map-text">' +
-        '<span>BAV Corporation / Uneedus Group LLP</span><br>' +
+        '<span>BAV Corporation</span><br>' +
         '<hr>' +
-        '+7 771 808 88 88<br>' +
-        'Attn: Nadzhot Kholikov<br>' +
-        '<p><a class="link" href="mailto:uneedusgroup@gmail.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
+        '+1 781-784-3095<br>' +
+        'Attn: Alexander Baranov<br>' +
+        '<p><a class="link" href="mailto:alex.baranov@bavcorporation.com?subject=Inquiry from TransTech Systems Website"><i class="fas fa-envelope"></i> Email</a></p>' +
         '<p class="mt-0"><a class="link" href="http://bavcompany.ru" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
