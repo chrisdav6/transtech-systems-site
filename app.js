@@ -102,14 +102,22 @@ if (!process.env.SESSION_SECRET) {
   throw new Error('SESSION_SECRET environment variable is required.');
 }
 
-app.use(
-  session({
-    store: new FileStore({
+const isLocalWindowsDevelopment =
+  process.platform === 'win32' &&
+  process.env.NODE_ENV === 'development';
+
+const sessionStore = isLocalWindowsDevelopment
+  ? new session.MemoryStore()
+  : new FileStore({
       path: process.env.SESSION_STORE_PATH || '/var/lib/transtech-sessions',
       ttl: 86400,
       retries: 0,
       reapInterval: 3600,
-    }),
+    });
+
+app.use(
+  session({
+    store: sessionStore,
     secret: process.env.SESSION_SECRET,
     saveUninitialized: false,
     resave: false,
