@@ -416,6 +416,14 @@ app.get('/products', function (req, res) {
   });
 });
 
+// Redirect lowercase PQI 380+ URL to canonical URL
+app.get('/products/pqi380plus', function (req, res, next) {
+  if (req.path === '/products/pqi380plus') {
+    return res.redirect(301, '/products/pqi380Plus');
+  }
+  next();
+});
+
 //Products
 app.get('/products/pqi380Plus', function (req, res) {
   res.render('products/pqi380Plus', {
