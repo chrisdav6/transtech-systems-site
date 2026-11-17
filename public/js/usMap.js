@@ -5,7 +5,10 @@ script.src =
 script.async = true;
 document.body.appendChild(script);
 
-function initMap() {
+async function initMap() {
+  const { AdvancedMarkerElement, PinElement } =
+    await google.maps.importLibrary('marker');
+
   var map;
 
   var mapOptions = {
@@ -14,18 +17,48 @@ function initMap() {
       lng: -90.91,
     },
     zoom: 4,
+    mapId: '82d73db768f1e83e40076e35',
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
 
-  var icons = {
-    transtech: {
-      icon: '../img/transtech-map-icon-new.png',
+  // Create matching pins for the U.S. map legend
+  const legendMarkerStyles = {
+    distributor: {
+      background: '#EA4335',
+      borderColor: '#C5221F',
+      glyphColor: '#C5221F',
     },
     direct: {
-      icon: '../img/transtech-map-icon-direct.png',
+      background: '#37B3E7',
+      borderColor: '#1687B8',
+      glyphColor: '#1687B8',
+    },
+    transtech: {
+      background: '#EDA836',
+      borderColor: '#C18420',
+      glyphColor: '#C18420',
     },
   };
+
+  const legendMarkers = {
+    'legend-distributor': 'distributor',
+    'legend-direct': 'direct',
+    'legend-transtech': 'transtech',
+  };
+
+  Object.entries(legendMarkers).forEach(([elementId, markerType]) => {
+    const container = document.getElementById(elementId);
+
+    if (container) {
+      const pin = new PinElement({
+        ...legendMarkerStyles[markerType],
+        scale: 0.65,
+      });
+
+      container.appendChild(pin);
+    }
+  });
 
   // Display a map on the page
   (function () {
@@ -720,38 +753,66 @@ function initMap() {
   for (var i = 0; i < markers.length; i++) {
     var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
 
-    if (markers[i][3] == 'transtech') {
-      marker = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: markers[i][0],
-        icon: icons.transtech.icon,
-      });
-    } else if (markers[i][3] == 'direct') {
-      marker = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: markers[i][0],
-        icon: icons.direct.icon,
-      });
-    } else {
-      marker = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: markers[i][0],
-      });
-    }
+    // Determine the marker category
+    const markerType = markers[i][3] || 'distributor';
 
-    // Allow each marker to have an info window
-    google.maps.event.addListener(
-      marker,
-      'click',
+    // Create a pin using the same styling as the legend
+    const pin = new PinElement(
+      legendMarkerStyles[markerType] || legendMarkerStyles.distributor,
+    );
+
+    // Stagger the marker drop animation
+    pin.classList.add('us-marker-drop');
+    pin.style.animationDelay = `${i * 80}ms`;
+
+    // Create the Advanced Marker
+    marker = new AdvancedMarkerElement({
+      position: position,
+      map: map,
+      title: markers[i][0],
+      content: pin,
+    });
+
+    // Enable clickable information windows
+    marker.gmpClickable = true;
+
+    marker.addEventListener(
+      'gmp-click',
       (function (marker, i) {
         return function () {
           infoWindow.setContent(infoWindowContent[i][0]);
-          infoWindow.open(map, marker);
+          infoWindow.open({
+            map: map,
+            anchor: marker,
+          });
         };
       })(marker, i),
     );
   }
 }
+
+// Animate U.S. map markers as they appear
+const usMarkerStyles = document.createElement('style');
+
+usMarkerStyles.textContent = `
+  @keyframes usMarkerDrop {
+    0% { opacity: 0; transform: translateY(-45px); }
+    70% { opacity: 1; transform: translateY(5px); }
+    85% { transform: translateY(-3px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .us-marker-drop {
+    opacity: 0;
+    animation: usMarkerDrop 650ms ease-out forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .us-marker-drop {
+      opacity: 1;
+      animation: none;
+    }
+  }
+`;
+
+document.head.appendChild(usMarkerStyles);
