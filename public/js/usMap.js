@@ -763,7 +763,7 @@ async function initMap() {
 
     // Stagger the marker drop animation
     pin.classList.add('us-marker-drop');
-    pin.style.animationDelay = `${i * 80}ms`;
+    pin.style.animationDelay = `${i * 40}ms`;
 
     // Create the Advanced Marker
     marker = new AdvancedMarkerElement({
@@ -804,7 +804,7 @@ usMarkerStyles.textContent = `
 
   .us-marker-drop {
     opacity: 0;
-    animation: usMarkerDrop 650ms ease-out forwards;
+    animation: usMarkerDrop 450ms ease-out forwards;
   }
 
   @media (prefers-reduced-motion: reduce) {

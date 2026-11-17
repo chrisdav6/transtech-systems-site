@@ -5,8 +5,30 @@ script.src =
 script.async = true;
 document.body.appendChild(script);
 
-function initMap() {
+async function initMap() {
+  const { AdvancedMarkerElement, PinElement } =
+    await google.maps.importLibrary('marker');
+
   var map;
+
+  // Match the standard red distributor markers on the U.S. map
+  const distributorPinStyle = {
+    background: '#EA4335',
+    borderColor: '#C5221F',
+    glyphColor: '#C5221F',
+  };
+
+    // Create a matching red pin for the International Distributor legend
+  const legendContainer = document.getElementById('legend-distributor');
+
+  if (legendContainer) {
+    const legendPin = new PinElement({
+      ...distributorPinStyle,
+      scale: 0.65,
+    });
+
+    legendContainer.appendChild(legendPin);
+  }
 
   var mapOptions = {
     center: {
@@ -14,6 +36,7 @@ function initMap() {
       lng: 17.234,
     },
     zoom: 2.3,
+    mapId: '82d73db768f1e83e40076e35',
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -1305,40 +1328,78 @@ function initMap() {
     ],
   ];
 
-  // Display multiple markers on a map
-  var infoWindow = new google.maps.InfoWindow(),
-    marker,
-    i;
+    // Display multiple markers on the map
+  const infoWindow = new google.maps.InfoWindow();
 
-  // Loop through our array of markers & place each one on the map
-  for (i = 0; i < markers.length; i++) {
-    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+  // Create distributor and Authorized Service Center markers
+  for (let i = 0; i < markers.length; i++) {
+    const position = {
+      lat: markers[i][1],
+      lng: markers[i][2],
+    };
 
-    if (markers[i][3] == 'service') {
-      marker = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: markers[i][0],
-        icon: icons.service.icon,
-      });
+    const isServiceCenter = markers[i][3] === 'service';
+    let markerContent;
+
+    if (isServiceCenter) {
+      // Preserve the original custom Service Center artwork
+      const serviceIcon = document.createElement('img');
+      serviceIcon.src = '../img/transtech-map-icon-service.png';
+      serviceIcon.alt = '';
+      serviceIcon.width = 26;
+      serviceIcon.style.height = 'auto';
+
+      markerContent = serviceIcon;
     } else {
-      marker = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: markers[i][0],
-      });
+      // Match the standard red markers on the U.S. Distributor map
+      markerContent = new PinElement(distributorPinStyle);
     }
 
-    // Allow each marker to have an info window
-    google.maps.event.addListener(
-      marker,
-      'click',
-      (function (marker, i) {
-        return function () {
-          infoWindow.setContent(infoWindowContent[i][0]);
-          infoWindow.open(map, marker);
-        };
-      })(marker, i),
-    );
+    // Stagger the marker drop animation
+    markerContent.classList.add('int-marker-drop');
+    markerContent.style.animationDelay = `${i * 20}ms`;
+
+    const marker = new AdvancedMarkerElement({
+      position: position,
+      map: map,
+      title: markers[i][0],
+      content: markerContent,
+      gmpClickable: true,
+    });
+
+    // Open the corresponding distributor information window
+    marker.addEventListener('gmp-click', () => {
+      infoWindow.setContent(infoWindowContent[i][0]);
+      infoWindow.open({
+        map: map,
+        anchor: marker,
+      });
+    });
   }
 }
+
+// Animate International Distributor map markers
+const intMarkerStyles = document.createElement('style');
+
+intMarkerStyles.textContent = `
+  @keyframes intMarkerDrop {
+    0% { opacity: 0; transform: translateY(-45px); }
+    70% { opacity: 1; transform: translateY(5px); }
+    85% { transform: translateY(-3px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .int-marker-drop {
+    opacity: 0;
+    animation: intMarkerDrop 450ms ease-out forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .int-marker-drop {
+      opacity: 1;
+      animation: none;
+    }
+  }
+`;
+
+document.head.appendChild(intMarkerStyles);
