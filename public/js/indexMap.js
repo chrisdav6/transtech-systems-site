@@ -5,7 +5,10 @@ script.src =
 script.async = true;
 document.body.appendChild(script);
 
-function initMap() {
+async function initMap() {
+  const { AdvancedMarkerElement } =
+    await google.maps.importLibrary('marker');
+
   var map;
 
   var mapOptions = {
@@ -13,89 +16,10 @@ function initMap() {
       lat: 28.711,
       lng: 17.234,
     },
-    mapTypeId: 'terrain',
+    mapTypeId: 'roadmap',
     zoom: 3,
     scrollwheel: false,
-    styles: [
-      { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
-      { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-      { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
-      {
-        featureType: 'administrative.locality',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#d59563' }],
-      },
-      {
-        featureType: 'poi',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#d59563' }],
-      },
-      {
-        featureType: 'poi.park',
-        elementType: 'geometry',
-        stylers: [{ color: '#263c3f' }],
-      },
-      {
-        featureType: 'poi.park',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#6b9a76' }],
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry',
-        stylers: [{ color: '#38414e' }],
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry.stroke',
-        stylers: [{ color: '#212a37' }],
-      },
-      {
-        featureType: 'road',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#9ca5b3' }],
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'geometry',
-        stylers: [{ color: '#746855' }],
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'geometry.stroke',
-        stylers: [{ color: '#1f2835' }],
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#f3d19c' }],
-      },
-      {
-        featureType: 'transit',
-        elementType: 'geometry',
-        stylers: [{ color: '#2f3948' }],
-      },
-      {
-        featureType: 'transit.station',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#d59563' }],
-      },
-      {
-        featureType: 'water',
-        elementType: 'geometry',
-        stylers: [{ color: '#17263c' }],
-      },
-      {
-        featureType: 'water',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#515c6d' }],
-      },
-      {
-        featureType: 'water',
-        elementType: 'labels.text.stroke',
-        stylers: [{ color: '#17263c' }],
-      },
-    ],
+    mapId: '82d73db768f1e83e506ef0e3',
   };
 
   // Display a map on the page
@@ -279,25 +203,132 @@ function initMap() {
     ['Vietnam', 13.20786, 108.511963],
   ];
 
-  // Loop through our array of markers & place each one on the map
-  for (i = 0; i < markers.length; i++) {
-    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
-    // var icon = "http://maps.google.com/mapfiles/kml/pal3/icon49.png";
-    var yellowT = {
-      path: 'M303.49,409.76v-14.74h-5.23v-4.88h15.93v4.88h-5.23v14.62l11.81-11.8c0.51-0.52,0.51-1.35,0-1.87l-13.67-13.66 c-0.51-0.51-1.35-0.51-1.86,0l-13.66,13.66c-0.52,0.52-0.52,1.35,0,1.87L303.49,409.76z',
-      fillColor: '#FFDD00',
-      fillOpacity: 0.8,
-      scale: 1,
-      strokeColor: 'black',
-      strokeWeight: 1,
-      anchor: new google.maps.Point(310, 400), // Used to correct offset when using custom svg icon, delete if using standard icon
+    // Custom yellow TransTech marker artwork
+  const yellowTPath =
+    'M303.49,409.76v-14.74h-5.23v-4.88h15.93v4.88h-5.23v14.62l11.81-11.8c0.51-0.52,0.51-1.35,0-1.87l-13.67-13.66 c-0.51-0.51-1.35-0.51-1.86,0l-13.66,13.66c-0.52,0.52-0.52,1.35,0,1.87L303.49,409.76z';
+
+  // Create the custom SVG marker
+  function createYellowMarker() {
+    const namespace = 'http://www.w3.org/2000/svg';
+
+    const svg = document.createElementNS(namespace, 'svg');
+    svg.setAttribute('viewBox', '288 380 35 32');
+    svg.setAttribute('width', '35');
+    svg.setAttribute('height', '32');
+    svg.setAttribute('aria-hidden', 'true');
+
+    const path = document.createElementNS(namespace, 'path');
+    path.setAttribute('d', yellowTPath);
+    path.setAttribute('fill', '#FFDD00');
+    path.setAttribute('fill-opacity', '0.8');
+    path.setAttribute('stroke', 'black');
+    path.setAttribute('stroke-width', '1');
+
+    svg.appendChild(path);
+    return svg;
+  }
+
+  // Homepage marker drop animation
+  const indexMarkerStyles = document.createElement('style');
+
+  indexMarkerStyles.textContent = `
+    @keyframes indexMarkerDrop {
+      0% {
+        opacity: 0;
+        transform: translateY(-45px);
+      }
+      70% {
+        opacity: 1;
+        transform: translateY(5px);
+      }
+      85% {
+        transform: translateY(-3px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .index-marker-drop {
+      opacity: 0;
+    }
+
+    .index-marker-drop.animate {
+      animation: indexMarkerDrop 450ms ease-out forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .index-marker-drop {
+        opacity: 1;
+      }
+
+      .index-marker-drop.animate {
+        animation: none;
+      }
+    }
+  `;
+
+  document.head.appendChild(indexMarkerStyles);
+
+  // Display the worldwide markers
+  const markerElements = [];
+
+  for (let i = 0; i < markers.length; i++) {
+    const position = {
+      lat: markers[i][1],
+      lng: markers[i][2],
     };
 
-    marker = new google.maps.Marker({
+    const markerContent = createYellowMarker();
+
+    // Keep markers hidden until the map scrolls into view
+    markerContent.classList.add('index-marker-drop');
+
+    new AdvancedMarkerElement({
       position: position,
-      icon: yellowT,
       map: map,
       title: markers[i][0],
+      content: markerContent,
     });
+
+    markerElements.push(markerContent);
+  }
+
+  // Start marker animations when the map scrolls into view
+  const mapContainer = document.getElementById('indexMap');
+
+  const startMarkerAnimation = () => {
+    // Shuffle marker order using Fisher-Yates
+    const shuffledMarkers = [...markerElements];
+
+    for (let i = shuffledMarkers.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+
+      [shuffledMarkers[i], shuffledMarkers[j]] =
+        [shuffledMarkers[j], shuffledMarkers[i]];
+    }
+
+    // Animate markers in random order with consistent timing
+    shuffledMarkers.forEach((markerElement, index) => {
+      markerElement.style.animationDelay = `${index * 20}ms`;
+      markerElement.classList.add('animate');
+    });
+  };
+
+  if ('IntersectionObserver' in window) {
+    const mapObserver = new IntersectionObserver((entries, observer) => {
+      if (entries[0].isIntersecting) {
+        startMarkerAnimation();
+        observer.disconnect();
+      }
+    }, {
+      threshold: 0.25,
+    });
+
+    mapObserver.observe(mapContainer);
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    startMarkerAnimation();
   }
 }
