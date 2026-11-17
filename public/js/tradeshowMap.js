@@ -5,7 +5,10 @@ script.src =
 script.async = true;
 document.body.appendChild(script);
 
-function initMap() {
+async function initMap() {
+  const { AdvancedMarkerElement, PinElement } =
+    await google.maps.importLibrary('marker');
+
   var map;
 
   var mapOptions = {
@@ -14,6 +17,7 @@ function initMap() {
       lng: -94.5,
     },
     zoom: 4.3,
+    mapId: '82d73db768f1e83e40076e35',
     mapTypeId: 'roadmap',
     scrollwheel: false,
   };
@@ -710,22 +714,74 @@ function initMap() {
   for (var i = 0; i < markers.length; i++) {
     var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
 
-    marker = new google.maps.Marker({
+    const pin = new PinElement();
+
+    // Prepare the pin for a staggered drop animation
+    pin.classList.add('tradeshow-marker-drop');
+    pin.style.animationDelay = `${i * 80}ms`;
+
+    marker = new AdvancedMarkerElement({
       position: position,
       map: map,
       title: markers[i][0],
+      content: pin,
     });
 
-    // Allow each marker to have an info window
-    google.maps.event.addListener(
-      marker,
-      'click',
+    // Enable marker interaction
+    marker.gmpClickable = true;
+
+    // Open the corresponding tradeshow information window
+    marker.addEventListener(
+      'gmp-click',
       (function (marker, i) {
         return function () {
           infoWindow.setContent(infoWindowContent[i][0]);
-          infoWindow.open(map, marker);
+          infoWindow.open({
+            map: map,
+            anchor: marker,
+          });
         };
       })(marker, i),
     );
   }
 }
+
+// Add the tradeshow marker drop animation styles
+const tradeshowMarkerStyles = document.createElement('style');
+
+tradeshowMarkerStyles.textContent = `
+  @keyframes tradeshowMarkerDrop {
+    0% {
+      opacity: 0;
+      transform: translateY(-45px);
+    }
+
+    70% {
+      opacity: 1;
+      transform: translateY(5px);
+    }
+
+    85% {
+      transform: translateY(-3px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tradeshow-marker-drop {
+    opacity: 0;
+    animation: tradeshowMarkerDrop 650ms ease-out forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tradeshow-marker-drop {
+      opacity: 1;
+      animation: none;
+    }
+  }
+`;
+
+document.head.appendChild(tradeshowMarkerStyles);
