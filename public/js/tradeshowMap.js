@@ -36,7 +36,7 @@ async function initMap() {
     // ['CalAPA Fall, Sacramento, CA', 38.613259, -121.471408],
     // ['CalAPA Spring, Pomona, CA', 34.053067, -117.749428],
     // ['Tacera, College Station, TX', 30.623946, -96.319299],
-    ['CalCima, Monterey, CA', 36.594714, -121.886599],
+    // ['CalCima, Monterey, CA', 36.594714, -121.886599],
     // ['Intermat ASEAN, Bangkok, Thailand', 13.588022, 100.580894],
     // ['AASHTO Annual Meeting, Philadelphia, PA', 39.95585, -75.164579],
     // ['NCAUPG, Indianapolis , IN', 39.778201, -86.157126],
@@ -177,16 +177,16 @@ async function initMap() {
     // ],
 
     //CalCima Education Conference
-    [
-      '<div class="map-text">' +
-        '<img class="d-block mb-3" width="100" src="../img/calcimaLogo.png">' +
-        '<span>2026 CalCima Education Conference</span><br>' +
-        '<hr>' +
-        'Monterey, CA<br>' +
-        'November 3-6, 2026<br>' +
-        '<p><a class="link" href="https://calcima.org/page/educationconference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
-        '</div>',
-    ],
+    // [
+    //   '<div class="map-text">' +
+    //     '<img class="d-block mb-3" width="100" src="../img/calcimaLogo.png">' +
+    //     '<span>2026 CalCima Education Conference</span><br>' +
+    //     '<hr>' +
+    //     'Monterey, CA<br>' +
+    //     'November 3-6, 2026<br>' +
+    //     '<p><a class="link" href="https://calcima.org/page/educationconference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+    //     '</div>',
+    // ],
 
     //Intermat ASEAN
     // [
