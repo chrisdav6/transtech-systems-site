@@ -300,11 +300,11 @@ async function initMap() {
     [
       '<div class="map-text">' +
         '<img class="d-block mb-3" width="100" src="../img/penn-asphalt-logo.png">' +
-        '<span>67th Annual PAPA Conference</span><br>' +
+        '<span>67th Annual PAPA Conference - Booth #18</span><br>' +
         '<hr>' +
         'Hershey, PA<br>' +
         'January 18-20, 2027<br>' +
-        '<p><a class="link" href="https://www.pa-asphalt.org/events/all-events/papa-main-events/151-67th-annual-papa-conference-save-the-date" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
+        '<p><a class="link" href="https://www.pa-asphalt.org/events/papa-events/papa-main-events/188-2027-67th-annual-papa-conference" target="_blank"><i class="fab fa-chrome"></i> Visit Website</a></p>' +
         '</div>',
     ],
 
