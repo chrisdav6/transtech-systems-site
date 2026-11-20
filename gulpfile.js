@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const sharp = require('sharp');
+const fs = require('node:fs/promises');
 
 // Compile Sass
 gulp.task('sass', function () {
@@ -31,4 +33,37 @@ gulp.task('js', function () {
     .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('default', gulp.series('sass', 'css', 'js'));
+// Generate optimized WebP copies of homepage history images.
+// Original JPEG and PNG files are never modified.
+gulp.task('images', async function () {
+  const imageDir = 'public/img/history';
+  const files = await fs.readdir(imageDir);
+
+  for (const file of files) {
+    if (!/\.(jpe?g|png)$/i.test(file)) continue;
+
+    const source = `${imageDir}/${file}`;
+    const destination = `${imageDir}/${file.replace(/\.(jpe?g|png)$/i, '.webp')}`;
+
+    const sourceStats = await fs.stat(source);
+
+    try {
+      const destinationStats = await fs.stat(destination);
+
+      // Skip images that haven't changed.
+      if (destinationStats.mtimeMs >= sourceStats.mtimeMs) {
+        continue;
+      }
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+    }
+
+    await sharp(source)
+      .webp({ quality: 80, effort: 6 })
+      .toFile(destination);
+
+    console.log(`Optimized: ${file}`);
+  }
+});
+
+gulp.task('default', gulp.series('sass', 'css', 'js', 'images'));
