@@ -16,11 +16,13 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
 
   const transporterPath = require.resolve('../utils/mailTransporter');
   const captchaPath = require.resolve('../utils/verifyRecaptcha');
+  const limiterPath = require.resolve('../utils/formRateLimiter');
 
   const sentEmails = [];
 
   const originalTransporter = require.cache[transporterPath];
   const originalCaptcha = require.cache[captchaPath];
+  const originalLimiter = require.cache[limiterPath];
 
   require.cache[transporterPath] = {
     id: transporterPath,
@@ -39,6 +41,14 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     filename: captchaPath,
     loaded: true,
     exports: async () => true,
+  };
+
+  // Rate limiting is verified separately in dedicated tests.
+  require.cache[limiterPath] = {
+    id: limiterPath,
+    filename: limiterPath,
+    loaded: true,
+    exports: (req, res, next) => next(),
   };
 
   let server;
@@ -63,7 +73,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       email: 'test@example.com',
       reach: 'Internet',
       reachInfo: 'Search & <b>Referral</b>',
-      moreInfo: 'No',
+
       message: 'Automated Sales Request & HTML escaping test',
       'g-recaptcha-response': 'mock-valid-token',
     });
@@ -101,6 +111,30 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       /Automated Sales Request &amp; HTML escaping test/
     );
 
+    // Verify multiple product selections are preserved in the email.
+    const multiProductData = new URLSearchParams(formData);
+    multiProductData.delete('moreInfo');
+    multiProductData.append('moreInfo', 'PQI 380 Plus');
+    multiProductData.append('moreInfo', 'PQI 380go');
+
+    const multiProductResponse = await fetch(
+      `http://127.0.0.1:${port}/products/salesRequest`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+        },
+        body: multiProductData,
+      }
+    );
+
+    assert.equal(multiProductResponse.status, 302);
+    assert.equal(sentEmails.length, 2);
+    assert.match(sentEmails[1].html, /PQI 380 Plus/);
+    assert.match(sentEmails[1].html, /PQI 380go/);
+
     // Reject Sales Requests with missing required fields or invalid email.
     const invalidSalesCases = [
       { field: 'name', value: '' },
@@ -133,7 +167,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       // Invalid submissions must never generate an email.
       assert.equal(
         sentEmails.length,
-        1,
+        2,
         `Invalid ${field} submission should not send an email`
       );
     }
@@ -164,7 +198,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // Rejected submission must not generate another email.
-    assert.equal(sentEmails.length, 1);
+    assert.equal(sentEmails.length, 2);
 
     // International Sales Request with privacy consent must succeed.
     const consentedSalesData = new URLSearchParams(formData);
@@ -192,9 +226,9 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // Accepted international Sales Request generates one additional email.
-    assert.equal(sentEmails.length, 2);
+    assert.equal(sentEmails.length, 3);
     assert.equal(
-      sentEmails[1].subject,
+      sentEmails[2].subject,
       'TransTech Systems Sales Request Form'
     );
 
@@ -242,33 +276,33 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // One Sales email + two Repair emails.
-    assert.equal(sentEmails.length, 4);
+    assert.equal(sentEmails.length, 5);
 
     // Internal Repair Request notification.
     assert.equal(
-      sentEmails[2].subject,
+      sentEmails[3].subject,
       'TransTech Systems Repair Request Form'
     );
     assert.match(
-      sentEmails[2].html,
+      sentEmails[3].html,
       /Automated Repair Request test/
     );
-    assert.match(sentEmails[2].html, /TEST-12345/);
+    assert.match(sentEmails[3].html, /TEST-12345/);
 
     // Customer confirmation.
     assert.equal(
-      sentEmails[3].subject,
+      sentEmails[4].subject,
       'TransTech Systems Calibration/Repair Request Received'
     );
-    assert.equal(sentEmails[3].to, 'test@example.com');
-    assert.match(sentEmails[3].html, /TEST-12345/);
+    assert.equal(sentEmails[4].to, 'test@example.com');
+    assert.match(sentEmails[4].html, /TEST-12345/);
 
     // Verify HTML-sensitive customer information is safely escaped.
-    assert.match(sentEmails[2].html, /Repair &amp; Test User/);
-    assert.doesNotMatch(sentEmails[2].html, /<b>Test<\/b>/);
-
     assert.match(sentEmails[3].html, /Repair &amp; Test User/);
     assert.doesNotMatch(sentEmails[3].html, /<b>Test<\/b>/);
+
+    assert.match(sentEmails[4].html, /Repair &amp; Test User/);
+    assert.doesNotMatch(sentEmails[4].html, /<b>Test<\/b>/);
 
     // International Repair Request without privacy consent must be rejected.
     const internationalRepairData = new URLSearchParams(repairData);
@@ -297,7 +331,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // No additional emails should have been generated.
-    assert.equal(sentEmails.length, 4);
+    assert.equal(sentEmails.length, 5);
 
     // International Repair Request with privacy consent must succeed.
     const consentedRepairData = new URLSearchParams(repairData);
@@ -326,13 +360,13 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // An accepted Repair Request generates two additional emails.
-    assert.equal(sentEmails.length, 6);
+    assert.equal(sentEmails.length, 7);
     assert.equal(
-      sentEmails[4].subject,
+      sentEmails[5].subject,
       'TransTech Systems Repair Request Form'
     );
     assert.equal(
-      sentEmails[5].subject,
+      sentEmails[6].subject,
       'TransTech Systems Calibration/Repair Request Received'
     );
 
@@ -370,18 +404,18 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // Product Registration should generate one notification email.
-    assert.equal(sentEmails.length, 7);
+    assert.equal(sentEmails.length, 8);
     assert.equal(
-      sentEmails[6].subject,
+      sentEmails[7].subject,
       'TransTech Systems Product Registration Form'
     );
-    assert.equal(sentEmails[6].to, 'cborski@transtechsys.com');
+    assert.equal(sentEmails[7].to, 'cborski@transtechsys.com');
 
     // Verify customer values are safely represented in the HTML email.
-    assert.match(sentEmails[6].html, /Test &amp; Company/);
-    assert.match(sentEmails[6].html, /PQI 380 Plus/);
-    assert.doesNotMatch(sentEmails[6].html, /<b>PQI 380 Plus<\/b>/);
-    assert.match(sentEmails[6].html, /TEST-REG-123/);
+    assert.match(sentEmails[7].html, /Test &amp; Company/);
+    assert.match(sentEmails[7].html, /PQI 380 Plus/);
+    assert.doesNotMatch(sentEmails[7].html, /<b>PQI 380 Plus<\/b>/);
+    assert.match(sentEmails[7].html, /TEST-REG-123/);
 
     // International Product Registration without consent must be rejected.
     const internationalRegistrationData = new URLSearchParams(registrationData);
@@ -409,7 +443,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // Rejected international registration must not generate an email.
-    assert.equal(sentEmails.length, 7);
+    assert.equal(sentEmails.length, 8);
 
     // International Product Registration with consent must succeed.
     const consentedRegistrationData = new URLSearchParams(registrationData);
@@ -438,9 +472,9 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // Accepted international registration generates one additional email.
-    assert.equal(sentEmails.length, 8);
+    assert.equal(sentEmails.length, 9);
     assert.equal(
-      sentEmails[7].subject,
+      sentEmails[8].subject,
       'TransTech Systems Product Registration Form'
     );
 
@@ -478,16 +512,16 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       '/products/requestIntegration'
     );
 
-    assert.equal(sentEmails.length, 9);
+    assert.equal(sentEmails.length, 10);
     assert.equal(
-      sentEmails[8].subject,
+      sentEmails[9].subject,
       'Request TransTech Connect Integration Form'
     );
-    assert.equal(sentEmails[8].to, 'sales@transtechsys.com');
+    assert.equal(sentEmails[9].to, 'sales@transtechsys.com');
 
-    assert.match(sentEmails[8].html, /Test &amp; Company/);
-    assert.match(sentEmails[8].html, /Integration &amp; details/);
-    assert.doesNotMatch(sentEmails[8].html, /<b>details<\/b>/);
+    assert.match(sentEmails[9].html, /Test &amp; Company/);
+    assert.match(sentEmails[9].html, /Integration &amp; details/);
+    assert.doesNotMatch(sentEmails[9].html, /<b>details<\/b>/);
 
     // International Integration Request without consent must be rejected.
     const internationalIntegrationData = new URLSearchParams(integrationData);
@@ -509,7 +543,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       internationalIntegrationResponse.headers.get('location'),
       '/products/requestIntegration'
     );
-    assert.equal(sentEmails.length, 9);
+    assert.equal(sentEmails.length, 10);
 
     // International Integration Request with consent must succeed.
     const consentedIntegrationData = new URLSearchParams(integrationData);
@@ -532,9 +566,9 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       consentedIntegrationResponse.headers.get('location'),
       '/products/requestIntegration'
     );
-    assert.equal(sentEmails.length, 10);
+    assert.equal(sentEmails.length, 11);
     assert.equal(
-      sentEmails[9].subject,
+      sentEmails[10].subject,
       'Request TransTech Connect Integration Form'
     );
 
@@ -571,27 +605,27 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // U.S. Trade-Up submission generates one notification email.
-    assert.equal(sentEmails.length, 11);
+    assert.equal(sentEmails.length, 12);
     assert.equal(
-      sentEmails[10].subject,
+      sentEmails[11].subject,
       'TransTech Systems Trade Up Request Form'
     );
     assert.equal(
-      sentEmails[10].to,
+      sentEmails[11].to,
       'tapkarian@transtechsys.com, cdavis@transtechsys.com'
     );
 
     // Verify customer values are safely escaped.
-    assert.match(sentEmails[10].html, /Test &amp; Company/);
-    assert.match(sentEmails[10].html, /PQI 380/);
-    assert.doesNotMatch(sentEmails[10].html, /<b>PQI 380<\/b>/);
-    assert.match(sentEmails[10].html, /TRADE-12345/);
+    assert.match(sentEmails[11].html, /Test &amp; Company/);
+    assert.match(sentEmails[11].html, /PQI 380/);
+    assert.doesNotMatch(sentEmails[11].html, /<b>PQI 380<\/b>/);
+    assert.match(sentEmails[11].html, /TRADE-12345/);
     assert.match(
-      sentEmails[10].html,
+      sentEmails[11].html,
       /Trade comments &amp; additional details/
     );
     assert.doesNotMatch(
-      sentEmails[10].html,
+      sentEmails[11].html,
       /<b>additional details<\/b>/
     );
 
@@ -618,7 +652,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       internationalTradeUpResponse.headers.get('location'),
       '/products/tradeUp'
     );
-    assert.equal(sentEmails.length, 11);
+    assert.equal(sentEmails.length, 12);
 
     // International Trade-Up with consent must succeed.
     const consentedTradeUpData = new URLSearchParams(tradeUpData);
@@ -644,9 +678,9 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       consentedTradeUpResponse.headers.get('location'),
       '/products/tradeUp'
     );
-    assert.equal(sentEmails.length, 12);
+    assert.equal(sentEmails.length, 13);
     assert.equal(
-      sentEmails[11].subject,
+      sentEmails[12].subject,
       'TransTech Systems Trade Up Request Form'
     );
 
@@ -665,6 +699,12 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       require.cache[captchaPath] = originalCaptcha;
     } else {
       delete require.cache[captchaPath];
+    }
+
+    if (originalLimiter) {
+      require.cache[limiterPath] = originalLimiter;
+    } else {
+      delete require.cache[limiterPath];
     }
 
     fs.rmSync(directory, { recursive: true, force: true });

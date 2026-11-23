@@ -18,6 +18,8 @@ const flash = require('./utils/flashMessages');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const sanitizeFormField = require('./utils/sanitizeFormField');
 const validateCountry = require('./utils/validateCountry');
+const validateFieldLengths = require('./utils/validateFieldLengths');
+const validateProductSelections = require('./utils/validateProductSelections');
 const escapeHtml = require('./utils/escapeHtml');
 const manualNames = require('./utils/manualNames');
 const port = process.env.PORT || 3000;
@@ -217,9 +219,9 @@ app.use(
   }),
 );
 
-//Use BodyParser
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// Parse incoming form and JSON data with explicit request-size limits.
+app.use(express.urlencoded({ extended: true, limit: '100kb' }));
+app.use(express.json({ limit: '100kb' }));
 app.use(expressSanitizer());
 
 //Case Study Data
@@ -814,6 +816,28 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
     moreInfo,
     message,
   } = req.body;
+
+  // Reject oversized or unexpected text-field values before sanitization.
+  if (!validateFieldLengths(req.body, {
+    name: 100,
+    company: 150,
+    state: 100,
+    country: 100,
+    phone: 30,
+    email: 254,
+    reach: 100,
+    reachInfo: 250,
+    message: 5000,
+  })) {
+    req.flash('error', 'One or more fields exceed the allowed length or contain invalid data.');
+    return res.redirect('/products/salesRequest');
+  }
+
+  // Validate product selections before converting checkbox arrays to text.
+  if (!validateProductSelections(req.body.moreInfo)) {
+    req.flash('error', 'Please select a valid product or service.');
+    return res.redirect('/products/salesRequest');
+  }
 
   //Sanitize incoming data
   name = sanitizeFormField(req, name);

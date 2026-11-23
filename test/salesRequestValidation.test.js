@@ -78,6 +78,9 @@ test('Sales Request rejects invalid required fields without sending emails', asy
       { field: 'email', value: 'not-an-email' },
       { field: 'reach', value: '' },
       { field: 'message', value: '   ' },
+      { field: 'name', value: 'A'.repeat(101) },
+      { field: 'company', value: 'B'.repeat(151) },
+      { field: 'message', value: 'C'.repeat(5001) },
     ];
 
     for (const { field, value } of invalidCases) {
@@ -105,6 +108,52 @@ test('Sales Request rejects invalid required fields without sending emails', asy
         `Invalid ${field} must not generate an email`
       );
     }
+
+    // Reject invalid or duplicate product selections.
+    const invalidProductCases = [
+      ['Unknown Product'],
+      ['PQI 380go', 'PQI 380go'],
+    ];
+
+    for (const products of invalidProductCases) {
+      const data = new URLSearchParams(validData);
+      for (const product of products) {
+        data.append('moreInfo', product);
+      }
+
+      const response = await fetch(url, {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+        },
+        body: data,
+      });
+
+      assert.equal(response.status, 302);
+      assert.equal(response.headers.get('location'), '/products/salesRequest');
+      assert.equal(sentEmails.length, 0, 'Invalid products must not generate an email');
+    }
+
+    // A name exactly at the maximum permitted length must be accepted.
+    const boundaryData = new URLSearchParams(validData);
+    boundaryData.set('name', 'A'.repeat(100));
+
+    const boundaryResponse = await fetch(url, {
+      method: 'POST',
+      redirect: 'manual',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+      },
+      body: boundaryData,
+    });
+
+    assert.equal(boundaryResponse.status, 302);
+    assert.equal(boundaryResponse.headers.get('location'), '/products/salesRequest');
+    assert.equal(sentEmails.length, 1, 'A 100-character name should generate an email');
+    assert.match(sentEmails[0].html, /A{100}/);
   } finally {
     if (server) {
       await new Promise((resolve) => server.close(resolve));
