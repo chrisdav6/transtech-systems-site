@@ -1383,6 +1383,22 @@ app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req
   tradeSerial = sanitizeFormField(req, tradeSerial);
   tradeMessage = sanitizeFormField(req, tradeMessage);
 
+  // Validate required fields and email address on the server.
+  if (
+    !name.trim() ||
+    !company.trim() ||
+    !phone.trim() ||
+    !validator.isEmail(email) ||
+    tradeProduct !== 'PQI 380' ||
+    !tradeSerial.trim()
+  ) {
+    req.flash(
+      'error',
+      'Please complete all required fields and provide a valid email address.'
+    );
+    return res.redirect('/products/tradeUp');
+  }
+
   try {
 
       let body = `<h2><u>PQI 380 Trade Up Request</u></h2>`;
