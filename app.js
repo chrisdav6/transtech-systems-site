@@ -827,6 +827,22 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
   moreInfo = sanitizeFormField(req, moreInfo);
   message = sanitizeFormField(req, message);
 
+  // Validate required fields and email address on the server.
+  if (
+    !name.trim() ||
+    !company.trim() ||
+    !phone.trim() ||
+    !validator.isEmail(email) ||
+    !reach.trim() ||
+    !message.trim()
+  ) {
+    req.flash(
+      'error',
+      'Please complete all required fields and provide a valid email address.'
+    );
+    return res.redirect('/products/salesRequest');
+  }
+
   // Validate country selection.
   if (!validateCountry(country)) {
     req.flash('error', 'Please select a valid country.');

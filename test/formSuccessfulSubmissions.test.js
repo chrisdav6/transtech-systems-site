@@ -101,6 +101,43 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       /Automated Sales Request &amp; HTML escaping test/
     );
 
+    // Reject Sales Requests with missing required fields or invalid email.
+    const invalidSalesCases = [
+      { field: 'name', value: '' },
+      { field: 'email', value: 'not-an-email' },
+    ];
+
+    for (const { field, value } of invalidSalesCases) {
+      const invalidData = new URLSearchParams(formData);
+      invalidData.set(field, value);
+
+      const invalidResponse = await fetch(
+        `http://127.0.0.1:${port}/products/salesRequest`,
+        {
+          method: 'POST',
+          redirect: 'manual',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          },
+          body: invalidData,
+        }
+      );
+
+      assert.equal(invalidResponse.status, 302);
+      assert.equal(
+        invalidResponse.headers.get('location'),
+        '/products/salesRequest'
+      );
+
+      // Invalid submissions must never generate an email.
+      assert.equal(
+        sentEmails.length,
+        1,
+        `Invalid ${field} submission should not send an email`
+      );
+    }
+
     // International Sales Request without privacy consent must be rejected.
     const internationalSalesData = new URLSearchParams(formData);
     internationalSalesData.set('country', 'Canada');
