@@ -344,7 +344,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       country: 'United States',
       phone: '5551234567',
       email: 'test@example.com',
-      registerProduct: '<b>PQI 380 Plus</b>',
+      registerProduct: 'PQI 380 Plus',
       date: '2026-11-23',
       serial: 'TEST-REG-123',
     });

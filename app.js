@@ -1155,9 +1155,56 @@ app.post('/products/productRegistration', formRateLimiter, formHoneypot, async f
   country = sanitizeFormField(req, country);
   phone = sanitizeFormField(req, phone);
   email = sanitizeFormField(req, email);
+  const submittedRegisterProduct = registerProduct;
   registerProduct = sanitizeFormField(req, registerProduct);
   date = sanitizeFormField(req, date);
   serial = sanitizeFormField(req, serial);
+
+  // Validate required Product Registration fields.
+  if (
+    !name.trim() ||
+    !company.trim() ||
+    !phone.trim() ||
+    !validator.isEmail(email) ||
+    !serial.trim() ||
+    !date.trim()
+  ) {
+    req.flash(
+      'error',
+      'Please complete all required fields and provide a valid email address.'
+    );
+    return res.redirect('/products/productRegistration');
+  }
+
+  // Accept only products listed on the registration form.
+  const validRegistrationProducts = [
+    'PQI 380 Plus',
+    'PQI 380go',
+    'PQI 380',
+    'SDG 200',
+    'PTS3000',
+  ];
+
+  if (
+    typeof submittedRegisterProduct !== 'string' ||
+    !validRegistrationProducts.includes(submittedRegisterProduct)
+  ) {
+    req.flash('error', 'Please select a valid product.');
+    return res.redirect('/products/productRegistration');
+  }
+
+  // Validate the purchase date using the form's YYYY-MM-DD format.
+  const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+  const parsedDate = new Date(`${date}T00:00:00Z`);
+
+  if (
+    !datePattern.test(date) ||
+    Number.isNaN(parsedDate.getTime()) ||
+    parsedDate.toISOString().slice(0, 10) !== date
+  ) {
+    req.flash('error', 'Please enter a valid purchase date.');
+    return res.redirect('/products/productRegistration');
+  }
 
   try {
 
