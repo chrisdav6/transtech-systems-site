@@ -1286,6 +1286,22 @@ app.post('/products/requestIntegration', formRateLimiter, formHoneypot, async fu
   reach = sanitizeFormField(req, reach);
   message = sanitizeFormField(req, message);
 
+  // Validate required fields and email address on the server.
+  if (
+    !name.trim() ||
+    !company.trim() ||
+    !phone.trim() ||
+    !validator.isEmail(email) ||
+    !reach.trim() ||
+    !message.trim()
+  ) {
+    req.flash(
+      'error',
+      'Please complete all required fields and provide a valid email address.'
+    );
+    return res.redirect('/products/requestIntegration');
+  }
+
   try {
 
       let body = `<h2><u>Request TransTech Connect Integration</u></h2>`;
