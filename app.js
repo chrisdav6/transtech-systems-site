@@ -5,6 +5,7 @@ const express = require('express');
 const helmet = require('helmet');
 const botFilter = require('./utils/botFilter');
 const formRateLimiter = require('./utils/formRateLimiter');
+const manualDownloadRateLimiter = require('./utils/manualDownloadRateLimiter');
 const formHoneypot = require('./utils/formHoneypot');
 const dotenv = require('dotenv').config();
 const validator = require('validator');
@@ -824,6 +825,18 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
   moreInfo = sanitizeFormField(req, moreInfo);
   message = sanitizeFormField(req, message);
 
+  // Require distributor-sharing consent for international customers.
+  if (
+    country !== 'United States' &&
+    req.body.confirmPrivacy !== 'yes'
+  ) {
+    req.flash(
+      'error',
+      'Please acknowledge our privacy policy to continue.'
+    );
+    return res.redirect('/products/salesRequest');
+  }
+
   //Google captcha code
   if (
     req.body['g-recaptcha-response'] === undefined ||
@@ -914,6 +927,18 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
   repairSerial = sanitizeFormField(req, repairSerial);
   repairQty = sanitizeFormField(req, repairQty);
   serviceMessage = sanitizeFormField(req, serviceMessage);
+
+  // Require distributor-sharing consent for international customers.
+  if (
+    country !== 'United States' &&
+    req.body.confirmPrivacy !== 'yes'
+  ) {
+    req.flash(
+      'error',
+      'Please acknowledge our privacy policy to continue.'
+    );
+    return res.redirect('/products/repairRequest');
+  }
 
   //Google captcha code
   if (
@@ -1191,7 +1216,7 @@ app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req
 });
 
 // Consolidated Product Manual Download Form
-app.post('/products/productManuals', formRateLimiter, formHoneypot, async function (req, res) {
+app.post('/products/productManuals', manualDownloadRateLimiter, formHoneypot, async function (req, res) {
   let {
     manualName,
     name,

@@ -94,6 +94,68 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
     assert.match(sentEmails[0].html, /Automated Sales Request test/);
 
+    // International Sales Request without privacy consent must be rejected.
+    const internationalSalesData = new URLSearchParams(formData);
+    internationalSalesData.set('country', 'Canada');
+    internationalSalesData.set('state', 'Not Available');
+    internationalSalesData.delete('confirmPrivacy');
+
+    const internationalSalesResponse = await fetch(
+      `http://127.0.0.1:${port}/products/salesRequest`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+        },
+        body: internationalSalesData,
+      }
+    );
+
+    assert.equal(internationalSalesResponse.status, 302);
+    assert.equal(
+      internationalSalesResponse.headers.get('location'),
+      '/products/salesRequest'
+    );
+
+    // Rejected submission must not generate another email.
+    assert.equal(sentEmails.length, 1);
+
+    // International Sales Request with privacy consent must succeed.
+    const consentedSalesData = new URLSearchParams(formData);
+    consentedSalesData.set('country', 'Canada');
+    consentedSalesData.set('state', 'Not Available');
+    consentedSalesData.set('confirmPrivacy', 'yes');
+
+    const consentedSalesResponse = await fetch(
+      `http://127.0.0.1:${port}/products/salesRequest`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+        },
+        body: consentedSalesData,
+      }
+    );
+
+    assert.equal(consentedSalesResponse.status, 302);
+    assert.equal(
+      consentedSalesResponse.headers.get('location'),
+      '/products/salesRequest'
+    );
+
+    // Accepted international Sales Request generates one additional email.
+    assert.equal(sentEmails.length, 2);
+    assert.equal(
+      sentEmails[1].subject,
+      'TransTech Systems Sales Request Form'
+    );
+
+    // Simulate a separate customer IP for Repair Request submissions.
+    const repairCustomerIp = '198.51.100.20';
 
     // Verify the Repair Request form using the same mocked services.
     const repairData = new URLSearchParams({
@@ -123,6 +185,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
           'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          'X-Forwarded-For': repairCustomerIp,
         },
         body: repairData,
       }
@@ -135,26 +198,92 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
 
     // One Sales email + two Repair emails.
-    assert.equal(sentEmails.length, 3);
+    assert.equal(sentEmails.length, 4);
 
     // Internal Repair Request notification.
     assert.equal(
-      sentEmails[1].subject,
+      sentEmails[2].subject,
       'TransTech Systems Repair Request Form'
     );
     assert.match(
-      sentEmails[1].html,
+      sentEmails[2].html,
       /Automated Repair Request test/
     );
-    assert.match(sentEmails[1].html, /TEST-12345/);
+    assert.match(sentEmails[2].html, /TEST-12345/);
 
     // Customer confirmation.
     assert.equal(
-      sentEmails[2].subject,
+      sentEmails[3].subject,
       'TransTech Systems Calibration/Repair Request Received'
     );
-    assert.equal(sentEmails[2].to, 'test@example.com');
-    assert.match(sentEmails[2].html, /TEST-12345/);
+    assert.equal(sentEmails[3].to, 'test@example.com');
+    assert.match(sentEmails[3].html, /TEST-12345/);
+
+    // International Repair Request without privacy consent must be rejected.
+    const internationalRepairData = new URLSearchParams(repairData);
+    internationalRepairData.set('country', 'Canada');
+    internationalRepairData.set('state', 'Not Available');
+    internationalRepairData.delete('confirmPrivacy');
+
+    const internationalResponse = await fetch(
+      `http://127.0.0.1:${port}/products/repairRequest`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          'X-Forwarded-For': repairCustomerIp,
+        },
+        body: internationalRepairData,
+      }
+    );
+
+    assert.equal(internationalResponse.status, 302);
+    assert.equal(
+      internationalResponse.headers.get('location'),
+      '/products/repairRequest'
+    );
+
+    // No additional emails should have been generated.
+    assert.equal(sentEmails.length, 4);
+
+    // International Repair Request with privacy consent must succeed.
+    const consentedRepairData = new URLSearchParams(repairData);
+    consentedRepairData.set('country', 'Canada');
+    consentedRepairData.set('state', 'Not Available');
+    consentedRepairData.set('confirmPrivacy', 'yes');
+
+    const consentedResponse = await fetch(
+      `http://127.0.0.1:${port}/products/repairRequest`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          'X-Forwarded-For': repairCustomerIp,
+        },
+        body: consentedRepairData,
+      }
+    );
+
+    assert.equal(consentedResponse.status, 302);
+    assert.equal(
+      consentedResponse.headers.get('location'),
+      '/products/repairRequest'
+    );
+
+    // An accepted Repair Request generates two additional emails.
+    assert.equal(sentEmails.length, 6);
+    assert.equal(
+      sentEmails[4].subject,
+      'TransTech Systems Repair Request Form'
+    );
+    assert.equal(
+      sentEmails[5].subject,
+      'TransTech Systems Calibration/Repair Request Received'
+    );
 
   } finally {
     if (server) {
