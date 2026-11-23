@@ -17,6 +17,7 @@ const FileStore = require('session-file-store')(session);
 const flash = require('./utils/flashMessages');
 const verifyRecaptcha = require('./utils/verifyRecaptcha');
 const sanitizeFormField = require('./utils/sanitizeFormField');
+const validateCountry = require('./utils/validateCountry');
 const escapeHtml = require('./utils/escapeHtml');
 const manualNames = require('./utils/manualNames');
 const port = process.env.PORT || 3000;
@@ -822,12 +823,19 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
   phone = sanitizeFormField(req, phone);
   email = sanitizeFormField(req, email);
   reach = sanitizeFormField(req, reach);
+  reachInfo = sanitizeFormField(req, reachInfo);
   moreInfo = sanitizeFormField(req, moreInfo);
   message = sanitizeFormField(req, message);
 
+  // Validate country selection.
+  if (!validateCountry(country)) {
+    req.flash('error', 'Please select a valid country.');
+    return res.redirect('/products/salesRequest');
+  }
+
   // Require distributor-sharing consent for international customers.
   if (
-    country !== 'United States' &&
+    validateCountry.isInternational(country) &&
     req.body.confirmPrivacy !== 'yes'
   ) {
     req.flash(
@@ -862,18 +870,18 @@ app.post('/products/salesRequest', formRateLimiter, formHoneypot, async function
   try {
 
       let body = `<h2><u>Sales Request</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
-      body += `<strong>Company:</strong> ${company}<br>`;
-      body += `<strong>State:</strong> ${state}<br>`;
-      body += `<strong>Country:</strong> ${country}<br>`;
-      body += `<strong>Phone:</strong> ${phone}<br>`;
-      body += `<strong>Email:</strong> ${email}<br>`;
-      body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
-      body += `<strong>Reach Info:</strong> ${
+      body += `<p><strong>From:</strong> ${escapeHtml(name)}<br>`;
+      body += `<strong>Company:</strong> ${escapeHtml(company)}<br>`;
+      body += `<strong>State:</strong> ${escapeHtml(state)}<br>`;
+      body += `<strong>Country:</strong> ${escapeHtml(country)}<br>`;
+      body += `<strong>Phone:</strong> ${escapeHtml(phone)}<br>`;
+      body += `<strong>Email:</strong> ${escapeHtml(email)}<br>`;
+      body += `<strong>How did you hear about us:</strong> ${escapeHtml(reach)}<br>`;
+      body += `<strong>Reach Info:</strong> ${escapeHtml(
         reachInfo || 'User Did Not Specify'
-      }<br>`;
-      body += `<strong>Please send more info:</strong> ${moreInfo}</p>`;
-      body += `<p><strong>Message:</strong><br> ${message}</p>`;
+      )}<br>`;
+      body += `<strong>Please send more info:</strong> ${escapeHtml(moreInfo)}</p>`;
+      body += `<p><strong>Message:</strong><br> ${escapeHtml(message)}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {
@@ -928,9 +936,15 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
   repairQty = sanitizeFormField(req, repairQty);
   serviceMessage = sanitizeFormField(req, serviceMessage);
 
+  // Validate country selection.
+  if (!validateCountry(country)) {
+    req.flash('error', 'Please select a valid country.');
+    return res.redirect('/products/repairRequest');
+  }
+
   // Require distributor-sharing consent for international customers.
   if (
-    country !== 'United States' &&
+    validateCountry.isInternational(country) &&
     req.body.confirmPrivacy !== 'yes'
   ) {
     req.flash(
@@ -1046,6 +1060,24 @@ app.post('/products/productRegistration', formRateLimiter, formHoneypot, async f
     return res.redirect('/products/productRegistration');
   }
 
+  // Validate country selection.
+  if (!validateCountry(country)) {
+    req.flash('error', 'Please select a valid country.');
+    return res.redirect('/products/productRegistration');
+  }
+
+  // Require distributor-sharing consent for international customers.
+  if (
+    validateCountry.isInternational(country) &&
+    req.body.confirmPrivacy !== 'yes'
+  ) {
+    req.flash(
+      'error',
+      'Please acknowledge our privacy policy to continue.'
+    );
+    return res.redirect('/products/productRegistration');
+  }
+
   // Sanitize incoming form data.
   name = sanitizeFormField(req, name);
   company = sanitizeFormField(req, company);
@@ -1060,15 +1092,15 @@ app.post('/products/productRegistration', formRateLimiter, formHoneypot, async f
   try {
 
       let body = `<h2><u>Product Registration</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
-      body += `<strong>Company:</strong> ${company}<br>`;
-      body += `<strong>State:</strong> ${state}<br>`;
-      body += `<strong>Country:</strong> ${country}<br>`;
-      body += `<strong>Phone:</strong> ${phone}<br>`;
-      body += `<strong>Email:</strong> ${email}<br>`;
-      body += `<strong>TransTech Product:</strong> ${registerProduct}<br>`;
-      body += `<strong>Date:</strong> ${date}<br>`;
-      body += `<strong>Serial Number:</strong> ${serial}</p>`;
+      body += `<p><strong>From:</strong> ${escapeHtml(name)}<br>`;
+      body += `<strong>Company:</strong> ${escapeHtml(company)}<br>`;
+      body += `<strong>State:</strong> ${escapeHtml(state)}<br>`;
+      body += `<strong>Country:</strong> ${escapeHtml(country)}<br>`;
+      body += `<strong>Phone:</strong> ${escapeHtml(phone)}<br>`;
+      body += `<strong>Email:</strong> ${escapeHtml(email)}<br>`;
+      body += `<strong>TransTech Product:</strong> ${escapeHtml(registerProduct)}<br>`;
+      body += `<strong>Date:</strong> ${escapeHtml(date)}<br>`;
+      body += `<strong>Serial Number:</strong> ${escapeHtml(serial)}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {
@@ -1109,6 +1141,24 @@ app.post('/products/requestIntegration', formRateLimiter, formHoneypot, async fu
     return res.redirect('/products/requestIntegration');
   }
 
+  // Validate country selection.
+  if (!validateCountry(country)) {
+    req.flash('error', 'Please select a valid country.');
+    return res.redirect('/products/requestIntegration');
+  }
+
+  // Require distributor-sharing consent for international customers.
+  if (
+    validateCountry.isInternational(country) &&
+    req.body.confirmPrivacy !== 'yes'
+  ) {
+    req.flash(
+      'error',
+      'Please acknowledge our privacy policy to continue.'
+    );
+    return res.redirect('/products/requestIntegration');
+  }
+
   // Sanitize incoming form data.
   name = sanitizeFormField(req, name);
   company = sanitizeFormField(req, company);
@@ -1122,14 +1172,14 @@ app.post('/products/requestIntegration', formRateLimiter, formHoneypot, async fu
   try {
 
       let body = `<h2><u>Request TransTech Connect Integration</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
-      body += `<strong>Company:</strong> ${company}<br>`;
-      body += `<strong>State:</strong> ${state}<br>`;
-      body += `<strong>Country:</strong> ${country}<br>`;
-      body += `<strong>Phone:</strong> ${phone}<br>`;
-      body += `<strong>Email:</strong> ${email}<br>`;
-      body += `<strong>How did you hear about us:</strong> ${reach}<br>`;
-      body += `<p><strong>Message:</strong><br> ${message}</p>`;
+      body += `<p><strong>From:</strong> ${escapeHtml(name)}<br>`;
+      body += `<strong>Company:</strong> ${escapeHtml(company)}<br>`;
+      body += `<strong>State:</strong> ${escapeHtml(state)}<br>`;
+      body += `<strong>Country:</strong> ${escapeHtml(country)}<br>`;
+      body += `<strong>Phone:</strong> ${escapeHtml(phone)}<br>`;
+      body += `<strong>Email:</strong> ${escapeHtml(email)}<br>`;
+      body += `<strong>How did you hear about us:</strong> ${escapeHtml(reach)}<br>`;
+      body += `<p><strong>Message:</strong><br> ${escapeHtml(message)}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {
@@ -1171,6 +1221,24 @@ app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req
     return res.redirect('/products/tradeUp');
   }
 
+  // Validate country selection.
+  if (!validateCountry(country)) {
+    req.flash('error', 'Please select a valid country.');
+    return res.redirect('/products/tradeUp');
+  }
+
+  // Require distributor-sharing consent for international customers.
+  if (
+    validateCountry.isInternational(country) &&
+    req.body.confirmPrivacy !== 'yes'
+  ) {
+    req.flash(
+      'error',
+      'Please acknowledge our privacy policy to continue.'
+    );
+    return res.redirect('/products/tradeUp');
+  }
+
   // Sanitize incoming form data.
   name = sanitizeFormField(req, name);
   company = sanitizeFormField(req, company);
@@ -1185,15 +1253,15 @@ app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req
   try {
 
       let body = `<h2><u>PQI 380 Trade Up Request</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
-      body += `<strong>Company:</strong> ${company}<br>`;
-      body += `<strong>State:</strong> ${state}<br>`;
-      body += `<strong>Country:</strong> ${country}<br>`;
-      body += `<strong>Phone:</strong> ${phone}<br>`;
-      body += `<strong>Email:</strong> ${email}<br>`;
-      body += `<strong>Product for Trade:</strong> ${tradeProduct}<br>`;
-      body += `<strong>Serial Number:</strong> ${tradeSerial}`;
-      body += `<p><strong>Additional Comments:</strong><br> ${tradeMessage}</p>`;
+      body += `<p><strong>From:</strong> ${escapeHtml(name)}<br>`;
+      body += `<strong>Company:</strong> ${escapeHtml(company)}<br>`;
+      body += `<strong>State:</strong> ${escapeHtml(state)}<br>`;
+      body += `<strong>Country:</strong> ${escapeHtml(country)}<br>`;
+      body += `<strong>Phone:</strong> ${escapeHtml(phone)}<br>`;
+      body += `<strong>Email:</strong> ${escapeHtml(email)}<br>`;
+      body += `<strong>Product for Trade:</strong> ${escapeHtml(tradeProduct)}<br>`;
+      body += `<strong>Serial Number:</strong> ${escapeHtml(tradeSerial)}`;
+      body += `<p><strong>Additional Comments:</strong><br> ${escapeHtml(tradeMessage)}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {

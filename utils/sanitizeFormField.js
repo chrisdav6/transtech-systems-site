@@ -1,3 +1,5 @@
+const sanitizer = require('sanitizer');
+
 function sanitizeFormField(req, value) {
   if (value === undefined || value === null || value === '') {
     return '';
@@ -5,7 +7,9 @@ function sanitizeFormField(req, value) {
 
   const sanitized = req.sanitize(String(value));
 
-  return (sanitized || '').replace(/<\/?[^>]+(>|$)/g, '');
+  const withoutTags = (sanitized || '').replace(/<\/?[^>]+(>|$)/g, '');
+
+  return sanitizer.unescapeEntities(withoutTags);
 }
 
 module.exports = sanitizeFormField;

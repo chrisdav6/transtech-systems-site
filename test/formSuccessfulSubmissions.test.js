@@ -56,15 +56,15 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
 
     const formData = new URLSearchParams({
       name: 'Automated Test User',
-      company: 'Test Company',
+      company: 'Test & Company',
       state: 'New York',
       country: 'United States',
       phone: '5551234567',
       email: 'test@example.com',
       reach: 'Internet',
-      reachInfo: 'Search',
+      reachInfo: 'Search & <b>Referral</b>',
       moreInfo: 'No',
-      message: 'Automated Sales Request test',
+      message: 'Automated Sales Request & HTML escaping test',
       'g-recaptcha-response': 'mock-valid-token',
     });
 
@@ -92,7 +92,14 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       sentEmails[0].subject,
       'TransTech Systems Sales Request Form'
     );
-    assert.match(sentEmails[0].html, /Automated Sales Request test/);
+    // Verify customer-submitted values are safely escaped in HTML emails.
+    assert.match(sentEmails[0].html, /Test &amp; Company/);
+    assert.match(sentEmails[0].html, /Search &amp; Referral/);
+    assert.doesNotMatch(sentEmails[0].html, /<b>Referral<\/b>/);
+    assert.match(
+      sentEmails[0].html,
+      /Automated Sales Request &amp; HTML escaping test/
+    );
 
     // International Sales Request without privacy consent must be rejected.
     const internationalSalesData = new URLSearchParams(formData);
@@ -283,6 +290,320 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     assert.equal(
       sentEmails[5].subject,
       'TransTech Systems Calibration/Repair Request Received'
+    );
+
+    // Product Registration HTML escaping regression test.
+    const registrationData = new URLSearchParams({
+      name: 'Automated Test User',
+      company: 'Test & Company',
+      state: 'New York',
+      country: 'United States',
+      phone: '5551234567',
+      email: 'test@example.com',
+      registerProduct: '<b>PQI 380 Plus</b>',
+      date: '2026-11-23',
+      serial: 'TEST-REG-123',
+    });
+
+    const registrationResponse = await fetch(
+      `http://127.0.0.1:${port}/products/productRegistration`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          'X-Forwarded-For': '198.51.100.30',
+        },
+        body: registrationData,
+      }
+    );
+
+    assert.equal(registrationResponse.status, 302);
+    assert.equal(
+      registrationResponse.headers.get('location'),
+      '/products/productRegistration'
+    );
+
+    // Product Registration should generate one notification email.
+    assert.equal(sentEmails.length, 7);
+    assert.equal(
+      sentEmails[6].subject,
+      'TransTech Systems Product Registration Form'
+    );
+    assert.equal(sentEmails[6].to, 'cborski@transtechsys.com');
+
+    // Verify customer values are safely represented in the HTML email.
+    assert.match(sentEmails[6].html, /Test &amp; Company/);
+    assert.match(sentEmails[6].html, /PQI 380 Plus/);
+    assert.doesNotMatch(sentEmails[6].html, /<b>PQI 380 Plus<\/b>/);
+    assert.match(sentEmails[6].html, /TEST-REG-123/);
+
+    // International Product Registration without consent must be rejected.
+    const internationalRegistrationData = new URLSearchParams(registrationData);
+    internationalRegistrationData.set('country', 'Canada');
+    internationalRegistrationData.set('state', 'Not Available');
+
+    const internationalRegistrationResponse = await fetch(
+      `http://127.0.0.1:${port}/products/productRegistration`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          'X-Forwarded-For': '198.51.100.30',
+        },
+        body: internationalRegistrationData,
+      }
+    );
+
+    assert.equal(internationalRegistrationResponse.status, 302);
+    assert.equal(
+      internationalRegistrationResponse.headers.get('location'),
+      '/products/productRegistration'
+    );
+
+    // Rejected international registration must not generate an email.
+    assert.equal(sentEmails.length, 7);
+
+    // International Product Registration with consent must succeed.
+    const consentedRegistrationData = new URLSearchParams(registrationData);
+    consentedRegistrationData.set('country', 'Canada');
+    consentedRegistrationData.set('state', 'Not Available');
+    consentedRegistrationData.set('confirmPrivacy', 'yes');
+
+    const consentedRegistrationResponse = await fetch(
+      `http://127.0.0.1:${port}/products/productRegistration`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+          'X-Forwarded-For': '198.51.100.30',
+        },
+        body: consentedRegistrationData,
+      }
+    );
+
+    assert.equal(consentedRegistrationResponse.status, 302);
+    assert.equal(
+      consentedRegistrationResponse.headers.get('location'),
+      '/products/productRegistration'
+    );
+
+    // Accepted international registration generates one additional email.
+    assert.equal(sentEmails.length, 8);
+    assert.equal(
+      sentEmails[7].subject,
+      'TransTech Systems Product Registration Form'
+    );
+
+    // Integration Request HTML escaping regression test.
+    const integrationData = new URLSearchParams({
+      name: 'Automated Test User',
+      company: 'Test & Company',
+      state: 'New York',
+      country: 'United States',
+      phone: '5551234567',
+      email: 'test@example.com',
+      reach: 'Internet',
+      message: 'Integration & <b>details</b>',
+    });
+
+    const integrationHeaders = {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+      'X-Forwarded-For': '198.51.100.40',
+    };
+
+    const integrationResponse = await fetch(
+      `http://127.0.0.1:${port}/products/requestIntegration`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: integrationHeaders,
+        body: integrationData,
+      }
+    );
+
+    assert.equal(integrationResponse.status, 302);
+    assert.equal(
+      integrationResponse.headers.get('location'),
+      '/products/requestIntegration'
+    );
+
+    assert.equal(sentEmails.length, 9);
+    assert.equal(
+      sentEmails[8].subject,
+      'Request TransTech Connect Integration Form'
+    );
+    assert.equal(sentEmails[8].to, 'sales@transtechsys.com');
+
+    assert.match(sentEmails[8].html, /Test &amp; Company/);
+    assert.match(sentEmails[8].html, /Integration &amp; details/);
+    assert.doesNotMatch(sentEmails[8].html, /<b>details<\/b>/);
+
+    // International Integration Request without consent must be rejected.
+    const internationalIntegrationData = new URLSearchParams(integrationData);
+    internationalIntegrationData.set('country', 'Canada');
+    internationalIntegrationData.set('state', 'Not Available');
+
+    const internationalIntegrationResponse = await fetch(
+      `http://127.0.0.1:${port}/products/requestIntegration`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: integrationHeaders,
+        body: internationalIntegrationData,
+      }
+    );
+
+    assert.equal(internationalIntegrationResponse.status, 302);
+    assert.equal(
+      internationalIntegrationResponse.headers.get('location'),
+      '/products/requestIntegration'
+    );
+    assert.equal(sentEmails.length, 9);
+
+    // International Integration Request with consent must succeed.
+    const consentedIntegrationData = new URLSearchParams(integrationData);
+    consentedIntegrationData.set('country', 'Canada');
+    consentedIntegrationData.set('state', 'Not Available');
+    consentedIntegrationData.set('confirmPrivacy', 'yes');
+
+    const consentedIntegrationResponse = await fetch(
+      `http://127.0.0.1:${port}/products/requestIntegration`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: integrationHeaders,
+        body: consentedIntegrationData,
+      }
+    );
+
+    assert.equal(consentedIntegrationResponse.status, 302);
+    assert.equal(
+      consentedIntegrationResponse.headers.get('location'),
+      '/products/requestIntegration'
+    );
+    assert.equal(sentEmails.length, 10);
+    assert.equal(
+      sentEmails[9].subject,
+      'Request TransTech Connect Integration Form'
+    );
+
+    // Trade-Up HTML escaping regression test.
+    const tradeUpData = new URLSearchParams({
+      name: 'Automated Test User',
+      company: 'Test & Company',
+      state: 'New York',
+      country: 'United States',
+      phone: '5551234567',
+      email: 'test@example.com',
+      tradeProduct: '<b>PQI 380</b>',
+      tradeSerial: 'TRADE-12345',
+      tradeMessage: 'Trade comments & <b>additional details</b>',
+    });
+
+    const tradeUpResponse = await fetch(
+      `http://127.0.0.1:${port}/products/tradeUp`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          ...integrationHeaders,
+          'X-Forwarded-For': '198.51.100.50',
+        },
+        body: tradeUpData,
+      }
+    );
+
+    assert.equal(tradeUpResponse.status, 302);
+    assert.equal(
+      tradeUpResponse.headers.get('location'),
+      '/products/tradeUp'
+    );
+
+    // U.S. Trade-Up submission generates one notification email.
+    assert.equal(sentEmails.length, 11);
+    assert.equal(
+      sentEmails[10].subject,
+      'TransTech Systems Trade Up Request Form'
+    );
+    assert.equal(
+      sentEmails[10].to,
+      'tapkarian@transtechsys.com, cdavis@transtechsys.com'
+    );
+
+    // Verify customer values are safely escaped.
+    assert.match(sentEmails[10].html, /Test &amp; Company/);
+    assert.match(sentEmails[10].html, /PQI 380/);
+    assert.doesNotMatch(sentEmails[10].html, /<b>PQI 380<\/b>/);
+    assert.match(sentEmails[10].html, /TRADE-12345/);
+    assert.match(
+      sentEmails[10].html,
+      /Trade comments &amp; additional details/
+    );
+    assert.doesNotMatch(
+      sentEmails[10].html,
+      /<b>additional details<\/b>/
+    );
+
+    // International Trade-Up without consent must be rejected.
+    const internationalTradeUpData = new URLSearchParams(tradeUpData);
+    internationalTradeUpData.set('country', 'Canada');
+    internationalTradeUpData.set('state', 'Not Available');
+
+    const internationalTradeUpResponse = await fetch(
+      `http://127.0.0.1:${port}/products/tradeUp`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          ...integrationHeaders,
+          'X-Forwarded-For': '198.51.100.50',
+        },
+        body: internationalTradeUpData,
+      }
+    );
+
+    assert.equal(internationalTradeUpResponse.status, 302);
+    assert.equal(
+      internationalTradeUpResponse.headers.get('location'),
+      '/products/tradeUp'
+    );
+    assert.equal(sentEmails.length, 11);
+
+    // International Trade-Up with consent must succeed.
+    const consentedTradeUpData = new URLSearchParams(tradeUpData);
+    consentedTradeUpData.set('country', 'Canada');
+    consentedTradeUpData.set('state', 'Not Available');
+    consentedTradeUpData.set('confirmPrivacy', 'yes');
+
+    const consentedTradeUpResponse = await fetch(
+      `http://127.0.0.1:${port}/products/tradeUp`,
+      {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          ...integrationHeaders,
+          'X-Forwarded-For': '198.51.100.50',
+        },
+        body: consentedTradeUpData,
+      }
+    );
+
+    assert.equal(consentedTradeUpResponse.status, 302);
+    assert.equal(
+      consentedTradeUpResponse.headers.get('location'),
+      '/products/tradeUp'
+    );
+    assert.equal(sentEmails.length, 12);
+    assert.equal(
+      sentEmails[11].subject,
+      'TransTech Systems Trade Up Request Form'
     );
 
   } finally {
