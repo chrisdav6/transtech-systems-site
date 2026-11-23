@@ -203,7 +203,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
 
     // Verify the Repair Request form using the same mocked services.
     const repairData = new URLSearchParams({
-      name: 'Automated Test User',
+      name: 'Repair & <b>Test</b> User',
       company: 'Test Company',
       address: '123 Test Street',
       city: 'Albany',
@@ -216,7 +216,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       repairProduct: 'PQI 380 Plus',
       repairSerial: 'TEST-12345',
       repairQty: '1',
-      estimate: 'Yes',
+      estimate: 'Over $1000',
       serviceMessage: 'Automated Repair Request test',
       'g-recaptcha-response': 'mock-valid-token',
     });
@@ -262,6 +262,13 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
     );
     assert.equal(sentEmails[3].to, 'test@example.com');
     assert.match(sentEmails[3].html, /TEST-12345/);
+
+    // Verify HTML-sensitive customer information is safely escaped.
+    assert.match(sentEmails[2].html, /Repair &amp; Test User/);
+    assert.doesNotMatch(sentEmails[2].html, /<b>Test<\/b>/);
+
+    assert.match(sentEmails[3].html, /Repair &amp; Test User/);
+    assert.doesNotMatch(sentEmails[3].html, /<b>Test<\/b>/);
 
     // International Repair Request without privacy consent must be rejected.
     const internationalRepairData = new URLSearchParams(repairData);

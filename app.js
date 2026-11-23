@@ -952,6 +952,60 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
   repairQty = sanitizeFormField(req, repairQty);
   serviceMessage = sanitizeFormField(req, serviceMessage);
 
+  // Validate required Repair Request fields.
+  if (
+    !name.trim() ||
+    !company.trim() ||
+    !address.trim() ||
+    !city.trim() ||
+    !phone.trim() ||
+    !validator.isEmail(email) ||
+    !repairSerial.trim() ||
+    !serviceMessage.trim()
+  ) {
+    req.flash(
+      'error',
+      'Please complete all required fields and provide a valid email address.'
+    );
+    return res.redirect('/products/repairRequest');
+  }
+
+  // Validate the quantity of units submitted for service.
+  if (!/^[1-9]\d*$/.test(repairQty)) {
+    req.flash('error', 'Please enter a valid quantity of units for service.');
+    return res.redirect('/products/repairRequest');
+  }
+
+  // Accept only products listed on the Repair Request form.
+  const validRepairProducts = [
+    'PQI 380',
+    'SDG 200',
+    'PQI 380 Plus',
+    'PQI 380go',
+    'PQI 301',
+    'PTS3000',
+    'Multiple Products',
+    'Other',
+  ];
+
+  if (!validRepairProducts.includes(repairProduct)) {
+    req.flash('error', 'Please select a valid product for repair.');
+    return res.redirect('/products/repairRequest');
+  }
+
+  // Accept only estimate options listed on the form.
+  const validEstimateOptions = [
+    'Over $1000',
+    'Over $750',
+    'Over Calibration Cost',
+    'No',
+  ];
+
+  if (!validEstimateOptions.includes(estimate)) {
+    req.flash('error', 'Please select a valid repair estimate option.');
+    return res.redirect('/products/repairRequest');
+  }
+
   // Validate country selection.
   if (!validateCountry(country)) {
     req.flash('error', 'Please select a valid country.');
@@ -995,23 +1049,23 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
   try {
 
       let body = `<h2><u>Repair Request</u></h2>`;
-      body += `<p><strong>From:</strong> ${name}<br>`;
-      body += `<strong>Company:</strong> ${company}<br>`;
-      body += `<strong>Address:</strong> ${address}<br>`;
-      body += `<strong>City:</strong> ${city}<br>`;
-      body += `<strong>State:</strong> ${state}<br>`;
-      body += `<strong>Zipcode:</strong> ${zip}<br>`;
-      body += `<strong>Country:</strong> ${country}<br>`;
+      body += `<p><strong>From:</strong> ${escapeHtml(name)}<br>`;
+      body += `<strong>Company:</strong> ${escapeHtml(company)}<br>`;
+      body += `<strong>Address:</strong> ${escapeHtml(address)}<br>`;
+      body += `<strong>City:</strong> ${escapeHtml(city)}<br>`;
+      body += `<strong>State:</strong> ${escapeHtml(state)}<br>`;
+      body += `<strong>Zipcode:</strong> ${escapeHtml(zip)}<br>`;
+      body += `<strong>Country:</strong> ${escapeHtml(country)}<br>`;
       body += `<strong>Residential Address:</strong> ${
         residential ? 'Yes' : 'No'
       }<br>`;
-      body += `<strong>Phone:</strong> ${phone}<br>`;
-      body += `<strong>Email:</strong> ${email}<br>`;
-      body += `<strong>Product for Repair:</strong> ${repairProduct}<br>`;
-      body += `<strong>Serial Number(s):</strong> ${repairSerial}<br>`;
-      body += `<strong>Total Qty of Units for Service:</strong> ${repairQty}<br>`;
-      body += `<strong>Estimate Required:</strong> ${estimate}</p>`;
-      body += `<p><strong>Description of Repair:</strong><br> ${serviceMessage}</p>`;
+      body += `<strong>Phone:</strong> ${escapeHtml(phone)}<br>`;
+      body += `<strong>Email:</strong> ${escapeHtml(email)}<br>`;
+      body += `<strong>Product for Repair:</strong> ${escapeHtml(repairProduct)}<br>`;
+      body += `<strong>Serial Number(s):</strong> ${escapeHtml(repairSerial)}<br>`;
+      body += `<strong>Total Qty of Units for Service:</strong> ${escapeHtml(repairQty)}<br>`;
+      body += `<strong>Estimate Required:</strong> ${escapeHtml(estimate)}</p>`;
+      body += `<p><strong>Description of Repair:</strong><br> ${escapeHtml(serviceMessage)}</p>`;
 
       // setup email data with unicode symbols
       let mailOptions = {
@@ -1024,7 +1078,7 @@ app.post('/products/repairRequest', formRateLimiter, formHoneypot, async functio
       };
 
       let userBody = `<h2><u>TransTech Systems Calibration/Repair Request Received</u></h2>`;
-      userBody += `<p>Thank you, ${name} for your calibration/repair submission for gauge serial number(s) ${repairSerial}<br>`;
+      userBody += `<p>Thank you, ${escapeHtml(name)} for your calibration/repair submission for gauge serial number(s) ${escapeHtml(repairSerial)}<br>`;
       userBody += `Our service team will reply with your ticket(s) shortly.</p>`;
       userBody += `<p><b>This is not a monitored mailbox. Please do not reply.</b></p>`;
 
