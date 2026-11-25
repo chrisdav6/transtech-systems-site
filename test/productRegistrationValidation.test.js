@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 
-test('Product Registration rejects invalid submissions without sending emails', async () => {
+test('Product Registration validates fields and reCAPTCHA before sending emails', async () => {
   const directory = fs.mkdtempSync(
     path.join(os.tmpdir(), 'transtech-registration-validation-')
   );
@@ -38,7 +38,12 @@ test('Product Registration rejects invalid submissions without sending emails', 
     },
   });
 
-  mockModule(captchaPath, async () => true);
+  const captchaCalls = [];
+
+  mockModule(captchaPath, async (token) => {
+    captchaCalls.push(token);
+    return token === 'valid-test-captcha';
+  });
 
   // Bypass throttling only in this test process.
   // The real rate limiter is tested separately.
@@ -69,6 +74,7 @@ test('Product Registration rejects invalid submissions without sending emails', 
       registerProduct: 'PQI 380 Plus',
       date: '2026-11-23',
       serial: 'TEST-REG-123',
+      'g-recaptcha-response': 'valid-test-captcha',
     });
 
     const invalidCases = [
@@ -113,6 +119,70 @@ test('Product Registration rejects invalid submissions without sending emails', 
         `Invalid ${field} (${value}) must not generate emails`
       );
     }
+
+        // Invalid fields must be rejected before CAPTCHA verification.
+    assert.equal(captchaCalls.length, 0);
+
+    // Reject missing, empty, whitespace-only, and invalid CAPTCHA tokens.
+    const invalidCaptchaTokens = [
+      null,
+      '',
+      '   ',
+      'invalid-test-captcha',
+    ];
+
+    for (const token of invalidCaptchaTokens) {
+      const data = new URLSearchParams(validData);
+
+      if (token === null) {
+        data.delete('g-recaptcha-response');
+      } else {
+        data.set('g-recaptcha-response', token);
+      }
+
+      const response = await fetch(url, {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+        },
+        body: data,
+      });
+
+      assert.equal(response.status, 302);
+      assert.equal(
+        response.headers.get('location'),
+        '/products/productRegistration'
+      );
+      assert.equal(sentEmails.length, 0);
+    }
+
+    assert.deepEqual(captchaCalls, ['invalid-test-captcha']);
+
+    // A valid submission with a verified CAPTCHA must generate an email.
+    const response = await fetch(url, {
+      method: 'POST',
+      redirect: 'manual',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+      },
+      body: new URLSearchParams(validData),
+    });
+
+    assert.equal(response.status, 302);
+    assert.equal(
+      response.headers.get('location'),
+      '/products/productRegistration'
+    );
+    assert.deepEqual(captchaCalls, [
+      'invalid-test-captcha',
+      'valid-test-captcha',
+    ]);
+    assert.equal(sentEmails.length, 1);
+    assert.equal(sentEmails[0].replyTo, 'test@example.com');
+    assert.match(sentEmails[0].html, /TEST-REG-123/);
   } finally {
     if (server) {
       await new Promise((resolve) => server.close(resolve));

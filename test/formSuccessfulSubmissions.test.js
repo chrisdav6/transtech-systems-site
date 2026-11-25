@@ -381,6 +381,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       registerProduct: 'PQI 380 Plus',
       date: '2026-11-23',
       serial: 'TEST-REG-123',
+      'g-recaptcha-response': 'test-captcha-token',
     });
 
     const registrationResponse = await fetch(
@@ -488,6 +489,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       email: 'test@example.com',
       reach: 'Internet',
       message: 'Integration & <b>details</b>',
+      'g-recaptcha-response': 'test-captcha-token',
     });
 
     const integrationHeaders = {
@@ -583,6 +585,7 @@ test('Sales and Repair Requests generate expected emails after successful reCAPT
       tradeProduct: '<b>PQI 380</b>',
       tradeSerial: 'TRADE-12345',
       tradeMessage: 'Trade comments & <b>additional details</b>',
+      'g-recaptcha-response': 'test-captcha-token',
     });
 
     const tradeUpResponse = await fetch(

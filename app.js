@@ -1230,6 +1230,25 @@ app.post('/products/productRegistration', formRateLimiter, formHoneypot, async f
     return res.redirect('/products/productRegistration');
   }
 
+  // Require a valid reCAPTCHA token.
+  const captchaToken = req.body['g-recaptcha-response'];
+
+  if (typeof captchaToken !== 'string' || !captchaToken.trim()) {
+    req.flash('error', 'Please complete the Google reCAPTCHA.');
+    return res.redirect('/products/productRegistration');
+  }
+
+  // Verify reCAPTCHA before processing the request.
+  const captchaValid = await verifyRecaptcha(
+    captchaToken,
+    req.ip
+  );
+
+  if (!captchaValid) {
+    req.flash('error', 'Failed captcha verification.');
+    return res.redirect('/products/productRegistration');
+  }
+
   try {
 
       let body = `<h2><u>Product Registration</u></h2>`;
@@ -1323,6 +1342,25 @@ app.post('/products/requestIntegration', formRateLimiter, formHoneypot, async fu
       'error',
       'Please complete all required fields and provide a valid email address.'
     );
+    return res.redirect('/products/requestIntegration');
+  }
+
+  // Require a valid reCAPTCHA token.
+  const captchaToken = req.body['g-recaptcha-response'];
+
+  if (typeof captchaToken !== 'string' || !captchaToken.trim()) {
+    req.flash('error', 'Please complete the Google reCAPTCHA.');
+    return res.redirect('/products/requestIntegration');
+  }
+
+  // Verify reCAPTCHA before processing the request.
+  const captchaValid = await verifyRecaptcha(
+    captchaToken,
+    req.ip
+  );
+
+  if (!captchaValid) {
+    req.flash('error', 'Failed captcha verification.');
     return res.redirect('/products/requestIntegration');
   }
 
@@ -1420,6 +1458,25 @@ app.post('/products/tradeUp', formRateLimiter, formHoneypot, async function (req
       'error',
       'Please complete all required fields and provide a valid email address.'
     );
+    return res.redirect('/products/tradeUp');
+  }
+
+  // Require a valid reCAPTCHA token.
+  const captchaToken = req.body['g-recaptcha-response'];
+
+  if (typeof captchaToken !== 'string' || !captchaToken.trim()) {
+    req.flash('error', 'Please complete the Google reCAPTCHA.');
+    return res.redirect('/products/tradeUp');
+  }
+
+  // Verify reCAPTCHA before processing the request.
+  const captchaValid = await verifyRecaptcha(
+    captchaToken,
+    req.ip
+  );
+
+  if (!captchaValid) {
+    req.flash('error', 'Failed captcha verification.');
     return res.redirect('/products/tradeUp');
   }
 

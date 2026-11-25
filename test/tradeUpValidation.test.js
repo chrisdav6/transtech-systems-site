@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 
-test('Trade Up rejects invalid submissions without sending emails', async () => {
+test('Trade Up validates fields, consent, and reCAPTCHA before sending emails', async () => {
   const directory = fs.mkdtempSync(
     path.join(os.tmpdir(), 'transtech-tradeup-validation-')
   );
@@ -15,6 +15,7 @@ test('Trade Up rejects invalid submissions without sending emails', async () => 
   process.env.SESSION_STORE_PATH = directory;
 
   const transporterPath = require.resolve('../utils/mailTransporter');
+  const captchaPath = require.resolve('../utils/verifyRecaptcha');
   const limiterPath = require.resolve('../utils/formRateLimiter');
 
   const originals = new Map();
@@ -35,6 +36,13 @@ test('Trade Up rejects invalid submissions without sending emails', async () => 
       sentEmails.push(options);
       return { messageId: 'mock-tradeup-message' };
     },
+  });
+
+  const captchaCalls = [];
+
+  mockModule(captchaPath, async (token) => {
+    captchaCalls.push(token);
+    return token === 'valid-test-captcha';
   });
 
   // The real rate limiter is tested separately.
@@ -65,6 +73,7 @@ test('Trade Up rejects invalid submissions without sending emails', async () => 
       tradeProduct: 'PQI 380',
       tradeSerial: 'TEST-12345',
       tradeMessage: '',
+      'g-recaptcha-response': 'valid-test-captcha',
     });
 
     const invalidCases = [
@@ -128,6 +137,74 @@ test('Trade Up rejects invalid submissions without sending emails', async () => 
       0,
       'Missing international consent must not generate an email'
     );
+
+    // Invalid fields and missing consent must be rejected before CAPTCHA verification.
+    assert.equal(captchaCalls.length, 0);
+
+    // Reject missing, empty, whitespace-only, and invalid CAPTCHA tokens.
+    const invalidCaptchaTokens = [
+      null,
+      '',
+      '   ',
+      'invalid-test-captcha',
+    ];
+
+    for (const token of invalidCaptchaTokens) {
+      const data = new URLSearchParams(validData);
+
+      if (token === null) {
+        data.delete('g-recaptcha-response');
+      } else {
+        data.set('g-recaptcha-response', token);
+      }
+
+      const captchaResponse = await fetch(url, {
+        method: 'POST',
+        redirect: 'manual',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+        },
+        body: data,
+      });
+
+      assert.equal(captchaResponse.status, 302);
+      assert.equal(
+        captchaResponse.headers.get('location'),
+        '/products/tradeUp'
+      );
+      assert.equal(sentEmails.length, 0);
+    }
+
+    assert.deepEqual(captchaCalls, ['invalid-test-captcha']);
+
+    // A valid submission with a verified CAPTCHA must generate an email.
+    const successResponse = await fetch(url, {
+      method: 'POST',
+      redirect: 'manual',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Mozilla/5.0 Chrome/120.0.0.0',
+      },
+      body: new URLSearchParams(validData),
+    });
+
+    assert.equal(successResponse.status, 302);
+    assert.equal(
+      successResponse.headers.get('location'),
+      '/products/tradeUp'
+    );
+    assert.deepEqual(captchaCalls, [
+      'invalid-test-captcha',
+      'valid-test-captcha',
+    ]);
+    assert.equal(sentEmails.length, 1);
+    assert.equal(sentEmails[0].replyTo, 'test@example.com');
+    assert.equal(
+      sentEmails[0].subject,
+      'TransTech Systems Trade Up Request Form'
+    );
+    assert.match(sentEmails[0].html, /TEST-12345/);
   } finally {
     if (server) {
       await new Promise((resolve) => server.close(resolve));
