@@ -1,0 +1,169 @@
+#productComparison {
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: $dark-gray;
+    margin-bottom: 2em;
+  }
+
+  .lead {
+    font-weight: 400;
+  }
+
+  .pqi-comparison-table {
+    width: 100%;
+    min-width: 540px;
+    margin-bottom: 1rem;
+
+    th,
+    td {
+      vertical-align: middle;
+      padding: 0.85rem;
+    }
+
+    thead {
+      th {
+        background: $extreme-dark-gray;
+        color: $white;
+        font-size: 1.15rem;
+
+        &:first-child {
+          width: 42%;
+        }
+
+        &.current-product {
+          width: 29%;
+          background: $logo-yellow;
+          color: $extreme-dark-gray;
+        }
+
+        &.other-product {
+          width: 29%;
+        }
+
+        small {
+          font-size: 0.85rem;
+          font-weight: 400;
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .comparison-category {
+      th {
+        background: #e2e2e2;
+        color: $extreme-dark-gray;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+    }
+
+    tbody {
+      th[scope="row"] {
+        font-weight: 500;
+      }
+
+      .fa-check {
+        font-size: 1.15rem;
+      }
+    }
+
+    tfoot {
+      td {
+        background: $white;
+      }
+    }
+  }
+
+  .pqi-comparison-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 2px solid $logo-yellow;
+    background-color: $logo-yellow;
+    color: $extreme-dark-gray;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $extreme-dark-gray;
+      border-color: $extreme-dark-gray;
+      color: $logo-yellow;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .pqi-comparison-table {
+      font-size: 0.9rem;
+
+      th,
+      td {
+        padding: 0.65rem;
+      }
+
+      thead th {
+        font-size: 1rem;
+      }
+    }
+
+    .pqi-comparison-btn {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+    }
+  }
+}
+
+// Compact comparison table for mobile devices
+@media (max-width: 575.98px) {
+  #productComparison {
+    .pqi-comparison-table {
+      min-width: 0;
+      table-layout: fixed;
+      font-size: 0.8rem;
+
+      th,
+      td {
+        padding: 0.5rem 0.3rem;
+        overflow-wrap: break-word;
+      }
+
+      thead {
+        th {
+          font-size: 0.85rem;
+
+          &:first-child {
+            width: 46%;
+          }
+
+          &.current-product,
+          &.other-product {
+            width: 27%;
+          }
+
+          small {
+            display: none !important;
+          }
+        }
+      }
+
+      .fa-check {
+        font-size: 1rem;
+      }
+
+      .pqi-comparison-btn {
+        font-size: 0.75rem;
+        padding: 8px 4px;
+        white-space: normal;
+        width: 100%;
+      }
+    }
+  }
+}
